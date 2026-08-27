@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <Preferences.h>
 #include <Wire.h>
+#include <cmath>
 
 #include <BatteryCore.h>
 #include "Ina238.h"
@@ -29,8 +30,11 @@ BatteryConfig makeBowConfig() {
     return cfg;
 }
 
-Ina238 systemSensor(Wire, config::INA238_SYSTEM_ADDRESS, config::SYSTEM_SHUNT_OHM);
-Ina238 bowSensor(Wire, config::INA238_BOW_ADDRESS, config::BOW_SHUNT_OHM);
+// System uses wide ±163.84 mV range to preserve cranking headroom.
+Ina238 systemSensor(Wire, config::INA238_SYSTEM_ADDRESS, config::SYSTEM_SHUNT_OHM, false);
+// Bow uses narrow ±40.96 mV range: 500 A/50 mV shunt then resolves ~12.5 mA/LSB
+// and still has ~409 A electrical measurement span.
+Ina238 bowSensor(Wire, config::INA238_BOW_ADDRESS, config::BOW_SHUNT_OHM, true);
 BatteryCore systemBattery(makeSystemConfig());
 BatteryCore bowBattery(makeBowConfig());
 NmeaPublisher nmea;
@@ -95,12 +99,13 @@ void sampleBatteries(uint32_t now) {
 
     // Persist shortly after a high-current event ends. This avoids losing the
     // coulomb-count contribution of a bow-thruster/starter pulse if ignition is
-    // switched off before the regular 60 s persistence interval.
-    const bool systemHighNow = systemMeasurement.valid && fabs(systemMeasurement.currentA) > 50.0;
-    const bool bowHighNow = bowMeasurement.valid && fabs(bowMeasurement.currentA) > 20.0;
+    // switched off before the regular persistence interval.
+    const bool systemHighNow = systemMeasurement.valid && std::fabs(systemMeasurement.currentA) > 50.0;
+    const bool bowHighNow = bowMeasurement.valid && std::fabs(bowMeasurement.currentA) > 20.0;
+    const bool highEventEnded = (systemHighLoadSeen && !systemHighNow) ||
+                                (bowHighLoadSeen && !bowHighNow);
 
-    if (systemHighLoadSeen && !systemHighNow) persistSoc();
-    if (bowHighLoadSeen && !bowHighNow) persistSoc();
+    if (highEventEnded) persistSoc();
     systemHighLoadSeen = systemHighNow;
     bowHighLoadSeen = bowHighNow;
 
