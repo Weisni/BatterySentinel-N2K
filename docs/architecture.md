@@ -16,15 +16,19 @@ flowchart LR
     IB -->|isolated I2C| ISOI2C[ISO1640]
     ISOI2C --> ESP
 
-    IGN[Ignition +12 V / GND_SYS] --> BUCK3[AP63203 3.3 V]
-    BUCK3 --> ESP
-    BUCK3 --> IA
-    IGN --> IDCDC[TDN 1-1210WI isolated 12 V to 3.3 V]
-    IDCDC --> IB
+    IGN[Ignition +12 V / GND_SYS] --> BUCK5SYS[AP63205 5V_SYS]
+    USB[USB-C VBUS] --> BUCK5SYS
+    BUCK5SYS --> LDO3[AP2112K 3V3_SYS]
+    LDO3 --> ESP
+    LDO3 --> IA
+
+    BUCK5SYS --> IDCDC[RFMM-0505S isolated 5V to 5V]
+    IDCDC --> LDOB[AP2112K 3V3_BOW]
+    LDOB --> IB
 
     ESP -->|TWAI TX/RX| ISOCAN[ISO1042]
-    N2KPOWER[NMEA NET-S / NET-C] --> BUCK5[AP63205 5 V]
-    BUCK5 --> ISOCAN
+    N2KPOWER[NMEA NET-S / NET-C] --> BUCK5N2K[AP63205 5V_N2K]
+    BUCK5N2K --> ISOCAN
     ISOCAN -->|CAN-H / CAN-L| N2K[NMEA 2000 Micro-C]
     N2K --> GARMIN[Garmin GPSMAP 723xsv]
 ```
@@ -38,11 +42,11 @@ GND_SYS  : System battery negative, ignition negative, ESP32, INA238 #0
 GND_BOW  : Bow battery negative, INA238 #1, isolated side of ISO1640
 GND_N2K  : NMEA 2000 NET-C, isolated CAN bus side
 
-GND_SYS || ISO1640 || GND_BOW
-GND_SYS || ISO1042 || GND_N2K
+GND_SYS || ISO1640 + RFMM-0505S || GND_BOW
+GND_SYS || ISO1042              || GND_N2K
 ```
 
-The bow-domain isolated DC/DC provides power isolation; ISO1640 provides signal isolation. The NMEA bus side is powered from NET-S/NET-C, so the ISO1042 barrier remains meaningful without another isolated NMEA DC/DC converter.
+The RFMM-0505S provides bow-domain power isolation; ISO1640 provides signal isolation. The NMEA bus side is powered from NET-S/NET-C, so the ISO1042 barrier remains meaningful without another isolated NMEA DC/DC converter.
 
 ## High-side current measurement
 
@@ -70,6 +74,8 @@ This orientation gives the firmware convention:
 
 At 200 A, a 100 micro-ohm shunt drops 20 mV and dissipates 4 W. At 500 A it drops 50 mV and dissipates 25 W. Shunts therefore remain outside the sealed electronics enclosure and receive ventilated insulating covers.
 
+Each of the four positive Kelvin leads is individually fused at 100 mA near the shunt because the high-current battery fuse cannot protect a thin sense wire.
+
 ## NMEA 2000 model
 
 One physical NMEA source address publishes two logical battery instances:
@@ -92,9 +98,10 @@ The device is an unregistered DIY NMEA 2000 node. It uses manufacturer code 2046
 
 The product is intentionally not always-on.
 
-- `IGN OFF`: main ESP32/system measurement domain off.
-- `IGN ON`: firmware, both measurement channels and NMEA publisher are active.
+- `IGN OFF`: main ESP32/system measurement domain off, unless USB is connected for bench/programming.
+- `IGN ON`: firmware and both measurement channels are active.
 - NMEA bus-side ISO1042 supply exists only while NET-S is powered.
+- `USB only`: both logic measurement domains may be powered for bench testing, but no battery bank is galvanically joined by the supply because the RFMM isolation barrier remains present.
 
 There is no requirement to reach microamp sleep current in V1.
 
@@ -105,7 +112,7 @@ V1 reserves ESP32-C3 native USB pins:
 - GPIO18 = USB D-
 - GPIO19 = USB D+
 
-The final PCB shall provide USB-C with 5.1 kOhm CC pull-downs, USB ESD protection and a power arrangement that allows bench programming without accidentally back-powering the boat ignition circuit.
+The final PCB shall provide USB-C with 5.1 kOhm CC pull-downs, USB ESD protection and diode-OR power injection before the system 5 V buck, so bench programming cannot back-power the boat ignition line.
 
 ## Data path
 
