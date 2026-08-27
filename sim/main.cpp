@@ -1,5 +1,6 @@
 #include <BatteryCore.h>
 
+#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <string>
