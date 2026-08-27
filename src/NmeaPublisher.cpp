@@ -11,6 +11,12 @@ namespace bs {
 
 namespace {
 const unsigned long kTransmitMessages[] PROGMEM = {127506L, 127508L, 0};
+
+double clampSoc(double value) {
+    if (value < 0.0) return 0.0;
+    if (value > 100.0) return 100.0;
+    return value;
+}
 }
 
 void NmeaPublisher::begin(uint32_t uniqueNumber) {
@@ -56,7 +62,7 @@ void NmeaPublisher::publishDc(uint8_t batteryInstance,
     if (!measurementValid || !state.socInitialized) return;
 
     tN2kMsg msg;
-    const uint8_t soc = static_cast<uint8_t>(std::lround(std::max(0.0, std::min(100.0, state.socPct))));
+    const uint8_t soc = static_cast<uint8_t>(std::lround(clampSoc(state.socPct)));
     const double timeRemaining = state.timeRemainingS >= 0.0 ? state.timeRemainingS : N2kDoubleNA;
 
     // SOH and ripple voltage are not measured in V1 and are encoded as Not Available.
