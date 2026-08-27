@@ -1,34 +1,43 @@
 #include "Ina238.h"
 
+#include <Ina238Math.h>
+
 namespace bs {
 
 bool Ina238::begin() {
     present_ = ping();
     if (!present_) return false;
-
-    // CONFIG=0 keeps ADCRANGE=0 (±163.84 mV) and the default continuous conversion path.
-    // We intentionally compute current from raw VSHUNT instead of the calibrated CURRENT
-    // register so each channel can use its exact measured shunt resistance later.
-    present_ = write16(REG_CONFIG, 0x0000);
+    present_ = configure();
     return present_;
+}
+
+bool Ina238::configure() {
+    // ADCRANGE=0 -> ±163.84 mV, 5 uV/LSB.
+    // ADCRANGE=1 -> ±40.96 mV, 1.25 uV/LSB.
+    // Default ADC_CONFIG already continuously converts bus, shunt and die temperature.
+    return write16(REG_CONFIG, narrowRange_ ? CONFIG_ADCRANGE : 0x0000);
 }
 
 Measurement Ina238::read() {
     Measurement m{};
-    if (!present_ || shuntOhm_ <= 0.0) return m;
+    if (shuntOhm_ <= 0.0) return m;
+
+    // Allow a sensor/isolated domain that was missing during boot to recover later.
+    if (!present_) {
+        present_ = ping() && configure();
+        if (!present_) return m;
+    }
 
     uint16_t rawBus = 0;
     uint16_t rawShuntUnsigned = 0;
     if (!read16(REG_VBUS, rawBus) || !read16(REG_VSHUNT, rawShuntUnsigned)) {
-        present_ = ping();
+        present_ = false;
         return m;
     }
 
     const int16_t rawShunt = static_cast<int16_t>(rawShuntUnsigned);
-    const double shuntV = static_cast<double>(rawShunt) * SHUNT_LSB_V;
-
-    m.voltageV = static_cast<double>(rawBus) * BUS_LSB_V;
-    m.currentA = shuntV / shuntOhm_;
+    m.voltageV = ina238math::busVoltageV(rawBus);
+    m.currentA = ina238math::currentA(rawShunt, shuntOhm_, narrowRange_);
     m.valid = m.voltageV >= 0.0 && m.voltageV <= 20.0;
     return m;
 }
