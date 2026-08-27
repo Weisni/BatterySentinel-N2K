@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <cmath>
+#include <cstddef>
 
 namespace bs {
 
@@ -34,8 +35,16 @@ BatterySnapshot BatteryCore::update(const Measurement& m, double dtS) {
     state_.alerts &= ~static_cast<uint32_t>(AlertDataGap);
 
     if (!finiteMeasurement(m)) {
+        // A missing sensor must not leave stale voltage/current alarms latched. SOC
+        // alarms remain valid because they are derived from the last known SOC.
+        state_.alerts &= ~static_cast<uint32_t>(AlertLowVoltage | AlertOverVoltage | AlertOverCurrent);
         state_.alerts |= AlertSensorFault;
         state_.timeRemainingS = -1.0;
+        restTimerS_ = 0.0;
+        fullTimerS_ = 0.0;
+        lowVoltageTimerS_ = 0.0;
+        overVoltageTimerS_ = 0.0;
+        overCurrentTimerS_ = 0.0;
         return state_;
     }
 
