@@ -91,8 +91,6 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.ocvCorrectionEnabled = true;
             break;
         case BatteryChemistry::LiFePO4:
-            // Flat OCV curve: V1 explicitly disables voltage-based SOC correction.
-            // Coulomb counting and an explicit full-charge synchronization remain enabled.
             p.chargeEfficiency = 0.99;
             p.fullChargeVoltageV = 14.20;
             p.fullTailCurrentFractionC = 0.05;
@@ -104,7 +102,6 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             break;
         case BatteryChemistry::Custom:
             p.socEnabled = capacityAh > 0.0;
-            // Custom defaults conservatively to no OCV correction until explicitly modeled.
             p.ocvCorrectionEnabled = false;
             break;
         default:
@@ -121,6 +118,9 @@ inline BatteryConfig toBatteryConfig(const BatteryProfile& p, double maxAbsCurre
     cfg.capacityAh = p.capacityAh > 0.0 ? p.capacityAh : 100.0;
     cfg.chargeEfficiency = p.chargeEfficiency;
     cfg.ocvCorrectionEnabled = p.ocvCorrectionEnabled;
+    // BatteryCore V1 treats a negative rest-current threshold as "never OCV eligible".
+    // This keeps flat-curve chemistries out of the generic lead-acid OCV estimator.
+    cfg.restCurrentA = p.ocvCorrectionEnabled ? 0.8 : -1.0;
     cfg.fullChargeVoltageV = p.fullChargeVoltageV;
     cfg.fullTailCurrentFractionC = p.fullTailCurrentFractionC;
     cfg.lowVoltageIdleV = p.lowVoltageIdleV;
