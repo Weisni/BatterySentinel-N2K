@@ -1,5 +1,6 @@
 #include "wokwi-api.h"
 #include <math.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdlib.h>
 
@@ -53,6 +54,7 @@ static uint16_t register_value(chip_state_t *chip, uint8_t reg) {
 static bool on_i2c_connect(void *user_data, uint32_t address, bool read) {
   chip_state_t *chip = (chip_state_t *)user_data;
   (void)address;
+  (void)read;
   chip->read_index = 0;
   chip->write_index = 0;
   return attr_read(chip->attr_present) != 0;
