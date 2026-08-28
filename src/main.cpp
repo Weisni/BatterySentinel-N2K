@@ -4,41 +4,44 @@
 #include <cmath>
 
 #include <BatteryCore.h>
+#include <BatteryProfiles.h>
+#include "DiagnosticsPortal.h"
 #include "Ina238.h"
 #include "NmeaPublisher.h"
+#include "SettingsStore.h"
 #include "config.h"
 
 using namespace bs;
 
 namespace {
 
-BatteryConfig makeSystemConfig() {
-    BatteryConfig cfg;
-    cfg.capacityAh = config::SYSTEM_CAPACITY_AH;
-    cfg.maxAbsCurrentA = config::SYSTEM_MAX_ABS_CURRENT_A;
+DeviceSettings settings;
+SettingsStore settingsStore;
+DiagnosticsPortal diagnostics;
+
+BatteryConfig makeSystemConfig(const DeviceSettings& s) {
+    BatteryConfig cfg = toBatteryConfig(s.system, s.systemMaxCurrentA);
     cfg.highLoadCurrentA = 50.0;
-    cfg.lowVoltageLoadedV = 9.5;
+    cfg.lowVoltageLoadedV = s.systemLowVoltageLoadedV;
     return cfg;
 }
 
-BatteryConfig makeBowConfig() {
-    BatteryConfig cfg;
-    cfg.capacityAh = config::BOW_CAPACITY_AH;
-    cfg.maxAbsCurrentA = config::BOW_MAX_ABS_CURRENT_A;
+BatteryConfig makeBowConfig(const DeviceSettings& s) {
+    BatteryConfig cfg = toBatteryConfig(s.bow, s.bowMaxCurrentA);
     cfg.highLoadCurrentA = 20.0;
-    cfg.lowVoltageLoadedV = 9.5;
+    cfg.lowVoltageLoadedV = s.bowLowVoltageLoadedV;
     return cfg;
 }
 
 // System uses wide ±163.84 mV range to preserve cranking headroom.
 Ina238 systemSensor(Wire, config::INA238_SYSTEM_ADDRESS, config::SYSTEM_SHUNT_OHM, false);
-// Bow uses narrow ±40.96 mV range: 500 A/50 mV shunt then resolves ~12.5 mA/LSB
-// and still has ~409 A electrical measurement span.
+// Bow uses narrow ±40.96 mV range. It remains completely optional in V1.
 Ina238 bowSensor(Wire, config::INA238_BOW_ADDRESS, config::BOW_SHUNT_OHM, true);
-BatteryCore systemBattery(makeSystemConfig());
-BatteryCore bowBattery(makeBowConfig());
+
+BatteryCore systemBattery;
+BatteryCore bowBattery;
 NmeaPublisher nmea;
-Preferences preferences;
+Preferences statePreferences;
 
 Measurement systemMeasurement{};
 Measurement bowMeasurement{};
@@ -58,20 +61,50 @@ bool timeDue(uint32_t now, uint32_t& last, uint32_t period) {
     return true;
 }
 
-void restoreSoc() {
-    preferences.begin("batsentinel", false);
+bool profileMatchesStored(const char* prefix, const BatteryProfile& profile) {
+    String chemKey(prefix); chemKey += "chem";
+    String capKey(prefix); capKey += "cap";
+    const uint8_t storedChem = statePreferences.getUChar(chemKey.c_str(), 0xFF);
+    const float storedCapacity = statePreferences.getFloat(capKey.c_str(), -1.0f);
+    return storedChem == static_cast<uint8_t>(profile.chemistry) &&
+           std::fabs(static_cast<double>(storedCapacity) - profile.capacityAh) < 0.05;
+}
 
-    const float sysSoc = preferences.getFloat("soc_sys", -1.0f);
-    const float bowSoc = preferences.getFloat("soc_bow", -1.0f);
-    if (sysSoc >= 0.0f && sysSoc <= 100.0f) systemBattery.restoreSoc(sysSoc);
-    if (bowSoc >= 0.0f && bowSoc <= 100.0f) bowBattery.restoreSoc(bowSoc);
+void restoreSoc() {
+    statePreferences.begin("batsentinel", false);
+
+    if (settings.system.socEnabled && profileMatchesStored("sys_", settings.system)) {
+        const float sysSoc = statePreferences.getFloat("soc_sys", -1.0f);
+        if (sysSoc >= 0.0f && sysSoc <= 100.0f) systemBattery.restoreSoc(sysSoc);
+    }
+
+    if (settings.bowChannelEnabled && settings.bow.socEnabled && profileMatchesStored("bow_", settings.bow)) {
+        const float bowSoc = statePreferences.getFloat("soc_bow", -1.0f);
+        if (bowSoc >= 0.0f && bowSoc <= 100.0f) bowBattery.restoreSoc(bowSoc);
+    }
+}
+
+void persistProfileIdentity(const char* prefix, const BatteryProfile& profile) {
+    String chemKey(prefix); chemKey += "chem";
+    String capKey(prefix); capKey += "cap";
+    statePreferences.putUChar(chemKey.c_str(), static_cast<uint8_t>(profile.chemistry));
+    statePreferences.putFloat(capKey.c_str(), static_cast<float>(profile.capacityAh));
 }
 
 void persistSoc() {
     const auto& sys = systemBattery.snapshot();
-    const auto& bow = bowBattery.snapshot();
-    if (sys.socInitialized) preferences.putFloat("soc_sys", static_cast<float>(sys.socPct));
-    if (bow.socInitialized) preferences.putFloat("soc_bow", static_cast<float>(bow.socPct));
+    if (settings.system.socEnabled && sys.socInitialized) {
+        persistProfileIdentity("sys_", settings.system);
+        statePreferences.putFloat("soc_sys", static_cast<float>(sys.socPct));
+    }
+
+    if (settings.bowChannelEnabled && settings.bow.socEnabled) {
+        const auto& bow = bowBattery.snapshot();
+        if (bow.socInitialized) {
+            persistProfileIdentity("bow_", settings.bow);
+            statePreferences.putFloat("soc_bow", static_cast<float>(bow.socPct));
+        }
+    }
 }
 
 void reportAlertChange(const char* name, uint32_t alerts, uint32_t& previous) {
@@ -89,19 +122,24 @@ void sampleBatteries(uint32_t now) {
     const double dtS = static_cast<double>(elapsedMs) / 1000.0;
 
     systemMeasurement = systemSensor.read();
-    bowMeasurement = bowSensor.read();
-
     const auto sys = systemBattery.update(systemMeasurement, dtS);
-    const auto bow = bowBattery.update(bowMeasurement, dtS);
-
     reportAlertChange("SYSTEM", sys.alerts, previousSystemAlerts);
-    reportAlertChange("BOW", bow.alerts, previousBowAlerts);
 
-    // Persist shortly after a high-current event ends. This avoids losing the
-    // coulomb-count contribution of a bow-thruster/starter pulse if ignition is
-    // switched off before the regular persistence interval.
+    BatterySnapshot bow{};
+    if (settings.bowChannelEnabled) {
+        bowMeasurement = bowSensor.read();
+        bow = bowBattery.update(bowMeasurement, dtS);
+        reportAlertChange("BOW", bow.alerts, previousBowAlerts);
+    } else {
+        bowMeasurement = {};
+        previousBowAlerts = AlertNone;
+    }
+
+    // Persist shortly after a high-current event ends. FRAM will later replace this as the
+    // primary 1 s checkpoint path; NVS remains a fallback until that hardware is fitted.
     const bool systemHighNow = systemMeasurement.valid && std::fabs(systemMeasurement.currentA) > 50.0;
-    const bool bowHighNow = bowMeasurement.valid && std::fabs(bowMeasurement.currentA) > 20.0;
+    const bool bowHighNow = settings.bowChannelEnabled && bowMeasurement.valid &&
+                            std::fabs(bowMeasurement.currentA) > 20.0;
     const bool highEventEnded = (systemHighLoadSeen && !systemHighNow) ||
                                 (bowHighLoadSeen && !bowHighNow);
 
@@ -109,19 +147,26 @@ void sampleBatteries(uint32_t now) {
     systemHighLoadSeen = systemHighNow;
     bowHighLoadSeen = bowHighNow;
 
-    digitalWrite(config::PIN_STATUS_LED,
-                 (sys.alerts != AlertNone || bow.alerts != AlertNone) ? HIGH : LOW);
+    const bool hasAlert = sys.alerts != AlertNone ||
+                          (settings.bowChannelEnabled && bow.alerts != AlertNone);
+    digitalWrite(config::PIN_STATUS_LED, hasAlert ? HIGH : LOW);
 }
 
 void publishNmea(uint32_t now) {
     if (timeDue(now, lastFastN2kMs, config::N2K_FAST_PERIOD_MS)) {
         nmea.publishFast(0, systemBattery.snapshot(), systemMeasurement.valid);
-        nmea.publishFast(1, bowBattery.snapshot(), bowMeasurement.valid);
+        if (settings.bowChannelEnabled) {
+            nmea.publishFast(1, bowBattery.snapshot(), bowMeasurement.valid);
+        }
     }
 
     if (timeDue(now, lastDcN2kMs, config::N2K_DC_PERIOD_MS)) {
-        nmea.publishDc(0, systemBattery.snapshot(), systemMeasurement.valid);
-        nmea.publishDc(1, bowBattery.snapshot(), bowMeasurement.valid);
+        if (settings.system.socEnabled) {
+            nmea.publishDc(0, systemBattery.snapshot(), systemMeasurement.valid);
+        }
+        if (settings.bowChannelEnabled && settings.bow.socEnabled) {
+            nmea.publishDc(1, bowBattery.snapshot(), bowMeasurement.valid);
+        }
     }
 }
 
@@ -135,16 +180,36 @@ void setup() {
     delay(250);
     Serial.println("BatterySentinel N2K V1 boot");
 
+    if (!settingsStore.begin()) {
+        Serial.println("WARNING: runtime settings store unavailable; using defaults");
+    }
+    settings = settingsStore.load();
+
+    systemBattery = BatteryCore(makeSystemConfig(settings));
+    bowBattery = BatteryCore(makeBowConfig(settings));
+
+    Serial.printf("System profile: %s, %.1f Ah, SOC=%s\n",
+                  chemistryName(settings.system.chemistry), settings.system.capacityAh,
+                  settings.system.socEnabled ? "enabled" : "disabled");
+    Serial.printf("Second battery: %s, profile=%s, %.1f Ah\n",
+                  settings.bowChannelEnabled ? "enabled" : "disabled",
+                  chemistryName(settings.bow.chemistry), settings.bow.capacityAh);
+
     Wire.begin(config::PIN_I2C_SDA, config::PIN_I2C_SCL, 100000);
     restoreSoc();
 
     const bool systemOk = systemSensor.begin();
-    const bool bowOk = bowSensor.begin();
-    Serial.printf("INA238 system=%s, bow=%s\n", systemOk ? "OK" : "MISSING", bowOk ? "OK" : "MISSING");
+    bool bowOk = false;
+    if (settings.bowChannelEnabled) bowOk = bowSensor.begin();
+    Serial.printf("INA238 system=%s, bow=%s\n",
+                  systemOk ? "OK" : "MISSING",
+                  settings.bowChannelEnabled ? (bowOk ? "OK" : "MISSING") : "DISABLED");
 
     const uint64_t mac = ESP.getEfuseMac();
     const uint32_t uniqueNumber = static_cast<uint32_t>((mac ^ (mac >> 24)) & 0x1FFFFFu);
     nmea.begin(uniqueNumber == 0 ? 1 : uniqueNumber);
+
+    diagnostics.begin(settings, settingsStore, systemBattery, bowBattery);
 
     const uint32_t now = millis();
     lastSampleMs = now - config::SAMPLE_PERIOD_MS;
@@ -162,6 +227,7 @@ void loop() {
 
     publishNmea(now);
     nmea.process();
+    diagnostics.loop();
 
     if (timeDue(now, lastPersistMs, config::SOC_PERSIST_PERIOD_MS)) {
         persistSoc();
