@@ -25,7 +25,9 @@ struct BatteryConfig {
     double capacityAh = 100.0;
     double chargeEfficiency = 0.93;
 
-    // SOC / OCV model
+    // SOC / OCV model. Generic V1 OCV interpolation is intended for 12 V lead-acid
+    // profiles only. Flat-curve chemistries such as LiFePO4 disable it.
+    bool ocvCorrectionEnabled = true;
     double restCurrentA = 0.8;
     double startupOcvDelayS = 10.0;
     double ocvCorrectionDelayS = 300.0;
