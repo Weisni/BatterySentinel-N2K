@@ -1,85 +1,116 @@
 # BatterySentinel N2K
 
-Dual-battery monitor for a 12 V boat electrical system with NMEA 2000 output to a Garmin chartplotter.
+Battery monitor for a 12 V boat electrical system with NMEA 2000 output to a Garmin chartplotter.
 
-## V1 goals
+## V1 focus
 
-- One **ESP32-C3-WROOM-02-N8 (8 MB)**, directly programmable through native USB-C and serviceable later through browser OTA.
-- Two battery channels:
-  - Battery 0: **System battery — Duracell Advanced DA80, 80 Ah, 700 A EN, flooded lead-acid** (`GTIN 9005753086036`).
-  - Battery 1: **Bow-thruster battery — 90 Ah**, exact model/chemistry still to be confirmed.
-- System negative and ignition negative are the same `GND_SYS` node; only the bow battery measurement domain is isolated from the system domain.
-- NMEA 2000 remains galvanically isolated from `GND_SYS`.
-- Bidirectional current and battery-voltage measurement through one shunt per bank.
-- **2x 500 A / 50 mV high-side shunts**. The system path covers expected Mercury SeaPro 150 starting current around 150-225 A; the bow path covers approximately 200 A with reserve.
-- Approximate SOC using coulomb counting + off-time/self-discharge estimate + OCV plausibility + full-charge synchronization and an internal confidence state.
-- NMEA battery data for Battery Instance 0/1, plus user-visible NMEA alert PGNs and Garmin alert acknowledgement.
-- UTC synchronization from NMEA network time data (primarily PGN 129029) for logs and ignition-off duration.
-- Automatic secured Wi-Fi diagnostics portal for **5 minutes after every boot**; Wi-Fi shuts down if nobody connects.
-- Browser dashboard, configuration, diagnostics, CSV log access and OTA firmware update.
-- External **32 MB SPI NOR** circular logger: 2-5 day normal history plus 50 Hz event capture.
-- I2C FRAM + supercap hold-up for robust power-loss state/log shutdown.
-- Host-side simulation using the same battery-domain code as the firmware.
-- TDD/unit tests for normal cases, threshold behavior and edge cases.
+V1 is deliberately brought up and tested first as a **single system-battery monitor**. The hardware keeps the second isolated measurement channel as an option, but it is disabled by default in firmware until its battery type/capacity are configured.
 
-## Electrical domains
+- ESP32-C3-WROOM-02-N8 (8 MB), native USB-C plus browser OTA.
+- System battery default profile: **Duracell Advanced DA80, 80 Ah, 700 A EN, flooded lead-acid** (`GTIN 9005753086036`).
+- System negative = ignition negative = `GND_SYS`.
+- 500 A / 50 mV high-side system shunt; expected Mercury SeaPro 150 start current ~150–225 A.
+- Optional second channel: `Unknown`, 0 Ah and disabled by default. It can later be enabled/configured without recompiling.
+- Runtime battery types: Unknown, Flooded Lead Acid, AGM, GEL, EFB, LiFePO4 and Custom.
+- Unknown battery type disables SOC but never fabricates a chemistry assumption.
+- LiFePO4 does not use the generic lead-acid OCV correction path.
+- Hybrid SOC: coulomb counting, chemistry-dependent charge efficiency, lead-acid OCV plausibility, full-charge synchronization and later off-time correction.
+- NMEA 2000 live battery data using PGN 127508 and 127506.
+- Native ESP32-C3 TWAI backend at 250 kbit/s; no legacy `NMEA2000_esp32` driver.
+- ISO1042 galvanic isolation between ESP32/system domain and NMEA 2000.
+- Automatic diagnostics Wi-Fi AP on every boot: 5-minute connection window, then radio off if unused.
+- Browser configuration, live diagnostics and OTA firmware upload.
+- External 32 MB SPI NOR design target for 1 Hz history plus 50 Hz event capture.
+- Dual-slot I2C FRAM state store with CRC/sequence protection for power-loss-safe checkpoints.
+- Host simulator and native TDD use the same core algorithms as firmware.
 
-The project keeps three grounds separate where isolation is actually required:
-
-1. `GND_SYS` — system battery negative = ignition negative = ESP32 = system INA238.
-2. `GND_BOW` — bow battery negative and isolated bow INA238 domain.
-3. `GND_N2K` — NMEA 2000 NET-C / ISO1042 bus side.
-
-`GND_BOW` is isolated from the ESP32 via ISO1640 plus an isolated DC/DC supply. `GND_N2K` is isolated from the ESP32 via ISO1042 CAN isolation.
-
-## High-side topology
-
-High-side measurement is retained mainly to keep the common engine/electronics ground untouched and to avoid missing current through an alternate engine-block negative path.
+## System architecture
 
 ```text
-BATTERY + -> main fuse -> high-side shunt -> common positive node -> loads / starter / chargers
+SYSTEM BATTERY +
+      |
+   main fuse
+      |
+500 A / 50 mV high-side shunt
+      |
+      +---- Mercury starter / system loads / chargers
+      |
+   INA238
+      |
+     I2C
+      |
+ESP32-C3-WROOM-02-N8
+  |       |        |
+  |       |        +---- Wi-Fi AP -> browser config / diagnostics / OTA
+  |       +------------- FRAM + external SPI NOR logger
+  |
+  +---- native TWAI ---- ISO1042 ---- NMEA 2000 ---- Garmin
+
+GND_SYS = system battery negative = ignition negative
+
+Optional future second bank:
+second shunt -> INA238 -> ISO1640 -> ESP32
+second battery ground remains isolated from GND_SYS
 ```
 
-Sense orientation:
+## High-side sign convention
 
-- `IN+` = load/charger side
-- `IN-` = battery side
+NMEA 2000 PGN 127508 uses positive battery current for charging and negative for discharging. BatterySentinel therefore intentionally senses the high-side shunt as:
+
+- INA238 `IN+` = load/charger side
+- INA238 `IN-` = battery side
 - positive current = charging
 - negative current = discharging
 
-At 225 A a 500 A / 50 mV (100 micro-ohm) shunt drops about 22.5 mV and dissipates about 5.1 W. Shunts remain outside the sealed electronics enclosure and require secure insulating covers and individually protected sense leads.
+The INA238 supports bipolar differential measurement, so this reversed sense polarity is intentional. The common-mode battery voltage remains within the device's high-side range.
 
-## NMEA 2000 mapping
+At 225 A, a 500 A / 50 mV shunt (100 micro-ohm) drops ~22.5 mV and dissipates ~5.1 W.
 
-One physical NMEA node publishes two logical battery instances:
+## Runtime configuration
 
-- Battery Instance `0` = System battery, 80 Ah
-- Battery Instance `1` = Bow-thruster battery, 90 Ah
+The boot web portal stores settings in ESP32 NVS. Changing chemistry or capacity invalidates a previously stored SOC unless the stored profile identity still matches.
 
-V1 uses standard battery/status and alert PGNs. The project is a DIY node and is **not NMEA-certified**.
+The optional second channel remains silent on NMEA and does not generate sensor alarms while disabled.
 
-## Diagnostics and logging
+## Diagnostics
 
-On every boot a secured `BatterySentinel-XXXX` Wi-Fi AP starts automatically.
+On each boot:
 
-- no client within 5 min -> Wi-Fi off;
-- connected client -> portal remains available while connected;
-- dashboard + raw diagnostics + settings + logs + OTA;
-- normal logging at 1 Hz to 32 MB SPI NOR;
-- 50 Hz acquisition and 10 s pre-trigger / 30 s post-trigger event recording.
+```text
+Power on
+   |
+   +--> WPA2 AP BatterySentinel-XXXX
+           |
+           +-- no client for 5 min --> Wi-Fi OFF
+           |
+           +-- client connected --> portal stays active
+                                  --> 60 s after disconnect --> Wi-Fi OFF
+```
 
-See `docs/diagnostics-logging.md`.
+Portal functions currently include live system data, battery type/capacity, alarm thresholds, optional second-channel enable and browser OTA.
+
+## Logging / power-loss foundation
+
+- Main sample rate: 50 Hz.
+- Long-term target: 1 record/s.
+- Log record: fixed 32-byte binary record with CRC8.
+- 1 Hz storage requirement: 2,764,800 bytes/day, so 32 MB comfortably covers 5 days plus event reserve.
+- Event target: 10 s pre-trigger + 30 s post-trigger at 50 Hz.
+- Persistent state: two alternating 64-byte FRAM records with CRC32 and wrap-safe sequence numbers; a partially written record is ignored after reboot.
 
 ## Repository layout
 
 - `docs/` architecture, SOC model, diagnostics/logging, hardware and test strategy
-- `hardware/` BOM, pin map and schematic design notes
+- `hardware/` BOM and schematic design notes
 - `include/` firmware configuration
-- `lib/BatteryCore/` platform-independent battery model and alert logic
-- `src/` ESP32-C3 firmware
-- `sim/` deterministic battery scenario simulator
+- `lib/BatteryCore/` platform-independent SOC/alarm logic
+- `lib/BatteryProfiles/` chemistry/runtime profile model
+- `lib/LogCore/` deterministic binary log record format
+- `lib/StateCore/` power-loss-safe persistent state format
+- `src/` ESP32-C3 firmware, diagnostics portal, INA238, TWAI and FRAM drivers
+- `sim/` deterministic desktop simulator
 - `test/` native TDD/unit tests
-- `.github/workflows/` CI for native tests and firmware compilation
+- `.github/workflows/` CI
 
 ## Build
 
@@ -99,4 +130,4 @@ cmake --build build/sim
 
 ## Status
 
-**V1 engineering prototype.** Hardware, firmware and tests are being frozen before PCB routing. See `docs/hardware.md` and the open GitHub issues for remaining implementation/commissioning items.
+**V1 engineering prototype.** The ESP32-C3 firmware now builds with a native TWAI backend and the native TDD/simulator pipeline is active. Logging storage, FRAM power-loss integration, NMEA alarms/time sync and final PCB/BOM are the next integration steps.
