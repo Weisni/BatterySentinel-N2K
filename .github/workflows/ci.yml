@@ -35,3 +35,6 @@ jobs:
 
       - name: Run fault scenario
         run: ./build/sim/batterysentinel_sim faults
+
+      - name: Validate browser simulator JavaScript
+        run: node --check sim/browser/app.js
