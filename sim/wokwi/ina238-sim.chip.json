@@ -1,0 +1,31 @@
+{
+  "name": "BatterySentinel INA238 Simulator",
+  "author": "BatterySentinel N2K",
+  "pins": ["VCC", "GND", "SCL", "SDA"],
+  "controls": [
+    {
+      "id": "voltageV",
+      "label": "Battery Voltage (V)",
+      "type": "range",
+      "min": 8,
+      "max": 16,
+      "step": 0.01
+    },
+    {
+      "id": "currentA",
+      "label": "Battery Current (A, +charge)",
+      "type": "range",
+      "min": -400,
+      "max": 100,
+      "step": 0.5
+    },
+    {
+      "id": "present",
+      "label": "Sensor Present (1=yes)",
+      "type": "range",
+      "min": 0,
+      "max": 1,
+      "step": 1
+    }
+  ]
+}
