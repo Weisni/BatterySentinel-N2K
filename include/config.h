@@ -24,12 +24,14 @@ inline constexpr uint8_t INA238_SYSTEM_ADDRESS = 0x40;
 inline constexpr uint8_t INA238_BOW_ADDRESS    = 0x41;
 
 // Positive current means battery charging, negative current means discharge.
-// Both V1 channels use the same high-side 500 A / 50 mV shunt (100 uOhm).
+// Both V1 channels use a 500 A / 50 mV high-side shunt (100 uOhm).
 // Sense orientation: IN+ = load/charger side, IN- = battery side.
 inline constexpr double SYSTEM_SHUNT_OHM = 0.000100;
 inline constexpr double BOW_SHUNT_OHM    = 0.000100;
 
-inline constexpr double SYSTEM_CAPACITY_AH = 70.0;
+// System battery was originally reported as 70 Ah. GTIN 9005753086036 resolves to
+// Duracell Advanced DA80: 80 Ah (K20), 700 A EN cold-cranking current, flooded Ca/Ca.
+inline constexpr double SYSTEM_CAPACITY_AH = 80.0;
 inline constexpr double BOW_CAPACITY_AH    = 90.0;
 
 // Main loop / communication periods. 50 Hz capture resolves starter and bow-thruster events.
@@ -53,9 +55,13 @@ inline constexpr uint32_t EVENT_PRETRIGGER_MS = 10000;
 inline constexpr uint32_t EVENT_POSTTRIGGER_MS = 30000;
 
 // Default software alert limits. All values are configurable through the local web UI.
-// System starter is expected around 150-225 A; 350 A gives transient headroom while still
-// detecting an abnormal sustained starter current. Bow thruster max operating current ~200 A.
+// Mercury SeaPro 150 starter current is expected around 150-225 A. A 350 A system alarm
+// threshold gives transient headroom while still detecting abnormal sustained current.
 inline constexpr double SYSTEM_MAX_ABS_CURRENT_A = 350.0;
 inline constexpr double BOW_MAX_ABS_CURRENT_A = 250.0;
+
+// Manufacturer datasheet gives system-battery self-discharge at about 3 % per month.
+// This is only used as a small off-time estimate when no charging event is inferred.
+inline constexpr double SYSTEM_SELF_DISCHARGE_PCT_PER_DAY = 0.10;
 
 }  // namespace bs::config
