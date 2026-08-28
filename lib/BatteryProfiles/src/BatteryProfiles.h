@@ -27,6 +27,7 @@ struct BatteryProfile {
     double overVoltageV = 15.00;
     double selfDischargePctPerMonth = 0.0;
     bool socEnabled = false;
+    bool ocvCorrectionEnabled = false;
 };
 
 inline const char* chemistryName(BatteryChemistry chemistry) {
@@ -57,6 +58,7 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.overVoltageV = 15.10;
             p.selfDischargePctPerMonth = 3.0;
             p.socEnabled = capacityAh > 0.0;
+            p.ocvCorrectionEnabled = true;
             break;
         case BatteryChemistry::AGM:
             p.chargeEfficiency = 0.93;
@@ -66,6 +68,7 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.overVoltageV = 15.00;
             p.selfDischargePctPerMonth = 2.0;
             p.socEnabled = capacityAh > 0.0;
+            p.ocvCorrectionEnabled = true;
             break;
         case BatteryChemistry::GEL:
             p.chargeEfficiency = 0.92;
@@ -75,6 +78,7 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.overVoltageV = 14.60;
             p.selfDischargePctPerMonth = 2.0;
             p.socEnabled = capacityAh > 0.0;
+            p.ocvCorrectionEnabled = true;
             break;
         case BatteryChemistry::EFB:
             p.chargeEfficiency = 0.91;
@@ -84,10 +88,11 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.overVoltageV = 15.10;
             p.selfDischargePctPerMonth = 3.0;
             p.socEnabled = capacityAh > 0.0;
+            p.ocvCorrectionEnabled = true;
             break;
         case BatteryChemistry::LiFePO4:
-            // Voltage-based SOC correction is not reliable for LiFePO4; this profile
-            // deliberately enables coulomb counting but requires later model-specific tuning.
+            // Flat OCV curve: V1 explicitly disables voltage-based SOC correction.
+            // Coulomb counting and an explicit full-charge synchronization remain enabled.
             p.chargeEfficiency = 0.99;
             p.fullChargeVoltageV = 14.20;
             p.fullTailCurrentFractionC = 0.05;
@@ -95,13 +100,17 @@ inline BatteryProfile makeProfile(BatteryChemistry chemistry, double capacityAh)
             p.overVoltageV = 14.60;
             p.selfDischargePctPerMonth = 1.0;
             p.socEnabled = capacityAh > 0.0;
+            p.ocvCorrectionEnabled = false;
             break;
         case BatteryChemistry::Custom:
             p.socEnabled = capacityAh > 0.0;
+            // Custom defaults conservatively to no OCV correction until explicitly modeled.
+            p.ocvCorrectionEnabled = false;
             break;
         default:
             p.capacityAh = capacityAh;
             p.socEnabled = false;
+            p.ocvCorrectionEnabled = false;
             break;
     }
     return p;
@@ -111,6 +120,7 @@ inline BatteryConfig toBatteryConfig(const BatteryProfile& p, double maxAbsCurre
     BatteryConfig cfg;
     cfg.capacityAh = p.capacityAh > 0.0 ? p.capacityAh : 100.0;
     cfg.chargeEfficiency = p.chargeEfficiency;
+    cfg.ocvCorrectionEnabled = p.ocvCorrectionEnabled;
     cfg.fullChargeVoltageV = p.fullChargeVoltageV;
     cfg.fullTailCurrentFractionC = p.fullTailCurrentFractionC;
     cfg.lowVoltageIdleV = p.lowVoltageIdleV;
