@@ -27,7 +27,6 @@ void test_one_hour_discharge_integrates_coulombs() {
     BatteryCore bat(cfg);
     bat.reset(100.0, true);
 
-    // 10 A discharge for 1 h, integrated in safe 1 s samples.
     for (int i = 0; i < 3600; ++i) {
         bat.update({12.4, -10.0, true}, 1.0);
     }
@@ -83,8 +82,10 @@ void test_charger_voltage_is_not_used_as_ocv() {
     BatteryCore bat(cfg);
     bat.reset(50.0, false);
 
+    // 13.8 V is clearly charger-influenced and above the OCV eligibility window,
+    // while still below the explicit full-charge synchronization threshold.
     for (int i = 0; i < 20; ++i) {
-        bat.update({14.4, 0.0, true}, 1.0);
+        bat.update({13.8, 0.0, true}, 1.0);
     }
 
     TEST_ASSERT_FALSE(bat.snapshot().socInitialized);
@@ -95,7 +96,6 @@ void test_full_charge_tail_current_synchronizes_to_100_percent() {
     BatteryCore bat(cfg);
     bat.reset(75.0, true);
 
-    // Tail threshold is C/50 = 1.8 A.
     bat.update({14.4, 1.5, true}, 1.0);
     const auto s = bat.update({14.4, 1.5, true}, 1.0);
 
@@ -111,7 +111,6 @@ void test_bow_thruster_normal_sag_does_not_trigger_low_voltage() {
     BatteryCore bat(cfg);
     bat.reset(80.0, true);
 
-    // 180 A thruster pulse with 10.2 V terminal voltage is allowed.
     for (int i = 0; i < 20; ++i) {
         bat.update({10.2, -180.0, true}, 0.1);
     }
@@ -161,7 +160,6 @@ void test_sustained_idle_undervoltage_sets_and_hysteresis_clears_alarm() {
     bat.update({11.4, -1.0, true}, 1.0);
     TEST_ASSERT_TRUE((bat.snapshot().alerts & AlertLowVoltage) != 0);
 
-    // 11.7 V is still below 11.6 + 0.2 hysteresis, so alert remains.
     bat.update({11.7, -1.0, true}, 0.5);
     TEST_ASSERT_TRUE((bat.snapshot().alerts & AlertLowVoltage) != 0);
 
