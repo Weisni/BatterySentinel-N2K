@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]
     paths:
+      - 'diagram.json'
+      - 'wokwi.toml'
       - 'sim/wokwi/chips/ina238.chip.c'
       - 'sim/wokwi/chips/ina238.chip.json'
       - '.github/workflows/wokwi-chip.yml'
@@ -25,6 +27,9 @@ jobs:
         run: |
           wokwi-cli chip compile sim/wokwi/chips/ina238.chip.c \
             -o sim/wokwi/chips/ina238.chip.wasm
+
+      - name: Validate Wokwi circuit
+        run: wokwi-cli lint
 
       - name: Commit generated WASM
         run: |
