@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = '.pio/build/esp32c3/firmware.bin'
+elf = '.pio/build/esp32c3/firmware.elf'
+
+[[chip]]
+name = 'ina238'
+binary = 'sim/wokwi/chips/ina238.chip.wasm'
