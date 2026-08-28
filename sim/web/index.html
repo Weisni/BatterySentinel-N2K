@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BatterySentinel Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>BatterySentinel Lab</h1>
+      <p>Interaktiver System- und NMEA-2000-Simulator</p>
+    </div>
+    <div class="status-pills">
+      <span id="runPill" class="pill ok">RUNNING</span>
+      <span id="ignPill" class="pill ok">IGN ON</span>
+      <span id="sensorPill" class="pill ok">INA238 OK</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="card controls">
+      <h2>Virtuelle Peripherie</h2>
+
+      <label>Systemspannung <output id="voltageOut">12.70 V</output></label>
+      <input id="voltage" type="range" min="8" max="16" step="0.01" value="12.70" />
+
+      <label>Batteriestrom <output id="currentOut">0.0 A</output></label>
+      <input id="current" type="range" min="-400" max="100" step="0.5" value="0" />
+      <small>Negativ = Entladung, positiv = Ladung</small>
+
+      <div class="row">
+        <label class="toggle"><input id="ignition" type="checkbox" checked /> Zündung</label>
+        <label class="toggle"><input id="sensorOk" type="checkbox" checked /> INA238 vorhanden</label>
+      </div>
+
+      <label>Batterietyp</label>
+      <select id="chemistry">
+        <option value="flooded" selected>Flooded Lead Acid</option>
+        <option value="agm">AGM</option>
+        <option value="gel">GEL</option>
+        <option value="efb">EFB</option>
+        <option value="lifepo4">LiFePO4</option>
+        <option value="unknown">Unknown</option>
+      </select>
+
+      <label>Kapazität [Ah]</label>
+      <input id="capacity" type="number" min="1" max="500" step="1" value="80" />
+
+      <label>Simulationsgeschwindigkeit</label>
+      <select id="speed">
+        <option value="1">1× Echtzeit</option>
+        <option value="10">10×</option>
+        <option value="60">60×</option>
+        <option value="600">600×</option>
+      </select>
+
+      <div class="button-grid">
+        <button data-scenario="rest">Ruhe</button>
+        <button data-scenario="crank">Starter 225 A</button>
+        <button data-scenario="load">Last 20 A</button>
+        <button data-scenario="charge">Laden 20 A</button>
+        <button data-scenario="undervolt">Unterspannung</button>
+        <button data-scenario="overvolt">Überspannung</button>
+        <button data-scenario="sensorfail">Sensorfehler</button>
+        <button data-scenario="poweroff">Power Off + 24 h</button>
+      </div>
+    </section>
+
+    <section class="card state">
+      <h2>BatterySentinel Zustand</h2>
+      <div class="metric-grid">
+        <div><span>Spannung</span><strong id="mVoltage">12.70 V</strong></div>
+        <div><span>Strom</span><strong id="mCurrent">0.0 A</strong></div>
+        <div><span>Leistung</span><strong id="mPower">0 W</strong></div>
+        <div><span>SOC</span><strong id="mSoc">100.0 %</strong></div>
+        <div><span>Verbraucht</span><strong id="mConsumed">0.00 Ah</strong></div>
+        <div><span>Restzeit</span><strong id="mRuntime">—</strong></div>
+        <div><span>Confidence</span><strong id="mConfidence">ESTIMATED</strong></div>
+        <div><span>UTC</span><strong id="mUtc">—</strong></div>
+      </div>
+
+      <h3>Alarme</h3>
+      <div id="alerts" class="alerts"><span class="pill ok">NONE</span></div>
+
+      <h3>Interner Zustand</h3>
+      <pre id="internalState"></pre>
+    </section>
+
+    <section class="card nmea">
+      <h2>Virtueller NMEA-2000 Bus</h2>
+      <div class="nmea-controls">
+        <button id="injectTime">RX PGN 129029: UTC injizieren</button>
+        <button id="ackAlert">RX PGN 126984: Alarm quittieren</button>
+        <button id="clearBus">Bus-Log löschen</button>
+      </div>
+      <table>
+        <thead><tr><th>Zeit</th><th>Richtung</th><th>PGN</th><th>Daten</th></tr></thead>
+        <tbody id="busLog"></tbody>
+      </table>
+    </section>
+
+    <section class="card timeline">
+      <div class="timeline-head">
+        <h2>Timeline</h2>
+        <button id="clearTimeline">Zurücksetzen</button>
+      </div>
+      <canvas id="chart" width="1200" height="300"></canvas>
+      <div class="legend"><span>V = Spannung</span><span>I = Strom / 20</span><span>S = SOC / 10</span></div>
+    </section>
+
+    <section class="card events">
+      <h2>Ereignisse</h2>
+      <div id="eventLog"></div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>BatterySentinel Lab MVP</strong> — Systemsimulation für Entwicklung. Elektrische CAN-/ISO1042-Eigenschaften müssen später am realen Bus validiert werden.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
