@@ -25,6 +25,16 @@
       }
     },
     {
+      "type": "wokwi-slide-switch",
+      "id": "ignition",
+      "top": 38.4,
+      "left": -230.4,
+      "attrs": {
+        "value": "1",
+        "bounce": "0"
+      }
+    },
+    {
       "type": "wokwi-led",
       "id": "statusLed",
       "top": -86.4,
@@ -50,7 +60,7 @@
       "top": 115.2,
       "left": -192,
       "attrs": {
-        "channelNames": "SCL,SDA"
+        "channelNames": "SCL,SDA,IGN"
       }
     }
   ],
@@ -59,11 +69,15 @@
     [ "esp:GND.1", "inaSystem:GND", "black", [] ],
     [ "esp:5", "inaSystem:SCL", "orange", [] ],
     [ "esp:4", "inaSystem:SDA", "blue", [] ],
+    [ "esp:GND.1", "ignition:1", "black", [] ],
+    [ "esp:21", "ignition:2", "green", [] ],
+    [ "esp:3V3.1", "ignition:3", "red", [] ],
     [ "esp:10", "statusLed:A", "red", [] ],
     [ "statusLed:C", "statusLedR:1", "black", [] ],
     [ "statusLedR:2", "esp:GND.1", "black", [] ],
     [ "esp:5", "logic:D0", "orange", [] ],
-    [ "esp:4", "logic:D1", "blue", [] ]
+    [ "esp:4", "logic:D1", "blue", [] ],
+    [ "esp:21", "logic:D2", "green", [] ]
   ],
   "serialMonitor": {
     "display": "terminal"
