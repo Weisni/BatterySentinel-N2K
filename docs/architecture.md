@@ -2,129 +2,192 @@
 
 ## System overview
 
-BatterySentinel N2K is one NMEA 2000 node which monitors two electrically independent 12 V AGM battery banks.
+BatterySentinel N2K is one NMEA 2000 node which monitors two independent 12 V battery banks.
 
 ```mermaid
 flowchart LR
-    SA[System AGM 70 Ah] --> SSA[500 A / 50 mV high-side shunt]
+    SA[System battery\nDuracell DA80\n80 Ah / 700 A EN] --> SSA[500 A / 50 mV high-side shunt]
     SSA --> IA[INA238 #0]
+    SSA --> MERC[Mercury SeaPro 150\nstarter 150-225 A expected]
+    SSA --> SYSLOAD[System loads / alternator / charger]
 
-    BB[Bow AGM 90 Ah] --> SSB[500 A / 50 mV high-side shunt]
+    BB[Bow battery\n90 Ah] --> SSB[500 A / 50 mV high-side shunt]
     SSB --> IB[INA238 #1]
+    SSB --> BOWLOAD[Bow thruster / separate charger]
 
-    IA -->|I2C| ESP[ESP32-C3-WROOM-02-H4]
+    IA -->|I2C| ESP[ESP32-C3-WROOM-02-N8]
     IB -->|isolated I2C| ISOI2C[ISO1640]
     ISOI2C --> ESP
 
-    IGN[Ignition +12 V / GND_SYS] --> BUCK5SYS[AP63205 5V_SYS]
-    USB[USB-C VBUS] --> BUCK5SYS
-    BUCK5SYS --> LDO3[AP2112K 3V3_SYS]
-    LDO3 --> ESP
-    LDO3 --> IA
+    IGN[Switched ignition +12 V\nGND_SYS = system battery -] --> PWR[5 V power + hold-up]
+    PWR --> ESP
+    PWR --> IA
+    PWR --> FRAM[I2C FRAM]
+    PWR --> IDCDC[isolated bow supply]
+    IDCDC --> IB
 
-    BUCK5SYS --> IDCDC[RFMM-0505S isolated 5V to 5V]
-    IDCDC --> LDOB[AP2112K 3V3_BOW]
-    LDOB --> IB
+    ESP --> NOR[32 MB SPI NOR\nring logger]
+    ESP --> WIFI[Secured Wi-Fi AP\n5 min boot window\nWeb UI + OTA]
 
     ESP -->|TWAI TX/RX| ISOCAN[ISO1042]
-    N2KPOWER[NMEA NET-S / NET-C] --> BUCK5N2K[AP63205 5V_N2K]
-    BUCK5N2K --> ISOCAN
-    ISOCAN -->|CAN-H / CAN-L| N2K[NMEA 2000 Micro-C]
+    N2KPOWER[NMEA NET-S / NET-C] --> ISOCAN
+    ISOCAN -->|CAN-H / CAN-L| N2K[NMEA 2000]
     N2K --> GARMIN[Garmin GPSMAP 723xsv]
+    GARMIN -->|PGN 129029 UTC / 126984 alert response| ESP
+    ESP -->|127508 / 127506 / alert PGNs| GARMIN
 ```
 
 ## Ground domains
 
-Never join these three grounds on the PCB:
+Only the bow bank needs battery-domain isolation from the system electronics. NMEA remains separately isolated.
 
 ```text
-GND_SYS  : System battery negative, ignition negative, ESP32, INA238 #0
-GND_BOW  : Bow battery negative, INA238 #1, isolated side of ISO1640
-GND_N2K  : NMEA 2000 NET-C, isolated CAN bus side
+GND_SYS  : system battery negative = ignition negative = ESP32 = INA238 #0
+GND_BOW  : bow battery negative = INA238 #1 isolated domain
+GND_N2K  : NMEA 2000 NET-C = ISO1042 bus side
 
-GND_SYS || ISO1640 + RFMM-0505S || GND_BOW
-GND_SYS || ISO1042              || GND_N2K
+GND_SYS || ISO1640 + isolated supply || GND_BOW
+GND_SYS || ISO1042                   || GND_N2K
 ```
 
-The RFMM-0505S provides bow-domain power isolation; ISO1640 provides signal isolation. The NMEA bus side is powered from NET-S/NET-C, so the ISO1042 barrier remains meaningful without another isolated NMEA DC/DC converter.
+There is **no extra isolation between ignition ground and system-battery ground** because they are the same electrical node in the boat.
 
-## High-side current measurement
+## High-side measurement
 
-Both battery banks use identical 500 A / 50 mV shunts (100 micro-ohm):
+High-side is retained for installation robustness, not because the ADC is more accurate there.
 
 ```text
-BATTERY +
+SYSTEM BATTERY +
    |
-[main battery fuse]
+main fuse
    |
-   +------ INA238 IN-  (battery side Kelvin)
+500 A / 50 mV shunt
    |
-[500 A / 50 mV SHUNT]
-   |
-   +------ INA238 IN+  (load/charger side Kelvin)
-   |
-   +------ all loads
-   +------ all chargers
+COMMON POSITIVE NODE
+   |- Mercury starter / engine charging path
+   |- system loads
+   |- external charger
 ```
 
-This orientation gives the firmware convention:
+This avoids placing the shunt into the common negative/engine-ground path. A low-side design would only be valid if absolutely every system negative path were guaranteed to pass through the shunt.
 
-- charge: load/charger side is slightly above battery side -> positive measured current
-- discharge: load/charger side is slightly below battery side -> negative measured current
+Both V1 shunts are 500 A / 50 mV (100 micro-ohm). At the expected 225 A starter current the system shunt drops about 22.5 mV and dissipates about 5.1 W. The 700 A EN CCA figure is a battery capability rating and is not treated as the expected starter operating current.
 
-At 200 A, a 100 micro-ohm shunt drops 20 mV and dissipates 4 W. At 500 A it drops 50 mV and dissipates 25 W. Shunts therefore remain outside the sealed electronics enclosure and receive ventilated insulating covers.
+## Battery instances
 
-Each of the four positive Kelvin leads is individually fused at 100 mA near the shunt because the high-current battery fuse cannot protect a thin sense wire.
+| Battery instance | Meaning | Capacity / chemistry |
+|---:|---|---|
+| 0 | System battery | Duracell Advanced DA80; 80 Ah; flooded lead-acid; 700 A EN |
+| 1 | Bow-thruster battery | 90 Ah; exact chemistry/model still to confirm |
+
+The GTIN supplied for the system battery (`9005753086036`) corresponds to DA80 / 80 Ah. This corrects the earlier 70 Ah assumption.
 
 ## NMEA 2000 model
 
-One physical NMEA source address publishes two logical battery instances:
+V1 publishes:
 
-| Battery instance | Meaning | Capacity |
-|---:|---|---:|
-| 0 | System battery | 70 Ah |
-| 1 | Bow-thruster battery | 90 Ah |
+- PGN 127508 — Battery Status for instances 0 and 1.
+- PGN 127506 — DC Detailed Status / SOC when confidence is sufficient.
+- NMEA alert family 126983 / 126985 / 126987 / 126988 for user-visible warnings.
 
-V1 sends:
+Garmin GPSMAP 7x3 supports the battery/status traffic and receives the NMEA alert PGNs; it transmits alert response PGN 126984. It also supports PGN 129029 GNSS Position Data, which BatterySentinel uses as the preferred UTC source.
 
-- PGN 127508 — Battery Status: voltage, current, battery instance; temperature unavailable.
-- PGN 127506 — DC Detailed Status: SOC and time remaining when available.
+Settings such as capacity and thresholds are exposed through BatterySentinel's own browser UI rather than relying on a Garmin-specific custom configuration screen.
 
-V1 does not pretend to know State of Health or battery temperature. Those fields are sent as NMEA `Not Available`.
+## SOC model and off-time
 
-The device is an unregistered DIY NMEA 2000 node. It uses manufacturer code 2046 as a development placeholder and must not be represented as NMEA-certified.
+The monitor is intentionally powered only with ignition, so charge/discharge while off cannot be integrated directly.
 
-## Power states
+```text
+clean shutdown
+   |
+FRAM: SOC + consumed Ah + shutdown UTC
+   |
+IGN off
+   |  no normal consumers
+   |  possible self-discharge
+   |  possible external charger (unknown Ah)
+   |
+next boot
+   |
+receive network UTC from PGN 129029
+   |
+calculate off duration
+   |
+apply tiny self-discharge estimate
+   |
+check voltage/current
+   |- charger active -> no OCV correction
+   |- true rest       -> slow OCV plausibility correction
+   '- full condition  -> sync SOC to 100 %
+```
 
-The product is intentionally not always-on.
+The DA80 manufacturer sheet gives approximately 3 % self-discharge per month, so the expected natural loss over 2-5 days is only about 0.2-0.5 %. External charging is the larger unknown and is handled by SOC-confidence logic and later resynchronization rather than pretending it was measured.
 
-- `IGN OFF`: main ESP32/system measurement domain off, unless USB is connected for bench/programming.
-- `IGN ON`: firmware and both measurement channels are active.
-- NMEA bus-side ISO1042 supply exists only while NET-S is powered.
-- `USB only`: both logic measurement domains may be powered for bench testing, but no battery bank is galvanically joined by the supply because the RFMM isolation barrier remains present.
+## Sampling and logging
 
-There is no requirement to reach microamp sleep current in V1.
+The acquisition path runs at **50 Hz** to capture starter and bow-thruster transients.
 
-## Direct programming
+```text
+INA238 samples @ 50 Hz
+        |
+        +--> BatteryCore SOC / alarms
+        |
+        +--> RAM pre-trigger ring (10 s)
+        |
+        +--> 1 Hz long-term record --> 32 MB SPI NOR circular log
+        |
+        '--> event trigger --> save 10 s before + 30 s after @ 50 Hz
+```
 
-V1 reserves ESP32-C3 native USB pins:
+Normal long-term target is 2-5 days, while event logs keep high-rate detail around starter, thruster and fault events. CSV export and plots are provided by the local web UI.
 
-- GPIO18 = USB D-
-- GPIO19 = USB D+
+## Startup diagnostics and OTA
 
-The final PCB shall provide USB-C with 5.1 kOhm CC pull-downs, USB ESD protection and diode-OR power injection before the system 5 V buck, so bench programming cannot back-power the boat ignition line.
+On every boot BatterySentinel automatically creates a secured Wi-Fi AP for five minutes.
+
+- If nobody connects in five minutes, Wi-Fi is shut down.
+- If a client connects, diagnostics remain available while connected.
+- After the last client leaves, a short grace period expires and Wi-Fi is shut down.
+- Browser UI exposes live values, raw sensor diagnostics, configuration, logs and OTA update.
+- Use ESP32-C3-WROOM-02-N8 (8 MB) to provide comfortable A/B OTA partition space.
+
+## Power-loss behavior
+
+The switched ignition feed is monitored separately from the hold-up rail.
+
+```text
+IGN disappears
+      |
+GPIO power-loss edge
+      |
+      +--> Wi-Fi off
+      +--> stop new config/OTA activity
+      +--> finalize event/log record
+      +--> checkpoint both battery states + UTC + CRC to FRAM
+      +--> mark clean shutdown
+      '--> wait for hold-up rail to collapse
+```
+
+A 0.22 F class supercap is charged through an inrush-limiting resistor and ORed into the hold-up rail with a diode. The design target is several seconds of electrical margin; the actual critical writes should finish in far less than one second.
 
 ## Data path
 
 ```mermaid
 flowchart TD
     ADC[INA238 samples] --> MEAS[Measurement validation]
-    MEAS --> SOC[BatteryCore SOC estimator]
-    SOC --> ALERT[Threshold + edge-case state machine]
-    SOC --> NVS[Persist SOC to ESP32 NVS]
-    SOC --> NMEA[PGN 127508 / 127506]
-    ALERT --> LED[Local status LED / serial diagnostics]
+    MEAS --> SOC[BatteryCore SOC + confidence]
+    SOC --> ALERT[Threshold / hysteresis / event logic]
+    SOC --> FRAM[Frequent state checkpoints]
+    SOC --> NMEA[127508 / 127506]
+    ALERT --> NMEAALERT[NMEA alert PGNs]
+    MEAS --> LOG[RAM pretrigger + SPI NOR logger]
     NMEA --> MFD[Garmin]
+    MFD --> TIME[PGN 129029 UTC]
+    TIME --> SOC
+    TIME --> LOG
+    WEB[Wi-Fi diagnostics / OTA] --> CFG[Validated configuration]
+    CFG --> SOC
 ```
 
-The same `BatteryCore` source is linked into firmware, native unit tests and the desktop simulator.
+The same `BatteryCore` code remains shared by firmware, native unit tests and the desktop simulator.
