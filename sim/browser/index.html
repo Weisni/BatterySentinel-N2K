@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BatterySentinel Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div>
+    <h1>BatterySentinel Lab</h1>
+    <p>Interaktive System-, Sensor- und NMEA-Simulation</p>
+  </div>
+  <div class="badge" id="simState">RUNNING</div>
+</header>
+
+<main>
+  <section class="panel inputs">
+    <h2>Virtuelle Peripherie</h2>
+    <label>Systemspannung <output id="voltageOut">12.60 V</output>
+      <input id="voltage" type="range" min="8" max="16" step="0.01" value="12.60" />
+    </label>
+    <label>Systemstrom <output id="currentOut">0.0 A</output>
+      <input id="current" type="range" min="-400" max="100" step="0.5" value="0" />
+    </label>
+    <label>Kapazität [Ah]
+      <input id="capacity" type="number" min="1" max="1000" step="1" value="80" />
+    </label>
+    <label>Batterietyp
+      <select id="chemistry">
+        <option value="flooded" selected>Flooded Lead Acid</option>
+        <option value="agm">AGM</option>
+        <option value="gel">GEL</option>
+        <option value="efb">EFB</option>
+        <option value="lifepo4">LiFePO4</option>
+        <option value="unknown">Unknown</option>
+      </select>
+    </label>
+    <div class="switchrow"><span>Zündung</span><button id="ignition" class="toggle on">ON</button></div>
+    <div class="switchrow"><span>INA238</span><button id="sensor" class="toggle on">CONNECTED</button></div>
+    <div class="switchrow"><span>NMEA Bus</span><button id="nmea" class="toggle on">ONLINE</button></div>
+    <div class="switchrow"><span>Externer Lader bei OFF</span><button id="externalCharger" class="toggle">OFF</button></div>
+  </section>
+
+  <section class="panel state">
+    <h2>BatterySentinel State</h2>
+    <div class="metrics">
+      <article><span>Voltage</span><strong id="mVoltage">12.60 V</strong></article>
+      <article><span>Current</span><strong id="mCurrent">0.0 A</strong></article>
+      <article><span>SOC</span><strong id="mSoc">-- %</strong></article>
+      <article><span>Consumed</span><strong id="mAh">-- Ah</strong></article>
+      <article><span>Confidence</span><strong id="mConfidence">UNKNOWN</strong></article>
+      <article><span>Off-Time</span><strong id="mOff">0 s</strong></article>
+    </div>
+    <h3>Alarme</h3>
+    <div id="alarms" class="alarms"><span class="ok">NONE</span></div>
+    <h3>Subsysteme</h3>
+    <table>
+      <tr><td>INA238</td><td id="sIna">OK</td></tr>
+      <tr><td>TWAI/NMEA</td><td id="sNmea">ONLINE</td></tr>
+      <tr><td>Wi-Fi Diagnose</td><td id="sWifi">ACTIVE (05:00)</td></tr>
+      <tr><td>Logger</td><td id="sLogger">ACTIVE</td></tr>
+      <tr><td>FRAM</td><td id="sFram">CHECKPOINT OK</td></tr>
+    </table>
+  </section>
+
+  <section class="panel bus">
+    <h2>Virtueller NMEA 2000 Bus</h2>
+    <div class="busControls">
+      <button id="injectTime">PGN 129029 Zeit injizieren</button>
+      <button id="ackAlert">Alert ACK 126984</button>
+      <button id="clearBus">Konsole löschen</button>
+    </div>
+    <pre id="busConsole"></pre>
+  </section>
+
+  <section class="panel scenarios">
+    <h2>Szenarien</h2>
+    <div class="scenarioButtons">
+      <button data-scenario="rest">Ruhe</button>
+      <button data-scenario="starter">Mercury Start 225 A</button>
+      <button data-scenario="charge">Laden</button>
+      <button data-scenario="lowv">Unterspannung</button>
+      <button data-scenario="overv">Überspannung</button>
+      <button data-scenario="overcurrent">Überstrom</button>
+      <button data-scenario="sensorfail">Sensor getrennt</button>
+      <button data-scenario="poweroff">Zündung AUS 3 Tage</button>
+      <button data-scenario="externalcharge">Extern laden während OFF</button>
+    </div>
+    <h3>Timeline</h3>
+    <canvas id="chart" width="1000" height="270"></canvas>
+  </section>
+
+  <section class="panel events">
+    <h2>Event Log</h2>
+    <pre id="eventLog"></pre>
+  </section>
+</main>
+
+<footer>
+  BatterySentinel N2K · Engineering Simulator V0.1 · keine physikalische CAN-Abnahme
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
