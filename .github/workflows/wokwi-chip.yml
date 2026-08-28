@@ -1,0 +1,39 @@
+name: Build Wokwi INA238 chip
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'sim/wokwi/chips/ina238.chip.c'
+      - 'sim/wokwi/chips/ina238.chip.json'
+      - '.github/workflows/wokwi-chip.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-chip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Wokwi CLI
+        run: curl -L https://wokwi.com/ci/install.sh | sh
+
+      - name: Compile INA238 custom chip
+        run: |
+          wokwi-cli chip compile sim/wokwi/chips/ina238.chip.c \
+            -o sim/wokwi/chips/ina238.chip.wasm
+
+      - name: Commit generated WASM
+        run: |
+          git add sim/wokwi/chips/ina238.chip.wasm
+          if git diff --cached --quiet; then
+            echo "WASM is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build Wokwi INA238 custom chip"
+          git push
