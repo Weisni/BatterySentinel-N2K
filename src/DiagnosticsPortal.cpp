@@ -22,8 +22,10 @@ void DiagnosticsPortal::begin(DeviceSettings& settings,
     char suffix[9];
     snprintf(suffix, sizeof(suffix), "%08lX", static_cast<unsigned long>(mac & 0xFFFFFFFFu));
 
-    ssid_ = "BatterySentinel-" + String(suffix + 4);
-    password_ = "BSN2K-" + String(suffix);
+    ssid_ = "BatterySentinel-";
+    ssid_ += String(suffix + 4);
+    password_ = "BSN2K-";
+    password_ += String(suffix);
 
     WiFi.mode(WIFI_AP);
     WiFi.setSleep(true);
@@ -60,15 +62,11 @@ void DiagnosticsPortal::loop() {
     }
 
     if (!everConnected_) {
-        if (static_cast<uint32_t>(now - startedAtMs_) >= config::DIAG_BOOT_WINDOW_MS) {
-            stop();
-        }
+        if (static_cast<uint32_t>(now - startedAtMs_) >= config::DIAG_BOOT_WINDOW_MS) stop();
         return;
     }
 
-    if (static_cast<uint32_t>(now - lastClientSeenMs_) >= config::DIAG_DISCONNECT_GRACE_MS) {
-        stop();
-    }
+    if (static_cast<uint32_t>(now - lastClientSeenMs_) >= config::DIAG_DISCONNECT_GRACE_MS) stop();
 }
 
 void DiagnosticsPortal::stop() {
@@ -105,29 +103,59 @@ void DiagnosticsPortal::handleRoot() {
     html += F("<h2>Live</h2><table><tr><th>Bank</th><th>Voltage</th><th>Current</th><th>SOC</th><th>Alerts</th></tr>");
 
     auto row = [&](const char* name, const BatterySnapshot& s, bool socAllowed) {
-        html += "<tr><td>" + String(name) + "</td><td>" + String(s.voltageV, 2) + " V</td><td>" + String(s.currentA, 2) + " A</td><td>";
-        html += (socAllowed && s.socInitialized) ? String(s.socPct, 1) + " %" : String("n/a");
-        html += "</td><td>0x" + String(s.alerts, HEX) + "</td></tr>";
+        html += F("<tr><td>");
+        html += name;
+        html += F("</td><td>");
+        html += String(s.voltageV, 2);
+        html += F(" V</td><td>");
+        html += String(s.currentA, 2);
+        html += F(" A</td><td>");
+        if (socAllowed && s.socInitialized) {
+            html += String(s.socPct, 1);
+            html += F(" %");
+        } else {
+            html += F("n/a");
+        }
+        html += F("</td><td>0x");
+        html += String(s.alerts, HEX);
+        html += F("</td></tr>");
     };
+
     row("System", sys, settings_->system.socEnabled);
-    row("Bow", bow, settings_->bow.socEnabled && settings_->bowChannelEnabled);
+    row("Second", bow, settings_->bow.socEnabled && settings_->bowChannelEnabled);
     html += F("</table><p><a href='/api/live'>Live JSON</a></p>");
 
     html += F("<h2>Configuration</h2><form action='/save' method='post'><div class='grid'><section><h3>System battery</h3>");
-    html += F("<label>Type</label><select name='sys_chem'>") + chemistryOptions(settings_->system.chemistry) + F("</select>");
-    html += F("<label>Capacity [Ah]</label><input name='sys_cap' type='number' min='1' max='1000' step='0.1' value='") + String(settings_->system.capacityAh, 1) + F("'>");
-    html += F("<label>Max current alarm [A]</label><input name='sys_imax' type='number' min='1' max='1500' step='1' value='") + String(settings_->systemMaxCurrentA, 0) + F("'>");
-    html += F("<label>Loaded undervoltage [V]</label><input name='sys_uv' type='number' min='6' max='15' step='0.1' value='") + String(settings_->systemLowVoltageLoadedV, 1) + F("'></section>");
+    html += F("<label>Type</label><select name='sys_chem'>");
+    html += chemistryOptions(settings_->system.chemistry);
+    html += F("</select>");
+    html += F("<label>Capacity [Ah]</label><input name='sys_cap' type='number' min='1' max='1000' step='0.1' value='");
+    html += String(settings_->system.capacityAh, 1);
+    html += F("'>");
+    html += F("<label>Max current alarm [A]</label><input name='sys_imax' type='number' min='1' max='1500' step='1' value='");
+    html += String(settings_->systemMaxCurrentA, 0);
+    html += F("'>");
+    html += F("<label>Loaded undervoltage [V]</label><input name='sys_uv' type='number' min='6' max='15' step='0.1' value='");
+    html += String(settings_->systemLowVoltageLoadedV, 1);
+    html += F("'></section>");
 
     html += F("<section><h3>Second battery</h3><label><input style='width:auto' name='bow_enable' type='checkbox' value='1'");
     if (settings_->bowChannelEnabled) html += F(" checked");
-    html += F("> Enable channel</label><br><label>Type</label><select name='bow_chem'>") + chemistryOptions(settings_->bow.chemistry) + F("</select>");
-    html += F("<label>Capacity [Ah]</label><input name='bow_cap' type='number' min='0' max='1000' step='0.1' value='") + String(settings_->bow.capacityAh, 1) + F("'>");
-    html += F("<label>Max current alarm [A]</label><input name='bow_imax' type='number' min='1' max='1500' step='1' value='") + String(settings_->bowMaxCurrentA, 0) + F("'>");
-    html += F("<label>Loaded undervoltage [V]</label><input name='bow_uv' type='number' min='6' max='15' step='0.1' value='") + String(settings_->bowLowVoltageLoadedV, 1) + F("'></section></div>");
+    html += F("> Enable channel</label><br><label>Type</label><select name='bow_chem'>");
+    html += chemistryOptions(settings_->bow.chemistry);
+    html += F("</select>");
+    html += F("<label>Capacity [Ah]</label><input name='bow_cap' type='number' min='0' max='1000' step='0.1' value='");
+    html += String(settings_->bow.capacityAh, 1);
+    html += F("'>");
+    html += F("<label>Max current alarm [A]</label><input name='bow_imax' type='number' min='1' max='1500' step='1' value='");
+    html += String(settings_->bowMaxCurrentA, 0);
+    html += F("'>");
+    html += F("<label>Loaded undervoltage [V]</label><input name='bow_uv' type='number' min='6' max='15' step='0.1' value='");
+    html += String(settings_->bowLowVoltageLoadedV, 1);
+    html += F("'></section></div>");
+
     html += F("<p class='warn'>Changing configuration stores it persistently and restarts the controller. Unknown battery type disables SOC but not voltage/current measurement.</p>");
     html += F("<button type='submit'>Save & restart</button></form>");
-
     html += F("<h2>Firmware OTA</h2><form method='POST' action='/update' enctype='multipart/form-data'>");
     html += F("<input type='file' name='firmware' accept='.bin' required><button type='submit'>Upload firmware</button></form>");
     html += F("<p>Wi-Fi shuts down after 5 minutes if nobody connects. If connected, it remains active until 60 s after the last client disconnects.</p>");
@@ -141,17 +169,27 @@ void DiagnosticsPortal::handleLive() {
     const auto& sys = systemBattery_->snapshot();
     const auto& bow = bowBattery_->snapshot();
 
-    String json = "{\"system\":{";
-    json += "\"voltage\":" + String(sys.voltageV, 3);
-    json += ",\"current\":" + String(sys.currentA, 3);
-    json += ",\"soc\":" + String((settings_->system.socEnabled && sys.socInitialized) ? sys.socPct : -1.0, 2);
-    json += ",\"alerts\":" + String(sys.alerts);
-    json += "},\"bow\":{";
-    json += "\"enabled\":" + String(settings_->bowChannelEnabled ? "true" : "false");
-    json += ",\"voltage\":" + String(bow.voltageV, 3);
-    json += ",\"current\":" + String(bow.currentA, 3);
-    json += ",\"soc\":" + String((settings_->bow.socEnabled && bow.socInitialized) ? bow.socPct : -1.0, 2);
-    json += ",\"alerts\":" + String(bow.alerts) + "}}";
+    String json;
+    json.reserve(300);
+    json += F("{\"system\":{\"voltage\":");
+    json += String(sys.voltageV, 3);
+    json += F(",\"current\":");
+    json += String(sys.currentA, 3);
+    json += F(",\"soc\":");
+    json += String((settings_->system.socEnabled && sys.socInitialized) ? sys.socPct : -1.0, 2);
+    json += F(",\"alerts\":");
+    json += String(sys.alerts);
+    json += F("},\"second\":{\"enabled\":");
+    json += settings_->bowChannelEnabled ? F("true") : F("false");
+    json += F(",\"voltage\":");
+    json += String(bow.voltageV, 3);
+    json += F(",\"current\":");
+    json += String(bow.currentA, 3);
+    json += F(",\"soc\":");
+    json += String((settings_->bow.socEnabled && bow.socInitialized) ? bow.socPct : -1.0, 2);
+    json += F(",\"alerts\":");
+    json += String(bow.alerts);
+    json += F("}}");
     server_.send(200, "application/json", json);
 }
 
@@ -165,19 +203,29 @@ void DiagnosticsPortal::handleSave() {
     const BatteryChemistry bowChem = chemistryFromArg(server_.arg("bow_chem"));
     const double sysCapacity = server_.arg("sys_cap").toDouble();
     const double bowCapacity = server_.arg("bow_cap").toDouble();
+    const double sysImax = server_.arg("sys_imax").toDouble();
+    const double bowImax = server_.arg("bow_imax").toDouble();
+    const double sysUv = server_.arg("sys_uv").toDouble();
+    const double bowUv = server_.arg("bow_uv").toDouble();
 
-    if (sysCapacity <= 0.0 || sysCapacity > 1000.0 || bowCapacity < 0.0 || bowCapacity > 1000.0) {
-        server_.send(400, "text/plain", "Invalid capacity");
+    const bool valid = sysCapacity > 0.0 && sysCapacity <= 1000.0 &&
+                       bowCapacity >= 0.0 && bowCapacity <= 1000.0 &&
+                       sysImax >= 1.0 && sysImax <= 1500.0 &&
+                       bowImax >= 1.0 && bowImax <= 1500.0 &&
+                       sysUv >= 6.0 && sysUv <= 15.0 &&
+                       bowUv >= 6.0 && bowUv <= 15.0;
+    if (!valid) {
+        server_.send(400, "text/plain", "Invalid configuration value");
         return;
     }
 
     settings_->system = makeProfile(sysChem, sysCapacity);
     settings_->bow = makeProfile(bowChem, bowCapacity);
     settings_->bowChannelEnabled = server_.hasArg("bow_enable") && server_.arg("bow_enable") == "1";
-    settings_->systemMaxCurrentA = server_.arg("sys_imax").toDouble();
-    settings_->bowMaxCurrentA = server_.arg("bow_imax").toDouble();
-    settings_->systemLowVoltageLoadedV = server_.arg("sys_uv").toDouble();
-    settings_->bowLowVoltageLoadedV = server_.arg("bow_uv").toDouble();
+    settings_->systemMaxCurrentA = sysImax;
+    settings_->bowMaxCurrentA = bowImax;
+    settings_->systemLowVoltageLoadedV = sysUv;
+    settings_->bowLowVoltageLoadedV = bowUv;
 
     if (!store_->save(*settings_)) {
         server_.send(500, "text/plain", "Failed to store configuration");
@@ -202,13 +250,9 @@ void DiagnosticsPortal::handleUpdateUpload() {
     HTTPUpload& upload = server_.upload();
     if (upload.status == UPLOAD_FILE_START) {
         Serial.printf("OTA start: %s\n", upload.filename.c_str());
-        if (!Update.begin(UPDATE_SIZE_UNKNOWN, U_FLASH)) {
-            Update.printError(Serial);
-        }
+        if (!Update.begin(UPDATE_SIZE_UNKNOWN, U_FLASH)) Update.printError(Serial);
     } else if (upload.status == UPLOAD_FILE_WRITE) {
-        if (Update.write(upload.buf, upload.currentSize) != upload.currentSize) {
-            Update.printError(Serial);
-        }
+        if (Update.write(upload.buf, upload.currentSize) != upload.currentSize) Update.printError(Serial);
     } else if (upload.status == UPLOAD_FILE_END) {
         if (!Update.end(true)) Update.printError(Serial);
         else Serial.printf("OTA success: %u bytes\n", upload.totalSize);
@@ -233,9 +277,13 @@ String DiagnosticsPortal::chemistryOptions(BatteryChemistry selected) {
     for (uint8_t raw = static_cast<uint8_t>(BatteryChemistry::Unknown);
          raw <= static_cast<uint8_t>(BatteryChemistry::Custom); ++raw) {
         const auto chemistry = static_cast<BatteryChemistry>(raw);
-        out += "<option value='" + String(raw) + "'";
-        if (chemistry == selected) out += " selected";
-        out += ">" + htmlEscape(chemistryName(chemistry)) + "</option>";
+        out += F("<option value='");
+        out += String(raw);
+        out += F("'");
+        if (chemistry == selected) out += F(" selected");
+        out += F(">");
+        out += htmlEscape(chemistryName(chemistry));
+        out += F("</option>");
     }
     return out;
 }
