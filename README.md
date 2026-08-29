@@ -109,8 +109,10 @@ Portal functions currently include live system data, battery type/capacity, alar
 - `lib/StateCore/` power-loss-safe persistent state format
 - `src/` ESP32-C3 firmware, diagnostics portal, INA238, TWAI and FRAM drivers
 - `sim/` deterministic desktop simulator
+- `sim/web/` public browser simulator deployed with GitHub Pages
+- `sim/wokwi/` Wokwi custom-chip source and documentation
 - `test/` native TDD/unit tests
-- `.github/workflows/` CI
+- `.github/workflows/` CI and simulator deployment
 
 ## Build
 
@@ -119,7 +121,7 @@ pio test -e native
 pio run -e esp32c3
 ```
 
-Simulator:
+Desktop simulator:
 
 ```bash
 cmake -S sim -B build/sim
@@ -127,6 +129,74 @@ cmake --build build/sim
 ./build/sim/batterysentinel_sim
 ./build/sim/batterysentinel_sim faults
 ```
+
+## Simulation
+
+There are two complementary interactive simulation paths.
+
+### GitHub Pages browser simulator
+
+Public simulator:
+
+**https://weisni.github.io/BatterySentinel-N2K/**
+
+No installation is required. Open the page in a current browser and use the controls to change battery voltage, current and simulated fault states. The page is intended for fast functional testing and demonstrations of the BatterySentinel state/alarm behavior without local development tools.
+
+The simulator source is in `sim/web/`. Changes to that directory on `main` are deployed automatically by `.github/workflows/simulator-pages.yml`.
+
+### Wokwi ESP32-C3 simulation
+
+Wokwi runs the **real ESP32-C3 firmware** against a simulated INA238 instead of reimplementing the firmware logic in JavaScript.
+
+Prerequisites:
+
+1. VS Code
+2. PlatformIO extension
+3. Wokwi extension for VS Code
+
+Start the simulation from the repository root:
+
+```bash
+pio run -e esp32c3
+```
+
+Then:
+
+1. Open `diagram.json` in VS Code.
+2. Run **Wokwi: Start Simulator** from the command palette.
+3. Watch the USB Serial/JTAG terminal for firmware output.
+4. Select the simulated INA238 in the diagram to modify its attributes.
+
+Simulated hardware:
+
+- ESP32-C3 DevKitM-1 with 8 MB flash
+- INA238 at I2C address `0x40`
+- SDA GPIO4 / SCL GPIO5
+- status/alarm LED GPIO10
+- ignition switch on GPIO21 (`TX` pin alias in the Wokwi DevKitM-1 model)
+- logic analyzer for SCL, SDA and IGN
+
+INA238 attributes:
+
+- `busVoltage`: simulated battery voltage
+- `currentA`: simulated battery current; positive = charging, negative = discharge
+- `sensorPresent`: `1` = sensor present, `0` = simulated sensor fault
+
+Useful test cases:
+
+| Scenario | Voltage | Current / setting |
+| --- | ---: | ---: |
+| Resting battery | 12.7 V | 0 A |
+| Mercury engine crank | 9.5–11 V | -150…-225 A |
+| Alternator charging | 14.2–14.7 V | positive current |
+| Low-voltage under load | e.g. 10.5 V | negative current |
+| INA238 failure | any | `sensorPresent=0` |
+
+The precompiled INA238 custom-chip WASM is stored at `sim/wokwi/chips/ina238.chip.wasm`. Its source is rebuilt and the Wokwi circuit is lint-validated automatically by `.github/workflows/wokwi-chip.yml`.
+
+Wokwi only partially simulates ESP32-C3 TWAI. Therefore the Wokwi setup validates firmware execution, INA238/I2C behavior, state handling, diagnostics/Wi-Fi startup and GPIO behavior. Final NMEA 2000 electrical and bus acceptance still requires a real CAN transceiver and NMEA 2000 network/test fixture.
+
+More Wokwi-specific details are available in `sim/wokwi/README.md`.
 
 ## Status
 
