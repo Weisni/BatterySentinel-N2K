@@ -1,0 +1,27 @@
+Reference,Quantity,Manufacturer,Manufacturer part,Description,Approx unit EUR,Extended EUR,Order URL,Notes
+MCU1,1,Generic,ESP32-C3 SuperMini 4MB,ESP32-C3 SuperMini USB-C module,6.90,6.90,https://shop.blinkyparts.com/de/ESP32-C3-SuperMini-Kompaktes-WiFi-Bluetooth-5.0-Modul-mit-USB-C/blink23158,Verify GPIO6 GPIO7 and 4MB flash
+U1,1,Texas Instruments,ISO1042DWVR,Galvanically isolated CAN transceiver wide SOIC-8,5.48,5.48,https://www.mouser.de/de/ProductDetail/Texas-Instruments/ISO1042DWV?qs=qSfuJ%252Bfl%2Fd6fIgLDsh3Gaw%3D%3D,VCC1 3.3V VCC2 5V
+U2,1,RECOM,R3M-2405S/SMD,3W 9-36V to isolated regulated 5V 600mA,21.80,21.80,https://www.mouser.de/ProductDetail/RECOM-Power/R3M-2405S-SMD?qs=Y0Uzf4wQF3mS4GIsVxMAhQ%3D%3D,Industrial ITE module not marine certified
+U3,1,Texas Instruments,LM2936M-5.0/NOPB,Low-Iq 5V LDO for bus side transceiver supply,2.24,2.24,https://www.mouser.de/de/ProductDetail/Texas-Instruments/LM2936M-5.0-NOPB?qs=X1J7HmVL2ZEDOmZYs3zrWw%3D%3D,Observe output capacitor ESR requirement
+Q1,1,Diodes Incorporated,DMP6023LE-13,-60V P-channel MOSFET reverse-polarity protection,1.40,1.40,https://www.digikey.de/de/products/detail/diodes-incorporated/DMP6023LE-13/5080330,Confirm S D orientation against footprint
+F1,1,Littelfuse,1812L050/30PR,0.5A hold 30V PPTC,0.89,0.89,https://www.mouser.de/ProductDetail/Littelfuse/1812L050-30PR?qs=fp%2Fo%2FcJ74om2njanDLCOLA%3D%3D,Place at NET-S connector entry
+D1,1,Taiwan Semiconductor,SMBJ20A,600W 20V standoff unidirectional supply TVS,0.33,0.33,https://www.mouser.de/ProductDetail/Taiwan-Semiconductor/SMBJ20A?qs=tHU%2FlV7kTySE5VtVjpxJkw%3D%3D,Cathode to protected BUS_12V
+D2,1,Vishay,SS36-E3/57T,3A 60V Schottky for USB power ORing,0.82,0.82,https://eu.mouser.com/ProductDetail/Vishay-Semiconductors/SS36-E3-57T?qs=x2jpVgRnAtNdHfPfldPWaQ%3D%3D,Smaller equivalent acceptable
+L1,1,TDK,ACT45B-510-2P-TL003,51uH two-channel CAN common-mode choke,1.32,1.32,https://www.mouser.de/ProductDetail/TDK/ACT45B-510-2P-TL003?qs=U1cgCdF9Le9LCroNYLqljw%3D%3D,Place before connector-side TVS
+D3,1,Nexperia,PESD2CAN24T-QR,Two-line 24V CAN ESD protection,0.60,0.60,https://www.mouser.de/de/ProductDetail/Nexperia/PESD2CAN24T-QR?qs=mELouGlnn3fH5Bc5JzfhVg%3D%3D,ESD2CAN24-Q1 acceptable alternative
+J1,1,NMEA 2000,61045,Certified male Micro-C field connector IP67,31.95,31.95,https://www.svb.de/de/nmea2000-nmea2000-stecker-maennlich-micro-c.html,Use NMEA cable and strain relief
+R_TX,1,Generic,33R 1%,TXD series resistor 0603 or 0805,0.05,0.05,,Optional EMI tuning
+R_RX,1,Generic,33R 1%,RXD series resistor 0603 or 0805,0.05,0.05,,Optional EMI tuning
+R_G,1,Generic,100K,PMOS gate pull-down,0.05,0.05,,BUS domain
+DZ_G,1,Generic,12V Zener,PMOS gate-source protection,0.15,0.15,,BUS domain
+C_VCC1,1,Generic,100nF X7R 16V,ISO1042 logic bypass,0.05,0.05,,Place at U1 pins 1 and 4
+C_VCC2,1,Generic,100nF X7R 16V,ISO1042 bus bypass,0.05,0.05,,Place at U1 pins 8 and 5
+C_IN1,1,Generic,47uF 50V,Input bulk capacitor,0.50,0.50,,Place after F1 Q1
+C_IN2,1,Generic,100nF X7R 50V,Input high-frequency bypass,0.10,0.10,,BUS domain
+C_5VBUS,1,Generic,10uF,LM2936 output capacitor,0.30,0.30,,Select ESR per LM2936 data sheet
+C_ISO1,1,Generic,47uF 10V,Isolated 5V output bulk,0.20,0.20,,LOGIC domain
+C_ISO2,1,Generic,100nF X7R 16V,Isolated 5V high-frequency bypass,0.05,0.05,,LOGIC domain
+MISC,1,Generic,Headers terminals and assembly consumables,SuperMini headers test pads and small hardware,1.95,1.95,,Allowance to align the one-off passive hardware estimate
+RTERM,0,Generic,120R 1%,Optional bench-only CAN termination,0.10,0.00,,DNP for NMEA 2000 drop node
+PCB,1,Prototype,2-layer carrier PCB,Carrier with isolation keepout,8.00,8.00,,Estimate
+ENC1,1,Generic,IP65 or IP67 enclosure,Plastic enclosure and cable gland,10.00,10.00,,Estimate and not included in certification

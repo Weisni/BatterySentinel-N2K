@@ -213,3 +213,11 @@ The default PlatformIO environment is now `orion_dongle` for the SuperMini. Sele
 The dongle portal defaults to German. Use the language selector on any page to switch to English; the browser remembers your choice. Run `node tools/verify_portal_ui.mjs` to check translation coverage and portal behavior without device hardware.
 
 The living [Orion XS bridge investigation](docs/orion-xs-bridge.md) records verified interfaces, Garmin display limits, credential provisioning, VE.Direct/GX alternatives, the proposed architecture, and open implementation gates.
+
+The isolated ESP32-C3 SuperMini to NMEA 2000 reference hardware is documented as:
+
+- [design notes, wiring, power/LEN calculation and order links](hardware/orion-dongle-nmea2000.md)
+- [printable schematic (SVG)](hardware/orion-dongle-nmea2000-schematic.svg) and [rendered preview (PNG)](hardware/orion-dongle-nmea2000-schematic.png)
+- [machine-readable prototype BOM (CSV)](hardware/orion-dongle-bom.csv)
+
+This is a prototype carrier design, not a certified NMEA 2000 product.
