@@ -201,3 +201,15 @@ More Wokwi-specific details are available in `sim/wokwi/README.md`.
 ## Status
 
 **V1 engineering prototype.** The ESP32-C3 firmware now builds with a native TWAI backend and the native TDD/simulator pipeline is active. Logging storage, FRAM power-loss integration, NMEA alarms/time sync and final PCB/BOM are the next integration steps.
+
+### Orion XS bridge investigation
+
+![Battery Sentinel Orion Bridge logo](assets/battery-sentinel-orion-logo.svg)
+
+The separate `orion_dongle` build receives Victron Orion XS 1400 Bluetooth Instant Readout and translates it to NMEA 2000 for the Garmin GPSMAP 723xsv, with phone-based HTTPS commissioning, a local administrator account, a guided first-installation flow and live diagnostics. It has no BatterySentinel alarms or SOC estimation. Build with `pio run -e orion_dongle`. The firmware fits a 4 MB ESP32-C3 SuperMini partition layout, but actual Orion/Garmin interoperability and the isolated NMEA 2000 hardware still require physical testing.
+
+The default PlatformIO environment is now `orion_dongle` for the SuperMini. Select `esp32c3` explicitly to build the original 8 MB battery-monitor firmware; `native` runs host tests.
+
+The dongle portal defaults to German. Use the language selector on any page to switch to English; the browser remembers your choice. Run `node tools/verify_portal_ui.mjs` to check translation coverage and portal behavior without device hardware.
+
+The living [Orion XS bridge investigation](docs/orion-xs-bridge.md) records verified interfaces, Garmin display limits, credential provisioning, VE.Direct/GX alternatives, the proposed architecture, and open implementation gates.

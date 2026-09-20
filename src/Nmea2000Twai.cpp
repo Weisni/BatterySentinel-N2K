@@ -1,4 +1,7 @@
 #include "Nmea2000Twai.h"
+#ifdef BATTERYSENTINEL_ORION_DONGLE
+#include <HWCDC.h>
+#endif
 
 #include <cstring>
 
