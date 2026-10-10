@@ -2,7 +2,7 @@
   "target": "orion-debug-oled",
   "version": "1.2.0-debug.1",
   "otaSlotBytes": 1966080,
-  "applicationBytes": 1939552,
+  "applicationBytes": 1938480,
   "nvsPreservedByUsbLayout": true,
   "flashOffsets": {
     "orion-debug-oled-1.2.0-debug.1.bin": "0x10000",
@@ -15,8 +15,8 @@
   },
   "files": {
     "orion-debug-oled-1.2.0-debug.1.bin": {
-      "bytes": 1939552,
-      "sha256": "1604fae4611bbeb1f42bd1968f66c32e91ad77b20161d03b9f580bf6a1eedad2"
+      "bytes": 1938480,
+      "sha256": "223ad92dec91bda229cda283e2124fa192ea267e115182f015f8ce791a0ca32a"
     },
     "bootloader.bin": {
       "bytes": 13248,
@@ -32,7 +32,7 @@
     },
     "README.md": {
       "bytes": 2264,
-      "sha256": "51e359013b633a0dff1b7bac13dc8e1cbc0baffcc905209c889b4d2f42f49d0d"
+      "sha256": "997442309feb8d2206faa741b0836d6241f7d936cfb95d889c606c4591fda58e"
     },
     "debug-guide.md": {
       "bytes": 13613,
@@ -66,7 +66,7 @@
     "lib/BridgeInsights/src/BridgeNotificationStore.h": "c51a27772ac2468d4adf12374508fc08a59e1b6d6f077c563d18ab0da2119a29",
     "lib/BridgeNmeaAlerts/src/BridgeNmeaAlerts.h": "87204c288a3f10e28c43fc4624f6c0f000259ce62d07badf833b87e38d387165",
     "lib/BridgeTime/src/BridgeTime.h": "1aded07e481b3c55e7862ba98aff3c6f0dee59baa439bc4ef00c2099fdc96695",
-    "lib/DebugDisplay/src/DebugDisplayModel.h": "70419c198c80e24c36f0ec3d344d43d0ceaa3161ea3b72d9e69c5699ea0d7841",
+    "lib/DebugDisplay/src/DebugDisplayModel.h": "d325860b7cb9152c78f1a43744dc50ba9841f64480cacade62a768aeef398eda",
     "lib/FirmwareOta/src/FirmwareOta.h": "948cd9439cf5577bba45d7a0fecdc2cd97f91b67bfc60364b99868e34912b49d",
     "lib/LogCore/src/LogCore.h": "93efe337fc0672822b85b1b1e1d5086dcdeb4477ee0f33e714aa00b6861c0caa",
     "lib/OrionBridge/src/OrionAliases.h": "68313ef3ef004c4dfa4eee540641ef31e68c4c16c341c1b48fa2bc31372b24a4",
@@ -75,7 +75,7 @@
     "lib/SensorMath/src/Ina238Math.h": "f38acbf302cf71bfecd1d8c60ca0583bea52ffb2a65b7048f15ab51c25252ea5",
     "lib/StateCore/src/StateCore.h": "8acefc6508a019438dc339e0c4f5c07aa209d74b95be7eca98320c5c28395961",
     "partitions_4mb_ota.csv": "2ac9e1bb8078a1929282502645ee745be2b596db23c2ae5b48bf49caf94b2041",
-    "platformio.ini": "ab7b2c830639c7362a6a61f73daddf17285d4f8b50f4a579b18eb349b63d6fbd",
+    "platformio.ini": "937863bfda210ce3667a8f46b69fbd03fa99fd1e564760734568e323e671e481",
     "src/BridgeDebugDisplay.cpp": "23c622ce957441b738fd719041cd74f2ef8af26e071b49dae4b3eb0db66bfa62",
     "src/BridgeDebugDisplay.h": "720d36d242e873a15009e666d929e5e23ba41ffe8dd3215ac9484523d418018c",
     "src/BridgeDiagnostics.cpp": "7706f6ff797667c1ecc443e314ba604e5ae4e8232b04b355269b5bd4d0a6a32c",

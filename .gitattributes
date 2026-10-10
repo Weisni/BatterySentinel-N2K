@@ -12,3 +12,6 @@
 /WORKING_GUIDELINES.md -text
 /platformio.ini -text
 /partitions*.csv -text
+
+# ReportLab PDFs may contain only ASCII in the first buffer; treat them as binary.
+*.pdf binary

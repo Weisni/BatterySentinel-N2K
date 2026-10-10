@@ -1,5 +1,9 @@
 # Orion Bridge 1.2.0
 
+This directory retains the earlier local build snapshot and its own checksum.
+Use the [official GitHub release](https://github.com/Weisni/BatterySentinel-N2K/releases/tag/v1.2.0)
+for published downloads; its CI-built assets have their own manifest/checksums.
+
 Application firmware for the Orion Bridge with ESP32-C3 SuperMini on the Orion-R5 board: [Download orion-dongle-1.2.0.bin](orion-dongle-1.2.0.bin).
 
 Save this file on your phone, then install it through **Settings → Firmware update** while keeping device power stable. The portal target must be `orion-dongle`. Follow the [update instructions](../../../docs/firmware-update.md).

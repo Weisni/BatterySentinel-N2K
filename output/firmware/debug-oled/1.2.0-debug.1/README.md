@@ -1,7 +1,7 @@
 # Orion OLED debug firmware 1.2.0-debug.1
 
 For the requested Meshnology ESP32-C3 OLED debug board, Amazon B0FP81HMYB.
-Target: `orion-debug-oled`. Application: 1,939,552 bytes; 26,528 bytes remain in each OTA slot.
+Target: `orion-debug-oled`. Application: 1,938,480 bytes; 27,600 bytes remain in each OTA slot.
 
 ## Wiring and first installation
 

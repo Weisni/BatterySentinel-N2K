@@ -147,13 +147,15 @@ namespace bs::debugdisplay
         // digits, wrapping or silently dropping their unit to fit a 12-cell row.
         struct Number
         {
-            char text[8]{};
+            // Full uint32 decimal range, optional saturation marker and NUL.
+            char text[12]{};
         };
         static Number count(uint64_t value, uint32_t maximum)
         {
             Number result;
+            const uint32_t capped = value > maximum ? maximum : static_cast<uint32_t>(value);
             std::snprintf(result.text, sizeof(result.text), "%lu%s",
-                          static_cast<unsigned long>(value > maximum ? maximum : value), value > maximum ? "+" : "");
+                          static_cast<unsigned long>(capped), value > maximum ? "+" : "");
             return result;
         }
         static Number code(uint8_t value, bool fresh)
@@ -169,7 +171,10 @@ namespace bs::debugdisplay
         template <size_t N, typename... Args>
         static void line(char (&out)[N], const char *format, Args... args)
         {
-            std::snprintf(out, N, format, args...);
+            if constexpr (sizeof...(Args) == 0)
+                std::snprintf(out, N, "%s", format);
+            else
+                std::snprintf(out, N, format, args...);
         }
         static void channel(const Channel &c, const char *name, bool fresh, Frame &frame)
         {

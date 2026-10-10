@@ -7,12 +7,16 @@ needed while you are connected to the bridge.
 
 ## Download the firmware
 
-Save [Orion Bridge 1.2.0](../output/firmware/1.2.0/orion-dongle-1.2.0.bin) in your
+Save [official Orion Bridge 1.2.0](https://github.com/Weisni/BatterySentinel-N2K/releases/download/v1.2.0/orion-dongle-1.2.0.bin) in your
 phone's Files or Downloads folder before joining the bridge Wi-Fi.
 
 - Filename: `orion-dongle-1.2.0.bin`
 - Portal device target: `orion-dongle`
-- SHA-256: `8f14e3480ce6b0f8768657601d1f04fda5600d0f1214d4cf547e867e3599e979` ([checksum file](../output/firmware/1.2.0/SHA256SUMS.txt)).
+- Verify against the official [checksum file](https://github.com/Weisni/BatterySentinel-N2K/releases/download/v1.2.0/SHA256SUMS.txt). The release manifest identifies its exact source commit and validated build.
+
+[Official releases and release candidates](release-channels.md) use separate
+publication channels. The repository's older local build snapshots are not the
+authoritative official downloads.
 
 Use the application `.bin` file directly. Do not upload a ZIP archive, bootloader,
 partition table or complete flash backup. Obtain the file from a trusted release
@@ -79,7 +83,7 @@ The portal adds observed channel voltage history/trends, covered Orion Ah/Wh, co
 ## Release verification
 
 Final 1.2.0 build, image/package checks and their results are recorded in the
-[release details](../output/firmware/1.2.0/README.md). Physical acceptance of this
+[official release details](https://github.com/Weisni/BatterySentinel-N2K/releases/tag/v1.2.0). Physical acceptance of this
 release remains outstanding. Phone/browser
 coverage, power interruption during installation, and operation with the Orion,
 NMEA network and Garmin must be verified on the assembled device.

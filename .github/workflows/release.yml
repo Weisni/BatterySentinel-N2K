@@ -1,0 +1,80 @@
+name: Orion release channels
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Existing tag: vX.Y.Z (official) or vX.Y.Z-rc.N (candidate)'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: orion-release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  identify:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.identity.outputs.tag }}
+      commit: ${{ steps.identity.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: identity
+        name: Validate tag, source version and main ancestry
+        env:
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          python - <<'PY'
+          import os, re, subprocess, sys
+          sys.path.insert(0, 'tools')
+          from package_release import release_identity
+          tag = os.environ['RELEASE_TAG']
+          if not tag.startswith('v') or release_identity(tag[1:])[0] != tag:
+              raise SystemExit('Unsupported release tag')
+          commit = subprocess.check_output(['git', 'rev-parse', '--verify', 'refs/tags/' + tag + '^{commit}'], text=True).strip()
+          subprocess.run(['git', 'merge-base', '--is-ancestor', commit, 'origin/main'], check=True)
+          source = subprocess.check_output(['git', 'show', commit + ':src/BridgeFirmwareIdentity.h'], text=True)
+          version = re.search(r'#else\s*#define ORION_FIRMWARE_VERSION "([^"]+)"', source).group(1)
+          if version != tag[1:]:
+              raise SystemExit('Tag and standard firmware version differ')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+              output.write('tag=' + tag + '\ncommit=' + commit + '\n')
+          PY
+
+  validate:
+    needs: identify
+    uses: ./.github/workflows/ci.yml
+    with:
+      source_commit: ${{ needs.identify.outputs.commit }}
+
+  publish:
+    needs: [identify, validate]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.identify.outputs.commit }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: orion-release-${{ needs.identify.outputs.commit }}
+          path: build/release
+      - name: Verify uploaded draft, then publish the selected channel
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_REPOSITORY: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.identify.outputs.tag }}
+          SOURCE_COMMIT: ${{ needs.identify.outputs.commit }}
+        run: python tools/publish_release.py --package build/release --repo "$RELEASE_REPOSITORY" --tag "$RELEASE_TAG" --commit "$SOURCE_COMMIT"

@@ -28,7 +28,7 @@
     "lib/BridgeNmeaAlerts/src/BridgeNmeaAlerts.h": "87204c288a3f10e28c43fc4624f6c0f000259ce62d07badf833b87e38d387165",
     "docs/diagnostics-logging.md": "80137a485e6cac9a7e89ed4c9bce9abc3c11cdb596f2dfabb9ccf19a36f3c5b6",
     "docs/orion-xs-bridge.md": "f0d4c1f3ac9db6c3b5dc1730b63bf71e8c9954caa9a6b529bcc38c95d89a828a",
-    "docs/firmware-update.md": "7eb62591749cd7d560891bdfb93120fbe9eb8d11a30020b1ee1ecd985768c583",
+    "docs/firmware-update.md": "b808e6cf37763cc1a4d2900cddd65d40a72761afef8e6bafe14426ba27bbd713",
     "tools/build_german_manual.py": "43868278b1d54171c2ce7183bed7443105ff94969a5c8f2734a9a0ad1fe047d0",
     "tools/check_german_manual.py": "54b26a8c5d71341207b383bb6c57ef1b910641e615bed74bbd9c658f0b856694",
     "tools/capture_manual_portal.cjs": "4eb2d331529920342c05f0083cc71c873dad8ae6113f05c4c263d3c5e03e6fcd",

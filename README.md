@@ -8,7 +8,7 @@ The Orion Bridge receives the charger's Bluetooth Instant Readout and forwards i
 
 - [First connection — German, available before joining the bridge Wi-Fi](docs/erstverbindung.md).
 - [German operating and installation manual](output/pdf/BatterySentinel-N2K-Orion-R5-Betriebs-und-Installationsanleitung-DE.pdf).
-- [Orion Bridge firmware 1.2.0](output/firmware/1.2.0/orion-dongle-1.2.0.bin), [download details](output/firmware/1.2.0/README.md) and [update instructions](docs/firmware-update.md).
+- [Official Orion Bridge 1.2.0](https://github.com/Weisni/BatterySentinel-N2K/releases/tag/v1.2.0), [latest official release](https://github.com/Weisni/BatterySentinel-N2K/releases/latest), [release channels](docs/release-channels.md) and [update instructions](docs/firmware-update.md).
 - [Current hardware and assembly](hardware/altium-r5/README.md).
 - [PCB hand-assembly data: BOM, placement, orientation and checklists](hardware/altium-r5/Project%20Outputs/Hand%20Assembly/README.md).
 - [Illustrated enclosure assembly manual — English](output/pdf/Orion-R5-Enclosure-Assembly-Manual-EN.pdf).
@@ -53,6 +53,9 @@ The 52 × 36 mm board has independent retention. Screw-fastened service covers, 
 
 Status updated on 2026-10-10:
 
+- [x] Add [official and release-candidate channels](docs/release-channels.md), gated by the complete CI and verified draft assets. Pinned release dependencies match the validated local platform. Fixed Linux OLED format warnings without changing the display cadence or standard Wi-Fi settings.
+- [ ] Publish the first official `v1.2.0` release after the matching CI passes, then verify public assets and Latest status.
+
 - [x] First Orion-R5 assembled; USB, Wi-Fi and portal setup work, reported by the user on 2026-10-10. Boat-side power/CAN/thermal acceptance is still open.
 - [x] German manual edition 1.5 adds QR handover, bench checks and fault consequences. A device-specific generator creates private access pages without firmware changes.
 - [ ] Complete [the release-bound Orion-R5 bench and boat commissioning checklist](docs/orion-r5-commissioning.md). Several kiloohms measured on the unpowered standalone board do not establish safe network operation.
@@ -80,7 +83,7 @@ Status updated on 2026-10-10:
 - [ ] Reconcile the configured NMEA load declaration with measured hardware consumption before release.
 - [ ] Verify suitable voltage thresholds, actual power availability, covered Ah/Wh against recorded Orion samples, time-source changes, warning clearing/acknowledgment and experimental Garmin presentation on the installed hardware.
 
-Firmware 1.2.0 is available for installation. The SuperMini application occupies 1,902,064 bytes of its 1,966,080-byte slot (64,016 bytes remain). This work does not install firmware on the device. Ordering and successful software checks do not complete physical acceptance.
+Official downloads include the application image, segmented USB package, manual, release notes, checksums and a manifest identifying the exact validated source commit. Application images must fit the 1,966,080-byte OTA slot. Publication does not install firmware on the device; ordering and successful software checks do not complete physical acceptance.
 
 ## Recorded procurement costs
 

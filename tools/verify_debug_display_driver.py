@@ -19,6 +19,7 @@ def main():
     with tempfile.TemporaryDirectory(prefix="debug-display-driver-", dir=output) as folder:
         executable = Path(folder) / ("driver.exe" if os.name == "nt" else "driver")
         subprocess.run([os.environ.get("CXX", "g++"), "-std=c++17", "-Wall", "-Wextra", "-Werror",
+                        "-Wformat-security", "-Wformat-truncation",
                         "-DBATTERYSENTINEL_DEBUG_OLED=1", "-I" + str(FIXTURES),
                         "-I" + str(ROOT / "src"), "-I" + str(ROOT / "include"),
                         "-I" + str(ROOT / "lib/DebugDisplay/src"),
