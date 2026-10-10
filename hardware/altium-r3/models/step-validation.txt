@@ -1,0 +1,1 @@
+{"components": 28, "valid_solids": 153, "assembly": "Orion-Bridge-assembly.step"}

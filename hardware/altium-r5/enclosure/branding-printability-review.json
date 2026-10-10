@@ -1,0 +1,71 @@
+{
+  "contract": "mechanical-contract.json",
+  "font_geometry": "FontTools raw Arial Rounded MT Bold, explicit em units 2048; independent of Altium native cache scaling",
+  "nozzle_diameter_mm": 0.4,
+  "engraving_depth_mm": 0.5,
+  "engraving_floor_note": "Blind deboss from outer surface minus depth to surface; logo pulse is one continuous ink region, separate from continuous shield region.",
+  "text_adjustments": {
+    "em_height_mm": 4.6,
+    "added_letter_spacing_mm": 0.38,
+    "outline_offset_mm": 0.04,
+    "dot_lift_mm": 0.23,
+    "horizontal_condensation": false
+  },
+  "method": "15 um raster; Zhang-Suen thinning and Euclidean distance approximate local medial width with endpoint/branch/pixel artifacts. Minimum inter-region gap is exact planar polygon distance. Opening removes local areas unable to contain the 0.4 mm diameter disk; geometric screening, not a slicing or printed-sample validation.",
+  "geometry": [
+    {
+      "name": "Logo 14 mm nominal canvas",
+      "bounds": [
+        18.892500000000002,
+        16.0988165,
+        31.107499999999998,
+        31.9011835
+      ],
+      "ink_regions": 2,
+      "minimum_sampled_medial_width_mm": 0.7421590126111788,
+      "percentile5_medial_width_mm": 0.8099999999999999,
+      "median_medial_width_mm": 0.84,
+      "minimum_gap_between_disjoint_ink_regions_mm": 1.3449396166545193,
+      "area_removed_by_nozzle_diameter_opening_percent": 0.00031366118821152256,
+      "nominal_stroke_width_mm": 0.84
+    },
+    {
+      "name": "BatterySentinel-N2K",
+      "bounds": [
+        -1.1241992947865875,
+        8.701121989203504,
+        51.124199294786585,
+        13.298878010796496
+      ],
+      "ink_regions": 20,
+      "minimum_sampled_medial_width_mm": 0.34205262752974136,
+      "percentile5_medial_width_mm": 0.4242640687119285,
+      "median_medial_width_mm": 0.6420280367709809,
+      "minimum_gap_between_disjoint_ink_regions_mm": 0.43458389130046665,
+      "area_removed_by_nozzle_diameter_opening_percent": 0.024358827595050148
+    },
+    {
+      "name": "Orion-R5",
+      "bounds": [
+        13.803344984474206,
+        3.055955379240179,
+        36.19665501552579,
+        6.744044620759822
+      ],
+      "ink_regions": 9,
+      "minimum_sampled_medial_width_mm": 0.35114099732158877,
+      "percentile5_medial_width_mm": 0.51,
+      "median_medial_width_mm": 0.6552098900352467,
+      "minimum_gap_between_disjoint_ink_regions_mm": 0.4353360207998033,
+      "area_removed_by_nozzle_diameter_opening_percent": 0.010177674547273696
+    }
+  ],
+  "remaining_validation": "Inspect actual slicer toolpaths and a printed lettering/fit coupon for chosen material and first-layer settings.",
+  "contract_sha256": "bc90f7ef0e4bcdcdc73e25af612a51867429252cdeea5442e89190d1c8f6161d",
+  "cad_blind_engraving_floor": {
+    "z_mm": 21.75,
+    "remaining_lid_thickness_mm": 1.5,
+    "planar_face_count": 31,
+    "area_mm2": 155.4361117537044
+  }
+}

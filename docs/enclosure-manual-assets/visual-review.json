@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-26",
+  "edition": "EN 1.1",
+  "pdf": "output/pdf/Orion-R5-Enclosure-Assembly-Manual-EN.pdf",
+  "pdf_sha256": "d214d0ed871c7a71f399c2c97027264ed02640fc80c653a288e9d526ed8951a1",
+  "render_dpi": 120,
+  "page_count": 11,
+  "result": "passed",
+  "review": "All eleven 120 DPI page renders individually inspected. Current four-plate print instructions, PCB screw guidance, page flow, figures and labels are readable without clipping or overlap. Page 11 was re-rendered and reinspected after its reference wording was shortened.",
+  "pages": [
+    {
+      "page": "page-01.png",
+      "sha256": "3ff688cf377d8f1a6c8c5587bd5a0527d043a047648244846159c076386d1a58",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-02.png",
+      "sha256": "840f39914b1fde472002db992065734dca53528d3313d34107c34a0286225d03",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-03.png",
+      "sha256": "83bf8be6c43cf2a34c91315bf1ce8fb13c35585ed6395c443628f0a0d19b174c",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-04.png",
+      "sha256": "475d68b4010ea24146da4ab19e8924820a9fe27a5468752e3b79daa8f2ec1f71",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-05.png",
+      "sha256": "378b47bc9c2dbf2e9b1d9f8fc4dbd9870fcc0051bb5825cbe5dadc313f3ff408",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-06.png",
+      "sha256": "fe1b649ae0e2f073f5128b2fbed8a0edfb63dec036c9ed7fb2a633c63e07b77a",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-07.png",
+      "sha256": "213df8788427e5e43f0586191fcefe69cd090d177f7426b6a141413f71811fee",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-08.png",
+      "sha256": "fd9859e6f767f45a754bc423245f4e63f90fa4246208f73d0775fb050ba1b183",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-09.png",
+      "sha256": "df1b3149aceaf899f8ada618268b8c85a6b220ddc2109bc00eb5ef024c03cbf6",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-10.png",
+      "sha256": "6ffa51ff39bcc2ba60f97aa6ffaca07d388a7d748ec818f256cb03626ffb3fb2",
+      "visually_reviewed": true
+    },
+    {
+      "page": "page-11.png",
+      "sha256": "a199f24d100061bf2106f7f0a3e28f9d3b015c04838cfb1cc61ad6ae9194df94",
+      "visually_reviewed": true
+    }
+  ],
+  "physical_validation": "Not performed"
+}

@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\Program Files\\QuackSlicer\\quack-slicer.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\Orion-V2-PETG-Coupons.3mf",
+    "--allow-newer-file",
+    "--datadir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\native-validation\\Orion-V2-PETG-Coupons\\data",
+    "--debug",
+    "2",
+    "--curr-bed-type",
+    "Textured PEI Plate",
+    "--slice",
+    "0",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\native-validation\\Orion-V2-PETG-Coupons",
+    "--export-3mf",
+    "verified.3mf",
+    "--load-settings",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\p2s-machine.json;C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\petg-process.json",
+    "--load-filaments",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\petg-body.json"
+  ],
+  "returncode": 0,
+  "seconds": 1.592435359954834,
+  "stdout": "",
+  "stderr": ""
+}

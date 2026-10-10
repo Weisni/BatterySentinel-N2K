@@ -1,0 +1,94 @@
+{
+  "designator": "F1",
+  "footprint": "BOURNS_SF1206S",
+  "units": "mm",
+  "origin": "footprint origin; z=0 at carrier top surface",
+  "model_class": "locally generated approximate package/assembly envelope",
+  "manufacturer_certified": false,
+  "bodies": [
+    {
+      "name": "fuse package envelope",
+      "outline": [
+        [
+          -1.6,
+          -0.825
+        ],
+        [
+          1.6,
+          -0.825
+        ],
+        [
+          1.6,
+          0.825
+        ],
+        [
+          -1.6,
+          0.825
+        ]
+      ],
+      "z0": 0.15,
+      "z1": 0.7,
+      "rgb": [
+        178,
+        159,
+        113
+      ]
+    },
+    {
+      "name": "end cap 1",
+      "outline": [
+        [
+          -1.6,
+          -0.835
+        ],
+        [
+          -1.088,
+          -0.835
+        ],
+        [
+          -1.088,
+          0.835
+        ],
+        [
+          -1.6,
+          0.835
+        ]
+      ],
+      "z0": 0.02,
+      "z1": 0.72,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "end cap 2",
+      "outline": [
+        [
+          1.088,
+          -0.835
+        ],
+        [
+          1.6,
+          -0.835
+        ],
+        [
+          1.6,
+          0.835
+        ],
+        [
+          1.088,
+          0.835
+        ]
+      ],
+      "z0": 0.02,
+      "z1": 0.72,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    }
+  ]
+}

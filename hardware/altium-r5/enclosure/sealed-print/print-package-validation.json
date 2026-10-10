@@ -1,0 +1,1781 @@
+{
+  "parts": [
+    {
+      "name": "base",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\base.stl",
+      "material": "PETG",
+      "size": [
+        80.79881834960543,
+        88.0,
+        30.0
+      ],
+      "check": {
+        "vertices": 8150,
+        "triangles": 16316,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 67425.29091278519,
+        "bounds_mm": [
+          [
+            0.0011847021523863077,
+            0.0,
+            0.0
+          ],
+          [
+            80.80000305175781,
+            88.0,
+            30.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        34.54999923706055,
+        64.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "cable_blank",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_blank.stl",
+      "material": "TPU",
+      "size": [
+        11.32320785522461,
+        11.32320785522461,
+        7.0
+      ],
+      "check": {
+        "vertices": 240,
+        "triangles": 476,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 704.5769112802345,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.32320785522461,
+            11.32320785522461,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        41.4800329208374,
+        153.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "cable_pressure_cap",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_pressure_cap.stl",
+      "material": "PETG",
+      "size": [
+        30.0,
+        18.0,
+        3.200000047683716
+      ],
+      "check": {
+        "vertices": 968,
+        "triangles": 1944,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1500.0558104843672,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            30.0,
+            18.0,
+            3.200000047683716
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        191.45000076293945,
+        162.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "cable_seal_5p0mm",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_seal_5p0mm.stl",
+      "material": "TPU",
+      "size": [
+        11.38943862915039,
+        11.38943862915039,
+        7.0
+      ],
+      "check": {
+        "vertices": 480,
+        "triangles": 960,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 586.2321987183832,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.38943862915039,
+            11.38943862915039,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        20.09059429168701,
+        153.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "cable_seal_5p5mm",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_seal_5p5mm.stl",
+      "material": "TPU",
+      "size": [
+        11.412572860717773,
+        11.412572860717773,
+        7.0
+      ],
+      "check": {
+        "vertices": 480,
+        "triangles": 960,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 561.3798311624371,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.412572860717773,
+            11.412572860717773,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        224.49683284759521,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "cable_seal_6p0mm",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_seal_6p0mm.stl",
+      "material": "TPU",
+      "size": [
+        11.438688278198242,
+        11.438688278198242,
+        7.0
+      ],
+      "check": {
+        "vertices": 480,
+        "triangles": 960,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 534.1605505079222,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.438688278198242,
+            11.438688278198242,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        203.05814456939697,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "cable_seal_6p5mm",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_seal_6p5mm.stl",
+      "material": "TPU",
+      "size": [
+        11.467766761779785,
+        11.467766761779785,
+        7.0
+      ],
+      "check": {
+        "vertices": 480,
+        "triangles": 960,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 504.57437792163876,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.467766761779785,
+            11.467766761779785,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        181.5903778076172,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "cable_seal_7p0mm",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\cable_seal_7p0mm.stl",
+      "material": "TPU",
+      "size": [
+        11.499783515930176,
+        11.499783515930176,
+        7.0
+      ],
+      "check": {
+        "vertices": 480,
+        "triangles": 960,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 472.6213289432743,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            11.499783515930176,
+            11.499783515930176,
+            7.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        160.090594291687,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "fit_coupon",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\fit_coupon.stl",
+      "material": "PETG",
+      "size": [
+        49.900001525878906,
+        30.0,
+        26.0
+      ],
+      "check": {
+        "vertices": 2168,
+        "triangles": 4340,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 13633.03162293594,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            49.900001525878906,
+            30.0,
+            26.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        34.54999923706055,
+        162.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "lid",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\lid.stl",
+      "material": "PETG",
+      "size": [
+        80.79881834960543,
+        66.80000305175781,
+        5.000000000000007
+      ],
+      "check": {
+        "vertices": 26248,
+        "triangles": 52516,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 15233.318119569358,
+        "bounds_mm": [
+          [
+            0.0011847021523863077,
+            0.0,
+            -7.105427357601002e-15
+          ],
+          [
+            80.80000305175781,
+            66.80000305175781,
+            5.0
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        125.34881758666597,
+        64.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "lid_gasket",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\lid_gasket.stl",
+      "material": "TPU",
+      "size": [
+        68.0,
+        52.0,
+        1.2000000476837158
+      ],
+      "check": {
+        "vertices": 496,
+        "triangles": 992,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 639.7792805578931,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            68.0,
+            52.0,
+            1.2000000476837158
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        20.09059429168701,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "service_switch_cover",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\service_switch_cover.stl",
+      "material": "PETG",
+      "size": [
+        34.0,
+        19.600000381469727,
+        3.2000000476837163
+      ],
+      "check": {
+        "vertices": 984,
+        "triangles": 1972,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 1915.7985188127386,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            -4.440892098500626e-16
+          ],
+          [
+            34.0,
+            19.600000381469727,
+            3.200000047683716
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        147.45000076293945,
+        162.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "service_switch_gasket",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\service_switch_gasket.stl",
+      "material": "TPU",
+      "size": [
+        16.0,
+        13.0,
+        1.2000000476837158
+      ],
+      "check": {
+        "vertices": 496,
+        "triangles": 992,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 130.4771504856316,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            16.0,
+            13.0,
+            1.2000000476837158
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        134.090594291687,
+        91.3052806854248
+      ],
+      "plate": 2
+    },
+    {
+      "name": "usb_cover",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\usb_cover.stl",
+      "material": "PETG",
+      "size": [
+        43.0,
+        24.0,
+        3.2000000476837154
+      ],
+      "check": {
+        "vertices": 984,
+        "triangles": 1972,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 2983.7184645697243,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            4.440892098500626e-16
+          ],
+          [
+            43.0,
+            24.0,
+            3.200000047683716
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        94.45000076293945,
+        162.0
+      ],
+      "plate": 1
+    },
+    {
+      "name": "usb_gasket",
+      "path": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\usb_gasket.stl",
+      "material": "TPU",
+      "size": [
+        26.0,
+        18.0,
+        1.2000000476837158
+      ],
+      "check": {
+        "vertices": 496,
+        "triangles": 992,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "degenerate_triangles": 0,
+        "signed_volume_mm3": 216.87714835940062,
+        "bounds_mm": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            26.0,
+            18.0,
+            1.2000000476837158
+          ]
+        ],
+        "passed": true
+      },
+      "position": [
+        98.09059429168701,
+        91.3052806854248
+      ],
+      "plate": 2
+    }
+  ],
+  "plate_count": 2,
+  "native_slice_verified": true,
+  "assumptions": [
+    "Bambu P2S with 0.4 mm nozzle",
+    "Textured PEI plate",
+    "Generic PETG rigid parts",
+    "Generic TPU 95A seals, external spool",
+    "No physical fit, compression or leak-test claim"
+  ],
+  "native_project": {
+    "zip_crc_passed": true,
+    "printer": "Bambu Lab P2S 0.4 nozzle",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "materials": [
+      "PETG",
+      "TPU"
+    ],
+    "plates": [
+      {
+        "plate": 1,
+        "name": "PETG rigid enclosure",
+        "objects": 6,
+        "gcode_bytes": 11998953,
+        "material": "PETG",
+        "nozzle_temperature_c": 255,
+        "bed_temperature_c": 70,
+        "maximum_volumetric_speed_mm3_s": 8
+      },
+      {
+        "plate": 2,
+        "name": "TPU 95A seals - external spool",
+        "objects": 9,
+        "gcode_bytes": 928946,
+        "material": "TPU",
+        "nozzle_temperature_c": 240,
+        "bed_temperature_c": 35,
+        "maximum_volumetric_speed_mm3_s": 2
+      }
+    ],
+    "mesh_repair_required": false,
+    "sha256": "a0c92d4f56134d455246f7327359c9b5e81891f8e08775657329ebfe243c6ede"
+  },
+  "roundtrip_project": {
+    "zip_crc_passed": true,
+    "printer": "Bambu Lab P2S 0.4 nozzle",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "materials": [
+      "PETG",
+      "TPU"
+    ],
+    "plates": [
+      {
+        "plate": 1,
+        "name": "PETG rigid enclosure",
+        "objects": 6,
+        "gcode_bytes": 11995608,
+        "material": "PETG",
+        "nozzle_temperature_c": 255,
+        "bed_temperature_c": 70,
+        "maximum_volumetric_speed_mm3_s": 8
+      },
+      {
+        "plate": 2,
+        "name": "TPU 95A seals - external spool",
+        "objects": 9,
+        "gcode_bytes": 928941,
+        "material": "TPU",
+        "nozzle_temperature_c": 240,
+        "bed_temperature_c": 35,
+        "maximum_volumetric_speed_mm3_s": 2
+      }
+    ],
+    "mesh_repair_required": false,
+    "sha256": "db273c8765b7b485ade0e00b145be3a7e52340fcbd8c66b12478d8a3d976d1d0"
+  },
+  "native_slice_result": {
+    "error_string": "Success.",
+    "export_time": 959,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 158,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 832.7727661132812,
+          "Bridge": 1158.5386962890625,
+          "Custom": 402.57672119140625,
+          "Flush": 26.0,
+          "Gap infill": 249.43939208984375,
+          "Inner wall": 5624.8486328125,
+          "Internal solid infill": 4160.3134765625,
+          "Outer wall": 3206.23876953125,
+          "Overhang wall": 25.276527404785156,
+          "Sparse infill": 3758.431640625,
+          "Top surface": 1092.9390869140625,
+          "Travel": 1215.3992919921875,
+          "Undefined": 1208.933349609375
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 100.37657928466797,
+            "total_used_g": 100.37657928466797
+          }
+        ],
+        "generate_support_material_time": 72,
+        "id": 1,
+        "infill_time": 1843,
+        "layer_filament_change": 0,
+        "main_predication": 21291.287109375,
+        "make_perimeters_time": 555,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 88.0,
+              "height": 30.0,
+              "width": 80.79882049560547,
+              "x": 34.54999923706055,
+              "y": 64.0,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "base",
+            "triangle_count": 16316
+          },
+          {
+            "bbox": {
+              "depth": 66.80000305175781,
+              "height": 5.0,
+              "width": 80.79882049560547,
+              "x": 125.34881591796875,
+              "y": 64.0,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "lid",
+            "triangle_count": 52516
+          },
+          {
+            "bbox": {
+              "depth": 30.0,
+              "height": 26.0,
+              "width": 49.900001525878906,
+              "x": 34.54999923706055,
+              "y": 162.0,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "fit_coupon",
+            "triangle_count": 4340
+          },
+          {
+            "bbox": {
+              "depth": 24.0,
+              "height": 3.200000047683716,
+              "width": 42.999996185302734,
+              "x": 94.45000457763672,
+              "y": 162.0,
+              "z": 0.0
+            },
+            "id": 17,
+            "name": "usb_cover",
+            "triangle_count": 1972
+          },
+          {
+            "bbox": {
+              "depth": 19.600000381469727,
+              "height": 3.200000047683716,
+              "width": 34.000003814697266,
+              "x": 147.4499969482422,
+              "y": 162.0,
+              "z": 0.0
+            },
+            "id": 21,
+            "name": "service_switch_cover",
+            "triangle_count": 1972
+          },
+          {
+            "bbox": {
+              "depth": 18.0,
+              "height": 3.200000047683716,
+              "width": 30.000003814697266,
+              "x": 191.4499969482422,
+              "y": 162.0,
+              "z": 0.0
+            },
+            "id": 25,
+            "name": "cable_pressure_cap",
+            "triangle_count": 1944
+          }
+        ],
+        "sliced_time": 3855,
+        "sliced_time_with_cache": 1141,
+        "total_predication": 21739.3984375,
+        "triangle_count": 79060,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 6.198085784912109,
+          "Custom": 403.1568908691406,
+          "Flush": 26.0,
+          "Gap infill": 140.344970703125,
+          "Inner wall": 1091.80810546875,
+          "Internal solid infill": 90.59156036376953,
+          "Outer wall": 643.9412841796875,
+          "Sparse infill": 222.30287170410156,
+          "Top surface": 96.17316436767578,
+          "Travel": 186.8631134033203,
+          "Undefined": 179.2471466064453
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFU99",
+            "id": 2,
+            "main_used_g": 5.314480781555176,
+            "total_used_g": 5.314480781555176
+          }
+        ],
+        "generate_support_material_time": 32,
+        "id": 2,
+        "infill_time": 56,
+        "layer_filament_change": 0,
+        "main_predication": 2452.223876953125,
+        "make_perimeters_time": 191,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 52.0,
+              "height": 1.2000000476837158,
+              "width": 68.00000762939453,
+              "x": 327.29058837890625,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 29,
+            "name": "lid_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 17.999998092651367,
+              "height": 1.2000000476837158,
+              "width": 26.0000057220459,
+              "x": 405.29058837890625,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 33,
+            "name": "usb_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 12.999998092651367,
+              "height": 1.2000000476837158,
+              "width": 16.0000057220459,
+              "x": 441.29058837890625,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 37,
+            "name": "service_switch_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 11.49978256225586,
+              "height": 7.0,
+              "width": 11.49979019165039,
+              "x": 467.29058837890625,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "cable_seal_7p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.467764854431152,
+              "height": 7.0,
+              "width": 11.467769622802734,
+              "x": 488.7903747558594,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 45,
+            "name": "cable_seal_6p5mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.43868637084961,
+              "height": 7.0,
+              "width": 11.438685417175293,
+              "x": 510.2581481933594,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 49,
+            "name": "cable_seal_6p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.41257095336914,
+              "height": 7.0,
+              "width": 11.412567138671875,
+              "x": 531.6968383789062,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 53,
+            "name": "cable_seal_5p5mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.389436721801758,
+              "height": 7.0,
+              "width": 11.389444351196289,
+              "x": 327.29058837890625,
+              "y": 153.30528259277344,
+              "z": 0.0
+            },
+            "id": 57,
+            "name": "cable_seal_5p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.323205947875977,
+              "height": 7.0,
+              "width": 11.323217391967773,
+              "x": 348.6800231933594,
+              "y": 153.30528259277344,
+              "z": 0.0
+            },
+            "id": 61,
+            "name": "cable_blank",
+            "triangle_count": 476
+          }
+        ],
+        "sliced_time": 730,
+        "sliced_time_with_cache": 395,
+        "total_predication": 2899.764892578125,
+        "triangle_count": 8252,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 35.0,
+    "upward_compatible_machine": [
+      "Bambu Lab A1 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 5,
+    "process_return_code": 0,
+    "elapsed_seconds": 6.11,
+    "command": [
+      "C:\\Program Files\\Bambu Studio\\bambu-studio.exe",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation\\packaging-input.3mf",
+      "--debug",
+      "2",
+      "--curr-bed-type",
+      "Textured PEI Plate",
+      "--slice",
+      "0",
+      "--outputdir",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation",
+      "--export-3mf",
+      "Orion-R5-enclosure-P2S-verified.3mf",
+      "--load-settings",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\p2s-machine.json;C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\enclosure-process.json",
+      "--load-filaments",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\petg-filament.json;C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\tpu-filament.json"
+    ]
+  },
+  "native_roundtrip_result": {
+    "error_string": "Success.",
+    "export_time": 611,
+    "layer_height": 0.20000000298023224,
+    "plate_index": 0,
+    "prepare_time": 217,
+    "return_code": 0,
+    "sliced_plates": [
+      {
+        "feature_type_times": {
+          "Bottom surface": 832.7727661132812,
+          "Bridge": 1157.6529541015625,
+          "Custom": 402.57672119140625,
+          "Flush": 26.0,
+          "Gap infill": 249.29388427734375,
+          "Inner wall": 5624.8486328125,
+          "Internal solid infill": 4160.765625,
+          "Outer wall": 3206.23876953125,
+          "Overhang wall": 25.276527404785156,
+          "Sparse infill": 3758.40478515625,
+          "Top surface": 1092.9390869140625,
+          "Travel": 1215.5,
+          "Undefined": 1209.0340576171875
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFG99",
+            "id": 1,
+            "main_used_g": 100.3752212524414,
+            "total_used_g": 100.3752212524414
+          }
+        ],
+        "generate_support_material_time": 80,
+        "id": 1,
+        "infill_time": 1955,
+        "layer_filament_change": 0,
+        "main_predication": 21290.76953125,
+        "make_perimeters_time": 565,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 88.0,
+              "height": 30.0,
+              "width": 80.79882049560547,
+              "x": 34.54999923706055,
+              "y": 64.0,
+              "z": 0.0
+            },
+            "id": 5,
+            "name": "base",
+            "triangle_count": 16316
+          },
+          {
+            "bbox": {
+              "depth": 66.80000305175781,
+              "height": 5.0,
+              "width": 80.79882049560547,
+              "x": 125.34881591796875,
+              "y": 64.0,
+              "z": 0.0
+            },
+            "id": 9,
+            "name": "lid",
+            "triangle_count": 52516
+          },
+          {
+            "bbox": {
+              "depth": 30.0,
+              "height": 26.0,
+              "width": 49.900001525878906,
+              "x": 34.54999923706055,
+              "y": 162.0,
+              "z": 0.0
+            },
+            "id": 13,
+            "name": "fit_coupon",
+            "triangle_count": 4340
+          },
+          {
+            "bbox": {
+              "depth": 24.0,
+              "height": 3.200000047683716,
+              "width": 42.999996185302734,
+              "x": 94.45000457763672,
+              "y": 162.0,
+              "z": -3.8418579428878274e-09
+            },
+            "id": 17,
+            "name": "usb_cover",
+            "triangle_count": 1972
+          },
+          {
+            "bbox": {
+              "depth": 19.600000381469727,
+              "height": 3.200000047683716,
+              "width": 34.000003814697266,
+              "x": 147.4499969482422,
+              "y": 162.0,
+              "z": -3.8418579428878274e-09
+            },
+            "id": 21,
+            "name": "service_switch_cover",
+            "triangle_count": 1972
+          },
+          {
+            "bbox": {
+              "depth": 18.0,
+              "height": 3.200000047683716,
+              "width": 30.000003814697266,
+              "x": 191.4499969482422,
+              "y": 162.0,
+              "z": -3.8418579428878274e-09
+            },
+            "id": 25,
+            "name": "cable_pressure_cap",
+            "triangle_count": 1944
+          }
+        ],
+        "sliced_time": 4357,
+        "sliced_time_with_cache": 1325,
+        "total_predication": 21738.880859375,
+        "triangle_count": 79060,
+        "warning_message": ""
+      },
+      {
+        "feature_type_times": {
+          "Bottom surface": 6.198085784912109,
+          "Custom": 403.1568908691406,
+          "Flush": 26.0,
+          "Gap infill": 140.344970703125,
+          "Inner wall": 1091.8082275390625,
+          "Internal solid infill": 90.59150695800781,
+          "Outer wall": 643.94140625,
+          "Sparse infill": 222.30291748046875,
+          "Top surface": 96.17316436767578,
+          "Travel": 186.8643341064453,
+          "Undefined": 179.2483673095703
+        },
+        "filament_change_times": 0,
+        "filaments": [
+          {
+            "filament_id": "GFU99",
+            "id": 2,
+            "main_used_g": 5.314480781555176,
+            "total_used_g": 5.314480781555176
+          }
+        ],
+        "generate_support_material_time": 21,
+        "id": 2,
+        "infill_time": 48,
+        "layer_filament_change": 0,
+        "main_predication": 2452.225341796875,
+        "make_perimeters_time": 184,
+        "obj_cached_cnt": 0,
+        "objects": [
+          {
+            "bbox": {
+              "depth": 52.0,
+              "height": 1.2000000476837158,
+              "width": 68.00000762939453,
+              "x": 327.29058837890625,
+              "y": 91.30528259277344,
+              "z": 1.5814205500674916e-10
+            },
+            "id": 29,
+            "name": "lid_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 17.999998092651367,
+              "height": 1.2000000476837158,
+              "width": 26.0000057220459,
+              "x": 405.29058837890625,
+              "y": 91.30528259277344,
+              "z": 1.5814205500674916e-10
+            },
+            "id": 33,
+            "name": "usb_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 12.999998092651367,
+              "height": 1.2000000476837158,
+              "width": 16.0000057220459,
+              "x": 441.29058837890625,
+              "y": 91.30528259277344,
+              "z": 1.5814205500674916e-10
+            },
+            "id": 37,
+            "name": "service_switch_gasket",
+            "triangle_count": 992
+          },
+          {
+            "bbox": {
+              "depth": 11.49978256225586,
+              "height": 7.0,
+              "width": 11.49979019165039,
+              "x": 467.29058837890625,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 41,
+            "name": "cable_seal_7p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.467764854431152,
+              "height": 7.0,
+              "width": 11.467769622802734,
+              "x": 488.7903747558594,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 45,
+            "name": "cable_seal_6p5mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.43868637084961,
+              "height": 7.0,
+              "width": 11.438685417175293,
+              "x": 510.2581481933594,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 49,
+            "name": "cable_seal_6p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.41257095336914,
+              "height": 7.0,
+              "width": 11.412567138671875,
+              "x": 531.6968383789062,
+              "y": 91.30528259277344,
+              "z": 0.0
+            },
+            "id": 53,
+            "name": "cable_seal_5p5mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.389436721801758,
+              "height": 7.0,
+              "width": 11.389444351196289,
+              "x": 327.29058837890625,
+              "y": 153.30528259277344,
+              "z": 0.0
+            },
+            "id": 57,
+            "name": "cable_seal_5p0mm",
+            "triangle_count": 960
+          },
+          {
+            "bbox": {
+              "depth": 11.323205947875977,
+              "height": 7.0,
+              "width": 11.323217391967773,
+              "x": 348.6800231933594,
+              "y": 153.30528259277344,
+              "z": 0.0
+            },
+            "id": 61,
+            "name": "cable_blank",
+            "triangle_count": 476
+          }
+        ],
+        "sliced_time": 702,
+        "sliced_time_with_cache": 399,
+        "total_predication": 2899.766357421875,
+        "triangle_count": 8252,
+        "warning_message": ""
+      }
+    ],
+    "sparse_infill_density": 35.0,
+    "upward_compatible_machine": [
+      "Bambu Lab A1 0.4 nozzle",
+      "Bambu Lab H2S 0.4 nozzle",
+      "Bambu Lab H2D 0.4 nozzle",
+      "Bambu Lab H2D Pro 0.4 nozzle",
+      "Bambu Lab H2C 0.4 nozzle",
+      "Bambu Lab X2D 0.4 nozzle",
+      "Bambu Lab A2L 0.4 nozzle"
+    ],
+    "wall_loops": 5,
+    "process_return_code": 0,
+    "elapsed_seconds": 6.29,
+    "command": [
+      "C:\\Program Files\\Bambu Studio\\bambu-studio.exe",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation\\Orion-R5-enclosure-P2S-verified.3mf",
+      "--debug",
+      "2",
+      "--curr-bed-type",
+      "Textured PEI Plate",
+      "--slice",
+      "0",
+      "--outputdir",
+      "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation\\roundtrip",
+      "--export-3mf",
+      "Orion-R5-P2S-complete.3mf"
+    ]
+  },
+  "native_geometry_comparison": {
+    "passed": true,
+    "native_project_sha256": "db273c8765b7b485ade0e00b145be3a7e52340fcbd8c66b12478d8a3d976d1d0",
+    "coordinate_tolerance_mm": 5e-05,
+    "maximum_relative_volume_error": 1e-05,
+    "part_count": 15,
+    "parts": [
+      {
+        "name": "base",
+        "passed": true,
+        "source_sha256": "1e552a7e9b16ca2d958a0d8e1608cb477c92ee62142f9142a754ddb7acb9aa9e",
+        "vertices": 8150,
+        "triangles": 16316,
+        "maximum_coordinate_error_mm": 2.8845581141467846e-06,
+        "source_volume_mm3": 67425.29091278446,
+        "native_volume_mm3": 67425.29262514974,
+        "relative_volume_error": 2.5396483374282144e-08,
+        "source_size_mm": [
+          80.79881834960543,
+          88.0,
+          30.0
+        ],
+        "native_size_mm": [
+          80.79882039999998,
+          88.0,
+          30.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            34.54999900000001,
+            64.0,
+            0.0
+          ],
+          [
+            115.3488194,
+            152.0,
+            30.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "lid",
+        "passed": true,
+        "source_sha256": "75ef58f2b181e72c3117a2735b383caecc660f74f0b4fc498c72a62c1620c976",
+        "vertices": 26248,
+        "triangles": 52516,
+        "maximum_coordinate_error_mm": 2.241676952507987e-06,
+        "source_volume_mm3": 15233.318119569478,
+        "native_volume_mm3": 15233.318686670009,
+        "relative_volume_error": 3.722764315639981e-08,
+        "source_size_mm": [
+          80.79881834960543,
+          66.80000305175781,
+          5.000000000000007
+        ],
+        "native_size_mm": [
+          80.79882040000001,
+          66.800003,
+          5.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            125.3488178,
+            64.0,
+            0.0
+          ],
+          [
+            206.14763820000002,
+            130.800003,
+            5.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "fit_coupon",
+        "passed": true,
+        "source_sha256": "409d2d01053331a6cf9c7501773e454eb83d878327842154e4d73e53d8c8f9d0",
+        "vertices": 2168,
+        "triangles": 4340,
+        "maximum_coordinate_error_mm": 1.019738768093248e-06,
+        "source_volume_mm3": 13633.03162293594,
+        "native_volume_mm3": 13633.031611317247,
+        "relative_volume_error": 8.522457273696558e-10,
+        "source_size_mm": [
+          49.900001525878906,
+          30.0,
+          26.0
+        ],
+        "native_size_mm": [
+          49.900001599999996,
+          30.0,
+          26.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            34.549999,
+            162.0,
+            0.0
+          ],
+          [
+            84.4500006,
+            192.0,
+            26.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "usb_cover",
+        "passed": true,
+        "source_sha256": "afc0d58b37dee41e146b24fe10a1e689ff87b97b0429dae660e7a1af3eb79c5c",
+        "vertices": 984,
+        "triangles": 1972,
+        "maximum_coordinate_error_mm": 9.909790037454513e-07,
+        "source_volume_mm3": 2983.7184645697166,
+        "native_volume_mm3": 2983.7184642423745,
+        "relative_volume_error": 1.0970946277864131e-10,
+        "source_size_mm": [
+          43.0,
+          24.0,
+          3.2000000476837154
+        ],
+        "native_size_mm": [
+          42.999999999999986,
+          24.0,
+          3.20000004
+        ],
+        "native_placed_bounds_mm": [
+          [
+            94.450001,
+            162.0,
+            0.0
+          ],
+          [
+            137.450001,
+            186.0,
+            3.20000004
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "service_switch_cover",
+        "passed": true,
+        "source_sha256": "2481bd7e1bbd6427c4291b5b79469ede056ad388309e0b05b01f9c89cbe3dc66",
+        "vertices": 984,
+        "triangles": 1972,
+        "maximum_coordinate_error_mm": 9.54863281776852e-07,
+        "source_volume_mm3": 1915.7985188127361,
+        "native_volume_mm3": 1915.798515584812,
+        "relative_volume_error": 1.6848974431041884e-09,
+        "source_size_mm": [
+          34.0,
+          19.600000381469727,
+          3.2000000476837163
+        ],
+        "native_size_mm": [
+          34.0,
+          19.600000379999983,
+          3.20000004
+        ],
+        "native_placed_bounds_mm": [
+          [
+            147.450001,
+            161.99999981000002,
+            0.0
+          ],
+          [
+            181.450001,
+            181.60000019,
+            3.20000004
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_pressure_cap",
+        "passed": true,
+        "source_sha256": "9d108769acc4c92714e0effe42b6ba3d74ec5fc71556f0315cd8476a72ef4791",
+        "vertices": 968,
+        "triangles": 1944,
+        "maximum_coordinate_error_mm": 9.566430776430934e-07,
+        "source_volume_mm3": 1500.0558104843672,
+        "native_volume_mm3": 1500.055803542621,
+        "relative_volume_error": 4.627658519337886e-09,
+        "source_size_mm": [
+          30.0,
+          18.0,
+          3.200000047683716
+        ],
+        "native_size_mm": [
+          30.0,
+          18.0,
+          3.20000004
+        ],
+        "native_placed_bounds_mm": [
+          [
+            191.450001,
+            162.0,
+            0.0
+          ],
+          [
+            221.450001,
+            180.0,
+            3.20000004
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "lid_gasket",
+        "passed": true,
+        "source_sha256": "9d2ac769681c40240e686771e651252ebef525c558ad068cd5b43feb42e0e87d",
+        "vertices": 496,
+        "triangles": 992,
+        "maximum_coordinate_error_mm": 1.7089374750867137e-06,
+        "source_volume_mm3": 639.7792805578931,
+        "native_volume_mm3": 639.7792254919457,
+        "relative_volume_error": 8.607022626245844e-08,
+        "source_size_mm": [
+          68.0,
+          52.0,
+          1.2000000476837158
+        ],
+        "native_size_mm": [
+          68.0,
+          51.999999999999986,
+          1.200000048
+        ],
+        "native_placed_bounds_mm": [
+          [
+            327.290594,
+            91.305281,
+            0.0
+          ],
+          [
+            395.290594,
+            143.30528099999998,
+            1.200000048
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "usb_gasket",
+        "passed": true,
+        "source_sha256": "d0b3b4369331fefef746d26cf9204713a71b8c5962a598d695d98998292bf3cb",
+        "vertices": 496,
+        "triangles": 992,
+        "maximum_coordinate_error_mm": 9.585253906152502e-07,
+        "source_volume_mm3": 216.87714835940062,
+        "native_volume_mm3": 216.87714139092517,
+        "relative_volume_error": 3.21309805997088e-08,
+        "source_size_mm": [
+          26.0,
+          18.0,
+          1.2000000476837158
+        ],
+        "native_size_mm": [
+          26.0,
+          18.0,
+          1.200000048
+        ],
+        "native_placed_bounds_mm": [
+          [
+            405.290594,
+            91.305281,
+            0.0
+          ],
+          [
+            431.290594,
+            109.305281,
+            1.200000048
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "service_switch_gasket",
+        "passed": true,
+        "source_sha256": "0b4d2a4b880e75e21ed5006013649549b0ee6e26f41661a0afa4430f0c14daa6",
+        "vertices": 496,
+        "triangles": 992,
+        "maximum_coordinate_error_mm": 9.585253906152502e-07,
+        "source_volume_mm3": 130.4771504856316,
+        "native_volume_mm3": 130.47715163809792,
+        "relative_volume_error": 8.832706115583937e-09,
+        "source_size_mm": [
+          16.0,
+          13.0,
+          1.2000000476837158
+        ],
+        "native_size_mm": [
+          16.0,
+          13.0,
+          1.200000048
+        ],
+        "native_placed_bounds_mm": [
+          [
+            441.290594,
+            91.305281,
+            0.0
+          ],
+          [
+            457.290594,
+            104.305281,
+            1.200000048
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_seal_7p0mm",
+        "passed": true,
+        "source_sha256": "bc2d2724a0065db85c72892861971aeef7181c026fddefe64abe31382760470e",
+        "vertices": 480,
+        "triangles": 960,
+        "maximum_coordinate_error_mm": 9.462158345741045e-07,
+        "source_volume_mm3": 472.6213289432743,
+        "native_volume_mm3": 472.62133691931285,
+        "relative_volume_error": 1.6876171382085852e-08,
+        "source_size_mm": [
+          11.499783515930176,
+          11.499783515930176,
+          7.0
+        ],
+        "native_size_mm": [
+          11.49978446,
+          11.49978446,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            467.29059377,
+            91.30528097,
+            0.0
+          ],
+          [
+            478.79037823,
+            102.80506543,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_seal_6p5mm",
+        "passed": true,
+        "source_sha256": "8190cb8f74d5f2c3398c9c3d8abf1e2774be60a7ff63d7e13d7d6f2488d65c02",
+        "vertices": 480,
+        "triangles": 960,
+        "maximum_coordinate_error_mm": 9.554126023658682e-07,
+        "source_volume_mm3": 504.57437792163876,
+        "native_volume_mm3": 504.5743659656971,
+        "relative_volume_error": 2.3695102609396108e-08,
+        "source_size_mm": [
+          11.467766761779785,
+          11.467766761779785,
+          7.0
+        ],
+        "native_size_mm": [
+          11.467766760000018,
+          11.46776675999999,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            488.79037762,
+            91.30528102000001,
+            0.0
+          ],
+          [
+            500.25814438000003,
+            102.77304778,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_seal_6p0mm",
+        "passed": true,
+        "source_sha256": "e1a86fbebdeaf145fe971da03b75b27f5be0ff8b1a8fca7d5afe65b6f0e76ec0",
+        "vertices": 480,
+        "triangles": 960,
+        "maximum_coordinate_error_mm": 9.525439423896387e-07,
+        "source_volume_mm3": 534.1605505079222,
+        "native_volume_mm3": 534.160546765836,
+        "relative_volume_error": 7.005545731400341e-09,
+        "source_size_mm": [
+          11.438688278198242,
+          11.438688278198242,
+          7.0
+        ],
+        "native_size_mm": [
+          11.438688279999951,
+          11.438688280000008,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            510.25814486,
+            91.30528095999999,
+            0.0
+          ],
+          [
+            521.69683314,
+            102.74396924,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_seal_5p5mm",
+        "passed": true,
+        "source_sha256": "9df64da26d16251708af3870e27bec99939ea546663cf36883ed0db33c9a4ed1",
+        "vertices": 480,
+        "triangles": 960,
+        "maximum_coordinate_error_mm": 2.3773259272275027e-07,
+        "source_volume_mm3": 561.3798311624371,
+        "native_volume_mm3": 561.3798324795524,
+        "relative_volume_error": 2.3462106420967972e-09,
+        "source_size_mm": [
+          11.412572860717773,
+          11.412572860717773,
+          7.0
+        ],
+        "native_size_mm": [
+          11.412572859999955,
+          11.412572860000012,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            531.69683257,
+            91.30528097,
+            0.0
+          ],
+          [
+            543.1094054299999,
+            102.71785383000001,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_seal_5p0mm",
+        "passed": true,
+        "source_sha256": "4fe055baf2fd3e6c49371cdf014f3454879d1773db96d8d1077b3503afc36e88",
+        "vertices": 480,
+        "triangles": 960,
+        "maximum_coordinate_error_mm": 2.43745716943522e-07,
+        "source_volume_mm3": 586.2321987183832,
+        "native_volume_mm3": 586.2322069271461,
+        "relative_volume_error": 1.400257937124984e-08,
+        "source_size_mm": [
+          11.38943862915039,
+          11.38943862915039,
+          7.0
+        ],
+        "native_size_mm": [
+          11.389438619999964,
+          11.389438620000021,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            327.29059369000004,
+            153.30528069,
+            0.0
+          ],
+          [
+            338.68003231,
+            164.69471931,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      },
+      {
+        "name": "cable_blank",
+        "passed": true,
+        "source_sha256": "a7f498e77c6a02f56a933de6dadbf4bde8f9213608660ded1cc3e1dcba1b8832",
+        "vertices": 240,
+        "triangles": 476,
+        "maximum_coordinate_error_mm": 2.3508849267273035e-07,
+        "source_volume_mm3": 704.5769112802345,
+        "native_volume_mm3": 704.5769097588715,
+        "relative_volume_error": 2.1592576141262326e-09,
+        "source_size_mm": [
+          11.32320785522461,
+          11.32320785522461,
+          7.0
+        ],
+        "native_size_mm": [
+          11.323207860000025,
+          11.323207860000025,
+          7.0
+        ],
+        "native_placed_bounds_mm": [
+          [
+            348.68003307,
+            153.30528106999998,
+            0.0
+          ],
+          [
+            360.00324093,
+            164.62848893,
+            7.0
+          ]
+        ],
+        "oriented_triangle_connectivity_unchanged": true,
+        "print_orientation_unchanged": true
+      }
+    ]
+  }
+}

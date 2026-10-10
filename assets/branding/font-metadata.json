@@ -1,0 +1,20 @@
+{
+  "family": "Arial Rounded MT Bold",
+  "style": "Regular",
+  "full_name": "Arial Rounded MT Bold",
+  "postscript_name": "ArialRoundedMTBold",
+  "version": "Version 1.51",
+  "copyright": "Copyright © 1993 , Monotype Typography ltd.",
+  "license_description": null,
+  "license_url": null,
+  "local_source": "C:\\Windows\\Fonts\\ARLRDBD.TTF",
+  "sha256": "d9352e7d73711f006a27f44e71808a74fec109e2342e680e054c4458569f0a94",
+  "units_per_em": 2048,
+  "ascent_units": 1938,
+  "descent_units": -432,
+  "win_ascent_units": 1938,
+  "win_descent_units": 432,
+  "embedding_fsType": 8,
+  "redistributed_font_binary": false,
+  "note": "Uses the installed Windows font; no TTF file is included. Outlined artwork is exported. Native Altium retains actual editable Text objects."
+}

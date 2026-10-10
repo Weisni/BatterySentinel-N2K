@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "drop_mm": 0.4,
+  "dimensions_mm": [
+    12,
+    28,
+    5.6
+  ],
+  "source_height_mm": 6,
+  "print_orientation": "Flat outer top face on bed; saddle opens upward",
+  "sections": [
+    {
+      "x_mm": -16,
+      "old_gap_no_shim_mm": 6.700000000000005,
+      "new_gap_no_shim_mm": 6.3000000000000025,
+      "roof_thickness_mm": 2.8500000000000014
+    },
+    {
+      "x_mm": -14,
+      "old_gap_no_shim_mm": 7.400000000000009,
+      "new_gap_no_shim_mm": 7.000000000000011,
+      "roof_thickness_mm": 2.5
+    },
+    {
+      "x_mm": -12,
+      "old_gap_no_shim_mm": 6.700000000000005,
+      "new_gap_no_shim_mm": 6.3000000000000025,
+      "roof_thickness_mm": 2.8500000000000014
+    },
+    {
+      "x_mm": -10,
+      "old_gap_no_shim_mm": 7.400000000000009,
+      "new_gap_no_shim_mm": 7.000000000000011,
+      "roof_thickness_mm": 2.5
+    },
+    {
+      "x_mm": -8,
+      "old_gap_no_shim_mm": 6.700000000000005,
+      "new_gap_no_shim_mm": 6.3000000000000025,
+      "roof_thickness_mm": 2.8500000000000014
+    }
+  ],
+  "washer_seats": [
+    {
+      "axis_mm": [
+        -12,
+        8
+      ],
+      "coverage": 1.0
+    },
+    {
+      "axis_mm": [
+        -12,
+        28
+      ],
+      "coverage": 1.0
+    }
+  ],
+  "assembly_intersections": [
+    {
+      "shim_mm": 0,
+      "part": "base",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shim_mm": 0.2,
+      "part": "base",
+      "intersection_mm3": 0.0
+    },
+    {
+      "shim_mm": 0.4,
+      "part": "base",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "shim_throat_gaps_mm": {
+    "0.0": 6.3,
+    "0.2": 6.5,
+    "0.4": 6.7
+  },
+  "screw_holes": {
+    "diameter_mm": 3.4,
+    "spacing_mm": 20
+  },
+  "m3x10_engagement_with_0p5_washer_mm": {
+    "0.0": 3.9,
+    "0.2": 3.7,
+    "0.4": 3.5
+  },
+  "closed_oriented_manifold": true,
+  "connected_components": 1,
+  "triangles": 38430,
+  "mesh_volume_mm3": 1565.09765625,
+  "unchanged_source_sha256": {
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\Orion-Enclosure-V2.FCStd": "37896d65623c7fd2b3a4291323903e36adff9eb2c8546d7da8d4852c17bfd225",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\base.stl": "9b15360381c6bd48ac17cf3fdc07e445afc801dd07fdf85ef8f0044ee90b0dc0",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\strain_relief_upper.stl": "61fe9d15a5f46d8d38bb6c9656c6b6f78d6fb3415bc93f436d2d3d6577edca04"
+  },
+  "stl_sha256": "5b2a0d1432359b9f74fa6405917a4089714de0c9075127a1bb5eaf892c7a9ee3",
+  "physical_status": "Cable compression, pull force and creep not tested"
+}

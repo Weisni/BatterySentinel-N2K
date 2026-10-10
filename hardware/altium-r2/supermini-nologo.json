@@ -1,0 +1,375 @@
+{
+  "part": "ESP32-C3 SuperMini, Nologo reference board",
+  "manufacturer": "Nologo Tech",
+  "manufacturer_part_number": "ESP32-C3 SuperMini",
+  "footprint_name": "NOLOGO_C3_SUPERMINI_THT_2X8",
+  "view": "Top view, USB at positive Y, ceramic antenna at negative Y",
+  "origin": "Nominal 18.00 x 22.50 mm board-body center",
+  "body_mm": {
+    "width": 18.0,
+    "length": 22.5,
+    "xmin": -9,
+    "xmax": 9,
+    "ymin": -11.25,
+    "ymax": 11.25
+  },
+  "header_geometry_mm": {
+    "row_spacing": 15.24,
+    "pitch": 2.54,
+    "upper_row_distance_from_usb_board_edge": 1.5494,
+    "first_row_y": 9.7006,
+    "last_row_y": -8.0794
+  },
+  "mounting": "Two 1x8 through-hole headers/socket strips. This carrier footprint is not a castellated direct-SMD land pattern.",
+  "carrier_lands_mm": {
+    "diameter": 1.8,
+    "finished_hole": 1.0,
+    "layer": "Multi-Layer",
+    "plated": true,
+    "selection_basis": "Carrier design choice for conventional 0.64 mm square 2.54 mm headers; verify the selected header/socket tolerances. Module hole geometry is not blindly copied."
+  },
+  "original_module_lands_mm": {
+    "diameter": 1.6,
+    "hole": 0.9144,
+    "source": "native Nologo Pads6/Data"
+  },
+  "coordinate_normalization": "Nominal 2.54 mm pitch reconstructed from native manufacturer pad coordinates; the source has sub-0.0005 mm coordinate roundoff. X and logical order are preserved. Carrier origin uses nominal body, not source file absolute coordinate.",
+  "source_board_outline_note": "Native PCB outline is about 17.932 x 22.521 mm; manufacturer dimension illustration states 18.00 x 22.50 mm. Use nominal body as a placement envelope and inspect the actual module before manufacture.",
+  "mechanical_limits": [
+    "The selected physical SuperMini must match this Nologo pinout; third-party clones can differ.",
+    "PCB drawing footprint is a carrier/header interface. Final header/socket part, seating height, USB overhang and enclosure clearance need selection or measurement.",
+    "USB connector occupies positive-Y edge; antenna negative-Y end must face the carrier RF clearance or the module must be rotated 180 degrees.",
+    "No conductor or component under the antenna reservation, and validate final radio clearance against actual antenna/module."
+  ],
+  "pins": [
+    {
+      "designator": "5",
+      "name": "GPIO5",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 1,
+      "x_mm": -7.62,
+      "y_mm": 9.7006,
+      "original_header": "H1",
+      "original_header_pin": 1,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 1,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -1.5490063
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "6",
+      "name": "GPIO6",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 2,
+      "x_mm": -7.62,
+      "y_mm": 7.1606,
+      "original_header": "H1",
+      "original_header_pin": 2,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 2,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -4.0894025
+      },
+      "orion_net": "GPIO6",
+      "unused_in_orion": false
+    },
+    {
+      "designator": "7",
+      "name": "GPIO7",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 3,
+      "x_mm": -7.62,
+      "y_mm": 4.6206,
+      "original_header": "H1",
+      "original_header_pin": 3,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 3,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -6.6294
+      },
+      "orion_net": "GPIO7",
+      "unused_in_orion": false
+    },
+    {
+      "designator": "8",
+      "name": "GPIO8",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 4,
+      "x_mm": -7.62,
+      "y_mm": 2.0806,
+      "original_header": "H1",
+      "original_header_pin": 4,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 4,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -9.1694025
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "9",
+      "name": "GPIO9",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 5,
+      "x_mm": -7.62,
+      "y_mm": -0.4594,
+      "original_header": "H1",
+      "original_header_pin": 5,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 5,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -11.7094025
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "10",
+      "name": "GPIO10",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 6,
+      "x_mm": -7.62,
+      "y_mm": -2.9994,
+      "original_header": "H1",
+      "original_header_pin": 6,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 6,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -14.2494025
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "20",
+      "name": "GPIO20",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 7,
+      "x_mm": -7.62,
+      "y_mm": -5.5394,
+      "original_header": "H1",
+      "original_header_pin": 7,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 7,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -16.7894051
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "21",
+      "name": "GPIO21",
+      "electrical_type": "I/O",
+      "side": "left",
+      "row_from_usb": 8,
+      "x_mm": -7.62,
+      "y_mm": -8.0794,
+      "original_header": "H1",
+      "original_header_pin": 8,
+      "original_pad_center": {
+        "header": "H1",
+        "header_pin": 8,
+        "x_mm": -7.62,
+        "y_from_top_edge_mm": -19.3294
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "5V",
+      "name": "5V",
+      "electrical_type": "Power",
+      "side": "right",
+      "row_from_usb": 1,
+      "x_mm": 7.62,
+      "y_mm": 9.7006,
+      "original_header": "H2",
+      "original_header_pin": 8,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 8,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -1.5490063
+      },
+      "orion_net": "5V_MODULE",
+      "unused_in_orion": false
+    },
+    {
+      "designator": "GND",
+      "name": "GND",
+      "electrical_type": "Power",
+      "side": "right",
+      "row_from_usb": 2,
+      "x_mm": 7.62,
+      "y_mm": 7.1606,
+      "original_header": "H2",
+      "original_header_pin": 7,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 7,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -4.0890012
+      },
+      "orion_net": "GND_LOGIC",
+      "unused_in_orion": false
+    },
+    {
+      "designator": "3V3",
+      "name": "3V3",
+      "electrical_type": "Power",
+      "side": "right",
+      "row_from_usb": 3,
+      "x_mm": 7.62,
+      "y_mm": 4.6206,
+      "original_header": "H2",
+      "original_header_pin": 6,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 6,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -6.6290038
+      },
+      "orion_net": "3V3_LOGIC",
+      "unused_in_orion": false
+    },
+    {
+      "designator": "4",
+      "name": "GPIO4",
+      "electrical_type": "I/O",
+      "side": "right",
+      "row_from_usb": 4,
+      "x_mm": 7.62,
+      "y_mm": 2.0806,
+      "original_header": "H2",
+      "original_header_pin": 5,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 5,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -9.1690038
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "3",
+      "name": "GPIO3",
+      "electrical_type": "I/O",
+      "side": "right",
+      "row_from_usb": 5,
+      "x_mm": 7.62,
+      "y_mm": -0.4594,
+      "original_header": "H2",
+      "original_header_pin": 4,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 4,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -11.7090038
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "2",
+      "name": "GPIO2",
+      "electrical_type": "I/O",
+      "side": "right",
+      "row_from_usb": 6,
+      "x_mm": 7.62,
+      "y_mm": -2.9994,
+      "original_header": "H2",
+      "original_header_pin": 3,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 3,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -14.2490063
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "1",
+      "name": "GPIO1",
+      "electrical_type": "I/O",
+      "side": "right",
+      "row_from_usb": 7,
+      "x_mm": 7.62,
+      "y_mm": -5.5394,
+      "original_header": "H2",
+      "original_header_pin": 2,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 2,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -16.7890038
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    },
+    {
+      "designator": "0",
+      "name": "GPIO0",
+      "electrical_type": "I/O",
+      "side": "right",
+      "row_from_usb": 8,
+      "x_mm": 7.62,
+      "y_mm": -8.0794,
+      "original_header": "H2",
+      "original_header_pin": 1,
+      "original_pad_center": {
+        "header": "H2",
+        "header_pin": 1,
+        "x_mm": 7.62,
+        "y_from_top_edge_mm": -19.3294
+      },
+      "orion_net": null,
+      "unused_in_orion": true
+    }
+  ],
+  "unused_pin_handling": "All sixteen pins are represented in symbol and footprint. Unused GPIOs remain on no net and receive a schematic no-connect directive.",
+  "sources": [
+    {
+      "kind": "manufacturer_repository",
+      "url": "https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware"
+    },
+    {
+      "kind": "native_pcb",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/Super%20Mini-ESP32C3-%E5%A4%96%E5%BD%A2.PcbDoc",
+      "sha256": "2024b62b05af1480517c1491ca3c5df6724d70554ca090afc0967b2c56023116"
+    },
+    {
+      "kind": "dimension_drawing",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/ESP32-C3%E5%B0%BA%E5%AF%B8%E5%9B%BE.png"
+    },
+    {
+      "kind": "schematic",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/%E7%94%B5%E8%B7%AF%E5%9B%BE.png"
+    },
+    {
+      "kind": "manufacturer_product_page",
+      "url": "https://www.nologo.tech/product/esp32/esp32c3/esp32c3supermini/esp32C3SuperMini.html"
+    }
+  ],
+  "verified_date": "2026-09-21"
+}

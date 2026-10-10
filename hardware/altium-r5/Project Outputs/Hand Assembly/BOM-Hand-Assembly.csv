@@ -1,0 +1,21 @@
+﻿References,Release value,Purchased MPN,LCSC,Package,Quantity 1 board,Quantity 4 boards,Note
+R2,10k 1% 0.1W,0603WAF1002T5E,C25804,0603,1,4,"10 kOhm, 1%, 0.1 W"
+"R3,R4",33R,0603WAF330JT5E,C23140,0603,2,8,"33 Ohm, 1%"
+"R20,R21",150R 1% 0.5W,RNCP1206FTD150R,C4258541,1206,2,8,"150 Ohm, 1%, 0.5 W each; both required"
+"C4,C5,C24,C26,C28,C30,C31",100nF 50V X7R,CC0603KRX7R9BB104,C14663,0603,7,28,"100 nF, 50 V, X7R; non-polar ceramic"
+"C20,C21",10uF 50V X7R,CL32B106KBJNNNE,C138687,1210,2,8,"10 uF, 50 V, X7R; non-polar ceramic"
+"C22,C23,C27,C32,C33",22uF 25V X5R,CL31A226KAHNNNE,C12891,1206,5,20,"22 uF, 25 V, X5R; non-polar ceramic"
+"C25,C29,C34",10uF 25V X5R,CL21A106KAYNNNE,C15850,0805,3,12,"10 uF, 25 V, X5R; non-polar ceramic"
+F1,T0.8A 63VDC,SF-1206S080-2,C3032873,1206 fuse,1,4,"0.8 A slow-blow, 63 VDC; non-polar"
+"L2,L3",4.7uH,FNR4030S4R7MT,C167874,4 x 4 mm,2,8,"4.7 uH; purchased replacement; two-terminal, non-polar"
+D1,SMBJ18A 600W,SMBJ18A,C152104,SMB,1,4,Unidirectional TVS: cathode stripe toward RIGHT
+D5,SS26 2A 60V,SS26,C14238,SMA,1,4,Schottky: cathode stripe toward RIGHT
+D3,PESD2CAN24T-Q,PESD2CAN24T-QR,C28933048,SOT-23,1,4,"Single lead LEFT; pin 1 lower-right, pin 2 upper-right"
+"U3,U4",AP63205WU-7,AP63205WU-7,C2071056,TSOT-26,2,8,Pin 1 lower-left in board top view; fixed 5 V version
+U1,ISO1042DWV,ISO1042DWVR,C2671714,SOIC-8 DWV,1,4,Pin 1 lower-right in board top view
+L1,ACT45B-510-2P-TL003,PSCIAQ4532-510Z,C2932173,4.5 x 3.2 mm,1,4,Purchased replacement; winding pairs 1-4 and 2-3
+U2,B0505S-3WR2,B0505S-3WR2,C7500927,SIP-4 THT,1,4,"Pin row LEFT to RIGHT: 1, 2, 4, 6; body toward lower edge"
+SW3,RUN / SERVICE,MK-12C02-G020,C963206,side SPDT,1,4,Actuator toward TOP board edge; verify RUN/SERVICE electrically
+MCU1,ESP32-C3 SuperMini,"ESP32-C3 SuperMini, ASIN B0FN4F6244",,castellated module,1,4,"USB RIGHT, antenna LEFT; solder all 16 outer lands; no headers"
+J1,NMEA Micro-C pigtail,"NMEA Micro-C pigtail, ASIN B0DTHSNSHS",,five wire holes,1,4,Cable termination; no discrete PCB connector
+TP1,Shield / chassis pad,,,bare copper pad,0,0,No purchased component; SHIELD access; do not bridge to either ground

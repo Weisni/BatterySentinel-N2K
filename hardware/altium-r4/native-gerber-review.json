@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": 69,
+  "errors": [],
+  "geometry": {
+    "GTL": {
+      "native_area_mm2": 1088.0199114115896,
+      "gerber_area_mm2": 1088.0200269846976,
+      "difference_mm2": 0.0009493321882660681
+    },
+    "GBL": {
+      "native_area_mm2": 1286.9758354557694,
+      "gerber_area_mm2": 1286.9759124167024,
+      "difference_mm2": 0.00037520835886430793
+    },
+    "GTS": {
+      "native_area_mm2": 298.05800310240056,
+      "gerber_area_mm2": 298.0580248311186,
+      "difference_mm2": 0.0005800652314029357
+    },
+    "GBS": {
+      "native_area_mm2": 51.65076431654505,
+      "gerber_area_mm2": 51.650766661965235,
+      "difference_mm2": 7.143729427294312e-05
+    },
+    "GTP": {
+      "native_area_mm2": 201.34862899562717,
+      "gerber_area_mm2": 201.3485999999998,
+      "difference_mm2": 0.0004496016990525614
+    },
+    "GBP": {
+      "native_area_mm2": 0.0,
+      "gerber_area_mm2": 0.0,
+      "difference_mm2": 0.0
+    },
+    "GTO": {
+      "native_area_mm2": 2.265695361229069,
+      "gerber_area_mm2": 2.2656982181732794,
+      "difference_mm2": 1.8178388845266988e-05
+    },
+    "GBO": {
+      "native_area_mm2": 7.690136522218882,
+      "gerber_area_mm2": 7.690153461872761,
+      "difference_mm2": 6.705609010505687e-05
+    },
+    "outline_max_difference_mm": 0.0001517901625594321
+  },
+  "native_sha256": "7d2df9c86b9532b35735ea91f382b23995319e3554256770182091e72f84abe7",
+  "scope": "Direct native PCB6 geometry versus Gerber and XNC. Includes copper, pad mask/paste, stroke silk, rounded outline and plated/nonplated slots. Via mask follows checked native TentedVias rule; full native source/link audit and native DRC are separate requirements."
+}

@@ -1,0 +1,15 @@
+{
+  "populated_components": 50,
+  "unique_references": 50,
+  "reference_markers": 50,
+  "diode_cathode_refs": [
+    "D1",
+    "D2",
+    "D4",
+    "D5"
+  ],
+  "cpl_rotations_match": true,
+  "source_sha256": "4a4989d4e2996890b10bbd8441d10cebc3b7e9fa029f893783310bcdb6c14af2",
+  "machine_zero_independently_verified": false,
+  "note": "Review actual JLC preview; reference land1 / USB A1-B12 shown at exact manufacturer local footprint positions."
+}

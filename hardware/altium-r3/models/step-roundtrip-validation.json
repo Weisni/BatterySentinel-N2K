@@ -1,0 +1,181 @@
+{
+  "step_files": 29,
+  "all_valid": true,
+  "design_sha256": "06ff5a7edb7c591e1ffd126b62bf6848b320732e276035811645038ffc1da47a",
+  "checks": [
+    {
+      "file": "C1.step",
+      "valid": true,
+      "solids": 8,
+      "size_bytes": 132734
+    },
+    {
+      "file": "C2.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "C3.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18063
+    },
+    {
+      "file": "C4.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "C5.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "C6.step",
+      "valid": true,
+      "solids": 8,
+      "size_bytes": 132770
+    },
+    {
+      "file": "C7.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "C8.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18087
+    },
+    {
+      "file": "C9.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18087
+    },
+    {
+      "file": "D1.step",
+      "valid": true,
+      "solids": 4,
+      "size_bytes": 23785
+    },
+    {
+      "file": "D2.step",
+      "valid": true,
+      "solids": 4,
+      "size_bytes": 23787
+    },
+    {
+      "file": "D3.step",
+      "valid": true,
+      "solids": 5,
+      "size_bytes": 47228
+    },
+    {
+      "file": "F1.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18291
+    },
+    {
+      "file": "J1.step",
+      "valid": true,
+      "solids": 10,
+      "size_bytes": 491239
+    },
+    {
+      "file": "JP1.step",
+      "valid": true,
+      "solids": 5,
+      "size_bytes": 29058
+    },
+    {
+      "file": "L1.step",
+      "valid": true,
+      "solids": 5,
+      "size_bytes": 29481
+    },
+    {
+      "file": "L2.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18265
+    },
+    {
+      "file": "MCU1.step",
+      "valid": true,
+      "solids": 30,
+      "size_bytes": 175672
+    },
+    {
+      "file": "Orion-Bridge-assembly.step",
+      "valid": true,
+      "solids": 154,
+      "size_bytes": 1752507
+    },
+    {
+      "file": "Q1.step",
+      "valid": true,
+      "solids": 6,
+      "size_bytes": 53626
+    },
+    {
+      "file": "R1.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18109
+    },
+    {
+      "file": "R2.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "R3.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "R4.step",
+      "valid": true,
+      "solids": 3,
+      "size_bytes": 18111
+    },
+    {
+      "file": "TP1.step",
+      "valid": true,
+      "solids": 1,
+      "size_bytes": 48371
+    },
+    {
+      "file": "U1.step",
+      "valid": true,
+      "solids": 10,
+      "size_bytes": 77008
+    },
+    {
+      "file": "U2.step",
+      "valid": true,
+      "solids": 8,
+      "size_bytes": 46788
+    },
+    {
+      "file": "U3.step",
+      "valid": true,
+      "solids": 6,
+      "size_bytes": 53498
+    },
+    {
+      "file": "Z1.step",
+      "valid": true,
+      "solids": 4,
+      "size_bytes": 23737
+    }
+  ]
+}

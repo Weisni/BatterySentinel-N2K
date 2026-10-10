@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "archive": "Orion-Enclosure-V2-Print-Package.zip",
+  "size_bytes": 46819374,
+  "sha256": "ed335d20665a012d650bc927ac17fbdb97f33af6c674082b43a8a9d34ecd52b2",
+  "files": 64,
+  "counts": {
+    ".stl": 27,
+    ".3mf": 6,
+    ".pdf": 2,
+    ".FCStd": 1,
+    ".step": 1
+  },
+  "crc_passed": true,
+  "all_payload_sha256_passed": true,
+  "cached_gcode_included_in_complete_project": true,
+  "visual_pdf_review": "All 16 final rendered pages inspected; no layout defects observed."
+}

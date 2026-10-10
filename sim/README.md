@@ -1,4 +1,10 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](../docs/internal/README.md).
+
 # BatterySentinel simulation environments
+
+## Orion Bridge portal preview
+
+To open and debug the actual Orion portal without a device, run `node tools/preview_portal.mjs` from the repository root and open [http://127.0.0.1:8765/](http://127.0.0.1:8765/). The preview serves the firmware's own web UI with simulated telemetry, forms and selectable error scenarios. It is separate from the battery-model simulator below and does not emulate ESP32, BLE, CAN or HTTPS behavior. See the [German web preview guide](../docs/web-preview.md) for page selection, browser debugging and custom ports.
 
 ## 1. BatterySentinel Lab (`sim/web`)
 
@@ -41,6 +47,6 @@ Wokwi supports ESP32-C3, I2C/SPI/Wi-Fi and custom WebAssembly chips. TWAI/CAN is
 
 ## Online hosting
 
-`sim/web` is intentionally a pure static site (HTML/CSS/JS), so it can be published with GitHub Pages without a server.
+`sim/web` is a project-internal static site (HTML/CSS/JS). Open it locally for engineering checks; its workflow runs syntax checks without publishing it.
 
 Do not enable Pages automatically without deciding visibility: a Pages site may be publicly reachable even when the source repository is private, depending on the GitHub plan/account type. The simulator itself contains no secrets, but publication should be an explicit project decision.

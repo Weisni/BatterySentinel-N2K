@@ -1,0 +1,710 @@
+{
+  "revision": "R5 original SuperMini source review",
+  "reviewed_date": "2026-09-23",
+  "identity": {
+    "manufacturer": "Nologo Tech",
+    "part": "ESP32-C3 SuperMini",
+    "substitution_permitted": false,
+    "actual_user_unit_revision_confirmed": false,
+    "note": "This identifies the published Nologo reference, not every board marketed as SuperMini."
+  },
+  "review_scope": "Manufacturer-source electrical and mechanical review; no physical sample measurements, RF test, assembly trial or production release.",
+  "status": {
+    "source_review_complete": true,
+    "production_landpattern_qualified": false,
+    "exact_jlc_stock_verified": false,
+    "universal_clone_compatibility": false
+  },
+  "mechanical": {
+    "view": "Top view, USB at positive Y, ceramic antenna at negative Y",
+    "origin": "Nominal 18.00 x 22.50 mm board-body center",
+    "body_mm": {
+      "width": 18.0,
+      "length": 22.5,
+      "xmin": -9,
+      "xmax": 9,
+      "ymin": -11.25,
+      "ymax": 11.25
+    },
+    "manufacturer_text_length_mm": 22.52,
+    "manufacturer_drawing_length_mm": 22.5,
+    "pitch_mm": 2.54,
+    "inner_row_spacing_mm": 15.24,
+    "module_inner_pad_diameter_mm": 1.6,
+    "module_inner_hole_diameter_mm": 0.9144,
+    "source_outline_note": "Native PCB outline is about 17.932 x 22.521 mm; manufacturer dimension illustration states 18.00 x 22.50 mm. Use nominal body as a placement envelope and inspect the actual module before manufacture.",
+    "native_source_limit": "Published PcbDoc has only two header components and sixteen inner through-hole pads; no complete module circuitry, outer castellations or 3D bodies. It is not complete production module CAD. Repository Hardware directory currently supplies this PcbDoc and two PNGs, not KiCad files.",
+    "castellations": {
+      "present_on_manufacturer_product": true,
+      "evidence": [
+        "product_photo",
+        "pinout_bottom",
+        "dimensions"
+      ],
+      "edge_x_nominal_mm": [
+        -9,
+        9
+      ],
+      "exact_hole_and_land_dimensions_verified": false,
+      "direct_surface_mount_viable_in_principle": true
+    },
+    "underside": {
+      "smd_components": "Manufacturer states single-sided assembly; official bottom view shows none.",
+      "usb_shield_features": "USB shield mounting solder/pin features occupy underside near USB. Exact protrusion is not dimensioned.",
+      "carrier_constraint": "No components under the module. Keep exposed unrelated copper clear of underside metal. Provide USB-tail cavity or measured standoff clearance."
+    },
+    "usb": {
+      "direction": "+Y",
+      "center_x_mm": 0,
+      "nominal_board_edge_y_mm": 11.25,
+      "connector_front_y_mm": null,
+      "center_z_above_module_bottom_mm": null,
+      "exact_envelope_verified": false
+    },
+    "antenna": {
+      "direction": "-Y",
+      "exact_keepout_from_nologo_verified": false,
+      "engineering_policy": "Place antenna end over carrier edge / open cutout. Keep carrier copper, components, screws and conductive enclosure features away. Do not present an invented numerical keepout as a Nologo requirement."
+    },
+    "z": {
+      "pcb_thickness_mm": null,
+      "solder_seating_height_mm": null,
+      "total_module_height_mm": null,
+      "note": "Old R3 3.1 mm standoff and 7.2 mm total body were illustration choices. They are not valid evidence for direct SMD assembly or final case tolerances."
+    },
+    "pins": [
+      {
+        "number": "5",
+        "name": "GPIO5",
+        "side_top_view": "left",
+        "row_from_usb": 1,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": 9.7006,
+        "module_header": "H1",
+        "module_header_pin": 1,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": 9.7006,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "6",
+        "name": "GPIO6",
+        "side_top_view": "left",
+        "row_from_usb": 2,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": 7.1606,
+        "module_header": "H1",
+        "module_header_pin": 2,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": 7.1606,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "ISO1042 TX via series resistor"
+      },
+      {
+        "number": "7",
+        "name": "GPIO7",
+        "side_top_view": "left",
+        "row_from_usb": 3,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": 4.6206,
+        "module_header": "H1",
+        "module_header_pin": 3,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": 4.6206,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "ISO1042 RX via series resistor"
+      },
+      {
+        "number": "8",
+        "name": "GPIO8",
+        "side_top_view": "left",
+        "row_from_usb": 4,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": 2.0806,
+        "module_header": "H1",
+        "module_header_pin": 4,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": 2.0806,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "9",
+        "name": "GPIO9",
+        "side_top_view": "left",
+        "row_from_usb": 5,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": -0.4594,
+        "module_header": "H1",
+        "module_header_pin": 5,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": -0.4594,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "10",
+        "name": "GPIO10",
+        "side_top_view": "left",
+        "row_from_usb": 6,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": -2.9994,
+        "module_header": "H1",
+        "module_header_pin": 6,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": -2.9994,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "20",
+        "name": "GPIO20",
+        "side_top_view": "left",
+        "row_from_usb": 7,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": -5.5394,
+        "module_header": "H1",
+        "module_header_pin": 7,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": -5.5394,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "21",
+        "name": "GPIO21",
+        "side_top_view": "left",
+        "row_from_usb": 8,
+        "inner_hole_x_mm": -7.62,
+        "y_mm": -8.0794,
+        "module_header": "H1",
+        "module_header_pin": 8,
+        "proposed_edge_land": {
+          "x_mm": -8.4,
+          "y_mm": -8.0794,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "5V",
+        "name": "5V",
+        "side_top_view": "right",
+        "row_from_usb": 1,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": 9.7006,
+        "module_header": "H2",
+        "module_header_pin": 8,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": 9.7006,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "Switched isolated supply; shared internally with USB VBUS"
+      },
+      {
+        "number": "GND",
+        "name": "GND",
+        "side_top_view": "right",
+        "row_from_usb": 2,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": 7.1606,
+        "module_header": "H2",
+        "module_header_pin": 7,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": 7.1606,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "GND_LOGIC"
+      },
+      {
+        "number": "3V3",
+        "name": "3V3",
+        "side_top_view": "right",
+        "row_from_usb": 3,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": 4.6206,
+        "module_header": "H2",
+        "module_header_pin": 6,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": 4.6206,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "Supply OUT to ISO1042 logic; no second regulator here"
+      },
+      {
+        "number": "4",
+        "name": "GPIO4",
+        "side_top_view": "right",
+        "row_from_usb": 4,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": 2.0806,
+        "module_header": "H2",
+        "module_header_pin": 5,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": 2.0806,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "3",
+        "name": "GPIO3",
+        "side_top_view": "right",
+        "row_from_usb": 5,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": -0.4594,
+        "module_header": "H2",
+        "module_header_pin": 4,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": -0.4594,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "2",
+        "name": "GPIO2",
+        "side_top_view": "right",
+        "row_from_usb": 6,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": -2.9994,
+        "module_header": "H2",
+        "module_header_pin": 3,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": -2.9994,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "1",
+        "name": "GPIO1",
+        "side_top_view": "right",
+        "row_from_usb": 7,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": -5.5394,
+        "module_header": "H2",
+        "module_header_pin": 2,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": -5.5394,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      },
+      {
+        "number": "0",
+        "name": "GPIO0",
+        "side_top_view": "right",
+        "row_from_usb": 8,
+        "inner_hole_x_mm": 7.62,
+        "y_mm": -8.0794,
+        "module_header": "H2",
+        "module_header_pin": 1,
+        "proposed_edge_land": {
+          "x_mm": 8.4,
+          "y_mm": -8.0794,
+          "size_x_mm": 2.8,
+          "size_y_mm": 1.8,
+          "source_status": "engineering_proposal_not_manufacturer_landpattern"
+        },
+        "carrier_function": "not connected on carrier"
+      }
+    ]
+  },
+  "carrier_land_proposal": {
+    "qualified": false,
+    "mode": "optional multimode prototype carrier, manual soldering preferred",
+    "inner_through_hole_land": {
+      "x_mm": [
+        -7.62,
+        7.62
+      ],
+      "pad_diameter_mm": 1.8,
+      "finished_hole_mm": 1.0
+    },
+    "edge_top_land": {
+      "x_mm": [
+        -8.4,
+        8.4
+      ],
+      "size_x_mm": 2.8,
+      "size_y_mm": 1.8,
+      "outer_toe_beyond_nominal_module_edge_mm": 0.8
+    },
+    "pin_number_policy": "Inner PTH and outer SMD primitives of each contact use the same pin number and net.",
+    "paste_policy": "Do not assume automatic reflow is qualified. Open carrier PTH barrels can wick solder away from flat SMT module joints. Use dedicated SMD-only variant or an assembler-approved filled-hole/paste process for factory SMT.",
+    "qualification_needed": [
+      "Identify actual purchased Nologo module revision",
+      "Verify outer contact dimensions, USB lower protrusion and plating",
+      "Check physical placement and accessible fillet",
+      "Approve stencil/assembly process if factory mounting requested"
+    ]
+  },
+  "power": {
+    "verified_module_network": [
+      "USB VBUS pins and module 5V header pin are the SAME VBUS net",
+      "VBUS -> PD1 BAT60J (ST, SOD323) -> VSYS",
+      "VSYS -> ME6211 3.3V SOT23-5 LDO IN and EN",
+      "LDO OUT -> module 3V3 header and ESP supply"
+    ],
+    "manufacturer_external_input_range_v": [
+      3.3,
+      6.0
+    ],
+    "range_note": "Manufacturer marketing input range does not guarantee regulated 3.3V at the lowest input and maximum load; diode and LDO dropout remain.",
+    "manufacturer_simultaneous_usb_external_allowed": false,
+    "carrier_series_diode_prevents_usb_backfeed": false,
+    "external_3v3_injection_approved": false,
+    "external_3v3_reason": "Parallels the onboard LDO when USB is active; ME6211 absolute VOUT limit is VIN+0.3V, so driving its output with unpowered VIN is not qualified.",
+    "recommended_topology": "Isolated secondary supply -> accessible RUN/SERVICE switch -> module 5V pin. SERVICE opens this positive supply before connecting USB. Module 3V3 output supplies only ISO1042 VCC1 and local decoupling. GND_LOGIC remains common, isolated from GND_BUS.",
+    "switch": {
+      "RUN": "External isolated supply connected, do not connect USB cable",
+      "SERVICE": "External isolated supply disconnected, USB may supply the original module and logic",
+      "must_be_accessible_with_case_closed": true
+    },
+    "module_ldo": {
+      "family": "ME6211",
+      "output_v": 3.3,
+      "package": "SOT23-5",
+      "full_ordering_suffix_in_nologo_schematic": null,
+      "datasheet_maximum_output_current_mA": 500,
+      "rating_test_vin_v": 4.3,
+      "absolute_vout_above_vin_v": 0.3,
+      "datasheet_theta_ja_C_per_W": 210,
+      "thermal_example": "At 0.25 A, 5.0V header and assumed 0.3V BAT60J drop: LDO dissipates (4.7-3.3)*0.25=0.35W; published thetaJA gives 73.5 C rise. This is a rough package-board estimate, not measured Nologo thermal performance."
+    },
+    "isolated_source_constraints": [
+      "Do not treat unregulated B0505S output as exact 5.0V.",
+      "Keep its preload and verify maximum/minimum loaded output and startup against module input limits.",
+      "If needed, retain/add a secondary limiter or regulator before the module 5V input; never connect a separate 3.3V source to the module output.",
+      "Check startup, radio bursts, continuous operation and case temperature on the assembled original module."
+    ],
+    "carrier_circuits_to_remove_when_using_module": [
+      "Separate carrier USB connector and its USB-data/CC network unless separately justified",
+      "Carrier 3.3V regulator connected to MCU supply",
+      "Duplicate ESP EN/BOOT/reset circuit already present on module"
+    ],
+    "carrier_circuits_to_keep": [
+      "ISO1042 TX pull-up to module 3.3V",
+      "GPIO6 TX / GPIO7 RX mapping",
+      "ISO1042 VCC1 bypass close to IC",
+      "3.2mm BUS/LOGIC copper separation inherited as carrier engineering rule"
+    ],
+    "supply_envelope_review": {
+      "review_date": "2026-09-23",
+      "r4_source_sha256": "4e1721a6f768551840022914f112e3267d6343b407ab30af759bed113e043f78",
+      "circuits_or_parts_changed": false,
+      "decision": "Direct unregulated connection is plausible within a restricted steady-state calculation but is NOT proven safe over all R5 operating conditions. Retain a properly reviewed secondary regulated supply for a defensible production design; set its voltage only after module/dropout and power-budget checks.",
+      "preload": {
+        "refs": [
+          "R20",
+          "R21"
+        ],
+        "each_ohm": 150,
+        "each_tolerance_percent": 1,
+        "each_rating_W": 0.5,
+        "parallel_ohm_nominal": 75,
+        "parallel_ohm_max": 75.75,
+        "current_at_5V_mA": 66.66666666666667,
+        "total_power_at_5V_W": 0.3333333333333333,
+        "current_at_4_625V_worst_resistance_mA": 61.056105610561055,
+        "each_power_at_6V_and_minus1percent_resistance_W": 0.24242424242424243,
+        "must_remain_across_raw_secondary_before_service_switch": true
+      },
+      "evisun_published_bounds": {
+        "input_V": [
+          4.5,
+          5.5
+        ],
+        "nominal_output_V": 5,
+        "output_current_mA": [
+          60,
+          600
+        ],
+        "output_envelope_at_nominal_input_25C": {
+          "at_10_percent_load_V": [
+            5.0,
+            5.5
+          ],
+          "at_100_percent_load_V": [
+            4.625,
+            5.125
+          ]
+        },
+        "line_regulation_max_percent_per_1percent_input_change": 1.2,
+        "ripple_noise_mVpp_typical": 80,
+        "ripple_noise_mVpp_max": 120,
+        "temperature_coefficient_percent_per_C_typical": 0.02,
+        "temperature_coefficient_max_published": false,
+        "startup_or_load_release_overshoot_max_published": false,
+        "notes": "Envelope chart visually inspected from actual manufacturer PDF; its 10% lower bound is 0%, not -2.5%. Temperature coefficient is only typical and specified at full load. Do not stack 12% typical load regulation on top of the already load-dependent envelope."
+      },
+      "stationary_calculations": [
+        {
+          "case": "nominal5V primary, light load",
+          "upper_V": 5.5,
+          "meaning": "published steady envelope at10% load; no startup claim"
+        },
+        {
+          "case": "primary5.05V CCM maximum, line regulation stacked multiplicatively",
+          "formula": "5.5*(1+0.012)",
+          "upper_V": 5.566,
+          "assumptions": [
+            "5V_BUS remains at most5.05V",
+            "10-100%load",
+            "25C",
+            "no transient"
+          ]
+        },
+        {
+          "case": "same plus full120mVpp as conservative positive allowance",
+          "formula": "5.5*1.012+0.120",
+          "upper_V": 5.686,
+          "limitations": "Uses published ripple maximum as a conservative positive excursion, without claiming its full operating-range applicability."
+        },
+        {
+          "case": "illustrative65C drift extrapolation",
+          "formula": "5.5*1.012*(1+65*0.0002)+0.120",
+          "upper_V": 5.758357999999999,
+          "qualified_bound": false,
+          "limitations": "Typical full-load temperature coefficient extrapolated to light load is NOT a guaranteed maximum."
+        },
+        {
+          "case": "generic allowed converter input5.5V",
+          "formula": "5.5*(1+0.12)",
+          "upper_V": 6.16,
+          "meaning": "Shows that full converter input specification alone cannot guarantee a6V module input limit; upstream regulation matters."
+        }
+      ],
+      "RUN": "Module adds load, but direct input retains load-dependent raw voltage, converter startup/load-step uncertainty and greater onboard LDO heating.",
+      "SERVICE": "Physical open switch isolates module from raw rail, so raw secondary high voltage does not reach module. Raw-secondary preload stays connected. USB alone powers module. Before returning to RUN, USB must be unplugged; RUN reconnect transient still requires validation.",
+      "why_not_production_proof": [
+        "AP63205 feedback4.95-5.05V bound is explicitly CCM; do not assume it independently certifies every light-load PFM transient",
+        "EVISUN temperature coefficient is typical only and at full load",
+        "EVISUN does not specify maximum startup or abrupt load-release overshoot",
+        "Source maximum600mA and3W constrain additional conversion loss",
+        "Real Nologo module revision, diode drop and onboard LDO thermal behavior still require confirmation"
+      ],
+      "review_options": [
+        {
+          "choice": "Secondary adjustable buck around4.5V",
+          "status": "proposal_only_not_selected",
+          "example_family": "AP63200",
+          "requirements": [
+            "AP63203 is documented as fixed3.3V; do not just relabel it4.5V",
+            "AP63200 uses500kHz vs existingAP63203 1.1MHz; review inductor and compensation/feedforward per datasheet",
+            "Set feedback using Vout=0.8*(1+Rtop/Rbottom); include reference/divider tolerances",
+            "Near low raw output the buck enters dropout:4.5V regulation is not guaranteed without headroom",
+            "Check remaining internal BAT60J drop and ME6211 margin at peak load",
+            "No extra series OR diode is needed for the stated physically disconnected SERVICE topology; any retained diode consumes dropout budget",
+            "Worst-case input current plus preload must stay below600mA and3W"
+          ],
+          "benefit": "Defined lower upper voltage and lower onboard LDO dissipation than direct raw supply"
+        },
+        {
+          "choice": "Secondary fixed5.0V buck",
+          "status": "proposal_only_not_selected",
+          "example_family": "AP63205",
+          "requirements": [
+            "Same datasheet pinout and1.1MHz as existingAP63203; existing4.7uH/2x22uF corresponds to manufacturer5V reference",
+            "Still review startup, low-input dropout, load transients and power budget",
+            "Do not promise5.0V when raw input is below output plus loss"
+          ],
+          "benefit": "Uses already sourced R4 part family/MPN option and limits high raw voltage; less LDO thermal improvement than4.5V"
+        }
+      ],
+      "budget_example": {
+        "module_input_V": 4.5,
+        "module_input_A": 0.5,
+        "assumed_secondary_efficiency": 0.8,
+        "raw_input_V": 4.625,
+        "calculated_raw_current_including_preload_A": 0.6697747747747748,
+        "passes600mA": false,
+        "note": "This conservative80% example fails; do not transfer the R4 3.3V/500mA budget to an externally5V-fed SuperMini. Actual high-duty efficiency and load current must be qualified. A buck in dropout does not maintain its nominated output voltage."
+      },
+      "recommended_next_design_gate": "Confirm actual SuperMini variant first; then explicitly select and review secondary regulator voltage, diode path, minimum voltage and thermal/current budget before changing CAD."
+    }
+  },
+  "procurement": {
+    "exact_manufacturer_module_jlc_code": null,
+    "lcsc_code": null,
+    "public_search_result": "No exact Nologo ESP32-C3 SuperMini assembly part verified on 2026-09-23. This is not proof that procurement is impossible.",
+    "queries": [
+      "site.jlcpcb.com/partdetail \"SuperMini\" \"ESP32\"",
+      "site.jlcpcb.com/partdetail \"ESP32-C3\" \"SuperMini\"",
+      "site.lcsc.com \"Nologo\" \"ESP32\"",
+      "site.lcsc.com \"ESP32-C3\" \"SuperMini\"",
+      "site.jlcpcb.com \"Nologo\""
+    ],
+    "rejected_near_match": {
+      "part": "ESP32-C6-SuperMini",
+      "jlc_code": "C9900170751",
+      "reason": "Different MCU and board; not the requested original ESP32-C3 SuperMini.",
+      "url": "https://jlcpcb.com/partdetail/-ESP32_C6SuperMini/C9900170751"
+    },
+    "delivery_options": [
+      "JLC assembles carrier; exact original SuperMini added separately by user/assembler",
+      "Consign exact original module only after JLC accepts manufacturer, package, orientation and assembly process"
+    ],
+    "jlc_requirements": "Consigned/preordered parts must be received in inventory and selected during component matching before the assembled order proceeds. Do not invent a C-code or claim direct all-populated PCBA availability."
+  },
+  "open_inputs_before_fabrication_release": [
+    "Exact module supplier/revision or physical sample dimensions",
+    "Final choice between direct castellated mounting and header alternative",
+    "USB shield underside clearance and module/USB maximum Z envelope",
+    "Module assembly responsibility: manual or confirmed JLC consignment",
+    "Electrical supply load/thermal validation after complete R5 power design"
+  ],
+  "sources": [
+    {
+      "id": "product",
+      "kind": "manufacturer_product_page",
+      "url": "https://www.nologo.tech/product/esp32/esp32c3/esp32c3supermini/esp32C3SuperMini.html"
+    },
+    {
+      "id": "hardware_index",
+      "kind": "manufacturer_repository_api",
+      "url": "https://api.github.com/repos/NologoTech/ESP32C3-Supermini/contents/Hardware",
+      "local_evidence": "tmp/r5-supermini/manufacturer-hardware-list.json",
+      "bytes": 3062,
+      "sha256": "ea48417b5fdd5373f56826f4de4faf01895645ced51e1ba8033aa4487025111f"
+    },
+    {
+      "id": "native_outline",
+      "kind": "manufacturer_native_outline_header_model",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/Super%20Mini-ESP32C3-%E5%A4%96%E5%BD%A2.PcbDoc",
+      "local_evidence": "tmp/supermini-research/SuperMini-Nologo.PcbDoc",
+      "expected_git_blob_sha1": "e4c987950bf6df46df210bd1aea63344ebfbda26",
+      "bytes": 12059136,
+      "sha256": "2024b62b05af1480517c1491ca3c5df6724d70554ca090afc0967b2c56023116",
+      "git_blob_sha1": "e4c987950bf6df46df210bd1aea63344ebfbda26",
+      "matches_fresh_repository_listing": true
+    },
+    {
+      "id": "dimensions",
+      "kind": "manufacturer_dimension_illustration",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/ESP32-C3%E5%B0%BA%E5%AF%B8%E5%9B%BE.png",
+      "local_evidence": "tmp/supermini-research/dimensions.png",
+      "expected_git_blob_sha1": "2febe5dd5c22d2740fbec0a5e4f0cea276afd556",
+      "bytes": 115852,
+      "sha256": "ef9cd1f57c73ab1450bb383e24f2b0f5ffbaf14731c120673b131a8a43056f60",
+      "git_blob_sha1": "2febe5dd5c22d2740fbec0a5e4f0cea276afd556",
+      "matches_fresh_repository_listing": true
+    },
+    {
+      "id": "schematic",
+      "kind": "manufacturer_schematic",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/%E7%94%B5%E8%B7%AF%E5%9B%BE.png",
+      "local_evidence": "tmp/supermini-research/schematic.png",
+      "expected_git_blob_sha1": "b32b3d1a4a51805887b442b24342b43feb67fe79",
+      "bytes": 177448,
+      "sha256": "a01f9807ecd48a1d8d33472d00ffc969b7bf7b1197ec2eccf3fb6e5a917ff8b6",
+      "git_blob_sha1": "b32b3d1a4a51805887b442b24342b43feb67fe79",
+      "matches_fresh_repository_listing": true
+    },
+    {
+      "id": "product_photo",
+      "kind": "manufacturer_actual_product_photo",
+      "url": "https://www.nologo.tech/assets/img/esp32/esp32c3supermini/esp32c3.png",
+      "local_evidence": "tmp/r5-supermini/product.png",
+      "bytes": 1062758,
+      "sha256": "66ddcaa09afc0c21f4dbe90e33a649ce05c447b8d195192b0e1bd5b4503b9901"
+    },
+    {
+      "id": "pinout_bottom",
+      "kind": "manufacturer_bottom_view_illustration",
+      "url": "https://www.nologo.tech/assets/img/esp32/esp32c3supermini/esp32c3foot1.png",
+      "local_evidence": "tmp/r5-supermini/pinout.png",
+      "bytes": 698524,
+      "sha256": "66f0c2c2568405406727cb269b46f01bdf2542e0dc67b555f87f36d4812f0fda"
+    },
+    {
+      "id": "me6211",
+      "kind": "manufacturer_authored_datasheet_distributor_hosted",
+      "url": "https://xonstorage.z8.web.core.windows.net/pdf/microone_me6211c33u4agn_sup12manufacturernocatlinknew.pdf",
+      "document": "Microne ME6211 V24, pages 1, 5, 10",
+      "publisher_origin": "https://www.microne.com.cn/product/20.html",
+      "origin_fetch_note": "Manufacturer product-page HTTPS certificate failed validation; distributor-hosted manufacturer PDF used, not a third-party circuit opinion."
+    },
+    {
+      "id": "jlc_consignment",
+      "kind": "manufacturer_assembly_service_policy",
+      "url": "https://jlcpcb.com/help/article/how-to-consign-parts-to-jlcpcb-from-mainland-china"
+    },
+    {
+      "id": "jlc_matching",
+      "kind": "manufacturer_assembly_service_policy",
+      "url": "https://jlcpcb.com/help/article/component-matching-guidelines-for-pcba-orders"
+    },
+    {
+      "id": "evisun_output_envelope",
+      "kind": "manufacturer_authored_datasheet_distributor_hosted",
+      "url": "https://resources.ampheo.com/static/datasheets/evisun/20240927/b2405s-3wr2.pdf",
+      "document": "EVISUN B_S-3WR2 V1.0, pages 1-3 and 5",
+      "local_evidence": "tmp/r4-electrical/EVISUN-B0505S-3WR2.pdf",
+      "sha256": "38d2aece0881cd41f7c200eaea5d2d0b742ff661aeb760871eaab4473eefab93",
+      "bytes": 584104
+    },
+    {
+      "id": "ap6320x",
+      "kind": "manufacturer_datasheet",
+      "url": "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf",
+      "document": "Diodes DS41326 Rev3-2, pages 5, 10, 12-14",
+      "local_evidence": "tmp/r4-electrical/AP6320x.pdf",
+      "sha256": "ef99daa3789d835bc025dfcb4c605c5c2e6d3e7223e86d40b33e6b497ea5a722",
+      "bytes": 1226090
+    }
+  ]
+}

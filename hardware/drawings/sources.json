@@ -1,0 +1,47 @@
+[
+  [
+    "TI ISO1042",
+    "DWV-Pins, Icc2 und Gehäuse",
+    "https://www.ti.com/lit/ds/symlink/iso1042.pdf"
+  ],
+  [
+    "TI TPS7B69-Q1",
+    "U3 SOT-223, 150 mA, COUT",
+    "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf"
+  ],
+  [
+    "RECOM R3M",
+    "Wandlerpins, Filter, Sicherung",
+    "https://recom-power.com/pdf/Econoline/R3M.pdf"
+  ],
+  [
+    "Diodes DMP6023LE",
+    "G1 / D2+Tab / S3",
+    "https://www.diodes.com/datasheet/download/DMP6023LE.pdf"
+  ],
+  [
+    "Nexperia PESD2CAN24T-Q",
+    "TVS-Pins und SOT-23",
+    "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf"
+  ],
+  [
+    "TDK ACT45B",
+    "CAN-Gleichtaktdrossel",
+    "https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf"
+  ],
+  [
+    "Garmin Micro-C",
+    "Pin-Nummern und Aderfarben",
+    "https://static.garmin.com/pumac/N2k_Field-install_Connector_Wiring_ML.pdf"
+  ],
+  [
+    "Nologo SuperMini",
+    "Modul und USB-Versorgung",
+    "https://www.nologo.tech/product/esp32/esp32c3/esp32c3supermini/esp32C3SuperMini.html"
+  ],
+  [
+    "Espressif RF-Layout",
+    "Antennenfreiraum",
+    "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/pcb-layout-design.html"
+  ]
+]

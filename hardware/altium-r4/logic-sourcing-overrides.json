@@ -1,0 +1,917 @@
+{
+  "revision": "R4 sourced component overrides",
+  "components": {
+    "R2": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C25804",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C25804",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10k 1% 0.1W"
+    },
+    "R5": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C25804",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C25804",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10k 1% 0.1W"
+    },
+    "R6": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C25804",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C25804",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10k 1% 0.1W"
+    },
+    "R7": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C25804",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C25804",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10k 1% 0.1W"
+    },
+    "R8": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C25804",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C25804",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10k 1% 0.1W"
+    },
+    "R9": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23186",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23186",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "5.1k 1% 0.1W"
+    },
+    "R10": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF5101T5E",
+      "lcsc": "C23186",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23186",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23186",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "5.1k 1% 0.1W"
+    },
+    "R11": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23345",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23345",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "22R 1% 0.1W"
+    },
+    "R12": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23345",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23345",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "22R 1% 0.1W"
+    },
+    "R3": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23140",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23140",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "33R 1% 0.1W"
+    },
+    "R4": {
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "mpn": "0603WAF330JT5E",
+      "lcsc": "C23140",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C23140",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C23140",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "33R 1% 0.1W"
+    },
+    "C10": {
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL10A105KB8NNNC",
+      "lcsc": "C15849",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15849",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15849",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "1uF 50V X5R"
+    },
+    "C11": {
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "10uF 25V X5R"
+    },
+    "C12": {
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "100nF 50V X7R"
+    },
+    "C4": {
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "100nF 50V X7R"
+    },
+    "C5": {
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "value": "100nF 50V X7R"
+    },
+    "D3": {
+      "manufacturer": "Nexperia",
+      "mpn": "PESD2CAN24T-QR",
+      "lcsc": "C28933048",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C28933048",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C28933048",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    "F1": {
+      "manufacturer": "BOURNS",
+      "mpn": "SF-1206S080-2",
+      "lcsc": "C3032873",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_BOURNS-SF-1206S080-2_C3032873.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C3032873",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C3032873",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    "L1": {
+      "manufacturer": "TDK",
+      "mpn": "ACT45B-510-2P-TL003",
+      "lcsc": "C76584",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151430_TDK-ACT45B-510-2P-TL003_C76584.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C76584",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C76584",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    "U1": {
+      "manufacturer": "Texas Instruments",
+      "mpn": "ISO1042DWVR",
+      "lcsc": "C2671714",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/2302212001_Texas-Instruments-ISO1042DWVR_C2671714.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2671714",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2671714",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    "D6": {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "USBLC6-2SC6",
+      "lcsc": "C7519",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C7519",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C7519",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "footprint": "SOT23_6_ST_USBLC6",
+      "pcb_footprint": {
+        "body": [
+          3.05,
+          1.75
+        ],
+        "height": 1.45,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": -1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 0.95,
+            "y": -1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0.95,
+            "y": 1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": 1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -0.95,
+            "y": 1.15,
+            "sx": 0.6,
+            "sy": 1.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "ST USBLC6-2 datasheet Fig22 p12; visually checked manufacturer recommended land pattern.",
+        "note": "ST USBLC6-2 datasheet Fig22 p12; visually checked manufacturer recommended land pattern."
+      },
+      "pin_names": {
+        "1": "IO1",
+        "2": "GND",
+        "3": "IO2",
+        "4": "IO2",
+        "5": "VBUS",
+        "6": "IO1"
+      }
+    },
+    "SW1": {
+      "manufacturer": "XUNPU",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": "C720477",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XUNPU-TS-1088-AR02016_C720477.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C720477",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C720477",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "footprint": "SW_XUNPU_TS1088_AR",
+      "pcb_footprint": {
+        "body": [
+          3.9,
+          3.0
+        ],
+        "height": 2.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.225,
+            "y": 0,
+            "sx": 1.05,
+            "sy": 2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 2.225,
+            "y": 0,
+            "sx": 1.05,
+            "sy": 2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "XUNPU TS-1088-ARXXXXXX manufacturer drawing: outer width5.50, inner gap3.40, padheight2.00; two terminals, no locating posts.",
+        "note": "XUNPU TS-1088-ARXXXXXX manufacturer drawing: outer width5.50, inner gap3.40, padheight2.00; two terminals, no locating posts."
+      },
+      "pin_names": {
+        "1": "A",
+        "2": "B"
+      }
+    },
+    "SW2": {
+      "manufacturer": "XUNPU",
+      "mpn": "TS-1088-AR02016",
+      "lcsc": "C720477",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XUNPU-TS-1088-AR02016_C720477.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C720477",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C720477",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "footprint": "SW_XUNPU_TS1088_AR",
+      "pcb_footprint": {
+        "body": [
+          3.9,
+          3.0
+        ],
+        "height": 2.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.225,
+            "y": 0,
+            "sx": 1.05,
+            "sy": 2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 2.225,
+            "y": 0,
+            "sx": 1.05,
+            "sy": 2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "XUNPU TS-1088-ARXXXXXX manufacturer drawing: outer width5.50, inner gap3.40, padheight2.00; two terminals, no locating posts.",
+        "note": "XUNPU TS-1088-ARXXXXXX manufacturer drawing: outer width5.50, inner gap3.40, padheight2.00; two terminals, no locating posts."
+      },
+      "pin_names": {
+        "1": "A",
+        "2": "B"
+      }
+    },
+    "J2": {
+      "manufacturer": "Korean Hroparts Elec",
+      "mpn": "TYPE-C-31-M-12",
+      "lcsc": "C165948",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C165948",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C165948",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "footprint": "USB_C_HRO_TYPE_C_31_M_12_2020",
+      "pcb_footprint": {
+        "body": [
+          8.94,
+          7.35
+        ],
+        "height": 3.26,
+        "pads": [
+          {
+            "number": "A1_B12",
+            "x": -3.2,
+            "y": 3.67,
+            "sx": 0.6,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "A4_B9",
+            "x": -2.4,
+            "y": 3.67,
+            "sx": 0.6,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B8",
+            "x": -1.75,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "A5",
+            "x": -1.25,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B7",
+            "x": -0.75,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "A6",
+            "x": -0.25,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "A7",
+            "x": 0.25,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B6",
+            "x": 0.75,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "A8",
+            "x": 1.25,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B5",
+            "x": 1.75,
+            "y": 3.67,
+            "sx": 0.3,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B4_A9",
+            "x": 2.4,
+            "y": 3.67,
+            "sx": 0.6,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "B1_A12",
+            "x": 3.2,
+            "y": 3.67,
+            "sx": 0.6,
+            "sy": 1.14,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "S1",
+            "x": -4.325,
+            "y": 3.1,
+            "sx": 1.0,
+            "sy": 2.1,
+            "drill": 0.6,
+            "shape": "RECTANGLE",
+            "drill_slot_length_mm": 1.7,
+            "drill_slot_angle_deg": 90
+          },
+          {
+            "number": "S2",
+            "x": 4.325,
+            "y": 3.1,
+            "sx": 1.0,
+            "sy": 2.1,
+            "drill": 0.6,
+            "shape": "RECTANGLE",
+            "drill_slot_length_mm": 1.7,
+            "drill_slot_angle_deg": 90
+          },
+          {
+            "number": "S3",
+            "x": -4.325,
+            "y": -1.08,
+            "sx": 1.0,
+            "sy": 1.8,
+            "drill": 0.6,
+            "shape": "RECTANGLE",
+            "drill_slot_length_mm": 1.4,
+            "drill_slot_angle_deg": 90
+          },
+          {
+            "number": "S4",
+            "x": 4.325,
+            "y": -1.08,
+            "sx": 1.0,
+            "sy": 1.8,
+            "drill": 0.6,
+            "shape": "RECTANGLE",
+            "drill_slot_length_mm": 1.4,
+            "drill_slot_angle_deg": 90
+          }
+        ],
+        "holes": [
+          {
+            "x": -2.89,
+            "y": 2.6,
+            "drill": 0.6,
+            "plated": false,
+            "copper_clearance_mm": 0.2,
+            "clearance_source": "https://jlcpcb.com/capabilities/pcb-capabilities ; NPTH-to-track0.20mm; HRO alignmenthole adjacentlandgap0.20mm."
+          },
+          {
+            "x": 2.89,
+            "y": 2.6,
+            "drill": 0.6,
+            "plated": false,
+            "copper_clearance_mm": 0.2,
+            "clearance_source": "https://jlcpcb.com/capabilities/pcb-capabilities ; NPTH-to-track0.20mm; HRO alignmenthole adjacentlandgap0.20mm."
+          }
+        ],
+        "pcb_edge_y_mm": -3.19,
+        "coordinate_convention": "Top view, port faces -Y. Datum NPTH midpoint is at(0,+2.60). Body-centred placement origin is nominal; solder lands and drill coordinates are exact relative to NPTH datum.",
+        "source_note": "HRO drawing dated2020-12-08 downloaded via JLC C165948. NOT older2018 KiCad footprint: updated front slots1.4, padwidth centres3.20/2.40 and padheight1.14. Body envelope3D is nominal. Shield copper enlarged by0.05mm peredge from manufacturer recommendation to provide0.20mm annular ring; drills unchanged.",
+        "note": "HRO drawing dated2020-12-08 downloaded via JLC C165948. NOT older2018 KiCad footprint: updated front slots1.4, padwidth centres3.20/2.40 and padheight1.14. Body envelope3D is nominal. Shield copper enlarged by0.05mm peredge from manufacturer recommendation to provide0.20mm annular ring; drills unchanged."
+      },
+      "pin_names": {
+        "A1_B12": "GND",
+        "A4_B9": "VBUS",
+        "B8": "SBU2",
+        "A5": "CC1",
+        "B7": "D-",
+        "A6": "D+",
+        "A7": "D-",
+        "B6": "D+",
+        "A8": "SBU1",
+        "B5": "CC2",
+        "B4_A9": "VBUS",
+        "B1_A12": "GND",
+        "S1": "SHIELD",
+        "S2": "SHIELD",
+        "S3": "SHIELD",
+        "S4": "SHIELD"
+      }
+    }
+  }
+}

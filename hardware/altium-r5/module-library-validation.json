@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "all16 source pad identities and rows",
+    "native symbol footprint pad identity",
+    "native footprint no holes or paste",
+    "native3D66body construction",
+    "all6 reference hashes present",
+    "rotation270 USB mouth transform"
+  ],
+  "schematic_pins": 16,
+  "native_pads": 16,
+  "native_3d_bodies": 66,
+  "usb_world_mm": [
+    52.65,
+    20,
+    2.75
+  ],
+  "physical_measurement": false
+}

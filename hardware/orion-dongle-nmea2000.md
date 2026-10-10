@@ -1,4 +1,8 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](../docs/internal/README.md).
+
 # Orion Dongle: ESP32-C3 SuperMini to isolated NMEA 2000
+
+**Historischer Erstentwurf:** [Revision R1](orion-pcb-r1.md) ersetzt insbesondere die Angaben zu Versorgung, USB und Terminierung auf dieser Seite. Aktuell sind die Zeichnungen [01 Versorgung](drawings/01-versorgung.svg), [02 CAN/Controller](drawings/02-can-controller.svg), [03 PCB-Layout](drawings/03-pcb-layout.svg) und die [vierseitige PDF-Mappe](../output/internal/engineering/orion-bridge-schaltplan-pcb-entwurf.pdf). Die untenstehende Stückliste und ihre Preise sind nicht auf R1 aktualisiert und dürfen nicht als R1-Bestellliste verwendet werden.
 
 Status: prototype reference design, 2026-09-20. This is not an NMEA 2000 certified product and is not a substitute for EMC, environmental, isolation and onboard acceptance testing.
 
@@ -115,7 +119,7 @@ Pin and wire assignments: [Garmin field-install connector](https://static.garmin
 2. `Q1`: DMP6023LE, -60 V P-channel MOSFET. Use it as a high-side reverse-polarity element. Add `R1 = 100 kohm` gate to NET-C and a 12 V gate-source Zener. Confirm source/drain against the selected footprint before PCB production.
 3. `D1`: SMBJ20A from protected BUS_12V to NET-C, cathode at BUS_12V. Its 20 V standoff remains above the 16 V operating ceiling while clamping well below U2's 50 V one-second surge rating. Keep the loop to F1 and NET-C short.
 4. `U2`: R3M-2405S/SMD, 9-36 V input, isolated regulated 5 V/600 mA output. Add 47 uF + 100 nF on its isolated output and the input/EMI parts recommended in its data sheet.
-5. `D2`: SS14/SS24-class Schottky between U2 output and the SuperMini 5 V pin. This provides simple power ORing with USB. Do not connect an unisolated serial adapter ground to GND2.
+5. `D2`: A Schottky diode between U2 output and the SuperMini 5 V pin does **not** by itself provide safe ORing with USB: on the published Nologo SuperMini, the 5 V pin and USB VBUS are the same net. R5 therefore requires a RUN/SERVICE disconnect in the external positive supply before connecting USB, plus verification that the isolated supply stays within the actual module's limits. Do not connect an unisolated serial adapter ground to GND2. See the source-backed [R5 module review](altium-r5/supermini-review.md).
 6. `U3`: LM2936M-5.0 supplies only ISO1042 VCC2. Fit the input and output capacitors required by its data sheet; a 10 uF output capacitor plus 100 nF local bypass is the starting point.
 7. `L1`: ACT45B-510-2P-TL003 common-mode choke. Place between ISO1042 and connector protection.
 8. `D3`: automotive two-line CAN TVS such as PESD2CAN24T-QR or ESD2CAN24-Q1, directly at the connector on the connector side of L1.

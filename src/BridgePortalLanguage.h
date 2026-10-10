@@ -43,12 +43,15 @@ window.bridgeI18n=(()=>{
   }
   function busy(button,english){button.disabled=true;button.dataset.busyKey=english;button.textContent=t(english)}
   function eventText(english){
+    const alert=/^(Input low voltage|Output low voltage|Input high voltage|Output high voltage|Orion data unavailable|Orion charger error): (activated|cleared|acknowledged|cancelled|reminder)$/.exec(english);
+    if(alert)return t(alert[1])+': '+t({'activated':'Activated','cleared':'Cleared','acknowledged':'Acknowledged','cancelled':'Cancelled','reminder':'Reminder'}[alert[2]]);
     const auth=/^Password verification (\d+) ms$/.exec(english);
     if(auth)return t('Password verification {ms} ms',{ms:auth[1]});
-    const orion=/^Orion state (\d+), output (-?[\d.]+) V (-?[\d.]+) A$/.exec(english);
-    if(orion)return t('Orion state {state}, output {voltage} V {current} A',{state:orion[1],voltage:orion[2],current:orion[3]});
-    const nmea=/^PGN (.+); sent (\d+), failed (\d+)(; values unavailable)?$/.exec(english);
-    if(nmea)return t('PGN {pgn}; sent {sent}, failed {failed}',{pgn:nmea[1],sent:nmea[2],failed:nmea[3]})+(nmea[4]?t('; values unavailable'):'');
+    const orion=/^Orion state (\d+), output (-?[\d.]+|NA) V (-?[\d.]+|NA) A$/.exec(english);
+    const electrical=value=>value==='NA'?t('Unavailable'):Number(value).toLocaleString(language==='de'?'de-DE':'en-US',{minimumFractionDigits:3,maximumFractionDigits:3,useGrouping:false});
+    if(orion)return t('Orion state {state}, output {voltage} V {current} A',{state:orion[1],voltage:electrical(orion[2]),current:electrical(orion[3])});
+    const nmea=/^PGN (.+); (sent|accepted) (\d+), failed (\d+)(; values unavailable)?$/.exec(english);
+    if(nmea)return t(nmea[2]==='accepted'?'PGN {pgn}; accepted {sent}, failed {failed}':'PGN {pgn}; sent {sent}, failed {failed}',{pgn:nmea[1],sent:nmea[3],failed:nmea[4]})+(nmea[5]?t('; values unavailable'):'');
     return t(english);
   }
   document.getElementById('language-select').addEventListener('change',event=>setLanguage(event.target.value));

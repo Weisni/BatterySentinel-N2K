@@ -1,0 +1,525 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">23.09.2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:19:10</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc" class="file"><acronym title="C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc">C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">51</td></tr>
+</table>
+</td>
+</table><a name="IDQECHINANUCEGBNHQUZQPEWF0SIJZNGL2VUCNV4KFGPQVOTRPWJ2I"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIXAS4Y2JEGEGGTJ1EE5U540TDK0LHADOA2TLGOGLS4QZDDWBVXZK">Clearance Constraint (Gap=125.984mil) (InNet('5V_BUS') Or InNet('BST_BUS') Or InNet('BUS_PROT') Or InNet('CANH') Or InNet('CANH_EXT') Or InNet('CANL') Or InNet('CANL_EXT') Or InNet('FUSED_IN') Or InNet('GND_BUS') Or InNet('NET_S') Or InNet('SHIELD') Or InNet('SW_BUS')),(InNet('3V3_LOGIC') Or InNet('5V_ISO') Or InNet('5V_SYS') Or InNet('BST_LOGIC') Or InNet('ESP_BOOT') Or InNet('ESP_EN') Or InNet('ESP_GPIO2') Or InNet('ESP_GPIO8') Or InNet('GND_LOGIC') Or InNet('GPIO6') Or InNet('GPIO7') Or InNet('RXD') Or InNet('SW_LOGIC') Or InNet('TXD') Or InNet('USB_CC1') Or InNet('USB_CC2') Or InNet('USB_DM') Or InNet('USB_DM_IN') Or InNet('USB_DM_MCU') Or InNet('USB_DP') Or InNet('USB_DP_IN') Or InNet('USB_DP_MCU') Or InNet('USB_VBUS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZOMUGHTKTSFLPO2CKQM1NIEJGOAXPTUABF5RO4JSZOCHPKKKBRMI">Clearance Constraint (Gap=5.906mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0MEFYEJY2BGTC44ZWN0N0PWVJGTGVA4LE1NVLPBLM2NZSGMKJD5F">Clearance Constraint (Gap=9.842mil) (IsPad And (HoleSize &gt; 0) And (PadIsPlated = 'False') And (Not InComponent('J2'))),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKGXN4HX3OQT3HJ2D3VU40IQ40HGRI4XDW4VRPYK2I0CG3ZCYN40F">Clearance Constraint (Gap=7.874mil) (IsPad And (HoleSize &gt; 0) And (PadIsPlated = 'False') And InComponent('J2')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCX3FTGJ15ECHN2AEIOQI5GRZKYXB4OOB10BJOPNQICKKKFWYKOI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5ILKQ2EHKF1UPY251B4AZ3ERAPFA1NHNK3BLXOHCTIIGQFYY2BVP">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHCNEQJNSULC1OVYFFR4212YSQK5VTJI0DKPVK4DU5M403AJODASD">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTQVZWRAERT5ED3WZFMG4CRKUMLHQIXKLRE1JLYKHC3IUBHHO1E4F">Width Constraint (Min=5.906mil) (Max=19.685mil) (Preferred=5.906mil) (InNet('USB_CC1') Or InNet('USB_CC2') Or InNet('USB_DM') Or InNet('USB_DM_IN') Or InNet('USB_DM_MCU') Or InNet('USB_DP') Or InNet('USB_DP_IN') Or InNet('USB_DP_MCU'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3BL1FXGRLPZWLRIUBQ1KWZSDWE0EZONIRHGJ5SGL1AEIDNOJLWBK">Width Constraint (Min=7.874mil) (Max=78.74mil) (Preferred=11.811mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWRP1T3KBVHFILIKDD0KCL3W1JFVNR22IHWCKZOP5WU3OTLP1ALNP">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCQL0FRJ21HETB50LG5K4QMQKTFATAOZPQHVMMBHWPFUVPAS35KSF">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIVR55YNAHFWCGAJ44G5OBXIYKDH0OLXT4LCMXQO4O5NFDIAEISMG">Routing Via (MinHoleWidth=11.811mil) (MaxHoleWidth=11.811mil) (PreferredHoleWidth=11.811mil) (MinWidth=23.622mil) (MaxWidth=23.622mil) (PreferedWidth=23.622mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWHKMGMDTO4ZIFAPCPS0NUG41EHACQD0SVCCPKDNTMUY1ITU2AWIN">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIS4V1WJPOHH4FCM44NNK02R4OBN5KKE1DROAHOPTK3AIKJDUL21K">Minimum Annular Ring (Minimum=7.087mil) (IsPad And (PadIsPlated = 'True'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQHHJKPVUKXYRII2WBOZIUMMJKFJBEYCRGETX2HMDU5JKVVBEMTLE">Minimum Annular Ring (Minimum=5.906mil) (IsVia)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXRUP41QBNKGIDS1ZBSQUZI1VYDBXPMR5LSAV03HUTIHUSC4JEIID">Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCLGOSARCAHEPEWNGV4KLLFTIGPQ4BKEULWUMJMEFOCFG5ZCWJ2PN">Hole To Hole Clearance (Gap=9.842mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDP3LE4QRAECW1MYINEBGD2TDFFCJX1SYWM3GMU1CAYH32A1ZXCLEN">Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHYUG0KJAI2YKE4S1ZZJOUMKWPNFLD1EMHFKJA1NYTLQRROEWD4LK">Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWLJFRRJDBKJJKSCSJ54HL2W0RJRHO1KRGXSVS5E0AGJDAPPVTEUG">Silk to Silk (Clearance=3.937mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQSTMCJKPLGTBSODRHATMAQHHP21L0LPTL15MQLJAFXZEOFRIJOO">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID524DMKH3L0REKNKLSLVBZWLCJGPKHSZ2VEURRQHJ4PEKC5XLKYUH">Board Clearance Constraint (Gap=0mil) (All)</a></td>
+<td class="column2">51</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCKAMDI11KR3BNTR0DQ3I4LKXQEB5K1AHK3PTN0NCUMLBTBVCQTMD">Component Clearance Constraint ( Horizontal Gap = 9.842mil, Vertical Gap = 9.842mil ) (All),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3RK0ZJUBPYNQYR4125ZX3ORIJ4OUS2A5XSYY4FBVP3XPW1JMXMI">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">51</td>
+</tr>
+</table><br><a name="ID524DMKH3L0REKNKLSLVBZWLCJGPKHSZ2VEURRQHJ4PEKC5XLKYUH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=601.344mil|Location2.X=614.798mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=601.344mil|Location2.X=614.798mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=692.092mil|Location2.X=705.546mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=692.092mil|Location2.X=705.546mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.635mil|Location2.X=534.09mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.635mil|Location2.X=534.09mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.635mil|Location2.X=534.09mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.635mil|Location2.X=534.09mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.851mil|Location1.Y=8.003mil|Location2.Y=22.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.851mil|Location1.Y=8.003mil|Location2.Y=22.255mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=59.722mil|Location2.X=83.682mil|Location1.Y=1246.063mil|Location2.Y=1259.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=59.722mil|Location2.X=83.682mil|Location1.Y=1246.063mil|Location2.Y=1259.518mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1850.325mil|Location2.X=1870.49mil|Location1.Y=1227.317mil|Location2.Y=1244.146mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1850.325mil|Location2.X=1870.49mil|Location1.Y=1227.317mil|Location2.Y=1244.146mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=829.887mil|Location2.X=843.341mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=829.887mil|Location2.X=843.341mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20.479mil|Location2.X=38.962mil|Location1.Y=15.413mil|Location2.Y=34.14mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20.479mil|Location2.X=38.962mil|Location1.Y=15.413mil|Location2.Y=34.14mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=270.832mil|Location2.X=284.286mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=270.832mil|Location2.X=284.286mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=70.374mil|Location2.X=83.829mil|Location1.Y=-0.703mil|Location2.Y=12.752mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=70.374mil|Location2.X=83.829mil|Location1.Y=-0.703mil|Location2.Y=12.752mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.77mil|Location1.Y=1237.588mil|Location2.Y=1251.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.77mil|Location1.Y=1237.588mil|Location2.Y=1251.979mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1861.546mil|Location2.X=1878.374mil|Location1.Y=27.149mil|Location2.Y=47.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1861.546mil|Location2.X=1878.374mil|Location1.Y=27.149mil|Location2.Y=47.315mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1843.332mil|Location2.X=1864.557mil|Location1.Y=10.641mil|Location2.Y=25.919mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1843.332mil|Location2.X=1864.557mil|Location1.Y=10.641mil|Location2.Y=25.919mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.375mil|Location2.X=437.83mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.375mil|Location2.X=437.83mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.244mil|Location2.X=883.698mil|Location1.Y=1247.111mil|Location2.Y=1260.565mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.244mil|Location2.X=883.698mil|Location1.Y=1247.111mil|Location2.Y=1260.565mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.009mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.244mil|Location2.X=883.698mil|Location1.Y=-0.723mil|Location2.Y=12.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=870.244mil|Location2.X=883.698mil|Location1.Y=-0.723mil|Location2.Y=12.732mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.009mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1020.814mil|Location2.X=1034.269mil|Location1.Y=-0.721mil|Location2.Y=12.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1020.814mil|Location2.X=1034.269mil|Location1.Y=-0.721mil|Location2.Y=12.733mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.012mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1020.814mil|Location2.X=1034.269mil|Location1.Y=1247.109mil|Location2.Y=1260.564mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1020.814mil|Location2.X=1034.269mil|Location1.Y=1247.109mil|Location2.Y=1260.564mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.012mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1101.164mil|Location2.X=1114.619mil|Location1.Y=1247.109mil|Location2.Y=1260.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1101.164mil|Location2.X=1114.619mil|Location1.Y=1247.109mil|Location2.Y=1260.563mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.013mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.351mil|Location2.X=1125.806mil|Location1.Y=-0.72mil|Location2.Y=12.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.351mil|Location2.X=1125.806mil|Location1.Y=-0.72mil|Location2.Y=12.734mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.014mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.351mil|Location2.X=1125.806mil|Location1.Y=1247.108mil|Location2.Y=1260.563mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1112.351mil|Location2.X=1125.806mil|Location1.Y=1247.108mil|Location2.Y=1260.563mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.014mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1101.164mil|Location2.X=1114.619mil|Location1.Y=-0.721mil|Location2.Y=12.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1101.164mil|Location2.X=1114.619mil|Location1.Y=-0.721mil|Location2.Y=12.734mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.014mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.299mil|Location2.X=942.754mil|Location1.Y=1247.11mil|Location2.Y=1260.565mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.299mil|Location2.X=942.754mil|Location1.Y=1247.11mil|Location2.Y=1260.565mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.01mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.299mil|Location2.X=942.754mil|Location1.Y=-0.722mil|Location2.Y=12.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=929.299mil|Location2.X=942.754mil|Location1.Y=-0.722mil|Location2.Y=12.732mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.01mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1541.482mil|Location2.X=1554.937mil|Location1.Y=-0.716mil|Location2.Y=12.739mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1541.482mil|Location2.X=1554.937mil|Location1.Y=-0.716mil|Location2.Y=12.739mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.023mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=228.512mil|Location2.X=241.966mil|Location1.Y=1247.103mil|Location2.Y=1260.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=228.512mil|Location2.X=241.966mil|Location1.Y=1247.103mil|Location2.Y=1260.558mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.024mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1742.092mil|Location2.X=1755.546mil|Location1.Y=-0.714mil|Location2.Y=12.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1742.092mil|Location2.X=1755.546mil|Location1.Y=-0.714mil|Location2.Y=12.741mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.027mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1429.333mil|Location2.X=1442.787mil|Location1.Y=1247.105mil|Location2.Y=1260.56mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1429.333mil|Location2.X=1442.787mil|Location1.Y=1247.105mil|Location2.Y=1260.56mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.02mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1429.333mil|Location2.X=1442.787mil|Location1.Y=-0.717mil|Location2.Y=12.737mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1429.333mil|Location2.X=1442.787mil|Location1.Y=-0.717mil|Location2.Y=12.737mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.02mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.832mil|Location2.X=159.286mil|Location1.Y=-0.704mil|Location2.Y=12.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.832mil|Location2.X=159.286mil|Location1.Y=-0.704mil|Location2.Y=12.751mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.047mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.832mil|Location2.X=159.286mil|Location1.Y=-0.704mil|Location2.Y=12.751mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.832mil|Location2.X=159.286mil|Location1.Y=-0.704mil|Location2.Y=12.751mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.047mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=164.815mil|Location2.X=178.269mil|Location1.Y=1247.091mil|Location2.Y=1260.545mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=164.815mil|Location2.X=178.269mil|Location1.Y=1247.091mil|Location2.Y=1260.545mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.049mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.829mil|Location2.X=159.284mil|Location1.Y=1247.087mil|Location2.Y=1260.542mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=145.829mil|Location2.X=159.284mil|Location1.Y=1247.087mil|Location2.Y=1260.542mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.056mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=34.395mil|Location2.X=55.881mil|Location1.Y=1236.575mil|Location2.Y=1251.414mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=34.395mil|Location2.X=55.881mil|Location1.Y=1236.575mil|Location2.Y=1251.414mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.092mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=34.389mil|Location2.X=55.959mil|Location1.Y=8.58mil|Location2.Y=23.283mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=34.389mil|Location2.X=55.959mil|Location1.Y=8.58mil|Location2.Y=23.283mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.112mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=692.092mil|Location2.X=705.546mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=692.092mil|Location2.X=705.546mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20.479mil|Location2.X=38.962mil|Location1.Y=15.413mil|Location2.Y=34.14mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=20.479mil|Location2.X=38.962mil|Location1.Y=15.413mil|Location2.Y=34.14mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.77mil|Location1.Y=1237.588mil|Location2.Y=1251.979mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.77mil|Location1.Y=1237.588mil|Location2.Y=1251.979mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=59.722mil|Location2.X=83.682mil|Location1.Y=1246.063mil|Location2.Y=1259.518mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=59.722mil|Location2.X=83.682mil|Location1.Y=1246.063mil|Location2.Y=1259.518mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.263mil|Location2.X=1269.717mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1256.263mil|Location2.X=1269.717mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=638.942mil|Location2.X=652.397mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=638.942mil|Location2.X=652.397mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.375mil|Location2.X=437.83mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=424.375mil|Location2.X=437.83mil|Location1.Y=-0.723mil|Location2.Y=12.731mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.343mil|Location2.X=1842.246mil|Location1.Y=0.648mil|Location2.Y=14.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1818.343mil|Location2.X=1842.246mil|Location1.Y=0.648mil|Location2.Y=14.102mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=829.887mil|Location2.X=843.341mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=829.887mil|Location2.X=843.341mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.851mil|Location1.Y=8.003mil|Location2.Y=22.255mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=36.035mil|Location2.X=57.851mil|Location1.Y=8.003mil|Location2.Y=22.255mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=62.965mil|Location2.X=86.99mil|Location1.Y=-0.156mil|Location2.Y=13.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=62.965mil|Location2.X=86.99mil|Location1.Y=-0.156mil|Location2.Y=13.298mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=270.832mil|Location2.X=284.286mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=270.832mil|Location2.X=284.286mil|Location1.Y=1247.111mil|Location2.Y=1260.566mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.008mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.47mil|Location2.X=181.924mil|Location1.Y=1247.091mil|Location2.Y=1260.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.47mil|Location2.X=181.924mil|Location1.Y=1247.091mil|Location2.Y=1260.546mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.048mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=164.815mil|Location2.X=178.269mil|Location1.Y=-0.702mil|Location2.Y=12.753mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=164.815mil|Location2.X=178.269mil|Location1.Y=-0.702mil|Location2.Y=12.753mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.051mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.47mil|Location2.X=181.924mil|Location1.Y=-0.701mil|Location2.Y=12.753mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.47mil|Location2.X=181.924mil|Location1.Y=-0.701mil|Location2.Y=12.753mil|Absolute=True">Board Outline Clearance(Outline Edge): (12.052mil &lt; 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

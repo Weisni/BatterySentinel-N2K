@@ -1,0 +1,145 @@
+{
+  "board_edge_negative_control": {
+    "passed": true,
+    "violations": 51,
+    "test_clearance_mm": 0.31,
+    "report_timestamp": "2026-09-23T12:19:10",
+    "report_sha256": "ee823840fb9a5479efc9544e8b3ac1a49909bb1c6d1878dcfc4bb431044d2a9e",
+    "captured_native_sha256": "e0e0f42685dbbab61c49872b1d51952192cef80e7b1af9b47e45dafae807231a",
+    "evidence_files": [
+      "validation\\BoardEdge-negative-0_31mm.drc",
+      "validation\\BoardEdge-negative-0_31mm-rule.json"
+    ],
+    "conclusion": "Actual native violations enforce 0.31 mm even though the legacy rule header prints Gap=0mil and uniform OBJECTCLEARANCES serializes empty. Final native GENERICCLEARANCE must be restored to 0.30 mm with a new zero-violation run."
+  },
+  "geometry": {
+    "passed": true,
+    "errors": [],
+    "connected_nets": 35,
+    "main_supply_paths": [
+      {
+        "net": "NET_S",
+        "start": "J1.2",
+        "end": "F1.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "FUSED_IN",
+        "start": "F1.2",
+        "end": "D5.2",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "BUS_PROT",
+        "start": "D5.1",
+        "end": "U3.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_BUS",
+        "start": "U3.5",
+        "end": "L2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U1.8",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_ISO",
+        "start": "U2.6",
+        "end": "D2.2",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_SYS",
+        "start": "D2.1",
+        "end": "U4.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_SYS",
+        "start": "D4.1",
+        "end": "U4.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_LOGIC",
+        "start": "U4.5",
+        "end": "L3.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "3V3_LOGIC",
+        "start": "L3.2",
+        "end": "MCU1.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "USB_VBUS",
+        "start": "J2.A4_B9",
+        "end": "D4.2",
+        "minimum_track_width_mm": 0.2,
+        "passed": true
+      },
+      {
+        "net": "USB_VBUS",
+        "start": "J2.B4_A9",
+        "end": "D4.2",
+        "minimum_track_width_mm": 0.2,
+        "passed": true
+      }
+    ],
+    "total_nets": 35,
+    "minimum_copper_clearance_mm": 0.15,
+    "minimum_domain_separation_mm": 3.209999,
+    "minimum_body_clearance_mm": 0.275,
+    "minimum_native_3d_body_clearance_mm": 0.3275,
+    "minimum_mask_web_mm": 0.099998,
+    "minimum_plated_annulus_mm": 0.19999959999999994,
+    "npth_holes": 4,
+    "method": "Independent decoded PCB pad/track/via/region/body geometry, native slot angles and component NPTH; connectivity across plated pads and vias."
+  },
+  "binary_sha256": "7d2df9c86b9532b35735ea91f382b23995319e3554256770182091e72f84abe7",
+  "source_sha256": "1eecfac3bdd9b98320eeed82e44a855b86e1aabd255e11f69e328d3b60312153",
+  "components": 52,
+  "nets": 35,
+  "pads": 164,
+  "plated_slots": 4,
+  "npth_holes": 4,
+  "tracks": 298,
+  "vias": 41,
+  "regions": 96,
+  "component_bodies": 264,
+  "native_rule_count": 45,
+  "native_drc_execution": {
+    "report_file": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Project Outputs\\Design Rule Check - Orion-Bridge-R4.drc",
+    "sha256": "5c6f99f8c7ccadca297c0533edb8c435e6fe58c5493f4e6af2205bd6d591276f",
+    "report_timestamp": "2026-09-23T12:25:32",
+    "processed_rules": 24,
+    "scope": "Executed batch DRC constraints and zero unwaived/waived violations; report file snapshot must be regenerated after any physical edit."
+  },
+  "passed": true,
+  "checks": 8384,
+  "errors": [],
+  "scope": "Saved PCB6 binary compared with generated ASCII: component source identity/parameters, every pad/net/layer/drill/slot/plating, paste suppression, copper, rounded contour, scoped design rules, actual 3D contours; then actual binary copper/mechanical geometry and executed native DRC checked. Manufacturer/hardware qualification remains separate."
+}

@@ -1,0 +1,1 @@
+{"components": 52, "valid_solids": 264, "assembly": "Orion-Bridge-assembly.step", "step_readback_valid": true, "step_readback_solids": 265, "assembly_envelope_mm": [48.0, 38.485, 12.83]}

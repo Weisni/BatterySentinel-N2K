@@ -1,0 +1,46 @@
+{
+  "Orion-R5-P2S-complete.3mf": {
+    "bytes": 4174282,
+    "sha256": "db273c8765b7b485ade0e00b145be3a7e52340fcbd8c66b12478d8a3d976d1d0"
+  },
+  "Orion-R5-all-parts-portable.3mf": {
+    "bytes": 900222,
+    "sha256": "91165daedd9605ea544920501e5d6436a1fb38deb9c7cf5b3a1cf012da039b4a"
+  },
+  "Orion-R5-sealed-enclosure.FCStd": {
+    "bytes": 4365473,
+    "sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2"
+  },
+  "Orion-R5-sealed-assembly.step": {
+    "bytes": 19116344,
+    "sha256": "4164db81c70cd2d21817a7d19d8d0a66708652a1d0a9157e5a98ff3c235ff190"
+  },
+  "print-manifest.json": {
+    "bytes": 2229,
+    "sha256": "fb738bb6990d3ec935fde12f548440c6d831eba456991cd917fc092a2e8f2ebf"
+  },
+  "sealed-contract.json": {
+    "bytes": 35763,
+    "sha256": "35a7106c7f260a2ae32658e12e3f09f9df5598acf8a9d71d3405e828bf4978fd"
+  },
+  "validation.json": {
+    "bytes": 14181,
+    "sha256": "c3e6de78e4877b1a3d34f6a5d789e9a8ce2f75034b3124981831538f82740510"
+  },
+  "README.md": {
+    "bytes": 13261,
+    "sha256": "10979471f7f0d16a6e3777a3edfb7f933a0d6bcc432706339f17f9d1621077c7"
+  },
+  "independent-review.md": {
+    "bytes": 8375,
+    "sha256": "77883c83c26f1bd3990ea2b3a2d32a8b00da1c21824a05b680b676f4e5c4ed31"
+  },
+  "preview-assembled.png": {
+    "bytes": 63997,
+    "sha256": "b00f152bdd71fed5aec502968912e8c408ae46a18529e5d7e1c62f8d2b40872f"
+  },
+  "preview-exploded.png": {
+    "bytes": 102256,
+    "sha256": "9ce637bd76133ea633968bb92190384fbc56096362e6b7ceb181b895554ab5b7"
+  }
+}

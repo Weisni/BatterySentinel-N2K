@@ -1,0 +1,18 @@
+Orion Bridge R4 – JLCPCB-PCBA-Dateien
+
+Dieses ZIP ist ein Download-Paket. Nicht das ganze Paket als Gerber hochladen!
+Zuerst entpacken, dann zusammengehörig verwenden:
+
+Gerber: JLCPCB-Panel/Orion-Bridge-R4-Panel-Gerber.zip
+BOM:    JLCPCB-Panel/BOM-JLCPCB.csv
+CPL:    JLCPCB-Panel/CPL-JLCPCB.csv
+
+70×70-mm-Kundenpanel mit genau einer 48×32-mm-Platine, Oberseitenbestückung,
+Standard PCBA. Keine zusätzliche V-Cut-Panellierung ergänzen.
+Alle Einstellungen und Bestellbemerkungen stehen in panel-ordering.md.
+Die konkrete JLC-Bauteilverfügbarkeit und Orientierung anhand der Prüfzeichnung
+assembly/Bestueckung-R4.svg beziehungsweise .png abgleichen.
+
+Eine JLC-Bestellung wurde nicht ausgelöst; Hardware-Funktion und EMV sind noch
+nicht an einer realen R4-Platine gemessen. J1-Kabel und Firmware separat ergänzen.
+PACKAGE-MANIFEST.json und SHA256SUMS.txt dokumentieren den Paketinhalt.

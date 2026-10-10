@@ -1,0 +1,277 @@
+{
+  "board": {
+    "width_mm": 48,
+    "height_mm": 32,
+    "corner_radius_mm": 2
+  },
+  "routing_constraints": {
+    "grid": 0.1,
+    "clearance": 0.15,
+    "edge_clearance": 0.3,
+    "ground_clearance": 0.2,
+    "hole_clearance": 0.25,
+    "ground_min_neck": 0.3,
+    "ground_domains": {
+      "GND_BUS": [
+        0.3,
+        0.3,
+        17.9,
+        31.7
+      ],
+      "GND_LOGIC": [
+        21.1,
+        0.3,
+        47.7,
+        31.7
+      ]
+    },
+    "net_regions": {
+      "GND_BUS": [
+        0.3,
+        0.3,
+        17.9,
+        31.7
+      ],
+      "GND_LOGIC": [
+        21.1,
+        0.3,
+        47.7,
+        31.7
+      ]
+    },
+    "keepouts": [
+      {
+        "name": "Isolation barrier",
+        "x1": 17.9,
+        "y1": 0,
+        "x2": 21.1,
+        "y2": 32,
+        "layers": [
+          "TOP",
+          "BOTTOM"
+        ]
+      },
+      {
+        "name": "Panel tab left",
+        "x1": 0,
+        "y1": 4.7,
+        "x2": 0.6,
+        "y2": 10.3,
+        "layers": [
+          "TOP",
+          "BOTTOM"
+        ]
+      },
+      {
+        "name": "Panel tab bottom",
+        "x1": 5.2,
+        "y1": 0,
+        "x2": 10.8,
+        "y2": 0.6,
+        "layers": [
+          "TOP",
+          "BOTTOM"
+        ]
+      },
+      {
+        "name": "Panel tab top",
+        "x1": 7.2,
+        "y1": 31.4,
+        "x2": 12.8,
+        "y2": 32,
+        "layers": [
+          "TOP",
+          "BOTTOM"
+        ]
+      },
+      {
+        "name": "Panel tab right",
+        "x1": 47.4,
+        "y1": 7.7,
+        "x2": 48,
+        "y2": 13.3,
+        "layers": [
+          "TOP",
+          "BOTTOM"
+        ]
+      }
+    ],
+    "attempts": 4,
+    "max_expansions": 600000,
+    "component_hole_clearance": {
+      "J2": 0.2
+    },
+    "width_by_net": {
+      "GND_BUS": 0.5,
+      "GND_LOGIC": 0.5,
+      "3V3_LOGIC": 0.5,
+      "5V_SYS": 0.5,
+      "5V_BUS": 0.5,
+      "5V_ISO": 0.5,
+      "BUS_PROT": 0.5,
+      "FUSED_IN": 0.5,
+      "NET_S": 0.5,
+      "USB_DM_IN": 0.15,
+      "USB_DP_IN": 0.15,
+      "USB_DM": 0.15,
+      "USB_DP": 0.15,
+      "USB_DM_MCU": 0.15,
+      "USB_DP_MCU": 0.15,
+      "USB_CC1": 0.15,
+      "USB_CC2": 0.15
+    }
+  },
+  "pad_overrides": {
+    "C20": {
+      "2": {
+        "mask_expansion_mm": 0.01
+      }
+    },
+    "C26": {
+      "1": {
+        "mask_expansion_mm": 0.01
+      },
+      "2": {
+        "mask_expansion_mm": 0.01
+      }
+    },
+    "C28": {
+      "2": {
+        "mask_expansion_mm": 0.025
+      }
+    },
+    "C31": {
+      "1": {
+        "mask_expansion_mm": 0.015
+      },
+      "2": {
+        "mask_expansion_mm": 0.015
+      }
+    },
+    "C4": {
+      "1": {
+        "mask_expansion_mm": 0.015
+      }
+    },
+    "D5": {
+      "2": {
+        "mask_expansion_mm": 0.02
+      }
+    },
+    "F1": {
+      "2": {
+        "mask_expansion_mm": 0.02
+      }
+    },
+    "U1": {
+      "1": {
+        "mask_expansion_mm": 0.02
+      },
+      "2": {
+        "mask_expansion_mm": 0.02
+      },
+      "3": {
+        "mask_expansion_mm": 0.02
+      },
+      "4": {
+        "mask_expansion_mm": 0.02
+      }
+    },
+    "MCU1": {
+      "5": {
+        "mask_expansion_mm": 0.02
+      },
+      "6": {
+        "mask_expansion_mm": 0.02
+      },
+      "7": {
+        "mask_expansion_mm": 0.02
+      },
+      "8": {
+        "mask_expansion_mm": 0.02
+      }
+    }
+  },
+  "silkscreen": [
+    {
+      "text": "R4 9-16V",
+      "x": 6,
+      "y": 29,
+      "height": 1,
+      "width": 0.15,
+      "layer": "TOP"
+    },
+    {
+      "text": "USB",
+      "x": 43.2,
+      "y": 2,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "RESET",
+      "x": 39.5,
+      "y": 15.8,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "BOOT",
+      "x": 46,
+      "y": 15.8,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "1 S",
+      "x": 6.6,
+      "y": 9.5,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "+",
+      "x": 5.3,
+      "y": 12.5,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "-",
+      "x": 5.3,
+      "y": 15.5,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "H",
+      "x": 5.3,
+      "y": 18.5,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "L",
+      "x": 5.3,
+      "y": 21.5,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    },
+    {
+      "text": "NMEA",
+      "x": 16,
+      "y": 29,
+      "height": 1,
+      "width": 0.15,
+      "layer": "BOTTOM"
+    }
+  ]
+}

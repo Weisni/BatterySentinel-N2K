@@ -1,0 +1,1192 @@
+{
+  "passed": true,
+  "format": "STEP AP214 boundary representation",
+  "units": "mm",
+  "source_revision": "Orion enclosure V2.3 - thin walls and projecting screw bosses",
+  "source_preservation": {
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\Orion-Enclosure-V2.FCStd": "37896d65623c7fd2b3a4291323903e36adff9eb2c8546d7da8d4852c17bfd225",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\parameters.json": "547fc42c5e1e0b2f7d75cca3a74dcaf7414e5894bbf72c31a90b705a6f7bf538",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\Orion-Enclosure-V2-assembly.step": "05acce64c1f8dda8aae35f8db2133aa563aaaa525574a32b240f9f2bbb936cbb",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\base.stl": "9b15360381c6bd48ac17cf3fdc07e445afc801dd07fdf85ef8f0044ee90b0dc0",
+    "hardware\\altium-r5\\enclosure\\sealed-v2\\lid_body.stl": "311b256f1a0b8be15178f00bafec4b2fa86902b1c2ad8dbf00001ff57850713d"
+  },
+  "geometry_inputs": "Native CAD solids only; no imported STL/3MF",
+  "combined_main_file": "Orion-Enclosure-V2.3-Assembled-All-Variants.step",
+  "combined_component_groups": {
+    "lid_gasket__SEATED_H1p4mm_ENVELOPE": "01_Assembled_V2_3",
+    "usb_cover": "01_Assembled_V2_3",
+    "usb_gasket__SEATED_H1p4mm_ENVELOPE": "01_Assembled_V2_3",
+    "service_switch_cover": "01_Assembled_V2_3",
+    "service_switch_gasket__SEATED_H1p4mm_ENVELOPE": "01_Assembled_V2_3",
+    "cable_pressure_cap": "01_Assembled_V2_3",
+    "cable_seal_b6p8_L6p8__OD11mm_SEATED_L6mm_ENVELOPE": "01_Assembled_V2_3",
+    "strain_relief_upper__H6mm_INSTALLED": "01_Assembled_V2_3",
+    "clamp_shims__H0p2mm_PAIR_INSTALLED": "01_Assembled_V2_3",
+    "base": "01_Assembled_V2_3",
+    "lid_body": "01_Assembled_V2_3",
+    "lid_markings": "01_Assembled_V2_3",
+    "lid_gasket__FREE_H1p8mm": "05_Face_gaskets_FREE",
+    "usb_gasket__FREE_H1p8mm": "05_Face_gaskets_FREE",
+    "service_switch_gasket__FREE_H1p8mm": "05_Face_gaskets_FREE",
+    "cable_seal_b6p7_L6p6__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p7_L6p8__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p7_L7p0__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p8_L6p6__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p8_L6p8__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p8_L7p0__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p9_L6p6__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p9_L6p8__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "cable_seal_b6p9_L7p0__OD11mm_FREE": "02_Cable_seal_variants_FREE",
+    "strain_relief_upper__H6mm_ORIGINAL": "03_Upper_clamp_variants",
+    "clamp_shims_0p2__PAIR": "04_Clamp_shim_variants",
+    "clamp_shims_0p4__PAIR": "04_Clamp_shim_variants",
+    "entry_fit_coupon": "06_Optional_calibration_parts",
+    "face_stop_coupon_1p4": "06_Optional_calibration_parts",
+    "face_stop_coupon_1p6": "06_Optional_calibration_parts",
+    "face_test_gasket": "06_Optional_calibration_parts",
+    "shore_comparison_pad": "06_Optional_calibration_parts",
+    "flow_wall_coupon": "06_Optional_calibration_parts",
+    "strain_relief_upper_5mm__LATEST_FREE": "03_Upper_clamp_variants",
+    "cable_seal_ID6p8_OD11p5_L9mm_profiled__LATEST_FREE": "02_Cable_seal_variants_FREE"
+  },
+  "combined_layout": "Closed V2.3 assembly at native coordinates; free variants parked to its right",
+  "regenerated_source_comparison": {
+    "base": {
+      "relative_mesh_volume_error": 0.0,
+      "maximum_bidirectional_vertex_surface_distance_mm": 0.00954222386567072,
+      "checked_vertices": [
+        31901,
+        31822
+      ]
+    },
+    "lid_body": {
+      "relative_mesh_volume_error": 4.720898698601658e-07,
+      "maximum_bidirectional_vertex_surface_distance_mm": 0.0008895770133481428,
+      "checked_vertices": [
+        27637,
+        27635
+      ]
+    },
+    "lid_markings": {
+      "relative_mesh_volume_error": 0.0,
+      "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+      "checked_vertices": [
+        23438,
+        23438
+      ]
+    }
+  },
+  "files": [
+    {
+      "file": "parts/lid_gasket.step",
+      "sha256": "ad77dd92d3a4394f80587943700c61f69dec12ed6adf7a7faeb225b20c43da75",
+      "part_names": [
+        "lid_gasket"
+      ],
+      "solids": 1,
+      "faces": 36,
+      "native_surface_types": {
+        "Cylinder": 8,
+        "Plane": 12,
+        "BSplineSurface": 16
+      },
+      "bounds_mm": [
+        -24.0000001,
+        -8.0000001,
+        0.0,
+        60.0000001,
+        44.0000001,
+        1.8000001000000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 2.269036459550139e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 2.436745607116711e-18,
+        "checked_vertices": [
+          13924,
+          13924
+        ]
+      },
+      "material": "TPU",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/usb_cover.step",
+      "sha256": "867e790d78402eb42efea23c59294dbe4beaedda846e446f52a33ec649d2cb15",
+      "part_names": [
+        "usb_cover"
+      ],
+      "solids": 1,
+      "faces": 48,
+      "native_surface_types": {
+        "Cylinder": 18,
+        "Plane": 30
+      },
+      "bounds_mm": [
+        -21.5,
+        -12.0,
+        0.0,
+        21.5,
+        12.0,
+        6.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          1304,
+          1304
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/usb_gasket.step",
+      "sha256": "24f9421ccf8265beb5e96f1c5f73ac1828607631cdbdd21ace95354dc7497267",
+      "part_names": [
+        "usb_gasket"
+      ],
+      "solids": 1,
+      "faces": 36,
+      "native_surface_types": {
+        "Cylinder": 8,
+        "Plane": 12,
+        "BSplineSurface": 16
+      },
+      "bounds_mm": [
+        -13.0000001,
+        -9.0000001,
+        0.0,
+        13.0000001,
+        9.0000001,
+        1.8000001000000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 9.217653763936738e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.003662251294893967,
+        "checked_vertices": [
+          7365,
+          7365
+        ]
+      },
+      "material": "TPU",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/service_switch_cover.step",
+      "sha256": "43f7513130680802db64f9de896d9ea8c94efaa71eb6cee7e7341e9713c4a3f7",
+      "part_names": [
+        "service_switch_cover"
+      ],
+      "solids": 1,
+      "faces": 49,
+      "native_surface_types": {
+        "Plane": 35,
+        "Cylinder": 14
+      },
+      "bounds_mm": [
+        -17.0,
+        -9.8,
+        0.0,
+        17.0,
+        9.8,
+        6.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          1092,
+          1092
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/service_switch_gasket.step",
+      "sha256": "40ba8feac8d1178750b23695e8a03a27c05e6686746ced2c5cc12c2a18a0e9e5",
+      "part_names": [
+        "service_switch_gasket"
+      ],
+      "solids": 1,
+      "faces": 36,
+      "native_surface_types": {
+        "Cylinder": 8,
+        "Plane": 12,
+        "BSplineSurface": 16
+      },
+      "bounds_mm": [
+        -8.0000001,
+        -6.5000001,
+        0.0,
+        8.0000001,
+        6.5000001,
+        1.8000001000000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 3.5350941165782127e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0038214223685158954,
+        "checked_vertices": [
+          5756,
+          5756
+        ]
+      },
+      "material": "TPU",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_pressure_cap.step",
+      "sha256": "983abccc407264cbe3248c22ad577c7c8bd27cfa0cff06fe0d97950f7a059a8c",
+      "part_names": [
+        "cable_pressure_cap"
+      ],
+      "solids": 1,
+      "faces": 34,
+      "native_surface_types": {
+        "Plane": 10,
+        "Cylinder": 11,
+        "Cone": 4,
+        "BSplineSurface": 9
+      },
+      "bounds_mm": [
+        -15.0,
+        -10.0,
+        0.0,
+        15.0,
+        14.0,
+        7.0000001
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 4.228202427305308e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 4.0511319087189705e-07,
+        "checked_vertices": [
+          2203,
+          2203
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p7_L6p6.step",
+      "sha256": "0386928d2d5ade6e9fc7492698c0f37a49a24962932560e20cf4ff701d27bb5b",
+      "part_names": [
+        "cable_seal_b6p7_L6p6"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.6000001000001465
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 7.14332592362088e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004728038623084746,
+        "checked_vertices": [
+          19252,
+          19150
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p7_L6p8.step",
+      "sha256": "041d401d9149dbf4ff01bfd1b8e882c8dc634e1fb4322372d56d8640bbaf9541",
+      "part_names": [
+        "cable_seal_b6p7_L6p8"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.800000100000277
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.591036902352558e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004628397965061336,
+        "checked_vertices": [
+          18694,
+          18664
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p7_L7p0.step",
+      "sha256": "cd524194727a01de82ab7719dbd09ce6fd8200341b0df7d9c8da1b12ededa911",
+      "part_names": [
+        "cable_seal_b6p7_L7p0"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        7.000000099999739
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.0017572706172776e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.005913651544476228,
+        "checked_vertices": [
+          19904,
+          19594
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p8_L6p6.step",
+      "sha256": "fe5000cd81143d359d44220ae41fa33eb70c95a07576dd642799121b48c33511",
+      "part_names": [
+        "cable_seal_b6p8_L6p6"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.6000001000001465
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 7.643873893706629e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004728038623084746,
+        "checked_vertices": [
+          18292,
+          18190
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p8_L6p8.step",
+      "sha256": "1e8508caae4761bdc630bc11f09dd4c5886bdf04b18fee8115b34f6af462b930",
+      "part_names": [
+        "cable_seal_b6p8_L6p8"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.800000100000277
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.628540193296277e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004628397965061336,
+        "checked_vertices": [
+          17734,
+          17704
+        ]
+      },
+      "material": "TPU",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p8_L7p0.step",
+      "sha256": "33962e45bed53e89add76122e02e06191f896b36317707099aad3dc18c9cacc6",
+      "part_names": [
+        "cable_seal_b6p8_L7p0"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        7.000000099999739
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.0517004746703543e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.005913651544476228,
+        "checked_vertices": [
+          18944,
+          18634
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p9_L6p6.step",
+      "sha256": "f47e3dc3d6638de06e43dc9b7ee496e750178909df49b1090039c72f3ddf6c2f",
+      "part_names": [
+        "cable_seal_b6p9_L6p6"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.6000001000001465
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 5.6875119716240244e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004728038623084746,
+        "checked_vertices": [
+          17332,
+          17470
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p9_L6p8.step",
+      "sha256": "8ef9a3d802678eaefcd7a2560a68e8f092f0fa19e91aa94cd10e34a08461403e",
+      "part_names": [
+        "cable_seal_b6p9_L6p8"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        6.800000100000277
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 6.523985218918706e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.004628397965061336,
+        "checked_vertices": [
+          16774,
+          16984
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/cable_seal_b6p9_L7p0.step",
+      "sha256": "f42740dbb2eb269d0cb52c29b32f9ce306688f3f5123a4e173e09a4c0bb8246e",
+      "part_names": [
+        "cable_seal_b6p9_L7p0"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 3,
+        "BSplineSurface": 1,
+        "Toroid": 2
+      },
+      "bounds_mm": [
+        -5.5000001,
+        -5.5000001,
+        0.0,
+        5.5000001,
+        5.5000001,
+        7.000000099999739
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 5.832400250550194e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.005913651544476228,
+        "checked_vertices": [
+          17984,
+          17914
+        ]
+      },
+      "material": "TPU",
+      "group": "alternative",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/strain_relief_upper.step",
+      "sha256": "835c3e8cf3bd01f2a6290025e81e3f244383de1bef3109c088549c9ff4d1a438",
+      "part_names": [
+        "strain_relief_upper"
+      ],
+      "solids": 1,
+      "faces": 23,
+      "native_surface_types": {
+        "Cylinder": 10,
+        "Plane": 7,
+        "Toroid": 6
+      },
+      "bounds_mm": [
+        -18.0000001,
+        3.9999999,
+        14.1999999,
+        -5.9999999,
+        32.0000001,
+        20.2
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 4.9376208980161675e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 1.6612617143403746e-06,
+        "checked_vertices": [
+          9672,
+          9672
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/clamp_shims_0p2.step",
+      "sha256": "efcac8643db4ba6d24e8610c5be127bdbb5be65c6634851f2217045d10628193",
+      "part_names": [
+        "clamp_shims_0p2"
+      ],
+      "solids": 2,
+      "faces": 22,
+      "native_surface_types": {
+        "Cylinder": 10,
+        "Plane": 12
+      },
+      "bounds_mm": [
+        -18.00000000000003,
+        4.0,
+        0.0,
+        -5.999999999999973,
+        32.0,
+        0.20000000000000004
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.1154922689692807e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          912,
+          912
+        ]
+      },
+      "material": "PETG",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/clamp_shims_0p4.step",
+      "sha256": "e259b56301084e0dbc1a7d01548c8b87b84cc83284b5208033d138ad56c15d98",
+      "part_names": [
+        "clamp_shims_0p4"
+      ],
+      "solids": 2,
+      "faces": 22,
+      "native_surface_types": {
+        "Cylinder": 10,
+        "Plane": 12
+      },
+      "bounds_mm": [
+        -18.00000000000003,
+        4.0,
+        0.0,
+        -5.999999999999973,
+        32.0,
+        0.4
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 4.461970569065225e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          912,
+          912
+        ]
+      },
+      "material": "PETG",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/base.step",
+      "sha256": "b483990fa3ad2928a5a7c64e2e277e0c813fe673bfaeb56047085228486ede89",
+      "part_names": [
+        "base"
+      ],
+      "solids": 1,
+      "faces": 605,
+      "native_surface_types": {
+        "Cylinder": 207,
+        "Toroid": 3,
+        "Plane": 303,
+        "Cone": 60,
+        "BSplineSurface": 32
+      },
+      "bounds_mm": [
+        -30.400000100000007,
+        -27.0000001,
+        -1.0000032667211734e-07,
+        66.4000001,
+        63.0000001,
+        30.000000100000275
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 3.034332524283352e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0009580313039702793,
+        "checked_vertices": [
+          31822,
+          31787
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/lid_body.step",
+      "sha256": "7c8ad833770a13b8339acaf9118427bb23acac20cd539917fdf98efdac3a4e56",
+      "part_names": [
+        "lid_body"
+      ],
+      "solids": 1,
+      "faces": 11831,
+      "native_surface_types": {
+        "Cylinder": 24,
+        "Plane": 11783,
+        "Cone": 24
+      },
+      "bounds_mm": [
+        -30.4000001,
+        -16.4,
+        28.2,
+        66.4000001,
+        52.4,
+        33.20000010000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.888360370916465e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          27635,
+          27635
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/lid_markings.step",
+      "sha256": "a5dff1019fc627a936df2baba06fad83952d86375f8b1714e52e0bc60babf745",
+      "part_names": [
+        "lid_markings"
+      ],
+      "solids": 31,
+      "faces": 11781,
+      "native_surface_types": {
+        "Plane": 11781
+      },
+      "bounds_mm": [
+        -8.124199,
+        3.577385655348,
+        32.8,
+        44.124199,
+        32.422614344652004,
+        33.2
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 2.57756997381373e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          23438,
+          23438
+        ]
+      },
+      "material": "PETG",
+      "group": "production",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/entry_fit_coupon.step",
+      "sha256": "e898958a2083e8e38790a789f8ea63dfc5ec754cdd3151790ab7afd6ea537e34",
+      "part_names": [
+        "entry_fit_coupon"
+      ],
+      "solids": 1,
+      "faces": 86,
+      "native_surface_types": {
+        "Cylinder": 21,
+        "Plane": 45,
+        "Toroid": 3,
+        "BSplineSurface": 17
+      },
+      "bounds_mm": [
+        -30.400000100000007,
+        -1.0000001000000627,
+        -1.0000032667211734e-07,
+        2.0000001,
+        37.000000100000065,
+        28.600000100000003
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 3.4486373744006266e-07,
+        "maximum_bidirectional_vertex_surface_distance_mm": 4.846339521777266e-06,
+        "checked_vertices": [
+          13055,
+          13054
+        ]
+      },
+      "material": "PETG",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/face_stop_coupon_1p4.step",
+      "sha256": "957de919fd4de2c4b371fa7fe2b0c120d030e00f9d33bd552c808fe77ff65840",
+      "part_names": [
+        "face_stop_coupon_1p4"
+      ],
+      "solids": 1,
+      "faces": 14,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 10
+      },
+      "bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        34.0,
+        18.0,
+        5.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          256,
+          256
+        ]
+      },
+      "material": "PETG",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/face_stop_coupon_1p6.step",
+      "sha256": "865718ce676aefad9111fbe01fcf5d3fad0c833a00710ebc9acc98a60d571ba2",
+      "part_names": [
+        "face_stop_coupon_1p6"
+      ],
+      "solids": 1,
+      "faces": 14,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 10
+      },
+      "bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        34.0,
+        18.0,
+        5.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          256,
+          256
+        ]
+      },
+      "material": "PETG",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/face_test_gasket.step",
+      "sha256": "c6227c2ebe1358b69470006b8a065f77d8d30f69a4dd88dbba89fb67e43885be",
+      "part_names": [
+        "face_test_gasket"
+      ],
+      "solids": 1,
+      "faces": 36,
+      "native_surface_types": {
+        "Cylinder": 8,
+        "Plane": 12,
+        "BSplineSurface": 16
+      },
+      "bounds_mm": [
+        -1e-07,
+        -1e-07,
+        0.0,
+        24.0000001,
+        16.0000001,
+        1.8000001000000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.5071906877826726e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.003662377235265256,
+        "checked_vertices": [
+          7016,
+          7016
+        ]
+      },
+      "material": "TPU",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/shore_comparison_pad.step",
+      "sha256": "718c3890fb798a4fbd641272384d70f86b569160815678769460f52ccee14e9c",
+      "part_names": [
+        "shore_comparison_pad"
+      ],
+      "solids": 1,
+      "faces": 10,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Plane": 6
+      },
+      "bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        50.0,
+        50.0,
+        6.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          248,
+          248
+        ]
+      },
+      "material": "TPU",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "parts/flow_wall_coupon.step",
+      "sha256": "353e7be9ccfefa0cedfd34293c60ae31c787f4bca91d04a08f0b6721a920e32a",
+      "part_names": [
+        "flow_wall_coupon"
+      ],
+      "solids": 1,
+      "faces": 18,
+      "native_surface_types": {
+        "Cylinder": 8,
+        "Plane": 10
+      },
+      "bounds_mm": [
+        0.0,
+        0.0,
+        0.0,
+        24.0,
+        24.0,
+        8.0
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 0.0,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+        "checked_vertices": [
+          496,
+          496
+        ]
+      },
+      "material": "TPU",
+      "group": "calibration",
+      "state": "Free manufactured geometry"
+    },
+    {
+      "file": "latest-variants/strain_relief_upper_5mm.step",
+      "sha256": "12c4dcef13769770ceee11b9833e0ae70f39d2802a1db12ce50ad63a4bdc0026",
+      "part_names": [
+        "strain_relief_upper_5mm"
+      ],
+      "solids": 1,
+      "faces": 23,
+      "native_surface_types": {
+        "Cylinder": 10,
+        "Plane": 7,
+        "Toroid": 6
+      },
+      "bounds_mm": [
+        -18.0000001,
+        3.9999999,
+        14.1999999,
+        -5.9999999,
+        32.0000001,
+        19.2
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 2.737495952569461e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.0006846463104388101,
+        "checked_vertices": [
+          8330,
+          8329
+        ]
+      }
+    },
+    {
+      "file": "latest-variants/cable_seal_ID6p8_OD11p5_L9mm_profiled.step",
+      "sha256": "e074065e8fd10f9712900dfc8c23577cbbd379719730bdac098f89232ce4fd45",
+      "part_names": [
+        "cable_seal_ID6p8_OD11p5_L9mm_profiled"
+      ],
+      "solids": 1,
+      "faces": 11,
+      "native_surface_types": {
+        "Cylinder": 4,
+        "Toroid": 5,
+        "Plane": 2
+      },
+      "bounds_mm": [
+        -5.7500001,
+        -5.75,
+        0.0,
+        5.75,
+        5.75,
+        9.0000001
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 1.4960295376071905e-06,
+        "maximum_bidirectional_vertex_surface_distance_mm": 5.551115123125783e-17,
+        "checked_vertices": [
+          25680,
+          25680
+        ]
+      }
+    },
+    {
+      "file": "Orion-Enclosure-V2.3-Assembled-All-Variants.step",
+      "sha256": "43aa2b185984ed3c8bbc929816d1b893ee29c584a7b25069e58848c5b99f22b0",
+      "part_names": [
+        "lid_gasket__SEATED_H1p4mm_ENVELOPE",
+        "usb_cover",
+        "usb_gasket__SEATED_H1p4mm_ENVELOPE",
+        "service_switch_cover",
+        "service_switch_gasket__SEATED_H1p4mm_ENVELOPE",
+        "cable_pressure_cap",
+        "cable_seal_b6p8_L6p8__OD11mm_SEATED_L6mm_ENVELOPE",
+        "strain_relief_upper__H6mm_INSTALLED",
+        "clamp_shims__H0p2mm_PAIR_INSTALLED",
+        "base",
+        "lid_body",
+        "lid_markings",
+        "lid_gasket__FREE_H1p8mm",
+        "usb_gasket__FREE_H1p8mm",
+        "service_switch_gasket__FREE_H1p8mm",
+        "cable_seal_b6p7_L6p6__OD11mm_FREE",
+        "cable_seal_b6p7_L6p8__OD11mm_FREE",
+        "cable_seal_b6p7_L7p0__OD11mm_FREE",
+        "cable_seal_b6p8_L6p6__OD11mm_FREE",
+        "cable_seal_b6p8_L6p8__OD11mm_FREE",
+        "cable_seal_b6p8_L7p0__OD11mm_FREE",
+        "cable_seal_b6p9_L6p6__OD11mm_FREE",
+        "cable_seal_b6p9_L6p8__OD11mm_FREE",
+        "cable_seal_b6p9_L7p0__OD11mm_FREE",
+        "strain_relief_upper__H6mm_ORIGINAL",
+        "clamp_shims_0p2__PAIR",
+        "clamp_shims_0p4__PAIR",
+        "entry_fit_coupon",
+        "face_stop_coupon_1p4",
+        "face_stop_coupon_1p6",
+        "face_test_gasket",
+        "shore_comparison_pad",
+        "flow_wall_coupon",
+        "strain_relief_upper_5mm__LATEST_FREE",
+        "cable_seal_ID6p8_OD11p5_L9mm_profiled__LATEST_FREE"
+      ],
+      "solids": 68,
+      "faces": 24928,
+      "native_surface_types": {
+        "Cylinder": 473,
+        "Plane": 24189,
+        "Cone": 88,
+        "BSplineSurface": 131,
+        "Toroid": 47
+      },
+      "bounds_mm": [
+        -37.4000001,
+        -27.0000001,
+        -1.0000032667211734e-07,
+        343.0000016,
+        239.00000079999998,
+        33.20000010000012
+      ],
+      "valid_closed_solids": true,
+      "mesh_entities": false,
+      "geometry_comparison": {
+        "relative_mesh_volume_error": 2.870410380547336e-05,
+        "maximum_bidirectional_vertex_surface_distance_mm": 0.005917544098942993,
+        "checked_vertices": [
+          334830,
+          334202
+        ]
+      },
+      "assembly_groups": [
+        "01_Assembled_V2_3",
+        "05_Face_gaskets_FREE",
+        "02_Cable_seal_variants_FREE",
+        "03_Upper_clamp_variants",
+        "04_Clamp_shim_variants",
+        "06_Optional_calibration_parts"
+      ],
+      "named_assembly_relations": 41
+    }
+  ],
+  "installed_topology_refinement_checks": {
+    "cable_pressure_cap": {
+      "relative_mesh_volume_error": 2.1140735035874242e-07,
+      "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+      "checked_vertices": [
+        2203,
+        2203
+      ]
+    },
+    "strain_relief_upper": {
+      "relative_mesh_volume_error": 3.5374188162381673e-06,
+      "maximum_bidirectional_vertex_surface_distance_mm": 0.0,
+      "checked_vertices": [
+        10302,
+        9672
+      ]
+    }
+  },
+  "local_readback": "Passed exact-solid, topology and tessellated-surface comparison",
+  "onshape_account_import": "Not performed",
+  "parametric_feature_history": "Not transferable through STEP",
+  "solid_definition_count": 129
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "positive_checks": 85,
+  "native_texts": 5,
+  "profile": "Edge notch and separate internal routed window",
+  "negative_controls": [
+    "Moved text declaration",
+    "Misplaced declared logo",
+    "Changed Gerber contour/ZIP/hash"
+  ]
+}

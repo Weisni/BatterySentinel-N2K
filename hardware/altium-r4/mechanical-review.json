@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "errors": [],
+  "minimum_body_gap": 0.27499999999999947,
+  "minimum_pad_body_gap": 0.14999999999999858,
+  "policy": "0.5 mm package-to-package, 0.25 mm when a 0603 passive is involved; 0.15 mm pad-to-foreign-body; no components below castellated module; 4.8 mm screw heads"
+}

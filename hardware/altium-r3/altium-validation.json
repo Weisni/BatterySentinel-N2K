@@ -1,0 +1,28 @@
+{
+  "application": "Altium Designer Professional 26.10.1",
+  "pcb_format": "PCB Binary Version 6.0",
+  "native_drc": {
+    "local_date": "2026-09-21",
+    "local_time": "22:12:17",
+    "warnings": 0,
+    "violations": 0,
+    "waived": 0,
+    "checked_rules": 15,
+    "report": "Project Outputs\\Design Rule Check - Orion-Bridge-R3.drc",
+    "sha256": "fa1fd2de5bad6496a89aa28fed3e4c7144cf181887391b1283ee4d137f74019d"
+  },
+  "native_eco": {
+    "result": "No Differences Detected",
+    "scope": "Orion-Bridge-R3.SchDoc versus Orion-Bridge-R3.PcbDoc after native metadata ECO",
+    "evidence": "Altium-Schaltplan-PCB-Abgleich.png"
+  },
+  "native_3d": "Inspected in Altium; all component bodies visible in 3D layout mode.",
+  "files": {
+    "Orion-Bridge-R3.PcbDoc": "6112f1e66c4e64d906b2ba94e355bc1087698057cb9bd19310ba6cd306d237fd",
+    "Orion-Bridge-R3.SchDoc": "13206d605071443052f23218f21ced72cb9517ddf3786ad151f0266db94c0675",
+    "Orion-Bridge.SchLib": "f356ab850fc89aa9b7882e7b3d85eadfd406917fbbbfd99caf6618500efc2df1",
+    "Orion-Bridge.PcbLib": "1fcc5260156f63f902a7c39e88d85f04493d4912dcf8c7e60b706844dd484e89",
+    "source/Orion-Bridge-R3.PcbDoc": "eead3d6fb923caea03e2120b054496f17bf802498a56bb5418db1db1401814e7"
+  },
+  "qualification": "Engineering prototype; no manufactured electrical/thermal/EMC validation."
+}

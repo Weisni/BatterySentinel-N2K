@@ -1,0 +1,181 @@
+{
+  "revision": "R4",
+  "created_utc": "2026-09-23T10:30:02.928473+00:00",
+  "passed": true,
+  "errors": [],
+  "scope": "Completed design-file, native Altium, independent geometry and manufacturing-data checks for a first assembled R4 revision. This is not measured hardware qualification or a JLCPCB order approval.",
+  "board": {
+    "width_mm": 48,
+    "height_mm": 32,
+    "thickness_mm": 1.6,
+    "corner_radius_mm": 2,
+    "layers": 2,
+    "previous_r3_mm": [
+      54,
+      36
+    ],
+    "area_reduction_percent": 20.988,
+    "assembled_envelope_mm": [
+      48,
+      38.485,
+      12.83
+    ],
+    "antenna_overhang_mm": 6,
+    "mcu": "ESP32-C3-WROOM-02-N4",
+    "mcu_attachment": "Direct soldered castellated module pads; no MCU pin headers",
+    "components_total": 52,
+    "populated": 50,
+    "nets": 35,
+    "tracks": 298,
+    "vias": 41
+  },
+  "native_altium": {
+    "version": "26.10.1",
+    "pcb_reopened_before_final_drc": true,
+    "drc_timestamp_local": "2026-09-23T12:25:32+02:00",
+    "drc_warnings": 0,
+    "drc_violations": 0,
+    "drc_waived_violations": 0,
+    "rules_in_saved_pcb": 45,
+    "batch_constraints_executed": 24,
+    "final_board_edge_clearance_mm": 0.3,
+    "board_edge_negative_control": "Temporarily setting 0.31 mm produced 51 actual violations. Restored 0.30 mm, saved, reopened and reran DRC. Proof is under validation/.",
+    "erc_timestamp_local": "2026-09-23T12:13:30+02:00",
+    "erc_errors": 0,
+    "erc_reviewed_warnings": 5,
+    "erc_warning_nets": [
+      "BST_BUS",
+      "BST_LOGIC",
+      "ESP_EN",
+      "GPIO7",
+      "TXD"
+    ],
+    "erc_provenance": "Native UI compilation observation recorded in native-erc-review.json; reasons in electrical-review.md",
+    "schematic_pcb_eco": "Native component-parameter ECO applied and independently read back; 52 components retain IDs, manufacturer, MPN, supplier and footprint links."
+  },
+  "checks": [
+    {
+      "report": "independent-verification.json",
+      "passed": true,
+      "checks": 15349,
+      "sha256": "d6a5e90735c8390aec9e6e0deb2a6fc19adbc7a790073cadf85fa3b4246d43c8"
+    },
+    {
+      "report": "native-binary-verification.json",
+      "passed": true,
+      "checks": 8384,
+      "sha256": "385bd5044c8344b170b14a9db65a2d984a158e87168227ed597ba049fc26d72c"
+    },
+    {
+      "report": "native-erc-review.json",
+      "passed": true,
+      "checks": null,
+      "sha256": "c5899fb6f19b58c4ec73b5cee5629333107a8c15f56c0d30f26cac2eeb635d6e"
+    },
+    {
+      "report": "native-gerber-review.json",
+      "passed": true,
+      "checks": 69,
+      "sha256": "a6afb0151cb4625ca129f3beca3b3384b598ce6e578233715f28d3877aa4e0e3"
+    },
+    {
+      "report": "source-pcb-verification.json",
+      "passed": true,
+      "checks": 7022,
+      "sha256": "17048b1b12d80467b6d95736e33c92f7da36a5c727353883de59a6e88aa74744"
+    },
+    {
+      "report": "mechanical-review.json",
+      "passed": true,
+      "checks": null,
+      "sha256": "ec7ff6fc569311b43a939e1001ec4a21bf28314e043d08784ec1791da6cb29e2"
+    },
+    {
+      "report": "manufacturing/manufacturing-verification.json",
+      "passed": true,
+      "checks": 708,
+      "sha256": "f9969b78b55374ddf9b6910c5238a29db6a92f4d6afa3d21227b52cbcc165c16"
+    },
+    {
+      "report": "JLCPCB-Panel/panel-preflight.json",
+      "passed": true,
+      "checks": 1659,
+      "sha256": "a68479c4e55cc88a4d7b0b5a72883e6350893c4130e59017631f0583cdfb225c"
+    },
+    {
+      "report": "JLCPCB-Panel/panel-readback.json",
+      "passed": true,
+      "checks": 66,
+      "sha256": "1966965974642639d8273845cad17556f8fbddd2f459b51a88ad2885c74797ff"
+    },
+    {
+      "report": "JLCPCB-Panel/independent-panel-verification.json",
+      "passed": true,
+      "checks": 12621,
+      "sha256": "54c57267b6355768c8d482ee36b918dc1b9851716480f58e47263ae00ddc5024"
+    }
+  ],
+  "mechanical_review": {
+    "step_solids": 265,
+    "component_bodies": 264,
+    "minimum_native_body_gap_mm": 0.3275,
+    "minimum_domain_copper_separation_mm": 3.209999,
+    "model_qualification": "Locally generated package envelopes and leads, not supplier-certified mechanical STEP models."
+  },
+  "jlcpcb": {
+    "panel_mm": [
+      70,
+      70
+    ],
+    "units_per_panel": 1,
+    "process": "Standard PCBA",
+    "assembly_side": "Top",
+    "substrate": "FR-4",
+    "thickness_mm": 1.6,
+    "copper_oz": 1,
+    "soldermask": "Green",
+    "finish": "ENIG",
+    "gerber": "JLCPCB-Panel/Orion-Bridge-R4-Panel-Gerber.zip",
+    "bom": "JLCPCB-Panel/BOM-JLCPCB.csv",
+    "cpl": "JLCPCB-Panel/CPL-JLCPCB.csv",
+    "instructions": "panel-ordering.md",
+    "actual_jlc_upload_preview_checked": false,
+    "component_stock_reserved": false,
+    "files_uploaded": false,
+    "order_placed": false
+  },
+  "firmware": {
+    "profile": "orion_r4",
+    "build": "SUCCESS",
+    "report": "firmware-build-validation.json",
+    "flashed": false
+  },
+  "remaining_hardware_work": [
+    "JLCPCB order-time component availability and orientation review using assembly drawing",
+    "Solder the external NMEA cable to J1 and flash firmware after assembly",
+    "Measure startup, radio/load-transient stability, current draw and temperatures on physical R4",
+    "Hardware functional/EMC and any required certification testing"
+  ],
+  "physical_r4_tested": false,
+  "input_sha256": {
+    "Orion-Bridge-R4.PrjPcb": "18d566f4508b9822e7c147b841b10b5ccbeaf13f2c40ed28432ce14db20c2a4e",
+    "Orion-Bridge-R4.PcbDoc": "7d2df9c86b9532b35735ea91f382b23995319e3554256770182091e72f84abe7",
+    "Orion-Bridge-R4-Power.SchDoc": "e9d0f136ea4d6e0c1f9bf1421e356e720aec3dc0223bd9cbbdbd6f2cb95e32f6",
+    "Orion-Bridge-R4-Logic.SchDoc": "295f5c1207903107a4dc19f4ce12fbb01c68a85e3fab0b9898013a466ffd6ce1",
+    "Orion-Bridge.SchLib": "d8f908d8d4d9f6a002b14054da53b129f86ebd12d4f84812bf1d93a2643273a3",
+    "Orion-Bridge.PcbLib": "94e89c119075fe10b4830d6b88b95e436574cf52208f469e5065ed4af7c11dd0",
+    "orion-r4-design.json": "4a4989d4e2996890b10bbd8441d10cebc3b7e9fa029f893783310bcdb6c14af2",
+    "orion-r4-routing.json": "002de87ce24aee7ec3476e11676d141e8e0d1495b8d5dc657b33d5a550a87ecd",
+    "Schaltplan-R4.pdf": "b5a3c8d27298821ad623ec28974f715fc745fd9c9b4b5f8bfa98218a678a75aa",
+    "models/Orion-Bridge-assembly.step": "0523b7eac6528480e4b24e833d97a6b41621f1998f6e3be20b88d48b84fa008d",
+    "3d-views/PCB-R4-3D-Oberseite.png": "a0decfee1dd1c6cfaec14090716c14a073b77a96b76f4278709376bee9c66663",
+    "JLCPCB-Panel/Orion-Bridge-R4-Panel-Gerber.zip": "f5f111ee564448cd8a204238f1554d517a51f5850cbfdb6a8673619c59d758f0",
+    "JLCPCB-Panel/BOM-JLCPCB.csv": "899b296d8564d1357cf2fb31b7aac7fa54a0c625b18dbaa6e4f5860d6d72e336",
+    "JLCPCB-Panel/CPL-JLCPCB.csv": "f45d1c9196cd25ea539bc18194a619e103a789f204102aa333d16033b732652f",
+    "assembly/Bestueckung-R4.svg": "32098bb72bb590c94dfcca9ef4159723dd48b42772a13e47921d86c91d23f08d",
+    "Design Rule Check - Orion-Bridge-R4.drc": "5c6f99f8c7ccadca297c0533edb8c435e6fe58c5493f4e6af2205bd6d591276f",
+    "Design Rule Check - Orion-Bridge-R4.html": "1de661ecc89420cc20dd4ecf5a6f8eb49efec2657faa5ba56c1da776c69f228a",
+    "Project Outputs/Design Rule Check - Orion-Bridge-R4.html": "1de661ecc89420cc20dd4ecf5a6f8eb49efec2657faa5ba56c1da776c69f228a"
+  },
+  "delivery_integrity": "Final outer ZIP contents and hashes are checked separately in output/releases/release-package-verification.json."
+}

@@ -1,3 +1,5 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](../../docs/internal/README.md).
+
 # BatterySentinel N2K – Wokwi
 
 This Wokwi project runs the real ESP32-C3 firmware against a simulated INA238 system-battery sensor.

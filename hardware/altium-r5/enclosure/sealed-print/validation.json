@@ -1,0 +1,521 @@
+{
+  "passed": true,
+  "errors": [],
+  "component_body_count": 224,
+  "minimum_component_clearance": {
+    "component": "C22",
+    "body": "metal end cap",
+    "case_part": "base",
+    "gap_mm": 1.6778754997766334,
+    "conservative_lower_bound": false
+  },
+  "assembly_intersections": [],
+  "sealing_land_coverage": {
+    "lid_base": 0.9999999999998821,
+    "usb_base": 1.0000000000000002,
+    "service_switch_base": 1.0
+  },
+  "cover_lobe_clearance_mm": {
+    "usb_cover": 0.5813268827318652,
+    "service_switch_cover": 2.081326882731858
+  },
+  "dimensions": {
+    "pcb_bottom": 8.0,
+    "pcb_top": 9.6,
+    "seam_z": 30.0,
+    "outer_height": 33.2,
+    "outer_body_mm": [
+      76,
+      60,
+      33.2
+    ],
+    "overall_with_mounting_mm": [
+      82.4,
+      88.0,
+      33.2
+    ],
+    "lid_screws": [
+      [
+        -10,
+        -10
+      ],
+      [
+        62,
+        -10
+      ],
+      [
+        -10,
+        46
+      ],
+      [
+        62,
+        46
+      ],
+      [
+        10,
+        -11
+      ],
+      [
+        10,
+        47
+      ]
+    ],
+    "mount_centers": [
+      [
+        10,
+        -20
+      ],
+      [
+        10,
+        56
+      ]
+    ],
+    "ports": {
+      "usb": {
+        "side": "X+",
+        "along_mm": 19.999999999999996,
+        "center_z_mm": 12.35,
+        "opening_mm": [
+          18.0,
+          10.0
+        ],
+        "cover_mm": [
+          43.0,
+          24.0,
+          3.2
+        ],
+        "screw_spacing_mm": 36.0,
+        "blind_wall_remaining_mm": 1.3
+      },
+      "service_switch": {
+        "side": "Y+",
+        "along_mm": 39.0,
+        "center_z_mm": 10.299999999999999,
+        "opening_mm": [
+          8.0,
+          5.0
+        ],
+        "cover_mm": [
+          34.0,
+          19.6,
+          3.2
+        ],
+        "screw_spacing_mm": 26.0,
+        "blind_wall_remaining_mm": 1.3
+      }
+    },
+    "hardware": [
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          -10,
+          -10
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          62,
+          -10
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          -10,
+          46
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          62,
+          46
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          10,
+          -11
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 lid screw",
+        "center": [
+          10,
+          47
+        ],
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 usb cover screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 usb cover screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 service_switch cover screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 service_switch cover screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 cable pressure cap screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      },
+      {
+        "type": "M3x8 cable pressure cap screw",
+        "engagement_mm": 4.8,
+        "blind_tip_clearance_mm": 1.9
+      }
+    ],
+    "seals": {
+      "usb": {
+        "free_height_mm": 1.2,
+        "closed_height_mm": 1.0,
+        "nominal_squeeze_percent": 16.666666666666668,
+        "free_volume_mm3": 216.89203263241905,
+        "groove_volume_mm3": 249.6099087727595
+      },
+      "service_switch": {
+        "free_height_mm": 1.2,
+        "closed_height_mm": 1.0,
+        "nominal_squeeze_percent": 16.666666666666668,
+        "free_volume_mm3": 130.492032632419,
+        "groove_volume_mm3": 147.60990877275952
+      }
+    },
+    "cable_seals": {
+      "cable_blank": {
+        "cable_od_mm": 0.0,
+        "free_bore_mm": 0.0,
+        "free_outer_diameter_mm": 11.323207521344319,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      },
+      "cable_seal_5p0mm": {
+        "cable_od_mm": 5.0,
+        "free_bore_mm": 4.8,
+        "free_outer_diameter_mm": 11.389438716886547,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      },
+      "cable_seal_5p5mm": {
+        "cable_od_mm": 5.5,
+        "free_bore_mm": 5.3,
+        "free_outer_diameter_mm": 11.412572640983026,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      },
+      "cable_seal_6p0mm": {
+        "cable_od_mm": 6.0,
+        "free_bore_mm": 5.8,
+        "free_outer_diameter_mm": 11.438688736039634,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      },
+      "cable_seal_6p5mm": {
+        "cable_od_mm": 6.5,
+        "free_bore_mm": 6.3,
+        "free_outer_diameter_mm": 11.467766627751516,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      },
+      "cable_seal_7p0mm": {
+        "cable_od_mm": 7.0,
+        "free_bore_mm": 6.8,
+        "free_outer_diameter_mm": 11.499783848900314,
+        "free_length_mm": 7,
+        "closed_length_mm": 6,
+        "nominal_axial_squeeze_percent": 14.285714285714286,
+        "volume_fill_ratio": 1.005,
+        "measured": false
+      }
+    },
+    "lid_seal": {
+      "free_height_mm": 1.2,
+      "closed_height_mm": 1.0,
+      "nominal_squeeze_percent": 16.666666666666668,
+      "groove_width_mm": 3.4,
+      "free_width_mm": 2.4,
+      "free_volume_mm3": 639.8187536864501,
+      "groove_volume_mm3": 748.9327351998537
+    },
+    "cable_entry": {
+      "pocket_diameter_mm": 12.2,
+      "pocket_depth_mm": 6,
+      "feed_hole_mm": 7.6,
+      "side": "X-"
+    }
+  },
+  "physical_status": "UNTESTED: prototype; no IP or waterproof rating",
+  "pcb_source": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\orion-r5-design.json",
+  "pcb_sha256": "c2bf4b8ffe4e4592865f9705d4225aa2acfeaae2b860f8d6b53a96eb7e0427ea",
+  "step_readback": {
+    "valid": true,
+    "solid_count": 9
+  },
+  "meshes": {
+    "usb_cover": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 984,
+      "triangles": 1972,
+      "volume_mm3": 2983.695579472393,
+      "mesh_volume_relative_error": 9.811337132819825e-06,
+      "print_bounds_mm": [
+        43.0,
+        24.0,
+        3.2000000000000033
+      ],
+      "min_z_mm": 4.440892098500626e-16,
+      "sha256": "afc0d58b37dee41e146b24fe10a1e689ff87b97b0429dae660e7a1af3eb79c5c"
+    },
+    "usb_gasket": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 496,
+      "triangles": 992,
+      "volume_mm3": 216.89203263241905,
+      "mesh_volume_relative_error": 6.762590555465911e-05,
+      "print_bounds_mm": [
+        26.0,
+        18.0,
+        1.2000000000000002
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "d0b3b4369331fefef746d26cf9204713a71b8c5962a598d695d98998292bf3cb"
+    },
+    "service_switch_cover": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 984,
+      "triangles": 1972,
+      "volume_mm3": 1915.7755794723932,
+      "mesh_volume_relative_error": 1.2836277018953204e-05,
+      "print_bounds_mm": [
+        34.0,
+        19.6,
+        3.2000000000000033
+      ],
+      "min_z_mm": -4.440892098500626e-16,
+      "sha256": "2481bd7e1bbd6427c4291b5b79469ede056ad388309e0b05b01f9c89cbe3dc66"
+    },
+    "service_switch_gasket": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 496,
+      "triangles": 992,
+      "volume_mm3": 130.492032632419,
+      "mesh_volume_relative_error": 0.00011352420673109788,
+      "print_bounds_mm": [
+        16.0,
+        13.0,
+        1.2
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "0b4d2a4b880e75e21ed5006013649549b0ee6e26f41661a0afa4430f0c14daa6"
+    },
+    "cable_pressure_cap": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 968,
+      "triangles": 1944,
+      "volume_mm3": 1500.0042573655119,
+      "mesh_volume_relative_error": 3.2562054531370804e-05,
+      "print_bounds_mm": [
+        30.0,
+        18.0,
+        3.200000000000001
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "9d108769acc4c92714e0effe42b6ba3d74ec5fc71556f0315cd8476a72ef4791"
+    },
+    "cable_blank": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 240,
+      "triangles": 476,
+      "volume_mm3": 704.8989357196593,
+      "mesh_volume_relative_error": 0.0004568476507281997,
+      "print_bounds_mm": [
+        11.323207521344319,
+        11.323207521344319,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "a7f498e77c6a02f56a933de6dadbf4bde8f9213608660ded1cc3e1dcba1b8832"
+    },
+    "cable_seal_5p0mm": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 480,
+      "triangles": 960,
+      "volume_mm3": 586.5001625874941,
+      "mesh_volume_relative_error": 0.00045171870735336304,
+      "print_bounds_mm": [
+        11.389438716886547,
+        11.389438716886547,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "4fe055baf2fd3e6c49371cdf014f3454879d1773db96d8d1077b3503afc36e88"
+    },
+    "cable_seal_5p5mm": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 480,
+      "triangles": 960,
+      "volume_mm3": 561.6364202297393,
+      "mesh_volume_relative_error": 0.0004599193133965624,
+      "print_bounds_mm": [
+        11.412572640983026,
+        11.412572640983026,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "9df64da26d16251708af3870e27bec99939ea546663cf36883ed0db33c9a4ed1"
+    },
+    "cable_seal_6p0mm": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 480,
+      "triangles": 960,
+      "volume_mm3": 534.4047024093414,
+      "mesh_volume_relative_error": 0.0004561200551028843,
+      "print_bounds_mm": [
+        11.438688736039634,
+        11.438688736039634,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "e1a86fbebdeaf145fe971da03b75b27f5be0ff8b1a8fca7d5afe65b6f0e76ec0"
+    },
+    "cable_seal_6p5mm": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 480,
+      "triangles": 960,
+      "volume_mm3": 504.80500912629986,
+      "mesh_volume_relative_error": 0.0004549503704543861,
+      "print_bounds_mm": [
+        11.467766627751516,
+        11.467766627751516,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "8190cb8f74d5f2c3398c9c3d8abf1e2774be60a7ff63d7e13d7d6f2488d65c02"
+    },
+    "cable_seal_7p0mm": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 480,
+      "triangles": 960,
+      "volume_mm3": 472.8373403806154,
+      "mesh_volume_relative_error": 0.0004591454698314003,
+      "print_bounds_mm": [
+        11.499783848900314,
+        11.499783848900314,
+        7.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "bc2d2724a0065db85c72892861971aeef7181c026fddefe64abe31382760470e"
+    },
+    "base": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 8150,
+      "triangles": 16316,
+      "volume_mm3": 67427.0971263864,
+      "mesh_volume_relative_error": 2.9711740113172785e-05,
+      "print_bounds_mm": [
+        80.7988152978826,
+        88.0,
+        30.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "1e552a7e9b16ca2d958a0d8e1608cb477c92ee62142f9142a754ddb7acb9aa9e"
+    },
+    "lid": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 26248,
+      "triangles": 52516,
+      "volume_mm3": 15233.576133735476,
+      "mesh_volume_relative_error": 2.5026347516304504e-06,
+      "print_bounds_mm": [
+        80.7988152978826,
+        66.8,
+        5.000000000000018
+      ],
+      "min_z_mm": -7.105427357601002e-15,
+      "sha256": "75ef58f2b181e72c3117a2735b383caecc660f74f0b4fc498c72a62c1620c976"
+    },
+    "lid_gasket": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 496,
+      "triangles": 992,
+      "volume_mm3": 639.8187536864505,
+      "mesh_volume_relative_error": 6.433977683254554e-05,
+      "print_bounds_mm": [
+        68.0,
+        52.0,
+        1.2000000000000002
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "9d2ac769681c40240e686771e651252ebef525c558ad068cd5b43feb42e0e87d"
+    },
+    "fit_coupon": {
+      "watertight": true,
+      "oriented_manifold": true,
+      "vertices": 2168,
+      "triangles": 4340,
+      "volume_mm3": 13632.25776473282,
+      "mesh_volume_relative_error": 6.189713998535787e-05,
+      "print_bounds_mm": [
+        49.900000000000006,
+        30.0,
+        26.0
+      ],
+      "min_z_mm": 0.0,
+      "sha256": "409d2d01053331a6cf9c7501773e454eb83d878327842154e4d73e53d8c8f9d0"
+    }
+  }
+}

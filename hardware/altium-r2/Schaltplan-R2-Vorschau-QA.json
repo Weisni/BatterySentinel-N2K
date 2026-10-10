@@ -1,0 +1,15 @@
+{
+  "source": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r2\\Orion-Bridge-R2.SchDoc",
+  "source_sha256": "eb3218e14ffd90d226bbcaeb70158318b6f8500797f191b2d72e18c305bf0fa7",
+  "pdf": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r2\\Schaltplan-R2-Vorschau.pdf",
+  "geometry_preview_only": true,
+  "sheet_units": [
+    2230.0,
+    1570.0
+  ],
+  "ignored_unimplemented_records": {},
+  "approximate_text_overlap_candidates": [],
+  "powerports_inside_component_bodies": [],
+  "png": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r2\\Schaltplan-R2-Vorschau.png",
+  "dpi": 180
+}

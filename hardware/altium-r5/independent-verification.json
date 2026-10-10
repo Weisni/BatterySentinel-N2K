@@ -1,0 +1,155 @@
+{
+  "components": 37,
+  "nets": 23,
+  "manual_module": "Original user-selected Amazon B0FN4F6244,16 castellation lands; excluded only from machine BOM/CPL, included in assembled geometry",
+  "service_switch": {
+    "RUN": [
+      "1",
+      "2"
+    ],
+    "SERVICE": [
+      "2",
+      "3"
+    ],
+    "service_contact_3": "unconnected",
+    "intent": "Disconnect external 5V_MODULE supply before inserting USB; no simultaneous source promise."
+  },
+  "schematic_records": {
+    "BatterySentinel-N2K-Orion-R5-Logic": 309,
+    "BatterySentinel-N2K-Orion-R5-Power": 773
+  },
+  "library_components": 37,
+  "library_footprints": 19,
+  "pcb_readback_file": "BatterySentinel-N2K-Orion-R5.PcbDoc",
+  "pcb_primitive_counts": {
+    "Board": 16,
+    "Net": 23,
+    "Component": 37,
+    "Pad": 120,
+    "Track": 836,
+    "Text": 80,
+    "Via": 25,
+    "Region": 63,
+    "DXPRule": 20,
+    "Rule": 9,
+    "ComponentBody": 224
+  },
+  "copper_and_mechanical": {
+    "passed": true,
+    "errors": [],
+    "connected_nets": 23,
+    "main_supply_paths": [
+      {
+        "net": "NET_S",
+        "start": "J1.2",
+        "end": "F1.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "FUSED_IN",
+        "start": "F1.2",
+        "end": "D5.2",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "BUS_PROT",
+        "start": "D5.1",
+        "end": "U3.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_BUS",
+        "start": "U3.5",
+        "end": "L2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U1.8",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_ISO",
+        "start": "U2.6",
+        "end": "U4.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_LOGIC",
+        "start": "U4.5",
+        "end": "L3.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_REG",
+        "start": "L3.2",
+        "end": "C32.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_REG",
+        "start": "C32.1",
+        "end": "SW3.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_MODULE",
+        "start": "SW3.2",
+        "end": "MCU1.5V",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "3V3_LOGIC",
+        "start": "MCU1.3V3",
+        "end": "U1.1",
+        "minimum_track_width_mm": 0.2,
+        "passed": true
+      }
+    ],
+    "total_nets": 23,
+    "minimum_copper_clearance_mm": 0.150001,
+    "minimum_domain_separation_mm": 3.209999,
+    "minimum_body_clearance_mm": 0.275,
+    "minimum_native_3d_body_clearance_mm": 0.3275,
+    "minimum_mask_web_mm": 0.1,
+    "minimum_plated_annulus_mm": 0.2999768105969196,
+    "npth_holes": 6,
+    "method": "Independent decoded PCB pad/track/via/region/body geometry, native slot angles and component NPTH; connectivity across plated pads and vias."
+  },
+  "assembly": null,
+  "passed": false,
+  "release_checks_complete": false,
+  "checks": 10885,
+  "errors": [
+    "Assembly output files could not complete: ValueError: Expected one final BOM CSV, found 0; specify --bom"
+  ],
+  "scope": "full_generated_package",
+  "qualification": "Checks the generated package/source files only. Native Altium ERC/DRC, fabrication DFM, assembly orientation approval and hardware qualification are separate.",
+  "input_sha256": {
+    "orion-r5-design.json": "c2bf4b8ffe4e4592865f9705d4225aa2acfeaae2b860f8d6b53a96eb7e0427ea",
+    "BatterySentinel-N2K-Orion-R5-Logic.SchDoc": "3855323ffbf1eedb65161bea24e8074e77d3e66c3fe42d46e87b1835fac89947",
+    "BatterySentinel-N2K-Orion-R5-Power.SchDoc": "95dd4acf04a2bba605f4536d0915184cb6cd01a12d7d875e03ff0a1435cedbec",
+    "BatterySentinel-N2K-Orion-R5.PrjPcb": "1ef0209798c6c188023a9bdb6a858736958360667361b1beba0d82eadb7546f7",
+    "Orion-Bridge.SchLib": "4ba680cf5f9f6387e27509a84342b539ede0667a5fc60f8ecad8183a97efc169",
+    "Orion-Bridge.PcbLib": "87560cc6adec5d6e5b58b650b2455c7c0803df931dc2f881413f9d744b1b110a",
+    "BatterySentinel-N2K-Orion-R5.PcbDoc": "14924536fb140d8eea590e626d66aa7d99a8def8f6dab6a44f38c397260a76ae"
+  }
+}

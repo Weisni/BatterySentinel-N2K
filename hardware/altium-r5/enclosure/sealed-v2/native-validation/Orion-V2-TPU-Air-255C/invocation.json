@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\Program Files\\QuackSlicer\\quack-slicer.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\Orion-V2-TPU-Air-255C.3mf",
+    "--allow-newer-file",
+    "--datadir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\native-validation\\Orion-V2-TPU-Air-255C\\data",
+    "--debug",
+    "2",
+    "--curr-bed-type",
+    "Textured PEI Plate",
+    "--slice",
+    "0",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\native-validation\\Orion-V2-TPU-Air-255C",
+    "--export-3mf",
+    "verified.3mf",
+    "--load-settings",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\p2s-machine.json;C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\tpu-air-process.json",
+    "--load-filaments",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-v2\\profiles\\tpu-air-255.json"
+  ],
+  "returncode": 0,
+  "seconds": 2.9980921745300293,
+  "stdout": "",
+  "stderr": ""
+}

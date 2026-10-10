@@ -1,0 +1,114 @@
+{
+  "target": "orion-debug-oled",
+  "version": "1.2.0-debug.1",
+  "otaSlotBytes": 1966080,
+  "applicationBytes": 1939552,
+  "nvsPreservedByUsbLayout": true,
+  "flashOffsets": {
+    "orion-debug-oled-1.2.0-debug.1.bin": "0x10000",
+    "bootloader.bin": "0x0",
+    "partitions.bin": "0x8000",
+    "boot_app0.bin": "0xe000"
+  },
+  "dependencies": {
+    "U8g2": "2.36.5"
+  },
+  "files": {
+    "orion-debug-oled-1.2.0-debug.1.bin": {
+      "bytes": 1939552,
+      "sha256": "1604fae4611bbeb1f42bd1968f66c32e91ad77b20161d03b9f580bf6a1eedad2"
+    },
+    "bootloader.bin": {
+      "bytes": 13248,
+      "sha256": "30d47ab1f344cfa69f6b2f718ffa72fc7baea6db047eaabefea162db29e6821c"
+    },
+    "partitions.bin": {
+      "bytes": 3072,
+      "sha256": "1c2dcf14bfeb770457370273aba2f7d448375e1badbc5925c4489fedb30bcd6e"
+    },
+    "boot_app0.bin": {
+      "bytes": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    "README.md": {
+      "bytes": 2264,
+      "sha256": "51e359013b633a0dff1b7bac13dc8e1cbc0baffcc905209c889b4d2f42f49d0d"
+    },
+    "debug-guide.md": {
+      "bytes": 13613,
+      "sha256": "d040d15ffa8607571b24329d0b2a2870d332601294815459dff122586e67a33b"
+    },
+    "U8g2-LICENSE.txt": {
+      "bytes": 3750,
+      "sha256": "8cf13e2fabfb6665de2132f148011fcf4252106f464ea520c001647a71934f5e"
+    },
+    "oled-preview.gif": {
+      "bytes": 91031,
+      "sha256": "882c419adeb92bfaafa0c7c239ae8a93addaa3c43251b1ed18757cf5ddb075dc"
+    },
+    "oled-preview.png": {
+      "bytes": 51942,
+      "sha256": "055fa8e0b57f6cf67286f1cb401a9192d6cb2abfe71fa522f32df97c4c3be0af"
+    }
+  },
+  "sources": {
+    "include/config.h": "c1a5e6983d58e7c685a53c70cb9186b073bd806e5538817076ccec7d63731993",
+    "lib/BatteryCore/src/BatteryCore.cpp": "f54bdcd3ae0da3ef7d563d5249b2deaea6cad4323055348b1c8dbbb3cb0e6b45",
+    "lib/BatteryCore/src/BatteryCore.h": "886dfd84419ec123666cc1101c2e69cb07d6e3040a8915a3758bc3f09d609a00",
+    "lib/BatteryProfiles/src/BatteryProfiles.h": "5bdf6ee161573583faf751d3679617f30256d800d8c8dec83dbae81e6cefdc6e",
+    "lib/BridgeAuth/src/BridgeCertificateNames.h": "151428942ff7d06950cff06efb5cc2e5a97d5f99035dfda690b63633232dfc1e",
+    "lib/BridgeAuth/src/BridgeCertificateStore.h": "84aa7fa8ab27d8bdbd1155d98731407620ad3f1ccabb21abe2da74c5b2a59bda",
+    "lib/BridgeAuth/src/BridgeCredentialStore.h": "ca515141777009f80e298e7e68f45d999ff4eabf539957bfbb7bd82e376a271f",
+    "lib/BridgeAuth/src/BridgePasswordHash.h": "28b1273efd00b37aac1d9b44072bebb28258abb41fa960f8289981965bf721ec",
+    "lib/BridgeAuth/src/BridgePasswordHashMbedTls.h": "4d5976dad143fd58c9a32333644ac8b10647d65d2c090b06024b69c335699a99",
+    "lib/BridgeAuth/src/BridgePasswordUpdate.h": "59a0b70cc53a2fd99557588bcae39640d1a3832c40180bcc703f3d24d3728981",
+    "lib/BridgeInsights/src/BridgeInsights.h": "ba63d5dece434d709ce5b02dc13f37e8a28b2e90d47a55fa0b951ee4fce5a3b6",
+    "lib/BridgeInsights/src/BridgeNotificationStore.h": "c51a27772ac2468d4adf12374508fc08a59e1b6d6f077c563d18ab0da2119a29",
+    "lib/BridgeNmeaAlerts/src/BridgeNmeaAlerts.h": "87204c288a3f10e28c43fc4624f6c0f000259ce62d07badf833b87e38d387165",
+    "lib/BridgeTime/src/BridgeTime.h": "1aded07e481b3c55e7862ba98aff3c6f0dee59baa439bc4ef00c2099fdc96695",
+    "lib/DebugDisplay/src/DebugDisplayModel.h": "70419c198c80e24c36f0ec3d344d43d0ceaa3161ea3b72d9e69c5699ea0d7841",
+    "lib/FirmwareOta/src/FirmwareOta.h": "948cd9439cf5577bba45d7a0fecdc2cd97f91b67bfc60364b99868e34912b49d",
+    "lib/LogCore/src/LogCore.h": "93efe337fc0672822b85b1b1e1d5086dcdeb4477ee0f33e714aa00b6861c0caa",
+    "lib/OrionBridge/src/OrionAliases.h": "68313ef3ef004c4dfa4eee540641ef31e68c4c16c341c1b48fa2bc31372b24a4",
+    "lib/OrionBridge/src/OrionFrame.h": "ba00703dee8a0059be723788a38907f4db9c6db6c686a80516a6be27cec863bb",
+    "lib/OrionBridge/src/OrionMac.h": "55ad2fad3d682cb6d82e42789426cb0dc75871b548b3bb5cca04b32c4c29b281",
+    "lib/SensorMath/src/Ina238Math.h": "f38acbf302cf71bfecd1d8c60ca0583bea52ffb2a65b7048f15ab51c25252ea5",
+    "lib/StateCore/src/StateCore.h": "8acefc6508a019438dc339e0c4f5c07aa209d74b95be7eca98320c5c28395961",
+    "partitions_4mb_ota.csv": "2ac9e1bb8078a1929282502645ee745be2b596db23c2ae5b48bf49caf94b2041",
+    "platformio.ini": "ab7b2c830639c7362a6a61f73daddf17285d4f8b50f4a579b18eb349b63d6fbd",
+    "src/BridgeDebugDisplay.cpp": "23c622ce957441b738fd719041cd74f2ef8af26e071b49dae4b3eb0db66bfa62",
+    "src/BridgeDebugDisplay.h": "720d36d242e873a15009e666d929e5e23ba41ffe8dd3215ac9484523d418018c",
+    "src/BridgeDiagnostics.cpp": "7706f6ff797667c1ecc443e314ba604e5ae4e8232b04b355269b5bd4d0a6a32c",
+    "src/BridgeDiagnostics.h": "2de6b84025d9d08beaf0e47565c9e9e577ea87175202401a1d215e0d72e39b02",
+    "src/BridgeFirmwareIdentity.cpp": "5d3d3e31b9a45cd679342bb288b3bb4d5804ec5cb30330a7938fc3a2a2bbb4d6",
+    "src/BridgeFirmwareIdentity.h": "f04d8d9c856a968cadc9d64f85e340cb4e26000039b7c76c40378544cf0c2bf7",
+    "src/BridgeNetworkIdentity.h": "b98c85efbfb44f92fec7a0ed0a597a09daaf4bd4fb1a1dea239dc0511b55aeaf",
+    "src/BridgeNotificationForm.h": "2037284def3036c7139ac4ee6868e51ce1bcc7fd08d70a7eddc81da591f106e8",
+    "src/BridgePortal.cpp": "a549215d09584d9c4b65ce64c2b02c45e114d7169210b13954b6879ac4f25a16",
+    "src/BridgePortal.h": "6b83663477581c2cb5a605c0e602fea16f9ee92f4fdd4ac344f3bc59fd632a81",
+    "src/BridgePortalForm.h": "55871c209c0e9c4e0c03800b9309e60fffd431d8e1394b78eba900384c509cc6",
+    "src/BridgePortalInsights.h": "5d9c84019c23a1301dfee3b30f1fedd9a05c3f8acfe0f64db0066a475dec9c32",
+    "src/BridgePortalLanguage.h": "82adbbb026cfb7e51972855e619627290d036770ec98373ac4f111fe5875531c",
+    "src/BridgePortalOta.h": "d3499e11fd02bcb78b7ee14151b106f7f182f41adde446f486bfa61ec7d9ce5a",
+    "src/BridgePortalTranslations.h": "8165e9e938f88c1ae5ee391bab46ea0d1b3c3aeb111bbada4e0190c4f2c8a975",
+    "src/BridgePortalUi.h": "793111aff07aa9c19d05e0b78793096f9ad4206ef645420d59f8ae1feeb95f87",
+    "src/BridgeSettings.cpp": "9cc0d16727656cfed24de17e6676e12f1c89e2077644daf70ac43f35b970b84d",
+    "src/BridgeSettings.h": "da120529f3219b0cf674818ca8cfbc397984024aced2ba20cd6d55017835ecf1",
+    "src/DiagnosticsPortal.cpp": "c0f3a27e9142b34631cf5c62e6fd782781d788c1a88d64913ffaf154fdea79b0",
+    "src/DiagnosticsPortal.h": "52cbf6a15450331426b6c9184d52344435e6980cd9fa50b021ba74461c1a79b0",
+    "src/dongle_main.cpp": "a10b86798861e4eb2e854127bda35c22029412976414d5945511b35be1f09ad8",
+    "src/FramStateStore.cpp": "6ba15b30c59c71cf288da8fecc3fcc8d83040599a040996b48af08f9a06a01c3",
+    "src/FramStateStore.h": "6a4503aee743016a3f8776b2ca09305b7f90459f0da48144019f26cafe28017d",
+    "src/Ina238.cpp": "703340605ce3a7dca3a6c7c07fb0bbcd9adc8c54bfeefbf235d93c8cb0e2e207",
+    "src/Ina238.h": "041f70eea735a21367c712c3da448185591dd27f42d6e51bdfbc6201380afde9",
+    "src/main.cpp": "716401b1ad633a04ca1979f158c08c25abd21cad65c3e4b2ce267e761c89ecad",
+    "src/Nmea2000Twai.cpp": "1303ce60c90f69b05362bf785834e3517a2f535f4bc3da2f189bf99eefe9374f",
+    "src/Nmea2000Twai.h": "d8bf800835e34446e7593debe3a2211781ca0acc62c4f0f3486a85045df56237",
+    "src/NmeaPublisher.cpp": "5e06cc18acf4e91415edb791b73f0f06f5bda09978c24d3f540671256807f627",
+    "src/NmeaPublisher.h": "cf075bd3c4a178abbdbe5ba01e6a1a5550003a4f7943387eb9f109fca7fa47ca",
+    "src/OrionBleReceiver.cpp": "3031905de64e77eb56281b090465be1138e93ffac143e5174cd6533cb444909d",
+    "src/OrionBleReceiver.h": "043722fe8adfe6da91968ba007512700b09a8b0b808bd6484795ba7130199192",
+    "src/SettingsStore.cpp": "76c97bbea19384ede63a7d4381ce50ee95bd72a8998e40e0f06321462f7aab94",
+    "src/SettingsStore.h": "32e1c1910818745bb7728834273a7ca31362a9ae012d103ee41c491cc06bec80"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "type": "process",
+  "name": "0.12mm Optimized @BBL P2S - Awesome AI",
+  "print_settings_id": "0.12mm Optimized @BBL P2S - Awesome AI",
+  "from": "User",
+  "version": "2.6.0.5",
+  "inherits": "0.12mm High Quality @BBL P2S",
+  "bottom_shell_layers": "10",
+  "bottom_color_penetration_layers": "3",
+  "bottom_shell_thickness": "1.2",
+  "bridge_speed": [
+    "25",
+    "25"
+  ],
+  "default_acceleration": [
+    "3000",
+    "3000"
+  ],
+  "elefant_foot_compensation": "0.1",
+  "gap_infill_speed": [
+    "250",
+    "250"
+  ],
+  "initial_layer_speed": [
+    "20",
+    "20"
+  ],
+  "inner_wall_speed": [
+    "80",
+    "80"
+  ],
+  "internal_solid_infill_speed": [
+    "80",
+    "80"
+  ],
+  "outer_wall_speed": [
+    "40",
+    "40"
+  ],
+  "prime_tower_width": "35",
+  "prime_tower_brim_width": "3",
+  "smooth_coefficient": "4",
+  "sparse_infill_density": "35%",
+  "sparse_infill_speed": [
+    "100",
+    "100"
+  ],
+  "support_threshold_angle": "30",
+  "top_shell_layers": "10",
+  "top_color_penetration_layers": "5",
+  "top_shell_thickness": "1.2",
+  "top_surface_line_width": "0.3",
+  "top_surface_speed": [
+    "15",
+    "15"
+  ],
+  "wall_generator": "arachne",
+  "wall_loops": "5",
+  "initial_layer_infill_speed": [
+    "25",
+    "25"
+  ],
+  "outer_wall_acceleration": [
+    "1000",
+    "1000"
+  ],
+  "overhang_1_4_speed": [
+    "0",
+    "0"
+  ],
+  "overhang_2_4_speed": [
+    "50",
+    "50"
+  ],
+  "overhang_3_4_speed": [
+    "30",
+    "30"
+  ],
+  "overhang_4_4_speed": [
+    "10",
+    "10"
+  ],
+  "top_surface_acceleration": [
+    "500",
+    "500"
+  ],
+  "brim_type": "no_brim",
+  "min_bead_width": "50%",
+  "wall_transition_angle": "40",
+  "compatible_printers": [
+    "Bambu Lab P2S 0.4 nozzle"
+  ],
+  "print_extruder_id": [
+    "1",
+    "1"
+  ],
+  "print_extruder_variant": [
+    "Direct Drive Standard",
+    "Direct Drive High Flow"
+  ],
+  "bottom_surface_pattern": "monotonic",
+  "enable_arc_fitting": "1",
+  "enable_prime_tower": "1",
+  "enable_support": "0",
+  "initial_layer_print_height": "0.2",
+  "ironing_flow": "10%",
+  "ironing_inset": "0.21",
+  "ironing_spacing": "0.15",
+  "ironing_speed": "30",
+  "ironing_type": "no ironing",
+  "layer_height": "0.12",
+  "prime_tower_flat_ironing": "1",
+  "seam_position": "aligned",
+  "sparse_infill_pattern": "gyroid",
+  "top_solid_infill_flow_ratio": [
+    "1",
+    "1"
+  ],
+  "top_surface_density": "100",
+  "top_surface_pattern": "monotonicline"
+}

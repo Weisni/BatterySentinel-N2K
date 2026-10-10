@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "units": "mm",
+  "minimum_bore_at_bead_crests_mm": 6.8,
+  "relief_bore_mm": 7.5,
+  "maximum_outer_diameter_mm": 11.5,
+  "overall_length_mm": 9.0,
+  "body_length_mm": 8.2,
+  "inner_beads": {
+    "count": 2,
+    "section_radius_mm": 0.6,
+    "centres_z_mm": [
+      2.05,
+      5.466666666666666
+    ]
+  },
+  "outer_edge_rounding_mm": {
+    "bottom": 0.35,
+    "top": 0.2
+  },
+  "end_bead_height_mm": 0.8,
+  "radial_sections": [
+    {
+      "z_mm": 2.05,
+      "bore_diameter_mm": 6.8,
+      "outer_diameter_mm": 11.5
+    },
+    {
+      "z_mm": 5.466666666666666,
+      "bore_diameter_mm": 6.8,
+      "outer_diameter_mm": 11.5
+    },
+    {
+      "z_mm": 3.758333333333333,
+      "bore_diameter_mm": 7.5,
+      "outer_diameter_mm": 11.5
+    },
+    {
+      "z_mm": 0.0001,
+      "bore_diameter_mm": 7.5,
+      "outer_diameter_mm": 10.81673200525939
+    },
+    {
+      "z_mm": 8.1999,
+      "bore_diameter_mm": 7.5,
+      "outer_diameter_mm": 11.112647529402983
+    }
+  ],
+  "exported_bounds_mm": [
+    11.5,
+    11.5,
+    9.0
+  ],
+  "exported_minimum_vertex_bore_mm": 6.7999998188061,
+  "closed_oriented_manifold": true,
+  "connected_components": 1,
+  "triangles": 202560,
+  "volume_mm3": 530.6870727539062,
+  "stl_sha256": "38a138a7b44b74ce9315690ae69dd8dd1c66accf86d38c7ae9defce031c061aa",
+  "physical_status": "Unqualified standalone trial; existing 6 mm enclosure pocket is not resized"
+}

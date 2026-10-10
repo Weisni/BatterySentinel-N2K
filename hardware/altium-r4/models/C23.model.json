@@ -1,0 +1,94 @@
+{
+  "designator": "C23",
+  "footprint": "C1206",
+  "units": "mm",
+  "origin": "footprint origin; z=0 at carrier top surface",
+  "model_class": "locally generated approximate package/assembly envelope",
+  "manufacturer_certified": false,
+  "bodies": [
+    {
+      "name": "selected package envelope",
+      "outline": [
+        [
+          -1.6,
+          -0.8
+        ],
+        [
+          1.6,
+          -0.8
+        ],
+        [
+          1.6,
+          0.8
+        ],
+        [
+          -1.6,
+          0.8
+        ]
+      ],
+      "z0": 0.08,
+      "z1": 1.5,
+      "rgb": [
+        180,
+        146,
+        100
+      ]
+    },
+    {
+      "name": "metal end cap",
+      "outline": [
+        [
+          -1.6,
+          -0.8075
+        ],
+        [
+          -1.2200000000000002,
+          -0.8075
+        ],
+        [
+          -1.2200000000000002,
+          0.8075
+        ],
+        [
+          -1.6,
+          0.8075
+        ]
+      ],
+      "z0": 0.025,
+      "z1": 1.515,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "metal end cap",
+      "outline": [
+        [
+          1.2200000000000002,
+          -0.8075
+        ],
+        [
+          1.6,
+          -0.8075
+        ],
+        [
+          1.6,
+          0.8075
+        ],
+        [
+          1.2200000000000002,
+          0.8075
+        ]
+      ],
+      "z0": 0.025,
+      "z1": 1.515,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    }
+  ]
+}

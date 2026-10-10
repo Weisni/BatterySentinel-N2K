@@ -1,0 +1,760 @@
+{
+  "revision": "R3 compact carrier parts review",
+  "reviewed_on": "2026-09-21",
+  "units": "mm; footprint coordinates are top view at component rotation 0 degrees",
+  "scope": "Local component selections and PCB geometry only; retain all R2 pin numbers and electrical nets. No purchase or production qualification is implied.",
+  "layout_constraints": {
+    "minimum_isolation_copper_gap_mm": 3.8,
+    "isolation_gap_applies_to": "All top/bottom copper, pads, vias and polygons between BUS and LOGIC; U2's manufacturer land-pattern throat is the limiting 3.8 mm gap. Copper must not cross beneath either isolation component.",
+    "ordinary_copper_clearance_mm": 0.2,
+    "assembly_clearance_mm": {
+      "minimum_between_maximum_body_or_land_envelopes": 0.5,
+      "recommended_around_hand_soldered_parts": 1.0,
+      "note": "Engineering assembly allowances, not dimensions quoted from the manufacturers. Preserve solder access to SMD electrolytics and module headers."
+    },
+    "module": {
+      "nominal_body_mm": [
+        18,
+        22.5
+      ],
+      "proposed_rotation_deg": 180,
+      "minimum_underside_clearance_mm": 3.0,
+      "maximum_component_height_under_module_mm": 1.5,
+      "under_module_exclusions": [
+        "RF antenna zone and its keepout",
+        "tall cans",
+        "jumper",
+        "thermal hot spots"
+      ],
+      "antenna_direction_at_180_deg": "+Y / top board edge",
+      "antenna_keepout": "Keep all carrier copper on both layers, traces, vias and components away from the antenna projection; prefer an antenna end overhanging the carrier outline. Use the verified Nologo module outline/antenna metadata, not ESP32 IC dimensions.",
+      "usb_access": "At rotation 180 USB points toward -Y; reserve connector and cable mating space."
+    },
+    "compact_placement": {
+      "candidate_board_mm": [
+        54,
+        36
+      ],
+      "origin": "bottom-left +Y up",
+      "isolation_corridor_x_mm": [
+        27.1,
+        30.9
+      ],
+      "proposed_components": {
+        "U2": {
+          "x": 29,
+          "y": 12,
+          "rotation": 0
+        },
+        "U1": {
+          "x": 29,
+          "y": 27,
+          "rotation": 180
+        },
+        "MCU1": {
+          "x": 44,
+          "y": 24,
+          "rotation": 180
+        },
+        "U3": {
+          "x": 15,
+          "y": 25,
+          "rotation": 0
+        }
+      },
+      "note": "Feasibility starting points provided by parent layout, not verified collision-free placement. BUS is left and LOGIC right. U2 secondary remains right; rotating U1 180 degrees places its BUS pins left."
+    },
+    "can": [
+      "No 120 ohm termination on this NMEA drop board.",
+      "Place D3 and L1 close to the cable entrance, minimize unprotected CAN traces and TVS return inductance.",
+      "Keep CANH/CANL together through the protection/choke/transceiver path; preserve TDK winding pin pairs 1-4 and 2-3."
+    ],
+    "thermal": [
+      "Retain TPS7B6950 in SOT-223 with its pin-4 tab connected to GND_BUS.",
+      "Reserve a broad GND_BUS copper area on both layers around U3, stitch with thermal vias, and keep it clear of LOGIC isolation corridor.",
+      "Do not treat TI JEDEC 4-layer theta-JA as achieved on this compact two-layer board."
+    ]
+  },
+  "power_review": {
+    "preserve_u2": "RECOM R3M-2405S/SMD, input 9-36 V, 5 V 600 mA output, 3 W",
+    "sources": [
+      "https://recom-power.com/pdf/Econoline/R3M.pdf",
+      "https://www.ti.com/lit/ds/symlink/iso1042.pdf",
+      "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf"
+    ],
+    "minimum_input_limitation": "9 V minimum is specified at U2 input pins. Fuse, MOSFET and filter losses mean operation/startup at exactly 9 V at J1 is not guaranteed. Measure worst-case startup and Wi-Fi peaks; do not silently claim a 9 V connector minimum.",
+    "rejected_silent_substitution": "R3M-1205S/SMD has a 4.5-18 V input range and is not a drop-in solution while retaining the present 20 V TVS and transient assumptions.",
+    "regulator_example": {
+      "bus_v": 16,
+      "ldo_output_v": 5,
+      "iso1042_bus_supply_max_dominant_a": 0.0734,
+      "u3_dissipation_w_before_quiescent": 0.8074,
+      "theta_ja_c_per_w_ti_jedec_four_layer_sot223": 64.2,
+      "explanation": "This dominant-bus maximum is a conservative thermal corner, not average operating draw. Theta-JA reference gives about 52 C rise only on its stated test board; the new board needs measured or simulated thermal verification."
+    },
+    "ldo_output_capacitor_requirement": "TI specifies 2.2-100 uF effective output capacitance with 0.001-2 ohm ESR. Verify C3 capacitance after DC bias and temperature; retain local ceramic bypassing.",
+    "u2_derating": "RECOM specifies full load only up to 71 C ambient and 105 C maximum case. Confirm actual load and enclosure temperature.",
+    "open_qualification_items": [
+      "Thermal behavior at maximum intended ambient, input voltage and CAN duty cycle",
+      "ESP32 Wi-Fi startup/peak load and 3.3 V regulator behavior of the fitted SuperMini revision",
+      "Capacitor ripple and input-filter stability during startup/load changes",
+      "Cable conductor/strain-relief fit",
+      "TVS/fuse coordination and system transient test",
+      "EMC, CAN integrity and isolation verification on assembled board"
+    ]
+  },
+  "components": {
+    "F1": {
+      "manufacturer": "Bourns",
+      "mpn": "SF-1206S080-2",
+      "value": "T0.8A 63VDC",
+      "footprint": "BOURNS_SF1206S",
+      "datasheet": "https://www.bourns.com/docs/product-datasheets/sf-1206s.pdf",
+      "description": "0.8 A slow-blow SMD ceramic fuse, 63 VDC, 50 A interrupt rating",
+      "source_pages": [
+        1,
+        2
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.725,
+            "y": 0,
+            "sx": 1.25,
+            "sy": 1.65
+          },
+          {
+            "number": "2",
+            "x": 1.725,
+            "y": 0,
+            "sx": 1.25,
+            "sy": 1.65
+          }
+        ],
+        "body": [
+          3.2,
+          1.65
+        ],
+        "height": 0.7,
+        "note": "Bourns SF-1206S recommended land pattern: total X span 4.7, inner gap 2.2, pad Y 1.65; maximum body envelope. No polarity.",
+        "provisional": false
+      },
+      "ratings": {
+        "current_a": 0.8,
+        "voltage_dc_v": 63,
+        "interrupt_a_at_rated_v": 50,
+        "cold_resistance_nominal_ohm": 0.165,
+        "cold_resistance_tolerance_percent": 25,
+        "i_squared_t_a2s": 0.068,
+        "temperature_c": [
+          -20,
+          105
+        ]
+      },
+      "constraints": [
+        "R3 ambient specification is limited by this fuse to at least -20 C minimum until an alternative is qualified.",
+        "Coordinate this board fuse with the upstream NMEA branch protection; 50 A is the stated component interrupt rating, not an unlimited battery-short rating."
+      ],
+      "libref": "FUSE_BOURNS_SF1206S080",
+      "pcb": {
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      }
+    },
+    "L2": {
+      "manufacturer": "Bourns",
+      "mpn": "SRN4018-150M",
+      "value": "15uH 1A",
+      "footprint": "BOURNS_SRN4018",
+      "datasheet": "https://www.bourns.com/docs/product-datasheets/srn4018.pdf",
+      "description": "15 uH semi-shielded power inductor, 1.0 A RMS and 1.1 A saturation rating",
+      "source_pages": [
+        1,
+        2
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.525,
+            "y": 0,
+            "sx": 1.5,
+            "sy": 3.6
+          },
+          {
+            "number": "2",
+            "x": 1.525,
+            "y": 0,
+            "sx": 1.5,
+            "sy": 3.6
+          }
+        ],
+        "body": [
+          4.2,
+          4.2
+        ],
+        "height": 1.8,
+        "note": "Bourns SRN4018 recommended land pattern: 4.55 total X, two 1.5 x 3.6 pads. Maximum body envelope 4.2 x 4.2. No polarity.",
+        "provisional": false
+      },
+      "ratings": {
+        "inductance_uh": 15,
+        "tolerance_percent": 20,
+        "irms_a": 1.0,
+        "isat_a": 1.1,
+        "dcr_max_ohm": 0.264,
+        "temperature_c_including_self_heating": [
+          -40,
+          125
+        ]
+      },
+      "constraints": [
+        "RMS rating is specified at approximately 40 C temperature rise; saturation rating permits 30 percent inductance reduction.",
+        "Keep close to U2 input capacitor C9, with short BUS_PROT-to-L2-to-DCDC_IN path."
+      ],
+      "libref": "IND_BOURNS_SRN4018_150M",
+      "pcb": {
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      }
+    },
+    "C1": {
+      "manufacturer": "Panasonic Industry",
+      "mpn": "EEEFT1H470AP",
+      "value": "47uF 50V",
+      "footprint": "PANASONIC_FT_D6P3",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf",
+      "product_url": "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-smd/models/EEEFT1H470AP",
+      "description": "47 uF 50 V FT-series SMD aluminum electrolytic, size D, standard product",
+      "source_pages": [
+        1,
+        2,
+        4
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.5,
+            "y": 0,
+            "sx": 3.2,
+            "sy": 1.6
+          },
+          {
+            "number": "2",
+            "x": 2.5,
+            "y": 0,
+            "sx": 3.2,
+            "sy": 1.6
+          }
+        ],
+        "body": [
+          6.8,
+          6.8
+        ],
+        "height": 6.1,
+        "note": "Panasonic FT standard size D land pattern: a=1.8 gap, b=3.2 pad length, c=1.6 pad width. Body is maximum plastic-base envelope; can nominal diameter 6.3. Pin 1 positive, pin 2 negative.",
+        "provisional": false
+      },
+      "model_3d": {
+        "style": "smd_electrolytic",
+        "can_diameter_nominal": 6.3,
+        "base_nominal": [
+          6.6,
+          6.6
+        ],
+        "height_nominal": 5.8,
+        "positive_pad": "1"
+      },
+      "ratings": {
+        "capacitance_uf": 47,
+        "voltage_v": 50,
+        "esr_max_ohm_at_100khz_20c": 0.68,
+        "ripple_a_at_100khz_105c": 0.195,
+        "endurance_hours_at_105c": 2000,
+        "temperature_c": [
+          -55,
+          105
+        ]
+      },
+      "constraints": [
+        "Polarized part: pin 1 BUS_PROT, pin 2 GND_BUS.",
+        "Do not place underneath the elevated MCU module; 6.1 mm maximum height exceeds its minimum underside clearance."
+      ],
+      "libref": "CAP_PANASONIC_EEEFT1H470AP",
+      "pcb": {
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      }
+    },
+    "C6": {
+      "manufacturer": "Panasonic Industry",
+      "mpn": "EEEFT1C470AR",
+      "value": "47uF 16V",
+      "footprint": "PANASONIC_FT_D4",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf",
+      "product_url": "https://industrial.panasonic.com/ww/products/pt/aluminum-cap-smd/models/EEEFT1C470AR",
+      "description": "47 uF 16 V FT-series SMD aluminum electrolytic, size B, standard product",
+      "source_pages": [
+        1,
+        2,
+        3
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.75,
+            "y": 0,
+            "sx": 2.5,
+            "sy": 1.6
+          },
+          {
+            "number": "2",
+            "x": 1.75,
+            "y": 0,
+            "sx": 2.5,
+            "sy": 1.6
+          }
+        ],
+        "body": [
+          4.5,
+          4.5
+        ],
+        "height": 6.1,
+        "note": "Panasonic FT standard size B land pattern: a=1.0 gap, b=2.5 pad length, c=1.6 pad width. Body is maximum plastic-base envelope; can nominal diameter 4.0. Pin 1 positive, pin 2 negative.",
+        "provisional": false
+      },
+      "model_3d": {
+        "style": "smd_electrolytic",
+        "can_diameter_nominal": 4.0,
+        "base_nominal": [
+          4.3,
+          4.3
+        ],
+        "height_nominal": 5.8,
+        "positive_pad": "1"
+      },
+      "ratings": {
+        "capacitance_uf": 47,
+        "voltage_v": 16,
+        "esr_max_ohm_at_100khz_20c": 0.85,
+        "ripple_a_at_100khz_105c": 0.16,
+        "endurance_hours_at_105c": 2000,
+        "temperature_c": [
+          -55,
+          105
+        ]
+      },
+      "constraints": [
+        "Polarized part: pin 1 5V_ISO, pin 2 GND_LOGIC. The higher voltage rating preserves the former 47 uF / >=10 V specification.",
+        "Keep near U2 secondary; do not place underneath MCU1."
+      ],
+      "libref": "CAP_PANASONIC_EEEFT1C470AR",
+      "pcb": {
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      }
+    },
+    "J1": {
+      "manufacturer": "",
+      "mpn": "",
+      "value": "NMEA Micro-C pigtail",
+      "footprint": "PIGTAIL_5_P3_D1P3",
+      "datasheet": "",
+      "description": "Five direct wire-solder pads for a separately selected Micro-C cable; this is a PCB interface, not an invented connector MPN or face view",
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": 0,
+            "y": 6,
+            "sx": 2.3,
+            "sy": 2.3,
+            "drill": 1.3,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": 3,
+            "sx": 2.3,
+            "sy": 2.3,
+            "drill": 1.3,
+            "shape": "ROUND"
+          },
+          {
+            "number": "3",
+            "x": 0,
+            "y": 0,
+            "sx": 2.3,
+            "sy": 2.3,
+            "drill": 1.3,
+            "shape": "ROUND"
+          },
+          {
+            "number": "4",
+            "x": 0,
+            "y": -3,
+            "sx": 2.3,
+            "sy": 2.3,
+            "drill": 1.3,
+            "shape": "ROUND"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": -6,
+            "sx": 2.3,
+            "sy": 2.3,
+            "drill": 1.3,
+            "shape": "ROUND"
+          }
+        ],
+        "body": [
+          3,
+          15
+        ],
+        "height": 3,
+        "note": "Designed carrier wire-solder interface, 3.0 pitch, 1.3 finished-hole target, 0.5 radial annulus. Pin numbering is logical NMEA: 1 shield, 2 NET-S, 3 NET-C, 4 CAN-H, 5 CAN-L. Cable and strain relief still require a physical selection.",
+        "provisional": true
+      },
+      "constraints": [
+        "Verify stripped/tinned conductor maximum diameter fits a 1.3 mm finished plated hole, including fabrication tolerance; do not infer cable AWG from the connector alone.",
+        "Provide cable strain relief in the enclosure. PCB solder joints are not cable strain relief.",
+        "SHIELD remains separate from GND_BUS and GND_LOGIC; TP1 exposes it for the intended chassis connection."
+      ],
+      "libref": "NMEA_PIGTAIL_5_P3_D1P3",
+      "pcb": {
+        "status": "Designed wire interface; cable conductor and strain relief selection pending"
+      }
+    },
+    "Q1": {
+      "value": "DMP6023LE",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "DMP6023LE",
+      "datasheet": "https://www.diodes.com/datasheet/download/DMP6023LE.pdf",
+      "description": "DMP6023LE",
+      "libref": "DMP6023LE",
+      "footprint": "SOT223_DIODES_DMP6023LE",
+      "pcb": {
+        "status": "Diodes manufacturer suggested land pattern, DS37199 Rev.3-2 p6"
+      },
+      "source_pages": [
+        6
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.3,
+            "y": -3.2,
+            "sx": 1.2,
+            "sy": 1.6
+          },
+          {
+            "number": "2",
+            "x": 0.0,
+            "y": -3.2,
+            "sx": 1.2,
+            "sy": 1.6
+          },
+          {
+            "number": "3",
+            "x": 2.3,
+            "y": -3.2,
+            "sx": 1.2,
+            "sy": 1.6
+          },
+          {
+            "number": "4",
+            "x": 0,
+            "y": 3.2,
+            "sx": 3.3,
+            "sy": 1.6
+          }
+        ],
+        "body": [
+          6.55,
+          3.55
+        ],
+        "height": 1.65,
+        "note": "Diodes DMP6023LE datasheet suggested SOT223 pad layout: C=2.30, C1=6.40, X=1.20, X1=3.30, Y=Y1=1.60. Pin 1 gate, 2 drain, 3 source, 4 drain tab.",
+        "provisional": false
+      }
+    },
+    "D3": {
+      "value": "PESD2CAN24T-Q",
+      "manufacturer": "Nexperia",
+      "mpn": "PESD2CAN24T-QR",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf",
+      "description": "PESD2CAN24T-Q",
+      "libref": "PESD2CAN24T-QR",
+      "footprint": "SOT23_NEXPERIA_REFLOW",
+      "pcb": {
+        "status": "Nexperia PESD2CAN24T-Q datasheet Fig10 reflow lands, 9-Feb-2024 p8"
+      },
+      "source_pages": [
+        2,
+        7,
+        8
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1,
+            "sx": 0.6,
+            "sy": 0.7
+          },
+          {
+            "number": "2",
+            "x": 0.95,
+            "y": -1,
+            "sx": 0.6,
+            "sy": 0.7
+          },
+          {
+            "number": "3",
+            "x": 0,
+            "y": 1,
+            "sx": 0.6,
+            "sy": 0.7
+          }
+        ],
+        "body": [
+          3.0,
+          1.4
+        ],
+        "height": 1.1,
+        "note": "Nexperia SOT23 reflow footprint Fig10: 0.6 x 0.7 copper lands, 1.9 pin pitch and 2.0 row centres. Drawing is rotated 180 degrees to match existing top-view pin1 lower left, pin2 lower right, pin3 upper centre. Paste suggested0.5 x0.6, mask opening1.0 x1.0; set fabrication-specific expansions accordingly.",
+        "provisional": false
+      },
+      "constraints": [
+        "Pad geometry is the reflow land pattern; do not substitute the separate wave-solder footprint dimensions.",
+        "Preserve pin1 CANH_EXT, pin2 CANL_EXT, pin3 GND_BUS.",
+        "For hand soldering longer lands may be chosen explicitly, but must remain a documented process variant."
+      ]
+    },
+    "MCU1": {
+      "pcb_footprint": {
+        "body": [
+          18,
+          22.5
+        ],
+        "height": 7.2,
+        "note": "Nologo 16-pin carrier interface; 15.24 mm rows / 2.54 mm pitch. Local assembly-model height 7.2 mm assumes 3.1 mm carrier-to-module underside, 1.0 mm module PCB and 3.1 mm USB body. This is not a verified manufacturer maximum; actual header seating and module revision must be checked.",
+        "provisional": true,
+        "pads": [
+          {
+            "number": "5",
+            "x": -7.62,
+            "y": 9.7006,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -7.62,
+            "y": 7.1606,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "7",
+            "x": -7.62,
+            "y": 4.6206,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "8",
+            "x": -7.62,
+            "y": 2.0806,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "9",
+            "x": -7.62,
+            "y": -0.4594,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "10",
+            "x": -7.62,
+            "y": -2.9994,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "20",
+            "x": -7.62,
+            "y": -5.5394,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "21",
+            "x": -7.62,
+            "y": -8.0794,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "5V",
+            "x": 7.62,
+            "y": 9.7006,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "GND",
+            "x": 7.62,
+            "y": 7.1606,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "3V3",
+            "x": 7.62,
+            "y": 4.6206,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "4",
+            "x": 7.62,
+            "y": 2.0806,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "3",
+            "x": 7.62,
+            "y": -0.4594,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "2",
+            "x": 7.62,
+            "y": -2.9994,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "1",
+            "x": 7.62,
+            "y": -5.5394,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "0",
+            "x": 7.62,
+            "y": -8.0794,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          }
+        ]
+      },
+      "pcb": {
+        "status": "Nologo source-based header pin geometry. Local model assumes 3.1 mm underside clearance and 7.2 mm total height; no separate socket part is specified."
+      }
+    },
+    "U3": {
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.3,
+            "y": -3.15,
+            "sx": 1.2,
+            "sy": 2.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0.0,
+            "y": -3.15,
+            "sx": 1.2,
+            "sy": 2.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 2.3,
+            "y": -3.15,
+            "sx": 1.2,
+            "sy": 2.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0,
+            "y": 3.15,
+            "sx": 3.8,
+            "sy": 2.2,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "body": [
+          6.7,
+          3.7
+        ],
+        "height": 1.8,
+        "note": "TI TPS7B69-Q1 DCY package drawing4202506/B p20: maximum body6.7x3.7, maximum height1.8, lead pitch2.3. Existing R2 engineering lands retained: 1.2x2.2 signal pads,3.8x2.2 tab,6.3 row centres. TI datasheet provides no DCY recommended land pattern; qualify solder process. Pin4 is GND_BUS tab.",
+        "provisional": true
+      },
+      "pcb": {
+        "status": "TI DCY mechanical envelope verified; R2 engineering lands retained, not manufacturer-recommended lands. Thermal/assembly qualification required."
+      },
+      "source_pages": [
+        3,
+        20
+      ],
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf"
+    }
+  },
+  "remaining_geometry_reviews": [
+    "U3: TI DCY mechanical dimensions verified, but the TPS7B69-Q1 datasheet includes no DCY land pattern; existing engineering lands must be qualified for assembly.",
+    "Other unchanged generic resistor/capacitor and diode footprints retain their R2 status; this compact-part review is not blanket manufacturing approval.",
+    "JP1 and SuperMini header mating geometry need physical header selection to guarantee the required module underside spacing."
+  ]
+}

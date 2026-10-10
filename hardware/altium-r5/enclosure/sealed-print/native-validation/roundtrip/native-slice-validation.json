@@ -1,0 +1,310 @@
+{
+  "error_string": "Success.",
+  "export_time": 611,
+  "layer_height": 0.20000000298023224,
+  "plate_index": 0,
+  "prepare_time": 217,
+  "return_code": 0,
+  "sliced_plates": [
+    {
+      "feature_type_times": {
+        "Bottom surface": 832.7727661132812,
+        "Bridge": 1157.6529541015625,
+        "Custom": 402.57672119140625,
+        "Flush": 26.0,
+        "Gap infill": 249.29388427734375,
+        "Inner wall": 5624.8486328125,
+        "Internal solid infill": 4160.765625,
+        "Outer wall": 3206.23876953125,
+        "Overhang wall": 25.276527404785156,
+        "Sparse infill": 3758.40478515625,
+        "Top surface": 1092.9390869140625,
+        "Travel": 1215.5,
+        "Undefined": 1209.0340576171875
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFG99",
+          "id": 1,
+          "main_used_g": 100.3752212524414,
+          "total_used_g": 100.3752212524414
+        }
+      ],
+      "generate_support_material_time": 80,
+      "id": 1,
+      "infill_time": 1955,
+      "layer_filament_change": 0,
+      "main_predication": 21290.76953125,
+      "make_perimeters_time": 565,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 88.0,
+            "height": 30.0,
+            "width": 80.79882049560547,
+            "x": 34.54999923706055,
+            "y": 64.0,
+            "z": 0.0
+          },
+          "id": 5,
+          "name": "base",
+          "triangle_count": 16316
+        },
+        {
+          "bbox": {
+            "depth": 66.80000305175781,
+            "height": 5.0,
+            "width": 80.79882049560547,
+            "x": 125.34881591796875,
+            "y": 64.0,
+            "z": 0.0
+          },
+          "id": 9,
+          "name": "lid",
+          "triangle_count": 52516
+        },
+        {
+          "bbox": {
+            "depth": 30.0,
+            "height": 26.0,
+            "width": 49.900001525878906,
+            "x": 34.54999923706055,
+            "y": 162.0,
+            "z": 0.0
+          },
+          "id": 13,
+          "name": "fit_coupon",
+          "triangle_count": 4340
+        },
+        {
+          "bbox": {
+            "depth": 24.0,
+            "height": 3.200000047683716,
+            "width": 42.999996185302734,
+            "x": 94.45000457763672,
+            "y": 162.0,
+            "z": -3.8418579428878274e-09
+          },
+          "id": 17,
+          "name": "usb_cover",
+          "triangle_count": 1972
+        },
+        {
+          "bbox": {
+            "depth": 19.600000381469727,
+            "height": 3.200000047683716,
+            "width": 34.000003814697266,
+            "x": 147.4499969482422,
+            "y": 162.0,
+            "z": -3.8418579428878274e-09
+          },
+          "id": 21,
+          "name": "service_switch_cover",
+          "triangle_count": 1972
+        },
+        {
+          "bbox": {
+            "depth": 18.0,
+            "height": 3.200000047683716,
+            "width": 30.000003814697266,
+            "x": 191.4499969482422,
+            "y": 162.0,
+            "z": -3.8418579428878274e-09
+          },
+          "id": 25,
+          "name": "cable_pressure_cap",
+          "triangle_count": 1944
+        }
+      ],
+      "sliced_time": 4357,
+      "sliced_time_with_cache": 1325,
+      "total_predication": 21738.880859375,
+      "triangle_count": 79060,
+      "warning_message": ""
+    },
+    {
+      "feature_type_times": {
+        "Bottom surface": 6.198085784912109,
+        "Custom": 403.1568908691406,
+        "Flush": 26.0,
+        "Gap infill": 140.344970703125,
+        "Inner wall": 1091.8082275390625,
+        "Internal solid infill": 90.59150695800781,
+        "Outer wall": 643.94140625,
+        "Sparse infill": 222.30291748046875,
+        "Top surface": 96.17316436767578,
+        "Travel": 186.8643341064453,
+        "Undefined": 179.2483673095703
+      },
+      "filament_change_times": 0,
+      "filaments": [
+        {
+          "filament_id": "GFU99",
+          "id": 2,
+          "main_used_g": 5.314480781555176,
+          "total_used_g": 5.314480781555176
+        }
+      ],
+      "generate_support_material_time": 21,
+      "id": 2,
+      "infill_time": 48,
+      "layer_filament_change": 0,
+      "main_predication": 2452.225341796875,
+      "make_perimeters_time": 184,
+      "obj_cached_cnt": 0,
+      "objects": [
+        {
+          "bbox": {
+            "depth": 52.0,
+            "height": 1.2000000476837158,
+            "width": 68.00000762939453,
+            "x": 327.29058837890625,
+            "y": 91.30528259277344,
+            "z": 1.5814205500674916e-10
+          },
+          "id": 29,
+          "name": "lid_gasket",
+          "triangle_count": 992
+        },
+        {
+          "bbox": {
+            "depth": 17.999998092651367,
+            "height": 1.2000000476837158,
+            "width": 26.0000057220459,
+            "x": 405.29058837890625,
+            "y": 91.30528259277344,
+            "z": 1.5814205500674916e-10
+          },
+          "id": 33,
+          "name": "usb_gasket",
+          "triangle_count": 992
+        },
+        {
+          "bbox": {
+            "depth": 12.999998092651367,
+            "height": 1.2000000476837158,
+            "width": 16.0000057220459,
+            "x": 441.29058837890625,
+            "y": 91.30528259277344,
+            "z": 1.5814205500674916e-10
+          },
+          "id": 37,
+          "name": "service_switch_gasket",
+          "triangle_count": 992
+        },
+        {
+          "bbox": {
+            "depth": 11.49978256225586,
+            "height": 7.0,
+            "width": 11.49979019165039,
+            "x": 467.29058837890625,
+            "y": 91.30528259277344,
+            "z": 0.0
+          },
+          "id": 41,
+          "name": "cable_seal_7p0mm",
+          "triangle_count": 960
+        },
+        {
+          "bbox": {
+            "depth": 11.467764854431152,
+            "height": 7.0,
+            "width": 11.467769622802734,
+            "x": 488.7903747558594,
+            "y": 91.30528259277344,
+            "z": 0.0
+          },
+          "id": 45,
+          "name": "cable_seal_6p5mm",
+          "triangle_count": 960
+        },
+        {
+          "bbox": {
+            "depth": 11.43868637084961,
+            "height": 7.0,
+            "width": 11.438685417175293,
+            "x": 510.2581481933594,
+            "y": 91.30528259277344,
+            "z": 0.0
+          },
+          "id": 49,
+          "name": "cable_seal_6p0mm",
+          "triangle_count": 960
+        },
+        {
+          "bbox": {
+            "depth": 11.41257095336914,
+            "height": 7.0,
+            "width": 11.412567138671875,
+            "x": 531.6968383789062,
+            "y": 91.30528259277344,
+            "z": 0.0
+          },
+          "id": 53,
+          "name": "cable_seal_5p5mm",
+          "triangle_count": 960
+        },
+        {
+          "bbox": {
+            "depth": 11.389436721801758,
+            "height": 7.0,
+            "width": 11.389444351196289,
+            "x": 327.29058837890625,
+            "y": 153.30528259277344,
+            "z": 0.0
+          },
+          "id": 57,
+          "name": "cable_seal_5p0mm",
+          "triangle_count": 960
+        },
+        {
+          "bbox": {
+            "depth": 11.323205947875977,
+            "height": 7.0,
+            "width": 11.323217391967773,
+            "x": 348.6800231933594,
+            "y": 153.30528259277344,
+            "z": 0.0
+          },
+          "id": 61,
+          "name": "cable_blank",
+          "triangle_count": 476
+        }
+      ],
+      "sliced_time": 702,
+      "sliced_time_with_cache": 399,
+      "total_predication": 2899.766357421875,
+      "triangle_count": 8252,
+      "warning_message": ""
+    }
+  ],
+  "sparse_infill_density": 35.0,
+  "upward_compatible_machine": [
+    "Bambu Lab A1 0.4 nozzle",
+    "Bambu Lab H2S 0.4 nozzle",
+    "Bambu Lab H2D 0.4 nozzle",
+    "Bambu Lab H2D Pro 0.4 nozzle",
+    "Bambu Lab H2C 0.4 nozzle",
+    "Bambu Lab X2D 0.4 nozzle",
+    "Bambu Lab A2L 0.4 nozzle"
+  ],
+  "wall_loops": 5,
+  "process_return_code": 0,
+  "elapsed_seconds": 6.29,
+  "command": [
+    "C:\\Program Files\\Bambu Studio\\bambu-studio.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation\\Orion-R5-enclosure-P2S-verified.3mf",
+    "--debug",
+    "2",
+    "--curr-bed-type",
+    "Textured PEI Plate",
+    "--slice",
+    "0",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\native-validation\\roundtrip",
+    "--export-3mf",
+    "Orion-R5-P2S-complete.3mf"
+  ]
+}

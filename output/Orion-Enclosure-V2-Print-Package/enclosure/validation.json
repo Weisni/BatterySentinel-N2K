@@ -1,0 +1,777 @@
+{
+  "passed": true,
+  "errors": [],
+  "assembly_collisions": [],
+  "lid_colour_partition": "Body is original lid minus the exact marking solids; shared print transform",
+  "minimum_component_clearance": {
+    "part": "base",
+    "component": "C22",
+    "gap_mm": 1.6778754997766334,
+    "lower_bound": false
+  },
+  "component_checks": 1344,
+  "cable_free_volume_to_closed_annulus": {
+    "cable_seal_b6p7_L6p6": 0.7280958635644248,
+    "cable_seal_b6p7_L6p8": 0.7437389171466459,
+    "cable_seal_b6p7_L7p0": 0.7593819707288663,
+    "cable_seal_b6p8_L6p6": 0.7229303500373067,
+    "cable_seal_b6p8_L6p8": 0.7385734036195278,
+    "cable_seal_b6p8_L7p0": 0.7542164572017481,
+    "cable_seal_b6p9_L6p6": 0.7179221861672781,
+    "cable_seal_b6p9_L6p8": 0.7335652397494994,
+    "cable_seal_b6p9_L7p0": 0.7492082933317197
+  },
+  "checks": {
+    "blind_pilots": [
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "lid",
+        "coverage": 1.0
+      },
+      {
+        "group": "PCB",
+        "coverage": 1.0
+      },
+      {
+        "group": "PCB",
+        "coverage": 1.0
+      },
+      {
+        "group": "PCB",
+        "coverage": 1.0
+      },
+      {
+        "group": "PCB",
+        "coverage": 1.0
+      },
+      {
+        "group": "usb",
+        "coverage": 1.0
+      },
+      {
+        "group": "usb",
+        "coverage": 1.0
+      },
+      {
+        "group": "service_switch",
+        "coverage": 1.0
+      },
+      {
+        "group": "service_switch",
+        "coverage": 1.0
+      },
+      {
+        "group": "cable",
+        "coverage": 1.0
+      },
+      {
+        "group": "cable",
+        "coverage": 1.0
+      },
+      {
+        "group": "cable",
+        "coverage": 1.0
+      },
+      {
+        "group": "clamp",
+        "coverage": 1.0
+      },
+      {
+        "group": "clamp",
+        "coverage": 1.0
+      }
+    ],
+    "seal_land_coverage": {
+      "lid": 1.0000000000003553,
+      "usb": 1.0000000000000002,
+      "service_switch": 1.0
+    }
+  },
+  "physical_status": "UNTESTED",
+  "seated_TPU": "Simplified compressed geometry; not a material/contact simulation",
+  "nominal_body_mm": [
+    92,
+    60,
+    33.2
+  ],
+  "parameters": {
+    "revision": "Orion enclosure V2.0 - 7 mm cable / separate strain relief",
+    "cable_od_mm": 7.0,
+    "cable_od_source": "User measurement confirmed 2026-09-27",
+    "extension_mm": 16.0,
+    "cable_seal_bores_mm": [
+      6.7,
+      6.8,
+      6.9
+    ],
+    "cable_seal_lengths_mm": [
+      6.6,
+      6.8,
+      7.0
+    ],
+    "selected_seal_bore_mm": 6.8,
+    "selected_seal_length_mm": 6.8,
+    "face_seal_free_mm": 1.8,
+    "face_seal_closed_mm": 1.4,
+    "m3_pilot_diameter_mm": 4.0,
+    "m3_pilot_depth_mm": 6.7,
+    "m2_pilot_diameter_mm": 3.2,
+    "m2_pilot_depth_mm": 4.6,
+    "insert_status": "Nominal ruthex-compatible envelope; actual purchased insert bodies require coupon check",
+    "shore_a_targets": {
+      "lid_gasket": [
+        80,
+        85
+      ],
+      "usb_gasket": [
+        83,
+        88
+      ],
+      "service_switch_gasket": [
+        83,
+        88
+      ],
+      "cable_seal": [
+        85,
+        90
+      ]
+    },
+    "shore_status": "Engineering trial targets, not measured or certified temperature-to-hardness mappings",
+    "physical_qualification": "Pending coupon, creep, clamp pull and empty-case leak tests"
+  },
+  "meshes": {
+    "lid_gasket": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 27848,
+      "volume_mm3": 727.5813864221055,
+      "relative_mesh_volume_error": 0.0017809731669798789,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          84.0,
+          52.0,
+          1.8000000000000012
+        ]
+      ],
+      "sha256": "58730ff064f9b8c50d4e50300e0ab0d1aec08da8bd9fb92c56bfff9c77c82b1f"
+    },
+    "usb_cover": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 2612,
+      "volume_mm3": 3911.658038303802,
+      "relative_mesh_volume_error": 9.841069680903391e-06,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          43.0,
+          24.0,
+          6.000000000000001
+        ]
+      ],
+      "sha256": "5e0cb411e441a321f32f925b2aa4541c024f1419e579c2122ae99b83737add6f"
+    },
+    "usb_gasket": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 14704,
+      "volume_mm3": 215.58905231975837,
+      "relative_mesh_volume_error": 0.0017946360359918287,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          26.0,
+          18.0,
+          1.8000000000000012
+        ]
+      ],
+      "sha256": "59bd471b2cc5063bb05d0e44597b87ea61f6f3e97225a9687e061e2fff389270"
+    },
+    "service_switch_cover": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 2644,
+      "volume_mm3": 2541.9550063906763,
+      "relative_mesh_volume_error": 1.7412262348234634e-05,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.0,
+          19.6,
+          6.000000000000001
+        ]
+      ],
+      "sha256": "283e45e79a9ba174a6ba427d3b4a942bba839084e65598371a3a2274483acb90"
+    },
+    "service_switch_gasket": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 11512,
+      "volume_mm3": 129.70810089677985,
+      "relative_mesh_volume_error": 0.0016616689748993325,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          16.0,
+          13.0,
+          1.8000000000000012
+        ]
+      ],
+      "sha256": "d70328bc487c32c0e175ca949a1aaa77a91f76cc04524bd520cb405ca8b00e18"
+    },
+    "cable_pressure_cap": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 3126,
+      "volume_mm3": 2192.321785483177,
+      "relative_mesh_volume_error": 1.1507437163300575e-07,
+      "bounds_mm": [
+        [
+          0.0006914316820250122,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          23.998629720835417,
+          7.000000000000001
+        ]
+      ],
+      "sha256": "5c70514bc397996ff225f73e86b27bddf2654535e54965bf02dd70cd8303db89"
+    },
+    "cable_seal_b6p7_L6p6": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 38504,
+      "volume_mm3": 342.558121064607,
+      "relative_mesh_volume_error": 0.0023477631465448475,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.599977092044867
+        ]
+      ],
+      "sha256": "b49a24eab3e1b8b8ca7cf7017eb7d99b1697659a02fdf850c970e9b2590776b6"
+    },
+    "cable_seal_b6p7_L6p8": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 37388,
+      "volume_mm3": 349.9179418121184,
+      "relative_mesh_volume_error": 0.00242620335830543,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.7999993019706535
+        ]
+      ],
+      "sha256": "a9b0632d518ebabded9bddf3db4696cd649027bba4bc645f2b01905998e3c355"
+    },
+    "cable_seal_b6p7_L7p0": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 39808,
+      "volume_mm3": 357.2777625596293,
+      "relative_mesh_volume_error": 0.0024631450824743354,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.999980658236764
+        ]
+      ],
+      "sha256": "bab5e6eaefb6c510ae6e78244af4fa8a9eb7cba5e3e5ad6138dc16651df6fc28"
+    },
+    "cable_seal_b6p8_L6p6": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 36584,
+      "volume_mm3": 340.1278248677288,
+      "relative_mesh_volume_error": 0.0023575448909171574,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.599977092044867
+        ]
+      ],
+      "sha256": "7a844cfca81844e2e6ccabbbd741e46854f735052882bf06b6d172611162a346"
+    },
+    "cable_seal_b6p8_L6p8": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 35468,
+      "volume_mm3": 347.4876456152401,
+      "relative_mesh_volume_error": 0.0024329014117974827,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.7999993019706535
+        ]
+      ],
+      "sha256": "fa16a2dbfd1d58ef00660768d21f69331624b057313d476eacb7dc2aec0bf4d9"
+    },
+    "cable_seal_b6p8_L7p0": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 37888,
+      "volume_mm3": 354.8474663627511,
+      "relative_mesh_volume_error": 0.0024683231839398123,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.999980658236764
+        ]
+      ],
+      "sha256": "19072db4a1e1a30b1b3fc8b0f20c036d6c69792ee7bbfae89b1ad509bf2780af"
+    },
+    "cable_seal_b6p9_L6p6": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 34664,
+      "volume_mm3": 337.77155931101777,
+      "relative_mesh_volume_error": 0.002367927572093334,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.599977092044867
+        ]
+      ],
+      "sha256": "5b70c353a10f4d20920f320604865c5777e21a5b55c460240d2e4c0ef54c0e4e"
+    },
+    "cable_seal_b6p9_L6p8": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 33548,
+      "volume_mm3": 345.13138005852915,
+      "relative_mesh_volume_error": 0.002447556194565002,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.7999993019706535
+        ]
+      ],
+      "sha256": "39f540c3d32f4486ab32268e49ff512d8024b2bb76623300aed5ed7fcc1c5cbb"
+    },
+    "cable_seal_b6p9_L7p0": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 35968,
+      "volume_mm3": 352.49120080604007,
+      "relative_mesh_volume_error": 0.0024812638034724596,
+      "bounds_mm": [
+        [
+          5.399999999999999,
+          3.939676901250385,
+          0.0
+        ],
+        [
+          16.4,
+          14.939676901250385,
+          6.999980658236764
+        ]
+      ],
+      "sha256": "13aa8c2ffea91bf6f1bb0694c71df9c7b53e3c7fbab0249319a1d77ab9cf66f7"
+    },
+    "strain_relief_upper": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 19348,
+      "volume_mm3": 1656.2773082972342,
+      "relative_mesh_volume_error": 6.745838281041262e-05,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          12.0,
+          28.0,
+          6.000000000000005
+        ]
+      ],
+      "sha256": "61fe9d15a5f46d8d38bb6c9656c6b6f78d6fb3415bc93f436d2d3d6577edca04"
+    },
+    "clamp_shims_0p2": {
+      "closed_oriented_manifold": true,
+      "solids": 2,
+      "triangles": 1824,
+      "volume_mm3": 34.196764847355176,
+      "relative_mesh_volume_error": 2.0556231065708716e-05,
+      "bounds_mm": [
+        [
+          2.842170943040401e-14,
+          0.0,
+          0.0
+        ],
+        [
+          12.000000000000028,
+          28.0,
+          0.20000000000000004
+        ]
+      ],
+      "sha256": "71836049dd95fc5e572a4a61c821b0525afcbdc181605cc8e5b6f4bdb5dfafe2"
+    },
+    "clamp_shims_0p4": {
+      "closed_oriented_manifold": true,
+      "solids": 2,
+      "triangles": 1824,
+      "volume_mm3": 68.39352969471035,
+      "relative_mesh_volume_error": 2.0444679657771364e-05,
+      "bounds_mm": [
+        [
+          2.842170943040401e-14,
+          0.0,
+          0.0
+        ],
+        [
+          12.000000000000028,
+          28.0,
+          0.4000000000000001
+        ]
+      ],
+      "sha256": "992f2efc498dc0ef0f1d1fb44306650691f5e5f167b2705f44490a7b162e5680"
+    },
+    "base": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 36718,
+      "volume_mm3": 79697.5882284392,
+      "relative_mesh_volume_error": 2.3813887398343047e-06,
+      "bounds_mm": [
+        [
+          0.001184702117416947,
+          0.0,
+          0.0
+        ],
+        [
+          96.80000000000001,
+          88.0,
+          30.0
+        ]
+      ],
+      "sha256": "6e3802664b7c757011143fe57f3788e6b63eea28d6c9a95f4e905c627c2b9d36"
+    },
+    "lid_body": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 52516,
+      "volume_mm3": 18374.696133735517,
+      "relative_mesh_volume_error": 9.11954644643688e-07,
+      "bounds_mm": [
+        [
+          0.001184702117416947,
+          0.0,
+          0.0
+        ],
+        [
+          96.80000000000001,
+          66.8,
+          5.000000000000096
+        ]
+      ],
+      "sha256": "ae03019c474661abe1d224e09c41cd0dcf307951eb1f3e407ecccfed916f1931"
+    },
+    "lid_markings": {
+      "closed_oriented_manifold": true,
+      "solids": 31,
+      "triangles": 46792,
+      "volume_mm3": 62.174444701481995,
+      "relative_mesh_volume_error": 1.5254742501659864e-05,
+      "bounds_mm": [
+        [
+          30.275800999999998,
+          19.49881631069549,
+          0.0
+        ],
+        [
+          82.524199,
+          48.344045,
+          0.4000000000001833
+        ]
+      ],
+      "sha256": "052430f1fb96a757f31868e91bc3b7a6bea6ebca282a43ceef2c0ebb8b8eb2f6"
+    },
+    "entry_fit_coupon": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 23012,
+      "volume_mm3": 13224.442112459037,
+      "relative_mesh_volume_error": 2.8598563005280013e-05,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          30.0,
+          38.0,
+          28.6
+        ]
+      ],
+      "sha256": "6fad10c81480df3d234ce0781a52fdb95bf8cf5dcccbe57d8e53007a6c883944"
+    },
+    "face_stop_coupon_1p4": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 508,
+      "volume_mm3": 2957.1518530717954,
+      "relative_mesh_volume_error": 9.741196335736076e-06,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.0,
+          18.0,
+          5.0
+        ]
+      ],
+      "sha256": "90b3ec4d8f99a03f1d2e5d42917ac557a3a053ca5fbc73736632d81ea3eb1dd1"
+    },
+    "face_stop_coupon_1p6": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 508,
+      "volume_mm3": 2944.911853071796,
+      "relative_mesh_volume_error": 9.861270301092148e-06,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          34.0,
+          18.0,
+          5.0
+        ]
+      ],
+      "sha256": "3bf55dff535f24987bd4f2903f3432ef96c5d3fb9a33e03ddbbb8cfad09af60a"
+    },
+    "face_test_gasket": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 14032,
+      "volume_mm3": 192.68746527363083,
+      "relative_mesh_volume_error": 0.0017208412381950853,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          16.0,
+          1.8000000000000012
+        ]
+      ],
+      "sha256": "7df42ab2effabfe982d2b1c0cefa0deb56b4fdbe6e432bb257350e89a542ab22"
+    },
+    "shore_comparison_pad": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 492,
+      "volume_mm3": 14979.398223686154,
+      "relative_mesh_volume_error": 2.2675058868627313e-06,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          50.0,
+          50.0,
+          6.0
+        ]
+      ],
+      "sha256": "32d27b9034b7dbf0882ddec4dc24718d924416fa81cf7e9b8ae0f004adb2c178"
+    },
+    "flow_wall_coupon": {
+      "closed_oriented_manifold": true,
+      "solids": 1,
+      "triangles": 992,
+      "volume_mm3": 646.1203480281248,
+      "relative_mesh_volume_error": 4.9950907372816526e-05,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          24.0,
+          24.0,
+          8.0
+        ]
+      ],
+      "sha256": "0d82bc5d8bf37db430ed0b6cea01dbcfa465a3e2c48bfdb6dedeb96ecd3cf675"
+    }
+  },
+  "step_readback": {
+    "valid": true,
+    "solids": 12,
+    "volume_mm3": 110082.42252026324,
+    "colour_boundaries": "Flush lid exported as a single solid; separated in FCStd and print meshes",
+    "geometry": {
+      "passed": true,
+      "solids": [
+        {
+          "solid": 0,
+          "mesh_relative_volume_error": 7.6478916406686e-06,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 1,
+          "mesh_relative_volume_error": 2.6213244116765023e-06,
+          "maximum_bidirectional_vertex_surface_distance_mm": 1.2947314098277875e-15
+        },
+        {
+          "solid": 2,
+          "mesh_relative_volume_error": 0.0,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 3,
+          "mesh_relative_volume_error": 1.2485627122316502e-06,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 4,
+          "mesh_relative_volume_error": 6.41612436213448e-06,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 5,
+          "mesh_relative_volume_error": 0.0,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 6,
+          "mesh_relative_volume_error": 6.933081893563326e-07,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 7,
+          "mesh_relative_volume_error": 3.6848112669147575e-07,
+          "maximum_bidirectional_vertex_surface_distance_mm": 1.6612617143403746e-06
+        },
+        {
+          "solid": 8,
+          "mesh_relative_volume_error": 6.8046736283311804e-06,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 9,
+          "mesh_relative_volume_error": 0.0,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        },
+        {
+          "solid": 10,
+          "mesh_relative_volume_error": 8.822526065663121e-07,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0009580313039702793
+        },
+        {
+          "solid": 11,
+          "mesh_relative_volume_error": 7.415704364258551e-07,
+          "maximum_bidirectional_vertex_surface_distance_mm": 0.0
+        }
+      ],
+      "surface_tolerance_mm": 0.05,
+      "relative_mesh_volume_tolerance": 0.002,
+      "note": "All tessellation vertices checked in both directions; OCCT cached analytic volumes are not used as sole evidence"
+    }
+  }
+}

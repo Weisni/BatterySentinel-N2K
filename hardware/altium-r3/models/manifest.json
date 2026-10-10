@@ -1,0 +1,248 @@
+{
+  "components": [
+    {
+      "ref": "J1",
+      "footprint": "PIGTAIL_5_P3_D1P3",
+      "file": "J1.model.json",
+      "body_count": 10,
+      "height_mm": 6,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "TP1",
+      "footprint": "TESTPOINT_2MM",
+      "file": "TP1.model.json",
+      "body_count": 1,
+      "height_mm": 0.035,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "F1",
+      "footprint": "BOURNS_SF1206S",
+      "file": "F1.model.json",
+      "body_count": 3,
+      "height_mm": 0.72,
+      "source": "https://www.bourns.com/docs/product-datasheets/sf-1206s.pdf"
+    },
+    {
+      "ref": "Q1",
+      "footprint": "SOT223_DIODES_DMP6023LE",
+      "file": "Q1.model.json",
+      "body_count": 6,
+      "height_mm": 1.6649999999999998,
+      "source": "https://www.diodes.com/datasheet/download/DMP6023LE.pdf"
+    },
+    {
+      "ref": "Z1",
+      "footprint": "SOD123",
+      "file": "Z1.model.json",
+      "body_count": 4,
+      "height_mm": 1.2149999999999999,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "R1",
+      "footprint": "R0805",
+      "file": "R1.model.json",
+      "body_count": 3,
+      "height_mm": 0.625,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "D1",
+      "footprint": "SMB",
+      "file": "D1.model.json",
+      "body_count": 4,
+      "height_mm": 2.515,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "C1",
+      "footprint": "PANASONIC_FT_D6P3",
+      "file": "C1.model.json",
+      "body_count": 8,
+      "height_mm": 6.114999999999999,
+      "source": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
+    },
+    {
+      "ref": "U3",
+      "footprint": "SOT223_LDO",
+      "file": "U3.model.json",
+      "body_count": 6,
+      "height_mm": 1.815,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf"
+    },
+    {
+      "ref": "C2",
+      "footprint": "C0805",
+      "file": "C2.model.json",
+      "body_count": 3,
+      "height_mm": 1.2249999999999999,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "C3",
+      "footprint": "C1206",
+      "file": "C3.model.json",
+      "body_count": 3,
+      "height_mm": 1.625,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "C8",
+      "footprint": "C1210",
+      "file": "C8.model.json",
+      "body_count": 3,
+      "height_mm": 2.525,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "L2",
+      "footprint": "BOURNS_SRN4018",
+      "file": "L2.model.json",
+      "body_count": 3,
+      "height_mm": 1.8,
+      "source": "https://www.bourns.com/docs/product-datasheets/srn4018.pdf"
+    },
+    {
+      "ref": "C9",
+      "footprint": "C1210",
+      "file": "C9.model.json",
+      "body_count": 3,
+      "height_mm": 2.525,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "U2",
+      "footprint": "R3M_SMD",
+      "file": "U2.model.json",
+      "body_count": 8,
+      "height_mm": 10.225,
+      "source": "https://recom-power.com/pdf/Econoline/R3M.pdf"
+    },
+    {
+      "ref": "C6",
+      "footprint": "PANASONIC_FT_D4",
+      "file": "C6.model.json",
+      "body_count": 8,
+      "height_mm": 6.114999999999999,
+      "source": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"
+    },
+    {
+      "ref": "C7",
+      "footprint": "C0805",
+      "file": "C7.model.json",
+      "body_count": 3,
+      "height_mm": 1.2249999999999999,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "D2",
+      "footprint": "SMB",
+      "file": "D2.model.json",
+      "body_count": 4,
+      "height_mm": 2.515,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "JP1",
+      "footprint": "HDR1X2_2.54",
+      "file": "JP1.model.json",
+      "body_count": 5,
+      "height_mm": 7.2,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "D3",
+      "footprint": "SOT23_NEXPERIA_REFLOW",
+      "file": "D3.model.json",
+      "body_count": 5,
+      "height_mm": 1.115,
+      "source": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf"
+    },
+    {
+      "ref": "L1",
+      "footprint": "ACT45B",
+      "file": "L1.model.json",
+      "body_count": 5,
+      "height_mm": 2.8,
+      "source": "https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf"
+    },
+    {
+      "ref": "U1",
+      "footprint": "SOIC8_DWV",
+      "file": "U1.model.json",
+      "body_count": 10,
+      "height_mm": 2.815,
+      "source": "https://www.ti.com/lit/ds/symlink/iso1042.pdf"
+    },
+    {
+      "ref": "C4",
+      "footprint": "C0805",
+      "file": "C4.model.json",
+      "body_count": 3,
+      "height_mm": 1.2249999999999999,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "C5",
+      "footprint": "C0805",
+      "file": "C5.model.json",
+      "body_count": 3,
+      "height_mm": 1.2249999999999999,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "R2",
+      "footprint": "R0805",
+      "file": "R2.model.json",
+      "body_count": 3,
+      "height_mm": 0.625,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "R3",
+      "footprint": "R0805",
+      "file": "R3.model.json",
+      "body_count": 3,
+      "height_mm": 0.625,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "R4",
+      "footprint": "R0805",
+      "file": "R4.model.json",
+      "body_count": 3,
+      "height_mm": 0.625,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "MCU1",
+      "footprint": "NOLOGO_C3_SUPERMINI_THT_2X8",
+      "file": "MCU1.model.json",
+      "body_count": 30,
+      "height_mm": 7.2,
+      "source": "https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware"
+    }
+  ],
+  "body_count": 153,
+  "format": "Altium native editable extruded 3D bodies plus local JSON geometry",
+  "native_format_validation": {
+    "application": "Altium Designer Professional 26.10.1",
+    "date": "2026-09-21",
+    "representation": "Native PCB ASCII ComponentBody records",
+    "result": "Opaque coloured bodies visible in native 2D/3D proof document after setting BODYPROJECTION=0 (top side).",
+    "scope": "Serialization and top-side placement verified using a proof document; this is not a fabrication/thermal qualification of the final placement."
+  },
+  "notes": [
+    "No supplier STEP data or manufacturer certification is implied.",
+    "Pin centres and package outlines follow the linked PCB footprint.",
+    "SuperMini on-board component locations/colours are illustrative; module uses headers with 3.1 mm standoff, no sockets.",
+    "J1 shows five pigtail wires; no selected connector housing is implied.",
+    "Generic package heights must be checked against selected ordering codes."
+  ],
+  "references": [
+    "https://www.altium.com/documentation/altium-designer/pcb/3d-bodies",
+    "https://www.altium.com/documentation/altium-designer/pcb/extruded-spherical-cylindrical-3d-bodies"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "format": "Orion manufacturing manifest v1",
+  "name": "Orion-Bridge-R4",
+  "coordinate_system": "mm, bottom-left origin, top-view +X right +Y up; no layer mirrored",
+  "board": {
+    "width_mm": 48,
+    "height_mm": 32,
+    "corner_radius_mm": 2,
+    "holes_mm": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        29
+      ]
+    ],
+    "hole_diameter_mm": 2.2,
+    "thickness_mm": 1.6,
+    "copper_um": 35,
+    "origin": "lower left, millimetres; +Y up",
+    "silkscreen": [
+      {
+        "text": "R4 9-16V",
+        "x": 6,
+        "y": 29,
+        "height": 1,
+        "width": 0.15,
+        "layer": "TOP"
+      },
+      {
+        "text": "USB",
+        "x": 43.2,
+        "y": 2,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "RESET",
+        "x": 39.5,
+        "y": 15.8,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "BOOT",
+        "x": 46,
+        "y": 15.8,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "1 S",
+        "x": 6.6,
+        "y": 9.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "+",
+        "x": 5.3,
+        "y": 12.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "-",
+        "x": 5.3,
+        "y": 15.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "H",
+        "x": 5.3,
+        "y": 18.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "L",
+        "x": 5.3,
+        "y": 21.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "NMEA",
+        "x": 16,
+        "y": 29,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      }
+    ]
+  },
+  "pad_count": 160,
+  "tracks": 298,
+  "vias": 41,
+  "regions": 96,
+  "pth_count": 54,
+  "npth_count": 4,
+  "pcba_bom_complete": true,
+  "sourced_components": 50,
+  "unresolved_components": [],
+  "excluded_components": [
+    {
+      "Designator": "J1",
+      "Comment": "NMEA Micro-C pigtail",
+      "Reason": "Explicitly excluded from assembly"
+    },
+    {
+      "Designator": "TP1",
+      "Comment": "Shield / chassis pad",
+      "Reason": "Explicitly excluded from assembly"
+    }
+  ],
+  "qualification": "Manufacturing file conversion only; see design, geometry, native CAD DRC and sourcing reviews",
+  "sources": [
+    {
+      "path": "hardware\\altium-r4\\orion-r4-design.json",
+      "sha256": "4a4989d4e2996890b10bbd8441d10cebc3b7e9fa029f893783310bcdb6c14af2"
+    },
+    {
+      "path": "hardware\\altium-r4\\orion-r4-routing.json",
+      "sha256": "002de87ce24aee7ec3476e11676d141e8e0d1495b8d5dc657b33d5a550a87ecd"
+    }
+  ],
+  "files": {
+    "Orion-Bridge-R4.GTL": "efa75d03574a83df1d9a0d6c060da8d7e1fdb393355b2b67af45ec81db8c2da7",
+    "Orion-Bridge-R4.GBL": "db6c90f31bca0b242c2e73d4166be79feb5285593ece781472d92aa503a20199",
+    "Orion-Bridge-R4.GTS": "0bc9cac3afabf483ec558fdbcbe783722299661d4f2694c30153937f620b4e73",
+    "Orion-Bridge-R4.GBS": "b0ad602a0af127e346d6c8c3a19fc3a9904327c320dfba2607e3a0513baf3b7f",
+    "Orion-Bridge-R4.GTP": "cdda33ffef70804f408fc13707f93f08b2c0f035b3c3b0e40ecb22eda3d4ec5d",
+    "Orion-Bridge-R4.GBP": "09fba3d4eb8922d6130f123050123e56dcb930b45873bd795069d9f39d5b4ef9",
+    "Orion-Bridge-R4.GTO": "e09b28c6461c4f0e76a5effd71f81bf61b3ca8ed71fcdbdfd77cbf1763d29614",
+    "Orion-Bridge-R4.GBO": "1c71ca78ac21b922166a7d0bd597f827920e9cd88858618669bd304be4fa49b1",
+    "Orion-Bridge-R4.GKO": "464803c406768b7c7c69a75baa7d2a95c5d933505e4b02774f81bde56da1b2c9",
+    "Orion-Bridge-R4-PTH.drl": "410ec2589c8585d6aae0b5d1959d5898f0603f5fe32578327f70b94e896787ac",
+    "Orion-Bridge-R4-NPTH.drl": "6a67c0ea27dbc5ed683abf1b846e3414d58a5b4aacb3e1ae3322f143b89eb2d4"
+  },
+  "references": [
+    "https://www.ucamco.com/en/guest/downloads/gerber-format",
+    "https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly",
+    "https://jlcpcb.com/help/article/pick-place-file-for-pcb-assembly"
+  ]
+}

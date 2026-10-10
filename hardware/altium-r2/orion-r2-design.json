@@ -1,0 +1,1651 @@
+{
+  "revision": "R2 local-library schematic",
+  "board": {
+    "width_mm": 80,
+    "height_mm": 60,
+    "holes_mm": [
+      [
+        4,
+        56
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        76,
+        4
+      ]
+    ],
+    "origin": "bottom-left; +Y up"
+  },
+  "components": [
+    {
+      "ref": "J1",
+      "value": "NMEA Micro-C pigtail",
+      "footprint": "TBD_TERMINAL_5_3.5",
+      "uid": "VJXNLVQB",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SHIELD",
+          "net": "SHIELD",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "NET-S",
+          "net": "NET_S",
+          "type": 4
+        },
+        {
+          "number": "3",
+          "name": "NET-C",
+          "net": "GND_BUS",
+          "type": 4
+        },
+        {
+          "number": "4",
+          "name": "CAN-H",
+          "net": "CANH_EXT",
+          "type": 4
+        },
+        {
+          "number": "5",
+          "name": "CAN-L",
+          "net": "CANL_EXT",
+          "type": 4
+        }
+      ],
+      "group": "connector",
+      "pcb": {
+        "x": 6,
+        "y": 33,
+        "rotation": 0,
+        "status": "TBD terminal MPN, pitch and pin order; logical Micro-C numbering, not a connector face view"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "NMEA_PIGTAIL_5_P3_5",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "NMEA Micro-C pigtail - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "NMEA Micro-C pigtail - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "TBD terminal MPN, pitch and pin order; logical Micro-C numbering, not a connector face view"
+      }
+    },
+    {
+      "ref": "TP1",
+      "value": "Shield / chassis pad",
+      "footprint": "TESTPOINT_2MM",
+      "uid": "TCNIHBDN",
+      "pins": [
+        {
+          "number": "1",
+          "name": "SHIELD",
+          "net": "SHIELD",
+          "type": 4
+        }
+      ],
+      "group": "connector",
+      "pcb": {
+        "x": 14,
+        "y": 45,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "TESTPOINT_2MM",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "Shield / chassis pad - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "Shield / chassis pad - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "F1",
+      "value": "T0.8A >=60V",
+      "footprint": "TBD_FUSE_9X6",
+      "uid": "OSTZNDUQ",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "NET_S",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "FUSED_IN",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 12,
+        "y": 18,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "FUSE_T0_8A_60V_TBD",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "T0.8A >=60V - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "T0.8A >=60V - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "Q1",
+      "value": "DMP6023LE",
+      "footprint": "SOT223_PMOS",
+      "uid": "YIZJUYDU",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "GATE",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "D",
+          "net": "FUSED_IN",
+          "type": 4
+        },
+        {
+          "number": "3",
+          "name": "S",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "4",
+          "name": "TAB=D",
+          "net": "FUSED_IN",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 24,
+        "y": 19,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "DMP6023LE",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "DMP6023LE",
+      "datasheet": "https://www.diodes.com/datasheet/download/DMP6023LE.pdf",
+      "description": "DMP6023LE",
+      "parameters": {
+        "Manufacturer": "Diodes Incorporated",
+        "MPN": "DMP6023LE",
+        "Manufacturer Part Number": "DMP6023LE",
+        "Description": "DMP6023LE",
+        "Datasheet": "https://www.diodes.com/datasheet/download/DMP6023LE.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "Z1",
+      "value": "BZT52C12",
+      "footprint": "SOD123",
+      "uid": "VUKPMROF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "GATE",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 19,
+        "y": 11,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "BZT52C12_SOD123_GENERIC",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "BZT52C12 - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "BZT52C12 - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "R1",
+      "value": "100k",
+      "footprint": "R0805",
+      "uid": "LPCHHUBL",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "GATE",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 26,
+        "y": 6,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "R_0805_100K",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "100k - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "100k - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "D1",
+      "value": "SMBJ20A",
+      "footprint": "SMB",
+      "uid": "ZFJVEMYJ",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 10,
+        "y": 7,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "SMBJ20A_SMB_GENERIC",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "SMBJ20A - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "SMBJ20A - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C1",
+      "value": "47uF 50V",
+      "footprint": "TBD_CAP_RADIAL_P2.5_D8",
+      "uid": "PEDLIMUP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 20,
+        "y": 5,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_RADIAL_47UF_50V_D8_P2_5",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "47uF 50V - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "47uF 50V - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "U3",
+      "value": "TPS7B6950QDCYRQ1",
+      "footprint": "SOT223_LDO",
+      "uid": "QDYBDCNJ",
+      "pins": [
+        {
+          "number": "1",
+          "name": "IN",
+          "net": "BUS_PROT",
+          "type": 7
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "3",
+          "name": "OUT",
+          "net": "5V_BUS",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "TAB",
+          "net": "GND_BUS",
+          "type": 7
+        }
+      ],
+      "group": "bus_supply",
+      "pcb": {
+        "x": 24,
+        "y": 28,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "TPS7B6950QDCYRQ1",
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS7B6950QDCYRQ1",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf",
+      "description": "TPS7B6950QDCYRQ1",
+      "parameters": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "TPS7B6950QDCYRQ1",
+        "Manufacturer Part Number": "TPS7B6950QDCYRQ1",
+        "Description": "TPS7B6950QDCYRQ1",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C2",
+      "value": "1uF 50V X7R",
+      "footprint": "C0805",
+      "uid": "UDBOITAH",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "bus_supply",
+      "pcb": {
+        "x": 18,
+        "y": 27,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_0805_1UF_50V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "1uF 50V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "1uF 50V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C3",
+      "value": "10uF 16V X7R",
+      "footprint": "C1206",
+      "uid": "IHYFFTYY",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "bus_supply",
+      "pcb": {
+        "x": 31,
+        "y": 28,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_1206_10UF_16V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "10uF 16V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "10uF 16V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C8",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "uid": "GBCRICMU",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 31,
+        "y": 4,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_1210_10UF_50V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "10uF 50V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "10uF 50V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "L2",
+      "value": "15uH Isat>=1A",
+      "footprint": "TBD_INDUCTOR_5X5",
+      "uid": "HVGIRQWQ",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "DCDC_IN",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 28,
+        "y": 11,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "L_15UH_1A_5X5_TBD",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "15uH Isat>=1A - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "15uH Isat>=1A - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C9",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "uid": "QCCIYWSP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "DCDC_IN",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 31,
+        "y": 20,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_1210_10UF_50V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "10uF 50V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "10uF 50V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "U2",
+      "value": "R3M-2405S/SMD",
+      "footprint": "R3M_SMD",
+      "uid": "YMOJHIZF",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+VIN",
+          "net": "DCDC_IN",
+          "type": 7
+        },
+        {
+          "number": "2",
+          "name": "-VIN",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "CTRL",
+          "net": null,
+          "type": 0
+        },
+        {
+          "number": "5",
+          "name": "NC",
+          "net": null,
+          "type": 4
+        },
+        {
+          "number": "6",
+          "name": "-VOUT",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "7",
+          "name": "+VOUT",
+          "net": "5V_ISO",
+          "type": 7
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 40,
+        "y": 12.5,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "R3M-2405S_SMD",
+      "manufacturer": "RECOM",
+      "mpn": "R3M-2405S/SMD",
+      "datasheet": "https://recom-power.com/pdf/Econoline/R3M.pdf",
+      "description": "R3M-2405S/SMD",
+      "parameters": {
+        "Manufacturer": "RECOM",
+        "MPN": "R3M-2405S/SMD",
+        "Manufacturer Part Number": "R3M-2405S/SMD",
+        "Description": "R3M-2405S/SMD",
+        "Datasheet": "https://recom-power.com/pdf/Econoline/R3M.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C6",
+      "value": "47uF 10V",
+      "footprint": "TBD_CAP_RADIAL_P2.5_D6.3",
+      "uid": "OSXIBLQZ",
+      "pins": [
+        {
+          "number": "1",
+          "name": "+",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "-",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 54,
+        "y": 9,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_RADIAL_47UF_10V_D6_3_P2_5",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "47uF 10V - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "47uF 10V - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C7",
+      "value": "100nF 16V X7R",
+      "footprint": "C0805",
+      "uid": "HZJXWDCX",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 59,
+        "y": 10,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_0805_100NF_16V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "D2",
+      "value": "SS36",
+      "footprint": "SMB",
+      "uid": "IXLZFTSD",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "5V_AFTER_DIODE",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "5V_ISO",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 54,
+        "y": 17,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "SS36_SMB_GENERIC",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "SS36 - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "SS36 - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "JP1",
+      "value": "RUN closed / USB open",
+      "footprint": "HDR1X2_2.54",
+      "uid": "BIYVTARP",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_AFTER_DIODE",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "5V_MODULE",
+          "type": 4
+        }
+      ],
+      "group": "isolated_supply",
+      "pcb": {
+        "x": 62,
+        "y": 18,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "JUMPER_1X2_P2_54",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "RUN closed / USB open - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "RUN closed / USB open - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "D3",
+      "value": "PESD2CAN24T-Q",
+      "footprint": "SOT23",
+      "uid": "IHPAPGIK",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K1",
+          "net": "CANH_EXT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "K2",
+          "net": "CANL_EXT",
+          "type": 4
+        },
+        {
+          "number": "3",
+          "name": "CC",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "can",
+      "pcb": {
+        "x": 17,
+        "y": 32,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "PESD2CAN24T-QR",
+      "manufacturer": "Nexperia",
+      "mpn": "PESD2CAN24T-QR",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf",
+      "description": "PESD2CAN24T-Q",
+      "parameters": {
+        "Manufacturer": "Nexperia",
+        "MPN": "PESD2CAN24T-QR",
+        "Manufacturer Part Number": "PESD2CAN24T-QR",
+        "Description": "PESD2CAN24T-Q",
+        "Datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "L1",
+      "value": "ACT45B-510-2P-TL003",
+      "footprint": "ACT45B",
+      "uid": "PUDUOXPO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "H_EXT",
+          "net": "CANH_EXT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "L_EXT",
+          "net": "CANL_EXT",
+          "type": 4
+        },
+        {
+          "number": "3",
+          "name": "L_IC",
+          "net": "CANL",
+          "type": 4
+        },
+        {
+          "number": "4",
+          "name": "H_IC",
+          "net": "CANH",
+          "type": 4
+        }
+      ],
+      "group": "can",
+      "pcb": {
+        "x": 25.5,
+        "y": 36,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "ACT45B5102PTL003",
+      "manufacturer": "TDK",
+      "mpn": "ACT45B5102PTL003",
+      "datasheet": "https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf",
+      "description": "ACT45B-510-2P-TL003",
+      "parameters": {
+        "Manufacturer": "TDK",
+        "MPN": "ACT45B5102PTL003",
+        "Manufacturer Part Number": "ACT45B5102PTL003",
+        "Description": "ACT45B-510-2P-TL003",
+        "Datasheet": "https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "U1",
+      "value": "ISO1042DWV",
+      "footprint": "SOIC8_DWV",
+      "uid": "XEEFKUUI",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCC1",
+          "net": "3V3_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "2",
+          "name": "TXD",
+          "net": "TXD",
+          "type": 0
+        },
+        {
+          "number": "3",
+          "name": "RXD",
+          "net": "RXD",
+          "type": 2
+        },
+        {
+          "number": "4",
+          "name": "GND1",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "5",
+          "name": "GND2",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "6",
+          "name": "CANL",
+          "net": "CANL",
+          "type": 1
+        },
+        {
+          "number": "7",
+          "name": "CANH",
+          "net": "CANH",
+          "type": 1
+        },
+        {
+          "number": "8",
+          "name": "VCC2",
+          "net": "5V_BUS",
+          "type": 7
+        }
+      ],
+      "group": "can",
+      "pcb": {
+        "x": 40,
+        "y": 36.5,
+        "rotation": 180,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "ISO1042DWV",
+      "manufacturer": "Texas Instruments",
+      "mpn": "ISO1042DWV",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/iso1042.pdf",
+      "description": "ISO1042DWV",
+      "parameters": {
+        "Manufacturer": "Texas Instruments",
+        "MPN": "ISO1042DWV",
+        "Manufacturer Part Number": "ISO1042DWV",
+        "Description": "ISO1042DWV",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/iso1042.pdf",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C4",
+      "value": "100nF 16V X7R",
+      "footprint": "C0805",
+      "uid": "IBUIQBHK",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "can",
+      "pcb": {
+        "x": 31.5,
+        "y": 41,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_0805_100NF_16V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "C5",
+      "value": "100nF 16V X7R",
+      "footprint": "C0805",
+      "uid": "DUARLFDX",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "3V3_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "logic",
+      "pcb": {
+        "x": 48.5,
+        "y": 41,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "C_0805_100NF_16V_X7R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "100nF 16V X7R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "R2",
+      "value": "10k",
+      "footprint": "R0805",
+      "uid": "GFUWLDML",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "3V3_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "TXD",
+          "type": 4
+        }
+      ],
+      "group": "logic",
+      "pcb": {
+        "x": 52.5,
+        "y": 24,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "libref": "R_0805_10K",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "10k - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "10k - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication"
+      }
+    },
+    {
+      "ref": "R3",
+      "value": "33R",
+      "footprint": "R0805",
+      "uid": "CBHNZXWH",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "GPIO6",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "TXD",
+          "type": 4
+        }
+      ],
+      "group": "logic",
+      "pcb": {
+        "x": 55,
+        "y": 29,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "role": "R_TX",
+      "libref": "R_0805_33R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "33R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "33R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication",
+        "Role": "R_TX"
+      }
+    },
+    {
+      "ref": "R4",
+      "value": "33R",
+      "footprint": "R0805",
+      "uid": "CWAJRZFO",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "RXD",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GPIO7",
+          "type": 4
+        }
+      ],
+      "group": "logic",
+      "pcb": {
+        "x": 50.5,
+        "y": 33,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "role": "R_RX",
+      "libref": "R_0805_33R",
+      "manufacturer": "",
+      "mpn": "",
+      "datasheet": "",
+      "description": "33R - generic specification; manufacturer/MPN not selected",
+      "parameters": {
+        "Manufacturer": "",
+        "MPN": "",
+        "Manufacturer Part Number": "",
+        "Description": "33R - generic specification; manufacturer/MPN not selected",
+        "Datasheet": "",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "PROVISIONAL - verify landpattern before fabrication",
+        "Role": "R_RX"
+      }
+    },
+    {
+      "ref": "MCU1",
+      "value": "ESP32-C3 SuperMini",
+      "footprint": "NOLOGO_C3_SUPERMINI_THT_2X8",
+      "uid": "ABXBAKXO",
+      "pins": [
+        {
+          "number": "5",
+          "name": "GPIO5",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "6",
+          "name": "GPIO6 / TX",
+          "net": "GPIO6",
+          "type": 2
+        },
+        {
+          "number": "7",
+          "name": "GPIO7 / RX",
+          "net": "GPIO7",
+          "type": 0
+        },
+        {
+          "number": "8",
+          "name": "GPIO8",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "9",
+          "name": "GPIO9",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "10",
+          "name": "GPIO10",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "20",
+          "name": "GPIO20",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "21",
+          "name": "GPIO21",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "5V",
+          "name": "5V",
+          "net": "5V_MODULE",
+          "type": 7
+        },
+        {
+          "number": "GND",
+          "name": "GND",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "3V3",
+          "name": "3V3",
+          "net": "3V3_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "GPIO4",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "3",
+          "name": "GPIO3",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "2",
+          "name": "GPIO2",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "1",
+          "name": "GPIO1",
+          "net": null,
+          "type": 1
+        },
+        {
+          "number": "0",
+          "name": "GPIO0",
+          "net": null,
+          "type": 1
+        }
+      ],
+      "group": "logic",
+      "pcb": {
+        "x": 70,
+        "y": 34,
+        "rotation": 180,
+        "status": "Nologo source-based header geometry; selected clone, sockets and USB clearance require mechanical review"
+      },
+      "sheet": "Orion-Bridge-R2",
+      "source_schlib": "Orion-Bridge.SchLib",
+      "source_pcblib": "Orion-Bridge.PcbLib",
+      "manufacturer": "Nologo Tech",
+      "mpn": "ESP32-C3 SuperMini",
+      "description": "Nologo ESP32-C3 SuperMini module, two 1x8 carrier headers, GPIO6 TX / GPIO7 RX",
+      "datasheet": "https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware",
+      "pcb_footprint": {
+        "body": [
+          18,
+          22.5
+        ],
+        "height": 12,
+        "note": "Nologo 16-pin interface; 15.24 mm rows / 2.54 mm pitch; carrier pads 1.8 mm / holes 1.0 mm; verify sockets",
+        "provisional": true,
+        "pads": [
+          {
+            "number": "5",
+            "x": -7.62,
+            "y": 9.7006,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -7.62,
+            "y": 7.1606,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "7",
+            "x": -7.62,
+            "y": 4.6206,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "8",
+            "x": -7.62,
+            "y": 2.0806,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "9",
+            "x": -7.62,
+            "y": -0.4594,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "10",
+            "x": -7.62,
+            "y": -2.9994,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "20",
+            "x": -7.62,
+            "y": -5.5394,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "21",
+            "x": -7.62,
+            "y": -8.0794,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "5V",
+            "x": 7.62,
+            "y": 9.7006,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "GND",
+            "x": 7.62,
+            "y": 7.1606,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "3V3",
+            "x": 7.62,
+            "y": 4.6206,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "4",
+            "x": 7.62,
+            "y": 2.0806,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "3",
+            "x": 7.62,
+            "y": -0.4594,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "2",
+            "x": 7.62,
+            "y": -2.9994,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "1",
+            "x": 7.62,
+            "y": -5.5394,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "0",
+            "x": 7.62,
+            "y": -8.0794,
+            "sx": 1.8,
+            "sy": 1.8,
+            "drill": 1.0,
+            "shape": "ROUND"
+          }
+        ]
+      },
+      "libref": "ESP32_C3_SUPERMINI_NOLOGO",
+      "parameters": {
+        "Manufacturer": "Nologo Tech",
+        "MPN": "ESP32-C3 SuperMini",
+        "Manufacturer Part Number": "ESP32-C3 SuperMini",
+        "Description": "Nologo ESP32-C3 SuperMini module, two 1x8 carrier headers, GPIO6 TX / GPIO7 RX",
+        "Datasheet": "https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware",
+        "Supplier 1": "",
+        "Supplier Part Number 1": "",
+        "Footprint Status": "Nologo source-based header geometry; selected clone, sockets and USB clearance require mechanical review"
+      }
+    }
+  ],
+  "notes": [
+    "Unrouted engineering draft. No fabrication release or completed electrical/thermal qualification.",
+    "GND_BUS and GND_LOGIC are galvanically separated; only U1/U2 bridge the domains.",
+    "U2 requires >=9V after protection/filter losses; operation at 9V NET-S is not guaranteed.",
+    "RUN: JP1 closed, USB disconnected. SERVICE: open JP1 BEFORE connecting USB.",
+    "No 120-ohm termination on this drop. MCU1 uses the Nologo 16-pin geometry; verify the actual module and sockets.",
+    "R3/R4 are TX/RX series resistors. TP1 is the isolated shield pad."
+  ],
+  "pcb_title": "ORION BRIDGE R2 - PLACEMENT DRAFT",
+  "pcb_review_note": "Nologo 16-pin carrier. Verify module, generic parts and supply before routing."
+}

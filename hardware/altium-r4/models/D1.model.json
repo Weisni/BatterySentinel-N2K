@@ -1,0 +1,122 @@
+{
+  "designator": "D1",
+  "footprint": "SMB",
+  "units": "mm",
+  "origin": "footprint origin; z=0 at carrier top surface",
+  "model_class": "locally generated approximate package/assembly envelope",
+  "manufacturer_certified": false,
+  "bodies": [
+    {
+      "name": "selected package envelope",
+      "outline": [
+        [
+          -2.35,
+          -1.95
+        ],
+        [
+          2.35,
+          -1.95
+        ],
+        [
+          2.35,
+          1.95
+        ],
+        [
+          -2.35,
+          1.95
+        ]
+      ],
+      "z0": 0.08,
+      "z1": 2.5,
+      "rgb": [
+        40,
+        43,
+        47
+      ]
+    },
+    {
+      "name": "diode end terminal 1",
+      "outline": [
+        [
+          -2.575,
+          -1.05
+        ],
+        [
+          -1.425,
+          -1.05
+        ],
+        [
+          -1.425,
+          1.05
+        ],
+        [
+          -2.575,
+          1.05
+        ]
+      ],
+      "z0": 0.025,
+      "z1": 0.2,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "diode end terminal 2",
+      "outline": [
+        [
+          1.425,
+          -1.05
+        ],
+        [
+          2.575,
+          -1.05
+        ],
+        [
+          2.575,
+          1.05
+        ],
+        [
+          1.425,
+          1.05
+        ]
+      ],
+      "z0": 0.025,
+      "z1": 0.2,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "cathode band",
+      "outline": [
+        [
+          -1.582,
+          -1.911
+        ],
+        [
+          -1.332,
+          -1.911
+        ],
+        [
+          -1.332,
+          1.911
+        ],
+        [
+          -1.582,
+          1.911
+        ]
+      ],
+      "z0": 2.5,
+      "z1": 2.515,
+      "rgb": [
+        186,
+        190,
+        193
+      ]
+    }
+  ]
+}

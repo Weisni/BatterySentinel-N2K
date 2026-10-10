@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "error_count": 0,
+  "warning_count": 5,
+  "warnings": [
+    {
+      "kind": "Net has no driving source",
+      "net": "BST_BUS",
+      "disposition": "Reviewed expected passive/bootstrap driver modeling limitation; see electrical-review.md"
+    },
+    {
+      "kind": "Net has no driving source",
+      "net": "BST_LOGIC",
+      "disposition": "Reviewed expected passive/bootstrap driver modeling limitation; see electrical-review.md"
+    },
+    {
+      "kind": "Net has no driving source",
+      "net": "ESP_EN",
+      "disposition": "Reviewed expected passive/bootstrap driver modeling limitation; see electrical-review.md"
+    },
+    {
+      "kind": "Net has no driving source",
+      "net": "GPIO7",
+      "disposition": "Reviewed expected passive/bootstrap driver modeling limitation; see electrical-review.md"
+    },
+    {
+      "kind": "Net has no driving source",
+      "net": "TXD",
+      "disposition": "Reviewed expected passive/bootstrap driver modeling limitation; see electrical-review.md"
+    }
+  ],
+  "timestamp_local": "2026-09-23T12:13:30+02:00",
+  "application": "Altium Designer 26.10.1",
+  "provenance": "Observed native Altium project compilation in the desktop UI by the root agent. This JSON records that observation; it is not a machine-parsed compiler log.",
+  "global_erc_suppression_applied": false,
+  "scope": "Native schematic compilation and review of the five named warnings. Hardware function and certification are separate."
+}

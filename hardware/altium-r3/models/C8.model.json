@@ -1,0 +1,94 @@
+{
+  "designator": "C8",
+  "footprint": "C1210",
+  "units": "mm",
+  "origin": "footprint origin; z=0 at carrier top surface",
+  "model_class": "locally generated approximate package/assembly envelope",
+  "manufacturer_certified": false,
+  "bodies": [
+    {
+      "name": "package envelope",
+      "outline": [
+        [
+          -1.6,
+          -1.25
+        ],
+        [
+          1.6,
+          -1.25
+        ],
+        [
+          1.6,
+          1.25
+        ],
+        [
+          -1.6,
+          1.25
+        ]
+      ],
+      "z0": 0.12,
+      "z1": 2.5,
+      "rgb": [
+        180,
+        146,
+        100
+      ]
+    },
+    {
+      "name": "end cap 1",
+      "outline": [
+        [
+          -1.6,
+          -1.26
+        ],
+        [
+          -1.2000000000000002,
+          -1.26
+        ],
+        [
+          -1.2000000000000002,
+          1.26
+        ],
+        [
+          -1.6,
+          1.26
+        ]
+      ],
+      "z0": 0.02,
+      "z1": 2.525,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "end cap 2",
+      "outline": [
+        [
+          1.2000000000000002,
+          -1.26
+        ],
+        [
+          1.6,
+          -1.26
+        ],
+        [
+          1.6,
+          1.26
+        ],
+        [
+          1.2000000000000002,
+          1.26
+        ]
+      ],
+      "z0": 0.02,
+      "z1": 2.525,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    }
+  ]
+}

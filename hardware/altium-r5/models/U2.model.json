@@ -1,0 +1,178 @@
+{
+  "designator": "U2",
+  "footprint": "EVISUN_B0505S_3WR2",
+  "units": "mm",
+  "origin": "footprint origin; z=0 at carrier top surface",
+  "model_class": "locally generated approximate package/assembly envelope",
+  "manufacturer_certified": false,
+  "bodies": [
+    {
+      "name": "isolated converter SIP housing",
+      "outline": [
+        [
+          -9.825,
+          -3.5
+        ],
+        [
+          9.825,
+          -3.5
+        ],
+        [
+          9.825,
+          3.5
+        ],
+        [
+          -9.825,
+          3.5
+        ]
+      ],
+      "z0": 0.15,
+      "z1": 10.31,
+      "rgb": [
+        40,
+        43,
+        47
+      ]
+    },
+    {
+      "name": "converter label area",
+      "outline": [
+        [
+          -8.2,
+          -2.55
+        ],
+        [
+          8.2,
+          -2.55
+        ],
+        [
+          8.2,
+          2.55
+        ],
+        [
+          -8.2,
+          2.55
+        ]
+      ],
+      "z0": 10.31,
+      "z1": 10.33,
+      "rgb": [
+        68,
+        73,
+        79
+      ]
+    },
+    {
+      "name": "SIP through lead 1",
+      "outline": [
+        [
+          -7.865,
+          2.35
+        ],
+        [
+          -7.365,
+          2.35
+        ],
+        [
+          -7.365,
+          2.85
+        ],
+        [
+          -7.865,
+          2.85
+        ]
+      ],
+      "z0": -2.5,
+      "z1": 0.45,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "SIP through lead 2",
+      "outline": [
+        [
+          -5.325,
+          2.35
+        ],
+        [
+          -4.825,
+          2.35
+        ],
+        [
+          -4.825,
+          2.85
+        ],
+        [
+          -5.325,
+          2.85
+        ]
+      ],
+      "z0": -2.5,
+      "z1": 0.45,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "SIP through lead 4",
+      "outline": [
+        [
+          -0.245,
+          2.35
+        ],
+        [
+          0.255,
+          2.35
+        ],
+        [
+          0.255,
+          2.85
+        ],
+        [
+          -0.245,
+          2.85
+        ]
+      ],
+      "z0": -2.5,
+      "z1": 0.45,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    },
+    {
+      "name": "SIP through lead 6",
+      "outline": [
+        [
+          4.835,
+          2.35
+        ],
+        [
+          5.335,
+          2.35
+        ],
+        [
+          5.335,
+          2.85
+        ],
+        [
+          4.835,
+          2.85
+        ]
+      ],
+      "z0": -2.5,
+      "z1": 0.45,
+      "rgb": [
+        179,
+        188,
+        198
+      ]
+    }
+  ]
+}

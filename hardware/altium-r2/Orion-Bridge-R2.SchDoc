@@ -1,0 +1,822 @@
+|HEADER=Protel for Windows - Schematic Capture Ascii File Version 5.0|Weight=821|MinorVersion=2|UniqueID=KHVQBZIC
+|RECORD=31|FontIdCount=3|Size1=9|FontName1=Arial|Size2=14|FontName2=Arial|Bold2=T|Size3=8|FontName3=Arial|SheetStyle=2|BorderOn=T|TitleBlockOn=F|HotSpotGridOn=T|HotSpotGridSize=5|SnapGridOn=T|SnapGridSize=5|VisibleGridOn=F|VisibleGridSize=10|CustomX=2230|CustomY=1570|SystemFont=1|Display_Unit=0|AreaColor=16777215|UseMBCS=T|IsBOC=T
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=1490|FontID=2|Text=ORION BRIDGE / NMEA 2000 - BLE|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=1460|FontID=1|Text=R2 - lokale Bauteilbibliotheken / getrennte Versorgung fuer Bus und Logik|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=1570|Location.Y=1490|FontID=1|Text=80 x 60 mm / 2 Lagen / 21.09.2026|Color=0
+|RECORD=13|OwnerPartId=-1|Location.X=70|Location.Y=1430|Corner.X=2140|Corner.Y=1430|Color=12040119|LineWidth=1
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=1380|FontID=2|Text=01  Anschluss|Color=0
+|RECORD=13|OwnerPartId=-1|Location.X=70|Location.Y=1365|Corner.X=360|Corner.Y=1365|Color=12040119|LineWidth=1
+|RECORD=4|OwnerPartId=-1|Location.X=420|Location.Y=1380|FontID=2|Text=02  Schutz und Busversorgung|Color=0
+|RECORD=13|OwnerPartId=-1|Location.X=420|Location.Y=1365|Corner.X=2140|Corner.Y=1365|Color=12040119|LineWidth=1
+|RECORD=1|LibReference=NMEA_PIGTAIL_5_P3_5|DesignItemId=NMEA_PIGTAIL_5_P3_5|ComponentDescription=NMEA Micro-C pigtail - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=160|Location.Y=1220|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=VJXNLVQB|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=5
+|RECORD=14|Location.X=150|Location.Y=1165|Corner.X=170|Corner.Y=1275|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=166|Y1=1260|X2=166|Y2=1261|X3=165|Y3=1262|X4=164|Y4=1263|X5=163|Y5=1263|X6=162|Y6=1263|X7=161|Y7=1262|X8=160|Y8=1261|X9=160|Y9=1260|X10=160|Y10=1259|X11=161|Y11=1258|X12=162|Y12=1257|X13=163|Y13=1257|X14=164|Y14=1257|X15=165|Y15=1258|X16=166|Y16=1259|X17=166|Y17=1260|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=166|Y1=1240|X2=166|Y2=1241|X3=165|Y3=1242|X4=164|Y4=1243|X5=163|Y5=1243|X6=162|Y6=1243|X7=161|Y7=1242|X8=160|Y8=1241|X9=160|Y9=1240|X10=160|Y10=1239|X11=161|Y11=1238|X12=162|Y12=1237|X13=163|Y13=1237|X14=164|Y14=1237|X15=165|Y15=1238|X16=166|Y16=1239|X17=166|Y17=1240|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=166|Y1=1220|X2=166|Y2=1221|X3=165|Y3=1222|X4=164|Y4=1223|X5=163|Y5=1223|X6=162|Y6=1223|X7=161|Y7=1222|X8=160|Y8=1221|X9=160|Y9=1220|X10=160|Y10=1219|X11=161|Y11=1218|X12=162|Y12=1217|X13=163|Y13=1217|X14=164|Y14=1217|X15=165|Y15=1218|X16=166|Y16=1219|X17=166|Y17=1220|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=166|Y1=1200|X2=166|Y2=1201|X3=165|Y3=1202|X4=164|Y4=1203|X5=163|Y5=1203|X6=162|Y6=1203|X7=161|Y7=1202|X8=160|Y8=1201|X9=160|Y9=1200|X10=160|Y10=1199|X11=161|Y11=1198|X12=162|Y12=1197|X13=163|Y13=1197|X14=164|Y14=1197|X15=165|Y15=1198|X16=166|Y16=1199|X17=166|Y17=1200|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=166|Y1=1180|X2=166|Y2=1181|X3=165|Y3=1182|X4=164|Y4=1183|X5=163|Y5=1183|X6=162|Y6=1183|X7=161|Y7=1182|X8=160|Y8=1181|X9=160|Y9=1180|X10=160|Y10=1179|X11=161|Y11=1178|X12=162|Y12=1177|X13=163|Y13=1177|X14=164|Y14=1177|X15=165|Y15=1178|X16=166|Y16=1179|X17=166|Y17=1180|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=166|Y1=1260|X2=170|Y2=1260|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=166|Y1=1240|X2=170|Y2=1240|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=166|Y1=1220|X2=170|Y2=1220|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=166|Y1=1200|X2=170|Y2=1200|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=166|Y1=1180|X2=170|Y2=1180|OwnerIndex=9|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=9|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=170|Location.Y=1260|Name=SHIELD|Designator=1|SwapIdPart=1|UniqueID=IBMCGPSY|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=9|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=170|Location.Y=1240|Name=NET-S|Designator=2|SwapIdPart=1|UniqueID=OEHRQJOY|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=9|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=170|Location.Y=1220|Name=NET-C|Designator=3|SwapIdPart=1|UniqueID=QUTPDECT|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=9|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=170|Location.Y=1200|Name=CAN-H|Designator=4|SwapIdPart=1|UniqueID=HVHVQNIE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=9|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=170|Location.Y=1180|Name=CAN-L|Designator=5|SwapIdPart=1|UniqueID=TPUMIBVN|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=9|OwnerPartId=-1|Location.X=150|Location.Y=1297|Color=128|FontID=1|Text=J1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|Location.X=150|Location.Y=1280|Color=128|FontID=3|Text=NMEA Micro-C pigtail|Name=Comment
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=NMEA Micro-C pigtail - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD terminal MPN, pitch and pin order; logical Micro-C numbering, not a connector face view|Name=Footprint Status
+|RECORD=41|OwnerIndex=9|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD terminal MPN, pitch and pin order; logical Micro-C numbering, not a connector face view|Name=ReviewStatus
+|RECORD=44|OwnerIndex=9
+|RECORD=45|OwnerIndex=37|ModelName=TBD_TERMINAL_5_3.5|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TBD_TERMINAL_5_3.5|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=OBLADYAG
+|RECORD=46|OwnerIndex=38
+|RECORD=48|OwnerIndex=38
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1260|X2=280|Y2=1260
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=1260|Color=128|FontID=3|Text=SHIELD
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1240|X2=280|Y2=1240
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=1240|Color=128|FontID=3|Text=NET_S
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1220|X2=280|Y2=1220
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=1220|Color=128|FontID=3|Text=GND_BUS
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1200|X2=280|Y2=1200
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=1200|Color=128|FontID=3|Text=CANH_EXT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1180|X2=280|Y2=1180
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=1180|Color=128|FontID=3|Text=CANL_EXT
+|RECORD=1|LibReference=TESTPOINT_2MM|DesignItemId=TESTPOINT_2MM|ComponentDescription=Shield / chassis pad - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=190|Location.Y=1060|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=TCNIHBDN|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=1
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=195|Y1=1065|X2=195|Y2=1067|X3=194|Y3=1069|X4=192|Y4=1070|X5=190|Y5=1070|X6=188|Y6=1070|X7=186|Y7=1069|X8=185|Y8=1067|X9=185|Y9=1065|X10=185|Y10=1063|X11=186|Y11=1061|X12=188|Y12=1060|X13=190|Y13=1060|X14=192|Y14=1060|X15=194|Y15=1061|X16=195|Y16=1063|X17=195|Y17=1065|OwnerIndex=51|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=51|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=35|PinLength=20|Location.X=190|Location.Y=1060|Name=SHIELD|Designator=1|SwapIdPart=1|UniqueID=YNLAPAUO|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=51|OwnerPartId=-1|Location.X=185|Location.Y=1092|Color=128|FontID=1|Text=TP1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|Location.X=185|Location.Y=1075|Color=128|FontID=3|Text=Shield / chassis pad|Name=Comment
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Shield / chassis pad - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=51|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=51
+|RECORD=45|OwnerIndex=65|ModelName=TESTPOINT_2MM|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TESTPOINT_2MM|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=TLDDJWAL
+|RECORD=46|OwnerIndex=66
+|RECORD=48|OwnerIndex=66
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=190|Y1=1040|X2=130|Y2=1040
+|RECORD=25|OwnerPartId=-1|Location.X=130|Location.Y=1040|Color=128|FontID=3|Text=SHIELD
+|RECORD=4|OwnerPartId=-1|Location.X=80|Location.Y=990|FontID=1|Text=Micro-C: Pinfolge, keine Frontansicht.|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=80|Location.Y=965|FontID=1|Text=Schirm bleibt von GND getrennt.|Color=0
+|RECORD=1|LibReference=FUSE_T0_8A_60V_TBD|DesignItemId=FUSE_T0_8A_60V_TBD|ComponentDescription=T0.8A >=60V - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=500|Location.Y=1290|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=OSTZNDUQ|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=14|Location.X=480|Location.Y=1282|Corner.X=520|Corner.Y=1298|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=73|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=480|Y1=1290|X2=520|Y2=1290|OwnerIndex=73|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=73|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=480|Location.Y=1290|Name=1|Designator=1|SwapIdPart=1|UniqueID=BOGOTXUY|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=73|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=520|Location.Y=1290|Name=2|Designator=2|SwapIdPart=1|UniqueID=VOJVQJPL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=73|OwnerPartId=-1|Location.X=460|Location.Y=1320|Color=128|FontID=1|Text=F1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|Location.X=460|Location.Y=1303|Color=128|FontID=3|Text=T0.8A >=60V|Name=Comment
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=T0.8A >=60V - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=73|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=73
+|RECORD=45|OwnerIndex=89|ModelName=TBD_FUSE_9X6|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TBD_FUSE_9X6|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=NOXCETYX
+|RECORD=46|OwnerIndex=90
+|RECORD=48|OwnerIndex=90
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=420|Y1=1290|X2=460|Y2=1290
+|RECORD=25|OwnerPartId=-1|Location.X=420|Location.Y=1290|Color=128|FontID=3|Text=NET_S
+|RECORD=1|LibReference=DMP6023LE|DesignItemId=DMP6023LE|ComponentDescription=DMP6023LE|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=750|Location.Y=1290|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=YIZJUYDU|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=4
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=720|Y1=1290|X2=735|Y2=1290|X3=735|Y3=1280|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=780|Y1=1290|X2=765|Y2=1290|X3=765|Y3=1280|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=735|Y1=1280|X2=744|Y2=1280|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=747|Y1=1280|X2=753|Y2=1280|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=756|Y1=1280|X2=765|Y2=1280|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=732|Y1=1270|X2=768|Y2=1270|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=750|Y1=1250|X2=750|Y2=1270|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=750|Y1=1280|X2=750|Y2=1290|X3=765|Y3=1290|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=746|Y1=1285|X2=750|Y2=1290|X3=754|Y3=1285|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=735|Y1=1290|X2=735|Y2=1310|X3=744|Y3=1310|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=756|Y1=1310|X2=765|Y2=1310|X3=765|Y3=1290|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=720|Y1=1310|X2=735|Y2=1310|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=705|Location.Y=1322|Color=128|FontID=1|Text=TAB|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=722|Location.Y=1278|Color=128|FontID=1|Text=D|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=773|Location.Y=1278|Color=128|FontID=1|Text=S|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=758|Location.Y=1253|Color=128|FontID=1|Text=G|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=744|Y1=1314|X2=744|Y2=1306|X3=756|Y3=1310|X4=744|Y4=1314|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=756|Y1=1314|X2=756|Y2=1306|OwnerIndex=95|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=95|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=720|Location.Y=1290|Name=D|Designator=2|SwapIdPart=1|UniqueID=OOVLWGTX|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=95|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=780|Location.Y=1290|Name=S|Designator=3|SwapIdPart=1|UniqueID=JWGSLPDN|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=95|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=750|Location.Y=1250|Name=G|Designator=1|SwapIdPart=1|UniqueID=VJCLJKSL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=95|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=720|Location.Y=1310|Name=TAB=D|Designator=4|SwapIdPart=1|UniqueID=NDWSRQAX|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=95|OwnerPartId=-1|Location.X=700|Location.Y=1357|Color=128|FontID=1|Text=Q1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|Location.X=700|Location.Y=1340|Color=128|FontID=3|Text=DMP6023LE|Name=Comment
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Diodes Incorporated|Name=Manufacturer
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=DMP6023LE|Name=MPN
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=DMP6023LE|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=DMP6023LE|Name=Description
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://www.diodes.com/datasheet/download/DMP6023LE.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=95|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=95
+|RECORD=45|OwnerIndex=129|ModelName=SOT223_PMOS|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SOT223_PMOS|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=WVPVRLSL
+|RECORD=46|OwnerIndex=130
+|RECORD=48|OwnerIndex=130
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=540|Y1=1290|X2=700|Y2=1290
+|RECORD=25|OwnerPartId=-1|Location.X=600|Location.Y=1290|Color=128|FontID=3|Text=FUSED_IN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=700|Y1=1310|X2=660|Y2=1310
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=660|Y1=1310|X2=660|Y2=1290
+|RECORD=1|LibReference=TPS7B6950QDCYRQ1|DesignItemId=TPS7B6950QDCYRQ1|ComponentDescription=TPS7B6950QDCYRQ1|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1550|Location.Y=1280|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=QDYBDCNJ|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=4
+|RECORD=14|Location.X=1500|Location.Y=1250|Corner.X=1600|Corner.Y=1310|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=137|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=137|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1500|Location.Y=1290|Name=IN|Designator=1|SwapIdPart=1|UniqueID=CRIHGYHX|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=137|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1600|Location.Y=1290|Name=OUT|Designator=3|SwapIdPart=1|UniqueID=NRSMOBYL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=137|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=59|PinLength=20|Location.X=1530|Location.Y=1250|Name=GND|Designator=2|SwapIdPart=1|UniqueID=HWFRXIZD|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=137|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=59|PinLength=20|Location.X=1570|Location.Y=1250|Name=TAB|Designator=4|SwapIdPart=1|UniqueID=BGPNTLDI|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=137|OwnerPartId=-1|Location.X=1480|Location.Y=1332|Color=128|FontID=1|Text=U3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|Location.X=1480|Location.Y=1315|Color=128|FontID=3|Text=TPS7B6950QDCYRQ1|Name=Comment
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Texas Instruments|Name=Manufacturer
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TPS7B6950QDCYRQ1|Name=MPN
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TPS7B6950QDCYRQ1|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TPS7B6950QDCYRQ1|Name=Description
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=137|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=137
+|RECORD=45|OwnerIndex=154|ModelName=SOT223_LDO|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SOT223_LDO|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=YLTMWSMN
+|RECORD=46|OwnerIndex=155
+|RECORD=48|OwnerIndex=155
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=800|Y1=1290|X2=1480|Y2=1290
+|RECORD=25|OwnerPartId=-1|Location.X=1100|Location.Y=1290|Color=128|FontID=3|Text=BUS_PROT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1620|Y1=1290|X2=1980|Y2=1290
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=1980|Location.Y=1290|Orientation=1|Color=128|Text=5V_BUS|FontID=3
+|RECORD=1|LibReference=BZT52C12_SOD123_GENERIC|DesignItemId=BZT52C12_SOD123_GENERIC|ComponentDescription=BZT52C12 - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=920|Location.Y=1150|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=VUKPMROF|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=910|Y1=1140|X2=930|Y2=1140|X3=920|Y3=1160|X4=910|Y4=1140|OwnerIndex=162|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=910|Y1=1155|X2=910|Y2=1160|X3=930|Y3=1160|X4=930|Y4=1165|OwnerIndex=162|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=920|Y1=1170|X2=920|Y2=1160|OwnerIndex=162|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=920|Y1=1130|X2=920|Y2=1140|OwnerIndex=162|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=162|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=920|Location.Y=1170|Name=K|Designator=1|SwapIdPart=1|UniqueID=VFLAQJJW|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=162|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=920|Location.Y=1130|Name=A|Designator=2|SwapIdPart=1|UniqueID=MLROIANR|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=162|OwnerPartId=-1|Location.X=942|Location.Y=1160|Color=128|FontID=1|Text=Z1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|Location.X=942|Location.Y=1143|Color=128|FontID=3|Text=BZT52C12|Name=Comment
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=BZT52C12 - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=162|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=162
+|RECORD=45|OwnerIndex=180|ModelName=SOD123|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SOD123|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=ALMQGJXN
+|RECORD=46|OwnerIndex=181
+|RECORD=48|OwnerIndex=181
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=920|Y1=1190|X2=920|Y2=1290
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=750|Y1=1230|X2=750|Y2=1090
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=750|Y1=1090|X2=920|Y2=1090
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=920|Y1=1090|X2=920|Y2=1110
+|RECORD=25|OwnerPartId=-1|Location.X=750|Location.Y=1090|Color=128|FontID=3|Text=GATE
+|RECORD=1|LibReference=R_0805_100K|DesignItemId=R_0805_100K|ComponentDescription=100k - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=750|Location.Y=1010|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=LPCHHUBL|Color=128|AreaColor=16777215|Orientation=3|PartIDLocked=F|AllPinCount=2
+|RECORD=14|Location.X=742|Location.Y=990|Corner.X=758|Corner.Y=1030|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=189|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=189|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=750|Location.Y=1030|Name=1|Designator=1|SwapIdPart=1|UniqueID=ACOOXTRW|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=189|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=750|Location.Y=990|Name=2|Designator=2|SwapIdPart=1|UniqueID=YLCTTGCE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=189|OwnerPartId=-1|Location.X=770|Location.Y=1020|Color=128|FontID=1|Text=R1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|Location.X=770|Location.Y=1003|Color=128|FontID=3|Text=100k|Name=Comment
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=100k - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=189|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=189
+|RECORD=45|OwnerIndex=204|ModelName=R0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=R0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=BYOMKRYJ
+|RECORD=46|OwnerIndex=205
+|RECORD=48|OwnerIndex=205
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=750|Y1=1090|X2=750|Y2=1050
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=750|Y1=970|X2=750|Y2=940
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=750|Location.Y=940|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=SMBJ20A_SMB_GENERIC|DesignItemId=SMBJ20A_SMB_GENERIC|ComponentDescription=SMBJ20A - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1070|Location.Y=1150|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=ZFJVEMYJ|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=1060|Y1=1140|X2=1080|Y2=1140|X3=1070|Y3=1160|X4=1060|Y4=1140|OwnerIndex=211|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=1060|Y1=1155|X2=1060|Y2=1160|X3=1080|Y3=1160|X4=1080|Y4=1165|OwnerIndex=211|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1070|Y1=1170|X2=1070|Y2=1160|OwnerIndex=211|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1070|Y1=1130|X2=1070|Y2=1140|OwnerIndex=211|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=211|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1070|Location.Y=1170|Name=K|Designator=1|SwapIdPart=1|UniqueID=KBJNKNMF|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=211|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1070|Location.Y=1130|Name=A|Designator=2|SwapIdPart=1|UniqueID=SYXASKFF|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=211|OwnerPartId=-1|Location.X=1092|Location.Y=1160|Color=128|FontID=1|Text=D1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|Location.X=1092|Location.Y=1143|Color=128|FontID=3|Text=SMBJ20A|Name=Comment
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SMBJ20A - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=211|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=211
+|RECORD=45|OwnerIndex=229|ModelName=SMB|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SMB|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=ZJKJOOUJ
+|RECORD=46|OwnerIndex=230
+|RECORD=48|OwnerIndex=230
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1070|Y1=1190|X2=1070|Y2=1290
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1070|Y1=1110|X2=1070|Y2=1060
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1070|Location.Y=1060|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_RADIAL_47UF_50V_D8_P2_5|DesignItemId=C_RADIAL_47UF_50V_D8_P2_5|ComponentDescription=47uF 50V - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1210|Location.Y=1150|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=PEDLIMUP|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1196|Y1=1155|X2=1224|Y2=1155|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1210|Y1=1170|X2=1210|Y2=1155|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1210|Y1=1130|X2=1210|Y2=1142|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=7|X1=1196|Y1=1146|X2=1200|Y2=1144|X3=1205|Y3=1143|X4=1210|Y4=1142|X5=1215|Y5=1143|X6=1220|Y6=1144|X7=1224|Y7=1146|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1222|Y1=1164|X2=1232|Y2=1164|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1227|Y1=1159|X2=1227|Y2=1169|OwnerIndex=236|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=236|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1210|Location.Y=1170|Name=+|Designator=1|SwapIdPart=1|UniqueID=BEFAWNCG|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=236|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1210|Location.Y=1130|Name=-|Designator=2|SwapIdPart=1|UniqueID=NNODBUGL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=236|OwnerPartId=-1|Location.X=1244|Location.Y=1160|Color=128|FontID=1|Text=C1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|Location.X=1244|Location.Y=1143|Color=128|FontID=3|Text=47uF 50V|Name=Comment
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=47uF 50V - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=236|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=236
+|RECORD=45|OwnerIndex=256|ModelName=TBD_CAP_RADIAL_P2.5_D8|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TBD_CAP_RADIAL_P2.5_D8|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=AHMHUBJW
+|RECORD=46|OwnerIndex=257
+|RECORD=48|OwnerIndex=257
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1210|Y1=1190|X2=1210|Y2=1290
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1210|Y1=1110|X2=1210|Y2=1060
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1210|Location.Y=1060|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_0805_1UF_50V_X7R|DesignItemId=C_0805_1UF_50V_X7R|ComponentDescription=1uF 50V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1390|Location.Y=1150|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=UDBOITAH|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1376|Y1=1155|X2=1404|Y2=1155|OwnerIndex=263|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1390|Y1=1170|X2=1390|Y2=1155|OwnerIndex=263|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1390|Y1=1130|X2=1390|Y2=1145|OwnerIndex=263|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1376|Y1=1145|X2=1404|Y2=1145|OwnerIndex=263|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=263|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1390|Location.Y=1170|Name=1|Designator=1|SwapIdPart=1|UniqueID=GRKVTMJM|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=263|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1390|Location.Y=1130|Name=2|Designator=2|SwapIdPart=1|UniqueID=TUBYFWNI|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=263|OwnerPartId=-1|Location.X=1416|Location.Y=1160|Color=128|FontID=1|Text=C2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|Location.X=1416|Location.Y=1143|Color=128|FontID=3|Text=1uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=1uF 50V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=263|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=263
+|RECORD=45|OwnerIndex=281|ModelName=C0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=CSYFXUDA
+|RECORD=46|OwnerIndex=282
+|RECORD=48|OwnerIndex=282
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=1190|X2=1390|Y2=1290
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=1110|X2=1390|Y2=1060
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1390|Location.Y=1060|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_1206_10UF_16V_X7R|DesignItemId=C_1206_10UF_16V_X7R|ComponentDescription=10uF 16V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1880|Location.Y=1150|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=IHYFFTYY|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1866|Y1=1155|X2=1894|Y2=1155|OwnerIndex=288|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1880|Y1=1170|X2=1880|Y2=1155|OwnerIndex=288|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1880|Y1=1130|X2=1880|Y2=1145|OwnerIndex=288|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1866|Y1=1145|X2=1894|Y2=1145|OwnerIndex=288|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=288|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1880|Location.Y=1170|Name=1|Designator=1|SwapIdPart=1|UniqueID=IQSMNRCQ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=288|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1880|Location.Y=1130|Name=2|Designator=2|SwapIdPart=1|UniqueID=WFQKRZHB|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=288|OwnerPartId=-1|Location.X=1906|Location.Y=1160|Color=128|FontID=1|Text=C3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|Location.X=1906|Location.Y=1143|Color=128|FontID=3|Text=10uF 16V X7R|Name=Comment
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=10uF 16V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=288|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=288
+|RECORD=45|OwnerIndex=306|ModelName=C1206|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C1206|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=ANZKEZIZ
+|RECORD=46|OwnerIndex=307
+|RECORD=48|OwnerIndex=307
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1880|Y1=1190|X2=1880|Y2=1290
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1880|Y1=1110|X2=1880|Y2=1060
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1880|Location.Y=1060|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1530|Y1=1230|X2=1530|Y2=1090
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1530|Location.Y=1090|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1570|Y1=1230|X2=1570|Y2=1040
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1570|Location.Y=1040|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=900|FontID=2|Text=03  Galvanisch getrennte Logikversorgung|Color=0
+|RECORD=13|OwnerPartId=-1|Location.X=70|Location.Y=885|Corner.X=2140|Corner.Y=885|Color=12040119|LineWidth=1
+|RECORD=1|LibReference=L_15UH_1A_5X5_TBD|DesignItemId=L_15UH_1A_5X5_TBD|ComponentDescription=15uH Isat>=1A - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=560|Location.Y=790|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=HVGIRQWQ|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=36|X1=540|Y1=790|X2=540|Y2=792|X3=541|Y3=794|X4=543|Y4=795|X5=545|Y5=795|X6=547|Y6=795|X7=549|Y7=794|X8=550|Y8=792|X9=550|Y9=790|X10=550|Y10=790|X11=550|Y11=792|X12=551|Y12=794|X13=553|Y13=795|X14=555|Y14=795|X15=557|Y15=795|X16=559|Y16=794|X17=560|Y17=792|X18=560|Y18=790|X19=560|Y19=790|X20=560|Y20=792|X21=561|Y21=794|X22=563|Y22=795|X23=565|Y23=795|X24=567|Y24=795|X25=569|Y25=794|X26=570|Y26=792|X27=570|Y27=790|X28=570|Y28=790|X29=570|Y29=792|X30=571|Y30=794|X31=573|Y31=795|X32=575|Y32=795|X33=577|Y33=795|X34=579|Y34=794|X35=580|Y35=792|X36=580|Y36=790|OwnerIndex=319|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=319|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=540|Location.Y=790|Name=1|Designator=1|SwapIdPart=1|UniqueID=KRLINRUM|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=319|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=580|Location.Y=790|Name=2|Designator=2|SwapIdPart=1|UniqueID=YDPXEOPZ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=319|OwnerPartId=-1|Location.X=520|Location.Y=817|Color=128|FontID=1|Text=L2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|Location.X=520|Location.Y=800|Color=128|FontID=3|Text=15uH Isat>=1A|Name=Comment
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=15uH Isat>=1A - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=319|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=319
+|RECORD=45|OwnerIndex=334|ModelName=TBD_INDUCTOR_5X5|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TBD_INDUCTOR_5X5|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=RKBWEZYX
+|RECORD=46|OwnerIndex=335
+|RECORD=48|OwnerIndex=335
+|RECORD=1|LibReference=R3M-2405S_SMD|DesignItemId=R3M-2405S_SMD|ComponentDescription=R3M-2405S/SMD|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1070|Location.Y=760|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=YMOJHIZF|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=6
+|RECORD=14|Location.X=1010|Location.Y=700|Corner.X=1130|Corner.Y=820|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=338|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1066|Y1=700|X2=1066|Y2=820|OwnerIndex=338|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1074|Y1=700|X2=1074|Y2=820|OwnerIndex=338|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=1028|Location.Y=758|Color=128|FontID=1|Text=DC|OwnerIndex=338|OwnerPartId=1|IsNotAccesible=T
+|RECORD=4|Location.X=1092|Location.Y=758|Color=128|FontID=1|Text=DC|OwnerIndex=338|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1010|Location.Y=790|Name=+VIN|Designator=1|SwapIdPart=1|UniqueID=INPCKHGD|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1010|Location.Y=730|Name=-VIN|Designator=2|SwapIdPart=1|UniqueID=YUNGZRMU|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1130|Location.Y=790|Name=+VOUT|Designator=7|SwapIdPart=1|UniqueID=GGTQHSEL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1130|Location.Y=730|Name=-VOUT|Designator=6|SwapIdPart=1|UniqueID=IEJMEZHH|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=59|PinLength=20|Location.X=1040|Location.Y=700|Name=CTRL|Designator=4|SwapIdPart=1|UniqueID=PIMMUZVS|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=338|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=59|PinLength=20|Location.X=1100|Location.Y=700|Name=NC|Designator=5|SwapIdPart=1|UniqueID=QDPCPFYE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=338|OwnerPartId=-1|Location.X=990|Location.Y=842|Color=128|FontID=1|Text=U2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|Location.X=990|Location.Y=825|Color=128|FontID=3|Text=R3M-2405S/SMD|Name=Comment
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=RECOM|Name=Manufacturer
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R3M-2405S/SMD|Name=MPN
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R3M-2405S/SMD|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R3M-2405S/SMD|Name=Description
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://recom-power.com/pdf/Econoline/R3M.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=338|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=338
+|RECORD=45|OwnerIndex=361|ModelName=R3M_SMD|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=R3M_SMD|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=WRJAMATG
+|RECORD=46|OwnerIndex=362
+|RECORD=48|OwnerIndex=362
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=300|Y1=790|X2=520|Y2=790
+|RECORD=25|OwnerPartId=-1|Location.X=300|Location.Y=790|Color=128|FontID=3|Text=BUS_PROT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=600|Y1=790|X2=990|Y2=790
+|RECORD=25|OwnerPartId=-1|Location.X=790|Location.Y=790|Color=128|FontID=3|Text=DCDC_IN
+|RECORD=1|LibReference=C_1210_10UF_50V_X7R|DesignItemId=C_1210_10UF_50V_X7R|ComponentDescription=10uF 50V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=390|Location.Y=700|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=GBCRICMU|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=376|Y1=705|X2=404|Y2=705|OwnerIndex=369|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=390|Y1=720|X2=390|Y2=705|OwnerIndex=369|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=390|Y1=680|X2=390|Y2=695|OwnerIndex=369|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=376|Y1=695|X2=404|Y2=695|OwnerIndex=369|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=369|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=390|Location.Y=720|Name=1|Designator=1|SwapIdPart=1|UniqueID=MCINUTCS|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=369|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=390|Location.Y=680|Name=2|Designator=2|SwapIdPart=1|UniqueID=XIKYCICS|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=369|OwnerPartId=-1|Location.X=416|Location.Y=710|Color=128|FontID=1|Text=C8|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|Location.X=416|Location.Y=693|Color=128|FontID=3|Text=10uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=10uF 50V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=369|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=369
+|RECORD=45|OwnerIndex=387|ModelName=C1210|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C1210|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=RTEOYLFM
+|RECORD=46|OwnerIndex=388
+|RECORD=48|OwnerIndex=388
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=390|Y1=740|X2=390|Y2=790
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=390|Y1=660|X2=390|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=390|Location.Y=610|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_1210_10UF_50V_X7R|DesignItemId=C_1210_10UF_50V_X7R|ComponentDescription=10uF 50V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=780|Location.Y=700|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=QCCIYWSP|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=766|Y1=705|X2=794|Y2=705|OwnerIndex=394|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=780|Y1=720|X2=780|Y2=705|OwnerIndex=394|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=780|Y1=680|X2=780|Y2=695|OwnerIndex=394|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=766|Y1=695|X2=794|Y2=695|OwnerIndex=394|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=394|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=780|Location.Y=720|Name=1|Designator=1|SwapIdPart=1|UniqueID=PIHADXRL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=394|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=780|Location.Y=680|Name=2|Designator=2|SwapIdPart=1|UniqueID=GLKOAGVK|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=394|OwnerPartId=-1|Location.X=806|Location.Y=710|Color=128|FontID=1|Text=C9|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|Location.X=806|Location.Y=693|Color=128|FontID=3|Text=10uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=10uF 50V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=394|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=394
+|RECORD=45|OwnerIndex=412|ModelName=C1210|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C1210|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=YJOSFQYB
+|RECORD=46|OwnerIndex=413
+|RECORD=48|OwnerIndex=413
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=780|Y1=740|X2=780|Y2=790
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=780|Y1=660|X2=780|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=780|Location.Y=610|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=990|Y1=730|X2=990|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=990|Location.Y=610|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=22|OwnerPartId=-1|Location.X=1040|Location.Y=680|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1100|Location.Y=680|Color=255
+|RECORD=4|OwnerPartId=-1|Location.X=1010|Location.Y=650|FontID=1|Text=CTRL offen = EIN|Color=0
+|RECORD=1|LibReference=SS36_SMB_GENERIC|DesignItemId=SS36_SMB_GENERIC|ComponentDescription=SS36 - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1600|Location.Y=790|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=IXLZFTSD|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=1590|Y1=800|X2=1590|Y2=780|X3=1610|Y3=790|X4=1590|Y4=800|OwnerIndex=424|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=6|X1=1604|Y1=796|X2=1604|Y2=800|X3=1610|Y3=800|X4=1610|Y4=780|X5=1616|Y5=780|X6=1616|Y6=784|OwnerIndex=424|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1580|Y1=790|X2=1590|Y2=790|OwnerIndex=424|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1610|Y1=790|X2=1620|Y2=790|OwnerIndex=424|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=424|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=1580|Location.Y=790|Name=A|Designator=2|SwapIdPart=1|UniqueID=LWKNKIVN|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=424|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=1620|Location.Y=790|Name=K|Designator=1|SwapIdPart=1|UniqueID=ITRHXMTA|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=424|OwnerPartId=-1|Location.X=1560|Location.Y=822|Color=128|FontID=1|Text=D2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|Location.X=1560|Location.Y=805|Color=128|FontID=3|Text=SS36|Name=Comment
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SS36 - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=424|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=424
+|RECORD=45|OwnerIndex=442|ModelName=SMB|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SMB|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=SUFADBLA
+|RECORD=46|OwnerIndex=443
+|RECORD=48|OwnerIndex=443
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1150|Y1=790|X2=1560|Y2=790
+|RECORD=25|OwnerPartId=-1|Location.X=1230|Location.Y=790|Color=128|FontID=3|Text=5V_ISO
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1150|Y1=730|X2=1150|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1150|Location.Y=610|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=1|LibReference=C_RADIAL_47UF_10V_D6_3_P2_5|DesignItemId=C_RADIAL_47UF_10V_D6_3_P2_5|ComponentDescription=47uF 10V - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1320|Location.Y=700|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=OSXIBLQZ|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1306|Y1=705|X2=1334|Y2=705|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1320|Y1=720|X2=1320|Y2=705|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1320|Y1=680|X2=1320|Y2=692|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=7|X1=1306|Y1=696|X2=1310|Y2=694|X3=1315|Y3=693|X4=1320|Y4=692|X5=1325|Y5=693|X6=1330|Y6=694|X7=1334|Y7=696|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1332|Y1=714|X2=1342|Y2=714|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1337|Y1=709|X2=1337|Y2=719|OwnerIndex=450|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=450|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1320|Location.Y=720|Name=+|Designator=1|SwapIdPart=1|UniqueID=GGLMABKK|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=450|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1320|Location.Y=680|Name=-|Designator=2|SwapIdPart=1|UniqueID=XOCHHEFC|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=450|OwnerPartId=-1|Location.X=1354|Location.Y=710|Color=128|FontID=1|Text=C6|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|Location.X=1354|Location.Y=693|Color=128|FontID=3|Text=47uF 10V|Name=Comment
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=47uF 10V - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=450|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=450
+|RECORD=45|OwnerIndex=470|ModelName=TBD_CAP_RADIAL_P2.5_D6.3|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=TBD_CAP_RADIAL_P2.5_D6.3|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=TBXPJXUC
+|RECORD=46|OwnerIndex=471
+|RECORD=48|OwnerIndex=471
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1320|Y1=740|X2=1320|Y2=790
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1320|Y1=660|X2=1320|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1320|Location.Y=610|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=1|LibReference=C_0805_100NF_16V_X7R|DesignItemId=C_0805_100NF_16V_X7R|ComponentDescription=100nF 16V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1450|Location.Y=700|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=HZJXWDCX|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1436|Y1=705|X2=1464|Y2=705|OwnerIndex=477|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1450|Y1=720|X2=1450|Y2=705|OwnerIndex=477|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1450|Y1=680|X2=1450|Y2=695|OwnerIndex=477|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1436|Y1=695|X2=1464|Y2=695|OwnerIndex=477|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=477|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1450|Location.Y=720|Name=1|Designator=1|SwapIdPart=1|UniqueID=MXHEPDNZ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=477|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1450|Location.Y=680|Name=2|Designator=2|SwapIdPart=1|UniqueID=NLOIOATE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=477|OwnerPartId=-1|Location.X=1476|Location.Y=710|Color=128|FontID=1|Text=C7|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|Location.X=1476|Location.Y=693|Color=128|FontID=3|Text=100nF 16V X7R|Name=Comment
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=100nF 16V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=477|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=477
+|RECORD=45|OwnerIndex=495|ModelName=C0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=ABQSRQUI
+|RECORD=46|OwnerIndex=496
+|RECORD=48|OwnerIndex=496
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1450|Y1=740|X2=1450|Y2=790
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1450|Y1=660|X2=1450|Y2=610
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1450|Location.Y=610|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=1|LibReference=JUMPER_1X2_P2_54|DesignItemId=JUMPER_1X2_P2_54|ComponentDescription=RUN closed / USB open - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1860|Location.Y=790|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=BIYVTARP|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1840|Y1=790|X2=1847|Y2=790|OwnerIndex=502|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1873|Y1=790|X2=1880|Y2=790|OwnerIndex=502|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=1853|Y1=790|X2=1853|Y2=791|X3=1852|Y3=792|X4=1851|Y4=793|X5=1850|Y5=793|X6=1849|Y6=793|X7=1848|Y7=792|X8=1847|Y8=791|X9=1847|Y9=790|X10=1847|Y10=789|X11=1848|Y11=788|X12=1849|Y12=787|X13=1850|Y13=787|X14=1851|Y14=787|X15=1852|Y15=788|X16=1853|Y16=789|X17=1853|Y17=790|OwnerIndex=502|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=1873|Y1=790|X2=1873|Y2=791|X3=1872|Y3=792|X4=1871|Y4=793|X5=1870|Y5=793|X6=1869|Y6=793|X7=1868|Y7=792|X8=1867|Y8=791|X9=1867|Y9=790|X10=1867|Y10=789|X11=1868|Y11=788|X12=1869|Y12=787|X13=1870|Y13=787|X14=1871|Y14=787|X15=1872|Y15=788|X16=1873|Y16=789|X17=1873|Y17=790|OwnerIndex=502|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=1850|Y1=794|X2=1850|Y2=800|X3=1870|Y3=800|X4=1870|Y4=794|OwnerIndex=502|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=502|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=1840|Location.Y=790|Name=1|Designator=1|SwapIdPart=1|UniqueID=SHHSJFSO|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=502|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=1880|Location.Y=790|Name=2|Designator=2|SwapIdPart=1|UniqueID=NGHVXQIE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=502|OwnerPartId=-1|Location.X=1820|Location.Y=822|Color=128|FontID=1|Text=JP1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|Location.X=1820|Location.Y=805|Color=128|FontID=3|Text=RUN closed / USB open|Name=Comment
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=RUN closed / USB open - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=502|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=502
+|RECORD=45|OwnerIndex=521|ModelName=HDR1X2_2.54|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=HDR1X2_2.54|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=USGEDMDY
+|RECORD=46|OwnerIndex=522
+|RECORD=48|OwnerIndex=522
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1640|Y1=790|X2=1820|Y2=790
+|RECORD=25|OwnerPartId=-1|Location.X=1680|Location.Y=790|Color=128|FontID=3|Text=5V_AFTER_DIODE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1900|Y1=790|X2=2030|Y2=790
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=2030|Location.Y=790|Orientation=1|Color=128|Text=5V_MODULE|FontID=3
+|RECORD=4|OwnerPartId=-1|Location.X=1660|Location.Y=665|FontID=1|Text=RUN: JP1 zu, USB abgezogen.|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=1660|Location.Y=635|FontID=1|Text=SERVICE: JP1 vor USB oeffnen.|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=555|FontID=2|Text=04  CAN-Schnittstelle und Controller|Color=0
+|RECORD=13|OwnerPartId=-1|Location.X=70|Location.Y=540|Corner.X=1550|Corner.Y=540|Color=12040119|LineWidth=1
+|RECORD=1|LibReference=ACT45B5102PTL003|DesignItemId=ACT45B5102PTL003|ComponentDescription=ACT45B-510-2P-TL003|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=640|Location.Y=380|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=PUDUOXPO|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=4
+|RECORD=6|LineWidth=1|Color=128|LocationCount=36|X1=620|Y1=400|X2=620|Y2=402|X3=621|Y3=404|X4=623|Y4=405|X5=625|Y5=405|X6=627|Y6=405|X7=629|Y7=404|X8=630|Y8=402|X9=630|Y9=400|X10=630|Y10=400|X11=630|Y11=402|X12=631|Y12=404|X13=633|Y13=405|X14=635|Y14=405|X15=637|Y15=405|X16=639|Y16=404|X17=640|Y17=402|X18=640|Y18=400|X19=640|Y19=400|X20=640|Y20=402|X21=641|Y21=404|X22=643|Y22=405|X23=645|Y23=405|X24=647|Y24=405|X25=649|Y25=404|X26=650|Y26=402|X27=650|Y27=400|X28=650|Y28=400|X29=650|Y29=402|X30=651|Y30=404|X31=653|Y31=405|X32=655|Y32=405|X33=657|Y33=405|X34=659|Y34=404|X35=660|Y35=402|X36=660|Y36=400|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=36|X1=620|Y1=360|X2=620|Y2=358|X3=621|Y3=356|X4=623|Y4=355|X5=625|Y5=355|X6=627|Y6=355|X7=629|Y7=356|X8=630|Y8=358|X9=630|Y9=360|X10=630|Y10=360|X11=630|Y11=358|X12=631|Y12=356|X13=633|Y13=355|X14=635|Y14=355|X15=637|Y15=355|X16=639|Y16=356|X17=640|Y17=358|X18=640|Y18=360|X19=640|Y19=360|X20=640|Y20=358|X21=641|Y21=356|X22=643|Y22=355|X23=645|Y23=355|X24=647|Y24=355|X25=649|Y25=356|X26=650|Y26=358|X27=650|Y27=360|X28=650|Y28=360|X29=650|Y29=358|X30=651|Y30=356|X31=653|Y31=355|X32=655|Y32=355|X33=657|Y33=355|X34=659|Y34=356|X35=660|Y35=358|X36=660|Y36=360|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=620|Y1=385|X2=660|Y2=385|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=620|Y1=375|X2=660|Y2=375|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=625|Y1=412|X2=625|Y2=413|X3=624|Y3=413|X4=624|Y4=414|X5=623|Y5=414|X6=622|Y6=414|X7=622|Y7=413|X8=621|Y8=413|X9=621|Y9=412|X10=621|Y10=411|X11=622|Y11=411|X12=622|Y12=410|X13=623|Y13=410|X14=624|Y14=410|X15=624|Y15=411|X16=625|Y16=411|X17=625|Y17=412|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=17|X1=625|Y1=348|X2=625|Y2=349|X3=624|Y3=349|X4=624|Y4=350|X5=623|Y5=350|X6=622|Y6=350|X7=622|Y7=349|X8=621|Y8=349|X9=621|Y9=348|X10=621|Y10=347|X11=622|Y11=347|X12=622|Y12=346|X13=623|Y13=346|X14=624|Y14=346|X15=624|Y15=347|X16=625|Y16=347|X17=625|Y17=348|OwnerIndex=533|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=533|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=620|Location.Y=400|Name=H_EXT|Designator=1|SwapIdPart=1|UniqueID=MATZWDIS|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=533|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=660|Location.Y=400|Name=H_IC|Designator=4|SwapIdPart=1|UniqueID=SKNKTSYB|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=533|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=620|Location.Y=360|Name=L_EXT|Designator=2|SwapIdPart=1|UniqueID=GFXKKYUC|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=533|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=660|Location.Y=360|Name=L_IC|Designator=3|SwapIdPart=1|UniqueID=PBCKGDRQ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=533|OwnerPartId=-1|Location.X=600|Location.Y=436|Color=128|FontID=1|Text=L1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|Location.X=600|Location.Y=419|Color=128|FontID=3|Text=ACT45B-510-2P-TL003|Name=Comment
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TDK|Name=Manufacturer
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ACT45B5102PTL003|Name=MPN
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ACT45B5102PTL003|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ACT45B-510-2P-TL003|Name=Description
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=533|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=533
+|RECORD=45|OwnerIndex=555|ModelName=ACT45B|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=ACT45B|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=YHPXRPVU
+|RECORD=46|OwnerIndex=556
+|RECORD=48|OwnerIndex=556
+|RECORD=1|LibReference=ISO1042DWV|DesignItemId=ISO1042DWV|ComponentDescription=ISO1042DWV|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1060|Location.Y=390|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=XEEFKUUI|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=8
+|RECORD=14|Location.X=1000|Location.Y=330|Corner.X=1120|Corner.Y=450|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=559|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1056|Y1=330|X2=1056|Y2=450|OwnerIndex=559|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1064|Y1=330|X2=1064|Y2=450|OwnerIndex=559|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1000|Location.Y=430|Name=VCC2|Designator=8|SwapIdPart=1|UniqueID=SZSFWQHT|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=58|PinLength=20|Location.X=1000|Location.Y=400|Name=CANH|Designator=7|SwapIdPart=1|UniqueID=DRMAWKGT|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=58|PinLength=20|Location.X=1000|Location.Y=380|Name=CANL|Designator=6|SwapIdPart=1|UniqueID=BNARMNPL|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1000|Location.Y=350|Name=GND2|Designator=5|SwapIdPart=1|UniqueID=QURZOHGE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1120|Location.Y=430|Name=VCC1|Designator=1|SwapIdPart=1|UniqueID=ABVOHNXA|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=56|PinLength=20|Location.X=1120|Location.Y=400|Name=TXD|Designator=2|SwapIdPart=1|UniqueID=CURAUBZQ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=2|PinConglomerate=56|PinLength=20|Location.X=1120|Location.Y=380|Name=RXD|Designator=3|SwapIdPart=1|UniqueID=GTBUYDQQ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=559|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1120|Location.Y=350|Name=GND1|Designator=4|SwapIdPart=1|UniqueID=BLMYNGLN|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=559|OwnerPartId=-1|Location.X=980|Location.Y=472|Color=128|FontID=1|Text=U1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|Location.X=980|Location.Y=455|Color=128|FontID=3|Text=ISO1042DWV|Name=Comment
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Texas Instruments|Name=Manufacturer
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ISO1042DWV|Name=MPN
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ISO1042DWV|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ISO1042DWV|Name=Description
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://www.ti.com/lit/ds/symlink/iso1042.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=559|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=559
+|RECORD=45|OwnerIndex=582|ModelName=SOIC8_DWV|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SOIC8_DWV|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=YPSNLFLX
+|RECORD=46|OwnerIndex=583
+|RECORD=48|OwnerIndex=583
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=200|Y1=400|X2=600|Y2=400
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=400|Color=128|FontID=3|Text=CANH_EXT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=200|Y1=360|X2=600|Y2=360
+|RECORD=25|OwnerPartId=-1|Location.X=200|Location.Y=360|Color=128|FontID=3|Text=CANL_EXT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=680|Y1=400|X2=850|Y2=400
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=400|X2=980|Y2=400
+|RECORD=25|OwnerPartId=-1|Location.X=870|Location.Y=400|Color=128|FontID=3|Text=CANH
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=680|Y1=360|X2=850|Y2=360
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=360|X2=850|Y2=380
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=380|X2=980|Y2=380
+|RECORD=25|OwnerPartId=-1|Location.X=870|Location.Y=380|Color=128|FontID=3|Text=CANL
+|RECORD=1|LibReference=PESD2CAN24T-QR|DesignItemId=PESD2CAN24T-QR|ComponentDescription=PESD2CAN24T-Q|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=350|Location.Y=250|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=IHPAPGIK|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=3
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=323|Y1=252|X2=337|Y2=252|X3=330|Y3=270|X4=323|Y4=252|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=323|Y1=266|X2=323|Y2=270|X3=337|Y3=270|X4=337|Y4=274|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=337|Y1=248|X2=323|Y2=248|X3=330|Y3=230|X4=337|Y4=248|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=337|Y1=234|X2=337|Y2=230|X3=323|Y3=230|X4=323|Y4=226|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=330|Y1=252|X2=330|Y2=248|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=330|Y1=280|X2=330|Y2=270|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=330|Y1=230|X2=330|Y2=220|X3=350|Y3=220|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=363|Y1=252|X2=377|Y2=252|X3=370|Y3=270|X4=363|Y4=252|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=363|Y1=266|X2=363|Y2=270|X3=377|Y3=270|X4=377|Y4=274|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=377|Y1=248|X2=363|Y2=248|X3=370|Y3=230|X4=377|Y4=248|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=4|X1=377|Y1=234|X2=377|Y2=230|X3=363|Y3=230|X4=363|Y4=226|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=370|Y1=252|X2=370|Y2=248|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=370|Y1=280|X2=370|Y2=270|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=3|X1=370|Y1=230|X2=370|Y2=220|X3=350|Y3=220|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=350|Y1=220|X2=350|Y2=210|OwnerIndex=597|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=597|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=330|Location.Y=280|Name=K1|Designator=1|SwapIdPart=1|UniqueID=VLDISLYE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=597|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=370|Location.Y=280|Name=K2|Designator=2|SwapIdPart=1|UniqueID=GCLWHJXB|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=597|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=350|Location.Y=210|Name=CC|Designator=3|SwapIdPart=1|UniqueID=OFJOTBFA|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=597|OwnerPartId=-1|Location.X=400|Location.Y=260|Color=128|FontID=1|Text=D3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|Location.X=400|Location.Y=243|Color=128|FontID=3|Text=PESD2CAN24T-Q|Name=Comment
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Nexperia|Name=Manufacturer
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PESD2CAN24T-QR|Name=MPN
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PESD2CAN24T-QR|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PESD2CAN24T-Q|Name=Description
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf|Name=Datasheet
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=597|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=597
+|RECORD=45|OwnerIndex=627|ModelName=SOT23|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=SOT23|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=WIGZPYCB
+|RECORD=46|OwnerIndex=628
+|RECORD=48|OwnerIndex=628
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=330|Y1=300|X2=330|Y2=400
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=370|Y1=300|X2=370|Y2=360
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=350|Y1=190|X2=350|Y2=180
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=350|Location.Y=180|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_0805_100NF_16V_X7R|DesignItemId=C_0805_100NF_16V_X7R|ComponentDescription=100nF 16V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=830|Location.Y=430|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=IBUIQBHK|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=816|Y1=435|X2=844|Y2=435|OwnerIndex=635|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=830|Y1=450|X2=830|Y2=435|OwnerIndex=635|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=830|Y1=410|X2=830|Y2=425|OwnerIndex=635|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=816|Y1=425|X2=844|Y2=425|OwnerIndex=635|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=635|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=830|Location.Y=450|Name=1|Designator=1|SwapIdPart=1|UniqueID=FUVWDYQP|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=635|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=830|Location.Y=410|Name=2|Designator=2|SwapIdPart=1|UniqueID=BHBZQJTP|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=635|OwnerPartId=-1|Location.X=856|Location.Y=440|Color=128|FontID=1|Text=C4|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|Location.X=856|Location.Y=423|Color=128|FontID=3|Text=100nF 16V X7R|Name=Comment
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=100nF 16V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=635|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=635
+|RECORD=45|OwnerIndex=653|ModelName=C0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=QFSZUELU
+|RECORD=46|OwnerIndex=654
+|RECORD=48|OwnerIndex=654
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=980|Y1=430|X2=980|Y2=490
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=980|Y1=490|X2=830|Y2=490
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=830|Y1=490|X2=830|Y2=470
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=830|Location.Y=490|Orientation=1|Color=128|Text=5V_BUS|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=830|Y1=390|X2=830|Y2=250
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=830|Location.Y=250|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=1|LibReference=C_0805_100NF_16V_X7R|DesignItemId=C_0805_100NF_16V_X7R|ComponentDescription=100nF 16V X7R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1230|Location.Y=430|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=DUARLFDX|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1216|Y1=435|X2=1244|Y2=435|OwnerIndex=663|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1230|Y1=450|X2=1230|Y2=435|OwnerIndex=663|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1230|Y1=410|X2=1230|Y2=425|OwnerIndex=663|OwnerPartId=1|IsNotAccesible=T
+|RECORD=6|LineWidth=1|Color=128|LocationCount=2|X1=1216|Y1=425|X2=1244|Y2=425|OwnerIndex=663|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=663|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1230|Location.Y=450|Name=1|Designator=1|SwapIdPart=1|UniqueID=RXRXMIXO|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=663|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1230|Location.Y=410|Name=2|Designator=2|SwapIdPart=1|UniqueID=AWNKRHFK|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=663|OwnerPartId=-1|Location.X=1256|Location.Y=440|Color=128|FontID=1|Text=C5|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|Location.X=1256|Location.Y=423|Color=128|FontID=3|Text=100nF 16V X7R|Name=Comment
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=100nF 16V X7R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=663|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=663
+|RECORD=45|OwnerIndex=681|ModelName=C0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=C0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=XAFXXRCT
+|RECORD=46|OwnerIndex=682
+|RECORD=48|OwnerIndex=682
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1140|Y1=430|X2=1140|Y2=490
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1140|Y1=490|X2=1230|Y2=490
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1230|Y1=490|X2=1230|Y2=470
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=1230|Location.Y=490|Orientation=1|Color=128|Text=3V3_LOGIC|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1230|Y1=390|X2=1230|Y2=320
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1230|Location.Y=320|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=980|Y1=350|X2=980|Y2=180
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=980|Location.Y=180|Orientation=3|Color=128|Text=GND_BUS|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1140|Y1=350|X2=1140|Y2=150
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1140|Location.Y=150|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=1|LibReference=R_0805_33R|DesignItemId=R_0805_33R|ComponentDescription=33R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1500|Location.Y=400|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=CBHNZXWH|Color=128|AreaColor=16777215|Orientation=2|PartIDLocked=F|AllPinCount=2
+|RECORD=14|Location.X=1480|Location.Y=392|Corner.X=1520|Corner.Y=408|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=695|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=695|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=1520|Location.Y=400|Name=1|Designator=1|SwapIdPart=1|UniqueID=HKAZLAUM|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=695|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=1480|Location.Y=400|Name=2|Designator=2|SwapIdPart=1|UniqueID=TFFCADHN|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=695|OwnerPartId=-1|Location.X=1460|Location.Y=430|Color=128|FontID=1|Text=R3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|Location.X=1460|Location.Y=413|Color=128|FontID=3|Text=33R|Name=Comment
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=33R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R_TX|Name=Role
+|RECORD=41|OwnerIndex=695|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=695
+|RECORD=45|OwnerIndex=711|ModelName=R0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=R0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=YNFJMWXY
+|RECORD=46|OwnerIndex=712
+|RECORD=48|OwnerIndex=712
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1140|Y1=400|X2=1460|Y2=400
+|RECORD=25|OwnerPartId=-1|Location.X=1310|Location.Y=400|Color=128|FontID=3|Text=TXD
+|RECORD=1|LibReference=R_0805_33R|DesignItemId=R_0805_33R|ComponentDescription=33R - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1500|Location.Y=380|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=CWAJRZFO|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=2
+|RECORD=14|Location.X=1480|Location.Y=372|Corner.X=1520|Corner.Y=388|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=717|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=717|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=50|PinLength=20|Location.X=1480|Location.Y=380|Name=1|Designator=1|SwapIdPart=1|UniqueID=IAMWNBTE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=717|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=48|PinLength=20|Location.X=1520|Location.Y=380|Name=2|Designator=2|SwapIdPart=1|UniqueID=GGJWEHVT|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=717|OwnerPartId=-1|Location.X=1480|Location.Y=346|Color=128|FontID=1|Text=R4|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|Location.X=1480|Location.Y=329|Color=128|FontID=3|Text=33R|Name=Comment
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=33R - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R_RX|Name=Role
+|RECORD=41|OwnerIndex=717|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=717
+|RECORD=45|OwnerIndex=733|ModelName=R0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=R0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=PFRCKXQS
+|RECORD=46|OwnerIndex=734
+|RECORD=48|OwnerIndex=734
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1140|Y1=380|X2=1460|Y2=380
+|RECORD=25|OwnerPartId=-1|Location.X=1320|Location.Y=380|Color=128|FontID=3|Text=RXD
+|RECORD=1|LibReference=R_0805_10K|DesignItemId=R_0805_10K|ComponentDescription=10k - generic specification; manufacturer/MPN not selected|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1360|Location.Y=440|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=GFUWLDML|Color=128|AreaColor=16777215|Orientation=3|PartIDLocked=F|AllPinCount=2
+|RECORD=14|Location.X=1352|Location.Y=420|Corner.X=1368|Corner.Y=460|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=739|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=739|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=49|PinLength=20|Location.X=1360|Location.Y=460|Name=1|Designator=1|SwapIdPart=1|UniqueID=DFKAJZEJ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=739|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=51|PinLength=20|Location.X=1360|Location.Y=420|Name=2|Designator=2|SwapIdPart=1|UniqueID=ZEYRQXTG|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=739|OwnerPartId=-1|Location.X=1380|Location.Y=450|Color=128|FontID=1|Text=R2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|Location.X=1380|Location.Y=433|Color=128|FontID=3|Text=10k|Name=Comment
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=MPN
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=10k - generic specification; manufacturer/MPN not selected|Name=Description
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Datasheet
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=Footprint Status
+|RECORD=41|OwnerIndex=739|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=739
+|RECORD=45|OwnerIndex=754|ModelName=R0805|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=R0805|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=LVLKGTHU
+|RECORD=46|OwnerIndex=755
+|RECORD=48|OwnerIndex=755
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1360|Y1=480|X2=1360|Y2=490
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=1360|Location.Y=490|Orientation=1|Color=128|Text=3V3_LOGIC|FontID=3
+|RECORD=1|LibReference=ESP32_C3_SUPERMINI_NOLOGO|DesignItemId=ESP32_C3_SUPERMINI_NOLOGO|ComponentDescription=Nologo ESP32-C3 SuperMini module, two 1x8 carrier headers, GPIO6 TX / GPIO7 RX|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1870|Location.Y=380|CurrentPartId=1|SourceLibraryName=Orion-Bridge.SchLib|TargetFileName=*|UniqueID=ABXBAKXO|Color=128|AreaColor=16777215|Orientation=0|PartIDLocked=F|AllPinCount=16
+|RECORD=14|Location.X=1800|Location.Y=260|Corner.X=1940|Corner.Y=500|LineWidth=1|Color=128|AreaColor=16777215|IsSolid=F|OwnerIndex=760|OwnerPartId=1|IsNotAccesible=T
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=2|PinConglomerate=58|PinLength=20|Location.X=1800|Location.Y=400|Name=GPIO6 / TX|Designator=6|SwapIdPart=1|UniqueID=AZYQTBOH|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=58|PinLength=20|Location.X=1800|Location.Y=360|Name=GPIO7 / RX|Designator=7|SwapIdPart=1|UniqueID=QGPOUKKJ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=57|PinLength=20|Location.X=1830|Location.Y=500|Name=3V3|Designator=3V3|SwapIdPart=1|UniqueID=ERNBNWOF|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=57|PinLength=20|Location.X=1910|Location.Y=500|Name=5V|Designator=5V|SwapIdPart=1|UniqueID=PAMBVZBM|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=59|PinLength=20|Location.X=1870|Location.Y=260|Name=GND|Designator=GND|SwapIdPart=1|UniqueID=HXHYPHZG|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=480|Name=GPIO5|Designator=5|SwapIdPart=1|UniqueID=AHULQEDY|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=460|Name=GPIO4|Designator=4|SwapIdPart=1|UniqueID=GEUCJDRE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=440|Name=GPIO3|Designator=3|SwapIdPart=1|UniqueID=UMKYDPJZ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=420|Name=GPIO2|Designator=2|SwapIdPart=1|UniqueID=GJATSHOV|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=400|Name=GPIO1|Designator=1|SwapIdPart=1|UniqueID=DEOEBFFE|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=380|Name=GPIO0|Designator=0|SwapIdPart=1|UniqueID=HIFGFMEK|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=360|Name=GPIO8|Designator=8|SwapIdPart=1|UniqueID=MDMFQVAR|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=340|Name=GPIO9|Designator=9|SwapIdPart=1|UniqueID=NVXRKGCD|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=320|Name=GPIO10|Designator=10|SwapIdPart=1|UniqueID=TBGANENX|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=300|Name=GPIO20|Designator=20|SwapIdPart=1|UniqueID=PEUNKKFQ|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=2|OwnerIndex=760|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1940|Location.Y=280|Name=GPIO21|Designator=21|SwapIdPart=1|UniqueID=DUIOAUVM|Name_CustomFontID=3|Designator_CustomFontID=3|PinName_PositionConglomerate=16|PinDesignator_PositionConglomerate=16
+|RECORD=34|OwnerIndex=760|OwnerPartId=-1|Location.X=1640|Location.Y=535|Color=128|FontID=1|Text=MCU1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|Location.X=1640|Location.Y=518|Color=128|FontID=3|Text=ESP32-C3 SuperMini|Name=Comment
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Nologo Tech|Name=Manufacturer
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ESP32-C3 SuperMini|Name=MPN
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ESP32-C3 SuperMini|Name=Manufacturer Part Number
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Nologo ESP32-C3 SuperMini module, two 1x8 carrier headers, GPIO6 TX / GPIO7 RX|Name=Description
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware|Name=Datasheet
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier 1
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=|Name=Supplier Part Number 1
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Nologo source-based header geometry; selected clone, sockets and USB clearance require mechanical review|Name=Footprint Status
+|RECORD=41|OwnerIndex=760|OwnerPartId=-1|IsHidden=T|FontID=1|Text=Nologo source-based header geometry; selected clone, sockets and USB clearance require mechanical review|Name=ReviewStatus
+|RECORD=44|OwnerIndex=760
+|RECORD=45|OwnerIndex=789|ModelName=NOLOGO_C3_SUPERMINI_THT_2X8|ModelType=PCBLIB|DatafileCount=1|ModelDatafile0=Orion-Bridge.PcbLib|ModelDatafileEntity0=NOLOGO_C3_SUPERMINI_THT_2X8|ModelDatafileKind0=PCBLib|IsCurrent=T|UniqueID=ZBJNAPYG
+|RECORD=46|OwnerIndex=790
+|RECORD=48|OwnerIndex=790
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1540|Y1=400|X2=1650|Y2=400
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1650|Y1=400|X2=1780|Y2=400
+|RECORD=25|OwnerPartId=-1|Location.X=1670|Location.Y=400|Color=128|FontID=3|Text=GPIO6
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1540|Y1=380|X2=1650|Y2=380
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1650|Y1=380|X2=1650|Y2=360
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1650|Y1=360|X2=1780|Y2=360
+|RECORD=25|OwnerPartId=-1|Location.X=1670|Location.Y=360|Color=128|FontID=3|Text=GPIO7
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=480|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=360|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=340|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=320|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=300|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=280|Color=255
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1910|Y1=520|X2=1910|Y2=540
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=1910|Location.Y=540|Orientation=1|Color=128|Text=5V_MODULE|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1870|Y1=240|X2=1870|Y2=130
+|RECORD=17|OwnerPartId=-1|Style=4|ShowNetName=T|Location.X=1870|Location.Y=130|Orientation=3|Color=128|Text=GND_LOGIC|FontID=3
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1830|Y1=520|X2=1830|Y2=540
+|RECORD=17|OwnerPartId=-1|Style=2|ShowNetName=T|Location.X=1830|Location.Y=540|Orientation=1|Color=128|Text=3V3_LOGIC|FontID=3
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=460|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=440|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=420|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=400|Color=255
+|RECORD=22|OwnerPartId=-1|Location.X=1960|Location.Y=380|Color=255
+|RECORD=13|OwnerPartId=-1|Location.X=70|Location.Y=95|Corner.X=2140|Corner.Y=95|Color=12040119|LineWidth=1
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=65|FontID=1|Text=Lokale Referenzen: Orion-Bridge.SchLib / Orion-Bridge.PcbLib. Supplier-Daten werden separat gepflegt.|Color=0
+|RECORD=4|OwnerPartId=-1|Location.X=70|Location.Y=40|FontID=1|Text=Entwicklungsstand: Versorgung ab 9 V, Thermik, Bauteilfreigabe und Routing vor Fertigung pruefen. Keine 120-Ohm-Terminierung auf dem Drop.|Color=0
+|RECORD=29|OwnerPartId=-1|Location.X=750|Location.Y=1090|Color=8388608|Size=1

@@ -1,0 +1,186 @@
+{
+  "printer": "Bambu Lab P2S 0.4 nozzle",
+  "parts": [
+    {
+      "material": "TPU",
+      "group": "production",
+      "name": "lid_gasket",
+      "path": "lid_gasket.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "usb_cover",
+      "path": "usb_cover.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "production",
+      "name": "usb_gasket",
+      "path": "usb_gasket.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "service_switch_cover",
+      "path": "service_switch_cover.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "production",
+      "name": "service_switch_gasket",
+      "path": "service_switch_gasket.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "cable_pressure_cap",
+      "path": "cable_pressure_cap.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.7,
+      "free_length_mm": 6.6,
+      "name": "cable_seal_b6p7_L6p6",
+      "path": "cable_seal_b6p7_L6p6.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.7,
+      "free_length_mm": 6.8,
+      "name": "cable_seal_b6p7_L6p8",
+      "path": "cable_seal_b6p7_L6p8.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.7,
+      "free_length_mm": 7.0,
+      "name": "cable_seal_b6p7_L7p0",
+      "path": "cable_seal_b6p7_L7p0.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.8,
+      "free_length_mm": 6.6,
+      "name": "cable_seal_b6p8_L6p6",
+      "path": "cable_seal_b6p8_L6p6.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "production",
+      "bore_mm": 6.8,
+      "free_length_mm": 6.8,
+      "name": "cable_seal_b6p8_L6p8",
+      "path": "cable_seal_b6p8_L6p8.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.8,
+      "free_length_mm": 7.0,
+      "name": "cable_seal_b6p8_L7p0",
+      "path": "cable_seal_b6p8_L7p0.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.9,
+      "free_length_mm": 6.6,
+      "name": "cable_seal_b6p9_L6p6",
+      "path": "cable_seal_b6p9_L6p6.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.9,
+      "free_length_mm": 6.8,
+      "name": "cable_seal_b6p9_L6p8",
+      "path": "cable_seal_b6p9_L6p8.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "alternative",
+      "bore_mm": 6.9,
+      "free_length_mm": 7.0,
+      "name": "cable_seal_b6p9_L7p0",
+      "path": "cable_seal_b6p9_L7p0.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "strain_relief_upper",
+      "path": "strain_relief_upper.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "calibration",
+      "name": "clamp_shims_0p2",
+      "path": "clamp_shims_0p2.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "calibration",
+      "name": "clamp_shims_0p4",
+      "path": "clamp_shims_0p4.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "base",
+      "path": "base.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "name": "lid_body",
+      "path": "lid_body.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "production",
+      "shared_origin": "lid_body",
+      "name": "lid_markings",
+      "path": "lid_markings.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "calibration",
+      "name": "entry_fit_coupon",
+      "path": "entry_fit_coupon.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "calibration",
+      "name": "face_stop_coupon_1p4",
+      "path": "face_stop_coupon_1p4.stl"
+    },
+    {
+      "material": "PETG",
+      "group": "calibration",
+      "name": "face_stop_coupon_1p6",
+      "path": "face_stop_coupon_1p6.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "calibration",
+      "name": "face_test_gasket",
+      "path": "face_test_gasket.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "calibration",
+      "name": "shore_comparison_pad",
+      "path": "shore_comparison_pad.stl"
+    },
+    {
+      "material": "TPU",
+      "group": "calibration",
+      "name": "flow_wall_coupon",
+      "path": "flow_wall_coupon.stl"
+    }
+  ]
+}

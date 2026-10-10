@@ -1,0 +1,18 @@
+{
+  "source_revision": "R4",
+  "scope": "Reused actual Altium uniform board-edge rule serializer/engine behavior proof only. Not an R5 board, routing or DRC pass. Fresh R5 0.30mm actual numeric rule and fresh R5 zero-violation DRC mandatory.",
+  "files": [
+    {
+      "path": "BoardEdge-negative-0_31mm.drc",
+      "sha256": "ee823840fb9a5479efc9544e8b3ac1a49909bb1c6d1878dcfc4bb431044d2a9e"
+    },
+    {
+      "path": "BoardEdge-negative-0_31mm.html",
+      "sha256": "2572abcba87b95d61233c9c164d037774d1fed3e7472193ca124ed6d894eba08"
+    },
+    {
+      "path": "BoardEdge-negative-0_31mm-rule.json",
+      "sha256": "5564f71170c7aa7e46d3cb88f69879049103034fb89efc6f8403a878956a3991"
+    }
+  ]
+}

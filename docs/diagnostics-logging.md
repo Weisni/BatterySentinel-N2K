@@ -1,205 +1,74 @@
-# Diagnostics, Logging, Time Sync and Power-Loss Strategy
+# Orion Bridge observations, notifications and time
 
-## Startup diagnostics Wi-Fi
+Firmware **1.2.0** adds **Insights** and **Alerts** to the local portal. They use Orion input/output measurements while the bridge is powered. They do not measure all battery consumers, estimate battery state of charge, resistance, health or remaining runtime, or control charging.
 
-BatterySentinel starts a secured local Wi-Fi access point on every boot because the installed unit may be physically hard to reach.
+## Read the observations
 
-Default behavior:
+The two cards use your saved channel names. The input card describes the Orion input; the output card describes its output. A battery name does not change the measurement location.
 
-1. Boot device.
-2. Start WPA2 access point `BatterySentinel-XXXX` where `XXXX` is derived from the device ID.
-3. Start local HTTP service and mDNS name `batterysentinel.local`.
-4. Keep the access point available for **5 minutes**.
-5. If no station has associated during that window, stop Wi-Fi completely.
-6. If a station connects during the window, keep diagnostics active while at least one station remains connected.
-7. After the last station disconnects, wait 60 seconds and stop Wi-Fi unless another station reconnects.
+| Display | Meaning |
+| --- | --- |
+| Minimum / maximum voltage | Lowest/highest valid channel voltage observed since this start |
+| Voltage history | Up to 60 consecutive recent samples within a maximum five-minute window; the actual span depends on packet arrival |
+| Voltage trend | Fitted change in V/min over the displayed span; available after at least three samples spanning ten seconds |
+| Observed Orion charge / energy | Ah/Wh integrated from valid forward channel current and voltage over covered intervals |
+| Voltage coverage / energy duration | Valid voltage observation coverage and the duration actually included in Ah/Wh |
+| Observed time below the low limit | Covered time with voltage below the saved low threshold shown on the card; resets when that threshold changes |
 
-The AP password is unique per device and printed on the internal enclosure label. Do not ship V1 with an open AP or a universal default password.
+A gap longer than **five seconds**, missing voltage or an invalid record breaks continuity. Recent history/trend starts a new continuous segment; the bridge does not draw or integrate through an unknown interval. Already observed totals and extrema remain. Uncharacterized reverse current is excluded from forward Ah/Wh. Zero Ah with zero covered time is not proof that no energy flowed.
 
-## Browser UI
+Observations, active incidents and recent events are held in RAM and start again after reboot. They are not a persistent voyage log or evidence of conditions while power was off. Changing the configured Orion also resets its observations. Notification settings remain saved.
 
-The local browser UI contains:
+Rising voltage during charging and falling voltage after charging describe a trend, not battery condition. Voltage warnings remain active during charging and relaxation. Ordinary live telemetry/NMEA publication has its separate **ten-second** stale timeout; the shorter five-second limit protects calculations.
 
-### Dashboard
+## Set notifications
 
-- System battery voltage, current, power and SOC.
-- Bow battery voltage, current, power and SOC.
-- SOC confidence/status (`SYNCED`, `ESTIMATED`, `WAITING_FOR_REST`, `UNKNOWN`).
-- Current NMEA source state and most recent network UTC time.
-- Active warnings and their age.
+Open **Alerts** (German: **Meldungen**), review both named connections, set appropriate limits and choose **Save notifications**. Notifications are **globally disabled by default**. Rules run only with the master enabled and an Orion configured.
 
-### Configuration
+| Setting | Default | Allowed range / behavior |
+| --- | --- | --- |
+| Enable notifications | Off | Master switch |
+| Low voltage, each channel | On; warn below 12.00 V | Configurable threshold |
+| Clear low voltage | At or above 12.30 V | Above the low warning threshold |
+| High voltage, each channel | Off; warn above 15.00 V | Configurable threshold |
+| Clear high voltage | At or below 14.70 V | Below high warning, above low clear |
+| Confirm voltage warning / clear | 10 s / 30 s | Each 1-600 s; shared by that channel's low/high rules |
+| Missing Orion data | On; 30 s | 10-3600 s since last valid record, or from configuration if none arrived |
+| Orion charger error | On | Fixed 10 s to warn / 30 s to clear; unknown error is not clear |
+| Repeat unacknowledged warnings | 0 min | 0 disables reminders; otherwise 1-1440 min |
+| Request Garmin notifications | Off | Experimental; requires testing on the installed plotter |
 
-Per battery:
+All four voltage settings must be within **4-65 V**, with low warning < low clear < high clear < high warning. This accepted input range is not a recommendation for a particular battery. Voltage and charger-error confirmation/clearing need at least three distinct valid records over the required duration. Missing-data activation instead uses the absence timeout; clearing requires fresh valid records again. Missing data interrupts confirmation and never silently clears an existing voltage/error warning; its condition becomes unknown.
 
-- Battery capacity in Ah.
-- Shunt resistance / calibration factor.
-- Low and critical SOC thresholds.
-- Idle undervoltage threshold and delay.
-- High-load undervoltage threshold and delay.
-- Overvoltage threshold and delay.
-- Overcurrent threshold and delay.
-- Full-charge voltage, tail-current percentage and full-detect delay.
-- OCV correction enable / weighting.
-- Friendly battery name and NMEA battery instance.
+Select **Acknowledge** to stop that incident's local reminders. The active card and a banner on every portal tab remain until the condition clears. Acknowledgment does not change thresholds or remove the cause. A new incident requires a new acknowledgment. Disabling a rule cancels its incident. During a connection failure the banner says that warning status is unavailable; it does not imply all-clear.
 
-Settings are range-checked before being committed. A factory-default configuration remains available in firmware.
+Unsaved settings survive polling and language changes. A rejected save keeps the previous stored settings. A review notice means the stored notification configuration needs checking and saving.
 
-### Diagnostics
+## Garmin delivery
 
-- INA238 raw shunt register and calculated microvolts.
-- INA238 raw bus-voltage register.
-- I2C communication errors/recovery count.
-- CAN/NMEA TX/RX counters and bus errors.
-- Latest received UTC source and age.
-- Firmware version, reset reason, uptime and supply state.
-- External SPI NOR status and free log capacity.
-- FRAM CRC/status and last clean/unclean shutdown flag.
+The optional sender emits NMEA alert/status and text (PGNs 126983 and 126985). Delivery is **experimental and unverified on the installed chartplotter**. An accepted local send request does not prove receipt, display, sound or clearing. Plotter acknowledgment is not supported; acknowledge in this portal.
 
-### Logger
+Garmin documents GPSMAP 7x3 reception of these alert messages. That establishes directions, not compatibility with every custom alert. Its documented **Unit Voltage** alarm does not establish separate alarms for arbitrary received battery instances. [Garmin PGN table](https://www8.garmin.com/manuals/webhelp/GUID-BF2FF273-008A-482A-A96F-362ADA8996BA/EN-US/GUID-0C4B3FAB-3E41-438C-B31E-9B5489790913.html), [System Alarms](https://www8.garmin.com/manuals/webhelp/GUID-3E67C80C-0812-4EEC-BC60-699751B9CF6F/EN-US/GUID-353F7FD4-424B-4993-8124-A3CB450297BE.html).
 
-- Recent normal-history plot.
-- Event list (starter, bow thruster, undervoltage, overcurrent, sensor fault, reset, power loss).
-- View an event with high-rate pre/post-trigger data.
-- CSV export.
-- Delete log / reset ring buffer.
+The Alerts page warns when the bounded record of 24 retired alert identities is full and a new remote occurrence or reassignment must wait. This is not a general delivery queue or a receipt confirmation. Check the local active cards and the chartplotter. Disabling delivery still permits withdrawal traffic for earlier remote warnings. A deliberate restart attempts withdrawal up to three times, with a maximum five-second wait. Receiver clearing remains unconfirmed; abrupt power loss cannot deliver a final withdrawal, and pending withdrawal history is not saved across restart. The portal does not provide a persistent report of failed shutdown withdrawals.
 
-### Firmware update
+Validate activation, repeats, local acknowledgment, clearing, disconnection and restart on the actual Garmin/software before relying on its presentation. Evaluation continues with the browser closed while the bridge is powered. There are no phone push, email or internet notifications.
 
-- OTA firmware upload from the local browser.
-- Verify image header, target, version and SHA-256 before selecting it for boot.
-- Keep the previous application partition until the new image successfully boots and marks itself healthy.
-- Firmware update is available only while the secured diagnostics AP is active.
+## Network UTC and the event timeline
 
-For OTA margin use **ESP32-C3-WROOM-02-N8 (8 MB flash)** instead of H4/N4 in the production BOM.
+Calculations and confirmation periods always use monotonic device time. Calendar time is optional and is not required for a warning.
 
-## Logging architecture
+The bridge listens for UTC in **129029 GNSS position data** and **126992 System time** and requests them while acquiring time. Garmin lists 129029 as transmit/receive for the GPSMAP 723xsv family, but 126992 as receive-only; do not assume the plotter sends 126992. Another source may provide it. [Garmin PGN directions](https://www8.garmin.com/manuals/webhelp/GUID-BF2FF273-008A-482A-A96F-362ADA8996BA/EN-US/GUID-0C4B3FAB-3E41-438C-B31E-9B5489790913.html).
 
-Use one external **32 MB SPI NOR flash** as a circular logger. Recommended class: W25Q256-compatible 256-Mbit NOR.
+The clock needs three consistent advancing observations from an identified source spanning at least one second. Date/time and GNSS quality are validated. Identity/consistency checks are not cryptographic authentication. No internet clock or timezone setting is needed; displayed calendar time is **UTC**.
 
-### Long-term data
+| Clock state | Interpretation |
+| --- | --- |
+| Unknown / acquiring | No established calendar time; events show uptime |
+| Synchronized | A validated recent network clock is available |
+| Holdover | No accepted update for over 30 s; estimated time continues from the last trusted anchor |
+| Conflict / quarantined | An inconsistent jump was rejected; the previous trusted correlation is retained |
 
-Normal recording rate: **1 sample/s**.
+An accepted clock lets earlier events from **the same boot** receive estimated calendar times. They are labeled as backdated. Browser caches and event cursors reset when the boot identity changes. Clock and shutdown time are not persisted; elapsed power-off time remains unknown.
 
-Use a compact fixed-size binary record rather than JSON. Target record size <= 24 bytes, for example:
-
-- Unix UTC seconds / relative time: 4 bytes.
-- System voltage: 2 bytes fixed-point.
-- System current: 2 bytes fixed-point.
-- System SOC: 1 byte.
-- Bow voltage: 2 bytes.
-- Bow current: 2 bytes.
-- Bow SOC: 1 byte.
-- Alert/status flags: 2 bytes.
-- Record sequence / source flags / reserved.
-- CRC16.
-
-At 24 bytes/s this is approximately 2.07 MB/day, so five days use about 10.4 MB. A 32 MB device therefore leaves comfortable space for event logs and filesystem/ring overhead.
-
-### Event capture
-
-The acquisition loop runs at **50 Hz** (20 ms). Keep the latest 10 seconds of raw samples in a RAM circular pre-trigger buffer.
-
-Trigger event capture on:
-
-- starter current above configured starter-event threshold;
-- bow-thruster current above configured threshold;
-- low voltage;
-- overvoltage;
-- overcurrent;
-- sensor fault;
-- reset/reboot;
-- power-loss interrupt.
-
-On trigger, store:
-
-- 10 seconds before event;
-- event itself;
-- 30 seconds after event;
-- event reason and max/min statistics.
-
-At a 24-byte combined record, a 40-second 50-Hz event is about 48 kB. This is small compared with the 32 MB logger.
-
-The NOR flash uses a sequential circular sector scheme with sequence numbers and per-record/per-sector CRC. Do not rewrite a single metadata sector on every sample.
-
-## FRAM state store
-
-Add a small I2C FRAM on the **GND_SYS** side, e.g. 32 kB class.
-
-FRAM stores small state/checkpoint data only, not the multi-day log:
-
-- system SOC / consumed Ah;
-- bow SOC / consumed Ah;
-- last valid network UTC;
-- last shutdown UTC;
-- last clean-shutdown flag;
-- configuration copy / version / CRC;
-- log write pointer / sequence checkpoint;
-- last event counters.
-
-Checkpoint the dynamic SOC state approximately once per second. This makes the power-loss shutdown routine very short and avoids relying on frequent internal ESP flash writes.
-
-## Network time
-
-Garmin GPSMAP 7x3 supports PGN 129029 GNSS Position Data as transmit/receive traffic, while PGN 126992 System Time is listed as receive-only on the Garmin. BatterySentinel therefore listens primarily for a valid UTC date/time in **PGN 129029** from any NMEA source.
-
-Behavior:
-
-- Once a valid UTC sample is received, maintain software time from `millis()` between NMEA updates.
-- Save current UTC in FRAM during clean power-down.
-- At next boot, wait for current network UTC and calculate the off duration from the stored shutdown time.
-- If no valid NMEA UTC becomes available, logs remain ordered by monotonic boot-relative time but the off duration is marked unknown.
-
-No dedicated battery-backed RTC is required for V1.
-
-## SOC behavior while ignition is off
-
-The monitor is not powered continuously, so it cannot coulomb-count while ignition is off.
-
-For the system battery, the exact supplied GTIN 9005753086036 resolves to Duracell Advanced DA80, 80 Ah / 700 A EN. The manufacturer datasheet specifies about **3 % self-discharge per month**, or roughly 0.1 %/day as an engineering estimate.
-
-Since there are no permanent loads with ignition off:
-
-1. Persist SOC and UTC at shutdown.
-2. At next valid network time, apply only the very small self-discharge estimate based on off-time.
-3. Do **not** assume there was no external charger.
-4. If voltage/current indicates active charging, suspend OCV correction and let coulomb counting/full-charge synchronization take over.
-5. If the battery is at rest, use a slow OCV plausibility correction.
-6. If a previous external charge is suspected from a voltage/SOC mismatch, lower SOC confidence until either a true resting condition or a full-charge synchronization is observed.
-
-The displayed SOC therefore remains an estimate, with an internal confidence state rather than pretending to be exact.
-
-## Power-loss hold-up
-
-Because BatterySentinel is powered from the switched ignition feed of the system battery, switching ignition off removes its input supply. Detect this before the logic rail collapses.
-
-Recommended topology:
-
-```text
-IGN 12 V
-   |
-input protection
-   |
-AP63205 5 V
-   +-------------------> D1 ---> V_HOLD ---> 3V3 regulator ---> ESP32 + FRAM
-   |
-   +-- RCHG 47R ---> 0.22 F / 5.5 V supercap
-                       |
-                       +-------> D2 ---> V_HOLD
-
-IGN_RAW / protected input ---> divider/comparator ---> GPIO IGN_SENSE
-```
-
-D1 supplies the logic normally. RCHG limits supercap inrush. When 5 V disappears, D2 lets the supercap hold V_HOLD without discharging back into the buck/input circuit.
-
-On `IGN_SENSE` falling edge:
-
-1. stop accepting new OTA/config writes;
-2. disable Wi-Fi immediately;
-3. stop isolated bow power if hardware provides an enable;
-4. finalize current event/log sector;
-5. write latest state, UTC, clean-shutdown marker and CRC to FRAM;
-6. flush only essential logger metadata;
-7. enter low-consumption loop until power collapses.
-
-With Wi-Fi off, the required shutdown should normally finish in far below one second. The 0.22 F hold-up target intentionally provides multiple seconds of margin rather than depending on a precise two-second value.
+The Monitor holds a bounded recent event list: warnings activated/cleared/acknowledged/cancelled, reminders and clock-state changes. Record details before reboot. Remove passwords and Orion readout keys from screenshots and support messages.

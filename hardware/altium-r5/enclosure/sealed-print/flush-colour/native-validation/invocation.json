@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Program Files\\OrcaSlicer\\orca-slicer.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-flush-colour.3mf",
+    "--allow-newer-file",
+    "--raft-first-layer-expansion",
+    "0",
+    "--tree-support-wall-count",
+    "0",
+    "--slice",
+    "0",
+    "--debug",
+    "2",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\flush-colour\\native-validation",
+    "--export-3mf",
+    "disposable-native.3mf"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 5.619480609893799,
+  "stdout": "",
+  "stderr": "",
+  "compatibility_overrides": {
+    "raft_first_layer_expansion": "0",
+    "tree_support_wall_count": "0"
+  },
+  "overrides_applied_only_to_disposable_output": true
+}

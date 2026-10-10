@@ -1,0 +1,22 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "command": [
+    "C:/Program Files/OrcaSlicer/orca-slicer.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-complete.3mf",
+    "--allow-newer-file",
+    "--raft-first-layer-expansion",
+    "0",
+    "--tree-support-wall-count",
+    "0",
+    "--slice",
+    "1",
+    "--debug",
+    "2",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\flush-colour\\slicer-baseline-compatible",
+    "--export-3mf",
+    "disposable-baseline.3mf"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "revision": "Orion enclosure V2.3 - thin walls and projecting screw bosses",
+  "free_wall_mm": 3.0,
+  "texture_relief_mm": 0.6,
+  "floor_mm": 3.0,
+  "lid_rim_transition_start_mm": 23.2,
+  "lid_rim_transition_end_mm": 27.5,
+  "local_port_pad_mm": 8.0,
+  "cable_od_mm": 7.0,
+  "cable_od_source": "User measurement confirmed 2026-09-27",
+  "extension_mm": 16.0,
+  "cable_seal_bores_mm": [
+    6.7,
+    6.8,
+    6.9
+  ],
+  "cable_seal_lengths_mm": [
+    6.6,
+    6.8,
+    7.0
+  ],
+  "selected_seal_bore_mm": 6.8,
+  "selected_seal_length_mm": 6.8,
+  "face_seal_free_mm": 1.8,
+  "face_seal_closed_mm": 1.4,
+  "m3_pilot_diameter_mm": 4.0,
+  "m3_pilot_depth_mm": 6.7,
+  "m2_pilot_diameter_mm": 3.2,
+  "m2_pilot_depth_mm": 4.6,
+  "insert_status": "Nominal ruthex-compatible envelope; actual purchased insert bodies require coupon check",
+  "shore_a_targets": {
+    "lid_gasket": [
+      80,
+      85
+    ],
+    "usb_gasket": [
+      83,
+      88
+    ],
+    "service_switch_gasket": [
+      83,
+      88
+    ],
+    "cable_seal": [
+      85,
+      90
+    ]
+  },
+  "shore_status": "Engineering trial targets, not measured or certified temperature-to-hardness mappings",
+  "physical_qualification": "Pending coupon, creep, clamp pull and empty-case leak tests"
+}

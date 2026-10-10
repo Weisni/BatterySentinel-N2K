@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "errors": [],
+  "dimensions": {
+    "xmin": -2.6,
+    "ymin": -2.6,
+    "width": 55.2,
+    "height": 41.2,
+    "pcb_bottom": 6.5,
+    "pcb_top": 8.1,
+    "seam_z": 20.1,
+    "outer_height": 22.25,
+    "mount_centers": [
+      [
+        25.0,
+        -6.1
+      ],
+      [
+        25.0,
+        42.1
+      ]
+    ],
+    "clamp": {
+      "cable_center": [
+        -9.6,
+        18.0,
+        13.1
+      ],
+      "nominal_diameter": 6.0,
+      "minimum_clamp_bore": 5.8
+    }
+  },
+  "screw_engagement": 3.25,
+  "minimum_component_case_clearance": null,
+  "solid_volumes_mm3": {
+    "base": 12301.716797838182,
+    "lid": 5790.534095293129,
+    "pcb": 2850.177699473572
+  },
+  "status": "PROVISIONAL - module, USB and final layout not frozen",
+  "limitations": [
+    "User confirms exact SuperMini variant and mounting interface",
+    "Carrier outline, hole coordinates and component volumes frozen",
+    "Actual USB connector mouth position/height verified",
+    "Dry or wet installation selected; current concept is a dry service enclosure",
+    "Actual cable outer diameter measured; clamp coupon pull test",
+    "Insert-fit coupon on selected printer/material"
+  ],
+  "environmental_claim": "No tested IP rating; USB opening, split jacket clamp, lid seam and FDM porosity remain unsealed.",
+  "contract_sha256": "bc90f7ef0e4bcdcdc73e25af612a51867429252cdeea5442e89190d1c8f6161d"
+}

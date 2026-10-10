@@ -7,6 +7,20 @@
 
 namespace bs {
 
+// Controller status plus valid extended data frames received since startup.
+// Reception is CAN activity, not confirmation that a plotter accepted our PGNs.
+struct BusStatus {
+    bool running = false;
+    bool busOff = false;
+    bool recovering = false;
+    bool received = false;
+    uint32_t lastRxMs = 0;
+    uint32_t rxFrames = 0;
+    uint32_t txErrors = 0;
+    uint32_t rxErrors = 0;
+    uint32_t txFailed = 0;
+};
+
 // Minimal NMEA2000 hardware backend for ESP32-C3's native TWAI controller.
 // The external ISO1042 provides the physical CAN transceiver/isolation;
 // this class only owns the ESP32-C3 controller and its FreeRTOS queues.
@@ -17,6 +31,8 @@ public:
     bool driverReady() const { return driverReady_; }
     uint32_t txFailures() const { return txFailures_; }
     uint32_t rxDroppedFrames() const { return rxDroppedFrames_; }
+    // Main-loop only, like CANGetFrame(). Does not change controller state.
+    BusStatus busStatus() const;
 
 protected:
     bool CANSendFrame(unsigned long id,
@@ -34,6 +50,9 @@ private:
     bool driverReady_ = false;
     uint32_t txFailures_ = 0;
     uint32_t rxDroppedFrames_ = 0;
+    bool received_ = false;
+    uint32_t lastRxMs_ = 0;
+    uint32_t rxFrames_ = 0;
 };
 
 } // namespace bs

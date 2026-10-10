@@ -1,0 +1,30 @@
+[
+  {
+    "source": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Orion-Bridge-R4-Power.SchDoc",
+    "source_sha256": "e9d0f136ea4d6e0c1f9bf1421e356e720aec3dc0223bd9cbbdbd6f2cb95e32f6",
+    "pdf": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Schaltplan-R4-Power.pdf",
+    "geometry_preview_only": true,
+    "sheet_units": [
+      2230.0,
+      1570.0
+    ],
+    "ignored_unimplemented_records": {},
+    "approximate_text_overlap_candidates": [],
+    "powerports_inside_component_bodies": [],
+    "png": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Schaltplan-R4-Power.png"
+  },
+  {
+    "source": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Orion-Bridge-R4-Logic.SchDoc",
+    "source_sha256": "295f5c1207903107a4dc19f4ce12fbb01c68a85e3fab0b9898013a466ffd6ce1",
+    "pdf": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Schaltplan-R4-Logic.pdf",
+    "geometry_preview_only": true,
+    "sheet_units": [
+      2230.0,
+      1570.0
+    ],
+    "ignored_unimplemented_records": {},
+    "approximate_text_overlap_candidates": [],
+    "powerports_inside_component_bodies": [],
+    "png": "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r4\\Schaltplan-R4-Logic.png"
+  }
+]

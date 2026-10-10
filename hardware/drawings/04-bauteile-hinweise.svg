@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<rect x="0" y="0" width="420" height="29" fill="#182f41" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="14" y="12" font-family="Arial, sans-serif" font-size="6.2" font-weight="700" fill="white" text-anchor="start">Bauteile, Prüfstellen und Quellen</text>
+<text x="14" y="22" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#d8e5ec" text-anchor="start">Umsetzungsstand R1 | pin-genaue Referenzschaltung + mechanischer Layoutentwurf | keine Fertigungsdaten</text>
+<polyline points="14,279 406,279" fill="none" stroke="#92a2ad" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="14" y="285" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="start">BATTERY SENTINEL  |  ORION BRIDGE  |  R1  |  20.09.2026</text>
+<text x="14" y="291" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#526575" text-anchor="start">ENTWURF - keine Fertigungsfreigabe / keine Gerberdaten. Maße vor Layoutfreigabe prüfen.</text>
+<text x="405" y="286" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="end">4 / 4</text>
+<text x="15" y="41" font-family="Arial, sans-serif" font-size="3.6" font-weight="700" fill="#9a4e12" text-anchor="start">BAUTEILAUSWAHL</text>
+<rect x="14" y="47" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="51" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">U1</text>
+<text x="47" y="51" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">ISO1042DWVR</text>
+<text x="47" y="55.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">SOIC-8 DWV; kein schmales SOIC-8</text>
+<text x="17" y="62" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">U2</text>
+<text x="47" y="62" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">R3M-2405S/SMD</text>
+<text x="47" y="66.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">Original-Landpattern verwenden; CTRL offen</text>
+<rect x="14" y="69" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="73" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">U3</text>
+<text x="47" y="73" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">TPS7B6950QDCYRQ1</text>
+<text x="47" y="77.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">SOT-223; ersetzt LM2936 / 5 V, 150 mA</text>
+<text x="17" y="84" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">MCU1</text>
+<text x="47" y="84" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">ESP32-C3 SuperMini / 4 MB</text>
+<text x="47" y="88.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">ca. 23 x 18 mm; Header noch abzugleichen</text>
+<rect x="14" y="91" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="95" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">Q1 / Z1</text>
+<text x="47" y="95" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">DMP6023LE / BZT52C12</text>
+<text x="47" y="99.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">SOT-223 / SOD-123; Zener K an Source</text>
+<text x="17" y="106" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">F1</text>
+<text x="47" y="106" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">T0,8 A, &gt;=60 V</text>
+<text x="47" y="110.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">MPN/Footprint nach Inrush-/Thermikprüfung</text>
+<rect x="14" y="113" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="117" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">D1 / D2</text>
+<text x="47" y="117" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">SMBJ20A / SS36</text>
+<text x="47" y="121.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">SMB / SMC; Orientierung siehe Blatt 1</text>
+<text x="17" y="128" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">D3</text>
+<text x="47" y="128" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">PESD2CAN24T-QR</text>
+<text x="47" y="132.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">SOT-23; 1 CANH, 2 CANL, 3 GND_BUS</text>
+<rect x="14" y="135" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="139" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">L1</text>
+<text x="47" y="139" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">ACT45B-510-2P-TL003</text>
+<text x="47" y="143.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">1-4 und 2-3; 4,5 x 3,2 mm Gehäuse</text>
+<text x="17" y="150" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">R1 / R2</text>
+<text x="47" y="150" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">100 kΩ / 10 kΩ</text>
+<text x="47" y="154.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">0805 / 1 %</text>
+<rect x="14" y="157" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="161" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">R_TX / R_RX</text>
+<text x="47" y="161" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">je 33 Ω</text>
+<text x="47" y="165.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">0805; nahe am jeweiligen Treiberausgang</text>
+<text x="17" y="172" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">C1 / C2 / C3</text>
+<text x="47" y="172" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">47 µF50V / 1 µF50V / 10 µF16V</text>
+<text x="47" y="176.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">C3 X7R; effektive Kapazität &gt;=2,2 µF</text>
+<rect x="14" y="179" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="183" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">C4 / C5</text>
+<text x="47" y="183" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">je 100 nF X7R / 16 V</text>
+<text x="47" y="187.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">direkt an U1 VCC2/GND2 bzw. VCC1/GND1</text>
+<text x="17" y="194" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">C6 / C7</text>
+<text x="47" y="194" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">47 µF10V / 100 nF16V</text>
+<text x="47" y="198.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">U2-Ausgang; Lastkapazität gesamt prüfen</text>
+<rect x="14" y="201" width="239" height="11" fill="#f3f6f8" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="17" y="205" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">C8 / L2 / C9</text>
+<text x="47" y="205" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">10 µF50V / 15 µH&gt;=1A / 10 µF50V</text>
+<text x="47" y="209.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">X7R; L2 verlustarm, Isat &gt;=1 A, DCR prüfen</text>
+<text x="17" y="216" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#182f41" text-anchor="start">J1 / JP1</text>
+<text x="47" y="216" font-family="Arial, sans-serif" font-size="2.85" font-weight="400" fill="#182f41" text-anchor="start">5-pol. Pigtailklemme / 2-pol. Jumper</text>
+<text x="47" y="220.4" font-family="Arial, sans-serif" font-size="2.55" font-weight="400" fill="#526575" text-anchor="start">Raster und MPN noch festzulegen</text>
+<rect x="264" y="37" width="142" height="62" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="268" y="44" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">Vor einer Platinenbestellung</text>
+<text x="270" y="51" font-family="Arial, sans-serif" font-size="2.75" font-weight="400" fill="#182f41" text-anchor="start">1. SuperMini-Pinfolge, USB-Überstand und Header messen.</text>
+<text x="270" y="59" font-family="Arial, sans-serif" font-size="2.75" font-weight="400" fill="#182f41" text-anchor="start">2. U1/U2-Landpatterns aus Originaldaten übernehmen.</text>
+<text x="270" y="67" font-family="Arial, sans-serif" font-size="2.75" font-weight="400" fill="#182f41" text-anchor="start">3. F1, J1 und JP1 als konkrete Bestellteile festlegen.</text>
+<text x="270" y="75" font-family="Arial, sans-serif" font-size="2.75" font-weight="400" fill="#182f41" text-anchor="start">4. ERC, DRC und 3D-Kollisionstest im ECAD durchführen.</text>
+<text x="270" y="83" font-family="Arial, sans-serif" font-size="2.75" font-weight="400" fill="#182f41" text-anchor="start">5. Erst danach Gerber, Bohr- und Bestückungsdaten.</text>
+<rect x="264" y="105" width="142" height="69" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="268" y="112" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">Elektrische Auslegung noch zu verifizieren</text>
+<text x="270" y="119" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">U2: mindestens 9 V hinter F1/Q1/Filter erforderlich.</text>
+<text x="270" y="126" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">9-V-NET-S-Betrieb ist damit nicht garantiert.</text>
+<text x="270" y="133" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">RECOM-Class-B-Filter enthält zusätzlich 470 pF</text>
+<text x="270" y="140" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">über der Isolation; hier weggelassen, keine Class-B-Zusage.</text>
+<text x="270" y="147" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">U3: (16 V - 5 V) x 73,4 mA = ca. 0,81 W.</text>
+<text x="270" y="154" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">Wärmefläche aus Blatt 3 ist Startwert, keine Thermikfreigabe.</text>
+<text x="270" y="161" font-family="Arial, sans-serif" font-size="2.65" font-weight="400" fill="#182f41" text-anchor="start">LEN aus gemessenem Maximalstrom bestimmen.</text>
+<rect x="264" y="180" width="142" height="45" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="268" y="187" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">Erstinbetriebnahme</text>
+<text x="270" y="194" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">Strombegrenztes Labornetzteil; zunächst ohne CAN.</text>
+<text x="270" y="201" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">5V_BUS, 5V_MODULE und 3V3_LOGIC messen.</text>
+<text x="270" y="208" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">Trennung beider Massen und USB-Jumper prüfen.</text>
+<text x="270" y="215" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">Danach CAN mit korrekt terminiertem Prüfnetz testen.</text>
+<text x="15" y="240" font-family="Arial, sans-serif" font-size="3.0" font-weight="700" fill="#182f41" text-anchor="start">PRIMÄRQUELLEN - anklickbar im PDF; vollständige Links in der Projekt-Dokumentation</text>
+<text x="16" y="249" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">TI ISO1042</text>
+<text x="16" y="252.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">DWV-Pins, Icc2 und Gehäuse</text>
+<text x="149" y="249" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">TI TPS7B69-Q1</text>
+<text x="149" y="252.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">U3 SOT-223, 150 mA, COUT</text>
+<text x="282" y="249" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">RECOM R3M</text>
+<text x="282" y="252.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">Wandlerpins, Filter, Sicherung</text>
+<text x="16" y="257" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">Diodes DMP6023LE</text>
+<text x="16" y="260.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">G1 / D2+Tab / S3</text>
+<text x="149" y="257" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">Nexperia PESD2CAN24T-Q</text>
+<text x="149" y="260.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">TVS-Pins und SOT-23</text>
+<text x="282" y="257" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">TDK ACT45B</text>
+<text x="282" y="260.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">CAN-Gleichtaktdrossel</text>
+<text x="16" y="265" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">Garmin Micro-C</text>
+<text x="16" y="268.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">Pin-Nummern und Aderfarben</text>
+<text x="149" y="265" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">Nologo SuperMini</text>
+<text x="149" y="268.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">Modul und USB-Versorgung</text>
+<text x="282" y="265" font-family="Arial, sans-serif" font-size="2.9" font-weight="700" fill="#166a92" text-anchor="start">Espressif RF-Layout</text>
+<text x="282" y="268.5" font-family="Arial, sans-serif" font-size="2.45" font-weight="400" fill="#526575" text-anchor="start">Antennenfreiraum</text>
+</svg>

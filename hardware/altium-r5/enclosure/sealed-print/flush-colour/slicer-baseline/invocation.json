@@ -1,0 +1,18 @@
+{
+  "returncode": 4294967278,
+  "stdout": "Slic3r::CLI::run found error, exit\r\n",
+  "stderr": "Param values in 3mf/config error: \r\nraft_first_layer_expansion: -1 not in range [0.000000,340282346638528859811704183484516925440.000000]\r\ntree_support_wall_count: -1 not in range [0.000000,2.000000]\r\n",
+  "command": [
+    "C:/Program Files/OrcaSlicer/orca-slicer.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-complete.3mf",
+    "--allow-newer-file",
+    "--slice",
+    "1",
+    "--debug",
+    "2",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\flush-colour\\slicer-baseline",
+    "--export-3mf",
+    "disposable-baseline.3mf"
+  ]
+}

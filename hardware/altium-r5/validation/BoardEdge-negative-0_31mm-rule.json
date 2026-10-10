@@ -1,0 +1,29 @@
+{
+  "native_pcb_sha256": "e0e0f42685dbbab61c49872b1d51952192cef80e7b1af9b47e45dafae807231a",
+  "rule": {
+    "SELECTION": "FALSE",
+    "LAYER": "TOP",
+    "LOCKED": "FALSE",
+    "POLYGONOUTLINE": "FALSE",
+    "USERROUTED": "TRUE",
+    "KEEPOUT": "FALSE",
+    "UNIONINDEX": "0",
+    "RULEKIND": "BoardOutlineClearance",
+    "NETSCOPE": "AnyNet",
+    "LAYERKIND": "SameLayer",
+    "SCOPE1EXPRESSION": "All",
+    "SCOPE2EXPRESSION": "All",
+    "NAME": "BoardEdge_0_30mm",
+    "ENABLED": "TRUE",
+    "PRIORITY": "1",
+    "COMMENT": "",
+    "UNIQUEID": "ULIJPZHA",
+    "DEFINEDBYLOGICALDOCUMENT": "FALSE",
+    "GAP": "12.2047mil",
+    "GENERICCLEARANCE": "12.2047mil",
+    "IGNOREPADTOPADCLEARANCEINFOOTPRINT": "FALSE",
+    "OBJECTCLEARANCES": "",
+    "RECORD": "DXPRule",
+    "TYPE_ID": 63
+  }
+}

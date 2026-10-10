@@ -1,0 +1,146 @@
+{
+  "format": "Orion R4 release package v1",
+  "package_kind": "jlcpcb-pcba",
+  "created_utc": "2026-09-23T10:33:29.815340+00:00",
+  "source_root": "hardware/altium-r4",
+  "gates": [
+    {
+      "file": "Orion-Bridge-R4.PrjPcb",
+      "passed": true,
+      "document_paths": [
+        "Orion-Bridge-R4-Power.SchDoc",
+        "Orion-Bridge-R4-Logic.SchDoc",
+        "Orion-Bridge-R4.PcbDoc",
+        "Orion-Bridge.SchLib",
+        "Orion-Bridge.PcbLib",
+        "Project Outputs/Design Rule Check - Orion-Bridge-R4.html"
+      ]
+    },
+    {
+      "file": "Orion-Bridge.LibPkg",
+      "passed": true,
+      "document_paths": [
+        "Orion-Bridge.SchLib",
+        "Orion-Bridge.PcbLib"
+      ]
+    },
+    {
+      "file": "release-validation.json",
+      "passed": true,
+      "checks": 10
+    },
+    {
+      "file": "independent-verification.json",
+      "passed": true,
+      "checks": 15349
+    },
+    {
+      "file": "native-gerber-review.json",
+      "passed": true,
+      "checks": 69
+    },
+    {
+      "file": "native-binary-verification.json",
+      "passed": true,
+      "checks": 8384
+    },
+    {
+      "file": "source-pcb-verification.json",
+      "passed": true,
+      "checks": 7022
+    },
+    {
+      "file": "mechanical-review.json",
+      "passed": true,
+      "checks": null
+    },
+    {
+      "file": "manufacturing/manufacturing-verification.json",
+      "passed": true,
+      "checks": 708
+    },
+    {
+      "file": "JLCPCB-Panel/panel-preflight.json",
+      "passed": true,
+      "checks": 1659
+    },
+    {
+      "file": "JLCPCB-Panel/panel-readback.json",
+      "passed": true,
+      "checks": 66
+    },
+    {
+      "file": "JLCPCB-Panel/independent-panel-verification.json",
+      "passed": true,
+      "checks": 12621
+    }
+  ],
+  "qualification": "File integrity and completed recorded checks; see project release-validation and hardware limitations.",
+  "checksum_scope": "files lists payload excluding PACKAGE-MANIFEST.json and SHA256SUMS.txt. SHA256SUMS additionally hashes PACKAGE-MANIFEST.json.",
+  "files": {
+    "JLCPCB-Panel/BOM-EXCLUDED.csv": {
+      "bytes": 149,
+      "sha256": "513daa9efcc40b4293d49401deb839ca6d00c21b0ece066c36178d34659d42e2"
+    },
+    "JLCPCB-Panel/BOM-JLCPCB.csv": {
+      "bytes": 1057,
+      "sha256": "899b296d8564d1357cf2fb31b7aac7fa54a0c625b18dbaa6e4f5860d6d72e336"
+    },
+    "JLCPCB-Panel/CPL-JLCPCB.csv": {
+      "bytes": 1804,
+      "sha256": "f45d1c9196cd25ea539bc18194a619e103a789f204102aa333d16033b732652f"
+    },
+    "JLCPCB-Panel/Orion-Bridge-R4-Panel-Gerber.zip": {
+      "bytes": 132975,
+      "sha256": "f5f111ee564448cd8a204238f1554d517a51f5850cbfdb6a8673619c59d758f0"
+    },
+    "JLCPCB-Panel/Panel-70x70.png": {
+      "bytes": 88330,
+      "sha256": "21dd5703e1684b0e7376e9d47b4456d98b42d69abf6e303ca431fb30d362cc42"
+    },
+    "JLCPCB-Panel/Panel-70x70.svg": {
+      "bytes": 261228,
+      "sha256": "e743385357a4a954a76c694841ba6940526a6e0f2826211e1156f9802e49218c"
+    },
+    "JLCPCB-Panel/independent-panel-verification.json": {
+      "bytes": 1020,
+      "sha256": "54c57267b6355768c8d482ee36b918dc1b9851716480f58e47263ae00ddc5024"
+    },
+    "JLCPCB-Panel/manufacturing-manifest.json": {
+      "bytes": 692429,
+      "sha256": "82802575a3d61a0ba654228c2a14b22cc97ea794b3e81b0d88e1b03b43520eb9"
+    },
+    "START-HERE.txt": {
+      "bytes": 894,
+      "sha256": "cab902be82c49f99f51ae8db1631543b30098c2201309015c731fcad075a66b3"
+    },
+    "assembly/Bestueckung-R4-Orientierung.csv": {
+      "bytes": 14069,
+      "sha256": "103b34013b5be9d5b399d51878f2eddd689b760062435d6e1ac370d1c3f778cb"
+    },
+    "assembly/Bestueckung-R4-validation.json": {
+      "bytes": 462,
+      "sha256": "67f23de19b3977d1e7d0de054c7842cf417af7ca800f817e8f868527371ba8fc"
+    },
+    "assembly/Bestueckung-R4.png": {
+      "bytes": 667594,
+      "sha256": "c7157c3c299d0a57e35979d283e6ee0736517c075ef66b847a02af2f6c8826c1"
+    },
+    "assembly/Bestueckung-R4.svg": {
+      "bytes": 65494,
+      "sha256": "32098bb72bb590c94dfcca9ef4159723dd48b42772a13e47921d86c91d23f08d"
+    },
+    "jlcpcb-review.md": {
+      "bytes": 8319,
+      "sha256": "c89bfb2964721c693b813ee98bfb7ceb1024bf6b09b6ca08fa37fcef59a17a7a"
+    },
+    "panel-ordering.md": {
+      "bytes": 5906,
+      "sha256": "a0af078fb52980526b4c7bbfb84ee9040410bfd50c88ebeb1eafe7968aea99c0"
+    },
+    "release-validation.json": {
+      "bytes": 7502,
+      "sha256": "3910fc4121572eb1e6e6387e908d78acf56b2319409660eb57ac0868aa6fafb0"
+    }
+  }
+}

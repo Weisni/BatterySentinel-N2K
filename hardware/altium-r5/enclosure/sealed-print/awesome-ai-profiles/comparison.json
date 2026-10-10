@@ -1,0 +1,3398 @@
+{
+  "source_selection": "Bambu Studio regular/account QuackSlicer copy; other same-name copies differ",
+  "physical_evidence": "User reports excellent enclosure print except surface finish; merged profiles not printed yet",
+  "sources": {
+    "hardware\\altium-r5\\enclosure\\sealed-print\\awesome-ai-profiles\\sources\\bambu-smooth-020.json": "65b91586b6d8161c7cd9fbbdae8ab6c3b276903fb37e4fcf7c67de1de0339027",
+    "hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\enclosure-process.json": "470c8da7a34a4fa775c89a23c35d8d5374e6e9e24b434ab4d82224ea2c6bd789",
+    "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-flush-colour.3mf": "2ce6d8e43809337c5c3e84b0ea0d91375c9ce5523adcc6649ce19d30b55de7ea"
+  },
+  "surface_keys": [
+    "top_surface_speed",
+    "top_surface_acceleration",
+    "top_surface_line_width",
+    "top_surface_pattern",
+    "top_surface_density",
+    "top_solid_infill_flow_ratio",
+    "wall_generator",
+    "min_bead_width",
+    "wall_transition_angle",
+    "ironing_type",
+    "ironing_flow",
+    "ironing_inset",
+    "ironing_spacing",
+    "ironing_speed"
+  ],
+  "high_flow_policy": "Copy Standard surface values into both nozzle variants; source nil is inheritance, not zero",
+  "preserved_core_keys": [
+    "wall_loops",
+    "sparse_infill_density",
+    "sparse_infill_pattern",
+    "initial_layer_print_height",
+    "initial_layer_speed",
+    "initial_layer_infill_speed",
+    "outer_wall_speed",
+    "inner_wall_speed",
+    "sparse_infill_speed",
+    "internal_solid_infill_speed",
+    "bridge_speed",
+    "default_acceleration",
+    "outer_wall_acceleration",
+    "seam_position",
+    "elefant_foot_compensation",
+    "enable_support",
+    "brim_type",
+    "enable_prime_tower"
+  ],
+  "profiles": [
+    {
+      "name": "0.2mm Optimized @BBL P2S - Awesome AI",
+      "inherits": "0.20mm Standard @BBL P2S",
+      "file": "0.2mm Optimized @BBL P2S - Awesome AI.json",
+      "layer_height": "0.2",
+      "top_bottom_layers": "6",
+      "comparison": {
+        "adaptive_layer_height": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "avoid_crossing_wall_includes_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "bottom_color_penetration_layers": {
+          "original": "3",
+          "smooth_surface": "3",
+          "enclosure": "3",
+          "merged": "3"
+        },
+        "bottom_shell_layers": {
+          "original": "3",
+          "smooth_surface": "3",
+          "enclosure": "6",
+          "merged": "6"
+        },
+        "bottom_shell_thickness": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "bottom_surface_density": {
+          "original": "100",
+          "smooth_surface": "100",
+          "enclosure": "100",
+          "merged": "100"
+        },
+        "bottom_surface_pattern": {
+          "original": "monotonic",
+          "smooth_surface": "monotonic",
+          "enclosure": "monotonic",
+          "merged": "monotonic"
+        },
+        "bridge_flow": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "bridge_no_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "bridge_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "50",
+            "50"
+          ],
+          "enclosure": [
+            "25",
+            "25"
+          ],
+          "merged": [
+            "25",
+            "25"
+          ]
+        },
+        "brim_object_gap": {
+          "original": "0.1",
+          "smooth_surface": "0.1",
+          "enclosure": "0.1",
+          "merged": "0.1"
+        },
+        "brim_type": {
+          "original": null,
+          "smooth_surface": null,
+          "enclosure": "no_brim",
+          "merged": "no_brim"
+        },
+        "brim_width": {
+          "original": "5",
+          "smooth_surface": "5",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "circle_compensation_manual_offset": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "compatible_printers": {
+          "original": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "smooth_surface": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "enclosure": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "merged": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ]
+        },
+        "compatible_printers_condition": {
+          "original": "",
+          "smooth_surface": "",
+          "enclosure": "",
+          "merged": ""
+        },
+        "default_acceleration": {
+          "original": [
+            "10000",
+            "10000"
+          ],
+          "smooth_surface": [
+            "10000",
+            "10000"
+          ],
+          "enclosure": [
+            "3000",
+            "3000"
+          ],
+          "merged": [
+            "3000",
+            "3000"
+          ]
+        },
+        "detect_floating_vertical_shell": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "detect_overhang_wall": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "detect_thin_wall": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "draft_shield": {
+          "original": "disabled",
+          "smooth_surface": "disabled",
+          "enclosure": "disabled",
+          "merged": "disabled"
+        },
+        "elefant_foot_compensation": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.1",
+          "merged": "0.1"
+        },
+        "enable_arc_fitting": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "enable_circle_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_height_slowdown": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "enable_overhang_speed": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "enable_prime_tower": {
+          "original": "1",
+          "smooth_surface": "0",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "enable_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_support_ironing": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_tower_interface_features": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_wrapping_detection": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "filename_format": {
+          "original": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "smooth_surface": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "enclosure": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "merged": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode"
+        },
+        "fill_multiline": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "fuzzy_skin": {
+          "original": "none",
+          "smooth_surface": "none",
+          "enclosure": "none",
+          "merged": "none"
+        },
+        "fuzzy_skin_first_layer": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "fuzzy_skin_mode": {
+          "original": "displacement",
+          "smooth_surface": "displacement",
+          "enclosure": "displacement",
+          "merged": "displacement"
+        },
+        "fuzzy_skin_noise_type": {
+          "original": "classic",
+          "smooth_surface": "classic",
+          "enclosure": "classic",
+          "merged": "classic"
+        },
+        "fuzzy_skin_octaves": {
+          "original": "4",
+          "smooth_surface": "4",
+          "enclosure": "4",
+          "merged": "4"
+        },
+        "fuzzy_skin_persistence": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "fuzzy_skin_point_distance": {
+          "original": "0.8",
+          "smooth_surface": "0.8",
+          "enclosure": "0.8",
+          "merged": "0.8"
+        },
+        "fuzzy_skin_scale": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.0"
+        },
+        "fuzzy_skin_thickness": {
+          "original": "0.3",
+          "smooth_surface": "0.3",
+          "enclosure": "0.3",
+          "merged": "0.3"
+        },
+        "gap_infill_speed": {
+          "original": [
+            "250",
+            "250"
+          ],
+          "smooth_surface": [
+            "250",
+            "250"
+          ],
+          "enclosure": [
+            "250",
+            "250"
+          ],
+          "merged": [
+            "250",
+            "250"
+          ]
+        },
+        "infill_combination": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_direction": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "infill_instead_top_bottom_surfaces": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_lock_depth": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.0"
+        },
+        "infill_rotate_step": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_shift_step": {
+          "original": "0.4",
+          "smooth_surface": "0.4",
+          "enclosure": "0.4",
+          "merged": "0.4"
+        },
+        "infill_wall_overlap": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "initial_layer_acceleration": {
+          "original": [
+            "500",
+            "500"
+          ],
+          "smooth_surface": [
+            "500",
+            "500"
+          ],
+          "enclosure": [
+            "500",
+            "500"
+          ],
+          "merged": [
+            "500",
+            "500"
+          ]
+        },
+        "initial_layer_infill_speed": {
+          "original": [
+            "105",
+            "105"
+          ],
+          "smooth_surface": [
+            "60",
+            "105"
+          ],
+          "enclosure": [
+            "25",
+            "25"
+          ],
+          "merged": [
+            "25",
+            "25"
+          ]
+        },
+        "initial_layer_line_width": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "initial_layer_print_height": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.2"
+        },
+        "initial_layer_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "30",
+            "50"
+          ],
+          "enclosure": [
+            "20",
+            "20"
+          ],
+          "merged": [
+            "20",
+            "20"
+          ]
+        },
+        "initial_layer_travel_acceleration": {
+          "original": [
+            "6000",
+            "6000"
+          ],
+          "smooth_surface": [
+            "6000",
+            "6000"
+          ],
+          "enclosure": [
+            "6000",
+            "6000"
+          ],
+          "merged": [
+            "6000",
+            "6000"
+          ]
+        },
+        "inner_wall_acceleration": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "inner_wall_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "inner_wall_speed": {
+          "original": [
+            "300",
+            "600"
+          ],
+          "smooth_surface": [
+            "300",
+            "600"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "interface_shells": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "internal_bridge_support_thickness": {
+          "original": "0.8",
+          "smooth_surface": "0.8",
+          "enclosure": "0.8",
+          "merged": "0.8"
+        },
+        "internal_solid_infill_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "internal_solid_infill_speed": {
+          "original": [
+            "250",
+            "600"
+          ],
+          "smooth_surface": [
+            "250",
+            "600"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "ironing_flow": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "ironing_inset": {
+          "original": "0.21",
+          "smooth_surface": "0.21",
+          "enclosure": "0.21",
+          "merged": "0.21"
+        },
+        "ironing_spacing": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.15",
+          "merged": "0.15"
+        },
+        "ironing_speed": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "ironing_type": {
+          "original": "no ironing",
+          "smooth_surface": "no ironing",
+          "enclosure": "no ironing",
+          "merged": "no ironing"
+        },
+        "layer_height": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.2"
+        },
+        "layer_time_smoothing": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "layer_time_smoothing_threshold": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "locked_skeleton_infill_pattern": {
+          "original": "zigzag",
+          "smooth_surface": "zigzag",
+          "enclosure": "zigzag",
+          "merged": "zigzag"
+        },
+        "locked_skin_infill_pattern": {
+          "original": "crosszag",
+          "smooth_surface": "crosszag",
+          "enclosure": "crosszag",
+          "merged": "crosszag"
+        },
+        "max_bridge_length": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "max_travel_detour_distance": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "min_bead_width": {
+          "original": null,
+          "smooth_surface": "50%",
+          "enclosure": null,
+          "merged": "50%"
+        },
+        "minimum_sparse_infill_area": {
+          "original": "15",
+          "smooth_surface": "15",
+          "enclosure": "15",
+          "merged": "15"
+        },
+        "monotonic_travel_into_wall": {
+          "original": "45.0",
+          "smooth_surface": "45.0",
+          "enclosure": "45.0",
+          "merged": "45.0"
+        },
+        "only_one_wall_top": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "outer_wall_acceleration": {
+          "original": [
+            "6000",
+            "6000"
+          ],
+          "smooth_surface": [
+            "6000",
+            "6000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "outer_wall_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "outer_wall_speed": {
+          "original": [
+            "200",
+            "500"
+          ],
+          "smooth_surface": [
+            "200",
+            "500"
+          ],
+          "enclosure": [
+            "40",
+            "40"
+          ],
+          "merged": [
+            "40",
+            "40"
+          ]
+        },
+        "overhang_1_4_speed": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "overhang_2_4_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "50",
+            "50"
+          ],
+          "enclosure": [
+            "50",
+            "50"
+          ],
+          "merged": [
+            "50",
+            "50"
+          ]
+        },
+        "overhang_3_4_speed": {
+          "original": [
+            "30",
+            "30"
+          ],
+          "smooth_surface": [
+            "30",
+            "30"
+          ],
+          "enclosure": [
+            "30",
+            "30"
+          ],
+          "merged": [
+            "30",
+            "30"
+          ]
+        },
+        "overhang_4_4_speed": {
+          "original": [
+            "10",
+            "10"
+          ],
+          "smooth_surface": [
+            "10",
+            "10"
+          ],
+          "enclosure": [
+            "10",
+            "10"
+          ],
+          "merged": [
+            "10",
+            "10"
+          ]
+        },
+        "overhang_totally_speed": {
+          "original": [
+            "10",
+            "10"
+          ],
+          "smooth_surface": [
+            "10",
+            "10"
+          ],
+          "enclosure": [
+            "10",
+            "10"
+          ],
+          "merged": [
+            "10",
+            "10"
+          ]
+        },
+        "override_filament_scarf_seam_setting": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "pre_start_fan_time": {
+          "original": [
+            "0"
+          ],
+          "smooth_surface": [
+            "0"
+          ],
+          "enclosure": [
+            "0"
+          ],
+          "merged": [
+            "0"
+          ]
+        },
+        "prime_tower_brim_width": {
+          "original": "3",
+          "smooth_surface": "-1",
+          "enclosure": "3",
+          "merged": "3"
+        },
+        "prime_tower_enable_framework": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "prime_tower_flat_ironing": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "prime_tower_lift_height": {
+          "original": "-1",
+          "smooth_surface": "-1",
+          "enclosure": "-1",
+          "merged": "-1"
+        },
+        "prime_tower_lift_speed": {
+          "original": "90",
+          "smooth_surface": "90",
+          "enclosure": "90",
+          "merged": "90"
+        },
+        "prime_tower_max_speed": {
+          "original": "90",
+          "smooth_surface": "90",
+          "enclosure": "90",
+          "merged": "90"
+        },
+        "prime_tower_width": {
+          "original": "35",
+          "smooth_surface": "35",
+          "enclosure": "35",
+          "merged": "35"
+        },
+        "print_extruder_id": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "print_extruder_variant": {
+          "original": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "smooth_surface": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "enclosure": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "merged": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ]
+        },
+        "print_sequence": {
+          "original": "by layer",
+          "smooth_surface": "by layer",
+          "enclosure": "by layer",
+          "merged": "by layer"
+        },
+        "raft_layers": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "reduce_crossing_wall": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "reduce_infill_retraction_mode": {
+          "original": "Auto",
+          "smooth_surface": "Auto",
+          "enclosure": "Auto",
+          "merged": "Auto"
+        },
+        "resolution": {
+          "original": "0.012",
+          "smooth_surface": "0.012",
+          "enclosure": "0.012",
+          "merged": "0.012"
+        },
+        "scarf_angle_threshold": {
+          "original": "155",
+          "smooth_surface": "155",
+          "enclosure": "155",
+          "merged": "155"
+        },
+        "seam_placement_away_from_overhangs": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "seam_position": {
+          "original": "aligned",
+          "smooth_surface": "aligned",
+          "enclosure": "aligned",
+          "merged": "aligned"
+        },
+        "seam_slope_gap": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "seam_slope_min_length": {
+          "original": "10",
+          "smooth_surface": "10",
+          "enclosure": "10",
+          "merged": "10"
+        },
+        "seam_slope_start_height": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "seam_slope_type": {
+          "original": "none",
+          "smooth_surface": "none",
+          "enclosure": "none",
+          "merged": "none"
+        },
+        "skeleton_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "skeleton_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "skin_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "skin_infill_depth": {
+          "original": "2.0",
+          "smooth_surface": "2.0",
+          "enclosure": "2.0",
+          "merged": "2.0"
+        },
+        "skin_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "skirt_distance": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "skirt_height": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "skirt_loops": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "skirt_per_object": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "slowdown_end_acc": {
+          "original": [
+            "100000",
+            "100000"
+          ],
+          "smooth_surface": [
+            "100000",
+            "100000"
+          ],
+          "enclosure": [
+            "100000",
+            "100000"
+          ],
+          "merged": [
+            "100000",
+            "100000"
+          ]
+        },
+        "slowdown_end_height": {
+          "original": [
+            "400",
+            "400"
+          ],
+          "smooth_surface": [
+            "400",
+            "400"
+          ],
+          "enclosure": [
+            "400",
+            "400"
+          ],
+          "merged": [
+            "400",
+            "400"
+          ]
+        },
+        "slowdown_end_speed": {
+          "original": [
+            "1000",
+            "1000"
+          ],
+          "smooth_surface": [
+            "1000",
+            "1000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "slowdown_start_acc": {
+          "original": [
+            "100000",
+            "100000"
+          ],
+          "smooth_surface": [
+            "100000",
+            "100000"
+          ],
+          "enclosure": [
+            "100000",
+            "100000"
+          ],
+          "merged": [
+            "100000",
+            "100000"
+          ]
+        },
+        "slowdown_start_height": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "slowdown_start_speed": {
+          "original": [
+            "1000",
+            "1000"
+          ],
+          "smooth_surface": [
+            "1000",
+            "1000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "small_perimeter_speed": {
+          "original": [
+            "50%",
+            "50%"
+          ],
+          "smooth_surface": [
+            "50%",
+            "50%"
+          ],
+          "enclosure": [
+            "50%",
+            "50%"
+          ],
+          "merged": [
+            "50%",
+            "50%"
+          ]
+        },
+        "small_perimeter_threshold": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "smooth_coefficient": {
+          "original": "4",
+          "smooth_surface": "4",
+          "enclosure": "4",
+          "merged": "4"
+        },
+        "solid_infill_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "sparse_infill_acceleration": {
+          "original": [
+            "100%",
+            "100%"
+          ],
+          "smooth_surface": [
+            "100%",
+            "100%"
+          ],
+          "enclosure": [
+            "100%",
+            "100%"
+          ],
+          "merged": [
+            "100%",
+            "100%"
+          ]
+        },
+        "sparse_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "35%",
+          "merged": "35%"
+        },
+        "sparse_infill_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "sparse_infill_lattice_angle_1": {
+          "original": "-45",
+          "smooth_surface": "-45",
+          "enclosure": "-45",
+          "merged": "-45"
+        },
+        "sparse_infill_lattice_angle_2": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "sparse_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "sparse_infill_pattern": {
+          "original": "grid",
+          "smooth_surface": "gyroid",
+          "enclosure": "gyroid",
+          "merged": "gyroid"
+        },
+        "sparse_infill_speed": {
+          "original": [
+            "270",
+            "600"
+          ],
+          "smooth_surface": [
+            "270",
+            "600"
+          ],
+          "enclosure": [
+            "100",
+            "100"
+          ],
+          "merged": [
+            "100",
+            "100"
+          ]
+        },
+        "spiral_mode": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "standby_temperature_delta": {
+          "original": "-5",
+          "smooth_surface": "-5",
+          "enclosure": "-5",
+          "merged": "-5"
+        },
+        "support_base_pattern": {
+          "original": "default",
+          "smooth_surface": "default",
+          "enclosure": "default",
+          "merged": "default"
+        },
+        "support_base_pattern_spacing": {
+          "original": "2.5",
+          "smooth_surface": "2.5",
+          "enclosure": "2.5",
+          "merged": "2.5"
+        },
+        "support_bottom_z_distance": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.2"
+        },
+        "support_expansion": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_bottom_layers": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "support_interface_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_loop_pattern": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_pattern": {
+          "original": "auto",
+          "smooth_surface": "auto",
+          "enclosure": "auto",
+          "merged": "auto"
+        },
+        "support_interface_spacing": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "support_interface_speed": {
+          "original": [
+            "80",
+            "80"
+          ],
+          "smooth_surface": [
+            "80",
+            "80"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "support_interface_top_layers": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "support_ironing_direction": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_ironing_flow": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "support_ironing_inset": {
+          "original": "0.0",
+          "smooth_surface": "0.0",
+          "enclosure": "0.0",
+          "merged": "0.0"
+        },
+        "support_ironing_pattern": {
+          "original": "zig-zag",
+          "smooth_surface": "zig-zag",
+          "enclosure": "zig-zag",
+          "merged": "zig-zag"
+        },
+        "support_ironing_spacing": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.15",
+          "merged": "0.15"
+        },
+        "support_ironing_speed": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "support_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "support_object_xy_distance": {
+          "original": "0.35",
+          "smooth_surface": "0.35",
+          "enclosure": "0.35",
+          "merged": "0.35"
+        },
+        "support_on_build_plate_only": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_speed": {
+          "original": [
+            "150",
+            "150"
+          ],
+          "smooth_surface": [
+            "150",
+            "150"
+          ],
+          "enclosure": [
+            "150",
+            "150"
+          ],
+          "merged": [
+            "150",
+            "150"
+          ]
+        },
+        "support_style": {
+          "original": "default",
+          "smooth_surface": "default",
+          "enclosure": "default",
+          "merged": "default"
+        },
+        "support_threshold_angle": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "support_top_z_distance": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.2"
+        },
+        "support_type": {
+          "original": "tree(auto)",
+          "smooth_surface": "tree(auto)",
+          "enclosure": "tree(auto)",
+          "merged": "tree(auto)"
+        },
+        "symmetric_infill_y_axis": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "top_color_penetration_layers": {
+          "original": "5",
+          "smooth_surface": "5",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "top_shell_layers": {
+          "original": "5",
+          "smooth_surface": "6",
+          "enclosure": "6",
+          "merged": "6"
+        },
+        "top_shell_thickness": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.0"
+        },
+        "top_solid_infill_flow_ratio": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "top_surface_acceleration": {
+          "original": [
+            "2000",
+            "2000"
+          ],
+          "smooth_surface": [
+            "500",
+            "2000"
+          ],
+          "enclosure": [
+            "2000",
+            "2000"
+          ],
+          "merged": [
+            "500",
+            "500"
+          ]
+        },
+        "top_surface_density": {
+          "original": "100",
+          "smooth_surface": "100",
+          "enclosure": "100",
+          "merged": "100"
+        },
+        "top_surface_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.3",
+          "enclosure": "0.42",
+          "merged": "0.3"
+        },
+        "top_surface_pattern": {
+          "original": "monotonicline",
+          "smooth_surface": "monotonicline",
+          "enclosure": "monotonicline",
+          "merged": "monotonicline"
+        },
+        "top_surface_speed": {
+          "original": [
+            "200",
+            "200"
+          ],
+          "smooth_surface": [
+            "15",
+            "200"
+          ],
+          "enclosure": [
+            "35",
+            "35"
+          ],
+          "merged": [
+            "15",
+            "15"
+          ]
+        },
+        "travel_acceleration": {
+          "original": [
+            "10000",
+            "10000"
+          ],
+          "smooth_surface": [
+            "10000",
+            "10000"
+          ],
+          "enclosure": [
+            "10000",
+            "10000"
+          ],
+          "merged": [
+            "10000",
+            "10000"
+          ]
+        },
+        "travel_short_distance_acceleration": {
+          "original": [
+            "250",
+            "250"
+          ],
+          "smooth_surface": [
+            "250",
+            "250"
+          ],
+          "enclosure": [
+            "250",
+            "250"
+          ],
+          "merged": [
+            "250",
+            "250"
+          ]
+        },
+        "travel_speed": {
+          "original": [
+            "600",
+            "600"
+          ],
+          "smooth_surface": [
+            "600",
+            "600"
+          ],
+          "enclosure": [
+            "600",
+            "600"
+          ],
+          "merged": [
+            "600",
+            "600"
+          ]
+        },
+        "travel_speed_z": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "tree_support_branch_angle": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "tree_support_branch_diameter": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "tree_support_wall_count": {
+          "original": "-1",
+          "smooth_surface": "-1",
+          "enclosure": "-1",
+          "merged": "-1"
+        },
+        "vertical_shell_speed": {
+          "original": [
+            "80%",
+            "80%"
+          ],
+          "smooth_surface": [
+            "80%",
+            "80%"
+          ],
+          "enclosure": [
+            "80%",
+            "80%"
+          ],
+          "merged": [
+            "80%",
+            "80%"
+          ]
+        },
+        "wall_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "wall_generator": {
+          "original": "classic",
+          "smooth_surface": "arachne",
+          "enclosure": "classic",
+          "merged": "arachne"
+        },
+        "wall_infill_order": {
+          "original": "inner wall/outer wall/infill",
+          "smooth_surface": "inner wall/outer wall/infill",
+          "enclosure": "inner wall/outer wall/infill",
+          "merged": "inner wall/outer wall/infill"
+        },
+        "wall_loops": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "wall_transition_angle": {
+          "original": null,
+          "smooth_surface": "40",
+          "enclosure": null,
+          "merged": "40"
+        },
+        "wipe_tower_no_sparse_layers": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "xy_contour_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "xy_hole_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "z_direction_outwall_speed_continuous": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        }
+      }
+    },
+    {
+      "name": "0.12mm Optimized @BBL P2S - Awesome AI",
+      "inherits": "0.12mm High Quality @BBL P2S",
+      "file": "0.12mm Optimized @BBL P2S - Awesome AI.json",
+      "layer_height": "0.12",
+      "top_bottom_layers": "10",
+      "comparison": {
+        "adaptive_layer_height": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "avoid_crossing_wall_includes_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "bottom_color_penetration_layers": {
+          "original": "3",
+          "smooth_surface": "3",
+          "enclosure": "3",
+          "merged": "3"
+        },
+        "bottom_shell_layers": {
+          "original": "3",
+          "smooth_surface": "3",
+          "enclosure": "6",
+          "merged": "10"
+        },
+        "bottom_shell_thickness": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "1.2"
+        },
+        "bottom_surface_density": {
+          "original": "100",
+          "smooth_surface": "100",
+          "enclosure": "100",
+          "merged": "100"
+        },
+        "bottom_surface_pattern": {
+          "original": "monotonic",
+          "smooth_surface": "monotonic",
+          "enclosure": "monotonic",
+          "merged": "monotonic"
+        },
+        "bridge_flow": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "bridge_no_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "bridge_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "50",
+            "50"
+          ],
+          "enclosure": [
+            "25",
+            "25"
+          ],
+          "merged": [
+            "25",
+            "25"
+          ]
+        },
+        "brim_object_gap": {
+          "original": "0.1",
+          "smooth_surface": "0.1",
+          "enclosure": "0.1",
+          "merged": "0.1"
+        },
+        "brim_type": {
+          "original": null,
+          "smooth_surface": null,
+          "enclosure": "no_brim",
+          "merged": "no_brim"
+        },
+        "brim_width": {
+          "original": "5",
+          "smooth_surface": "5",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "circle_compensation_manual_offset": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "compatible_printers": {
+          "original": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "smooth_surface": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "enclosure": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ],
+          "merged": [
+            "Bambu Lab P2S 0.4 nozzle"
+          ]
+        },
+        "compatible_printers_condition": {
+          "original": "",
+          "smooth_surface": "",
+          "enclosure": "",
+          "merged": ""
+        },
+        "default_acceleration": {
+          "original": [
+            "10000",
+            "10000"
+          ],
+          "smooth_surface": [
+            "10000",
+            "10000"
+          ],
+          "enclosure": [
+            "3000",
+            "3000"
+          ],
+          "merged": [
+            "3000",
+            "3000"
+          ]
+        },
+        "detect_floating_vertical_shell": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "detect_overhang_wall": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "detect_thin_wall": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "draft_shield": {
+          "original": "disabled",
+          "smooth_surface": "disabled",
+          "enclosure": "disabled",
+          "merged": "disabled"
+        },
+        "elefant_foot_compensation": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.1",
+          "merged": "0.1"
+        },
+        "enable_arc_fitting": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "enable_circle_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_height_slowdown": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "enable_overhang_speed": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "enable_prime_tower": {
+          "original": "1",
+          "smooth_surface": "0",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "enable_support": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_support_ironing": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_tower_interface_features": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "enable_wrapping_detection": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "filename_format": {
+          "original": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "smooth_surface": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "enclosure": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode",
+          "merged": "{input_filename_base}_{filament_type[0]}_{print_time}.gcode"
+        },
+        "fill_multiline": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "fuzzy_skin": {
+          "original": "none",
+          "smooth_surface": "none",
+          "enclosure": "none",
+          "merged": "none"
+        },
+        "fuzzy_skin_first_layer": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "fuzzy_skin_mode": {
+          "original": "displacement",
+          "smooth_surface": "displacement",
+          "enclosure": "displacement",
+          "merged": "displacement"
+        },
+        "fuzzy_skin_noise_type": {
+          "original": "classic",
+          "smooth_surface": "classic",
+          "enclosure": "classic",
+          "merged": "classic"
+        },
+        "fuzzy_skin_octaves": {
+          "original": "4",
+          "smooth_surface": "4",
+          "enclosure": "4",
+          "merged": "4"
+        },
+        "fuzzy_skin_persistence": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "fuzzy_skin_point_distance": {
+          "original": "0.8",
+          "smooth_surface": "0.8",
+          "enclosure": "0.8",
+          "merged": "0.8"
+        },
+        "fuzzy_skin_scale": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.0"
+        },
+        "fuzzy_skin_thickness": {
+          "original": "0.3",
+          "smooth_surface": "0.3",
+          "enclosure": "0.3",
+          "merged": "0.3"
+        },
+        "gap_infill_speed": {
+          "original": [
+            "250",
+            "250"
+          ],
+          "smooth_surface": [
+            "250",
+            "250"
+          ],
+          "enclosure": [
+            "250",
+            "250"
+          ],
+          "merged": [
+            "250",
+            "250"
+          ]
+        },
+        "infill_combination": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_direction": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "infill_instead_top_bottom_surfaces": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_lock_depth": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.0"
+        },
+        "infill_rotate_step": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "infill_shift_step": {
+          "original": "0.4",
+          "smooth_surface": "0.4",
+          "enclosure": "0.4",
+          "merged": "0.4"
+        },
+        "infill_wall_overlap": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "initial_layer_acceleration": {
+          "original": [
+            "500",
+            "500"
+          ],
+          "smooth_surface": [
+            "500",
+            "500"
+          ],
+          "enclosure": [
+            "500",
+            "500"
+          ],
+          "merged": [
+            "500",
+            "500"
+          ]
+        },
+        "initial_layer_infill_speed": {
+          "original": [
+            "105",
+            "105"
+          ],
+          "smooth_surface": [
+            "60",
+            "105"
+          ],
+          "enclosure": [
+            "25",
+            "25"
+          ],
+          "merged": [
+            "25",
+            "25"
+          ]
+        },
+        "initial_layer_line_width": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "initial_layer_print_height": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.2"
+        },
+        "initial_layer_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "30",
+            "50"
+          ],
+          "enclosure": [
+            "20",
+            "20"
+          ],
+          "merged": [
+            "20",
+            "20"
+          ]
+        },
+        "initial_layer_travel_acceleration": {
+          "original": [
+            "6000",
+            "6000"
+          ],
+          "smooth_surface": [
+            "6000",
+            "6000"
+          ],
+          "enclosure": [
+            "6000",
+            "6000"
+          ],
+          "merged": [
+            "6000",
+            "6000"
+          ]
+        },
+        "inner_wall_acceleration": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "inner_wall_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "inner_wall_speed": {
+          "original": [
+            "300",
+            "600"
+          ],
+          "smooth_surface": [
+            "300",
+            "600"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "interface_shells": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "internal_bridge_support_thickness": {
+          "original": "0.8",
+          "smooth_surface": "0.8",
+          "enclosure": "0.8",
+          "merged": "0.8"
+        },
+        "internal_solid_infill_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "internal_solid_infill_speed": {
+          "original": [
+            "250",
+            "600"
+          ],
+          "smooth_surface": [
+            "250",
+            "600"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "ironing_flow": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "ironing_inset": {
+          "original": "0.21",
+          "smooth_surface": "0.21",
+          "enclosure": "0.21",
+          "merged": "0.21"
+        },
+        "ironing_spacing": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.15",
+          "merged": "0.15"
+        },
+        "ironing_speed": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "ironing_type": {
+          "original": "no ironing",
+          "smooth_surface": "no ironing",
+          "enclosure": "no ironing",
+          "merged": "no ironing"
+        },
+        "layer_height": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.12"
+        },
+        "layer_time_smoothing": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "layer_time_smoothing_threshold": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "locked_skeleton_infill_pattern": {
+          "original": "zigzag",
+          "smooth_surface": "zigzag",
+          "enclosure": "zigzag",
+          "merged": "zigzag"
+        },
+        "locked_skin_infill_pattern": {
+          "original": "crosszag",
+          "smooth_surface": "crosszag",
+          "enclosure": "crosszag",
+          "merged": "crosszag"
+        },
+        "max_bridge_length": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "max_travel_detour_distance": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "min_bead_width": {
+          "original": null,
+          "smooth_surface": "50%",
+          "enclosure": null,
+          "merged": "50%"
+        },
+        "minimum_sparse_infill_area": {
+          "original": "15",
+          "smooth_surface": "15",
+          "enclosure": "15",
+          "merged": "15"
+        },
+        "monotonic_travel_into_wall": {
+          "original": "45.0",
+          "smooth_surface": "45.0",
+          "enclosure": "45.0",
+          "merged": "45.0"
+        },
+        "only_one_wall_top": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "outer_wall_acceleration": {
+          "original": [
+            "6000",
+            "6000"
+          ],
+          "smooth_surface": [
+            "6000",
+            "6000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "outer_wall_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "outer_wall_speed": {
+          "original": [
+            "200",
+            "500"
+          ],
+          "smooth_surface": [
+            "200",
+            "500"
+          ],
+          "enclosure": [
+            "40",
+            "40"
+          ],
+          "merged": [
+            "40",
+            "40"
+          ]
+        },
+        "overhang_1_4_speed": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "overhang_2_4_speed": {
+          "original": [
+            "50",
+            "50"
+          ],
+          "smooth_surface": [
+            "50",
+            "50"
+          ],
+          "enclosure": [
+            "50",
+            "50"
+          ],
+          "merged": [
+            "50",
+            "50"
+          ]
+        },
+        "overhang_3_4_speed": {
+          "original": [
+            "30",
+            "30"
+          ],
+          "smooth_surface": [
+            "30",
+            "30"
+          ],
+          "enclosure": [
+            "30",
+            "30"
+          ],
+          "merged": [
+            "30",
+            "30"
+          ]
+        },
+        "overhang_4_4_speed": {
+          "original": [
+            "10",
+            "10"
+          ],
+          "smooth_surface": [
+            "10",
+            "10"
+          ],
+          "enclosure": [
+            "10",
+            "10"
+          ],
+          "merged": [
+            "10",
+            "10"
+          ]
+        },
+        "overhang_totally_speed": {
+          "original": [
+            "10",
+            "10"
+          ],
+          "smooth_surface": [
+            "10",
+            "10"
+          ],
+          "enclosure": [
+            "10",
+            "10"
+          ],
+          "merged": [
+            "10",
+            "10"
+          ]
+        },
+        "override_filament_scarf_seam_setting": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "pre_start_fan_time": {
+          "original": [
+            "0"
+          ],
+          "smooth_surface": [
+            "0"
+          ],
+          "enclosure": [
+            "0"
+          ],
+          "merged": [
+            "0"
+          ]
+        },
+        "prime_tower_brim_width": {
+          "original": "3",
+          "smooth_surface": "-1",
+          "enclosure": "3",
+          "merged": "3"
+        },
+        "prime_tower_enable_framework": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "prime_tower_flat_ironing": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "prime_tower_lift_height": {
+          "original": "-1",
+          "smooth_surface": "-1",
+          "enclosure": "-1",
+          "merged": "-1"
+        },
+        "prime_tower_lift_speed": {
+          "original": "90",
+          "smooth_surface": "90",
+          "enclosure": "90",
+          "merged": "90"
+        },
+        "prime_tower_max_speed": {
+          "original": "90",
+          "smooth_surface": "90",
+          "enclosure": "90",
+          "merged": "90"
+        },
+        "prime_tower_width": {
+          "original": "35",
+          "smooth_surface": "35",
+          "enclosure": "35",
+          "merged": "35"
+        },
+        "print_extruder_id": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "print_extruder_variant": {
+          "original": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "smooth_surface": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "enclosure": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ],
+          "merged": [
+            "Direct Drive Standard",
+            "Direct Drive High Flow"
+          ]
+        },
+        "print_sequence": {
+          "original": "by layer",
+          "smooth_surface": "by layer",
+          "enclosure": "by layer",
+          "merged": "by layer"
+        },
+        "raft_layers": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "reduce_crossing_wall": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "reduce_infill_retraction_mode": {
+          "original": "Auto",
+          "smooth_surface": "Auto",
+          "enclosure": "Auto",
+          "merged": "Auto"
+        },
+        "resolution": {
+          "original": "0.012",
+          "smooth_surface": "0.012",
+          "enclosure": "0.012",
+          "merged": "0.012"
+        },
+        "scarf_angle_threshold": {
+          "original": "155",
+          "smooth_surface": "155",
+          "enclosure": "155",
+          "merged": "155"
+        },
+        "seam_placement_away_from_overhangs": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "seam_position": {
+          "original": "aligned",
+          "smooth_surface": "aligned",
+          "enclosure": "aligned",
+          "merged": "aligned"
+        },
+        "seam_slope_gap": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "seam_slope_min_length": {
+          "original": "10",
+          "smooth_surface": "10",
+          "enclosure": "10",
+          "merged": "10"
+        },
+        "seam_slope_start_height": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "seam_slope_type": {
+          "original": "none",
+          "smooth_surface": "none",
+          "enclosure": "none",
+          "merged": "none"
+        },
+        "skeleton_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "skeleton_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "skin_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "15%",
+          "merged": "15%"
+        },
+        "skin_infill_depth": {
+          "original": "2.0",
+          "smooth_surface": "2.0",
+          "enclosure": "2.0",
+          "merged": "2.0"
+        },
+        "skin_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "skirt_distance": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "skirt_height": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "skirt_loops": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "skirt_per_object": {
+          "original": "1",
+          "smooth_surface": "1",
+          "enclosure": "1",
+          "merged": "1"
+        },
+        "slowdown_end_acc": {
+          "original": [
+            "100000",
+            "100000"
+          ],
+          "smooth_surface": [
+            "100000",
+            "100000"
+          ],
+          "enclosure": [
+            "100000",
+            "100000"
+          ],
+          "merged": [
+            "100000",
+            "100000"
+          ]
+        },
+        "slowdown_end_height": {
+          "original": [
+            "400",
+            "400"
+          ],
+          "smooth_surface": [
+            "400",
+            "400"
+          ],
+          "enclosure": [
+            "400",
+            "400"
+          ],
+          "merged": [
+            "400",
+            "400"
+          ]
+        },
+        "slowdown_end_speed": {
+          "original": [
+            "1000",
+            "1000"
+          ],
+          "smooth_surface": [
+            "1000",
+            "1000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "slowdown_start_acc": {
+          "original": [
+            "100000",
+            "100000"
+          ],
+          "smooth_surface": [
+            "100000",
+            "100000"
+          ],
+          "enclosure": [
+            "100000",
+            "100000"
+          ],
+          "merged": [
+            "100000",
+            "100000"
+          ]
+        },
+        "slowdown_start_height": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "slowdown_start_speed": {
+          "original": [
+            "1000",
+            "1000"
+          ],
+          "smooth_surface": [
+            "1000",
+            "1000"
+          ],
+          "enclosure": [
+            "1000",
+            "1000"
+          ],
+          "merged": [
+            "1000",
+            "1000"
+          ]
+        },
+        "small_perimeter_speed": {
+          "original": [
+            "50%",
+            "50%"
+          ],
+          "smooth_surface": [
+            "50%",
+            "50%"
+          ],
+          "enclosure": [
+            "50%",
+            "50%"
+          ],
+          "merged": [
+            "50%",
+            "50%"
+          ]
+        },
+        "small_perimeter_threshold": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "smooth_coefficient": {
+          "original": "4",
+          "smooth_surface": "4",
+          "enclosure": "4",
+          "merged": "4"
+        },
+        "solid_infill_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "sparse_infill_acceleration": {
+          "original": [
+            "100%",
+            "100%"
+          ],
+          "smooth_surface": [
+            "100%",
+            "100%"
+          ],
+          "enclosure": [
+            "100%",
+            "100%"
+          ],
+          "merged": [
+            "100%",
+            "100%"
+          ]
+        },
+        "sparse_infill_density": {
+          "original": "15%",
+          "smooth_surface": "15%",
+          "enclosure": "35%",
+          "merged": "35%"
+        },
+        "sparse_infill_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "sparse_infill_lattice_angle_1": {
+          "original": "-45",
+          "smooth_surface": "-45",
+          "enclosure": "-45",
+          "merged": "-45"
+        },
+        "sparse_infill_lattice_angle_2": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "sparse_infill_line_width": {
+          "original": "0.45",
+          "smooth_surface": "0.45",
+          "enclosure": "0.45",
+          "merged": "0.45"
+        },
+        "sparse_infill_pattern": {
+          "original": "grid",
+          "smooth_surface": "gyroid",
+          "enclosure": "gyroid",
+          "merged": "gyroid"
+        },
+        "sparse_infill_speed": {
+          "original": [
+            "270",
+            "600"
+          ],
+          "smooth_surface": [
+            "270",
+            "600"
+          ],
+          "enclosure": [
+            "100",
+            "100"
+          ],
+          "merged": [
+            "100",
+            "100"
+          ]
+        },
+        "spiral_mode": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "standby_temperature_delta": {
+          "original": "-5",
+          "smooth_surface": "-5",
+          "enclosure": "-5",
+          "merged": "-5"
+        },
+        "support_base_pattern": {
+          "original": "default",
+          "smooth_surface": "default",
+          "enclosure": "default",
+          "merged": "default"
+        },
+        "support_base_pattern_spacing": {
+          "original": "2.5",
+          "smooth_surface": "2.5",
+          "enclosure": "2.5",
+          "merged": "2.5"
+        },
+        "support_bottom_z_distance": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.12"
+        },
+        "support_expansion": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_bottom_layers": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "support_interface_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_loop_pattern": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_interface_pattern": {
+          "original": "auto",
+          "smooth_surface": "auto",
+          "enclosure": "auto",
+          "merged": "auto"
+        },
+        "support_interface_spacing": {
+          "original": "0.5",
+          "smooth_surface": "0.5",
+          "enclosure": "0.5",
+          "merged": "0.5"
+        },
+        "support_interface_speed": {
+          "original": [
+            "80",
+            "80"
+          ],
+          "smooth_surface": [
+            "80",
+            "80"
+          ],
+          "enclosure": [
+            "80",
+            "80"
+          ],
+          "merged": [
+            "80",
+            "80"
+          ]
+        },
+        "support_interface_top_layers": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "support_ironing_direction": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_ironing_flow": {
+          "original": "10%",
+          "smooth_surface": "10%",
+          "enclosure": "10%",
+          "merged": "10%"
+        },
+        "support_ironing_inset": {
+          "original": "0.0",
+          "smooth_surface": "0.0",
+          "enclosure": "0.0",
+          "merged": "0.0"
+        },
+        "support_ironing_pattern": {
+          "original": "zig-zag",
+          "smooth_surface": "zig-zag",
+          "enclosure": "zig-zag",
+          "merged": "zig-zag"
+        },
+        "support_ironing_spacing": {
+          "original": "0.15",
+          "smooth_surface": "0.15",
+          "enclosure": "0.15",
+          "merged": "0.15"
+        },
+        "support_ironing_speed": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "support_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.42",
+          "enclosure": "0.42",
+          "merged": "0.42"
+        },
+        "support_object_xy_distance": {
+          "original": "0.35",
+          "smooth_surface": "0.35",
+          "enclosure": "0.35",
+          "merged": "0.35"
+        },
+        "support_on_build_plate_only": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "support_speed": {
+          "original": [
+            "150",
+            "150"
+          ],
+          "smooth_surface": [
+            "150",
+            "150"
+          ],
+          "enclosure": [
+            "150",
+            "150"
+          ],
+          "merged": [
+            "150",
+            "150"
+          ]
+        },
+        "support_style": {
+          "original": "default",
+          "smooth_surface": "default",
+          "enclosure": "default",
+          "merged": "default"
+        },
+        "support_threshold_angle": {
+          "original": "30",
+          "smooth_surface": "30",
+          "enclosure": "30",
+          "merged": "30"
+        },
+        "support_top_z_distance": {
+          "original": "0.2",
+          "smooth_surface": "0.2",
+          "enclosure": "0.2",
+          "merged": "0.12"
+        },
+        "support_type": {
+          "original": "tree(auto)",
+          "smooth_surface": "tree(auto)",
+          "enclosure": "tree(auto)",
+          "merged": "tree(auto)"
+        },
+        "symmetric_infill_y_axis": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "top_color_penetration_layers": {
+          "original": "5",
+          "smooth_surface": "5",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "top_shell_layers": {
+          "original": "5",
+          "smooth_surface": "6",
+          "enclosure": "6",
+          "merged": "10"
+        },
+        "top_shell_thickness": {
+          "original": "1.0",
+          "smooth_surface": "1.0",
+          "enclosure": "1.0",
+          "merged": "1.2"
+        },
+        "top_solid_infill_flow_ratio": {
+          "original": [
+            "1",
+            "1"
+          ],
+          "smooth_surface": [
+            "1",
+            "1"
+          ],
+          "enclosure": [
+            "1",
+            "1"
+          ],
+          "merged": [
+            "1",
+            "1"
+          ]
+        },
+        "top_surface_acceleration": {
+          "original": [
+            "2000",
+            "2000"
+          ],
+          "smooth_surface": [
+            "500",
+            "2000"
+          ],
+          "enclosure": [
+            "2000",
+            "2000"
+          ],
+          "merged": [
+            "500",
+            "500"
+          ]
+        },
+        "top_surface_density": {
+          "original": "100",
+          "smooth_surface": "100",
+          "enclosure": "100",
+          "merged": "100"
+        },
+        "top_surface_line_width": {
+          "original": "0.42",
+          "smooth_surface": "0.3",
+          "enclosure": "0.42",
+          "merged": "0.3"
+        },
+        "top_surface_pattern": {
+          "original": "monotonicline",
+          "smooth_surface": "monotonicline",
+          "enclosure": "monotonicline",
+          "merged": "monotonicline"
+        },
+        "top_surface_speed": {
+          "original": [
+            "200",
+            "200"
+          ],
+          "smooth_surface": [
+            "15",
+            "200"
+          ],
+          "enclosure": [
+            "35",
+            "35"
+          ],
+          "merged": [
+            "15",
+            "15"
+          ]
+        },
+        "travel_acceleration": {
+          "original": [
+            "10000",
+            "10000"
+          ],
+          "smooth_surface": [
+            "10000",
+            "10000"
+          ],
+          "enclosure": [
+            "10000",
+            "10000"
+          ],
+          "merged": [
+            "10000",
+            "10000"
+          ]
+        },
+        "travel_short_distance_acceleration": {
+          "original": [
+            "250",
+            "250"
+          ],
+          "smooth_surface": [
+            "250",
+            "250"
+          ],
+          "enclosure": [
+            "250",
+            "250"
+          ],
+          "merged": [
+            "250",
+            "250"
+          ]
+        },
+        "travel_speed": {
+          "original": [
+            "600",
+            "600"
+          ],
+          "smooth_surface": [
+            "600",
+            "600"
+          ],
+          "enclosure": [
+            "600",
+            "600"
+          ],
+          "merged": [
+            "600",
+            "600"
+          ]
+        },
+        "travel_speed_z": {
+          "original": [
+            "0",
+            "0"
+          ],
+          "smooth_surface": [
+            "0",
+            "0"
+          ],
+          "enclosure": [
+            "0",
+            "0"
+          ],
+          "merged": [
+            "0",
+            "0"
+          ]
+        },
+        "tree_support_branch_angle": {
+          "original": "45",
+          "smooth_surface": "45",
+          "enclosure": "45",
+          "merged": "45"
+        },
+        "tree_support_branch_diameter": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "2",
+          "merged": "2"
+        },
+        "tree_support_wall_count": {
+          "original": "-1",
+          "smooth_surface": "-1",
+          "enclosure": "-1",
+          "merged": "-1"
+        },
+        "vertical_shell_speed": {
+          "original": [
+            "80%",
+            "80%"
+          ],
+          "smooth_surface": [
+            "80%",
+            "80%"
+          ],
+          "enclosure": [
+            "80%",
+            "80%"
+          ],
+          "merged": [
+            "80%",
+            "80%"
+          ]
+        },
+        "wall_filament": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "wall_generator": {
+          "original": "classic",
+          "smooth_surface": "arachne",
+          "enclosure": "classic",
+          "merged": "arachne"
+        },
+        "wall_infill_order": {
+          "original": "inner wall/outer wall/infill",
+          "smooth_surface": "inner wall/outer wall/infill",
+          "enclosure": "inner wall/outer wall/infill",
+          "merged": "inner wall/outer wall/infill"
+        },
+        "wall_loops": {
+          "original": "2",
+          "smooth_surface": "2",
+          "enclosure": "5",
+          "merged": "5"
+        },
+        "wall_transition_angle": {
+          "original": null,
+          "smooth_surface": "40",
+          "enclosure": null,
+          "merged": "40"
+        },
+        "wipe_tower_no_sparse_layers": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "xy_contour_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "xy_hole_compensation": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        },
+        "z_direction_outwall_speed_continuous": {
+          "original": "0",
+          "smooth_surface": "0",
+          "enclosure": "0",
+          "merged": "0"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "printer": "Bambu Lab P2S 0.4 nozzle",
+  "parts": [
+    {
+      "name": "usb_cover",
+      "material": "PETG",
+      "path": "usb_cover.stl"
+    },
+    {
+      "name": "usb_gasket",
+      "material": "TPU",
+      "path": "usb_gasket.stl"
+    },
+    {
+      "name": "service_switch_cover",
+      "material": "PETG",
+      "path": "service_switch_cover.stl"
+    },
+    {
+      "name": "service_switch_gasket",
+      "material": "TPU",
+      "path": "service_switch_gasket.stl"
+    },
+    {
+      "name": "cable_pressure_cap",
+      "material": "PETG",
+      "path": "cable_pressure_cap.stl"
+    },
+    {
+      "name": "cable_blank",
+      "material": "TPU",
+      "path": "cable_blank.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "cable_seal_5p0mm",
+      "material": "TPU",
+      "path": "cable_seal_5p0mm.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "cable_seal_5p5mm",
+      "material": "TPU",
+      "path": "cable_seal_5p5mm.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "cable_seal_6p0mm",
+      "material": "TPU",
+      "path": "cable_seal_6p0mm.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "cable_seal_6p5mm",
+      "material": "TPU",
+      "path": "cable_seal_6p5mm.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "cable_seal_7p0mm",
+      "material": "TPU",
+      "path": "cable_seal_7p0mm.stl",
+      "alternative_group": "cable_cartridge"
+    },
+    {
+      "name": "base",
+      "material": "PETG",
+      "path": "base.stl"
+    },
+    {
+      "name": "lid",
+      "material": "PETG",
+      "path": "lid.stl"
+    },
+    {
+      "name": "lid_gasket",
+      "material": "TPU",
+      "path": "lid_gasket.stl"
+    },
+    {
+      "name": "fit_coupon",
+      "material": "PETG",
+      "path": "fit_coupon.stl",
+      "coupon": true
+    }
+  ],
+  "notes": [
+    "Rigid and TPU parts must be printed on separate plates.",
+    "Cable cartridges are alternatives; use exactly one.",
+    "Cable OD is not measured; select by physical fit.",
+    "No tested IP rating."
+  ]
+}

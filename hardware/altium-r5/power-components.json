@@ -1,0 +1,6811 @@
+{
+  "revision": "R5 SuperMini regulated5V and RUN/SERVICE power implementation",
+  "components": [
+    {
+      "ref": "U3",
+      "value": "AP63205WU-7",
+      "footprint": "TSOT26_DIODES",
+      "pins": [
+        {
+          "number": "1",
+          "name": "FB",
+          "net": "5V_BUS",
+          "type": 0
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "net": "BUS_PROT",
+          "type": 0
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "net": "BUS_PROT",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "5",
+          "name": "SW",
+          "net": "SW_BUS",
+          "type": 2
+        },
+        {
+          "number": "6",
+          "name": "BST",
+          "net": "BST_BUS",
+          "type": 0
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "AP63205WU-7",
+      "lcsc": "C2071056",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+      "pcb_footprint": {
+        "body": [
+          3.0,
+          1.7
+        ],
+        "height": 1.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "note": "Diodes DS41326 Rev3-2 p17 suggested TSOT26 copper: X=.70,Y=1.00,Y1=3.20 total span,C=.95. Top view: pin1 lower-left; pin4 upper-right.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        2,
+        13,
+        17
+      ],
+      "constraints": [
+        "FB directly senses the respective output rail; do NOT insert a divider for fixed-voltage AP63203/AP63205.",
+        "Place input MLCC directly across pins3/4; keep the switched-current loop compact.",
+        "Place bootstrap100nF directly between pins6/5. Keep SW copper small and feedback away from SW/inductor.",
+        "EN tied to VIN is permitted by the manufacturer."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2071056",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2071056",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "schematic_symbol": {
+        "kind": "functional_ic",
+        "pins": [
+          {
+            "number": "3",
+            "x": -70,
+            "y": 20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "2",
+            "x": -70,
+            "y": -20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "6",
+            "x": 70,
+            "y": 40,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "5",
+            "x": 70,
+            "y": 0,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "1",
+            "x": 70,
+            "y": -40,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "4",
+            "x": 0.0,
+            "y": -50,
+            "orientation": 3,
+            "show_name": true
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 14,
+            "Location.X": -70,
+            "Location.Y": -50,
+            "Corner.X": 70,
+            "Corner.Y": 50,
+            "LineWidth": 1,
+            "Color": 128,
+            "AreaColor": 16777215,
+            "IsSolid": "F"
+          }
+        ],
+        "bbox": [
+          -90,
+          -70,
+          90,
+          50
+        ],
+        "designator_pos": [
+          -70,
+          80
+        ],
+        "value_pos": [
+          -70,
+          65
+        ]
+      },
+      "schematic_label_offset": [
+        -70,
+        85
+      ],
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_U3_AP63205WU_7",
+      "description": "AP63205WU-7",
+      "pcb": {
+        "x": 11.5,
+        "y": 10.3,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Diodes Incorporated",
+        "MPN": "AP63205WU-7",
+        "Manufacturer Part Number": "AP63205WU-7",
+        "Description": "AP63205WU-7",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C2071056",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.5,
+              -0.85
+            ],
+            [
+              1.5,
+              -0.85
+            ],
+            [
+              1.5,
+              0.85
+            ],
+            [
+              -1.5,
+              0.85
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.0,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "gull wing terminal 1",
+          "outline": [
+            [
+              -1.175,
+              -1.35
+            ],
+            [
+              -0.725,
+              -1.35
+            ],
+            [
+              -0.725,
+              -0.5499999999999998
+            ],
+            [
+              -1.175,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 2",
+          "outline": [
+            [
+              -0.225,
+              -1.35
+            ],
+            [
+              0.225,
+              -1.35
+            ],
+            [
+              0.225,
+              -0.5499999999999998
+            ],
+            [
+              -0.225,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 3",
+          "outline": [
+            [
+              0.725,
+              -1.35
+            ],
+            [
+              1.175,
+              -1.35
+            ],
+            [
+              1.175,
+              -0.5499999999999998
+            ],
+            [
+              0.725,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 4",
+          "outline": [
+            [
+              0.725,
+              0.5499999999999998
+            ],
+            [
+              1.175,
+              0.5499999999999998
+            ],
+            [
+              1.175,
+              1.35
+            ],
+            [
+              0.725,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 5",
+          "outline": [
+            [
+              -0.225,
+              0.5499999999999998
+            ],
+            [
+              0.225,
+              0.5499999999999998
+            ],
+            [
+              0.225,
+              1.35
+            ],
+            [
+              -0.225,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 6",
+          "outline": [
+            [
+              -1.175,
+              0.5499999999999998
+            ],
+            [
+              -0.725,
+              0.5499999999999998
+            ],
+            [
+              -0.725,
+              1.35
+            ],
+            [
+              -1.175,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "pin 1 indicator",
+          "outline": [
+            [
+              -0.7699999999999999,
+              -0.51
+            ],
+            [
+              -0.77249791354758,
+              -0.48463825813790334
+            ],
+            [
+              -0.7798956607735327,
+              -0.46025115379253834
+            ],
+            [
+              -0.791908950400669,
+              -0.43777586970745175
+            ],
+            [
+              -0.8080761184457488,
+              -0.4180761184457488
+            ],
+            [
+              -0.8277758697074517,
+              -0.4019089504006691
+            ],
+            [
+              -0.8502511537925382,
+              -0.3898956607735327
+            ],
+            [
+              -0.8746382581379032,
+              -0.38249791354758006
+            ],
+            [
+              -0.8999999999999999,
+              -0.38
+            ],
+            [
+              -0.9253617418620965,
+              -0.38249791354758006
+            ],
+            [
+              -0.9497488462074616,
+              -0.3898956607735327
+            ],
+            [
+              -0.9722241302925482,
+              -0.4019089504006691
+            ],
+            [
+              -0.991923881554251,
+              -0.4180761184457488
+            ],
+            [
+              -1.0080910495993307,
+              -0.43777586970745175
+            ],
+            [
+              -1.0201043392264673,
+              -0.46025115379253834
+            ],
+            [
+              -1.0275020864524198,
+              -0.4846382581379033
+            ],
+            [
+              -1.0299999999999998,
+              -0.51
+            ],
+            [
+              -1.0275020864524198,
+              -0.5353617418620967
+            ],
+            [
+              -1.0201043392264673,
+              -0.5597488462074617
+            ],
+            [
+              -1.0080910495993307,
+              -0.5822241302925483
+            ],
+            [
+              -0.9919238815542512,
+              -0.6019238815542511
+            ],
+            [
+              -0.9722241302925482,
+              -0.6180910495993309
+            ],
+            [
+              -0.9497488462074617,
+              -0.6301043392264672
+            ],
+            [
+              -0.9253617418620966,
+              -0.6375020864524199
+            ],
+            [
+              -0.8999999999999999,
+              -0.64
+            ],
+            [
+              -0.8746382581379032,
+              -0.6375020864524199
+            ],
+            [
+              -0.8502511537925382,
+              -0.6301043392264672
+            ],
+            [
+              -0.8277758697074517,
+              -0.6180910495993309
+            ],
+            [
+              -0.8080761184457488,
+              -0.6019238815542512
+            ],
+            [
+              -0.791908950400669,
+              -0.5822241302925483
+            ],
+            [
+              -0.7798956607735327,
+              -0.5597488462074618
+            ],
+            [
+              -0.77249791354758,
+              -0.5353617418620967
+            ]
+          ],
+          "z0": 1.0,
+          "z1": 1.015,
+          "rgb": [
+            145,
+            150,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U4",
+      "value": "AP63205WU-7",
+      "footprint": "TSOT26_DIODES",
+      "pins": [
+        {
+          "number": "1",
+          "name": "FB",
+          "net": "5V_REG",
+          "type": 0
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "net": "5V_ISO",
+          "type": 0
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "net": "5V_ISO",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "5",
+          "name": "SW",
+          "net": "SW_LOGIC",
+          "type": 2
+        },
+        {
+          "number": "6",
+          "name": "BST",
+          "net": "BST_LOGIC",
+          "type": 0
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "AP63205WU-7",
+      "lcsc": "C2071056",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+      "pcb_footprint": {
+        "body": [
+          3.0,
+          1.7
+        ],
+        "height": 1.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "note": "Diodes DS41326 Rev3-2 p17 suggested TSOT26 copper: X=.70,Y=1.00,Y1=3.20 total span,C=.95. Top view: pin1 lower-left; pin4 upper-right.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        2,
+        13,
+        17
+      ],
+      "constraints": [
+        "AP63205 fixed 5V: FB directly senses 5V_REG.",
+        "VIN and EN directly on 5V_ISO; no upstream OR diode.",
+        "C29/C30 at VIN/GND; C31 across BST/SW; L3 and C32/C33 compact.",
+        "Below regulation headroom, output follows input minus losses. This is not a buck-boost converter."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2071056",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2071056",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "schematic_symbol": {
+        "kind": "functional_ic",
+        "pins": [
+          {
+            "number": "3",
+            "x": -70,
+            "y": 20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "2",
+            "x": -70,
+            "y": -20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "6",
+            "x": 70,
+            "y": 40,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "5",
+            "x": 70,
+            "y": 0,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "1",
+            "x": 70,
+            "y": -40,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "4",
+            "x": 0.0,
+            "y": -50,
+            "orientation": 3,
+            "show_name": true
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 14,
+            "Location.X": -70,
+            "Location.Y": -50,
+            "Corner.X": 70,
+            "Corner.Y": 50,
+            "LineWidth": 1,
+            "Color": 128,
+            "AreaColor": 16777215,
+            "IsSolid": "F"
+          }
+        ],
+        "bbox": [
+          -90,
+          -70,
+          90,
+          50
+        ],
+        "designator_pos": [
+          -70,
+          80
+        ],
+        "value_pos": [
+          -70,
+          65
+        ]
+      },
+      "schematic_label_offset": [
+        -70,
+        85
+      ],
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R5_U4_AP63205WU_7",
+      "description": "Isolated-side 5V buck / high-duty pass-through, feeding physical RUN/SERVICE disconnect",
+      "pcb": {
+        "x": 40.25,
+        "y": 6.35,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Diodes Incorporated",
+        "MPN": "AP63205WU-7",
+        "Manufacturer Part Number": "AP63205WU-7",
+        "Description": "Isolated-side 5V buck / high-duty pass-through, feeding physical RUN/SERVICE disconnect",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C2071056",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.5,
+              -0.85
+            ],
+            [
+              1.5,
+              -0.85
+            ],
+            [
+              1.5,
+              0.85
+            ],
+            [
+              -1.5,
+              0.85
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.0,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "gull wing terminal 1",
+          "outline": [
+            [
+              -1.175,
+              -1.35
+            ],
+            [
+              -0.725,
+              -1.35
+            ],
+            [
+              -0.725,
+              -0.5499999999999998
+            ],
+            [
+              -1.175,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 2",
+          "outline": [
+            [
+              -0.225,
+              -1.35
+            ],
+            [
+              0.225,
+              -1.35
+            ],
+            [
+              0.225,
+              -0.5499999999999998
+            ],
+            [
+              -0.225,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 3",
+          "outline": [
+            [
+              0.725,
+              -1.35
+            ],
+            [
+              1.175,
+              -1.35
+            ],
+            [
+              1.175,
+              -0.5499999999999998
+            ],
+            [
+              0.725,
+              -0.5499999999999998
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 4",
+          "outline": [
+            [
+              0.725,
+              0.5499999999999998
+            ],
+            [
+              1.175,
+              0.5499999999999998
+            ],
+            [
+              1.175,
+              1.35
+            ],
+            [
+              0.725,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 5",
+          "outline": [
+            [
+              -0.225,
+              0.5499999999999998
+            ],
+            [
+              0.225,
+              0.5499999999999998
+            ],
+            [
+              0.225,
+              1.35
+            ],
+            [
+              -0.225,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "gull wing terminal 6",
+          "outline": [
+            [
+              -1.175,
+              0.5499999999999998
+            ],
+            [
+              -0.725,
+              0.5499999999999998
+            ],
+            [
+              -0.725,
+              1.35
+            ],
+            [
+              -1.175,
+              1.35
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.22,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "pin 1 indicator",
+          "outline": [
+            [
+              -0.7699999999999999,
+              -0.51
+            ],
+            [
+              -0.77249791354758,
+              -0.48463825813790334
+            ],
+            [
+              -0.7798956607735327,
+              -0.46025115379253834
+            ],
+            [
+              -0.791908950400669,
+              -0.43777586970745175
+            ],
+            [
+              -0.8080761184457488,
+              -0.4180761184457488
+            ],
+            [
+              -0.8277758697074517,
+              -0.4019089504006691
+            ],
+            [
+              -0.8502511537925382,
+              -0.3898956607735327
+            ],
+            [
+              -0.8746382581379032,
+              -0.38249791354758006
+            ],
+            [
+              -0.8999999999999999,
+              -0.38
+            ],
+            [
+              -0.9253617418620965,
+              -0.38249791354758006
+            ],
+            [
+              -0.9497488462074616,
+              -0.3898956607735327
+            ],
+            [
+              -0.9722241302925482,
+              -0.4019089504006691
+            ],
+            [
+              -0.991923881554251,
+              -0.4180761184457488
+            ],
+            [
+              -1.0080910495993307,
+              -0.43777586970745175
+            ],
+            [
+              -1.0201043392264673,
+              -0.46025115379253834
+            ],
+            [
+              -1.0275020864524198,
+              -0.4846382581379033
+            ],
+            [
+              -1.0299999999999998,
+              -0.51
+            ],
+            [
+              -1.0275020864524198,
+              -0.5353617418620967
+            ],
+            [
+              -1.0201043392264673,
+              -0.5597488462074617
+            ],
+            [
+              -1.0080910495993307,
+              -0.5822241302925483
+            ],
+            [
+              -0.9919238815542512,
+              -0.6019238815542511
+            ],
+            [
+              -0.9722241302925482,
+              -0.6180910495993309
+            ],
+            [
+              -0.9497488462074617,
+              -0.6301043392264672
+            ],
+            [
+              -0.9253617418620966,
+              -0.6375020864524199
+            ],
+            [
+              -0.8999999999999999,
+              -0.64
+            ],
+            [
+              -0.8746382581379032,
+              -0.6375020864524199
+            ],
+            [
+              -0.8502511537925382,
+              -0.6301043392264672
+            ],
+            [
+              -0.8277758697074517,
+              -0.6180910495993309
+            ],
+            [
+              -0.8080761184457488,
+              -0.6019238815542512
+            ],
+            [
+              -0.791908950400669,
+              -0.5822241302925483
+            ],
+            [
+              -0.7798956607735327,
+              -0.5597488462074618
+            ],
+            [
+              -0.77249791354758,
+              -0.5353617418620967
+            ]
+          ],
+          "z0": 1.0,
+          "z1": 1.015,
+          "rgb": [
+            145,
+            150,
+            155
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "value": "B0505S-3WR2",
+      "footprint": "EVISUN_B0505S_3WR2",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VIN",
+          "net": "5V_BUS",
+          "type": 7
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "0V",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "6",
+          "name": "+VO",
+          "net": "5V_ISO",
+          "type": 7
+        }
+      ],
+      "group": "power",
+      "manufacturer": "EVISUN",
+      "mpn": "B0505S-3WR2",
+      "lcsc": "C7500927",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308311627_EVISUN-B0505S-3WR2_C7500927.pdf",
+      "pcb_footprint": {
+        "body": [
+          19.9,
+          7.25
+        ],
+        "height": 10.41,
+        "pads": [
+          {
+            "number": "1",
+            "x": -7.615,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": -5.075,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "4",
+            "x": 0.005,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "6",
+            "x": 5.085,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          }
+        ],
+        "note": "EVISUN p4: nominal19.65x7x10.16mm, unspecified body tolerance+/-0.25mm, lead1 x=2.21 from body left, pitch1-2=2.54/2-4=5.08/4-6=5.08mm. Pin row .90mm from long body edge. Bottom view mirrored vertically to PCB TOP: row Y=+2.60mm. Finished holes1.00mm, annulus.30mm. Primary/secondary pad copper gap3.48mm.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        4,
+        5
+      ],
+      "assembly_type": "Through-hole, factory manual soldering, Standard PCBA",
+      "constraints": [
+        "This exact EVISUN pin mapping differs from some generic DC/DC assumptions: pin1 is +VIN, pin2 is input GND.",
+        "Permanent minimum-load resistors across5V_ISO keep the output loaded even when USB supplies5V_SYS.",
+        "Manufacturer output600mA maximum /60mA minimum; regulated5V_BUS remains inside4.5–5.5V module input range.",
+        "Do not replace with another manufacturer solely because the abbreviated part number matches."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C7500927",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C7500927",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "schematic_symbol": {
+        "kind": "functional_ic",
+        "pins": [
+          {
+            "number": "1",
+            "x": -70,
+            "y": 20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "2",
+            "x": -70,
+            "y": -20,
+            "orientation": 2,
+            "show_name": true
+          },
+          {
+            "number": "6",
+            "x": 70,
+            "y": 20,
+            "orientation": 0,
+            "show_name": true
+          },
+          {
+            "number": "4",
+            "x": 70,
+            "y": -20,
+            "orientation": 0,
+            "show_name": true
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 14,
+            "Location.X": -70,
+            "Location.Y": -40,
+            "Corner.X": 70,
+            "Corner.Y": 40,
+            "LineWidth": 1,
+            "Color": 128,
+            "AreaColor": 16777215,
+            "IsSolid": "F"
+          }
+        ],
+        "bbox": [
+          -90,
+          -60,
+          90,
+          40
+        ],
+        "designator_pos": [
+          -70,
+          70
+        ],
+        "value_pos": [
+          -70,
+          55
+        ]
+      },
+      "schematic_label_offset": [
+        -70,
+        75
+      ],
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_U2_B0505S_3WR2",
+      "description": "B0505S-3WR2",
+      "pcb": {
+        "x": 22.035,
+        "y": 4.2,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "EVISUN",
+        "MPN": "B0505S-3WR2",
+        "Manufacturer Part Number": "B0505S-3WR2",
+        "Description": "B0505S-3WR2",
+        "Datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308311627_EVISUN-B0505S-3WR2_C7500927.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C7500927",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "isolated converter SIP housing",
+          "outline": [
+            [
+              -9.825,
+              -3.5
+            ],
+            [
+              9.825,
+              -3.5
+            ],
+            [
+              9.825,
+              3.5
+            ],
+            [
+              -9.825,
+              3.5
+            ]
+          ],
+          "z0": 0.15,
+          "z1": 10.31,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "converter label area",
+          "outline": [
+            [
+              -8.2,
+              -2.55
+            ],
+            [
+              8.2,
+              -2.55
+            ],
+            [
+              8.2,
+              2.55
+            ],
+            [
+              -8.2,
+              2.55
+            ]
+          ],
+          "z0": 10.31,
+          "z1": 10.33,
+          "rgb": [
+            68,
+            73,
+            79
+          ]
+        },
+        {
+          "name": "SIP through lead 1",
+          "outline": [
+            [
+              -7.865,
+              2.35
+            ],
+            [
+              -7.365,
+              2.35
+            ],
+            [
+              -7.365,
+              2.85
+            ],
+            [
+              -7.865,
+              2.85
+            ]
+          ],
+          "z0": -2.5,
+          "z1": 0.45,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "SIP through lead 2",
+          "outline": [
+            [
+              -5.325,
+              2.35
+            ],
+            [
+              -4.825,
+              2.35
+            ],
+            [
+              -4.825,
+              2.85
+            ],
+            [
+              -5.325,
+              2.85
+            ]
+          ],
+          "z0": -2.5,
+          "z1": 0.45,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "SIP through lead 4",
+          "outline": [
+            [
+              -0.245,
+              2.35
+            ],
+            [
+              0.255,
+              2.35
+            ],
+            [
+              0.255,
+              2.85
+            ],
+            [
+              -0.245,
+              2.85
+            ]
+          ],
+          "z0": -2.5,
+          "z1": 0.45,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "SIP through lead 6",
+          "outline": [
+            [
+              4.835,
+              2.35
+            ],
+            [
+              5.335,
+              2.35
+            ],
+            [
+              5.335,
+              2.85
+            ],
+            [
+              4.835,
+              2.85
+            ]
+          ],
+          "z0": -2.5,
+          "z1": 0.45,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L2",
+      "value": "4.7uH",
+      "footprint": "SUNLORD_SWPA4030",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SW_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "5V_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Sunlord",
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+      "selection_notes": "L3 uses4.7uH rather than3.9uH reference value: reduced ripple at the4.5–5.5V secondary input;44uF nominal output retained. Power current target0.5A at3.3V, not2A board output.",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C57269",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C57269",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4,
+          4
+        ],
+        "height": 3,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "provisional": false
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_L2_4.7uH",
+      "description": "4.7uH",
+      "pcb": {
+        "x": 7.5,
+        "y": 9.2,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Sunlord",
+        "MPN": "SWPA4030S4R7MT",
+        "Manufacturer Part Number": "SWPA4030S4R7MT",
+        "Description": "4.7uH",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C57269",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "power inductor ferrite",
+          "outline": [
+            [
+              -2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "z0": 0.1,
+          "z1": 3,
+          "rgb": [
+            68,
+            65,
+            62
+          ]
+        },
+        {
+          "name": "power inductor top",
+          "outline": [
+            [
+              1.6,
+              0.0
+            ],
+            [
+              1.5692564486451688,
+              0.3121445152258052
+            ],
+            [
+              1.478207252018059,
+              0.6122934917841437
+            ],
+            [
+              1.3303513796840725,
+              0.8889123728313635
+            ],
+            [
+              1.1313708498984762,
+              1.1313708498984762
+            ],
+            [
+              0.8889123728313637,
+              1.3303513796840725
+            ],
+            [
+              0.6122934917841438,
+              1.478207252018059
+            ],
+            [
+              0.31214451522580533,
+              1.5692564486451688
+            ],
+            [
+              9.797174393178826e-17,
+              1.6
+            ],
+            [
+              -0.3121445152258051,
+              1.5692564486451688
+            ],
+            [
+              -0.6122934917841436,
+              1.478207252018059
+            ],
+            [
+              -0.8889123728313632,
+              1.3303513796840727
+            ],
+            [
+              -1.131370849898476,
+              1.1313708498984762
+            ],
+            [
+              -1.3303513796840727,
+              0.8889123728313635
+            ],
+            [
+              -1.478207252018059,
+              0.6122934917841438
+            ],
+            [
+              -1.5692564486451688,
+              0.3121445152258058
+            ],
+            [
+              -1.6,
+              1.9594348786357652e-16
+            ],
+            [
+              -1.5692564486451688,
+              -0.3121445152258054
+            ],
+            [
+              -1.4782072520180591,
+              -0.6122934917841435
+            ],
+            [
+              -1.330351379684073,
+              -0.8889123728313632
+            ],
+            [
+              -1.1313708498984762,
+              -1.131370849898476
+            ],
+            [
+              -0.8889123728313635,
+              -1.3303513796840725
+            ],
+            [
+              -0.6122934917841446,
+              -1.4782072520180585
+            ],
+            [
+              -0.3121445152258059,
+              -1.5692564486451686
+            ],
+            [
+              -2.9391523179536476e-16,
+              -1.6
+            ],
+            [
+              0.31214451522580533,
+              -1.5692564486451688
+            ],
+            [
+              0.612293491784144,
+              -1.4782072520180587
+            ],
+            [
+              0.888912372831363,
+              -1.330351379684073
+            ],
+            [
+              1.1313708498984758,
+              -1.1313708498984762
+            ],
+            [
+              1.3303513796840725,
+              -0.8889123728313635
+            ],
+            [
+              1.4782072520180585,
+              -0.6122934917841447
+            ],
+            [
+              1.5692564486451686,
+              -0.312144515225806
+            ]
+          ],
+          "z0": 3,
+          "z1": 3.015,
+          "rgb": [
+            78,
+            74,
+            70
+          ]
+        },
+        {
+          "name": "terminal 1",
+          "outline": [
+            [
+              -1.94,
+              -1.4800000000000002
+            ],
+            [
+              -1.06,
+              -1.4800000000000002
+            ],
+            [
+              -1.06,
+              1.4800000000000002
+            ],
+            [
+              -1.94,
+              1.4800000000000002
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.18,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "terminal 2",
+          "outline": [
+            [
+              1.06,
+              -1.4800000000000002
+            ],
+            [
+              1.94,
+              -1.4800000000000002
+            ],
+            [
+              1.94,
+              1.4800000000000002
+            ],
+            [
+              1.06,
+              1.4800000000000002
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.18,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "L3",
+      "value": "4.7uH",
+      "footprint": "SUNLORD_SWPA4030",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SW_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "5V_REG",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Sunlord",
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+      "selection_notes": "AP63205 5V manufacturer reference uses 4.7uH and 2x22uF; selected Sunlord C57269 retained.",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C57269",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C57269",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4,
+          4
+        ],
+        "height": 3,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "provisional": false
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "schematic_symbol": {
+        "kind": "inductor",
+        "pins": [
+          {
+            "number": "1",
+            "x": -20,
+            "y": 0,
+            "orientation": 2,
+            "length": 20,
+            "show_name": false,
+            "show_number": true,
+            "name": "1"
+          },
+          {
+            "number": "2",
+            "x": 20,
+            "y": 0,
+            "orientation": 0,
+            "length": 20,
+            "show_name": false,
+            "show_number": true,
+            "name": "2"
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 36,
+            "X1": -20,
+            "Y1": 0,
+            "X2": -20,
+            "Y2": 2,
+            "X3": -19,
+            "Y3": 4,
+            "X4": -17,
+            "Y4": 5,
+            "X5": -15,
+            "Y5": 5,
+            "X6": -13,
+            "Y6": 5,
+            "X7": -11,
+            "Y7": 4,
+            "X8": -10,
+            "Y8": 2,
+            "X9": -10,
+            "Y9": 0,
+            "X10": -10,
+            "Y10": 0,
+            "X11": -10,
+            "Y11": 2,
+            "X12": -9,
+            "Y12": 4,
+            "X13": -7,
+            "Y13": 5,
+            "X14": -5,
+            "Y14": 5,
+            "X15": -3,
+            "Y15": 5,
+            "X16": -1,
+            "Y16": 4,
+            "X17": 0,
+            "Y17": 2,
+            "X18": 0,
+            "Y18": 0,
+            "X19": 0,
+            "Y19": 0,
+            "X20": 0,
+            "Y20": 2,
+            "X21": 1,
+            "Y21": 4,
+            "X22": 3,
+            "Y22": 5,
+            "X23": 5,
+            "Y23": 5,
+            "X24": 7,
+            "Y24": 5,
+            "X25": 9,
+            "Y25": 4,
+            "X26": 10,
+            "Y26": 2,
+            "X27": 10,
+            "Y27": 0,
+            "X28": 10,
+            "Y28": 0,
+            "X29": 10,
+            "Y29": 2,
+            "X30": 11,
+            "Y30": 4,
+            "X31": 13,
+            "Y31": 5,
+            "X32": 15,
+            "Y32": 5,
+            "X33": 17,
+            "Y33": 5,
+            "X34": 19,
+            "Y34": 4,
+            "X35": 20,
+            "Y35": 2,
+            "X36": 20,
+            "Y36": 0
+          }
+        ],
+        "bbox": [
+          -40,
+          0,
+          40,
+          5
+        ]
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_L3_4.7uH",
+      "description": "4.7uH",
+      "pcb": {
+        "x": 36.25,
+        "y": 7.45,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Sunlord",
+        "MPN": "SWPA4030S4R7MT",
+        "Manufacturer Part Number": "SWPA4030S4R7MT",
+        "Description": "4.7uH",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C57269",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "power inductor ferrite",
+          "outline": [
+            [
+              -2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              -2.0
+            ],
+            [
+              2.0,
+              2.0
+            ],
+            [
+              -2.0,
+              2.0
+            ]
+          ],
+          "z0": 0.1,
+          "z1": 3,
+          "rgb": [
+            68,
+            65,
+            62
+          ]
+        },
+        {
+          "name": "power inductor top",
+          "outline": [
+            [
+              1.6,
+              0.0
+            ],
+            [
+              1.5692564486451688,
+              0.3121445152258052
+            ],
+            [
+              1.478207252018059,
+              0.6122934917841437
+            ],
+            [
+              1.3303513796840725,
+              0.8889123728313635
+            ],
+            [
+              1.1313708498984762,
+              1.1313708498984762
+            ],
+            [
+              0.8889123728313637,
+              1.3303513796840725
+            ],
+            [
+              0.6122934917841438,
+              1.478207252018059
+            ],
+            [
+              0.31214451522580533,
+              1.5692564486451688
+            ],
+            [
+              9.797174393178826e-17,
+              1.6
+            ],
+            [
+              -0.3121445152258051,
+              1.5692564486451688
+            ],
+            [
+              -0.6122934917841436,
+              1.478207252018059
+            ],
+            [
+              -0.8889123728313632,
+              1.3303513796840727
+            ],
+            [
+              -1.131370849898476,
+              1.1313708498984762
+            ],
+            [
+              -1.3303513796840727,
+              0.8889123728313635
+            ],
+            [
+              -1.478207252018059,
+              0.6122934917841438
+            ],
+            [
+              -1.5692564486451688,
+              0.3121445152258058
+            ],
+            [
+              -1.6,
+              1.9594348786357652e-16
+            ],
+            [
+              -1.5692564486451688,
+              -0.3121445152258054
+            ],
+            [
+              -1.4782072520180591,
+              -0.6122934917841435
+            ],
+            [
+              -1.330351379684073,
+              -0.8889123728313632
+            ],
+            [
+              -1.1313708498984762,
+              -1.131370849898476
+            ],
+            [
+              -0.8889123728313635,
+              -1.3303513796840725
+            ],
+            [
+              -0.6122934917841446,
+              -1.4782072520180585
+            ],
+            [
+              -0.3121445152258059,
+              -1.5692564486451686
+            ],
+            [
+              -2.9391523179536476e-16,
+              -1.6
+            ],
+            [
+              0.31214451522580533,
+              -1.5692564486451688
+            ],
+            [
+              0.612293491784144,
+              -1.4782072520180587
+            ],
+            [
+              0.888912372831363,
+              -1.330351379684073
+            ],
+            [
+              1.1313708498984758,
+              -1.1313708498984762
+            ],
+            [
+              1.3303513796840725,
+              -0.8889123728313635
+            ],
+            [
+              1.4782072520180585,
+              -0.6122934917841447
+            ],
+            [
+              1.5692564486451686,
+              -0.312144515225806
+            ]
+          ],
+          "z0": 3,
+          "z1": 3.015,
+          "rgb": [
+            78,
+            74,
+            70
+          ]
+        },
+        {
+          "name": "terminal 1",
+          "outline": [
+            [
+              -1.94,
+              -1.4800000000000002
+            ],
+            [
+              -1.06,
+              -1.4800000000000002
+            ],
+            [
+              -1.06,
+              1.4800000000000002
+            ],
+            [
+              -1.94,
+              1.4800000000000002
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.18,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "terminal 2",
+          "outline": [
+            [
+              1.06,
+              -1.4800000000000002
+            ],
+            [
+              1.94,
+              -1.4800000000000002
+            ],
+            [
+              1.94,
+              1.4800000000000002
+            ],
+            [
+              1.06,
+              1.4800000000000002
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.18,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C20",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 50V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C138687",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C138687",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          2.5
+        ],
+        "height": 2.7,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE",
+            "mask_expansion_mm": 0.01
+          }
+        ],
+        "source_note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C20_10uF",
+      "description": "10uF 50V X7R",
+      "pcb": {
+        "x": 15.35,
+        "y": 10.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL32B106KBJNNNE",
+        "Manufacturer Part Number": "CL32B106KBJNNNE",
+        "Description": "10uF 50V X7R",
+        "Datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C138687",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -1.25
+            ],
+            [
+              1.6,
+              -1.25
+            ],
+            [
+              1.6,
+              1.25
+            ],
+            [
+              -1.6,
+              1.25
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 2.7,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -1.2575
+            ],
+            [
+              -1.2200000000000002,
+              -1.2575
+            ],
+            [
+              -1.2200000000000002,
+              1.2575
+            ],
+            [
+              -1.6,
+              1.2575
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 2.7150000000000003,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -1.2575
+            ],
+            [
+              1.6,
+              -1.2575
+            ],
+            [
+              1.6,
+              1.2575
+            ],
+            [
+              1.2200000000000002,
+              1.2575
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 2.7150000000000003,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C21",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 50V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C138687",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C138687",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          2.5
+        ],
+        "height": 2.7,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C21_10uF",
+      "description": "10uF 50V X7R",
+      "pcb": {
+        "x": 15.35,
+        "y": 13.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL32B106KBJNNNE",
+        "Manufacturer Part Number": "CL32B106KBJNNNE",
+        "Description": "10uF 50V X7R",
+        "Datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C138687",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -1.25
+            ],
+            [
+              1.6,
+              -1.25
+            ],
+            [
+              1.6,
+              1.25
+            ],
+            [
+              -1.6,
+              1.25
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 2.7,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -1.2575
+            ],
+            [
+              -1.2200000000000002,
+              -1.2575
+            ],
+            [
+              -1.2200000000000002,
+              1.2575
+            ],
+            [
+              -1.6,
+              1.2575
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 2.7150000000000003,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -1.2575
+            ],
+            [
+              1.6,
+              -1.2575
+            ],
+            [
+              1.6,
+              1.2575
+            ],
+            [
+              1.2200000000000002,
+              1.2575
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 2.7150000000000003,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C22",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C22_22uF",
+      "description": "22uF 25V X5R",
+      "pcb": {
+        "x": 6.925,
+        "y": 4.65,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL31A226KAHNNNE",
+        "Manufacturer Part Number": "CL31A226KAHNNNE",
+        "Description": "22uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C12891",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C23",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C23_22uF",
+      "description": "22uF 25V X5R",
+      "pcb": {
+        "x": 9.025,
+        "y": 4.65,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL31A226KAHNNNE",
+        "Manufacturer Part Number": "CL31A226KAHNNNE",
+        "Description": "22uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C12891",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C24",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BST_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SW_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          1.6,
+          0.8
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95
+          },
+          {
+            "number": "2",
+            "x": 0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95
+          }
+        ],
+        "note": "IPC-style 0603 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C24_100nF",
+      "description": "100nF 50V X7R",
+      "pcb": {
+        "x": 11,
+        "y": 12.6,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "YAGEO",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer Part Number": "CC0603KRX7R9BB104",
+        "Description": "100nF 50V X7R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14663",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              0.4
+            ],
+            [
+              -0.8,
+              0.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -0.8,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              0.40750000000000003
+            ],
+            [
+              -0.8,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.512,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              0.40750000000000003
+            ],
+            [
+              0.512,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ],
+      "schematic_label_offset": [
+        -20,
+        45
+      ]
+    },
+    {
+      "ref": "C25",
+      "value": "10uF 25V X5R",
+      "footprint": "C0805",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          2,
+          1.25
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          },
+          {
+            "number": "2",
+            "x": 0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          }
+        ],
+        "note": "IPC-style 0805 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C25_10uF",
+      "description": "10uF 25V X5R",
+      "pcb": {
+        "x": 10.95,
+        "y": 7,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL21A106KAYNNNE",
+        "Manufacturer Part Number": "CL21A106KAYNNNE",
+        "Description": "10uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C15850",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              0.625
+            ],
+            [
+              -1.0,
+              0.625
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.0,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              0.6325
+            ],
+            [
+              -1.0,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.6400000000000001,
+              -0.6325
+            ],
+            [
+              1.0,
+              -0.6325
+            ],
+            [
+              1.0,
+              0.6325
+            ],
+            [
+              0.6400000000000001,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C26",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          1.6,
+          0.8
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95,
+            "mask_expansion_mm": 0.01
+          },
+          {
+            "number": "2",
+            "x": 0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95,
+            "mask_expansion_mm": 0.01
+          }
+        ],
+        "note": "IPC-style 0603 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C26_100nF",
+      "description": "100nF 50V X7R",
+      "pcb": {
+        "x": 16.5,
+        "y": 8.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "YAGEO",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer Part Number": "CC0603KRX7R9BB104",
+        "Description": "100nF 50V X7R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14663",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              0.4
+            ],
+            [
+              -0.8,
+              0.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -0.8,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              0.40750000000000003
+            ],
+            [
+              -0.8,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.512,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              0.40750000000000003
+            ],
+            [
+              0.512,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C27",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C27_22uF",
+      "description": "22uF 25V X5R",
+      "pcb": {
+        "x": 26.7,
+        "y": 10.125,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL31A226KAHNNNE",
+        "Manufacturer Part Number": "CL31A226KAHNNNE",
+        "Description": "22uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C12891",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C28",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          1.6,
+          0.8
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95
+          },
+          {
+            "number": "2",
+            "x": 0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95,
+            "mask_expansion_mm": 0.025
+          }
+        ],
+        "note": "IPC-style 0603 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C28_100nF",
+      "description": "100nF 50V X7R",
+      "pcb": {
+        "x": 29,
+        "y": 9.8,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "YAGEO",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer Part Number": "CC0603KRX7R9BB104",
+        "Description": "100nF 50V X7R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14663",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              0.4
+            ],
+            [
+              -0.8,
+              0.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -0.8,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              0.40750000000000003
+            ],
+            [
+              -0.8,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.512,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              0.40750000000000003
+            ],
+            [
+              0.512,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C29",
+      "value": "10uF 25V X5R",
+      "footprint": "C0805",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          2,
+          1.25
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          },
+          {
+            "number": "2",
+            "x": 0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          }
+        ],
+        "note": "IPC-style 0805 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C29_10uF",
+      "description": "10uF 25V X5R",
+      "pcb": {
+        "x": 43.8,
+        "y": 4.825,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL21A106KAYNNNE",
+        "Manufacturer Part Number": "CL21A106KAYNNNE",
+        "Description": "10uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C15850",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              0.625
+            ],
+            [
+              -1.0,
+              0.625
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.0,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              0.6325
+            ],
+            [
+              -1.0,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.6400000000000001,
+              -0.6325
+            ],
+            [
+              1.0,
+              -0.6325
+            ],
+            [
+              1.0,
+              0.6325
+            ],
+            [
+              0.6400000000000001,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C30",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          1.6,
+          0.8
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95
+          },
+          {
+            "number": "2",
+            "x": 0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95
+          }
+        ],
+        "note": "IPC-style 0603 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C30_100nF",
+      "description": "100nF 50V X7R",
+      "pcb": {
+        "x": 44.025,
+        "y": 6.25,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "YAGEO",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer Part Number": "CC0603KRX7R9BB104",
+        "Description": "100nF 50V X7R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14663",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              0.4
+            ],
+            [
+              -0.8,
+              0.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -0.8,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              0.40750000000000003
+            ],
+            [
+              -0.8,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.512,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              0.40750000000000003
+            ],
+            [
+              0.512,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C31",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BST_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SW_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          1.6,
+          0.8
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95,
+            "mask_expansion_mm": 0.015
+          },
+          {
+            "number": "2",
+            "x": 0.775,
+            "y": 0,
+            "sx": 0.9,
+            "sy": 0.95,
+            "mask_expansion_mm": 0.015
+          }
+        ],
+        "note": "IPC-style 0603 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C31_100nF",
+      "description": "100nF 50V X7R",
+      "pcb": {
+        "x": 39.7,
+        "y": 8.6,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "YAGEO",
+        "MPN": "CC0603KRX7R9BB104",
+        "Manufacturer Part Number": "CC0603KRX7R9BB104",
+        "Description": "100nF 50V X7R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14663",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              -0.4
+            ],
+            [
+              0.8,
+              0.4
+            ],
+            [
+              -0.8,
+              0.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -0.8,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              -0.40750000000000003
+            ],
+            [
+              -0.512,
+              0.40750000000000003
+            ],
+            [
+              -0.8,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.512,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              -0.40750000000000003
+            ],
+            [
+              0.8,
+              0.40750000000000003
+            ],
+            [
+              0.512,
+              0.40750000000000003
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ],
+      "schematic_label_offset": [
+        -20,
+        45
+      ]
+    },
+    {
+      "ref": "C32",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_REG",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C32_22uF",
+      "description": "22uF 25V X5R",
+      "pcb": {
+        "x": 34.2,
+        "y": 3.9,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL31A226KAHNNNE",
+        "Manufacturer Part Number": "CL31A226KAHNNNE",
+        "Description": "22uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C12891",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C33",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_REG",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C33_22uF",
+      "description": "22uF 25V X5R",
+      "pcb": {
+        "x": 34.2,
+        "y": 1.7,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL31A226KAHNNNE",
+        "Manufacturer Part Number": "CL31A226KAHNNNE",
+        "Description": "22uF 25V X5R",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C12891",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R20",
+      "value": "150R 1% 0.5W",
+      "footprint": "R1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "150ohm,1%,>=0.5W,1206",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "SEI(Stackpole Elec)",
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C4258541",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C4258541",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_R20_150R",
+      "description": "150R 1% 0.5W",
+      "pcb": {
+        "x": 23.6,
+        "y": 11.8,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "SEI(Stackpole Elec)",
+        "MPN": "RNCP1206FTD150R",
+        "Manufacturer Part Number": "RNCP1206FTD150R",
+        "Description": "150R 1% 0.5W",
+        "Datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C4258541",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "150R 1% 0.5W",
+      "footprint": "R1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "150ohm,1%,>=0.5W,1206",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "SEI(Stackpole Elec)",
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C4258541",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C4258541",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          1.6
+        ],
+        "height": 1.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.3,
+            "sy": 1.8
+          }
+        ],
+        "note": "IPC-style 1206 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_R21_150R",
+      "description": "150R 1% 0.5W",
+      "pcb": {
+        "x": 23.6,
+        "y": 14.4,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "SEI(Stackpole Elec)",
+        "MPN": "RNCP1206FTD150R",
+        "Manufacturer Part Number": "RNCP1206FTD150R",
+        "Description": "150R 1% 0.5W",
+        "Datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C4258541",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              -0.8
+            ],
+            [
+              1.6,
+              0.8
+            ],
+            [
+              -1.6,
+              0.8
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 1.5,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              -0.8075
+            ],
+            [
+              -1.2200000000000002,
+              0.8075
+            ],
+            [
+              -1.6,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8075
+            ],
+            [
+              1.6,
+              -0.8075
+            ],
+            [
+              1.6,
+              0.8075
+            ],
+            [
+              1.2200000000000002,
+              0.8075
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 1.515,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "value": "SMBJ18A 600W",
+      "footprint": "SMB",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "component_specification": "SMBJ18A",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "BORN",
+      "mpn": "SMBJ18A",
+      "lcsc": "C152104",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ18A_C152104.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C152104",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C152104",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.7,
+          3.9
+        ],
+        "height": 2.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -2,
+            "y": 0,
+            "sx": 2,
+            "sy": 2.5,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 2,
+            "y": 0,
+            "sx": 2,
+            "sy": 2.5,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "provisional": false,
+        "source_note": "BORN SMBJ Series Rev2022-Jan-1-A p7 manufacturer pattern: pad2.0x2.5mm, innergap2.0mm, centres+/-2.0mm; maxbody4.7x3.9x2.5; pin1Kleft,2Aright. Visually checked selected C152104 PDF.",
+        "note": "BORN SMBJ Series Rev2022-Jan-1-A p7 manufacturer pattern: pad2.0x2.5mm, innergap2.0mm, centres+/-2.0mm; maxbody4.7x3.9x2.5; pin1Kleft,2Aright. Visually checked selected C152104 PDF."
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_D1_SMBJ18A",
+      "description": "SMBJ18A 600W",
+      "pcb": {
+        "x": 10.5,
+        "y": 18.65,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "BORN",
+        "MPN": "SMBJ18A",
+        "Manufacturer Part Number": "SMBJ18A",
+        "Description": "SMBJ18A 600W",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ18A_C152104.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C152104",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -2.35,
+              -1.95
+            ],
+            [
+              2.35,
+              -1.95
+            ],
+            [
+              2.35,
+              1.95
+            ],
+            [
+              -2.35,
+              1.95
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 2.5,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "diode end terminal 1",
+          "outline": [
+            [
+              -2.575,
+              -1.05
+            ],
+            [
+              -1.425,
+              -1.05
+            ],
+            [
+              -1.425,
+              1.05
+            ],
+            [
+              -2.575,
+              1.05
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.2,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "diode end terminal 2",
+          "outline": [
+            [
+              1.425,
+              -1.05
+            ],
+            [
+              2.575,
+              -1.05
+            ],
+            [
+              2.575,
+              1.05
+            ],
+            [
+              1.425,
+              1.05
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.2,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "cathode band",
+          "outline": [
+            [
+              -1.582,
+              -1.911
+            ],
+            [
+              -1.332,
+              -1.911
+            ],
+            [
+              -1.332,
+              1.911
+            ],
+            [
+              -1.582,
+              1.911
+            ]
+          ],
+          "z0": 2.5,
+          "z1": 2.515,
+          "rgb": [
+            186,
+            190,
+            193
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "D5",
+      "value": "SS26 2A 60V",
+      "footprint": "SMA",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "FUSED_IN",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "component_specification": "SS26",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "mpn": "SS26",
+      "lcsc": "C14238",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS26_C14238.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14238",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14238",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.5,
+          2.8
+        ],
+        "height": 2.45,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE",
+            "mask_expansion_mm": 0.02
+          }
+        ],
+        "provisional": false,
+        "source_note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs.",
+        "note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs."
+      },
+      "schematic_symbol": {
+        "kind": "schottky",
+        "pins": [
+          {
+            "number": "2",
+            "x": -20,
+            "y": 0,
+            "orientation": 2
+          },
+          {
+            "number": "1",
+            "x": 20,
+            "y": 0,
+            "orientation": 0
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 4,
+            "X1": -10,
+            "Y1": 10,
+            "X2": -10,
+            "Y2": -10,
+            "X3": 10,
+            "Y3": 0,
+            "X4": -10,
+            "Y4": 10
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 6,
+            "X1": 4,
+            "Y1": 6,
+            "X2": 4,
+            "Y2": 10,
+            "X3": 10,
+            "Y3": 10,
+            "X4": 10,
+            "Y4": -10,
+            "X5": 16,
+            "Y5": -10,
+            "X6": 16,
+            "Y6": -6
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 2,
+            "X1": -20,
+            "Y1": 0,
+            "X2": -10,
+            "Y2": 0
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 2,
+            "X1": 10,
+            "Y1": 0,
+            "X2": 20,
+            "Y2": 0
+          }
+        ],
+        "bbox": [
+          -40,
+          -10,
+          40,
+          10
+        ]
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_D5_SS26",
+      "description": "SS26 2A 60V",
+      "pcb": {
+        "x": 9.2,
+        "y": 14.8,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "parameters": {
+        "Manufacturer": "MDD(Microdiode Semiconductor)",
+        "MPN": "SS26",
+        "Manufacturer Part Number": "SS26",
+        "Description": "SS26 2A 60V",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS26_C14238.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C14238",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -2.25,
+              -1.4
+            ],
+            [
+              2.25,
+              -1.4
+            ],
+            [
+              2.25,
+              1.4
+            ],
+            [
+              -2.25,
+              1.4
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 2.45,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "diode end terminal 1",
+          "outline": [
+            [
+              -2.54,
+              -0.84
+            ],
+            [
+              -1.3900000000000001,
+              -0.84
+            ],
+            [
+              -1.3900000000000001,
+              0.84
+            ],
+            [
+              -2.54,
+              0.84
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.2,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "diode end terminal 2",
+          "outline": [
+            [
+              1.3900000000000001,
+              -0.84
+            ],
+            [
+              2.54,
+              -0.84
+            ],
+            [
+              2.54,
+              0.84
+            ],
+            [
+              1.3900000000000001,
+              0.84
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.2,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "cathode band",
+          "outline": [
+            [
+              -1.52,
+              -1.3719999999999999
+            ],
+            [
+              -1.27,
+              -1.3719999999999999
+            ],
+            [
+              -1.27,
+              1.3719999999999999
+            ],
+            [
+              -1.52,
+              1.3719999999999999
+            ]
+          ],
+          "z0": 2.45,
+          "z1": 2.4650000000000003,
+          "rgb": [
+            186,
+            190,
+            193
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "F1",
+      "value": "T0.8A 63VDC",
+      "footprint": "BOURNS_SF1206S",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "NET_S",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "FUSED_IN",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "pcb": {
+        "x": 5.5,
+        "y": 14,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_F1_T0.8A",
+      "manufacturer": "BOURNS",
+      "mpn": "SF-1206S080-2",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_BOURNS-SF-1206S080-2_C3032873.pdf",
+      "description": "0.8 A slow-blow SMD ceramic fuse, 63 VDC, 50 A interrupt rating",
+      "parameters": {
+        "Manufacturer": "BOURNS",
+        "MPN": "SF-1206S080-2",
+        "Manufacturer Part Number": "SF-1206S080-2",
+        "Description": "0.8 A slow-blow SMD ceramic fuse, 63 VDC, 50 A interrupt rating",
+        "Datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_BOURNS-SF-1206S080-2_C3032873.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C3032873",
+        "Footprint Status": "R5 uses reviewed R4 manufacturer land pattern; updated power connectivity"
+      },
+      "source_pages": [
+        1,
+        2
+      ],
+      "pcb_footprint": {
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.725,
+            "y": 0,
+            "sx": 1.25,
+            "sy": 1.65
+          },
+          {
+            "number": "2",
+            "x": 1.725,
+            "y": 0,
+            "sx": 1.25,
+            "sy": 1.65,
+            "mask_expansion_mm": 0.02
+          }
+        ],
+        "body": [
+          3.2,
+          1.65
+        ],
+        "height": 0.7,
+        "note": "Bourns SF-1206S recommended land pattern: total X span 4.7, inner gap 2.2, pad Y 1.65; maximum body envelope. No polarity.",
+        "provisional": false
+      },
+      "ratings": {
+        "current_a": 0.8,
+        "voltage_dc_v": 63,
+        "interrupt_a_at_rated_v": 50,
+        "cold_resistance_nominal_ohm": 0.165,
+        "cold_resistance_tolerance_percent": 25,
+        "i_squared_t_a2s": 0.068,
+        "temperature_c": [
+          -20,
+          105
+        ]
+      },
+      "constraints": [
+        "R3 ambient specification is limited by this fuse to at least -20 C minimum until an alternative is qualified.",
+        "Coordinate this board fuse with the upstream NMEA branch protection; 50 A is the stated component interrupt rating, not an unlimited battery-short rating."
+      ],
+      "lcsc": "C3032873",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C3032873",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C3032873",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.6,
+              -0.825
+            ],
+            [
+              1.6,
+              -0.825
+            ],
+            [
+              1.6,
+              0.825
+            ],
+            [
+              -1.6,
+              0.825
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.7,
+          "rgb": [
+            40,
+            43,
+            47
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.6,
+              -0.8324999999999999
+            ],
+            [
+              -1.2200000000000002,
+              -0.8324999999999999
+            ],
+            [
+              -1.2200000000000002,
+              0.8324999999999999
+            ],
+            [
+              -1.6,
+              0.8324999999999999
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.715,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              1.2200000000000002,
+              -0.8324999999999999
+            ],
+            [
+              1.6,
+              -0.8324999999999999
+            ],
+            [
+              1.6,
+              0.8324999999999999
+            ],
+            [
+              1.2200000000000002,
+              0.8324999999999999
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.715,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "C34",
+      "value": "10uF 25V X5R",
+      "footprint": "C0805",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_MODULE",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          2,
+          1.25
+        ],
+        "height": 0.8,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          },
+          {
+            "number": "2",
+            "x": 0.95,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 1.45
+          }
+        ],
+        "note": "IPC-style 0805 solder lands; selected MPN dimensions reviewed separately.",
+        "provisional": false
+      },
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "R4_C29_10uF",
+      "description": "10uF local module5V reservoir after RUN/SERVICE switch",
+      "pcb": {
+        "x": 46.8,
+        "y": 10.0,
+        "rotation": 0,
+        "status": "R5 power-block placement suggestion; root completes clearance/layout"
+      },
+      "parameters": {
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "MPN": "CL21A106KAYNNNE",
+        "Manufacturer Part Number": "CL21A106KAYNNNE",
+        "Description": "10uF local module5V reservoir after RUN/SERVICE switch",
+        "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C15850",
+        "Footprint Status": "R4 reviewed package; see source and assembly audit"
+      },
+      "bodies_3d": [
+        {
+          "name": "selected package envelope",
+          "outline": [
+            [
+              -1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              -0.625
+            ],
+            [
+              1.0,
+              0.625
+            ],
+            [
+              -1.0,
+              0.625
+            ]
+          ],
+          "z0": 0.08,
+          "z1": 0.8,
+          "rgb": [
+            180,
+            146,
+            100
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              -1.0,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              -0.6325
+            ],
+            [
+              -0.6400000000000001,
+              0.6325
+            ],
+            [
+              -1.0,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        },
+        {
+          "name": "metal end cap",
+          "outline": [
+            [
+              0.6400000000000001,
+              -0.6325
+            ],
+            [
+              1.0,
+              -0.6325
+            ],
+            [
+              1.0,
+              0.6325
+            ],
+            [
+              0.6400000000000001,
+              0.6325
+            ]
+          ],
+          "z0": 0.025,
+          "z1": 0.8150000000000001,
+          "rgb": [
+            179,
+            188,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "SW3",
+      "value": "RUN / SERVICE",
+      "footprint": "GSWITCH_MK12C02_G020",
+      "group": "power",
+      "manufacturer": "G-Switch",
+      "mpn": "MK-12C02-G020",
+      "lcsc": "C963206",
+      "datasheet": "https://static.chipdip.ru/lib/011/DOC043011829.pdf",
+      "description": "Side-actuated SPDT service supply disconnect, 1A at6V, original SuperMini USB service",
+      "sheet": "Orion-Bridge-R5-Power.SchDoc",
+      "source_schlib": "Orion-Bridge-R5.SchLib",
+      "source_pcblib": "Orion-Bridge-R5.PcbLib",
+      "libref": "SW3_RUN_SERVICE",
+      "pins": [
+        {
+          "number": "1",
+          "name": "RUN_IN",
+          "net": "5V_REG",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "COMMON",
+          "net": "5V_MODULE",
+          "type": 4
+        },
+        {
+          "number": "3",
+          "name": "SERVICE_NC",
+          "net": null,
+          "type": 4
+        },
+        {
+          "number": "4",
+          "name": "SHIELD1",
+          "net": "GND_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "5",
+          "name": "SHIELD2",
+          "net": "GND_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "6",
+          "name": "SHIELD3",
+          "net": "GND_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "7",
+          "name": "SHIELD4",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "pcb_footprint": {
+        "body": [
+          6.6,
+          2.7
+        ],
+        "height": 1.4,
+        "pads": [
+          {
+            "number": "1",
+            "x": -2.25,
+            "y": -2.075,
+            "sx": 0.9,
+            "sy": 1.25,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": -0.75,
+            "y": -2.075,
+            "sx": 0.9,
+            "sy": 1.25,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 2.25,
+            "y": -2.075,
+            "sx": 0.9,
+            "sy": 1.25,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": -3.8,
+            "y": 1.135,
+            "sx": 0.8,
+            "sy": 0.93,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": -3.8,
+            "y": -1.135,
+            "sx": 0.8,
+            "sy": 0.93,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": 3.8,
+            "y": 1.135,
+            "sx": 0.8,
+            "sy": 0.93,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "7",
+            "x": 3.8,
+            "y": -1.135,
+            "sx": 0.8,
+            "sy": 0.93,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "holes": [
+          {
+            "x": -1.5,
+            "y": 0,
+            "drill": 1.0,
+            "plated": false,
+            "copper_clearance_mm": 0.25
+          },
+          {
+            "x": 1.5,
+            "y": 0,
+            "drill": 1.0,
+            "plated": false,
+            "copper_clearance_mm": 0.25
+          }
+        ],
+        "provisional": false,
+        "source_note": "G-Switch MK-12C02-GXXX RevX1 2019-05-29 manufacturer drawing:3 signal lands0.9x1.25 at(-2.25,-2.075),(-0.75,-2.075),(2.25,-2.075);4 shell lands0.8x0.93 atx+/-3.8,y+/-1.135. Hole centres+/-1.5. NPTH1.0mm is explicit engineering clearance for0.70+/-0.05mm locating pegs (drawing omits hole diameter). Local actuator +Y; rot270 gives board+X. Supplier listing dimensions mix overall depth with height; actual Z1.4mm.",
+        "note": "All shell tabs tied only to GND_LOGIC. No paste in NPTH. Keep travel envelope clear. Pin numbers1/2/3 assigned left/common/right as manufacturer circuit A/B; mounting pads4-7 are local library assignments."
+      },
+      "ratings": {
+        "current_A_at6V": 1,
+        "voltage_V": 6,
+        "contact_resistance_max_ohm": 0.1,
+        "ambient_C": [
+          -20,
+          70
+        ],
+        "reflow_max_C": 250
+      },
+      "assembly": {
+        "populate": true,
+        "lcsc": "C963206",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/gswitch-MK_12C02G020/C963206",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Public current JLC metadata InStock, SMT, Economic+Standard, no fixture. Verify orientation against manufacturer pin side and preview; inventory is not reserved."
+      },
+      "stock_observation": {
+        "date": "2026-09-23",
+        "in_stock": true,
+        "method": "Fresh JLC public JSON-LD Product and assembly metadata; exact MPN/brand/C-code matched"
+      },
+      "parameters": {
+        "Manufacturer": "G-Switch",
+        "MPN": "MK-12C02-G020",
+        "Manufacturer Part Number": "MK-12C02-G020",
+        "Description": "RUN/SERVICE physical5V disconnect; SPDT1A6V side actuator",
+        "Datasheet": "https://static.chipdip.ru/lib/011/DOC043011829.pdf",
+        "Supplier 1": "LCSC",
+        "Supplier Part Number 1": "C963206",
+        "Footprint Status": "Manufacturer solder lands; engineering1.0mmNPTH for0.7mm locating pegs"
+      },
+      "switch_positions": {
+        "RUN": [
+          [
+            "1",
+            "2"
+          ]
+        ],
+        "SERVICE": [
+          [
+            "2",
+            "3"
+          ]
+        ]
+      },
+      "internal_connections": [
+        [
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      ],
+      "schematic_symbol": {
+        "kind": "SPDT_RUN_SERVICE",
+        "pins": [
+          {
+            "number": "2",
+            "x": -40,
+            "y": 0,
+            "orientation": 2,
+            "show_name": false
+          },
+          {
+            "number": "1",
+            "x": 40,
+            "y": 30,
+            "orientation": 0,
+            "show_name": false
+          },
+          {
+            "number": "3",
+            "x": 40,
+            "y": -30,
+            "orientation": 0,
+            "show_name": false
+          },
+          {
+            "number": "4",
+            "x": -30,
+            "y": -70,
+            "orientation": 3,
+            "show_name": false
+          },
+          {
+            "number": "5",
+            "x": -10,
+            "y": -70,
+            "orientation": 3,
+            "show_name": false
+          },
+          {
+            "number": "6",
+            "x": 10,
+            "y": -70,
+            "orientation": 3,
+            "show_name": false
+          },
+          {
+            "number": "7",
+            "x": 30,
+            "y": -70,
+            "orientation": 3,
+            "show_name": false
+          }
+        ],
+        "graphics": [
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 3,
+            "X1": -40,
+            "Y1": 0,
+            "X2": -10,
+            "Y2": 0,
+            "X3": 17,
+            "Y3": 27
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 17,
+            "X1": -8,
+            "Y1": 0,
+            "X2": -8,
+            "Y2": 1,
+            "X3": -9,
+            "Y3": 1,
+            "X4": -9,
+            "Y4": 2,
+            "X5": -10,
+            "Y5": 2,
+            "X6": -11,
+            "Y6": 2,
+            "X7": -11,
+            "Y7": 1,
+            "X8": -12,
+            "Y8": 1,
+            "X9": -12,
+            "Y9": 0,
+            "X10": -12,
+            "Y10": -1,
+            "X11": -11,
+            "Y11": -1,
+            "X12": -11,
+            "Y12": -2,
+            "X13": -10,
+            "Y13": -2,
+            "X14": -9,
+            "Y14": -2,
+            "X15": -9,
+            "Y15": -1,
+            "X16": -8,
+            "Y16": -1,
+            "X17": -8,
+            "Y17": 0
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 17,
+            "X1": 22,
+            "Y1": 30,
+            "X2": 22,
+            "Y2": 31,
+            "X3": 21,
+            "Y3": 31,
+            "X4": 21,
+            "Y4": 32,
+            "X5": 20,
+            "Y5": 32,
+            "X6": 19,
+            "Y6": 32,
+            "X7": 19,
+            "Y7": 31,
+            "X8": 18,
+            "Y8": 31,
+            "X9": 18,
+            "Y9": 30,
+            "X10": 18,
+            "Y10": 29,
+            "X11": 19,
+            "Y11": 29,
+            "X12": 19,
+            "Y12": 28,
+            "X13": 20,
+            "Y13": 28,
+            "X14": 21,
+            "Y14": 28,
+            "X15": 21,
+            "Y15": 29,
+            "X16": 22,
+            "Y16": 29,
+            "X17": 22,
+            "Y17": 30
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 17,
+            "X1": 22,
+            "Y1": -30,
+            "X2": 22,
+            "Y2": -29,
+            "X3": 21,
+            "Y3": -29,
+            "X4": 21,
+            "Y4": -28,
+            "X5": 20,
+            "Y5": -28,
+            "X6": 19,
+            "Y6": -28,
+            "X7": 19,
+            "Y7": -29,
+            "X8": 18,
+            "Y8": -29,
+            "X9": 18,
+            "Y9": -30,
+            "X10": 18,
+            "Y10": -31,
+            "X11": 19,
+            "Y11": -31,
+            "X12": 19,
+            "Y12": -32,
+            "X13": 20,
+            "Y13": -32,
+            "X14": 21,
+            "Y14": -32,
+            "X15": 21,
+            "Y15": -31,
+            "X16": 22,
+            "Y16": -31,
+            "X17": 22,
+            "Y17": -30
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 2,
+            "X1": 22,
+            "Y1": 30,
+            "X2": 40,
+            "Y2": 30
+          },
+          {
+            "RECORD": 6,
+            "LineWidth": 1,
+            "Color": 128,
+            "LocationCount": 2,
+            "X1": 22,
+            "Y1": -30,
+            "X2": 40,
+            "Y2": -30
+          },
+          {
+            "RECORD": 4,
+            "Location.X": -10,
+            "Location.Y": 40,
+            "Color": 128,
+            "FontID": 1,
+            "Text": "RUN"
+          },
+          {
+            "RECORD": 4,
+            "Location.X": -10,
+            "Location.Y": -45,
+            "Color": 128,
+            "FontID": 1,
+            "Text": "SERVICE"
+          },
+          {
+            "RECORD": 4,
+            "Location.X": -32,
+            "Location.Y": -65,
+            "Color": 128,
+            "FontID": 1,
+            "Text": "SHELL"
+          }
+        ],
+        "bbox": [
+          -60,
+          -90,
+          60,
+          50
+        ],
+        "designator_pos": [
+          -40,
+          80
+        ],
+        "value_pos": [
+          -40,
+          60
+        ]
+      },
+      "actuator": {
+        "local_direction": "+Y",
+        "length_from_body_mm": 2.0,
+        "travel_mm": 1.5,
+        "width_mm": 1.3,
+        "center_x_positions_mm": [
+          -0.75,
+          0.75
+        ],
+        "z_center_mm": 0.7,
+        "note": "A position electrically joins left terminal to common; B joins right terminal. Verify physical A/B travel sense once on purchased switch before final enclosure arrow labeling; RUN/SERVICE electrical pin assignment is fixed."
+      },
+      "mechanical_interfaces": {
+        "service_switch": {
+          "mouth_center_local_mm": [
+            0,
+            3.35,
+            0.7
+          ],
+          "outward_local_xy": [
+            0,
+            1
+          ],
+          "opening_width_mm": 6.5,
+          "opening_height_mm": 3.5,
+          "assumed": false,
+          "note": "Datasheet swept actuator; no unverified left/right RUN arrows. Opening dimensions include case access allowance."
+        }
+      },
+      "bodies_3d": [
+        {
+          "name": "switch black base",
+          "outline": [
+            [
+              -3.3,
+              -1.35
+            ],
+            [
+              3.3,
+              -1.35
+            ],
+            [
+              3.3,
+              1.35
+            ],
+            [
+              -3.3,
+              1.35
+            ]
+          ],
+          "z0": 0.05,
+          "z1": 1.25,
+          "rgb": [
+            32,
+            35,
+            40
+          ]
+        },
+        {
+          "name": "switch metal cover",
+          "outline": [
+            [
+              -3.25,
+              -1.3
+            ],
+            [
+              3.25,
+              -1.3
+            ],
+            [
+              3.25,
+              1.3
+            ],
+            [
+              -3.25,
+              1.3
+            ]
+          ],
+          "z0": 1.25,
+          "z1": 1.4,
+          "rgb": [
+            180,
+            190,
+            202
+          ]
+        },
+        {
+          "name": "RUN actuator A",
+          "outline": [
+            [
+              -1.4,
+              1.3
+            ],
+            [
+              -0.1,
+              1.3
+            ],
+            [
+              -0.1,
+              3.35
+            ],
+            [
+              -1.4,
+              3.35
+            ]
+          ],
+          "z0": 0.15,
+          "z1": 1.25,
+          "rgb": [
+            35,
+            38,
+            43
+          ]
+        },
+        {
+          "name": "switch solder terminal 1",
+          "outline": [
+            [
+              -2.7,
+              -2.7
+            ],
+            [
+              -1.8,
+              -2.7
+            ],
+            [
+              -1.8,
+              -1.4500000000000002
+            ],
+            [
+              -2.7,
+              -1.4500000000000002
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 2",
+          "outline": [
+            [
+              -1.2,
+              -2.7
+            ],
+            [
+              -0.3,
+              -2.7
+            ],
+            [
+              -0.3,
+              -1.4500000000000002
+            ],
+            [
+              -1.2,
+              -1.4500000000000002
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 3",
+          "outline": [
+            [
+              1.8,
+              -2.7
+            ],
+            [
+              2.7,
+              -2.7
+            ],
+            [
+              2.7,
+              -1.4500000000000002
+            ],
+            [
+              1.8,
+              -1.4500000000000002
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 4",
+          "outline": [
+            [
+              -4.2,
+              0.6699999999999999
+            ],
+            [
+              -3.4,
+              0.6699999999999999
+            ],
+            [
+              -3.4,
+              1.6
+            ],
+            [
+              -4.2,
+              1.6
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 5",
+          "outline": [
+            [
+              -4.2,
+              -1.6
+            ],
+            [
+              -3.4,
+              -1.6
+            ],
+            [
+              -3.4,
+              -0.6699999999999999
+            ],
+            [
+              -4.2,
+              -0.6699999999999999
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 6",
+          "outline": [
+            [
+              3.4,
+              0.6699999999999999
+            ],
+            [
+              4.2,
+              0.6699999999999999
+            ],
+            [
+              4.2,
+              1.6
+            ],
+            [
+              3.4,
+              1.6
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        },
+        {
+          "name": "switch solder terminal 7",
+          "outline": [
+            [
+              3.4,
+              -1.6
+            ],
+            [
+              4.2,
+              -1.6
+            ],
+            [
+              4.2,
+              -0.6699999999999999
+            ],
+            [
+              3.4,
+              -0.6699999999999999
+            ]
+          ],
+          "z0": 0.02,
+          "z1": 0.15,
+          "rgb": [
+            185,
+            192,
+            200
+          ]
+        }
+      ],
+      "pcb": {
+        "x": 39.0,
+        "y": 33.5,
+        "rotation": 0,
+        "status": "Root top-edge placement candidate; actuator toward +Y case wall"
+      },
+      "allow_body_overhang": true,
+      "constraints": [
+        "Physical OPEN supply in SERVICE; never rely only on disabling U4.",
+        "No USB connected in RUN. Switch SERVICE first, then connect USB.",
+        "GND_LOGIC remains connected; never switch ground or tie to bus return.",
+        "Mounting pegs need2xNPTH1.0mm atlocalx+/-1.5.",
+        "Top-edge placement leaves actuator protruding above board +Y; case opening must accommodate full 1.5mm travel."
+      ]
+    }
+  ],
+  "remove_r4_refs": [
+    "D2",
+    "D4",
+    "J2",
+    "D6",
+    "SW1",
+    "SW2",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "C10"
+  ],
+  "replace_r4_refs": [
+    "U4"
+  ],
+  "retain_r4_refs": [
+    "J1",
+    "U1",
+    "D3",
+    "L1",
+    "C4",
+    "C5",
+    "R2",
+    "R3",
+    "R4",
+    "TP1",
+    "C11",
+    "C12"
+  ],
+  "integration_updates": {
+    "MCU1.5V": "5V_MODULE",
+    "MCU1.3V3": "3V3_LOGIC (module output)",
+    "MCU1.GND": "GND_LOGIC",
+    "U1.VCC1": "3V3_LOGIC",
+    "C5": "retain100nF on3V3_LOGIC/GND_LOGIC",
+    "C11/C12": "retain local10uF/100nF on module3V3 output; no second3V3 regulator"
+  },
+  "interfaces": {
+    "input": "NET_S -> F1 -> FUSED_IN -> D5 -> BUS_PROT",
+    "bus": "U3/AP63205 -> 5V_BUS -> U1 VCC2 and U2 primary",
+    "isolated": "U2 -> 5V_ISO with permanentR20/R21 and C27/C28",
+    "regulator": "5V_ISO -> U4/AP63205 -> 5V_REG",
+    "run": "5V_REG -> SW3 pin1 -> pin2 -> 5V_MODULE -> original SuperMini5V",
+    "service": "SW3 pin2 selects unconnected pin3; original module USB supplies module and its3V3 logic output",
+    "logic": "original module3V3 OUT -> 3V3_LOGIC -> ISO1042 VCC1"
+  },
+  "domain_gap_mm": 3.2,
+  "integration_notes": [
+    "SW3 is side-actuated MK-12C02-G020/C963206, not earlier top-actuated C963205 candidate.",
+    "No new MCU, carrier USB port or carrier ESP boot/reset circuit.",
+    "No5V_SYS or carrierUSB_VBUS nets remain after removing old OR diodes.",
+    "Route main5V rails at least0.5mm where possible;0.4mm minimum last-mile. FB is a quiet sense trace from C32/C33.",
+    "Preload is before U4 and SW3, active during RUN and SERVICE.",
+    "Conservative firmware reserve remainsLEN12; actual runtime load and prototype tests described in power-review.md."
+  ]
+}

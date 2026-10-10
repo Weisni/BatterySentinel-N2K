@@ -25,6 +25,37 @@ jobs:
       - name: Build ESP32-C3 firmware
         run: pio run -e esp32c3
 
+      - name: Test OTA artifact validation
+        run: python -m unittest discover -s tools -p test_verify_ota_image.py
+
+      - name: Test OLED display failure handling
+        run: python tools/verify_debug_display_driver.py
+
+      - name: Test CAN diagnostic status
+        run: python tools/verify_nmea_bus_status.py
+
+      - name: Test local discovery probe parsing
+        run: python tools/test_portal_name.py --self-test
+
+      - name: Test firmware HTTP response lifecycle
+        run: python tools/verify_portal_http.py
+
+      - name: Build Orion firmware variants
+        run: pio run -e orion_dongle -e orion_r4 -e orion_debug_oled
+
+      - name: Verify Orion OTA firmware artifacts
+        run: |
+          g++ -std=c++17 -Wall -Wextra -Werror -Ilib/FirmwareOta/src tools/check_ota_image.cpp -o /tmp/check-ota-image
+          python tools/verify_ota_image.py .pio/build/orion_dongle/firmware.bin --target orion-dongle --runtime-checker /tmp/check-ota-image
+          python tools/verify_ota_image.py .pio/build/orion_r4/firmware.bin --target orion-r4 --runtime-checker /tmp/check-ota-image
+          python tools/verify_ota_image.py .pio/build/orion_debug_oled/firmware.bin --target orion-debug-oled --runtime-checker /tmp/check-ota-image
+
+      - name: Test portal and OTA browser behavior
+        run: |
+          node tools/verify_portal_ui.mjs
+          node tools/verify_portal_ota.mjs
+          node tools/verify_portal_preview.mjs
+
       - name: Build desktop simulator
         run: |
           cmake -S sim -B build/sim

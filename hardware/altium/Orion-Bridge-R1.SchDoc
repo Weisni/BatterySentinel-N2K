@@ -1,0 +1,528 @@
+|HEADER=Protel for Windows - Schematic Capture Ascii File Version 5.0|Weight=527|MinorVersion=2|UniqueID=ONETLLOD
+|RECORD=31|FontIdCount=3|Size1=9|FontName1=Arial|Size2=12|FontName2=Arial|Bold2=T|Size3=7|FontName3=Arial|SheetStyle=2|BorderOn=T|TitleBlockOn=T|HotSpotGridOn=T|HotSpotGridSize=10|SnapGridOn=T|SnapGridSize=10|VisibleGridOn=T|VisibleGridSize=10|CustomX=2230|CustomY=1570|SystemFont=1|Display_Unit=0|AreaColor=16317695|UseMBCS=T|IsBOC=T
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=1510|Color=0|FontID=2|Text=ORION BRIDGE R1 - NMEA 2000 / ESP32-C3|UniqueID=UYYTFZGT
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=1480|Color=255|FontID=1|Text=ENGINEERING DRAFT - not fabrication-ready - native editable Altium ASCII|UniqueID=MOKGRHQD
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=1450|Color=0|FontID=1|Text=All wires with the same net label are connected on this sheet. GND_BUS and GND_LOGIC remain separate.|UniqueID=VNKWYXBQ
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=1380|Color=0|FontID=2|Text=01  NMEA connector / shield|UniqueID=UXTVGPZE
+|RECORD=1|LibReference=J1_R1|ComponentDescription=NMEA Micro-C pigtail|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=170|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=VJXNLVQB|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=5
+|RECORD=14|OwnerIndex=5|OwnerPartId=1|IsNotAccesible=T|Location.X=170|Location.Y=1210|Corner.X=300|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=5|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=1290|Name=SHIELD|Designator=1|SwapIdPart=1|UniqueID=IBMCGPSY
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=1290|X2=60|Y2=1290|UniqueID=YRXBPWPO
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=1290|Color=128|FontID=3|Text=SHIELD|UniqueID=TOPEBMHZ
+|RECORD=2|OwnerIndex=5|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=1260|Name=NET-S|Designator=2|SwapIdPart=1|UniqueID=OEHRQJOY
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=1260|X2=60|Y2=1260|UniqueID=RHVVUOQD
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=1260|Color=128|FontID=3|Text=NET_S|UniqueID=IEPXGXAB
+|RECORD=2|OwnerIndex=5|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=1230|Name=NET-C|Designator=3|SwapIdPart=1|UniqueID=QUTPDECT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=1230|X2=60|Y2=1230|UniqueID=SWNUEJIN
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=1230|Color=128|FontID=3|Text=GND_BUS|UniqueID=RQTPLNLO
+|RECORD=2|OwnerIndex=5|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=1290|Name=CAN-H|Designator=4|SwapIdPart=1|UniqueID=HVHVQNIE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=1290|X2=390|Y2=1290|UniqueID=MYRQAXCT
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=1290|Color=128|FontID=3|Text=CANH_EXT|UniqueID=DZRMCNVT
+|RECORD=2|OwnerIndex=5|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=1260|Name=CAN-L|Designator=5|SwapIdPart=1|UniqueID=TPUMIBVN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=1260|X2=390|Y2=1260|UniqueID=RKTMFUSH
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=1260|Color=128|FontID=3|Text=CANL_EXT|UniqueID=QCEWQYHZ
+|RECORD=34|OwnerIndex=5|OwnerPartId=-1|Location.X=170|Location.Y=1342|Color=128|FontID=2|Text=J1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=5|OwnerPartId=-1|Location.X=170|Location.Y=1327|Color=128|FontID=1|Text=NMEA Micro-C pigtail|Name=Comment
+|RECORD=41|OwnerIndex=5|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_TERMINAL_5_3.5|Name=Footprint
+|RECORD=41|OwnerIndex=5|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD terminal MPN, pitch and pin order; logical Micro-C numbering, not a connector face view|Name=ReviewStatus
+|RECORD=44|OwnerIndex=5
+|RECORD=45|OwnerIndex=26|ModelName=TBD_TERMINAL_5_3.5|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=OBLADYAG
+|RECORD=46|OwnerIndex=27
+|RECORD=48|OwnerIndex=27
+|RECORD=1|LibReference=TP1_R1|ComponentDescription=Shield / chassis pad|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=520|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=TCNIHBDN|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=1
+|RECORD=14|OwnerIndex=30|OwnerPartId=1|IsNotAccesible=T|Location.X=520|Location.Y=1270|Corner.X=650|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=30|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=520|Location.Y=1290|Name=SHIELD|Designator=1|SwapIdPart=1|UniqueID=YNLAPAUO
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=500|Y1=1290|X2=410|Y2=1290|UniqueID=TALWJQAS
+|RECORD=25|OwnerPartId=-1|Location.X=410|Location.Y=1290|Color=128|FontID=3|Text=SHIELD|UniqueID=IMCNINRZ
+|RECORD=34|OwnerIndex=30|OwnerPartId=-1|Location.X=520|Location.Y=1342|Color=128|FontID=2|Text=TP1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=30|OwnerPartId=-1|Location.X=520|Location.Y=1327|Color=128|FontID=1|Text=Shield / chassis pad|Name=Comment
+|RECORD=41|OwnerIndex=30|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TESTPOINT_2MM|Name=Footprint
+|RECORD=41|OwnerIndex=30|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=30
+|RECORD=45|OwnerIndex=39|ModelName=TESTPOINT_2MM|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=TLDDJWAL
+|RECORD=46|OwnerIndex=40
+|RECORD=48|OwnerIndex=40
+|RECORD=4|OwnerPartId=-1|Location.X=780|Location.Y=1380|Color=0|FontID=2|Text=02  Input protection|UniqueID=RJEFOEAR
+|RECORD=1|LibReference=F1_R1|ComponentDescription=T0.8A >=60V|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=890|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=OSTZNDUQ|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=44|OwnerPartId=1|IsNotAccesible=T|Location.X=890|Location.Y=1270|Corner.X=1020|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=44|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=890|Location.Y=1290|Name=1|Designator=1|SwapIdPart=1|UniqueID=BOGOTXUY
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=870|Y1=1290|X2=780|Y2=1290|UniqueID=BJWSNPLI
+|RECORD=25|OwnerPartId=-1|Location.X=780|Location.Y=1290|Color=128|FontID=3|Text=NET_S|UniqueID=SWXEKPGX
+|RECORD=2|OwnerIndex=44|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1020|Location.Y=1290|Name=2|Designator=2|SwapIdPart=1|UniqueID=VOJVQJPL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1040|Y1=1290|X2=1110|Y2=1290|UniqueID=MDXTCTJM
+|RECORD=25|OwnerPartId=-1|Location.X=1040|Location.Y=1290|Color=128|FontID=3|Text=FUSED_IN|UniqueID=IYUSMLAX
+|RECORD=34|OwnerIndex=44|OwnerPartId=-1|Location.X=890|Location.Y=1342|Color=128|FontID=2|Text=F1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=44|OwnerPartId=-1|Location.X=890|Location.Y=1327|Color=128|FontID=1|Text=T0.8A >=60V|Name=Comment
+|RECORD=41|OwnerIndex=44|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_FUSE_9X6|Name=Footprint
+|RECORD=41|OwnerIndex=44|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=44
+|RECORD=45|OwnerIndex=56|ModelName=TBD_FUSE_9X6|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=NOXCETYX
+|RECORD=46|OwnerIndex=57
+|RECORD=48|OwnerIndex=57
+|RECORD=1|LibReference=Q1_R1|ComponentDescription=DMP6023LE|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1240|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=YIZJUYDU|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=4
+|RECORD=14|OwnerIndex=60|OwnerPartId=1|IsNotAccesible=T|Location.X=1240|Location.Y=1240|Corner.X=1370|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=60|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1240|Location.Y=1290|Name=G|Designator=1|SwapIdPart=1|UniqueID=VJCLJKSL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1220|Y1=1290|X2=1130|Y2=1290|UniqueID=HUHWUJQS
+|RECORD=25|OwnerPartId=-1|Location.X=1130|Location.Y=1290|Color=128|FontID=3|Text=GATE|UniqueID=YMHHZPBF
+|RECORD=2|OwnerIndex=60|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1240|Location.Y=1260|Name=D|Designator=2|SwapIdPart=1|UniqueID=OOVLWGTX
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1220|Y1=1260|X2=1130|Y2=1260|UniqueID=WXJBALAL
+|RECORD=25|OwnerPartId=-1|Location.X=1130|Location.Y=1260|Color=128|FontID=3|Text=FUSED_IN|UniqueID=XAWXTITJ
+|RECORD=2|OwnerIndex=60|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1370|Location.Y=1290|Name=S|Designator=3|SwapIdPart=1|UniqueID=JWGSLPDN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=1290|X2=1460|Y2=1290|UniqueID=EHAZEQFR
+|RECORD=25|OwnerPartId=-1|Location.X=1390|Location.Y=1290|Color=128|FontID=3|Text=BUS_PROT|UniqueID=HJKHQCNW
+|RECORD=2|OwnerIndex=60|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1370|Location.Y=1260|Name=TAB=D|Designator=4|SwapIdPart=1|UniqueID=NDWSRQAX
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=1260|X2=1460|Y2=1260|UniqueID=YETNNVDV
+|RECORD=25|OwnerPartId=-1|Location.X=1390|Location.Y=1260|Color=128|FontID=3|Text=FUSED_IN|UniqueID=RDEEFNQX
+|RECORD=34|OwnerIndex=60|OwnerPartId=-1|Location.X=1240|Location.Y=1342|Color=128|FontID=2|Text=Q1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=60|OwnerPartId=-1|Location.X=1240|Location.Y=1327|Color=128|FontID=1|Text=DMP6023LE|Name=Comment
+|RECORD=41|OwnerIndex=60|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SOT223_PMOS|Name=Footprint
+|RECORD=41|OwnerIndex=60|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=60
+|RECORD=45|OwnerIndex=78|ModelName=SOT223_PMOS|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=WVPVRLSL
+|RECORD=46|OwnerIndex=79
+|RECORD=48|OwnerIndex=79
+|RECORD=1|LibReference=Z1_R1|ComponentDescription=BZT52C12|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1590|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=VUKPMROF|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=82|OwnerPartId=1|IsNotAccesible=T|Location.X=1590|Location.Y=1270|Corner.X=1720|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=82|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1590|Location.Y=1290|Name=K|Designator=1|SwapIdPart=1|UniqueID=VFLAQJJW
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1570|Y1=1290|X2=1480|Y2=1290|UniqueID=CVQCUVBZ
+|RECORD=25|OwnerPartId=-1|Location.X=1480|Location.Y=1290|Color=128|FontID=3|Text=BUS_PROT|UniqueID=JKVUQBIF
+|RECORD=2|OwnerIndex=82|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1720|Location.Y=1290|Name=A|Designator=2|SwapIdPart=1|UniqueID=MLROIANR
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1740|Y1=1290|X2=1810|Y2=1290|UniqueID=RZCNPAIR
+|RECORD=25|OwnerPartId=-1|Location.X=1740|Location.Y=1290|Color=128|FontID=3|Text=GATE|UniqueID=SPGVMOSO
+|RECORD=34|OwnerIndex=82|OwnerPartId=-1|Location.X=1590|Location.Y=1342|Color=128|FontID=2|Text=Z1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=82|OwnerPartId=-1|Location.X=1590|Location.Y=1327|Color=128|FontID=1|Text=BZT52C12|Name=Comment
+|RECORD=41|OwnerIndex=82|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SOD123|Name=Footprint
+|RECORD=41|OwnerIndex=82|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=82
+|RECORD=45|OwnerIndex=94|ModelName=SOD123|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=ALMQGJXN
+|RECORD=46|OwnerIndex=95
+|RECORD=48|OwnerIndex=95
+|RECORD=1|LibReference=R1_R1|ComponentDescription=100k|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1940|Location.Y=1320|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=LPCHHUBL|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=98|OwnerPartId=1|IsNotAccesible=T|Location.X=1940|Location.Y=1270|Corner.X=2070|Corner.Y=1320|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=98|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1940|Location.Y=1290|Name=1|Designator=1|SwapIdPart=1|UniqueID=ACOOXTRW
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1920|Y1=1290|X2=1830|Y2=1290|UniqueID=UVDGDVQF
+|RECORD=25|OwnerPartId=-1|Location.X=1830|Location.Y=1290|Color=128|FontID=3|Text=GATE|UniqueID=KXNWQHVM
+|RECORD=2|OwnerIndex=98|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=2070|Location.Y=1290|Name=2|Designator=2|SwapIdPart=1|UniqueID=YLCTTGCE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=2090|Y1=1290|X2=2160|Y2=1290|UniqueID=EHSNAYNO
+|RECORD=25|OwnerPartId=-1|Location.X=2090|Location.Y=1290|Color=128|FontID=3|Text=GND_BUS|UniqueID=LLPWFKKU
+|RECORD=34|OwnerIndex=98|OwnerPartId=-1|Location.X=1940|Location.Y=1342|Color=128|FontID=2|Text=R1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=98|OwnerPartId=-1|Location.X=1940|Location.Y=1327|Color=128|FontID=1|Text=100k|Name=Comment
+|RECORD=41|OwnerIndex=98|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R0805|Name=Footprint
+|RECORD=41|OwnerIndex=98|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=98
+|RECORD=45|OwnerIndex=110|ModelName=R0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=BYOMKRYJ
+|RECORD=46|OwnerIndex=111
+|RECORD=48|OwnerIndex=111
+|RECORD=1|LibReference=D1_R1|ComponentDescription=SMBJ20A|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=890|Location.Y=1135|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=ZFJVEMYJ|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=114|OwnerPartId=1|IsNotAccesible=T|Location.X=890|Location.Y=1085|Corner.X=1020|Corner.Y=1135|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=114|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=890|Location.Y=1105|Name=K|Designator=1|SwapIdPart=1|UniqueID=KBJNKNMF
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=870|Y1=1105|X2=780|Y2=1105|UniqueID=ADADLVYE
+|RECORD=25|OwnerPartId=-1|Location.X=780|Location.Y=1105|Color=128|FontID=3|Text=BUS_PROT|UniqueID=LFMNWWOU
+|RECORD=2|OwnerIndex=114|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1020|Location.Y=1105|Name=A|Designator=2|SwapIdPart=1|UniqueID=SYXASKFF
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1040|Y1=1105|X2=1110|Y2=1105|UniqueID=IMCAKNSB
+|RECORD=25|OwnerPartId=-1|Location.X=1040|Location.Y=1105|Color=128|FontID=3|Text=GND_BUS|UniqueID=WZWOZPCW
+|RECORD=34|OwnerIndex=114|OwnerPartId=-1|Location.X=890|Location.Y=1157|Color=128|FontID=2|Text=D1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=114|OwnerPartId=-1|Location.X=890|Location.Y=1142|Color=128|FontID=1|Text=SMBJ20A|Name=Comment
+|RECORD=41|OwnerIndex=114|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SMB|Name=Footprint
+|RECORD=41|OwnerIndex=114|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=114
+|RECORD=45|OwnerIndex=126|ModelName=SMB|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=ZJKJOOUJ
+|RECORD=46|OwnerIndex=127
+|RECORD=48|OwnerIndex=127
+|RECORD=1|LibReference=C1_R1|ComponentDescription=47uF 50V|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1240|Location.Y=1135|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=PEDLIMUP|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=130|OwnerPartId=1|IsNotAccesible=T|Location.X=1240|Location.Y=1085|Corner.X=1370|Corner.Y=1135|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=130|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1240|Location.Y=1105|Name=+|Designator=1|SwapIdPart=1|UniqueID=BEFAWNCG
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1220|Y1=1105|X2=1130|Y2=1105|UniqueID=XGXJRSTB
+|RECORD=25|OwnerPartId=-1|Location.X=1130|Location.Y=1105|Color=128|FontID=3|Text=BUS_PROT|UniqueID=RTRCDVYR
+|RECORD=2|OwnerIndex=130|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1370|Location.Y=1105|Name=-|Designator=2|SwapIdPart=1|UniqueID=NNODBUGL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=1105|X2=1460|Y2=1105|UniqueID=CISDCBLO
+|RECORD=25|OwnerPartId=-1|Location.X=1390|Location.Y=1105|Color=128|FontID=3|Text=GND_BUS|UniqueID=BHWJEECK
+|RECORD=34|OwnerIndex=130|OwnerPartId=-1|Location.X=1240|Location.Y=1157|Color=128|FontID=2|Text=C1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=130|OwnerPartId=-1|Location.X=1240|Location.Y=1142|Color=128|FontID=1|Text=47uF 50V|Name=Comment
+|RECORD=41|OwnerIndex=130|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_CAP_RADIAL_P2.5_D8|Name=Footprint
+|RECORD=41|OwnerIndex=130|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=130
+|RECORD=45|OwnerIndex=142|ModelName=TBD_CAP_RADIAL_P2.5_D8|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=AHMHUBJW
+|RECORD=46|OwnerIndex=143
+|RECORD=48|OwnerIndex=143
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=1010|Color=0|FontID=2|Text=03  Bus-side 5V regulator|UniqueID=RUUKWGZW
+|RECORD=1|LibReference=U3_R1|ComponentDescription=TPS7B6950QDCYRQ1|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=170|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=QDYBDCNJ|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=4
+|RECORD=14|OwnerIndex=147|OwnerPartId=1|IsNotAccesible=T|Location.X=170|Location.Y=870|Corner.X=300|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=147|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=920|Name=IN|Designator=1|SwapIdPart=1|UniqueID=CRIHGYHX
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=920|X2=60|Y2=920|UniqueID=VLFMOXBO
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=920|Color=128|FontID=3|Text=BUS_PROT|UniqueID=EUTFTBGM
+|RECORD=2|OwnerIndex=147|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=890|Name=GND|Designator=2|SwapIdPart=1|UniqueID=HWFRXIZD
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=890|X2=60|Y2=890|UniqueID=GBGSWGZR
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=890|Color=128|FontID=3|Text=GND_BUS|UniqueID=TKCCTXAM
+|RECORD=2|OwnerIndex=147|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=920|Name=OUT|Designator=3|SwapIdPart=1|UniqueID=NRSMOBYL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=920|X2=390|Y2=920|UniqueID=JSFENDPZ
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=920|Color=128|FontID=3|Text=5V_BUS|UniqueID=CDVYKHKP
+|RECORD=2|OwnerIndex=147|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=890|Name=TAB=GND|Designator=4|SwapIdPart=1|UniqueID=BGPNTLDI
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=890|X2=390|Y2=890|UniqueID=NDXCQCUE
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=890|Color=128|FontID=3|Text=GND_BUS|UniqueID=HWCMRRAY
+|RECORD=34|OwnerIndex=147|OwnerPartId=-1|Location.X=170|Location.Y=972|Color=128|FontID=2|Text=U3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=147|OwnerPartId=-1|Location.X=170|Location.Y=957|Color=128|FontID=1|Text=TPS7B6950QDCYRQ1|Name=Comment
+|RECORD=41|OwnerIndex=147|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SOT223_LDO|Name=Footprint
+|RECORD=41|OwnerIndex=147|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=147
+|RECORD=45|OwnerIndex=165|ModelName=SOT223_LDO|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=YLTMWSMN
+|RECORD=46|OwnerIndex=166
+|RECORD=48|OwnerIndex=166
+|RECORD=1|LibReference=C2_R1|ComponentDescription=1uF 50V X7R|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=520|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=UDBOITAH|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=169|OwnerPartId=1|IsNotAccesible=T|Location.X=520|Location.Y=900|Corner.X=650|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=169|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=520|Location.Y=920|Name=1|Designator=1|SwapIdPart=1|UniqueID=GRKVTMJM
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=500|Y1=920|X2=410|Y2=920|UniqueID=OUGEQSFS
+|RECORD=25|OwnerPartId=-1|Location.X=410|Location.Y=920|Color=128|FontID=3|Text=BUS_PROT|UniqueID=PHSDDJUQ
+|RECORD=2|OwnerIndex=169|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=650|Location.Y=920|Name=2|Designator=2|SwapIdPart=1|UniqueID=TUBYFWNI
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=670|Y1=920|X2=740|Y2=920|UniqueID=MLHAGHNW
+|RECORD=25|OwnerPartId=-1|Location.X=670|Location.Y=920|Color=128|FontID=3|Text=GND_BUS|UniqueID=OFRHMTKQ
+|RECORD=34|OwnerIndex=169|OwnerPartId=-1|Location.X=520|Location.Y=972|Color=128|FontID=2|Text=C2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=169|OwnerPartId=-1|Location.X=520|Location.Y=957|Color=128|FontID=1|Text=1uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=169|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C0805|Name=Footprint
+|RECORD=41|OwnerIndex=169|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=169
+|RECORD=45|OwnerIndex=181|ModelName=C0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=CSYFXUDA
+|RECORD=46|OwnerIndex=182
+|RECORD=48|OwnerIndex=182
+|RECORD=1|LibReference=C3_R1|ComponentDescription=10uF 16V X7R|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=170|Location.Y=765|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=IHYFFTYY|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=185|OwnerPartId=1|IsNotAccesible=T|Location.X=170|Location.Y=715|Corner.X=300|Corner.Y=765|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=185|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=735|Name=1|Designator=1|SwapIdPart=1|UniqueID=IQSMNRCQ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=735|X2=60|Y2=735|UniqueID=QDATNZGV
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=735|Color=128|FontID=3|Text=5V_BUS|UniqueID=ORKKJMEL
+|RECORD=2|OwnerIndex=185|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=735|Name=2|Designator=2|SwapIdPart=1|UniqueID=WFQKRZHB
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=735|X2=390|Y2=735|UniqueID=SANBFZJK
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=735|Color=128|FontID=3|Text=GND_BUS|UniqueID=PWSVTVEM
+|RECORD=34|OwnerIndex=185|OwnerPartId=-1|Location.X=170|Location.Y=787|Color=128|FontID=2|Text=C3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=185|OwnerPartId=-1|Location.X=170|Location.Y=772|Color=128|FontID=1|Text=10uF 16V X7R|Name=Comment
+|RECORD=41|OwnerIndex=185|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C1206|Name=Footprint
+|RECORD=41|OwnerIndex=185|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=185
+|RECORD=45|OwnerIndex=197|ModelName=C1206|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=ANZKEZIZ
+|RECORD=46|OwnerIndex=198
+|RECORD=48|OwnerIndex=198
+|RECORD=4|OwnerPartId=-1|Location.X=780|Location.Y=1010|Color=0|FontID=2|Text=04  Isolated supply / USB service jumper|UniqueID=CPCYQOGY
+|RECORD=1|LibReference=C8_R1|ComponentDescription=10uF 50V X7R|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=890|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=GBCRICMU|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=202|OwnerPartId=1|IsNotAccesible=T|Location.X=890|Location.Y=900|Corner.X=1020|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=202|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=890|Location.Y=920|Name=1|Designator=1|SwapIdPart=1|UniqueID=MCINUTCS
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=870|Y1=920|X2=780|Y2=920|UniqueID=MZMFZHOT
+|RECORD=25|OwnerPartId=-1|Location.X=780|Location.Y=920|Color=128|FontID=3|Text=BUS_PROT|UniqueID=ACAHFTFK
+|RECORD=2|OwnerIndex=202|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1020|Location.Y=920|Name=2|Designator=2|SwapIdPart=1|UniqueID=XIKYCICS
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1040|Y1=920|X2=1110|Y2=920|UniqueID=UXHLCPYL
+|RECORD=25|OwnerPartId=-1|Location.X=1040|Location.Y=920|Color=128|FontID=3|Text=GND_BUS|UniqueID=INXAVIUW
+|RECORD=34|OwnerIndex=202|OwnerPartId=-1|Location.X=890|Location.Y=972|Color=128|FontID=2|Text=C8|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=202|OwnerPartId=-1|Location.X=890|Location.Y=957|Color=128|FontID=1|Text=10uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=202|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C1210|Name=Footprint
+|RECORD=41|OwnerIndex=202|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=202
+|RECORD=45|OwnerIndex=214|ModelName=C1210|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=RTEOYLFM
+|RECORD=46|OwnerIndex=215
+|RECORD=48|OwnerIndex=215
+|RECORD=1|LibReference=L2_R1|ComponentDescription=15uH Isat>=1A|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1240|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=HVGIRQWQ|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=218|OwnerPartId=1|IsNotAccesible=T|Location.X=1240|Location.Y=900|Corner.X=1370|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=218|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1240|Location.Y=920|Name=1|Designator=1|SwapIdPart=1|UniqueID=KRLINRUM
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1220|Y1=920|X2=1130|Y2=920|UniqueID=EDJMSWJU
+|RECORD=25|OwnerPartId=-1|Location.X=1130|Location.Y=920|Color=128|FontID=3|Text=BUS_PROT|UniqueID=SKCPTIOY
+|RECORD=2|OwnerIndex=218|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1370|Location.Y=920|Name=2|Designator=2|SwapIdPart=1|UniqueID=YDPXEOPZ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=920|X2=1460|Y2=920|UniqueID=RSVZEOQC
+|RECORD=25|OwnerPartId=-1|Location.X=1390|Location.Y=920|Color=128|FontID=3|Text=DCDC_IN|UniqueID=JKLROUAJ
+|RECORD=34|OwnerIndex=218|OwnerPartId=-1|Location.X=1240|Location.Y=972|Color=128|FontID=2|Text=L2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=218|OwnerPartId=-1|Location.X=1240|Location.Y=957|Color=128|FontID=1|Text=15uH Isat>=1A|Name=Comment
+|RECORD=41|OwnerIndex=218|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_INDUCTOR_5X5|Name=Footprint
+|RECORD=41|OwnerIndex=218|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=218
+|RECORD=45|OwnerIndex=230|ModelName=TBD_INDUCTOR_5X5|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=RKBWEZYX
+|RECORD=46|OwnerIndex=231
+|RECORD=48|OwnerIndex=231
+|RECORD=1|LibReference=C9_R1|ComponentDescription=10uF 50V X7R|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1590|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=QCCIYWSP|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=234|OwnerPartId=1|IsNotAccesible=T|Location.X=1590|Location.Y=900|Corner.X=1720|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=234|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1590|Location.Y=920|Name=1|Designator=1|SwapIdPart=1|UniqueID=PIHADXRL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1570|Y1=920|X2=1480|Y2=920|UniqueID=CPTZVSOB
+|RECORD=25|OwnerPartId=-1|Location.X=1480|Location.Y=920|Color=128|FontID=3|Text=DCDC_IN|UniqueID=DGKCWEJB
+|RECORD=2|OwnerIndex=234|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1720|Location.Y=920|Name=2|Designator=2|SwapIdPart=1|UniqueID=GLKOAGVK
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1740|Y1=920|X2=1810|Y2=920|UniqueID=MHWDOHBJ
+|RECORD=25|OwnerPartId=-1|Location.X=1740|Location.Y=920|Color=128|FontID=3|Text=GND_BUS|UniqueID=WZIBQASS
+|RECORD=34|OwnerIndex=234|OwnerPartId=-1|Location.X=1590|Location.Y=972|Color=128|FontID=2|Text=C9|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=234|OwnerPartId=-1|Location.X=1590|Location.Y=957|Color=128|FontID=1|Text=10uF 50V X7R|Name=Comment
+|RECORD=41|OwnerIndex=234|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C1210|Name=Footprint
+|RECORD=41|OwnerIndex=234|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=234
+|RECORD=45|OwnerIndex=246|ModelName=C1210|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=YJOSFQYB
+|RECORD=46|OwnerIndex=247
+|RECORD=48|OwnerIndex=247
+|RECORD=1|LibReference=U2_R1|ComponentDescription=R3M-2405S/SMD|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1940|Location.Y=950|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=YMOJHIZF|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=6
+|RECORD=14|OwnerIndex=250|OwnerPartId=1|IsNotAccesible=T|Location.X=1940|Location.Y=840|Corner.X=2070|Corner.Y=950|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1940|Location.Y=920|Name=+VIN|Designator=1|SwapIdPart=1|UniqueID=INPCKHGD
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1920|Y1=920|X2=1830|Y2=920|UniqueID=HILQIPCO
+|RECORD=25|OwnerPartId=-1|Location.X=1830|Location.Y=920|Color=128|FontID=3|Text=DCDC_IN|UniqueID=RQLWFNPE
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1940|Location.Y=890|Name=-VIN|Designator=2|SwapIdPart=1|UniqueID=YUNGZRMU
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1920|Y1=890|X2=1830|Y2=890|UniqueID=NVIXJTLF
+|RECORD=25|OwnerPartId=-1|Location.X=1830|Location.Y=890|Color=128|FontID=3|Text=GND_BUS|UniqueID=HPLUIYHE
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=58|PinLength=20|Location.X=1940|Location.Y=860|Name=CTRL=open/on|Designator=4|SwapIdPart=1|UniqueID=PIMMUZVS
+|RECORD=22|OwnerPartId=-1|Location.X=1920|Location.Y=860|Color=255
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=2070|Location.Y=920|Name=NC|Designator=5|SwapIdPart=1|UniqueID=QDPCPFYE
+|RECORD=22|OwnerPartId=-1|Location.X=2090|Location.Y=920|Color=255
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=2070|Location.Y=890|Name=-VOUT|Designator=6|SwapIdPart=1|UniqueID=IEJMEZHH
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=2090|Y1=890|X2=2160|Y2=890|UniqueID=KBYSCVMD
+|RECORD=25|OwnerPartId=-1|Location.X=2090|Location.Y=890|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=JFSHELSB
+|RECORD=2|OwnerIndex=250|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=2070|Location.Y=860|Name=+VOUT|Designator=7|SwapIdPart=1|UniqueID=GGTQHSEL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=2090|Y1=860|X2=2160|Y2=860|UniqueID=JGQUJZYH
+|RECORD=25|OwnerPartId=-1|Location.X=2090|Location.Y=860|Color=128|FontID=3|Text=5V_ISO|UniqueID=DRUVAZPE
+|RECORD=34|OwnerIndex=250|OwnerPartId=-1|Location.X=1940|Location.Y=972|Color=128|FontID=2|Text=U2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=250|OwnerPartId=-1|Location.X=1940|Location.Y=957|Color=128|FontID=1|Text=R3M-2405S/SMD|Name=Comment
+|RECORD=41|OwnerIndex=250|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R3M_SMD|Name=Footprint
+|RECORD=41|OwnerIndex=250|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=250
+|RECORD=45|OwnerIndex=272|ModelName=R3M_SMD|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=WRJAMATG
+|RECORD=46|OwnerIndex=273
+|RECORD=48|OwnerIndex=273
+|RECORD=1|LibReference=C6_R1|ComponentDescription=47uF 10V|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=890|Location.Y=765|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=OSXIBLQZ|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=276|OwnerPartId=1|IsNotAccesible=T|Location.X=890|Location.Y=715|Corner.X=1020|Corner.Y=765|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=276|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=890|Location.Y=735|Name=+|Designator=1|SwapIdPart=1|UniqueID=GGLMABKK
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=870|Y1=735|X2=780|Y2=735|UniqueID=LNMHLSEX
+|RECORD=25|OwnerPartId=-1|Location.X=780|Location.Y=735|Color=128|FontID=3|Text=5V_ISO|UniqueID=NTVHGXWY
+|RECORD=2|OwnerIndex=276|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1020|Location.Y=735|Name=-|Designator=2|SwapIdPart=1|UniqueID=XOCHHEFC
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1040|Y1=735|X2=1110|Y2=735|UniqueID=VFBFBFEY
+|RECORD=25|OwnerPartId=-1|Location.X=1040|Location.Y=735|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=QIRNTRSS
+|RECORD=34|OwnerIndex=276|OwnerPartId=-1|Location.X=890|Location.Y=787|Color=128|FontID=2|Text=C6|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=276|OwnerPartId=-1|Location.X=890|Location.Y=772|Color=128|FontID=1|Text=47uF 10V|Name=Comment
+|RECORD=41|OwnerIndex=276|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_CAP_RADIAL_P2.5_D6.3|Name=Footprint
+|RECORD=41|OwnerIndex=276|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=276
+|RECORD=45|OwnerIndex=288|ModelName=TBD_CAP_RADIAL_P2.5_D6.3|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=TBXPJXUC
+|RECORD=46|OwnerIndex=289
+|RECORD=48|OwnerIndex=289
+|RECORD=1|LibReference=C7_R1|ComponentDescription=100nF 16V|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1240|Location.Y=765|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=HZJXWDCX|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=292|OwnerPartId=1|IsNotAccesible=T|Location.X=1240|Location.Y=715|Corner.X=1370|Corner.Y=765|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=292|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1240|Location.Y=735|Name=1|Designator=1|SwapIdPart=1|UniqueID=MXHEPDNZ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1220|Y1=735|X2=1130|Y2=735|UniqueID=OVYCFULE
+|RECORD=25|OwnerPartId=-1|Location.X=1130|Location.Y=735|Color=128|FontID=3|Text=5V_ISO|UniqueID=TBGDPBXZ
+|RECORD=2|OwnerIndex=292|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1370|Location.Y=735|Name=2|Designator=2|SwapIdPart=1|UniqueID=NLOIOATE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1390|Y1=735|X2=1460|Y2=735|UniqueID=WSKVADWU
+|RECORD=25|OwnerPartId=-1|Location.X=1390|Location.Y=735|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=QHHDPRXW
+|RECORD=34|OwnerIndex=292|OwnerPartId=-1|Location.X=1240|Location.Y=787|Color=128|FontID=2|Text=C7|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=292|OwnerPartId=-1|Location.X=1240|Location.Y=772|Color=128|FontID=1|Text=100nF 16V|Name=Comment
+|RECORD=41|OwnerIndex=292|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C0805|Name=Footprint
+|RECORD=41|OwnerIndex=292|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=292
+|RECORD=45|OwnerIndex=304|ModelName=C0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=ABQSRQUI
+|RECORD=46|OwnerIndex=305
+|RECORD=48|OwnerIndex=305
+|RECORD=1|LibReference=D2_R1|ComponentDescription=SS36|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1590|Location.Y=765|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=IXLZFTSD|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=308|OwnerPartId=1|IsNotAccesible=T|Location.X=1590|Location.Y=715|Corner.X=1720|Corner.Y=765|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=308|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1590|Location.Y=735|Name=K|Designator=1|SwapIdPart=1|UniqueID=ITRHXMTA
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1570|Y1=735|X2=1480|Y2=735|UniqueID=PKWRYFSP
+|RECORD=25|OwnerPartId=-1|Location.X=1480|Location.Y=735|Color=128|FontID=3|Text=5V_AFTER_DIODE|UniqueID=OARCLGYG
+|RECORD=2|OwnerIndex=308|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1720|Location.Y=735|Name=A|Designator=2|SwapIdPart=1|UniqueID=LWKNKIVN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1740|Y1=735|X2=1810|Y2=735|UniqueID=IXNCLIGO
+|RECORD=25|OwnerPartId=-1|Location.X=1740|Location.Y=735|Color=128|FontID=3|Text=5V_ISO|UniqueID=PFATJKXH
+|RECORD=34|OwnerIndex=308|OwnerPartId=-1|Location.X=1590|Location.Y=787|Color=128|FontID=2|Text=D2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=308|OwnerPartId=-1|Location.X=1590|Location.Y=772|Color=128|FontID=1|Text=SS36|Name=Comment
+|RECORD=41|OwnerIndex=308|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SMB|Name=Footprint
+|RECORD=41|OwnerIndex=308|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=308
+|RECORD=45|OwnerIndex=320|ModelName=SMB|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=SUFADBLA
+|RECORD=46|OwnerIndex=321
+|RECORD=48|OwnerIndex=321
+|RECORD=1|LibReference=JP1_R1|ComponentDescription=RUN closed / USB open|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1940|Location.Y=765|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=BIYVTARP|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=324|OwnerPartId=1|IsNotAccesible=T|Location.X=1940|Location.Y=715|Corner.X=2070|Corner.Y=765|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=324|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1940|Location.Y=735|Name=1|Designator=1|SwapIdPart=1|UniqueID=SHHSJFSO
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1920|Y1=735|X2=1830|Y2=735|UniqueID=QVLVTEZZ
+|RECORD=25|OwnerPartId=-1|Location.X=1830|Location.Y=735|Color=128|FontID=3|Text=5V_AFTER_DIODE|UniqueID=VPVQEBDQ
+|RECORD=2|OwnerIndex=324|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=2070|Location.Y=735|Name=2|Designator=2|SwapIdPart=1|UniqueID=NGHVXQIE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=2090|Y1=735|X2=2160|Y2=735|UniqueID=XCRXYUOU
+|RECORD=25|OwnerPartId=-1|Location.X=2090|Location.Y=735|Color=128|FontID=3|Text=5V_MODULE|UniqueID=GIKVMUEX
+|RECORD=34|OwnerIndex=324|OwnerPartId=-1|Location.X=1940|Location.Y=787|Color=128|FontID=2|Text=JP1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=324|OwnerPartId=-1|Location.X=1940|Location.Y=772|Color=128|FontID=1|Text=RUN closed / USB open|Name=Comment
+|RECORD=41|OwnerIndex=324|OwnerPartId=-1|IsHidden=T|FontID=1|Text=HDR1X2_2.54|Name=Footprint
+|RECORD=41|OwnerIndex=324|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=324
+|RECORD=45|OwnerIndex=336|ModelName=HDR1X2_2.54|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=USGEDMDY
+|RECORD=46|OwnerIndex=337
+|RECORD=48|OwnerIndex=337
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=570|Color=0|FontID=2|Text=05  CAN bus interface / isolation|UniqueID=TKNJXFBV
+|RECORD=1|LibReference=D3_R1|ComponentDescription=PESD2CAN24T-Q|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=170|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=IHPAPGIK|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=3
+|RECORD=14|OwnerIndex=341|OwnerPartId=1|IsNotAccesible=T|Location.X=170|Location.Y=430|Corner.X=300|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=341|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=480|Name=K1|Designator=1|SwapIdPart=1|UniqueID=VLDISLYE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=480|X2=60|Y2=480|UniqueID=QHMEKYFV
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=480|Color=128|FontID=3|Text=CANH_EXT|UniqueID=SQBOCXGS
+|RECORD=2|OwnerIndex=341|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=450|Name=K2|Designator=2|SwapIdPart=1|UniqueID=GCLWHJXB
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=450|X2=60|Y2=450|UniqueID=AVGDSEFG
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=450|Color=128|FontID=3|Text=CANL_EXT|UniqueID=WAVSYILS
+|RECORD=2|OwnerIndex=341|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=480|Name=CC|Designator=3|SwapIdPart=1|UniqueID=OFJOTBFA
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=480|X2=390|Y2=480|UniqueID=BAOYUYGQ
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=480|Color=128|FontID=3|Text=GND_BUS|UniqueID=WGMNTLJS
+|RECORD=34|OwnerIndex=341|OwnerPartId=-1|Location.X=170|Location.Y=532|Color=128|FontID=2|Text=D3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=341|OwnerPartId=-1|Location.X=170|Location.Y=517|Color=128|FontID=1|Text=PESD2CAN24T-Q|Name=Comment
+|RECORD=41|OwnerIndex=341|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SOT23|Name=Footprint
+|RECORD=41|OwnerIndex=341|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=341
+|RECORD=45|OwnerIndex=356|ModelName=SOT23|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=WIGZPYCB
+|RECORD=46|OwnerIndex=357
+|RECORD=48|OwnerIndex=357
+|RECORD=1|LibReference=L1_R1|ComponentDescription=ACT45B-510-2P-TL003|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=520|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=PUDUOXPO|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=4
+|RECORD=14|OwnerIndex=360|OwnerPartId=1|IsNotAccesible=T|Location.X=520|Location.Y=430|Corner.X=650|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=360|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=520|Location.Y=480|Name=H_EXT|Designator=1|SwapIdPart=1|UniqueID=MATZWDIS
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=500|Y1=480|X2=410|Y2=480|UniqueID=NOHNYLOR
+|RECORD=25|OwnerPartId=-1|Location.X=410|Location.Y=480|Color=128|FontID=3|Text=CANH_EXT|UniqueID=IZNLKKGP
+|RECORD=2|OwnerIndex=360|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=520|Location.Y=450|Name=L_EXT|Designator=2|SwapIdPart=1|UniqueID=GFXKKYUC
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=500|Y1=450|X2=410|Y2=450|UniqueID=MVTTDJVY
+|RECORD=25|OwnerPartId=-1|Location.X=410|Location.Y=450|Color=128|FontID=3|Text=CANL_EXT|UniqueID=SOAFCASH
+|RECORD=2|OwnerIndex=360|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=650|Location.Y=480|Name=L_IC|Designator=3|SwapIdPart=1|UniqueID=PBCKGDRQ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=670|Y1=480|X2=740|Y2=480|UniqueID=KSDBATUP
+|RECORD=25|OwnerPartId=-1|Location.X=670|Location.Y=480|Color=128|FontID=3|Text=CANL|UniqueID=MCVNTMYV
+|RECORD=2|OwnerIndex=360|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=650|Location.Y=450|Name=H_IC|Designator=4|SwapIdPart=1|UniqueID=SKNKTSYB
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=670|Y1=450|X2=740|Y2=450|UniqueID=WQNUZQSF
+|RECORD=25|OwnerPartId=-1|Location.X=670|Location.Y=450|Color=128|FontID=3|Text=CANH|UniqueID=YBPAQCYV
+|RECORD=34|OwnerIndex=360|OwnerPartId=-1|Location.X=520|Location.Y=532|Color=128|FontID=2|Text=L1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=360|OwnerPartId=-1|Location.X=520|Location.Y=517|Color=128|FontID=1|Text=ACT45B-510-2P-TL003|Name=Comment
+|RECORD=41|OwnerIndex=360|OwnerPartId=-1|IsHidden=T|FontID=1|Text=ACT45B|Name=Footprint
+|RECORD=41|OwnerIndex=360|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=360
+|RECORD=45|OwnerIndex=378|ModelName=ACT45B|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=YHPXRPVU
+|RECORD=46|OwnerIndex=379
+|RECORD=48|OwnerIndex=379
+|RECORD=1|LibReference=U1_R1|ComponentDescription=ISO1042DWV|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=870|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=XEEFKUUI|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=8
+|RECORD=14|OwnerIndex=382|OwnerPartId=1|IsNotAccesible=T|Location.X=870|Location.Y=370|Corner.X=1000|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=870|Location.Y=480|Name=VCC1|Designator=1|SwapIdPart=1|UniqueID=ABVOHNXA
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=480|X2=760|Y2=480|UniqueID=MOZEXTCI
+|RECORD=25|OwnerPartId=-1|Location.X=760|Location.Y=480|Color=128|FontID=3|Text=3V3_LOGIC|UniqueID=YYXKKFFC
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=58|PinLength=20|Location.X=870|Location.Y=450|Name=TXD|Designator=2|SwapIdPart=1|UniqueID=CURAUBZQ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=450|X2=760|Y2=450|UniqueID=KZJLJLLN
+|RECORD=25|OwnerPartId=-1|Location.X=760|Location.Y=450|Color=128|FontID=3|Text=TXD|UniqueID=UOIAJMVB
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=2|PinConglomerate=58|PinLength=20|Location.X=870|Location.Y=420|Name=RXD|Designator=3|SwapIdPart=1|UniqueID=GTBUYDQQ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=420|X2=760|Y2=420|UniqueID=ATSEGLBZ
+|RECORD=25|OwnerPartId=-1|Location.X=760|Location.Y=420|Color=128|FontID=3|Text=RXD|UniqueID=MLCWTURO
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=870|Location.Y=390|Name=GND1|Designator=4|SwapIdPart=1|UniqueID=BLMYNGLN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=850|Y1=390|X2=760|Y2=390|UniqueID=RARSDHRM
+|RECORD=25|OwnerPartId=-1|Location.X=760|Location.Y=390|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=LPFOUSAI
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1000|Location.Y=480|Name=GND2|Designator=5|SwapIdPart=1|UniqueID=QURZOHGE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1020|Y1=480|X2=1090|Y2=480|UniqueID=WDDHLCFN
+|RECORD=25|OwnerPartId=-1|Location.X=1020|Location.Y=480|Color=128|FontID=3|Text=GND_BUS|UniqueID=NNZIEKJZ
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1000|Location.Y=450|Name=CANL|Designator=6|SwapIdPart=1|UniqueID=BNARMNPL
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1020|Y1=450|X2=1090|Y2=450|UniqueID=HZOZJPZI
+|RECORD=25|OwnerPartId=-1|Location.X=1020|Location.Y=450|Color=128|FontID=3|Text=CANL|UniqueID=XWJCCMBR
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=1|PinConglomerate=56|PinLength=20|Location.X=1000|Location.Y=420|Name=CANH|Designator=7|SwapIdPart=1|UniqueID=DRMAWKGT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1020|Y1=420|X2=1090|Y2=420|UniqueID=LRVWKDBP
+|RECORD=25|OwnerPartId=-1|Location.X=1020|Location.Y=420|Color=128|FontID=3|Text=CANH|UniqueID=VGVAGLYC
+|RECORD=2|OwnerIndex=382|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=56|PinLength=20|Location.X=1000|Location.Y=390|Name=VCC2|Designator=8|SwapIdPart=1|UniqueID=SZSFWQHT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1020|Y1=390|X2=1090|Y2=390|UniqueID=NFCAHRWY
+|RECORD=25|OwnerPartId=-1|Location.X=1020|Location.Y=390|Color=128|FontID=3|Text=5V_BUS|UniqueID=ORLASPOC
+|RECORD=34|OwnerIndex=382|OwnerPartId=-1|Location.X=870|Location.Y=532|Color=128|FontID=2|Text=U1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=382|OwnerPartId=-1|Location.X=870|Location.Y=517|Color=128|FontID=1|Text=ISO1042DWV|Name=Comment
+|RECORD=41|OwnerIndex=382|OwnerPartId=-1|IsHidden=T|FontID=1|Text=SOIC8_DWV|Name=Footprint
+|RECORD=41|OwnerIndex=382|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=382
+|RECORD=45|OwnerIndex=412|ModelName=SOIC8_DWV|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=YPSNLFLX
+|RECORD=46|OwnerIndex=413
+|RECORD=48|OwnerIndex=413
+|RECORD=1|LibReference=C4_R1|ComponentDescription=100nF|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=170|Location.Y=325|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=IBUIQBHK|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=416|OwnerPartId=1|IsNotAccesible=T|Location.X=170|Location.Y=275|Corner.X=300|Corner.Y=325|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=416|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=170|Location.Y=295|Name=1|Designator=1|SwapIdPart=1|UniqueID=FUVWDYQP
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=150|Y1=295|X2=60|Y2=295|UniqueID=JDESFIJO
+|RECORD=25|OwnerPartId=-1|Location.X=60|Location.Y=295|Color=128|FontID=3|Text=5V_BUS|UniqueID=SXLDJDMT
+|RECORD=2|OwnerIndex=416|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=300|Location.Y=295|Name=2|Designator=2|SwapIdPart=1|UniqueID=BHBZQJTP
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=320|Y1=295|X2=390|Y2=295|UniqueID=YJPIVMPN
+|RECORD=25|OwnerPartId=-1|Location.X=320|Location.Y=295|Color=128|FontID=3|Text=GND_BUS|UniqueID=IYSFADZK
+|RECORD=34|OwnerIndex=416|OwnerPartId=-1|Location.X=170|Location.Y=347|Color=128|FontID=2|Text=C4|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=416|OwnerPartId=-1|Location.X=170|Location.Y=332|Color=128|FontID=1|Text=100nF|Name=Comment
+|RECORD=41|OwnerIndex=416|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C0805|Name=Footprint
+|RECORD=41|OwnerIndex=416|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=416
+|RECORD=45|OwnerIndex=428|ModelName=C0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=QFSZUELU
+|RECORD=46|OwnerIndex=429
+|RECORD=48|OwnerIndex=429
+|RECORD=4|OwnerPartId=-1|Location.X=1150|Location.Y=570|Color=0|FontID=2|Text=06  Logic / SuperMini|UniqueID=LSSFJGGH
+|RECORD=1|LibReference=C5_R1|ComponentDescription=100nF|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1260|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=DUARLFDX|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=433|OwnerPartId=1|IsNotAccesible=T|Location.X=1260|Location.Y=460|Corner.X=1390|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=433|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1260|Location.Y=480|Name=1|Designator=1|SwapIdPart=1|UniqueID=RXRXMIXO
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1240|Y1=480|X2=1150|Y2=480|UniqueID=PHZXXNVP
+|RECORD=25|OwnerPartId=-1|Location.X=1150|Location.Y=480|Color=128|FontID=3|Text=3V3_LOGIC|UniqueID=QVMVHTKZ
+|RECORD=2|OwnerIndex=433|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1390|Location.Y=480|Name=2|Designator=2|SwapIdPart=1|UniqueID=AWNKRHFK
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1410|Y1=480|X2=1480|Y2=480|UniqueID=YYULLTWO
+|RECORD=25|OwnerPartId=-1|Location.X=1410|Location.Y=480|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=HPHIZWVU
+|RECORD=34|OwnerIndex=433|OwnerPartId=-1|Location.X=1260|Location.Y=532|Color=128|FontID=2|Text=C5|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=433|OwnerPartId=-1|Location.X=1260|Location.Y=517|Color=128|FontID=1|Text=100nF|Name=Comment
+|RECORD=41|OwnerIndex=433|OwnerPartId=-1|IsHidden=T|FontID=1|Text=C0805|Name=Footprint
+|RECORD=41|OwnerIndex=433|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=433
+|RECORD=45|OwnerIndex=445|ModelName=C0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=XAFXXRCT
+|RECORD=46|OwnerIndex=446
+|RECORD=48|OwnerIndex=446
+|RECORD=1|LibReference=R2_R1|ComponentDescription=10k|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1610|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=GFUWLDML|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=449|OwnerPartId=1|IsNotAccesible=T|Location.X=1610|Location.Y=460|Corner.X=1740|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=449|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1610|Location.Y=480|Name=1|Designator=1|SwapIdPart=1|UniqueID=DFKAJZEJ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1590|Y1=480|X2=1500|Y2=480|UniqueID=EDGVKNID
+|RECORD=25|OwnerPartId=-1|Location.X=1500|Location.Y=480|Color=128|FontID=3|Text=3V3_LOGIC|UniqueID=EXWWRSXC
+|RECORD=2|OwnerIndex=449|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1740|Location.Y=480|Name=2|Designator=2|SwapIdPart=1|UniqueID=ZEYRQXTG
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1760|Y1=480|X2=1830|Y2=480|UniqueID=XXICGVNA
+|RECORD=25|OwnerPartId=-1|Location.X=1760|Location.Y=480|Color=128|FontID=3|Text=TXD|UniqueID=BXNINWCF
+|RECORD=34|OwnerIndex=449|OwnerPartId=-1|Location.X=1610|Location.Y=532|Color=128|FontID=2|Text=R2|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=449|OwnerPartId=-1|Location.X=1610|Location.Y=517|Color=128|FontID=1|Text=10k|Name=Comment
+|RECORD=41|OwnerIndex=449|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R0805|Name=Footprint
+|RECORD=41|OwnerIndex=449|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=449
+|RECORD=45|OwnerIndex=461|ModelName=R0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=LVLKGTHU
+|RECORD=46|OwnerIndex=462
+|RECORD=48|OwnerIndex=462
+|RECORD=1|LibReference=R3_R1|ComponentDescription=33R (R_TX)|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1960|Location.Y=510|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=CBHNZXWH|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=465|OwnerPartId=1|IsNotAccesible=T|Location.X=1960|Location.Y=460|Corner.X=2090|Corner.Y=510|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=465|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1960|Location.Y=480|Name=1|Designator=1|SwapIdPart=1|UniqueID=HKAZLAUM
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1940|Y1=480|X2=1850|Y2=480|UniqueID=HKILHLAU
+|RECORD=25|OwnerPartId=-1|Location.X=1850|Location.Y=480|Color=128|FontID=3|Text=GPIO6|UniqueID=MYKGFZDD
+|RECORD=2|OwnerIndex=465|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=2090|Location.Y=480|Name=2|Designator=2|SwapIdPart=1|UniqueID=TFFCADHN
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=2110|Y1=480|X2=2180|Y2=480|UniqueID=PNEMSNUU
+|RECORD=25|OwnerPartId=-1|Location.X=2110|Location.Y=480|Color=128|FontID=3|Text=TXD|UniqueID=SQSRKYRR
+|RECORD=34|OwnerIndex=465|OwnerPartId=-1|Location.X=1960|Location.Y=532|Color=128|FontID=2|Text=R3|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=465|OwnerPartId=-1|Location.X=1960|Location.Y=517|Color=128|FontID=1|Text=33R (R_TX)|Name=Comment
+|RECORD=41|OwnerIndex=465|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R0805|Name=Footprint
+|RECORD=41|OwnerIndex=465|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=465
+|RECORD=45|OwnerIndex=477|ModelName=R0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=YNFJMWXY
+|RECORD=46|OwnerIndex=478
+|RECORD=48|OwnerIndex=478
+|RECORD=1|LibReference=R4_R1|ComponentDescription=33R (R_RX)|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1260|Location.Y=325|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=CWAJRZFO|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=2
+|RECORD=14|OwnerIndex=481|OwnerPartId=1|IsNotAccesible=T|Location.X=1260|Location.Y=275|Corner.X=1390|Corner.Y=325|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=481|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=58|PinLength=20|Location.X=1260|Location.Y=295|Name=1|Designator=1|SwapIdPart=1|UniqueID=IAMWNBTE
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1240|Y1=295|X2=1150|Y2=295|UniqueID=LDKEMHKZ
+|RECORD=25|OwnerPartId=-1|Location.X=1150|Location.Y=295|Color=128|FontID=3|Text=RXD|UniqueID=BDQXJDTU
+|RECORD=2|OwnerIndex=481|OwnerPartId=1|FormalType=1|Electrical=4|PinConglomerate=56|PinLength=20|Location.X=1390|Location.Y=295|Name=2|Designator=2|SwapIdPart=1|UniqueID=GGJWEHVT
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1410|Y1=295|X2=1480|Y2=295|UniqueID=KYMOENMQ
+|RECORD=25|OwnerPartId=-1|Location.X=1410|Location.Y=295|Color=128|FontID=3|Text=GPIO7|UniqueID=LVHPMGMC
+|RECORD=34|OwnerIndex=481|OwnerPartId=-1|Location.X=1260|Location.Y=347|Color=128|FontID=2|Text=R4|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=481|OwnerPartId=-1|Location.X=1260|Location.Y=332|Color=128|FontID=1|Text=33R (R_RX)|Name=Comment
+|RECORD=41|OwnerIndex=481|OwnerPartId=-1|IsHidden=T|FontID=1|Text=R0805|Name=Footprint
+|RECORD=41|OwnerIndex=481|OwnerPartId=-1|IsHidden=T|FontID=1|Text=PROVISIONAL - verify landpattern before fabrication|Name=ReviewStatus
+|RECORD=44|OwnerIndex=481
+|RECORD=45|OwnerIndex=493|ModelName=R0805|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=PFRCKXQS
+|RECORD=46|OwnerIndex=494
+|RECORD=48|OwnerIndex=494
+|RECORD=1|LibReference=MCU1_R1|ComponentDescription=ESP32-C3 SuperMini 4MB|PartCount=2|DisplayModeCount=1|OwnerPartId=-1|Location.X=1610|Location.Y=325|CurrentPartId=1|SourceLibraryName=*|TargetFileName=*|UniqueID=ABXBAKXO|AreaColor=11599871|Color=128|PartIDLocked=F|AllPinCount=5
+|RECORD=14|OwnerIndex=497|OwnerPartId=1|IsNotAccesible=T|Location.X=1610|Location.Y=215|Corner.X=1740|Corner.Y=325|LineWidth=1|Color=128|AreaColor=11599871|IsSolid=T
+|RECORD=2|OwnerIndex=497|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1610|Location.Y=295|Name=5V|Designator=5V|SwapIdPart=1|UniqueID=PAMBVZBM
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1590|Y1=295|X2=1500|Y2=295|UniqueID=NCPCCKWL
+|RECORD=25|OwnerPartId=-1|Location.X=1500|Location.Y=295|Color=128|FontID=3|Text=5V_MODULE|UniqueID=JAENLGRB
+|RECORD=2|OwnerIndex=497|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1610|Location.Y=265|Name=GND|Designator=GND|SwapIdPart=1|UniqueID=HXHYPHZG
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1590|Y1=265|X2=1500|Y2=265|UniqueID=INGPGQZF
+|RECORD=25|OwnerPartId=-1|Location.X=1500|Location.Y=265|Color=128|FontID=3|Text=GND_LOGIC|UniqueID=IRKVBJFX
+|RECORD=2|OwnerIndex=497|OwnerPartId=1|FormalType=1|Electrical=7|PinConglomerate=58|PinLength=20|Location.X=1610|Location.Y=235|Name=3V3|Designator=3V3|SwapIdPart=1|UniqueID=ERNBNWOF
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1590|Y1=235|X2=1500|Y2=235|UniqueID=KRXPKKZF
+|RECORD=25|OwnerPartId=-1|Location.X=1500|Location.Y=235|Color=128|FontID=3|Text=3V3_LOGIC|UniqueID=JWBLQARJ
+|RECORD=2|OwnerIndex=497|OwnerPartId=1|FormalType=1|Electrical=2|PinConglomerate=56|PinLength=20|Location.X=1740|Location.Y=295|Name=GPIO6 / TX|Designator=6|SwapIdPart=1|UniqueID=AZYQTBOH
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1760|Y1=295|X2=1830|Y2=295|UniqueID=GLCJMNZD
+|RECORD=25|OwnerPartId=-1|Location.X=1760|Location.Y=295|Color=128|FontID=3|Text=GPIO6|UniqueID=LGXDKYFG
+|RECORD=2|OwnerIndex=497|OwnerPartId=1|FormalType=1|Electrical=0|PinConglomerate=56|PinLength=20|Location.X=1740|Location.Y=265|Name=GPIO7 / RX|Designator=7|SwapIdPart=1|UniqueID=QGPOUKKJ
+|RECORD=27|OwnerPartId=-1|LineWidth=1|Color=8388608|LocationCount=2|X1=1760|Y1=265|X2=1830|Y2=265|UniqueID=KMLBLJKK
+|RECORD=25|OwnerPartId=-1|Location.X=1760|Location.Y=265|Color=128|FontID=3|Text=GPIO7|UniqueID=TOCCDTDF
+|RECORD=34|OwnerIndex=497|OwnerPartId=-1|Location.X=1610|Location.Y=347|Color=128|FontID=2|Text=MCU1|Name=Designator|ReadOnlyState=1
+|RECORD=41|OwnerIndex=497|OwnerPartId=-1|Location.X=1610|Location.Y=332|Color=128|FontID=1|Text=ESP32-C3 SuperMini 4MB|Name=Comment
+|RECORD=41|OwnerIndex=497|OwnerPartId=-1|IsHidden=T|FontID=1|Text=TBD_SUPERMINI_NO_PADS|Name=Footprint
+|RECORD=41|OwnerIndex=497|OwnerPartId=-1|IsHidden=T|FontID=1|Text=MECHANICAL RESERVATION ONLY: no pads; measure exact module header positions and map pins before ECO/routing|Name=ReviewStatus
+|RECORD=44|OwnerIndex=497
+|RECORD=45|OwnerIndex=518|ModelName=TBD_SUPERMINI_NO_PADS|ModelType=PCBLIB|IsCurrent=T|DatafileCount=0|UniqueID=ZBJNAPYG
+|RECORD=46|OwnerIndex=519
+|RECORD=48|OwnerIndex=519
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=150|Color=255|FontID=1|Text=U2: CTRL left open (ON); pin 5 NC. No 120-ohm termination on this NMEA drop.|UniqueID=SCMCVNXI
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=125|Color=255|FontID=1|Text=USB SERVICE: open JP1 before connecting USB. RUN: close JP1 only with USB disconnected.|UniqueID=LJZJCDXI
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=100|Color=0|FontID=1|Text=9V at NET-S is not yet covered after protection/filter losses. U3 thermal design remains to be verified.|UniqueID=IUFQHKWY
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=75|Color=0|FontID=1|Text=MCU1 pin labels are logical signals. Exact module header geometry is unresolved; PCB reservation has no pads.|UniqueID=OOQAMVJB
+|RECORD=4|OwnerPartId=-1|Location.X=60|Location.Y=50|Color=0|FontID=1|Text=R3 = R_TX / R4 = R_RX / TP1 = TP_SH in reference drawing. All landpatterns require review; no ERC/DRC sign-off.|UniqueID=KTCBHROJ

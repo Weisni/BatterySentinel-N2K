@@ -1,0 +1,264 @@
+{
+  "scope": "Public supplier metadata and linked manufacturer datasheets; quantities not reserved, no checkout or order performed.",
+  "parts": [
+    {
+      "code": "C12891",
+      "source_url": "https://jlcpcb.com/partdetail/C12891",
+      "mpn": "CL31A226KAHNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C138687",
+      "source_url": "https://jlcpcb.com/partdetail/C138687",
+      "mpn": "CL32B106KBJNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C14238",
+      "source_url": "https://jlcpcb.com/partdetail/C14238",
+      "mpn": "SS26",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS26_C14238.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C14663",
+      "source_url": "https://jlcpcb.com/partdetail/C14663",
+      "mpn": "CC0603KRX7R9BB104",
+      "manufacturer": "YAGEO",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C152104",
+      "source_url": "https://jlcpcb.com/partdetail/C152104",
+      "mpn": "SMBJ18A",
+      "manufacturer": "BORN",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ18A_C152104.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C15849",
+      "source_url": "https://jlcpcb.com/partdetail/C15849",
+      "mpn": "CL10A105KB8NNNC",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C15850",
+      "source_url": "https://jlcpcb.com/partdetail/C15850",
+      "mpn": "CL21A106KAYNNNE",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C165948",
+      "source_url": "https://jlcpcb.com/partdetail/C165948",
+      "mpn": "TYPE-C-31-M-12",
+      "manufacturer": "Korean Hroparts Elec",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C2071056",
+      "source_url": "https://jlcpcb.com/partdetail/C2071056",
+      "mpn": "AP63205WU-7",
+      "manufacturer": "Diodes Incorporated",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C23140",
+      "source_url": "https://jlcpcb.com/partdetail/C23140",
+      "mpn": "0603WAF330JT5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C23186",
+      "source_url": "https://jlcpcb.com/partdetail/C23186",
+      "mpn": "0603WAF5101T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C23345",
+      "source_url": "https://jlcpcb.com/partdetail/C23345",
+      "mpn": "0603WAF220JT5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C2480",
+      "source_url": "https://jlcpcb.com/partdetail/C2480",
+      "mpn": "SS14",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C25804",
+      "source_url": "https://jlcpcb.com/partdetail/C25804",
+      "mpn": "0603WAF1002T5E",
+      "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C2671714",
+      "source_url": "https://jlcpcb.com/partdetail/C2671714",
+      "mpn": "ISO1042DWVR",
+      "manufacturer": "Texas Instruments",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://datasheet.lcsc.com/lcsc/2302212001_Texas-Instruments-ISO1042DWVR_C2671714.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C28933048",
+      "source_url": "https://jlcpcb.com/partdetail/C28933048",
+      "mpn": "PESD2CAN24T-QR",
+      "manufacturer": "Nexperia",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C2934560",
+      "source_url": "https://jlcpcb.com/partdetail/C2934560",
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "manufacturer": "Espressif Systems",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2306201508_Espressif-Systems-ESP32-C3-WROOM-02-N4_C2934560.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C3032873",
+      "source_url": "https://jlcpcb.com/partdetail/C3032873",
+      "mpn": "SF-1206S080-2",
+      "manufacturer": "BOURNS",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_BOURNS-SF-1206S080-2_C3032873.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C3167176",
+      "source_url": "https://jlcpcb.com/partdetail/C3167176",
+      "mpn": "SF-1206S100-2",
+      "manufacturer": "BOURNS",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401291101_BOURNS-SF-1206S100-2_C3167176.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C4258541",
+      "source_url": "https://jlcpcb.com/partdetail/C4258541",
+      "mpn": "RNCP1206FTD150R",
+      "manufacturer": "SEI(Stackpole Elec)",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C57269",
+      "source_url": "https://jlcpcb.com/partdetail/C57269",
+      "mpn": "SWPA4030S4R7MT",
+      "manufacturer": "Sunlord",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C720477",
+      "source_url": "https://jlcpcb.com/partdetail/C720477",
+      "mpn": "TS-1088-AR02016",
+      "manufacturer": "XUNPU",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XUNPU-TS-1088-AR02016_C720477.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C7500927",
+      "source_url": "https://jlcpcb.com/partdetail/C7500927",
+      "mpn": "B0505S-3WR2",
+      "manufacturer": "EVISUN",
+      "assembly_mode": "manualWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308311627_EVISUN-B0505S-3WR2_C7500927.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C7519",
+      "source_url": "https://jlcpcb.com/partdetail/C7519",
+      "mpn": "USBLC6-2SC6",
+      "manufacturer": "STMicroelectronics",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C76584",
+      "source_url": "https://jlcpcb.com/partdetail/C76584",
+      "mpn": "ACT45B-510-2P-TL003",
+      "manufacturer": "TDK",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151430_TDK-ACT45B-510-2P-TL003_C76584.pdf",
+      "observed_date": "2026-09-23"
+    },
+    {
+      "code": "C780769",
+      "source_url": "https://jlcpcb.com/partdetail/C780769",
+      "mpn": "AP63203WU-7",
+      "manufacturer": "Diodes Incorporated",
+      "assembly_mode": "smtWeld",
+      "in_stock_schema": true,
+      "datasheet_url": "https://www.lcsc.com/datasheet/lcsc_datasheet_2201131130_Diodes-Incorporated-AP63203WU-7_C780769.pdf",
+      "observed_date": "2026-09-23"
+    }
+  ]
+}

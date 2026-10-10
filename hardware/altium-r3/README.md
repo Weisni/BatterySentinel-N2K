@@ -1,0 +1,30 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](../../docs/internal/README.md).
+
+# Orion Bridge R3 – kompaktes Altium-Projekt
+
+R3 enthält einen bearbeitbaren Schaltplan mit lokalen Bauteilbibliotheken und eine vollständig geroutete, zweilagige Leiterplatte mit **54 × 36 mm**. Das Modell umfasst **28 Bauteile, 21 Netze, 148 Leiterbahnsegmente, 27 Vias und 105 Kupferregionen**. Vier der Vias unterstützen die Wärmeabfuhr von U3. Der Aufbau verwendet 1,6 mm FR-4 und 35 µm Kupfer.
+
+Zum Öffnen den gesamten Ordner zusammenhalten und [Orion-Bridge-R3.PrjPcb](Orion-Bridge-R3.PrjPcb) in Altium Designer öffnen. Im Projektbaum den [Schaltplan](Orion-Bridge-R3.SchDoc) oder die [Leiterplatte](Orion-Bridge-R3.PcbDoc) auswählen. Bei aktivem PCB-Editor wechselt **Taste 2** in die 2D-Ansicht und **Taste 3** in die 3D-Ansicht. Das Projekt wurde mit Altium Designer **26.10.1** geöffnet und geprüft. Die PCB-Datei wurde dort im nativen **Binary-6.0-Format** gespeichert. Der erzeugte ASCII-Quellstand liegt ergänzend unter `source/`; zum Bearbeiten die PCB-Datei im Hauptordner verwenden.
+
+Die Bauteile verweisen auf [Orion-Bridge.SchLib](Orion-Bridge.SchLib) und [Orion-Bridge.PcbLib](Orion-Bridge.PcbLib). Bibliotheksreferenzen, Footprintmodelle, Pinnummern, Netze und eindeutige Komponenten-IDs verbinden Schaltplan und PCB. Die Bibliotheken sind dem Projekt beigefügt; eine Cloud-Bibliothek ist dafür nicht erforderlich. Hersteller, MPN und Datenblatt sind bei konkret ausgewählten Teilen hinterlegt. Supplier-Felder können anschließend ergänzt werden. [Orion-Bridge.LibPkg](Orion-Bridge.LibPkg) ist das zugehörige Bibliothekspaket.
+
+Die kompaktere Anordnung verwendet unter anderem eine SMD-Sicherung, eine kleinere 15-µH-Drossel und SMD-Elkos. Getrennte Masseflächen führen BUS und LOGIC auf beiden Lagen. Zwischen den Domänen bleibt eine **3,8 mm breite kupferfreie Isolationsbarriere**; U1 und U2 überbrücken sie funktional. Der Antennenbereich des SuperMini bleibt auf beiden Kupferlagen frei. Vor der USB-Buchse ist ein **12 mm breiter und 14 mm langer Servicekorridor** für den angehobenen Stecker reserviert; C6 und JP1 stehen außerhalb dieses Bereichs. Vor dem Anschluss von USB muss **JP1 geöffnet** werden.
+
+Die Footprints enthalten echte, bearbeitbare Altium-3D-Körper in der PcbLib und in den platzierten PCB-Komponenten. Zusätzlich liegen unter [models](models/) **28 einzelne STEP-Modelle** und die [komplette STEP-Baugruppe](models/Orion-Bridge-assembly.step). Die Ansichten [Oberseite](PCB-R3-3D-Oberseite.png), [Unterseite](PCB-R3-3D-Unterseite.png) und [Draufsicht](PCB-R3-3D-Draufsicht.png) wurden aus CAD-Geometrie gerendert. Die [Kupferansicht](Leiterplatte-R3-Kupfer.png) zeigt die Leiterbahnführung.
+
+Diese 3D-Modelle sind lokal erzeugte Annäherungen an Gehäuse und Montage, keine originalen Hersteller-STEP-Dateien. Für MCU1 werden **3,1 mm Abstand zur Modulunterseite** und **7,2 mm Gesamthöhe über der Trägerplatine** angenommen. Das tatsächlich eingesetzte Nologo-Modul, seine Header, USB-Buchse und Einbauhöhe müssen dazu passen; ein bestimmter Sockel ist nicht festgelegt. C5 und R2–R4 liegen als niedrige Bauteile unter dem Modul. Die mechanische Prüfung berücksichtigt mindestens 0,5 mm Körperabstand, die Headerstreifen und 4,8-mm-Schraubenköpfe; der gemessene kleinste Abstand zwischen Pad und fremdem Körper beträgt 0,325 mm.
+
+Die Prüfnachweise liegen direkt im Projekt:
+
+- [verification.json](verification.json): 4.776 bestandene Prüfungen des erzeugten ASCII-Quellstands; alle 21 Netze verbunden, Bibliotheks-/Pin-/UID-Zuordnung sowie Kupfergeometrie und native Entwurfsregeln geprüft.
+- [native-binary-verification.json](native-binary-verification.json): 824 bestandene Prüfungen der tatsächlich gespeicherten binären Altium-Datei, einschließlich Bauteilreferenzen, importierter Parameter und erneut geprüfter Kupfergeometrie.
+- [altium-validation.json](altium-validation.json): Dateiprüfsummen und dokumentierter Umfang der nativen Altium-Prüfung.
+- [Altium-Schaltplan-PCB-Abgleich.png](Altium-Schaltplan-PCB-Abgleich.png): Nach Übernahme der Bauteilwerte und Parameter meldet Altiums nativer ECO-Vergleich **„No Differences Detected“**.
+- [mechanical-review.json](mechanical-review.json): keine mechanischen Befunde unter den angegebenen Montageannahmen.
+- [parts-review.json](parts-review.json): Bauteilauswahl, Herstellerquellen, Lötflächen, thermische Bedingungen und offene Qualifikation.
+- [Nativer Altium-DRC-Bericht](<Project Outputs/Design Rule Check - Orion-Bridge-R3.drc>) und [HTML-Bericht](<Project Outputs/Design Rule Check - Orion-Bridge-R3.html>): Lauf des nativen Endstands vom **21.09.2026, 22:12:17**, **0 Warnungen und 0 Regelverletzungen**, keine erlassenen Verletzungen.
+- [3D-render-validation.json](3D-render-validation.json): CAD-Renderer, Modellumfang und verwendete Datenstände.
+
+**R3 ist ein Entwicklungsprototyp, keine Fertigungsfreigabe.** U3 kann im konservativen Betriebspunkt mit 16 V Eingang und maximaler dominanter CAN-Last ungefähr **0,8 W** Verlustleistung erzeugen. Masseflächen und Thermalvias sind vorgesehen; Temperaturverhalten im tatsächlichen Gehäuse und bei maximaler Umgebungstemperatur muss gemessen werden. U2 benötigt mindestens 9 V direkt an seinen Eingangspins; wegen der vorgeschalteten Verluste ist ein Start bei genau 9 V am Anschluss nicht garantiert.
+
+Vor einer Fertigung bleiben die konkreten Varianten bisher generischer Bauteile, Header und Pigtail-Kabel einschließlich Zugentlastung, Lieferantenzuordnung und Lötprozess abzugleichen. Die U3-Lötflächen sind eine geometrisch abgeglichene Engineering-Auslegung, keine im TI-Datenblatt empfohlene Landpattern-Zeichnung. Der bestandene DRC ersetzt keine elektrische, thermische, EMV- oder Isolationsqualifikation am aufgebauten Gerät. Dieses Paket enthält keine freigegebenen Gerber-Fertigungsdaten.

@@ -1,0 +1,2851 @@
+{
+  "revision": "R5 exact user-selected C3 module library v1",
+  "date": "2026-09-23",
+  "identity": {
+    "asin": "B0FN4F6244",
+    "selected_variant": "4 x C3",
+    "seller_brand": "Meshnology",
+    "product_url": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+    "replacement_module": false,
+    "user_selection_confirmed": true
+  },
+  "source_facts": {
+    "board_xy_mm": [
+      18,
+      22.52
+    ],
+    "processor": "ESP32C3FN4",
+    "flash_mb": 4,
+    "single_sided_components": true,
+    "blue_led_gpio": 8,
+    "input_pin": "5V",
+    "listing_external_input_range_v": [
+      3.3,
+      6
+    ],
+    "simultaneous_usb_and_external_power_permitted": false
+  },
+  "pin_pitch_source": "Native Nologo outline/header PcbDoc and dimension drawing, cross-checked against selected C3 photo and C3 schematic",
+  "engineering_choices": {
+    "carrier_pad_centres_x_mm": [
+      -8.6,
+      8.6
+    ],
+    "carrier_pad_size_mm": [
+      2.8,
+      1.8
+    ],
+    "outer_toe_nominal_mm": 1,
+    "adjacent_pad_gap_mm": 0.74,
+    "carrier_pth_count": 0,
+    "module_stencil_paste": false,
+    "assembly": "Manual perimeter solder after carrier PCBA",
+    "placement_tolerance_assumed_mm": 0.2,
+    "clone_outline_tolerance_assumed_mm": 0.2
+  },
+  "qualification": {
+    "library_design_complete": true,
+    "physical_sample_measured": false,
+    "production_fit_qualified": false,
+    "manufacturer_castellation_land_pattern_available": false,
+    "exact_usb_drawing_available": false,
+    "rf_performance_qualified": false,
+    "note": "Identity is settled by user link. CAD proceeds with visible conservative engineering assumptions; do not relabel as measured supplier geometry."
+  },
+  "mechanical_interfaces": {
+    "coordinate_system": "Module body centre; top view; USB +Y, ceramic antenna -Y; Z=carrier top",
+    "seating_gap_mm": 0.1,
+    "module_pcb_thickness_mm": 1.0,
+    "module_pcb_thickness_tolerance_mm": 0.2,
+    "usb": {
+      "mouth_center_local_mm": [
+        0,
+        12.65,
+        2.75
+      ],
+      "outward_local_xy": [
+        0,
+        1
+      ],
+      "opening_width_mm": 12,
+      "opening_height_mm": 7,
+      "position_tolerance_mm": [
+        0.5,
+        0.65,
+        0.4
+      ],
+      "assumed": true,
+      "shell_bounds_local_mm": [
+        -4.6,
+        4.65,
+        1.1,
+        4.6,
+        12.65,
+        4.4
+      ],
+      "note": "Illustrative shell envelope from C3 product/reference images. The seller publishes no exact USB Z/overhang drawing. Opening includes plug-overmould clearance; never treat envelope as a connector manufacturer STEP."
+    },
+    "buttons": [
+      {
+        "name": "BOOT",
+        "center_local_mm": [
+          -2.75,
+          2.3,
+          2.75
+        ]
+      },
+      {
+        "name": "RESET",
+        "center_local_mm": [
+          2.75,
+          2.3,
+          2.75
+        ]
+      }
+    ],
+    "carrier_cutouts": [
+      {
+        "name": "MCU_USB_TAIL_CLEARANCE",
+        "bounds_local_mm": [
+          -5.3,
+          4.9,
+          5.3,
+          13.4
+        ],
+        "corner_radius_mm": 0.5,
+        "required": true,
+        "copper_clearance_mm": 0.3,
+        "note": "Open to carrier edge where possible; clearance for unknown USB shell tails/solder. No carrier material, copper, or component in this area."
+      },
+      {
+        "name": "MCU_ANTENNA_WINDOW",
+        "bounds_local_mm": [
+          -5,
+          -11.26,
+          5,
+          -7.5
+        ],
+        "corner_radius_mm": 0.5,
+        "required": true,
+        "copper_clearance_mm": 0.3,
+        "note": "Through-carrier air window below ceramic antenna. In an edge-overhang layout the outside-board area already supplies this clearance."
+      }
+    ],
+    "rf_keepout": {
+      "bounds_local_mm": [
+        -6,
+        -13.76,
+        6,
+        -5.5
+      ],
+      "copper_layers": "all",
+      "components": true,
+      "metal": true,
+      "assumed": true,
+      "note": "Conservative local antenna reservation; no published numeric RF keepout for the exact clone. Not a measured antenna tuning or radiated-performance qualification."
+    },
+    "underside_keepout": {
+      "bounds_local_mm": [
+        -9,
+        -11.26,
+        9,
+        11.26
+      ],
+      "carrier_components": false,
+      "exposed_copper": false,
+      "note": "Carrier tracks may pass beneath the non-RF module only under intact solder mask; no exposed testpoints, vias, or pads except intended perimeter lands."
+    }
+  },
+  "sources": [
+    {
+      "kind": "selected_product_main",
+      "path": "hardware/altium-r5/references/amazon-B0FN4F6244-main.jpg",
+      "url": "https://m.media-amazon.com/images/I/714mCjB4fHL._AC_SL1500_.jpg",
+      "sha256": "3f167b7de8556b8302b3fa20180dbb0c667360208e0dfaf1cbbf89c3be7c33d1",
+      "note": "Exact selected listing main photo: C3 package, castellations, USB and header pins visible."
+    },
+    {
+      "kind": "selected_product_power_schematic",
+      "path": "hardware/altium-r5/references/amazon-B0FN4F6244-schematic.jpg",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/1523fc34-7d92-4e55-b555-d9e10fd045a8.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "sha256": "90b7a988d93ad9dd76ffd5bee942a33c392021985318e10733ac8e70a7c5a5e5",
+      "note": "C3 A+ power/USB/header schematic; VBUS equals header 5V before BAT60J."
+    },
+    {
+      "kind": "selected_product_core_schematic",
+      "path": "hardware/altium-r5/references/amazon-B0FN4F6244-core-schematic.jpg",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a8108aab-b24a-4fa6-860b-2985be775f51.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "sha256": "c89d45f2b9cabdea2b787e79fa4b3d9569c42d21f4d2f58dd6124d1c607bb290",
+      "note": "C3 A+ core schematic, not a dimension drawing."
+    },
+    {
+      "kind": "rejected_mixed_variant_image",
+      "path": "hardware/altium-r5/references/amazon-B0FN4F6244-rejected-S3-pinout.jpg",
+      "url": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/aa60e534-efe9-467b-8858-278aed2ac770.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "sha256": "61908f6f976b1c126b1ab8f0304b8297f4cde3e6edfab54af40156a6f296f652",
+      "note": "Rejected for C3 design: shows S3 and GPIO48; listing A+ assets mix variants."
+    },
+    {
+      "kind": "reference_dimension_drawing",
+      "path": "hardware/altium-r5/references/nologo-reference-dimensions.png",
+      "url": "https://raw.githubusercontent.com/NologoTech/ESP32C3-Supermini/main/Hardware/ESP32-C3%E5%B0%BA%E5%AF%B8%E5%9B%BE.png",
+      "sha256": "ef9cd1f57c73ab1450bb383e24f2b0f5ffbaf14731c120673b131a8a43056f60",
+      "note": "Original Nologo reference only. 18x22.50, inner row spacing15.24, 2.54 pitch; not proof of exact Meshnology clone tolerances."
+    },
+    {
+      "kind": "reference_bottom_pinout",
+      "path": "hardware/altium-r5/references/nologo-reference-pinout.png",
+      "url": "https://www.nologo.tech/assets/img/esp32/esp32c3supermini/esp32c3foot1.png",
+      "sha256": "66f0c2c2568405406727cb269b46f01bdf2542e0dc67b555f87f36d4812f0fda",
+      "note": "Nologo reference bottom-view picture. Mirrored relative to our top-view pin map."
+    }
+  ],
+  "component": {
+    "ref": "MCU1",
+    "value": "ESP32-C3 SuperMini",
+    "manufacturer": "Meshnology (seller brand; OEM undisclosed)",
+    "mpn": "ESP32-C3 SuperMini / ASIN B0FN4F6244",
+    "manufacturer_part_number_status": "No controlled manufacturer ordering code disclosed; ASIN is product identity only",
+    "description": "User-selected C3 SuperMini; original onboard USB/BOOT/RESET; direct castellated solder mounting",
+    "datasheet": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+    "source_url": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+    "footprint": "SUPERC3_B0FN4F6244_CAST16_SMD",
+    "pins": [
+      {
+        "number": "5",
+        "name": "GPIO5",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "6",
+        "name": "GPIO6",
+        "net": "GPIO6",
+        "type": 1
+      },
+      {
+        "number": "7",
+        "name": "GPIO7",
+        "net": "GPIO7",
+        "type": 1
+      },
+      {
+        "number": "8",
+        "name": "GPIO8",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "9",
+        "name": "GPIO9",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "10",
+        "name": "GPIO10",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "20",
+        "name": "GPIO20",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "21",
+        "name": "GPIO21",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "5V",
+        "name": "5V",
+        "net": "5V_MODULE",
+        "type": 7
+      },
+      {
+        "number": "GND",
+        "name": "GND",
+        "net": "GND_LOGIC",
+        "type": 7
+      },
+      {
+        "number": "3V3",
+        "name": "3V3",
+        "net": "3V3_LOGIC",
+        "type": 7
+      },
+      {
+        "number": "4",
+        "name": "GPIO4",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "3",
+        "name": "GPIO3",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "2",
+        "name": "GPIO2",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "1",
+        "name": "GPIO1",
+        "net": null,
+        "type": 1
+      },
+      {
+        "number": "0",
+        "name": "GPIO0",
+        "net": null,
+        "type": 1
+      }
+    ],
+    "pcb_footprint": {
+      "body": [
+        18.0,
+        22.52
+      ],
+      "height": 4.4,
+      "pads": [
+        {
+          "number": "5",
+          "x": -8.6,
+          "y": 9.7006,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "6",
+          "x": -8.6,
+          "y": 7.1606,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "7",
+          "x": -8.6,
+          "y": 4.6206,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "8",
+          "x": -8.6,
+          "y": 2.0806,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "9",
+          "x": -8.6,
+          "y": -0.4594,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "10",
+          "x": -8.6,
+          "y": -2.9994,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "20",
+          "x": -8.6,
+          "y": -5.5394,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "21",
+          "x": -8.6,
+          "y": -8.0794,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "5V",
+          "x": 8.6,
+          "y": 9.7006,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "GND",
+          "x": 8.6,
+          "y": 7.1606,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "3V3",
+          "x": 8.6,
+          "y": 4.6206,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "4",
+          "x": 8.6,
+          "y": 2.0806,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "3",
+          "x": 8.6,
+          "y": -0.4594,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "2",
+          "x": 8.6,
+          "y": -2.9994,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "1",
+          "x": 8.6,
+          "y": -5.5394,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        },
+        {
+          "number": "0",
+          "x": 8.6,
+          "y": -8.0794,
+          "sx": 2.8,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "paste": false
+        }
+      ],
+      "holes": [],
+      "provisional": false,
+      "qualification": "Reviewed engineering carrier land pattern; physical clone fit not production-qualified",
+      "note": "Selected ASIN B0FN4F6244. 16 SMD lands only, 2.8x1.8 at X +/-8.6; 2.54 pitch from Nologo reference. Outer castellation dimensions inferred from selected product photo, not a manufacturer land drawing. Manual perimeter soldering; no stencil paste, no carrier PTH, no pin headers. USB tails require the separate carrier cutout; see mechanical_interfaces."
+    },
+    "bodies_3d": [
+      {
+        "name": "C3 SuperMini black PCB; direct solder, no headers",
+        "outline": [
+          [
+            -9.0,
+            -11.26
+          ],
+          [
+            9.0,
+            -11.26
+          ],
+          [
+            9.0,
+            11.26
+          ],
+          [
+            -9.0,
+            11.26
+          ]
+        ],
+        "z0": 0.1,
+        "z1": 1.1,
+        "rgb": [
+          27,
+          32,
+          32
+        ]
+      },
+      {
+        "name": "ESP32-C3 QFN32 package",
+        "outline": [
+          [
+            0.6499999999999999,
+            -6.985533905932738
+          ],
+          [
+            4.185533905932738,
+            -3.45
+          ],
+          [
+            0.6499999999999999,
+            0.08553390593273758
+          ],
+          [
+            -2.885533905932738,
+            -3.45
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 2.05,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "ceramic antenna substrate envelope",
+        "outline": [
+          [
+            -3.5,
+            -11.1
+          ],
+          [
+            3.5,
+            -11.1
+          ],
+          [
+            3.5,
+            -8.799999999999999
+          ],
+          [
+            -3.5,
+            -8.799999999999999
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 2.35,
+        "rgb": [
+          213,
+          187,
+          134
+        ]
+      },
+      {
+        "name": "ceramic antenna red top",
+        "outline": [
+          [
+            -3.025,
+            -11.09
+          ],
+          [
+            3.025,
+            -11.09
+          ],
+          [
+            3.025,
+            -8.809999999999999
+          ],
+          [
+            -3.025,
+            -8.809999999999999
+          ]
+        ],
+        "z0": 2.35,
+        "z1": 2.4,
+        "rgb": [
+          177,
+          58,
+          65
+        ]
+      },
+      {
+        "name": "40 MHz crystal",
+        "outline": [
+          [
+            -6.1,
+            -8.5
+          ],
+          [
+            -2.9,
+            -8.5
+          ],
+          [
+            -2.9,
+            -6.0
+          ],
+          [
+            -6.1,
+            -6.0
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.9,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "ME6211 regulator envelope",
+        "outline": [
+          [
+            -6.9,
+            -1.3
+          ],
+          [
+            -4.0,
+            -1.3
+          ],
+          [
+            -4.0,
+            0.30000000000000004
+          ],
+          [
+            -6.9,
+            0.30000000000000004
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 2.2,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "USB-C shell bottom",
+        "outline": [
+          [
+            -4.6,
+            4.65
+          ],
+          [
+            4.6,
+            4.65
+          ],
+          [
+            4.6,
+            12.65
+          ],
+          [
+            -4.6,
+            12.65
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.32,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB-C shell top",
+        "outline": [
+          [
+            -4.6,
+            4.65
+          ],
+          [
+            4.6,
+            4.65
+          ],
+          [
+            4.6,
+            12.65
+          ],
+          [
+            -4.6,
+            12.65
+          ]
+        ],
+        "z0": 4.18,
+        "z1": 4.4,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB-C shell left wall",
+        "outline": [
+          [
+            -4.6,
+            4.65
+          ],
+          [
+            -4.4,
+            4.65
+          ],
+          [
+            -4.4,
+            12.65
+          ],
+          [
+            -4.6,
+            12.65
+          ]
+        ],
+        "z0": 1.32,
+        "z1": 4.18,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB-C shell right wall",
+        "outline": [
+          [
+            4.4,
+            4.65
+          ],
+          [
+            4.6,
+            4.65
+          ],
+          [
+            4.6,
+            12.65
+          ],
+          [
+            4.4,
+            12.65
+          ]
+        ],
+        "z0": 1.32,
+        "z1": 4.18,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB-C rear insulator",
+        "outline": [
+          [
+            -4.4,
+            4.6499999999999995
+          ],
+          [
+            4.4,
+            4.6499999999999995
+          ],
+          [
+            4.4,
+            5.45
+          ],
+          [
+            -4.4,
+            5.45
+          ]
+        ],
+        "z0": 1.32,
+        "z1": 4.18,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "USB-C tongue",
+        "outline": [
+          [
+            -3.35,
+            6.549999999999999
+          ],
+          [
+            3.35,
+            6.549999999999999
+          ],
+          [
+            3.35,
+            12.35
+          ],
+          [
+            -3.35,
+            12.35
+          ]
+        ],
+        "z0": 2.59,
+        "z1": 2.91,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "USB visible contact 1",
+        "outline": [
+          [
+            -2.86,
+            8.15
+          ],
+          [
+            -2.64,
+            8.15
+          ],
+          [
+            -2.64,
+            11.950000000000001
+          ],
+          [
+            -2.86,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 2",
+        "outline": [
+          [
+            -2.36,
+            8.15
+          ],
+          [
+            -2.14,
+            8.15
+          ],
+          [
+            -2.14,
+            11.950000000000001
+          ],
+          [
+            -2.36,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 3",
+        "outline": [
+          [
+            -1.86,
+            8.15
+          ],
+          [
+            -1.64,
+            8.15
+          ],
+          [
+            -1.64,
+            11.950000000000001
+          ],
+          [
+            -1.86,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 4",
+        "outline": [
+          [
+            -1.36,
+            8.15
+          ],
+          [
+            -1.14,
+            8.15
+          ],
+          [
+            -1.14,
+            11.950000000000001
+          ],
+          [
+            -1.36,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 5",
+        "outline": [
+          [
+            -0.86,
+            8.15
+          ],
+          [
+            -0.64,
+            8.15
+          ],
+          [
+            -0.64,
+            11.950000000000001
+          ],
+          [
+            -0.86,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 6",
+        "outline": [
+          [
+            -0.36,
+            8.15
+          ],
+          [
+            -0.14,
+            8.15
+          ],
+          [
+            -0.14,
+            11.950000000000001
+          ],
+          [
+            -0.36,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 7",
+        "outline": [
+          [
+            0.14,
+            8.15
+          ],
+          [
+            0.36,
+            8.15
+          ],
+          [
+            0.36,
+            11.950000000000001
+          ],
+          [
+            0.14,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 8",
+        "outline": [
+          [
+            0.64,
+            8.15
+          ],
+          [
+            0.86,
+            8.15
+          ],
+          [
+            0.86,
+            11.950000000000001
+          ],
+          [
+            0.64,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 9",
+        "outline": [
+          [
+            1.14,
+            8.15
+          ],
+          [
+            1.36,
+            8.15
+          ],
+          [
+            1.36,
+            11.950000000000001
+          ],
+          [
+            1.14,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 10",
+        "outline": [
+          [
+            1.64,
+            8.15
+          ],
+          [
+            1.86,
+            8.15
+          ],
+          [
+            1.86,
+            11.950000000000001
+          ],
+          [
+            1.64,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 11",
+        "outline": [
+          [
+            2.14,
+            8.15
+          ],
+          [
+            2.36,
+            8.15
+          ],
+          [
+            2.36,
+            11.950000000000001
+          ],
+          [
+            2.14,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB visible contact 12",
+        "outline": [
+          [
+            2.64,
+            8.15
+          ],
+          [
+            2.86,
+            8.15
+          ],
+          [
+            2.86,
+            11.950000000000001
+          ],
+          [
+            2.64,
+            11.950000000000001
+          ]
+        ],
+        "z0": 2.91,
+        "z1": 2.93,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "USB shell tail clearance envelope",
+        "outline": [
+          [
+            -4.675,
+            5.3
+          ],
+          [
+            -4.2250000000000005,
+            5.3
+          ],
+          [
+            -4.2250000000000005,
+            6.3
+          ],
+          [
+            -4.675,
+            6.3
+          ]
+        ],
+        "z0": -0.65,
+        "z1": 1.4,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB shell tail clearance envelope",
+        "outline": [
+          [
+            -4.675,
+            9.65
+          ],
+          [
+            -4.2250000000000005,
+            9.65
+          ],
+          [
+            -4.2250000000000005,
+            10.65
+          ],
+          [
+            -4.675,
+            10.65
+          ]
+        ],
+        "z0": -0.65,
+        "z1": 1.4,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB shell tail clearance envelope",
+        "outline": [
+          [
+            4.2250000000000005,
+            5.3
+          ],
+          [
+            4.675,
+            5.3
+          ],
+          [
+            4.675,
+            6.3
+          ],
+          [
+            4.2250000000000005,
+            6.3
+          ]
+        ],
+        "z0": -0.65,
+        "z1": 1.4,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "USB shell tail clearance envelope",
+        "outline": [
+          [
+            4.2250000000000005,
+            9.65
+          ],
+          [
+            4.675,
+            9.65
+          ],
+          [
+            4.675,
+            10.65
+          ],
+          [
+            4.2250000000000005,
+            10.65
+          ]
+        ],
+        "z0": -0.65,
+        "z1": 1.4,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "BOOT switch base",
+        "outline": [
+          [
+            -4.9,
+            0.5499999999999998
+          ],
+          [
+            -0.6000000000000001,
+            0.5499999999999998
+          ],
+          [
+            -0.6000000000000001,
+            4.05
+          ],
+          [
+            -4.9,
+            4.05
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.65,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "BOOT switch top",
+        "outline": [
+          [
+            -4.8,
+            0.6499999999999999
+          ],
+          [
+            -0.7000000000000002,
+            0.6499999999999999
+          ],
+          [
+            -0.7000000000000002,
+            3.9499999999999997
+          ],
+          [
+            -4.8,
+            3.9499999999999997
+          ]
+        ],
+        "z0": 1.65,
+        "z1": 2.15,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "BOOT actuator",
+        "outline": [
+          [
+            -1.9,
+            2.3
+          ],
+          [
+            -1.916332511657254,
+            2.465826773713709
+          ],
+          [
+            -1.9647023973654063,
+            2.625280917510326
+          ],
+          [
+            -2.0432508295428367,
+            2.7722346980666615
+          ],
+          [
+            -2.1489592359914345,
+            2.9010407640085654
+          ],
+          [
+            -2.277765301933338,
+            3.006749170457163
+          ],
+          [
+            -2.424719082489674,
+            3.0852976026345935
+          ],
+          [
+            -2.584173226286291,
+            3.1336674883427458
+          ],
+          [
+            -2.75,
+            3.15
+          ],
+          [
+            -2.915826773713709,
+            3.1336674883427458
+          ],
+          [
+            -3.075280917510326,
+            3.0852976026345935
+          ],
+          [
+            -3.2222346980666616,
+            3.006749170457163
+          ],
+          [
+            -3.351040764008565,
+            2.9010407640085654
+          ],
+          [
+            -3.4567491704571633,
+            2.7722346980666615
+          ],
+          [
+            -3.5352976026345937,
+            2.6252809175103264
+          ],
+          [
+            -3.583667488342746,
+            2.465826773713709
+          ],
+          [
+            -3.6,
+            2.3
+          ],
+          [
+            -3.583667488342746,
+            2.1341732262862907
+          ],
+          [
+            -3.5352976026345937,
+            1.9747190824896736
+          ],
+          [
+            -3.4567491704571633,
+            1.8277653019333382
+          ],
+          [
+            -3.3510407640085655,
+            1.6989592359914345
+          ],
+          [
+            -3.2222346980666616,
+            1.5932508295428365
+          ],
+          [
+            -3.0752809175103266,
+            1.5147023973654064
+          ],
+          [
+            -2.915826773713709,
+            1.466332511657254
+          ],
+          [
+            -2.75,
+            1.4499999999999997
+          ],
+          [
+            -2.584173226286291,
+            1.4663325116572539
+          ],
+          [
+            -2.4247190824896734,
+            1.5147023973654061
+          ],
+          [
+            -2.2777653019333384,
+            1.5932508295428363
+          ],
+          [
+            -2.148959235991435,
+            1.6989592359914343
+          ],
+          [
+            -2.0432508295428367,
+            1.827765301933338
+          ],
+          [
+            -1.9647023973654065,
+            1.974719082489673
+          ],
+          [
+            -1.9163325116572543,
+            2.1341732262862902
+          ]
+        ],
+        "z0": 2.15,
+        "z1": 2.75,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "RESET switch base",
+        "outline": [
+          [
+            0.6000000000000001,
+            0.5499999999999998
+          ],
+          [
+            4.9,
+            0.5499999999999998
+          ],
+          [
+            4.9,
+            4.05
+          ],
+          [
+            0.6000000000000001,
+            4.05
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.65,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "RESET switch top",
+        "outline": [
+          [
+            0.7000000000000002,
+            0.6499999999999999
+          ],
+          [
+            4.8,
+            0.6499999999999999
+          ],
+          [
+            4.8,
+            3.9499999999999997
+          ],
+          [
+            0.7000000000000002,
+            3.9499999999999997
+          ]
+        ],
+        "z0": 1.65,
+        "z1": 2.15,
+        "rgb": [
+          181,
+          188,
+          194
+        ]
+      },
+      {
+        "name": "RESET actuator",
+        "outline": [
+          [
+            3.6,
+            2.3
+          ],
+          [
+            3.583667488342746,
+            2.465826773713709
+          ],
+          [
+            3.5352976026345937,
+            2.625280917510326
+          ],
+          [
+            3.4567491704571633,
+            2.7722346980666615
+          ],
+          [
+            3.3510407640085655,
+            2.9010407640085654
+          ],
+          [
+            3.222234698066662,
+            3.006749170457163
+          ],
+          [
+            3.075280917510326,
+            3.0852976026345935
+          ],
+          [
+            2.915826773713709,
+            3.1336674883427458
+          ],
+          [
+            2.75,
+            3.15
+          ],
+          [
+            2.584173226286291,
+            3.1336674883427458
+          ],
+          [
+            2.424719082489674,
+            3.0852976026345935
+          ],
+          [
+            2.2777653019333384,
+            3.006749170457163
+          ],
+          [
+            2.148959235991435,
+            2.9010407640085654
+          ],
+          [
+            2.0432508295428367,
+            2.7722346980666615
+          ],
+          [
+            1.9647023973654063,
+            2.6252809175103264
+          ],
+          [
+            1.916332511657254,
+            2.465826773713709
+          ],
+          [
+            1.9,
+            2.3
+          ],
+          [
+            1.916332511657254,
+            2.1341732262862907
+          ],
+          [
+            1.9647023973654063,
+            1.9747190824896736
+          ],
+          [
+            2.0432508295428367,
+            1.8277653019333382
+          ],
+          [
+            2.1489592359914345,
+            1.6989592359914345
+          ],
+          [
+            2.2777653019333384,
+            1.5932508295428365
+          ],
+          [
+            2.4247190824896734,
+            1.5147023973654064
+          ],
+          [
+            2.584173226286291,
+            1.466332511657254
+          ],
+          [
+            2.75,
+            1.4499999999999997
+          ],
+          [
+            2.915826773713709,
+            1.4663325116572539
+          ],
+          [
+            3.0752809175103266,
+            1.5147023973654061
+          ],
+          [
+            3.2222346980666616,
+            1.5932508295428363
+          ],
+          [
+            3.351040764008565,
+            1.6989592359914343
+          ],
+          [
+            3.4567491704571633,
+            1.827765301933338
+          ],
+          [
+            3.5352976026345937,
+            1.974719082489673
+          ],
+          [
+            3.583667488342746,
+            2.1341732262862902
+          ]
+        ],
+        "z0": 2.15,
+        "z1": 2.75,
+        "rgb": [
+          33,
+          36,
+          40
+        ]
+      },
+      {
+        "name": "gold edge contact 5",
+        "outline": [
+          [
+            -9.0,
+            8.9256
+          ],
+          [
+            -8.760000000000002,
+            8.9256
+          ],
+          [
+            -8.760000000000002,
+            10.4756
+          ],
+          [
+            -9.0,
+            10.4756
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 5",
+        "outline": [
+          [
+            -9.0,
+            8.9256
+          ],
+          [
+            -7.300000000000001,
+            8.9256
+          ],
+          [
+            -7.300000000000001,
+            10.4756
+          ],
+          [
+            -9.0,
+            10.4756
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 6",
+        "outline": [
+          [
+            -9.0,
+            6.385599999999999
+          ],
+          [
+            -8.760000000000002,
+            6.385599999999999
+          ],
+          [
+            -8.760000000000002,
+            7.9356
+          ],
+          [
+            -9.0,
+            7.9356
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 6",
+        "outline": [
+          [
+            -9.0,
+            6.385599999999999
+          ],
+          [
+            -7.300000000000001,
+            6.385599999999999
+          ],
+          [
+            -7.300000000000001,
+            7.9356
+          ],
+          [
+            -9.0,
+            7.9356
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 7",
+        "outline": [
+          [
+            -9.0,
+            3.8455999999999997
+          ],
+          [
+            -8.760000000000002,
+            3.8455999999999997
+          ],
+          [
+            -8.760000000000002,
+            5.3956
+          ],
+          [
+            -9.0,
+            5.3956
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 7",
+        "outline": [
+          [
+            -9.0,
+            3.8455999999999997
+          ],
+          [
+            -7.300000000000001,
+            3.8455999999999997
+          ],
+          [
+            -7.300000000000001,
+            5.3956
+          ],
+          [
+            -9.0,
+            5.3956
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 8",
+        "outline": [
+          [
+            -9.0,
+            1.3056
+          ],
+          [
+            -8.760000000000002,
+            1.3056
+          ],
+          [
+            -8.760000000000002,
+            2.8556
+          ],
+          [
+            -9.0,
+            2.8556
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 8",
+        "outline": [
+          [
+            -9.0,
+            1.3056
+          ],
+          [
+            -7.300000000000001,
+            1.3056
+          ],
+          [
+            -7.300000000000001,
+            2.8556
+          ],
+          [
+            -9.0,
+            2.8556
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 9",
+        "outline": [
+          [
+            -9.0,
+            -1.2344
+          ],
+          [
+            -8.760000000000002,
+            -1.2344
+          ],
+          [
+            -8.760000000000002,
+            0.31560000000000005
+          ],
+          [
+            -9.0,
+            0.31560000000000005
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 9",
+        "outline": [
+          [
+            -9.0,
+            -1.2344
+          ],
+          [
+            -7.300000000000001,
+            -1.2344
+          ],
+          [
+            -7.300000000000001,
+            0.31560000000000005
+          ],
+          [
+            -9.0,
+            0.31560000000000005
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 10",
+        "outline": [
+          [
+            -9.0,
+            -3.7744
+          ],
+          [
+            -8.760000000000002,
+            -3.7744
+          ],
+          [
+            -8.760000000000002,
+            -2.2244
+          ],
+          [
+            -9.0,
+            -2.2244
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 10",
+        "outline": [
+          [
+            -9.0,
+            -3.7744
+          ],
+          [
+            -7.300000000000001,
+            -3.7744
+          ],
+          [
+            -7.300000000000001,
+            -2.2244
+          ],
+          [
+            -9.0,
+            -2.2244
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 20",
+        "outline": [
+          [
+            -9.0,
+            -6.3144
+          ],
+          [
+            -8.760000000000002,
+            -6.3144
+          ],
+          [
+            -8.760000000000002,
+            -4.764399999999999
+          ],
+          [
+            -9.0,
+            -4.764399999999999
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 20",
+        "outline": [
+          [
+            -9.0,
+            -6.3144
+          ],
+          [
+            -7.300000000000001,
+            -6.3144
+          ],
+          [
+            -7.300000000000001,
+            -4.764399999999999
+          ],
+          [
+            -9.0,
+            -4.764399999999999
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 21",
+        "outline": [
+          [
+            -9.0,
+            -8.8544
+          ],
+          [
+            -8.760000000000002,
+            -8.8544
+          ],
+          [
+            -8.760000000000002,
+            -7.304399999999999
+          ],
+          [
+            -9.0,
+            -7.304399999999999
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 21",
+        "outline": [
+          [
+            -9.0,
+            -8.8544
+          ],
+          [
+            -7.300000000000001,
+            -8.8544
+          ],
+          [
+            -7.300000000000001,
+            -7.304399999999999
+          ],
+          [
+            -9.0,
+            -7.304399999999999
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 5V",
+        "outline": [
+          [
+            8.760000000000002,
+            8.9256
+          ],
+          [
+            9.0,
+            8.9256
+          ],
+          [
+            9.0,
+            10.4756
+          ],
+          [
+            8.760000000000002,
+            10.4756
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 5V",
+        "outline": [
+          [
+            7.300000000000001,
+            8.9256
+          ],
+          [
+            9.0,
+            8.9256
+          ],
+          [
+            9.0,
+            10.4756
+          ],
+          [
+            7.300000000000001,
+            10.4756
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact GND",
+        "outline": [
+          [
+            8.760000000000002,
+            6.385599999999999
+          ],
+          [
+            9.0,
+            6.385599999999999
+          ],
+          [
+            9.0,
+            7.9356
+          ],
+          [
+            8.760000000000002,
+            7.9356
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land GND",
+        "outline": [
+          [
+            7.300000000000001,
+            6.385599999999999
+          ],
+          [
+            9.0,
+            6.385599999999999
+          ],
+          [
+            9.0,
+            7.9356
+          ],
+          [
+            7.300000000000001,
+            7.9356
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 3V3",
+        "outline": [
+          [
+            8.760000000000002,
+            3.8455999999999997
+          ],
+          [
+            9.0,
+            3.8455999999999997
+          ],
+          [
+            9.0,
+            5.3956
+          ],
+          [
+            8.760000000000002,
+            5.3956
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 3V3",
+        "outline": [
+          [
+            7.300000000000001,
+            3.8455999999999997
+          ],
+          [
+            9.0,
+            3.8455999999999997
+          ],
+          [
+            9.0,
+            5.3956
+          ],
+          [
+            7.300000000000001,
+            5.3956
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 4",
+        "outline": [
+          [
+            8.760000000000002,
+            1.3056
+          ],
+          [
+            9.0,
+            1.3056
+          ],
+          [
+            9.0,
+            2.8556
+          ],
+          [
+            8.760000000000002,
+            2.8556
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 4",
+        "outline": [
+          [
+            7.300000000000001,
+            1.3056
+          ],
+          [
+            9.0,
+            1.3056
+          ],
+          [
+            9.0,
+            2.8556
+          ],
+          [
+            7.300000000000001,
+            2.8556
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 3",
+        "outline": [
+          [
+            8.760000000000002,
+            -1.2344
+          ],
+          [
+            9.0,
+            -1.2344
+          ],
+          [
+            9.0,
+            0.31560000000000005
+          ],
+          [
+            8.760000000000002,
+            0.31560000000000005
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 3",
+        "outline": [
+          [
+            7.300000000000001,
+            -1.2344
+          ],
+          [
+            9.0,
+            -1.2344
+          ],
+          [
+            9.0,
+            0.31560000000000005
+          ],
+          [
+            7.300000000000001,
+            0.31560000000000005
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 2",
+        "outline": [
+          [
+            8.760000000000002,
+            -3.7744
+          ],
+          [
+            9.0,
+            -3.7744
+          ],
+          [
+            9.0,
+            -2.2244
+          ],
+          [
+            8.760000000000002,
+            -2.2244
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 2",
+        "outline": [
+          [
+            7.300000000000001,
+            -3.7744
+          ],
+          [
+            9.0,
+            -3.7744
+          ],
+          [
+            9.0,
+            -2.2244
+          ],
+          [
+            7.300000000000001,
+            -2.2244
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 1",
+        "outline": [
+          [
+            8.760000000000002,
+            -6.3144
+          ],
+          [
+            9.0,
+            -6.3144
+          ],
+          [
+            9.0,
+            -4.764399999999999
+          ],
+          [
+            8.760000000000002,
+            -4.764399999999999
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 1",
+        "outline": [
+          [
+            7.300000000000001,
+            -6.3144
+          ],
+          [
+            9.0,
+            -6.3144
+          ],
+          [
+            9.0,
+            -4.764399999999999
+          ],
+          [
+            7.300000000000001,
+            -4.764399999999999
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "gold edge contact 0",
+        "outline": [
+          [
+            8.760000000000002,
+            -8.8544
+          ],
+          [
+            9.0,
+            -8.8544
+          ],
+          [
+            9.0,
+            -7.304399999999999
+          ],
+          [
+            8.760000000000002,
+            -7.304399999999999
+          ]
+        ],
+        "z0": 0.08,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      },
+      {
+        "name": "top contact land 0",
+        "outline": [
+          [
+            7.300000000000001,
+            -8.8544
+          ],
+          [
+            9.0,
+            -8.8544
+          ],
+          [
+            9.0,
+            -7.304399999999999
+          ],
+          [
+            7.300000000000001,
+            -7.304399999999999
+          ]
+        ],
+        "z0": 1.1,
+        "z1": 1.12,
+        "rgb": [
+          207,
+          166,
+          68
+        ]
+      }
+    ],
+    "mechanical_interfaces": {
+      "coordinate_system": "Module body centre; top view; USB +Y, ceramic antenna -Y; Z=carrier top",
+      "seating_gap_mm": 0.1,
+      "module_pcb_thickness_mm": 1.0,
+      "module_pcb_thickness_tolerance_mm": 0.2,
+      "usb": {
+        "mouth_center_local_mm": [
+          0,
+          12.65,
+          2.75
+        ],
+        "outward_local_xy": [
+          0,
+          1
+        ],
+        "opening_width_mm": 12,
+        "opening_height_mm": 7,
+        "position_tolerance_mm": [
+          0.5,
+          0.65,
+          0.4
+        ],
+        "assumed": true,
+        "shell_bounds_local_mm": [
+          -4.6,
+          4.65,
+          1.1,
+          4.6,
+          12.65,
+          4.4
+        ],
+        "note": "Illustrative shell envelope from C3 product/reference images. The seller publishes no exact USB Z/overhang drawing. Opening includes plug-overmould clearance; never treat envelope as a connector manufacturer STEP."
+      },
+      "buttons": [
+        {
+          "name": "BOOT",
+          "center_local_mm": [
+            -2.75,
+            2.3,
+            2.75
+          ]
+        },
+        {
+          "name": "RESET",
+          "center_local_mm": [
+            2.75,
+            2.3,
+            2.75
+          ]
+        }
+      ],
+      "carrier_cutouts": [
+        {
+          "name": "MCU_USB_TAIL_CLEARANCE",
+          "bounds_local_mm": [
+            -5.3,
+            4.9,
+            5.3,
+            13.4
+          ],
+          "corner_radius_mm": 0.5,
+          "required": true,
+          "copper_clearance_mm": 0.3,
+          "note": "Open to carrier edge where possible; clearance for unknown USB shell tails/solder. No carrier material, copper, or component in this area."
+        },
+        {
+          "name": "MCU_ANTENNA_WINDOW",
+          "bounds_local_mm": [
+            -5,
+            -11.26,
+            5,
+            -7.5
+          ],
+          "corner_radius_mm": 0.5,
+          "required": true,
+          "copper_clearance_mm": 0.3,
+          "note": "Through-carrier air window below ceramic antenna. In an edge-overhang layout the outside-board area already supplies this clearance."
+        }
+      ],
+      "rf_keepout": {
+        "bounds_local_mm": [
+          -6,
+          -13.76,
+          6,
+          -5.5
+        ],
+        "copper_layers": "all",
+        "components": true,
+        "metal": true,
+        "assumed": true,
+        "note": "Conservative local antenna reservation; no published numeric RF keepout for the exact clone. Not a measured antenna tuning or radiated-performance qualification."
+      },
+      "underside_keepout": {
+        "bounds_local_mm": [
+          -9,
+          -11.26,
+          9,
+          11.26
+        ],
+        "carrier_components": false,
+        "exposed_copper": false,
+        "note": "Carrier tracks may pass beneath the non-RF module only under intact solder mask; no exposed testpoints, vias, or pads except intended perimeter lands."
+      }
+    },
+    "model_3d_status": "Locally generated dimensional/visual engineering envelope; PCB thickness, USB shell and underside tails assumed",
+    "allow_body_overhang": true,
+    "assembly": {
+      "populate": false,
+      "lcsc": "",
+      "lcsc_confirmed": false,
+      "source_url": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+      "rotation_offset_deg": 0,
+      "centroid_offset_mm": [
+        0,
+        0
+      ],
+      "stage": "post-PCBA manual castellated module soldering",
+      "note": "User-supplied exact Amazon C3 module fitted after carrier PCBA. No verified JLC stock code; not included in automated pick-and-place. Remove supplied header pins and excess solder completely; inspect flat underside before fitting. USB requires SERVICE power disconnection."
+    },
+    "schematic_symbol": {
+      "kind": "functional_module",
+      "pins": [
+        {
+          "number": "5",
+          "x": -90,
+          "y": 140,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "6",
+          "x": -90,
+          "y": 100,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "7",
+          "x": -90,
+          "y": 60,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "8",
+          "x": -90,
+          "y": 20,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "9",
+          "x": -90,
+          "y": -20,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "10",
+          "x": -90,
+          "y": -60,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "20",
+          "x": -90,
+          "y": -100,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "21",
+          "x": -90,
+          "y": -140,
+          "orientation": 2,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "5V",
+          "x": 90,
+          "y": 140,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "GND",
+          "x": 90,
+          "y": 100,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "3V3",
+          "x": 90,
+          "y": 60,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "4",
+          "x": 90,
+          "y": 20,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "3",
+          "x": 90,
+          "y": -20,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "2",
+          "x": 90,
+          "y": -60,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "1",
+          "x": 90,
+          "y": -100,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        },
+        {
+          "number": "0",
+          "x": 90,
+          "y": -140,
+          "orientation": 0,
+          "show_name": true,
+          "show_number": true
+        }
+      ],
+      "graphics": [
+        {
+          "RECORD": 14,
+          "Location.X": -90,
+          "Location.Y": -165,
+          "Corner.X": 90,
+          "Corner.Y": 165,
+          "LineWidth": 1,
+          "Color": 128,
+          "AreaColor": 16777215,
+          "IsSolid": "F"
+        }
+      ],
+      "bbox": [
+        -110,
+        -165,
+        110,
+        165
+      ],
+      "designator_pos": [
+        -90,
+        200
+      ],
+      "value_pos": [
+        -90,
+        180
+      ]
+    },
+    "schematic_label_offset": [
+      -90,
+      205
+    ]
+  },
+  "consistency_validation": {
+    "passed": true,
+    "pad_count": 16,
+    "schematic_pin_count": 16,
+    "carrier_drills": 0,
+    "paste_apertures": 0,
+    "bodies_3d": 66,
+    "qualification": "Geometry/pin consistency only; no physical sample measurement"
+  }
+}

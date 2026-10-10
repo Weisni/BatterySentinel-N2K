@@ -41,10 +41,28 @@ void test_freshness_wrap() {
     TEST_ASSERT_FALSE(value.fresh(10, 20));
 }
 
+void test_native_resolution_retains_derived_power_precision() {
+    // Native 0.01 V / 0.1 A steps can yield a third decimal place in V * A.
+    // 13.77 V * 0.1 A = 1.377 W; no extra raw measurement precision is implied.
+    const uint8_t record[14] = {3, 0, 0x61, 0x05, 0x01, 0x00,
+                                0x62, 0x05, 0x02, 0x00, 0, 0, 0, 0};
+    Telemetry value;
+    TEST_ASSERT_TRUE(bs::orion::decodeXsRecord(record, sizeof(record), value));
+    TEST_ASSERT_DOUBLE_WITHIN(0.000001, 13.77, value.outputVoltage.number);
+    TEST_ASSERT_DOUBLE_WITHIN(0.000001, 0.1, value.outputCurrent.number);
+    TEST_ASSERT_DOUBLE_WITHIN(0.000001, 0.01,
+                              value.inputVoltage.number - value.outputVoltage.number);
+    TEST_ASSERT_DOUBLE_WITHIN(0.000001, 0.1,
+                              value.inputCurrent.number - value.outputCurrent.number);
+    TEST_ASSERT_DOUBLE_WITHIN(0.000001, 1.377,
+                              value.outputVoltage.number * value.outputCurrent.number);
+}
+
 int main(int, char**) {
     UNITY_BEGIN();
     RUN_TEST(test_xs_record_scales_and_preserves_status);
     RUN_TEST(test_sentinels_and_truncation);
     RUN_TEST(test_freshness_wrap);
+    RUN_TEST(test_native_resolution_retains_derived_power_precision);
     return UNITY_END();
 }

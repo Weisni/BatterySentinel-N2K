@@ -1,0 +1,132 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\marce\Documents\GitHub\BatterySentinel-N2K\hardware\altium-r4\Orion-Bridge-R4.PcbDoc
+Date     : 23.09.2026
+Time     : 12:19:10
+
+Processing Rule : Clearance Constraint (Gap=125.984mil) (InNet('5V_BUS') Or InNet('BST_BUS') Or InNet('BUS_PROT') Or InNet('CANH') Or InNet('CANH_EXT') Or InNet('CANL') Or InNet('CANL_EXT') Or InNet('FUSED_IN') Or InNet('GND_BUS') Or InNet('NET_S') Or InNet('SHIELD') Or InNet('SW_BUS')),(InNet('3V3_LOGIC') Or InNet('5V_ISO') Or InNet('5V_SYS') Or InNet('BST_LOGIC') Or InNet('ESP_BOOT') Or InNet('ESP_EN') Or InNet('ESP_GPIO2') Or InNet('ESP_GPIO8') Or InNet('GND_LOGIC') Or InNet('GPIO6') Or InNet('GPIO7') Or InNet('RXD') Or InNet('SW_LOGIC') Or InNet('TXD') Or InNet('USB_CC1') Or InNet('USB_CC2') Or InNet('USB_DM') Or InNet('USB_DM_IN') Or InNet('USB_DM_MCU') Or InNet('USB_DP') Or InNet('USB_DP_IN') Or InNet('USB_DP_MCU') Or InNet('USB_VBUS'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=5.906mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=9.842mil) (IsPad And (HoleSize > 0) And (PadIsPlated = 'False') And (Not InComponent('J2'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7.874mil) (IsPad And (HoleSize > 0) And (PadIsPlated = 'False') And InComponent('J2')),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5.906mil) (Max=19.685mil) (Preferred=5.906mil) (InNet('USB_CC1') Or InNet('USB_CC2') Or InNet('USB_DM') Or InNet('USB_DM_IN') Or InNet('USB_DM_MCU') Or InNet('USB_DP') Or InNet('USB_DP_IN') Or InNet('USB_DP_MCU'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=7.874mil) (Max=78.74mil) (Preferred=11.811mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=11.811mil) (MaxHoleWidth=11.811mil) (PreferredHoleWidth=11.811mil) (MinWidth=23.622mil) (MaxWidth=23.622mil) (PreferedWidth=23.622mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=7.087mil) (IsPad And (PadIsPlated = 'True'))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=5.906mil) (IsVia)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=9.842mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=3.937mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=5.906mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=3.937mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.009mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.009mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.012mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.012mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.013mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.014mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.014mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.014mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.01mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.01mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.023mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.024mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.027mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.02mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.02mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.047mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.047mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.049mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.056mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.092mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.112mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Bottom Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.008mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.048mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.051mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (12.052mil < 12.205mil) Between Board Edge And Region (0 hole(s)) Top Layer 
+Rule Violations :51
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 9.842mil, Vertical Gap = 9.842mil ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 51
+Waived Violations : 0
+Time Elapsed        : 00:00:00

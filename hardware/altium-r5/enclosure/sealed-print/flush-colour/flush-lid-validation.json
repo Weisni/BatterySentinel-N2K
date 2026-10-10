@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "source_sha256": {
+    "Orion-R5-sealed-enclosure.FCStd": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2",
+    "lid.stl": "75ef58f2b181e72c3117a2735b383caecc660f74f0b4fc498c72a62c1620c976",
+    "Orion-R5-P2S-complete.3mf": "c94d319f5acee1d190de32762ca961979ed20dfc42a9913403a2c829f027bd8a"
+  },
+  "branding": {
+    "mode": "flush co-printed colour",
+    "material": "PETG",
+    "assembled_top_z_mm": 33.20000000000001,
+    "depth_mm": 0.4,
+    "nominal_layers_at_0p2mm": 2.0,
+    "letter_and_logo_solids": 31,
+    "raised_height_mm": 0,
+    "recessed_height_mm": 0
+  },
+  "body_markings_overlap_mm3": 0.0,
+  "exterior_surface_void_mm3": 0.0,
+  "fused_solid_count": 1,
+  "step_valid": true,
+  "step_solid_count": 32,
+  "meshes": {
+    "lid_body": {
+      "path": "lid_body.stl",
+      "sha256": "c65c93608722013e062ca517f75321fd10ad264781d4ca3e235780632aa3803d",
+      "vertices": 26252,
+      "triangles": 52524,
+      "volume_mm3": 15233.576133735472,
+      "solids": 1,
+      "bounds_mm": [
+        [
+          0.0011847021174187233,
+          0.0,
+          -7.105427357601002e-15
+        ],
+        [
+          80.80000000000001,
+          66.8,
+          5.000000000000011
+        ]
+      ],
+      "closed_oriented_manifold": true
+    },
+    "lid_markings": {
+      "path": "lid_markings.stl",
+      "sha256": "1e6caab1e16361b359390693c9243e1f15d436ae8e7c4f5d0ec7a7fcffbe7dec",
+      "vertices": 23438,
+      "triangles": 46792,
+      "volume_mm3": 62.174444701481896,
+      "solids": 31,
+      "bounds_mm": [
+        [
+          14.275801,
+          19.49881631069549,
+          -8.526512829121202e-14
+        ],
+        [
+          66.524199,
+          48.344045,
+          0.40000000000008384
+        ]
+      ],
+      "closed_oriented_manifold": true
+    }
+  },
+  "note": "Two material parts of one lid, not a separate glued or press-fit insert. Original body, screw bores, seal lip and all other enclosure geometry preserved.",
+  "physical_status": "Colour opacity, adhesion, fit and sealing remain untested"
+}

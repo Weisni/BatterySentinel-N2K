@@ -1,0 +1,7 @@
+# Aktueller Hardwarestand
+
+Die R4-Pakete enthalten einen ESP32-C3-WROOM-02-N4 und entsprechen damit **nicht der geforderten ESP32-C3-SuperMini-Ausführung**. Sie sind für diesen Auftrag zurückgezogen und sollen nicht bestellt werden.
+
+R5 wird mit dem ursprünglichen SuperMini, neuer Beschriftung und einem abgestimmten 3D-Druckgehäuse entwickelt. Die konkrete SuperMini-Variante und ihre Montage müssen dabei zusammenpassen. Bis die neuen Prüfungen abgeschlossen sind, gibt es keine freigegebenen R5-Bestelldaten.
+
+Die vorhandenen R4-ZIP-Dateien bleiben als unveränderte historische Arbeitsstände erhalten. Ihre bestandenen Dateiprüfungen sind keine Bestätigung, dass die darin gewählte Modulvariante der Nutzervorgabe entspricht.

@@ -1,0 +1,2955 @@
+{
+  "board": {
+    "width_mm": 48,
+    "height_mm": 32,
+    "corner_radius_mm": 2,
+    "holes_mm": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        29
+      ]
+    ],
+    "hole_diameter_mm": 2.2,
+    "thickness_mm": 1.6,
+    "copper_um": 35,
+    "origin": "lower left, millimetres; +Y up",
+    "silkscreen": [
+      {
+        "text": "R4 9-16V",
+        "x": 6,
+        "y": 29,
+        "height": 1,
+        "width": 0.15,
+        "layer": "TOP"
+      },
+      {
+        "text": "USB",
+        "x": 43.2,
+        "y": 2,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "RESET",
+        "x": 39.5,
+        "y": 15.8,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "BOOT",
+        "x": 46,
+        "y": 15.8,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "1 S",
+        "x": 6.6,
+        "y": 9.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "+",
+        "x": 5.3,
+        "y": 12.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "-",
+        "x": 5.3,
+        "y": 15.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "H",
+        "x": 5.3,
+        "y": 18.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "L",
+        "x": 5.3,
+        "y": 21.5,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      },
+      {
+        "text": "NMEA",
+        "x": 16,
+        "y": 29,
+        "height": 1,
+        "width": 0.15,
+        "layer": "BOTTOM"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "placement": {
+        "x": 2.5,
+        "y": 16,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": 0,
+          "y": 6,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0,
+          "y": 3,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 0,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 0,
+          "y": -3,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": 0,
+          "y": -6,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "TP1",
+      "placement": {
+        "x": 2.5,
+        "y": 6.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": 0,
+          "y": 0,
+          "sx": 2,
+          "sy": 2,
+          "drill": 0,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "F1",
+      "placement": {
+        "x": 5.5,
+        "y": 14,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.725,
+          "y": 0,
+          "sx": 1.25,
+          "sy": 1.65,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.725,
+          "y": 0,
+          "sx": 1.25,
+          "sy": 1.65,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "D3",
+      "placement": {
+        "x": 5.5,
+        "y": 20.5,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": -1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.95,
+          "y": -1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 0,
+          "y": 1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "L1",
+      "placement": {
+        "x": 9,
+        "y": 23.7,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.275,
+          "y": 1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": -2.275,
+          "y": -1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 2.275,
+          "y": -1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 2.275,
+          "y": 1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "U1",
+      "placement": {
+        "x": 19.5,
+        "y": 22.5,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -5.45,
+          "y": 1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": -5.45,
+          "y": 0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": -5.45,
+          "y": -0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": -5.45,
+          "y": -1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": 5.45,
+          "y": -1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": 5.45,
+          "y": -0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "7",
+          "x": 5.45,
+          "y": 0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "8",
+          "x": 5.45,
+          "y": 1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C4",
+      "placement": {
+        "x": 14.9,
+        "y": 18.7,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C5",
+      "placement": {
+        "x": 24.575,
+        "y": 18.2,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R2",
+      "placement": {
+        "x": 33,
+        "y": 15.45,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R3",
+      "placement": {
+        "x": 31,
+        "y": 17.25,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R4",
+      "placement": {
+        "x": 33.7,
+        "y": 17.25,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "U3",
+      "placement": {
+        "x": 11.5,
+        "y": 10.3,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 0.95,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 0.95,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": 0,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": -0.95,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "U4",
+      "placement": {
+        "x": 29.5,
+        "y": 13.85,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 0.95,
+          "y": -1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 0.95,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": 0,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": -0.95,
+          "y": 1.1,
+          "sx": 0.7,
+          "sy": 1,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "U2",
+      "placement": {
+        "x": 22.035,
+        "y": 4.2,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -7.615,
+          "y": 2.6,
+          "sx": 1.6,
+          "sy": 1.6,
+          "drill": 1.0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": -5.075,
+          "y": 2.6,
+          "sx": 1.6,
+          "sy": 1.6,
+          "drill": 1.0,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 0.005,
+          "y": 2.6,
+          "sx": 1.6,
+          "sy": 1.6,
+          "drill": 1.0,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": 5.085,
+          "y": 2.6,
+          "sx": 1.6,
+          "sy": 1.6,
+          "drill": 1.0,
+          "shape": "ROUND",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "L2",
+      "placement": {
+        "x": 7.5,
+        "y": 9.2,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 3.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 3.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "L3",
+      "placement": {
+        "x": 25.5,
+        "y": 14.95,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 3.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 3.7,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C20",
+      "placement": {
+        "x": 15.35,
+        "y": 10.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.6,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.6,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C21",
+      "placement": {
+        "x": 15.35,
+        "y": 13.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.6,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.6,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C22",
+      "placement": {
+        "x": 6.925,
+        "y": 4.65,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C23",
+      "placement": {
+        "x": 9.025,
+        "y": 4.65,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C24",
+      "placement": {
+        "x": 11,
+        "y": 12.6,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C25",
+      "placement": {
+        "x": 10.95,
+        "y": 7,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C26",
+      "placement": {
+        "x": 16.5,
+        "y": 8.5,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C27",
+      "placement": {
+        "x": 26.7,
+        "y": 10.125,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C28",
+      "placement": {
+        "x": 28.275,
+        "y": 10.5,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C29",
+      "placement": {
+        "x": 33.05,
+        "y": 12.325,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C30",
+      "placement": {
+        "x": 33.275,
+        "y": 13.75,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C31",
+      "placement": {
+        "x": 28.95,
+        "y": 16.1,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C32",
+      "placement": {
+        "x": 23.45,
+        "y": 11.4,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C33",
+      "placement": {
+        "x": 23.45,
+        "y": 9.2,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R20",
+      "placement": {
+        "x": 33.3,
+        "y": 2.8,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R21",
+      "placement": {
+        "x": 34.285,
+        "y": 7,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.3,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "D1",
+      "placement": {
+        "x": 10.5,
+        "y": 18.65,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2,
+          "y": 0,
+          "sx": 2,
+          "sy": 2.5,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 2,
+          "y": 0,
+          "sx": 2,
+          "sy": 2.5,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "D2",
+      "placement": {
+        "x": 31.675,
+        "y": 9.8,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "D4",
+      "placement": {
+        "x": 37.375,
+        "y": 9.7,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "D5",
+      "placement": {
+        "x": 9.2,
+        "y": 14.8,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 1.965,
+          "y": 0,
+          "sx": 1.52,
+          "sy": 1.68,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "MCU1",
+      "placement": {
+        "x": 35.5,
+        "y": 28,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -8.75,
+          "y": 2.9,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "18",
+          "x": 8.75,
+          "y": 2.9,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": -8.75,
+          "y": 1.4,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "17",
+          "x": 8.75,
+          "y": 1.4,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": -8.75,
+          "y": -0.10000000000000009,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "16",
+          "x": 8.75,
+          "y": -0.10000000000000009,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": -8.75,
+          "y": -1.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "15",
+          "x": 8.75,
+          "y": -1.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": -8.75,
+          "y": -3.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "14",
+          "x": 8.75,
+          "y": -3.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": -8.75,
+          "y": -4.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "13",
+          "x": 8.75,
+          "y": -4.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "7",
+          "x": -8.75,
+          "y": -6.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "12",
+          "x": 8.75,
+          "y": -6.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "8",
+          "x": -8.75,
+          "y": -7.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "11",
+          "x": 8.75,
+          "y": -7.6,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "9",
+          "x": -8.75,
+          "y": -9.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "10",
+          "x": 8.75,
+          "y": -9.1,
+          "sx": 1.5,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "19",
+          "x": 0.96,
+          "y": -3.3,
+          "sx": 2.9,
+          "sy": 2.9,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": false
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R5",
+      "placement": {
+        "x": 23.5,
+        "y": 27.7,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R6",
+      "placement": {
+        "x": 45.7,
+        "y": 29,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R7",
+      "placement": {
+        "x": 36.4,
+        "y": 17.25,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R8",
+      "placement": {
+        "x": 39.1,
+        "y": 17.25,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R9",
+      "placement": {
+        "x": 35,
+        "y": 1.6,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R10",
+      "placement": {
+        "x": 35,
+        "y": 4.6,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R11",
+      "placement": {
+        "x": 46.7,
+        "y": 22.8,
+        "rotation": 90,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "R12",
+      "placement": {
+        "x": 46.7,
+        "y": 25.9,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C10",
+      "placement": {
+        "x": 25.3,
+        "y": 27.1,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C11",
+      "placement": {
+        "x": 23,
+        "y": 30,
+        "rotation": 180,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.95,
+          "y": 0,
+          "sx": 1.1,
+          "sy": 1.45,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "C12",
+      "placement": {
+        "x": 25.3,
+        "y": 30,
+        "rotation": 270,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0.775,
+          "y": 0,
+          "sx": 0.9,
+          "sy": 0.95,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "J2",
+      "placement": {
+        "x": 42.055,
+        "y": 3.19,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "A1_B12",
+          "x": -3.2,
+          "y": 3.67,
+          "sx": 0.6,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "A4_B9",
+          "x": -2.4,
+          "y": 3.67,
+          "sx": 0.6,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B8",
+          "x": -1.75,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "A5",
+          "x": -1.25,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B7",
+          "x": -0.75,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "A6",
+          "x": -0.25,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "A7",
+          "x": 0.25,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B6",
+          "x": 0.75,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "A8",
+          "x": 1.25,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B5",
+          "x": 1.75,
+          "y": 3.67,
+          "sx": 0.3,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B4_A9",
+          "x": 2.4,
+          "y": 3.67,
+          "sx": 0.6,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "B1_A12",
+          "x": 3.2,
+          "y": 3.67,
+          "sx": 0.6,
+          "sy": 1.14,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "S1",
+          "x": -4.325,
+          "y": 3.1,
+          "sx": 1.0,
+          "sy": 2.1,
+          "drill": 0.6,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 1.7,
+          "drill_slot_angle_deg": 90,
+          "paste": true
+        },
+        {
+          "number": "S2",
+          "x": 4.325,
+          "y": 3.1,
+          "sx": 1.0,
+          "sy": 2.1,
+          "drill": 0.6,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 1.7,
+          "drill_slot_angle_deg": 90,
+          "paste": true
+        },
+        {
+          "number": "S3",
+          "x": -4.325,
+          "y": -1.08,
+          "sx": 1.0,
+          "sy": 1.8,
+          "drill": 0.6,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 1.4,
+          "drill_slot_angle_deg": 90,
+          "paste": true
+        },
+        {
+          "number": "S4",
+          "x": 4.325,
+          "y": -1.08,
+          "sx": 1.0,
+          "sy": 1.8,
+          "drill": 0.6,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 1.4,
+          "drill_slot_angle_deg": 90,
+          "paste": true
+        }
+      ],
+      "holes": [
+        {
+          "x": -2.89,
+          "y": 2.6,
+          "drill": 0.6,
+          "plated": false,
+          "copper_clearance_mm": 0.2,
+          "clearance_source": "https://jlcpcb.com/capabilities/pcb-capabilities ; NPTH-to-track0.20mm; HRO alignmenthole adjacentlandgap0.20mm."
+        },
+        {
+          "x": 2.89,
+          "y": 2.6,
+          "drill": 0.6,
+          "plated": false,
+          "copper_clearance_mm": 0.2,
+          "clearance_source": "https://jlcpcb.com/capabilities/pcb-capabilities ; NPTH-to-track0.20mm; HRO alignmenthole adjacentlandgap0.20mm."
+        }
+      ]
+    },
+    {
+      "ref": "D6",
+      "placement": {
+        "x": 42.055,
+        "y": 10,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": -1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 0,
+          "y": -1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "3",
+          "x": 0.95,
+          "y": -1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "4",
+          "x": 0.95,
+          "y": 1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "5",
+          "x": 0,
+          "y": 1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "6",
+          "x": -0.95,
+          "y": 1.15,
+          "sx": 0.6,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "SW1",
+      "placement": {
+        "x": 44.3,
+        "y": 14,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.225,
+          "y": 0,
+          "sx": 1.05,
+          "sy": 2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 2.225,
+          "y": 0,
+          "sx": 1.05,
+          "sy": 2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    },
+    {
+      "ref": "SW2",
+      "placement": {
+        "x": 37.5,
+        "y": 14,
+        "rotation": 0,
+        "status": "R4 reviewed package; see source and assembly audit"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.225,
+          "y": 0,
+          "sx": 1.05,
+          "sy": 2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        },
+        {
+          "number": "2",
+          "x": 2.225,
+          "y": 0,
+          "sx": 1.05,
+          "sy": 2,
+          "drill": 0,
+          "shape": "RECTANGLE",
+          "drill_slot_length_mm": 0,
+          "drill_slot_angle_deg": 0,
+          "paste": true
+        }
+      ],
+      "holes": []
+    }
+  ],
+  "vias": [
+    {
+      "net": "CANL_EXT",
+      "x": 6.5,
+      "y": 22.65,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "CANL_EXT",
+      "x": 11.2,
+      "y": 21.425,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "5V_BUS",
+      "x": 10,
+      "y": 9,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "5V_BUS",
+      "x": 8,
+      "y": 5,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 28,
+      "y": 12.55,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 23.1,
+      "y": 12.5,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 12.7,
+      "y": 12.15,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 15.9,
+      "y": 10.5,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 6.925,
+      "y": 2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 31.25,
+      "y": 15.6,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 35.1,
+      "y": 12.1,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 25.4,
+      "y": 7.75,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 44.1,
+      "y": 9.75,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 24.4,
+      "y": 28.7,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 35.6,
+      "y": 16.35,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "USB_CC2",
+      "x": 37.0,
+      "y": 4.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "USB_CC2",
+      "x": 38.8,
+      "y": 4.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_EN",
+      "x": 27.9,
+      "y": 28.7,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_EN",
+      "x": 24.3,
+      "y": 26.7,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_BOOT",
+      "x": 29.6,
+      "y": 20.0,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_BOOT",
+      "x": 37.1,
+      "y": 20.0,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_GPIO8",
+      "x": 37.1,
+      "y": 18.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "ESP_GPIO8",
+      "x": 28.1,
+      "y": 20.9,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "RXD",
+      "x": 34.7,
+      "y": 16.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "RXD",
+      "x": 23.6,
+      "y": 22.8,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GPIO6",
+      "x": 25.2,
+      "y": 25.3,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GPIO6",
+      "x": 30.7,
+      "y": 16.3,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 24.4,
+      "y": 19.1,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 31.4,
+      "y": 14.3,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 37.8,
+      "y": 16.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 22.8,
+      "y": 21.8,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "3V3_LOGIC",
+      "x": 46.6,
+      "y": 29.1,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 12.2,
+      "y": 8.1,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 10.7,
+      "y": 16.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_BUS",
+      "x": 5.7,
+      "y": 20.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 25.9,
+      "y": 13.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 25.4,
+      "y": 19.2,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 24.4,
+      "y": 25.5,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 28.0,
+      "y": 19.3,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 22.6,
+      "y": 28.8,
+      "diameter": 0.6,
+      "drill": 0.3
+    },
+    {
+      "net": "GND_LOGIC",
+      "x": 32.8,
+      "y": 24.4,
+      "diameter": 0.6,
+      "drill": 0.3
+    }
+  ]
+}

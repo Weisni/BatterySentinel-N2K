@@ -5,11 +5,28 @@
 namespace bs::config {
 
 // ESP32-C3-WROOM-02 pin map. GPIO18/19 are reserved for native USB Serial/JTAG.
+#if defined(BATTERYSENTINEL_DEBUG_OLED)
+// Onboard OLED wiring is fixed. This jig requires its own CAN wiring.
+inline constexpr int PIN_I2C_SDA = 5;
+inline constexpr int PIN_I2C_SCL = 6;
+inline constexpr int PIN_CAN_TX = 4;
+#else
 inline constexpr int PIN_I2C_SDA = 4;
 inline constexpr int PIN_I2C_SCL = 5;
-inline constexpr int PIN_CAN_TX  = 6;
+inline constexpr int PIN_CAN_TX = 6;
+#endif
 inline constexpr int PIN_CAN_RX  = 7;
 inline constexpr int PIN_STATUS_LED = 10;
+
+#if defined(BATTERYSENTINEL_ORION_R4)
+// R4 power budget: reserve 12 x 50 mA until assembled-board measurements exist.
+inline constexpr uint8_t N2K_LOAD_EQUIVALENCY = 12;
+inline constexpr const char* N2K_MODEL_VERSION = "R4";
+#else
+// Preserve the existing NMEA2000 library default for the other hardware profiles.
+inline constexpr uint8_t N2K_LOAD_EQUIVALENCY = 0xff;
+inline constexpr const char* N2K_MODEL_VERSION = "V1";
+#endif
 
 // External 32 MB SPI NOR logger. Avoid ESP32-C3 strapping pins GPIO2/8/9.
 inline constexpr int PIN_LOG_SCK  = 0;

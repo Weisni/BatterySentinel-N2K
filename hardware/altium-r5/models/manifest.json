@@ -1,0 +1,320 @@
+{
+  "components": [
+    {
+      "ref": "J1",
+      "footprint": "PIGTAIL_5_P3_D1P3",
+      "file": "J1.model.json",
+      "body_count": 20,
+      "height_mm": 0.06,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "TP1",
+      "footprint": "TESTPOINT_2MM",
+      "file": "TP1.model.json",
+      "body_count": 1,
+      "height_mm": 0.06,
+      "source": "Generic footprint dimensions in design model"
+    },
+    {
+      "ref": "D3",
+      "footprint": "SOT23_NEXPERIA_REFLOW",
+      "file": "D3.model.json",
+      "body_count": 5,
+      "height_mm": 1.115,
+      "source": "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf"
+    },
+    {
+      "ref": "L1",
+      "footprint": "ACT45B",
+      "file": "L1.model.json",
+      "body_count": 5,
+      "height_mm": 2.8,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_1811151430_TDK-ACT45B-510-2P-TL003_C76584.pdf"
+    },
+    {
+      "ref": "U1",
+      "footprint": "SOIC8_DWV",
+      "file": "U1.model.json",
+      "body_count": 10,
+      "height_mm": 2.815,
+      "source": "https://datasheet.lcsc.com/lcsc/2302212001_Texas-Instruments-ISO1042DWVR_C2671714.pdf"
+    },
+    {
+      "ref": "C4",
+      "footprint": "C0603",
+      "file": "C4.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C5",
+      "footprint": "C0603",
+      "file": "C5.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "R2",
+      "footprint": "R0603",
+      "file": "R2.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf"
+    },
+    {
+      "ref": "R3",
+      "footprint": "R0603",
+      "file": "R3.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf"
+    },
+    {
+      "ref": "R4",
+      "footprint": "R0603",
+      "file": "R4.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf"
+    },
+    {
+      "ref": "U3",
+      "footprint": "TSOT26_DIODES",
+      "file": "U3.model.json",
+      "body_count": 8,
+      "height_mm": 1.015,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf"
+    },
+    {
+      "ref": "U4",
+      "footprint": "TSOT26_DIODES",
+      "file": "U4.model.json",
+      "body_count": 8,
+      "height_mm": 1.015,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf"
+    },
+    {
+      "ref": "U2",
+      "footprint": "EVISUN_B0505S_3WR2",
+      "file": "U2.model.json",
+      "body_count": 6,
+      "height_mm": 10.33,
+      "source": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308311627_EVISUN-B0505S-3WR2_C7500927.pdf"
+    },
+    {
+      "ref": "L2",
+      "footprint": "SUNLORD_SWPA4030",
+      "file": "L2.model.json",
+      "body_count": 4,
+      "height_mm": 3.015,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf"
+    },
+    {
+      "ref": "L3",
+      "footprint": "SUNLORD_SWPA4030",
+      "file": "L3.model.json",
+      "body_count": 4,
+      "height_mm": 3.015,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf"
+    },
+    {
+      "ref": "C20",
+      "footprint": "C1210",
+      "file": "C20.model.json",
+      "body_count": 3,
+      "height_mm": 2.7150000000000003,
+      "source": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf"
+    },
+    {
+      "ref": "C21",
+      "footprint": "C1210",
+      "file": "C21.model.json",
+      "body_count": 3,
+      "height_mm": 2.7150000000000003,
+      "source": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf"
+    },
+    {
+      "ref": "C22",
+      "footprint": "C1206",
+      "file": "C22.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf"
+    },
+    {
+      "ref": "C23",
+      "footprint": "C1206",
+      "file": "C23.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf"
+    },
+    {
+      "ref": "C24",
+      "footprint": "C0603",
+      "file": "C24.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C25",
+      "footprint": "C0805",
+      "file": "C25.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf"
+    },
+    {
+      "ref": "C26",
+      "footprint": "C0603",
+      "file": "C26.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C27",
+      "footprint": "C1206",
+      "file": "C27.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf"
+    },
+    {
+      "ref": "C28",
+      "footprint": "C0603",
+      "file": "C28.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C29",
+      "footprint": "C0805",
+      "file": "C29.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf"
+    },
+    {
+      "ref": "C30",
+      "footprint": "C0603",
+      "file": "C30.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C31",
+      "footprint": "C0603",
+      "file": "C31.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf"
+    },
+    {
+      "ref": "C32",
+      "footprint": "C1206",
+      "file": "C32.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf"
+    },
+    {
+      "ref": "C33",
+      "footprint": "C1206",
+      "file": "C33.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf"
+    },
+    {
+      "ref": "R20",
+      "footprint": "R1206",
+      "file": "R20.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf"
+    },
+    {
+      "ref": "R21",
+      "footprint": "R1206",
+      "file": "R21.model.json",
+      "body_count": 3,
+      "height_mm": 1.515,
+      "source": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf"
+    },
+    {
+      "ref": "D1",
+      "footprint": "SMB",
+      "file": "D1.model.json",
+      "body_count": 4,
+      "height_mm": 2.515,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ18A_C152104.pdf"
+    },
+    {
+      "ref": "D5",
+      "footprint": "SMA",
+      "file": "D5.model.json",
+      "body_count": 4,
+      "height_mm": 2.4650000000000003,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS26_C14238.pdf"
+    },
+    {
+      "ref": "F1",
+      "footprint": "BOURNS_SF1206S",
+      "file": "F1.model.json",
+      "body_count": 3,
+      "height_mm": 0.715,
+      "source": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304140030_BOURNS-SF-1206S080-2_C3032873.pdf"
+    },
+    {
+      "ref": "C34",
+      "footprint": "C0805",
+      "file": "C34.model.json",
+      "body_count": 3,
+      "height_mm": 0.8150000000000001,
+      "source": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf"
+    },
+    {
+      "ref": "SW3",
+      "footprint": "GSWITCH_MK12C02_G020",
+      "file": "SW3.model.json",
+      "body_count": 10,
+      "height_mm": 1.4,
+      "source": "https://static.chipdip.ru/lib/011/DOC043011829.pdf"
+    },
+    {
+      "ref": "MCU1",
+      "footprint": "SUPERC3_B0FN4F6244_CAST16_SMD",
+      "file": "MCU1.model.json",
+      "body_count": 66,
+      "height_mm": 4.4,
+      "source": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244"
+    }
+  ],
+  "body_count": 224,
+  "format": "Altium native editable extruded 3D bodies plus local JSON geometry",
+  "native_format_validation": {
+    "application": "Altium Designer Professional 26.10.1",
+    "date": "2026-09-21",
+    "representation": "Native PCB ASCII ComponentBody records",
+    "result": "Opaque coloured bodies visible in native 2D/3D proof document after setting BODYPROJECTION=0 (top side).",
+    "scope": "Serialization and top-side placement verified using a proof document; this is not a fabrication/thermal qualification of the final placement."
+  },
+  "notes": [
+    "No supplier STEP data or manufacturer certification is implied.",
+    "Pin centres and package outlines follow the linked PCB footprint.",
+    "SuperMini on-board component locations/colours are illustrative; module uses headers with 3.1 mm standoff, no sockets.",
+    "J1 shows five pigtail wires; no selected connector housing is implied.",
+    "Generic package heights must be checked against selected ordering codes."
+  ],
+  "references": [
+    "https://www.altium.com/documentation/altium-designer/pcb/3d-bodies",
+    "https://www.altium.com/documentation/altium-designer/pcb/extruded-spherical-cylindrical-3d-bodies"
+  ]
+}

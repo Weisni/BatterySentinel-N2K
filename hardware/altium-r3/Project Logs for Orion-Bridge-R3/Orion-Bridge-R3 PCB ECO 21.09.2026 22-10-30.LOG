@@ -1,0 +1,288 @@
+Change Component Comment : Designator=C2 Old Comment=Comment New Comment=1uF 50V X7R
+Change Component Comment : Designator=R2 Old Comment=Comment New Comment=10k
+Change Component Comment : Designator=C3 Old Comment=Comment New Comment=10uF 16V X7R
+Change Component Comment : Designator=C8 Old Comment=Comment New Comment=10uF 50V X7R
+Change Component Comment : Designator=C9 Old Comment=Comment New Comment=10uF 50V X7R
+Change Component Comment : Designator=L2 Old Comment=Comment New Comment=15uH 1A
+Change Component Comment : Designator=R3 Old Comment=Comment New Comment=33R
+Change Component Comment : Designator=R4 Old Comment=Comment New Comment=33R
+Change Component Comment : Designator=C6 Old Comment=Comment New Comment=47uF 16V
+Change Component Comment : Designator=C1 Old Comment=Comment New Comment=47uF 50V
+Change Component Comment : Designator=R1 Old Comment=Comment New Comment=100k
+Change Component Comment : Designator=C4 Old Comment=Comment New Comment=100nF 16V X7R
+Change Component Comment : Designator=C5 Old Comment=Comment New Comment=100nF 16V X7R
+Change Component Comment : Designator=C7 Old Comment=Comment New Comment=100nF 16V X7R
+Change Component Comment : Designator=L1 Old Comment=Comment New Comment=ACT45B-510-2P-TL003
+Change Component Comment : Designator=Z1 Old Comment=Comment New Comment=BZT52C12
+Change Component Comment : Designator=Q1 Old Comment=Comment New Comment=DMP6023LE
+Change Component Comment : Designator=MCU1 Old Comment=Comment New Comment=ESP32-C3 SuperMini
+Change Component Comment : Designator=U1 Old Comment=Comment New Comment=ISO1042DWV
+Change Component Comment : Designator=J1 Old Comment=Comment New Comment=NMEA Micro-C pigtail
+Change Component Comment : Designator=D3 Old Comment=Comment New Comment=PESD2CAN24T-Q
+Change Component Comment : Designator=U2 Old Comment=Comment New Comment=R3M-2405S/SMD
+Change Component Comment : Designator=JP1 Old Comment=Comment New Comment=RUN closed / USB open
+Change Component Comment : Designator=TP1 Old Comment=Comment New Comment=Shield / chassis pad
+Change Component Comment : Designator=D1 Old Comment=Comment New Comment=SMBJ20A
+Change Component Comment : Designator=D2 Old Comment=Comment New Comment=SS36
+Change Component Comment : Designator=F1 Old Comment=Comment New Comment=T0.8A 63VDC
+Change Component Comment : Designator=U3 Old Comment=Comment New Comment=TPS7B6950QDCYRQ1
+Change component parameters: Designator = "C1" ("C1"); Footprint = "PANASONIC_FT_D6P3"; UniqueID = "\PEDLIMUP" ("\PEDLIMUP")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic Industry"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "EEEFT1H470AP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "EEEFT1H470AP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "C0805"; UniqueID = "\UDBOITAH" ("\UDBOITAH")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "C1206"; UniqueID = "\IHYFFTYY" ("\IHYFFTYY")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "C0805"; UniqueID = "\IBUIQBHK" ("\IBUIQBHK")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "C0805"; UniqueID = "\DUARLFDX" ("\DUARLFDX")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6" ("C6"); Footprint = "PANASONIC_FT_D4"; UniqueID = "\OSXIBLQZ" ("\OSXIBLQZ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panasonic Industry"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "EEEFT1C470AR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "EEEFT1C470AR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "C0805"; UniqueID = "\HZJXWDCX" ("\HZJXWDCX")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "C1210"; UniqueID = "\GBCRICMU" ("\GBCRICMU")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9" ("C9"); Footprint = "C1210"; UniqueID = "\QCCIYWSP" ("\QCCIYWSP")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D1" ("D1"); Footprint = "SMB"; UniqueID = "\ZFJVEMYJ" ("\ZFJVEMYJ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D2" ("D2"); Footprint = "SMB"; UniqueID = "\IXLZFTSD" ("\IXLZFTSD")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "D3" ("D3"); Footprint = "SOT23_NEXPERIA_REFLOW"; UniqueID = "\IHPAPGIK" ("\IHPAPGIK")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://assets.nexperia.com/documents/data-sheet/PESD2CAN24T-Q.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Nexperia PESD2CAN24T-Q datasheet Fig10 reflow lands, 9-Feb-2024 p8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Nexperia"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "PESD2CAN24T-QR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "PESD2CAN24T-QR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Nexperia PESD2CAN24T-Q datasheet Fig10 reflow lands, 9-Feb-2024 p8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "F1" ("F1"); Footprint = "BOURNS_SF1206S"; UniqueID = "\OSTZNDUQ" ("\OSTZNDUQ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.bourns.com/docs/product-datasheets/sf-1206s.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "SF-1206S080-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "SF-1206S080-2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "J1" ("J1"); Footprint = "PIGTAIL_5_P3_D1P3"; UniqueID = "\VJXNLVQB" ("\VJXNLVQB")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Designed wire interface; cable conductor and strain relief selection pending"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Designed wire interface; cable conductor and strain relief selection pending"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "JP1" ("JP1"); Footprint = "HDR1X2_2.54"; UniqueID = "\BIYVTARP" ("\BIYVTARP")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1" ("L1"); Footprint = "ACT45B"; UniqueID = "\PUDUOXPO" ("\PUDUOXPO")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.tdk-electronics.tdk.com/inf/30/ds/act45b.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TDK"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ACT45B5102PTL003"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "ACT45B5102PTL003"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "L2" ("L2"); Footprint = "BOURNS_SRN4018"; UniqueID = "\HVGIRQWQ" ("\HVGIRQWQ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.bourns.com/docs/product-datasheets/srn4018.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "SRN4018-150M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "SRN4018-150M"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "MCU1" ("MCU1"); Footprint = "NOLOGO_C3_SUPERMINI_THT_2X8"; UniqueID = "\ABXBAKXO" ("\ABXBAKXO")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://github.com/NologoTech/ESP32C3-Supermini/tree/main/Hardware"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Nologo source-based header pin geometry. Local model assumes 3.1 mm underside clearance and 7.2 mm total height; no separate socket part is specified."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Nologo Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ESP32-C3 SuperMini"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "ESP32-C3 SuperMini"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Nologo source-based header pin geometry. Local model assumes 3.1 mm underside clearance and 7.2 mm total height; no separate socket part is specified."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q1" ("Q1"); Footprint = "SOT223_DIODES_DMP6023LE"; UniqueID = "\YIZJUYDU" ("\YIZJUYDU")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.diodes.com/datasheet/download/DMP6023LE.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "Diodes manufacturer suggested land pattern, DS37199 Rev.3-2 p6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Diodes Incorporated"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "DMP6023LE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "DMP6023LE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "Diodes manufacturer suggested land pattern, DS37199 Rev.3-2 p6"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "R0805"; UniqueID = "\LPCHHUBL" ("\LPCHHUBL")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "R0805"; UniqueID = "\GFUWLDML" ("\GFUWLDML")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP1" ("TP1"); Footprint = "TESTPOINT_2MM"; UniqueID = "\TCNIHBDN" ("\TCNIHBDN")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U1" ("U1"); Footprint = "SOIC8_DWV"; UniqueID = "\XEEFKUUI" ("\XEEFKUUI")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.ti.com/lit/ds/symlink/iso1042.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "ISO1042DWV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "ISO1042DWV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2" ("U2"); Footprint = "R3M_SMD"; UniqueID = "\YMOJHIZF" ("\YMOJHIZF")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://recom-power.com/pdf/Econoline/R3M.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "RECOM"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "R3M-2405S/SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "R3M-2405S/SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "U3" ("U3"); Footprint = "SOT223_LDO"; UniqueID = "\QDYBDCNJ" ("\QDYBDCNJ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://www.ti.com/lit/ds/symlink/tps7b69-q1.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "TI DCY mechanical envelope verified; R2 engineering lands retained, not manufacturer-recommended lands. Thermal/assembly qualification required."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "TPS7B6950QDCYRQ1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = "TPS7B6950QDCYRQ1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "TI DCY mechanical envelope verified; R2 engineering lands retained, not manufacturer-recommended lands. Thermal/assembly qualification required."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "Z1" ("Z1"); Footprint = "SOD123"; UniqueID = "\VUKPMROF" ("\VUKPMROF")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "R0805"; UniqueID = "\CBHNZXWH" ("\CBHNZXWH")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Role"; Value = "R_TX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "R0805"; UniqueID = "\CWAJRZFO" ("\CWAJRZFO")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Status"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MPN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Role"; Value = "R_RX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Added Class: Name=Orion-Bridge-R3
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
+Added Rule: Name=Schematic Supply Nets_2
+Added Rule: Name=Schematic Supply Nets_3
+Added Rule: Name=Schematic Supply Nets_4

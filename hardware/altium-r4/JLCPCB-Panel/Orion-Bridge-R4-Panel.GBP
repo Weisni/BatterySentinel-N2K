@@ -1,0 +1,11 @@
+G04 Orion carrier manufacturing export - mm - common top-view origin*
+%FSLAX46Y46*%
+%MOMM*%
+%TF.FileFunction,Paste,Bot*%
+%TF.FilePolarity,Positive*%
+%TF.Part,Panel*%
+%TF.SameCoordinates*%
+%LPD*%
+G01*
+G75*
+M02*

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "errors": [],
+  "under_module": [
+    "C5",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "minimum_body_gap_mm": 0.5,
+  "minimum_pad_body_gap_mm": 0.325,
+  "assumptions": {
+    "body_gap_mm": 0.5,
+    "pad_to_foreign_body_gap_mm": 0.25,
+    "module_underside_mm": 3.1,
+    "under_module_max_component_height_mm": 1.5,
+    "header_housing_width_mm": 2.54,
+    "screw_head_diameter_mm": 4.8,
+    "usb_service_width_mm": 12,
+    "usb_service_projection_mm": 14,
+    "usb_service_minimum_bottom_z_mm": 2.5
+  },
+  "limitations": [
+    "Maximum body dimensions where available; remaining R2 generic packages retain their status.",
+    "USB service envelope is reserved; actual cable overmold, header seating tolerance, strain relief and enclosure fit still need physical verification."
+  ]
+}

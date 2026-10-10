@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "checks": 7022,
+  "errors": [],
+  "geometry": {
+    "passed": true,
+    "errors": [],
+    "connected_nets": 35,
+    "main_supply_paths": [
+      {
+        "net": "NET_S",
+        "start": "J1.2",
+        "end": "F1.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "FUSED_IN",
+        "start": "F1.2",
+        "end": "D5.2",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "BUS_PROT",
+        "start": "D5.1",
+        "end": "U3.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_BUS",
+        "start": "U3.5",
+        "end": "L2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U2.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_BUS",
+        "start": "L2.2",
+        "end": "U1.8",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_ISO",
+        "start": "U2.6",
+        "end": "D2.2",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_SYS",
+        "start": "D2.1",
+        "end": "U4.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "5V_SYS",
+        "start": "D4.1",
+        "end": "U4.3",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "SW_LOGIC",
+        "start": "U4.5",
+        "end": "L3.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "3V3_LOGIC",
+        "start": "L3.2",
+        "end": "MCU1.1",
+        "minimum_track_width_mm": 0.4,
+        "passed": true
+      },
+      {
+        "net": "USB_VBUS",
+        "start": "J2.A4_B9",
+        "end": "D4.2",
+        "minimum_track_width_mm": 0.2,
+        "passed": true
+      },
+      {
+        "net": "USB_VBUS",
+        "start": "J2.B4_A9",
+        "end": "D4.2",
+        "minimum_track_width_mm": 0.2,
+        "passed": true
+      }
+    ],
+    "total_nets": 35,
+    "minimum_copper_clearance_mm": 0.15,
+    "minimum_domain_separation_mm": 3.209999,
+    "minimum_body_clearance_mm": 0.275,
+    "minimum_native_3d_body_clearance_mm": 0.3275,
+    "minimum_mask_web_mm": 0.099998,
+    "minimum_plated_annulus_mm": 0.19999959999999994,
+    "npth_holes": 4,
+    "method": "Independent actual ASCII pad/track/via/region/body geometry, native slot angles and component NPTH; connectivity across plated pads and vias."
+  },
+  "source_sha256": "1eecfac3bdd9b98320eeed82e44a855b86e1aabd255e11f69e328d3b60312153",
+  "scope": "Final ASCII source and electrical model only; native binary and library/ERC audit remain separate."
+}

@@ -39,8 +39,8 @@ inline uint32_t little32(const uint8_t* bytes) {
            (static_cast<uint32_t>(bytes[3]) << 24);
 }
 
-// Decrypted Orion XS record 0x0f. Its layout has been published for the XS
-// 12/12-50A; operation with an XS 1400 must be checked against real frames.
+// Decrypted Orion XS record 0x0f: native resolution is 0.01 V and 0.1 A.
+// Three-decimal display formatting does not increase that source precision.
 inline bool decodeXsRecord(const uint8_t* bytes, size_t length, Telemetry& out) {
     if (!bytes || length < 14) return false;
     out.state = bytes[0];

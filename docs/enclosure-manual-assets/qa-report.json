@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-09-26T13:52:18.493571+00:00",
+  "pdf": "output/pdf/Orion-R5-Enclosure-Assembly-Manual-EN.pdf",
+  "validation_scope": "digital_only",
+  "visual_review": {
+    "required": true,
+    "performed_by_this_script": false,
+    "status": "required_separate_review"
+  },
+  "physical_validation": "not_performed; fit, retention and sealing remain separate",
+  "link_validation_scope": "HTTPS URI syntax only; no network requests",
+  "checks": [
+    {
+      "name": "page_count",
+      "passed": true,
+      "expected": 11,
+      "actual": 11
+    },
+    {
+      "name": "all_pages_portrait_a4",
+      "passed": true,
+      "tolerance_pt": 0.5,
+      "failures": []
+    },
+    {
+      "name": "outline_count_and_destinations",
+      "passed": true,
+      "expected": 11,
+      "actual": 11,
+      "destination_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "name": "link_annotations_are_https",
+      "passed": true,
+      "annotations": [
+        {
+          "page": 11,
+          "uri": "https://www.ruthex.de/products/ruthex-gewindeeinsatz-m3-100-stuck-rx-m3x5-7-messing-gewindebuchsen",
+          "valid_https": true
+        },
+        {
+          "page": 11,
+          "uri": "https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m2-70-stuck-rx-m2x4-messing-gewindebuchsen",
+          "valid_https": true
+        },
+        {
+          "page": 11,
+          "uri": "https://blog.prusa3d.com/watertight-3d-printing-part-2_53638/",
+          "valid_https": true
+        }
+      ]
+    },
+    {
+      "name": "all_pages_have_text",
+      "passed": true,
+      "empty_pages": []
+    },
+    {
+      "name": "no_replacement_or_black_square_glyphs",
+      "passed": true,
+      "findings": []
+    },
+    {
+      "name": "characters_within_page_bounds",
+      "passed": true,
+      "tolerance_pt": 0.5,
+      "failures": [],
+      "total_failures": 0
+    },
+    {
+      "name": "source_manifest_hashes_match",
+      "passed": true,
+      "sources": [
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\sealed-contract.json",
+          "expected_sha256": "35a7106c7f260a2ae32658e12e3f09f9df5598acf8a9d71d3405e828bf4978fd",
+          "matches": true,
+          "actual_sha256": "35a7106c7f260a2ae32658e12e3f09f9df5598acf8a9d71d3405e828bf4978fd"
+        },
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\README.md",
+          "expected_sha256": "2839682b6bfe6d2267a8bd349667e25519ed3fa71889da35bbef92f0f08cef1a",
+          "matches": true,
+          "actual_sha256": "2839682b6bfe6d2267a8bd349667e25519ed3fa71889da35bbef92f0f08cef1a"
+        },
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\validation.json",
+          "expected_sha256": "c3e6de78e4877b1a3d34f6a5d789e9a8ce2f75034b3124981831538f82740510",
+          "matches": true,
+          "actual_sha256": "c3e6de78e4877b1a3d34f6a5d789e9a8ce2f75034b3124981831538f82740510"
+        },
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\flush-colour\\flush-lid-validation.json",
+          "expected_sha256": "e511a510728b3fd167275cf36a409191165a1bd2592eecf50b61c967afcf254e",
+          "matches": true,
+          "actual_sha256": "e511a510728b3fd167275cf36a409191165a1bd2592eecf50b61c967afcf254e"
+        },
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-sealed-enclosure.FCStd",
+          "expected_sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2",
+          "matches": true,
+          "actual_sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2"
+        },
+        {
+          "path": "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-flush-colour.3mf",
+          "expected_sha256": "42b3f908d36bcf05f9e6db00a5fa211718de9470043e692a058046715ff46b13",
+          "matches": true,
+          "actual_sha256": "42b3f908d36bcf05f9e6db00a5fa211718de9470043e692a058046715ff46b13"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\image-generation.md",
+          "expected_sha256": "7652e9b24c6d8b6811ef96411203cb33ed4d752611d138d58fd93539b492df64",
+          "matches": true,
+          "actual_sha256": "7652e9b24c6d8b6811ef96411203cb33ed4d752611d138d58fd93539b492df64"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cover-generated.png",
+          "expected_sha256": "2016d31290abd83ea7ddef4b60cf962c96d1a5fbf62ac6a9f075403782c3a3e1",
+          "matches": true,
+          "actual_sha256": "2016d31290abd83ea7ddef4b60cf962c96d1a5fbf62ac6a9f075403782c3a3e1"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\image-notes.json",
+          "expected_sha256": "c3dc86c3bedc99758674bfd37143dc4f3034ef18873b71099578d31cb9fcffc5",
+          "matches": true,
+          "actual_sha256": "c3dc86c3bedc99758674bfd37143dc4f3034ef18873b71099578d31cb9fcffc5"
+        },
+        {
+          "path": "tools\\render_enclosure_manual.py",
+          "expected_sha256": "a5de1b528033dcc6d66d3e4240649cf7441b4a954786c745a5f33f2ddba98842",
+          "matches": true,
+          "actual_sha256": "a5de1b528033dcc6d66d3e4240649cf7441b4a954786c745a5f33f2ddba98842"
+        },
+        {
+          "path": "tools\\build_enclosure_assembly_manual.py",
+          "expected_sha256": "508c2b61c08f0bb5e0ec755102758b8424bed090c637aac56c788a9e1399f73b",
+          "matches": true,
+          "actual_sha256": "508c2b61c08f0bb5e0ec755102758b8424bed090c637aac56c788a9e1399f73b"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\assembled.png",
+          "expected_sha256": "8ae9eed52186e7ba21fc40200cb85762bb756acd01eb087d3aa12b7a17442cff",
+          "matches": true,
+          "actual_sha256": "8ae9eed52186e7ba21fc40200cb85762bb756acd01eb087d3aa12b7a17442cff"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\base-inserts.png",
+          "expected_sha256": "76dd1efd58f5a3d9df0c63ea20ab22eb5f4c3db15269fc85278fd4c72e5f87b4",
+          "matches": true,
+          "actual_sha256": "76dd1efd58f5a3d9df0c63ea20ab22eb5f4c3db15269fc85278fd4c72e5f87b4"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\cable-exploded.png",
+          "expected_sha256": "87155fc5d23cd207eb8698bb8498a84db0205756e6499461975c5b52f8aa548a",
+          "matches": true,
+          "actual_sha256": "87155fc5d23cd207eb8698bb8498a84db0205756e6499461975c5b52f8aa548a"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\flexible-kit.png",
+          "expected_sha256": "3a93ed70baf703f44e659ead4220ab201a7b14e3eda4e0fe059e72fc96b2bb17",
+          "matches": true,
+          "actual_sha256": "3a93ed70baf703f44e659ead4220ab201a7b14e3eda4e0fe059e72fc96b2bb17"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\lid-exploded.png",
+          "expected_sha256": "0ad532fc41a1294e19eb18e7a5f992ee68dcf253f503b72117e76d09a87e5a2d",
+          "matches": true,
+          "actual_sha256": "0ad532fc41a1294e19eb18e7a5f992ee68dcf253f503b72117e76d09a87e5a2d"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\pcb-installation.png",
+          "expected_sha256": "28b69abfe0d3a98124fb56159d03792bb259a22b26193b3e221e12c5af1b09fa",
+          "matches": true,
+          "actual_sha256": "28b69abfe0d3a98124fb56159d03792bb259a22b26193b3e221e12c5af1b09fa"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\rigid-kit.png",
+          "expected_sha256": "df4717b25282c47b43f39211790c2fb9eb7f6d342e5c3dca4e4885b9d25b0a58",
+          "matches": true,
+          "actual_sha256": "df4717b25282c47b43f39211790c2fb9eb7f6d342e5c3dca4e4885b9d25b0a58"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\service_switch-gasket.png",
+          "expected_sha256": "c372fd8fd5b946db179795228d68b4ca3c9f067f136da83a78aafa1d9cfaf0ec",
+          "matches": true,
+          "actual_sha256": "c372fd8fd5b946db179795228d68b4ca3c9f067f136da83a78aafa1d9cfaf0ec"
+        },
+        {
+          "path": "docs\\enclosure-manual-assets\\cad\\usb-gasket.png",
+          "expected_sha256": "08f64506feaba43e621ce0b1d69f3ec1aa9c6d6af8809394d7d4246abc13041e",
+          "matches": true,
+          "actual_sha256": "08f64506feaba43e621ce0b1d69f3ec1aa9c6d6af8809394d7d4246abc13041e"
+        }
+      ]
+    },
+    {
+      "name": "cad_image_catalog",
+      "passed": true,
+      "expected": [
+        "rigid-kit",
+        "flexible-kit",
+        "base-inserts",
+        "pcb-installation",
+        "lid-exploded",
+        "usb-gasket",
+        "service_switch-gasket",
+        "cable-exploded",
+        "assembled"
+      ],
+      "actual": [
+        "rigid-kit",
+        "flexible-kit",
+        "base-inserts",
+        "pcb-installation",
+        "lid-exploded",
+        "usb-gasket",
+        "service_switch-gasket",
+        "cable-exploded",
+        "assembled"
+      ]
+    },
+    {
+      "name": "cad_image_source_matches",
+      "passed": true,
+      "expected_sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2",
+      "actual_sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2"
+    },
+    {
+      "name": "ten_raster_assets_exist_and_decode",
+      "passed": true,
+      "assets": [
+        {
+          "path": "docs/enclosure-manual-assets/cover-generated.png",
+          "kind": "generated_cover",
+          "valid": true,
+          "sha256": "2016d31290abd83ea7ddef4b60cf962c96d1a5fbf62ac6a9f075403782c3a3e1",
+          "width_px": 1536,
+          "height_px": 1024,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/rigid-kit.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "df4717b25282c47b43f39211790c2fb9eb7f6d342e5c3dca4e4885b9d25b0a58",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/flexible-kit.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "3a93ed70baf703f44e659ead4220ab201a7b14e3eda4e0fe059e72fc96b2bb17",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/base-inserts.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "76dd1efd58f5a3d9df0c63ea20ab22eb5f4c3db15269fc85278fd4c72e5f87b4",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/pcb-installation.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "28b69abfe0d3a98124fb56159d03792bb259a22b26193b3e221e12c5af1b09fa",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/lid-exploded.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "0ad532fc41a1294e19eb18e7a5f992ee68dcf253f503b72117e76d09a87e5a2d",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/usb-gasket.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "08f64506feaba43e621ce0b1d69f3ec1aa9c6d6af8809394d7d4246abc13041e",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/service_switch-gasket.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "c372fd8fd5b946db179795228d68b4ca3c9f067f136da83a78aafa1d9cfaf0ec",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/cable-exploded.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "87155fc5d23cd207eb8698bb8498a84db0205756e6499461975c5b52f8aa548a",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        },
+        {
+          "path": "docs/enclosure-manual-assets/cad/assembled.png",
+          "kind": "cad_render",
+          "valid": true,
+          "sha256": "8ae9eed52186e7ba21fc40200cb85762bb756acd01eb087d3aa12b7a17442cff",
+          "width_px": 2000,
+          "height_px": 1400,
+          "format": "PNG"
+        }
+      ]
+    },
+    {
+      "name": "inputs_stable_during_check",
+      "passed": true,
+      "changed_paths": [],
+      "note": "Rerun after the builder finishes if any input changed."
+    }
+  ],
+  "counts": {
+    "pages": 11,
+    "outline_entries": 11,
+    "link_annotations": 3,
+    "characters": 13390,
+    "words": 2352,
+    "suspicious_glyph_findings": 0,
+    "out_of_bounds_characters": 0,
+    "manifest_sources": 20,
+    "raster_assets": 10,
+    "cad_rasters": 9,
+    "generated_cover_rasters": 1,
+    "valid_raster_assets": 10
+  },
+  "pdf_sha256": "d214d0ed871c7a71f399c2c97027264ed02640fc80c653a288e9d526ed8951a1",
+  "digital_checks_passed": true,
+  "status": "digital_checks_passed_visual_review_required"
+}

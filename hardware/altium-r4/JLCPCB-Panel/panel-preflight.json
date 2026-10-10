@@ -1,0 +1,6759 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "cutout_1_copper_clearance",
+      "detail": 0.3049974253718388
+    },
+    {
+      "check": "cutout_2_copper_clearance",
+      "detail": 0.30498729452780166
+    },
+    {
+      "check": "cutout_3_copper_clearance",
+      "detail": 0.30500260788280453
+    },
+    {
+      "check": "cutout_4_copper_clearance",
+      "detail": 0.3050405731110715
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 21.25,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.417751248014377
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.19327528139114
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.08690007401768
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.025457866078165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.985539960123585
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.703098754595684
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.23070191793953
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.294440805476807
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.36428416877677
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.59433608625432
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.241661392965824
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.86047987587275
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.48618858267946
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.124470938665173
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.224125142982555
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.230025369576644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.553915986358972
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.485984845841873
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.761020662022123
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.00338409859591
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.29432740288254
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.199716180678552
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.46937132913117
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.31216874048991
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.072734964150445
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.87900008865341
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.39173222313736
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.84036085216007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.56489898627456
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.36420630992089
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.99605307882779
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.9628744138208
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.62147933823643
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.47460910302857
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.84521067547778
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.714161331451038
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.93673604851644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.960245190897353
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.753164393008156
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.178094534745334
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.606772968043696
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.22819127675315
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.90409855036773
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.723460107165597
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.89867306219711
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.078484835904485
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.859913336509745
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.549769141509923
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.642667544904857
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.528685456328798
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.258404835184276
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.8773446453284
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.18989481804642
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.531110969922295
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.568757786618335
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.3482877347029
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.350032152388612
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.538730249894567
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 22.15,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.640549120694057
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.341969503871013
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.212312914894044
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.140940999336857
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.09599217172385
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.634649275032114
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.1724999959535
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.249592889743397
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.327788474945454
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.5802679049785
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.23021666983257
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.94571534063798
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.55568774873259
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.284159539114842
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.491116258130177
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.948210752940346
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.632238406076703
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.27212024556569
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.506889036687603
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.595995913322255
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.034312709092116
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.623297035312978
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.197588137583885
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.15074079393807
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.00037014103474
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.796708695841055
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.774447734455954
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.582436930011845
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.60135240042263
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.39897067501772
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.423575423917335
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.37442287591077
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.23000544510632
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.15094224685403
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.55785750758687
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.28599398362253
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.67609643127802
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.43221786671353
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.20066306463842
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.884385734582857
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.173587913030612
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.990461971736693
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.66322440446837
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.20437283338855
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.49481965007591
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.904886809118242
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.229673445445984
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.712218639734862
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.392367977506872
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.106319705857565
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.691344941194057
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.48416564845661
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.546601660657174
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.0853634095056
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.5666802434433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.34646124551541
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.950000025860458
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.646140757758673
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 23.05,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.916894480659304
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.503889132352296
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.342607650078168
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.258756200347714
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.207607806957888
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.622188971073337
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.16188282238337
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.24147122964885
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.321187283251493
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.587665109226414
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.23626565209537
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.05205226230003
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.642373463782874
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.45000101167795
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.773079605389942
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.738354530475496
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.808487468458779
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.08506745300532
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.284232027995458
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.235786338137986
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.81999978408538
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.12078695208345
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.94853585816937
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.01142704951932
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.95964591156363
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.73260881647242
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.17030287473232
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.34472388864519
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.659603580603076
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.45453060625167
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.86476493051161
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.800811939858384
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.8588663419358
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.84521067547778
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.28929034930855
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.877839176319007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.43613821481006
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.922918496848446
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.66437496688512
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.613258588534904
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.763291267623313
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.776123461068806
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.44169084450913
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.705177614782393
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.10349164408709
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.795134930763936
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.628800403792631
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.882234676031203
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.17018601222252
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.706397994191487
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.140255069550893
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.112441426582567
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.915951516483183
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.65610214181124
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.58528053003358
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.362661806691804
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.6400896191265746
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.754160443442164
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 23.95,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.2830327428027832
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.684960940516969
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.47928775673307
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.379277570673981
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.320696091601814
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.665798761378198
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.19895883600374
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.26998571959131
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.344389972887644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.61651524551987
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.25977164993103
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.17931452590833
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.746233087373405
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.622958850522298
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.071870325845193
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.604983667989174
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.076598304355981
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.92535982207447
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.09384288401913
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.926471905245986
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.653214931876738
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.680067988796567
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.722743457419778
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.89448907249049
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.950801590329718
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.68673504292586
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.580036271172265
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.12761545380458
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.739550089150576
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.53079731196845
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.32028225952003
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.242880658706405
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.50877096031992
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.55785750758686
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.03990131395433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.490489601890264
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.21727979454053
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.433375058207936
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.145164314177034
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.365291660203773
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.376928501603636
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.585646531066647
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.23983246338723
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.22701123300987
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.72503597271971
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.750955977352804
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.061207040005707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.061208229486919
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.976741391912004
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.329893828559175
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.606012009721038
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.7629656539651
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.29871697485845
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.243903251349344
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.62452915877956
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.39687384775164
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.38815660775378
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.862726411982084
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 24.85,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.801885485091401
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.8948455521663563
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.6244922123039425
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.503356850481977
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.435569980485363
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.765004308240483
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.283447679606304
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.335144939239356
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.39737071632688
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.666769469226566
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.300619013853776
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.32729407343695
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.867178462818146
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.804180344849884
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.38957279412545
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.551146400609905
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.428214442619224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.79342346994517
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.936608527619036
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.67175566532411
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.535390278584295
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.29054727560437
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.52070490263048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.8001496311289
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.973815464873717
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.65918661050437
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.00445539632281
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.93148034721464
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.8410524119786
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.627649759933675
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.79080691552192
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.70149730164874
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.180418937971538
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.28929034930855
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.81006450988875
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.124737199398634
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.019915263156264
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.96464879004079
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.643920993909074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.14103168438681
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.01550212474255
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.419460303476235
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.05795793629166
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.7710319256333
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.359681491229196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.773065413780861
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.531268374076152
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.250885994170368
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.812765492318274
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.977776367119493
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.089529170683345
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.43652100114334
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.695717766486514
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.849345915015505
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.68436427084562
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.44905659777217
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.174432411126728
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.972101236351286
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 11.0,
+        "y": 25.75,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.5624706098517591
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.1503350225250233
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.781527521090002
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.631903037316823
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.552512435355275
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.918670758754967
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.414647903052476
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.436593089970494
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.48001517065058
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.73834297027249
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.35888128059522
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.495752594398816
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.00507959162493
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.995068402285161
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.728557787824599
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.578085915748616
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.853901104969044
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.68965224942759
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.813118683217667
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.474803771981193
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.46767973361011
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.943188609021009
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.342874205204033
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.72859060517007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.02862409214389
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.650000000000006
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.444377767856693
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.756659389806295
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.9639351733317
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.74493563747557
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.27704235221234
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.17756785916701
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.874495254270656
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.03990131395433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.60013352298926
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.78133753587708
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.84440192432552
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.51782915400716
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.161557390678176
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.940988160307853
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.680108282582207
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.277947671410608
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.89635102277889
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.338422958911508
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.007730006788336
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.861104284906835
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.043699890633935
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.453482668991402
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.67878924135658
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.651001432083333
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.5917544835083
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.13384278275571
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.1078120728717
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.47300975793393
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.76469212782444
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.519148178068455
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.986644183477197
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.08240443435201
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 16.75,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.56488263502324
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.450093390621296
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.376750135750148
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.325959386800584
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.28876138256311
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.218573219899465
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.311232342629754
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.85231462204802
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.625858945106046
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.44270897675029
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.964023753200266
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.049562958799278
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.68475545651133
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.21243062457652
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.657312381222432
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.503014705519993
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.032935767370173
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.095352616008658
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.933957365705783
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.547325217910322
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.15386562709762
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.8696389624778325
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.443329055526664
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.29637837786121
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.673104616210313
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.12000409275719
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.77739624896797
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.58449169260847
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.081003856651066
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.86580265094872
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.80345472180275
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.0614303982877
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.675939292931574
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.73632397911517
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.80002546307954
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.14956902312083
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.72443166510234
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.506217493775353
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.462274597521205
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.352583098210435
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.245209984093997
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.9168712359456
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.461593475838775
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.225666462595655
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 49.70509106531492
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.904369498321513
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.489378146790617
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.750063291037833
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.638657411380628
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.022971920124046
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.14229558537093
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.004245905842822
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.91711266671338
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.97887032974761
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.3129227011438
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.020349994506724
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.6697390499253495
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.730105809637298
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 17.65,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.876934241863049
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.696388203591866
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.57947852735606
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.497960423435124
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.43804767440468
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.525374485493696
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.550565922940917
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.025341602573782
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.769908418037794
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.560107547700937
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.07488694701474
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.15155854602647
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.78599808518888
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.200506750973048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.45284198187013
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.153287570221163
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.729053996687764
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.31541597964514
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.21044025549393
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.122955405565381
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.543327230888412
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.5688488498674056
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.67936672038204
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.466237739366388
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.838543695244507
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.24840448348697
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.295432801390405
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.79793265661727
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.18925309504809
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.97319021170914
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.26067781911513
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.556450244995137
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.99179454621281
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.98080475865564
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.024533465744526
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.49852797034316
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.942028712446405
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.960253728533747
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.92184930788721
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.603279967921754
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.624398183984763
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.134146735578387
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.660746860549196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.68047186317274
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.97483341902203
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.369018796671375
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.248577832311238
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.772327777594633
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.891037866348164
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.386621001723086
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.6194855064593
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.33041907703823
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.47178454660297
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.31568397384243
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.42650025436235
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.13023766414999
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.324669845211429
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.8288002739976
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 18.55,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.252790721030506
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.99641816014046
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.828099453676815
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.709718734305252
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.62217321559247
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.866287863694021
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.809887904789386
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.206255713084158
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.91777875733341
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.678551158327835
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.186228321100145
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.253676787311427
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.887299709605124
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.224326439130124
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.283688567916453
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.877517233823022
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.570226667041979
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.543878491813587
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.501276734058912
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.746416735811552
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.965402456372697
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.6454018550878042
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.923413958504277
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.640075762349472
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.009843821279485
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.378117687609915
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.83083157472565
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.01732507229838
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.297990296434023
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.081003856651062
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.73256191602452
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.06908559496484
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.319153530245114
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.23197129691243
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.255112095381584
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.86063723357189
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.165859259842435
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.432655910594924
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.39822166975999
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.862762143224188
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.020256069136448
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.358496908064545
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.86475644612246
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.154560186299364
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.25023219137351
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.889841781513093
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.053413018694975
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.834549229323336
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.154502600978375
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.76572416128446
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.114241644343533
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.669259353589414
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.045288764930525
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.66300873665617
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.540846827565385
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.24060062559846
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.050035454400481
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.95482107162016
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 19.45,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.68626337345709
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.347011196010541
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.120586871338148
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.959899409113582
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.840420616977525
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.24883996414738
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.093178573045437
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.396321041438421
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.069812114437457
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.798048164994373
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.29803692033853
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.3559293340653
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.98866462994595
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.283819309183958
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.15077237249227
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.68249729408705
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.570226667041979
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.781560600687712
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.808056967044255
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.421880371264184
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.42449313220708
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.0651120315317475
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.176102323253726
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.81830323075834
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.187761599810948
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.50923637221287
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.38433416746751
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.242981284343532
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.407278440269735
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.189253095048088
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.21977327489499
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.60016512791683
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.65880714493804
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.49027439942114
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.49204666493653
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.23680909444281
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.396464748766792
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.924487802525224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.89226012975768
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.13175004280403
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.433997518059243
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.59058348817905
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.07408648000959
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.649100893543537
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.53161274404786
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.475961279571946
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.905523483178461
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.93636408988769
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.43020573818008
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.161404559624806
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.627448756922018
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.021676694754017
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.63837584058102
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.02147395359937
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.65599539368327
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.351473774609005
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.821238747027531
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.107750833485266
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 20.35,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.171227464970817
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.744319417155774
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.454738634711916
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.247094269135623
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.091782157443227
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.682036793679655
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.405515279289192
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.597086973024927
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.22663959006241
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.918690540971212
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.410425468959865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.458329359604647
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.090097574373274
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.37860186216555
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.05475662802562
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.573442250997951
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.729053996687764
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.02943750474681
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.132586455927996
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.153372772886545
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.925490465350086
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.693347689037057
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.438108032256693
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.001231636562142
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.373174087775546
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.641899487757456
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.95668795325282
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.475487601420543
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.51717102748909
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.29799029643402
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.72299878637108
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.150536718725352
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.01160575282177
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.75620345723165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.73589476424744
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.62797770320929
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.634260588225825
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.43685420707282
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.40486257868883
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.41101050621382
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.866922990085754
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.831056146229727
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.28900690560103
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.16530998936964
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.81914961483721
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.136769708604561
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.80617361023379
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.077127350714086
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.71940222748725
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.574856426358792
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.1600172621759
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.38865078259442
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.251799996689538
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.39173222313736
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.772005335219948
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.46286977360816
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.622998095629309
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.287097182123198
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 21.25,
+        "y": 16.0,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.701586760084924
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.18481372541593
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.82818994242359
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.56982205679874
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.37515932868746
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.176818181752962
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.753243959691266
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.810466293943607
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.38896051851068
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.04069128058111
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.523437439955416
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.56089181564784
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.19160375357953
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.508345538607127
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.99605674297376
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.55347401890852
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.032935767370173
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.288560991477066
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.476891924978375
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.944556869082463
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.473612841871029
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.4301584795788074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.710275366474438
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.18935829496236
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.567206995412903
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.77622259114264
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.548648402379595
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.715310463331686
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.62772867386846
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.40727844026973
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.2429443327781
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.721063579228527
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.378462409716832
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.030181690703834
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.98706451679879
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.035137874165915
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.8798943416325
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.970896489172507
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.93695331452802
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.70136254298037
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.32041234393459
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.080625730448965
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.510030166674007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.70438439130211
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.113243248615596
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.881436540915722
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.756251204707853
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.256098234789867
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.023486709928047
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.00736743154162
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.71287942850749
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.771234441696873
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.886314507599987
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.77444773445595
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.889003959693742
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.57482078671808
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.446177523009595
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.4925159399546
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 18.75,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.66780944908675
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.761988814328095
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.889316157389937
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.07011508400479
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.344385604159479
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.267827181603003
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.030302234362026
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.16971012011581
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.98424623228425
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.3443653158532
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.253460882316865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.33453198018241
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.84352422759698
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.98321060126906
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.67354246430244
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.659792396417007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.551176998393128
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.627842653337723
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.36678263068971
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.007883820139767
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.54288710989707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.561343593162743
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.206766072992433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.373568464716875
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.54310092345711
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.16908821721632
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.523877097000256
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.49597273510224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.903469662574224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.22665055218145
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.96845595296888
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.92795072796362
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.478376857522004
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.25840272757345
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.982430935776915
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.730450031677073
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.790099894966495
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.876577190283708
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.242044321401995
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.35636649420614
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.612588144514362
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.09001955605857
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.5005996634095
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.73083780767965
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.50808662698309
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.860782535178828
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.623068472861315
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.526748316549057
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.681648984404816
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.352835698676586
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.42379743183821
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.452985331893565
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.740886318684616
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.72751898140388
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.31293141605577
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.902001349754094
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.986499643890905
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.218052580886975
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 19.65,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.893437872537433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.02055891776134
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.19125212617951
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.431324699861815
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.789850012778052
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.05214257239724
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.7348093316843
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.73650718694973
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.443906886014812
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.6656825874705
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.50699792083094
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.70208018393228
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.13488977484075
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.144014746052317
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.428121261034656
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.58960638949349
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.55782299223707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.985835751389388
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.82040382461201
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.808954206162614
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.239488671042377
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.599568748852864
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.473491534120225
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.65004854773794
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.022463764596946
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.404095445528924
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.64202513723515
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.714509095753133
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.2559722693597
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.560533603038564
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.080809941823578
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.073102801719536
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.693379018336824
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.42722602375224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.170308305969165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.94447707921669
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.017078667254015
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.1040197272608
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.404776162481465
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.6182993378291
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.90859791131568
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.37451264174234
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.706643576376884
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.993149743567226
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.61064398466402
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.712212241897053
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.482444681711728
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.71316164463851
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.06475920859792
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.63088000256024
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.588559598329105
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.695479482450626
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.862324775654137
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.867656797745138
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.62597959927355
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.16935268725955
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.145273250351693
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.997076446150351
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 20.55,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.15204178261155
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.31586445543414
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.534352603761537
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.838612122637564
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.28529741859194
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.866272211672424
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.466893224925343
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.32545083551192
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.92044051240873
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.995995703376806
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.76607638662199
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.07950229580926
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.432714969921776
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.384890195570472
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.25296263583575
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.554407446338214
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.594469744827165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.358674740350196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.295587685972833
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.648406570365907
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.96814119521887
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.664651892207026
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.7502025258852
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.935374995597392
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.52043944853361
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.644599285148836
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.762249501643339
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.93955436519692
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.61844268358706
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.903469662574224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.194377783434323
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.223305749212761
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.91669648084685
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.60000950871599
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.363025717763158
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.167412086543674
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.251223451264025
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.344141005970062
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.57391250391461
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.89032084516892
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.220602671605988
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.6696198820637
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.918239706436715
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.271328859347122
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.713326547877045
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.59649931655748
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.39179620391016
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.962194760645717
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.465109603945074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.92309702955881
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.760264113525922
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.94851968925723
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.986616187949371
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.010633888274636
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.94763833224406
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.44282166000495
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.330498941889363
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.804444386961029
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 21.45,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.44236477824608
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.646183233149074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.91625260243011
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.28823226931711
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.825114997300197
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.710833072652157
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.227317699615305
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.937532738702917
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.414722095863194
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.33604601487834
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.0311264417149
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.46740661799084
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.737341836775464
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.700134748128999
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.151564263606412
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.554407446338214
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.660943031847893
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.74742466459224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.793790207586216
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.527134236674765
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.730004083484666
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.75639140922107
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.037738699776906
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.230174180954815
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.038013088713054
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.89086548165131
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.885039757742874
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.17171229246688
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.991417013163144
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.255972269359695
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.30931393541868
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.379448718162083
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.149175481451692
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.77709284862175
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.561069710372717
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.400242030263673
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.49312139794372
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.59875610141435
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.750405085888604
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.173282741462245
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.550351995458048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.976152131296754
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.13581212077744
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.567570730921727
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.81614372710948
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.513983458554442
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.35199534333313
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.270184501113636
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.88397840630423
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.231021913029675
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.940020653542216
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.21319150882099
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.114368118101785
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.156849041763923
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.27821519970165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.72288868881638
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.541678221292823
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.631427607985158
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 22.35,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.763391962223235
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.01003867118236
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.334539866057924
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.776528249487512
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.403815110160425
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.586314159068284
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.01689703750644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.573668542788223
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.92765708287038
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.68631994836488
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.30234491637059
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.866298459740165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.049043004951606
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.083077083086534
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.126088999569788
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.58960638949349
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.757030461610007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.15322571938322
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.31647880770289
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.44586138608063
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.526214116318968
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.874587948897844
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.337013200178465
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.535060468910167
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.576170034620596
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.143257903005015
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.010777524687647
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.411496431239158
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.375439320106665
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.618442683587055
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.42579632748458
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.542591483028618
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.391773023789288
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.958852857776858
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.764765377582137
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.644094506153074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.74331374194372
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.870011658510183
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.93548178827291
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.46812305530311
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.899735225007884
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.294982847998526
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.359779798551166
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.884373935363266
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.91910589850308
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.46513806415859
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.363379316520207
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.632913997052935
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.32272970228623
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.55638202506212
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.129184488284492
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.490718184135925
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.246272030868433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.306594657733815
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.618306403294866
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.009718674727154
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.778258098565438
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.472571511034628
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 23.25,
+        "y": 48.0,
+        "clearance_mm": 0.3050000000000068
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.113717504323052
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.405650022603794
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.786688756477762
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.300014521454079
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.016548217828479
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.49331823332212
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.83643768392376
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.23487058284639
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.46017831909955
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.04717347951813
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.58012776572182
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.276505418845616
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.36817836677196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.526596413164507
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.176999959039303
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.659792396417007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.8824620662443
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.577294953083538
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.865310938994636
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.405100912039607
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.35762786020948
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.018932256221483
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.64900398723529
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.850706431411165
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.13596484419269
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.40209463424968
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.140180057594964
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.659518422513813
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.771013408993795
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.991417013163144
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.544170002580792
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.714062849128569
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.645573004286547
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.145712082210096
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.974697655137575
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.900260019590434
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.002549997515246
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.160364466567401
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.130580824996157
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.775874638650475
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.27096886425986
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.627071100767523
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.590706752497283
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.224566487126756
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.022224530750236
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.450053304843472
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.425846468701856
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.04603546335939
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.78281287751049
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.901118085133632
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.329423095690176
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.782478651210337
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.383404109547202
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.460354515180708
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.96839411580875
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.303824221241925
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.039567053582502
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.324349434237469
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 24.25,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.58369637876524
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.797284244557886
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.20531311697199
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.802733630515604
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.582226447247855
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.81130568454368
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.273851513452772
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.200482037584568
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.1302943504492
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.305396483758583
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 1.3928458275943691
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.965471838999992
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.35019319893556
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.47734739683932
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.63734610612561
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.557405861844835
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.68182666172309
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.007047254902442
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.810098726316173
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.064817710506745
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.728761565262257
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.09778441046507
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.841667989305996
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.012266762384728
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.15553164505162
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.7285167260946843
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.777593114563686
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.361169594708873
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.27190091506634
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.601991388937329
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.22426505722686
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.5848550805498
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.38168901488278
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.577273461755812
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.308475076667422
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.130342080132824
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.044918856663678
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.958846619436642
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.020031684967464
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.6312170846181
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.52467809643662
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.218129004466338
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.482227275762263
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.16193073137896
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.446959510653137
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.35031824467781
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.68783636826721
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.505580670398196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.197571682700673
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.663014867045632
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.782227855555348
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.399588425645636
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.222055757594376
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.727980900150328
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.57108715918645
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.3223545420561478
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.905246175316385
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.15370077302622
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 25.15,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.55795555273658
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.71265050561637
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.06274507382465
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.604002797436905
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.32973955396506
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.86213437353746
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.328832222826758
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.266174279959845
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.211874716843486
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.510794342807339
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.1369438711016064
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.451359385679702
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.2240040159811265
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.19058218302926
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.34324389813285
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.55029959933742
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.764711187441925
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.836944297380896
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.674368592608754
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.9772777366907
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.67838667050336
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.242662789892876
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.498955479413073
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.783011557439668
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.193353076113123
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.4958913017737974
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.195763082520635
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.888785004224733
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.612449068333637
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.997130561747998
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.58950714283891
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.040549458284364
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.91078192993626
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.92961435397021
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.717311476852837
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.66001862477284
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.602992507379756
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.50859202837742
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.490339895531864
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.269308355587242
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.16177395559842
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.930529876678
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.949312467281217
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.74685293615779
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.549065412448712
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.36539993553945
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.51042775074248
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.2694981748315
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.018053311052558
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.283833426455043
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.26033405733108
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.97816559865918
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.66359155220767
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.081431134094828
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.8523521484092
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.941214905850684
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.018400254601666
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.78356159338646
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 26.05,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.55002805835256
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.64556988818881
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.937415274477175
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.42189561855886
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.09315494926149
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.936908262246504
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.409695108712253
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.362648413363143
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.331440988968993
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.786693220091045
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 2.9442217801384967
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.981401700891645
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.103593252985737
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.92061218366224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.06793232757929
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.564505972255716
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.86752287558968
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.705644987110293
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.570241807537208
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.91243375148577
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.653179333683287
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.40640066177797
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.19553786260458
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.611896883258229
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.26673633874092
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.461523951222331
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.629611196053773
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.45863368100627
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.008833234896821
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.45240881381067
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.969595419383317
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.513986571279027
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.468000050911535
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.308475076667419
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.160018226344633
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.215683672136112
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.20308877389618
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.080412321082406
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.979956302917866
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.944362721472416
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.825730359451118
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.68542279623575
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.460606121453097
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.354727703249672
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.6513743131735
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.40307467766924
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.35362037996738
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.05074083273676
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.873369615167196
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.932026496792826
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.757510359262344
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.585499683143098
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.120913387415904
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.453652088806653
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.208423799798181
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.642221300781701
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.14895015941702
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.42729694998742
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 26.95,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.559923027382226
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.59616591389396
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.82946081519412
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.256633610188985
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.87258908416074
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.035468101447535
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.51623812841889
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.48967191102544
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.488421745320007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.12783663755599
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.7836198429055967
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.550590999205344
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.987263283689862
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.66775103759664
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.81181597304949
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.6000010854965
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.990110076749716
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.613906770661472
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.498226431715597
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.87041100995537
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.653179333683287
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.58877848673049
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.933469311340232
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.50117824779307
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.375434432003434
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.6304451476568427
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.080037407852224
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.074801961799816
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.455934834046923
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.960637224383843
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.36555813557739
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.00615191554409
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.055201851194756
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.717311476852833
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.640933008795637
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.79887802866311
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.84870290497707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.675335425287066
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.48998132464865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.658361142860034
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.517657249029337
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.484655610290957
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.02183230603729
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.98654370810359
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.753917005551706
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.46327125886978
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.21767111290926
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.84957411789676
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.76424340695818
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.60873962228268
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.274796359307157
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.22308418728468
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.594846830409644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.846399357483488
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.631503625329373
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.3965608295159555
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.29686112373189
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.085166010452234
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 27.85,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.58762900105591
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.56453090227014
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.738891528821874
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.10839564003655
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.66837180633599
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.157606099340356
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.648163062526475
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.646634726436943
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.682040906053206
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.528481198363645
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.641282177639319
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.15417101548778
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.873830909290536
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.432299788539915
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.57528187777014
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.656725472031624
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.13229403896307
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.562271347916088
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.45848304483195
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.851291224286086
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.67838667050336
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.7895558166474
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.71464398975161
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.452428475543206
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.51890546594757
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 3.9794492746529815
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.547983595094923
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.741289743441161
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.94860884233853
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.515062990912806
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.778492328767527
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.518067342446727
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.674177019822782
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.16001822634463
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.16480675255599
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.411230996203347
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.543304015809428
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.2943967532102
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.021552513336623
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.41316966457423
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.238512325428772
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.329824317638938
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.638871192651836
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.643232973313456
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.856730831033865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.545876557738865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.102806150345515
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.66626771355912
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.69122728551272
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.315157989900033
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.81322617696923
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.892535351196788
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.08624903104489
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.261483454120796
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.113626442350908
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 6.186503273028505
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.461997441518896
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.757280157130744
+    },
+    {
+      "check": "mouse_bite_to_copper",
+      "detail": {
+        "x": 59.0,
+        "y": 28.75,
+        "clearance_mm": 0.3049999999999997
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.633090350240174
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.550701453512495
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.665926373913926
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.97730834909296
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.48073658264241
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.30306811164293
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.80514762127363
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.83314716639121
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.911240129240174
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.982791962836876
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 5.510030080654364
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.787942532731034
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 9.762628597397022
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.214533981677995
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.358696946234616
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.7345845942313
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.29387019025873
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.551022991137835
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.451278085204464
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.855111766663704
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.728761565262257
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.008453451739534
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.540735240499934
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.466365956604053
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.696492308158774
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 4.4703779196464914
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.03443194965251
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.46204320671159
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.48206821214678
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.109591714709707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.20956492368422
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.050787212119147
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 19.32682912787056
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.640933008795635
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.736572158569816
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.0542474241262
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 13.29019459754678
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.93868219128161
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.575838371420645
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.21048690785011
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.98937541816243
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.222213359241632
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.317671709170511
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.32578228174368
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.95986151505825
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.65073660837208
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.00921919609884
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.50104917163945
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.654584994836096
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.05240827472434
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.37392111139644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.595250396382028
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.59600660357952
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.70106193890684
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.647176242073451
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 7.000966394950184
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.64417731080799
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.44415420112195
+    },
+    {
+      "check": "tooling_to_copper",
+      "detail": {
+        "x": 3.85,
+        "y": 12,
+        "clearance_mm": 8.250129386758351
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 15.353695639053667
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.89795454422778
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.55641541474499
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.292401971001766
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.0831788160994
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.62270868814849
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.918416679159254
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.62397432759512
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.431593639277395
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.19454678552354
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 52.66008462533967
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.59412641385076
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 52.17764636678601
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.792390813611057
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.205352578146446
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.37034780548487
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.47165807621506
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.70132094457715
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.30744394081324
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.43995027023307
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.081466937560318
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.150576082518342
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.96289373932144
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.06364160586757
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.45585681569295
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.91249950916657
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.288913593159805
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.196439652917334
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.7551213069007
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.52594415431826
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.78535536936952
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.79997190491654
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.74269006692777
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 49.18949444188415
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.356591507814755
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.00753237398307
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.32005407046236
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.639750633564255
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.496448952245686
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.800117591817234
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.95261178667977
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.52308990721583
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.13025984718884
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.38027347619507
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 61.974346778915596
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 21.671774461661048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.806763392243433
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.250050130799337
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.10785648832845
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.82179011675467
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.04324778683513
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.02123633443878
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.132078846466634
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.86595270523875
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.03848728541048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.70699055319915
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 10.229863077659608
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.42569557736824
+    },
+    {
+      "check": "tooling_to_copper",
+      "detail": {
+        "x": 66.15,
+        "y": 12,
+        "clearance_mm": 8.246936138186053
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 52.82964696127574
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 53.676546839625274
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 54.67073342982651
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 55.80455008565442
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 57.06991406778549
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.63763783954806
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.18775697523527
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.326898707092
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.538656877334887
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.382206787852606
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 11.670282001989134
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.76049457184871
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 8.988571447840407
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 54.3211805573295
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 49.6243833963472
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.834342615542916
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.85131130076232
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.646652606619515
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.89796871849392
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.26834588002673
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.69277371849911
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.44681768995048
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.75906023597777
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.564120982249648
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.83636334552724
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 16.489934478201675
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.73713092859078
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.06924314952959
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 18.76641847998766
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.141051031843322
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.41589410742731
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.37255513326199
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.90430624715497
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.880053456257063
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.461941829725824
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.61567835086049
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.594456897952604
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.24619939837283
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.74866897695927
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.628825225880693
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.31003408318396
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.832559351250076
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 25.478230211167304
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.22835121487566
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.03646947626973
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.471896269887644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.67466050405581
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 53.90407004572988
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.782364210074114
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.57668161569974
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.462360028076645
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.627266148600434
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.05977491348305
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.98977324067181
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 17.444778444826547
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 12.841655349771363
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.517826889980014
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 59.61403822496011
+    },
+    {
+      "check": "tooling_to_copper",
+      "detail": {
+        "x": 3.85,
+        "y": 58,
+        "clearance_mm": 12.395715075215767
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.773384852727144
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.91342176384946
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.083178816099398
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 23.29240197100177
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 20.55641541474499
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.78330265585335
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.165452918515825
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.22852446363867
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.62720592934155
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 55.503537195798515
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 62.49799971950755
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 58.345286279782314
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 65.05832236527752
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 22.530055253397084
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 26.419099524417394
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.04043467762089
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.83153676565644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.706630836991785
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.1030434152852
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.6975272141814
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.88273506119326
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.25409196945465
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 45.44964615835376
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.60976058487325
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.1000269322997
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 59.40266776451261
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.08878050831233
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.70463882453132
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 56.97111005338668
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 58.349937772984575
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.33858275104207
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.82424087461689
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.681793272165606
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.2672431724177
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 49.094431516691294
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.93250864607094
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 48.01371523744482
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.101954884357944
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.256277096391145
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.600579104168744
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.83483531232151
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.31996440701011
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.6780275632084
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.975383096264274
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 54.12638602739051
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.88374167447122
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 30.222999716919652
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 24.155417216226166
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.6876984670707
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.59094623620228
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.45415616859619
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.69275841944218
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.396927734617513
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.50504285618659
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 57.489823823045654
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 62.14333171647488
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.199255695071564
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.393104680545306
+    },
+    {
+      "check": "tooling_to_copper",
+      "detail": {
+        "x": 66.15,
+        "y": 58,
+        "clearance_mm": 12.39671316394508
+      }
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 59.961902011766604
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 58.45854409164813
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 57.06991406778549
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 55.80455008565442
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 54.67073342982651
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 52.33282429631955
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.437671476152005
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 46.8250952559799
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 43.496973375060314
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.88249934686983
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.9211643097919
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 41.82781676261702
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.14270381734503
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.20696380545714
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 47.37766236736214
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 54.77428535985128
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 58.78432242781762
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.905316816454025
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 42.40979265108577
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.744364173631666
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 49.17712565700666
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 61.50502870413185
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.46137478279859
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.850175228630555
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 44.21656953379965
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.940613621671865
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.353070692477644
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.101046831766137
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.781661117230136
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 40.034541388980315
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.17256175560765
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.285649265383526
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 32.56650236487771
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.30702901942633
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 28.720497264162166
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.15615837087181
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 31.77179732280938
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.78297285346423
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.1413161786603
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.32241894729231
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 37.190222706625676
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 35.337708723723466
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 29.941201763745546
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.9887507366448
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 14.326200053421456
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 53.566674257688746
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 50.245030378506954
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 52.892046225787574
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 39.898817502651355
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.33207468724572
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.74717191730912
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 34.23949019587733
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 33.974703674821626
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 27.297902430427705
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 38.281364906285326
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 36.32056957036248
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 63.020079405725404
+    },
+    {
+      "check": "panel_hole_to_unit_drill",
+      "detail": 51.64590822892053
+    },
+    {
+      "check": "overhanging_body_inside_actual_cutout",
+      "detail": "MCU1"
+    },
+    {
+      "check": "overhanging_body_inside_actual_cutout",
+      "detail": "J2"
+    },
+    {
+      "check": "antenna_clear_of_panel_material",
+      "detail": [
+        37.5,
+        48.001,
+        55.5,
+        54.0
+      ]
+    }
+  ],
+  "errors": []
+}

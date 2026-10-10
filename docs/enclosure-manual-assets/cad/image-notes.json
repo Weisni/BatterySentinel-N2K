@@ -1,0 +1,546 @@
+{
+  "source_cad": "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-sealed-enclosure.FCStd",
+  "source_sha256": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2",
+  "images": {
+    "rigid-kit": {
+      "file": "rigid-kit.png",
+      "description": "Actual delivered parts; panels are individually scaled for clarity.",
+      "panels": [
+        {
+          "part": "base",
+          "centre_px": [
+            333,
+            350
+          ],
+          "caption_px": [
+            333,
+            630
+          ],
+          "viewport_px": [
+            0,
+            0,
+            667,
+            700
+          ]
+        },
+        {
+          "part": "lid",
+          "centre_px": [
+            1000,
+            350
+          ],
+          "caption_px": [
+            1000,
+            630
+          ],
+          "viewport_px": [
+            667,
+            0,
+            1333,
+            700
+          ]
+        },
+        {
+          "part": "usb_cover",
+          "centre_px": [
+            1667,
+            350
+          ],
+          "caption_px": [
+            1667,
+            630
+          ],
+          "viewport_px": [
+            1333,
+            0,
+            2000,
+            700
+          ]
+        },
+        {
+          "part": "service_switch_cover",
+          "centre_px": [
+            333,
+            1050
+          ],
+          "caption_px": [
+            333,
+            1330
+          ],
+          "viewport_px": [
+            0,
+            700,
+            667,
+            1400
+          ]
+        },
+        {
+          "part": "cable_pressure_cap",
+          "centre_px": [
+            1000,
+            1050
+          ],
+          "caption_px": [
+            1000,
+            1330
+          ],
+          "viewport_px": [
+            667,
+            700,
+            1333,
+            1400
+          ]
+        },
+        {
+          "part": "fit_coupon",
+          "centre_px": [
+            1667,
+            1050
+          ],
+          "caption_px": [
+            1667,
+            1330
+          ],
+          "viewport_px": [
+            1333,
+            700,
+            2000,
+            1400
+          ]
+        }
+      ],
+      "printed_part_count": 6
+    },
+    "flexible-kit": {
+      "file": "flexible-kit.png",
+      "description": "Actual delivered parts; panels are individually scaled for clarity.",
+      "panels": [
+        {
+          "part": "lid_gasket",
+          "centre_px": [
+            333,
+            233
+          ],
+          "caption_px": [
+            333,
+            420
+          ],
+          "viewport_px": [
+            0,
+            0,
+            667,
+            467
+          ]
+        },
+        {
+          "part": "usb_gasket",
+          "centre_px": [
+            1000,
+            233
+          ],
+          "caption_px": [
+            1000,
+            420
+          ],
+          "viewport_px": [
+            667,
+            0,
+            1333,
+            467
+          ]
+        },
+        {
+          "part": "service_switch_gasket",
+          "centre_px": [
+            1667,
+            233
+          ],
+          "caption_px": [
+            1667,
+            420
+          ],
+          "viewport_px": [
+            1333,
+            0,
+            2000,
+            467
+          ]
+        },
+        {
+          "part": "cable_blank",
+          "centre_px": [
+            333,
+            700
+          ],
+          "caption_px": [
+            333,
+            887
+          ],
+          "viewport_px": [
+            0,
+            467,
+            667,
+            933
+          ]
+        },
+        {
+          "part": "cable_seal_5p0mm",
+          "centre_px": [
+            1000,
+            700
+          ],
+          "caption_px": [
+            1000,
+            887
+          ],
+          "viewport_px": [
+            667,
+            467,
+            1333,
+            933
+          ]
+        },
+        {
+          "part": "cable_seal_5p5mm",
+          "centre_px": [
+            1667,
+            700
+          ],
+          "caption_px": [
+            1667,
+            887
+          ],
+          "viewport_px": [
+            1333,
+            467,
+            2000,
+            933
+          ]
+        },
+        {
+          "part": "cable_seal_6p0mm",
+          "centre_px": [
+            333,
+            1167
+          ],
+          "caption_px": [
+            333,
+            1353
+          ],
+          "viewport_px": [
+            0,
+            933,
+            667,
+            1400
+          ]
+        },
+        {
+          "part": "cable_seal_6p5mm",
+          "centre_px": [
+            1000,
+            1167
+          ],
+          "caption_px": [
+            1000,
+            1353
+          ],
+          "viewport_px": [
+            667,
+            933,
+            1333,
+            1400
+          ]
+        },
+        {
+          "part": "cable_seal_7p0mm",
+          "centre_px": [
+            1667,
+            1167
+          ],
+          "caption_px": [
+            1667,
+            1353
+          ],
+          "viewport_px": [
+            1333,
+            933,
+            2000,
+            1400
+          ]
+        }
+      ],
+      "printed_part_count": 9
+    },
+    "base-inserts": {
+      "file": "base-inserts.png",
+      "description": "Final base viewed almost from above: six lid insert pilots and four independent PCB insert pilots.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "lid_pilot_1": [
+          493,
+          750
+        ],
+        "lid_pilot_2": [
+          1196,
+          1127
+        ],
+        "lid_pilot_3": [
+          793,
+          217
+        ],
+        "lid_pilot_4": [
+          1496,
+          594
+        ],
+        "lid_pilot_5": [
+          683,
+          865
+        ],
+        "lid_pilot_6": [
+          994,
+          313
+        ],
+        "pcb_mount_1": [
+          690,
+          749
+        ],
+        "pcb_mount_2": [
+          851,
+          464
+        ],
+        "pcb_mount_3": [
+          1139,
+          990
+        ],
+        "pcb_mount_4": [
+          1300,
+          705
+        ],
+        "lid_seal_groove": [
+          1020,
+          991
+        ]
+      },
+      "hardware_illustrative": false
+    },
+    "pcb-installation": {
+      "file": "pcb-installation.png",
+      "description": "Final base and actual R5 PCB/component bodies, with four illustrative 3.8 mm M2 screw heads.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "lid_pilot_1": [
+          493,
+          750
+        ],
+        "lid_pilot_2": [
+          1196,
+          1127
+        ],
+        "lid_pilot_3": [
+          793,
+          217
+        ],
+        "lid_pilot_4": [
+          1496,
+          594
+        ],
+        "lid_pilot_5": [
+          683,
+          865
+        ],
+        "lid_pilot_6": [
+          994,
+          313
+        ],
+        "pcb_mount_1": [
+          690,
+          742
+        ],
+        "pcb_mount_2": [
+          851,
+          456
+        ],
+        "pcb_mount_3": [
+          1139,
+          983
+        ],
+        "pcb_mount_4": [
+          1300,
+          697
+        ],
+        "lid_seal_groove": [
+          1020,
+          991
+        ]
+      },
+      "hardware_illustrative": true
+    },
+    "lid-exploded": {
+      "file": "lid-exploded.png",
+      "description": "Final base, PCB, lid seal and lid separated vertically; service covers omitted for clarity.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "base": [
+          995,
+          994
+        ],
+        "pcb": [
+          995,
+          1013
+        ],
+        "gasket": [
+          874,
+          748
+        ],
+        "lid": [
+          995,
+          333
+        ],
+        "gasket_corner": [
+          669,
+          647
+        ],
+        "lid_pilot_1": [
+          624,
+          903
+        ]
+      },
+      "exploded_offsets_mm": {
+        "lid": [
+          0,
+          0,
+          88
+        ],
+        "lid_gasket": [
+          0,
+          0,
+          40
+        ]
+      },
+      "hardware_illustrative": true
+    },
+    "usb-gasket": {
+      "file": "usb-gasket.png",
+      "description": "Actual cover groove and matching free-height 1.2 mm TPU gasket, separated for visibility. Mating face upward.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "cover": [
+          1000,
+          751
+        ],
+        "gasket": [
+          898,
+          769
+        ],
+        "groove": [
+          895,
+          889
+        ]
+      },
+      "parts": [
+        "usb_cover",
+        "usb_gasket"
+      ],
+      "exploded_not_print_orientation": true
+    },
+    "service_switch-gasket": {
+      "file": "service_switch-gasket.png",
+      "description": "Actual cover groove and matching free-height 1.2 mm TPU gasket, separated for visibility. Mating face upward.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "cover": [
+          1000,
+          763
+        ],
+        "gasket": [
+          914,
+          725
+        ],
+        "groove": [
+          911,
+          874
+        ]
+      },
+      "parts": [
+        "service_switch_cover",
+        "service_switch_gasket"
+      ],
+      "exploded_not_print_orientation": true
+    },
+    "cable-exploded": {
+      "file": "cable-exploded.png",
+      "description": "Cropped actual cable-entry wall with its socket shoulder, actual pressure cap and nominal 6 mm option sleeve; neutral unconnected 5 mm cable reference. Expanded spacing; no deformation simulation.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "pressure_cap": [
+          825,
+          838
+        ],
+        "sleeve": [
+          1042,
+          605
+        ],
+        "socket_shoulder": [
+          1368,
+          476
+        ],
+        "neutral_cable": [
+          618,
+          862
+        ],
+        "pilot_1": [
+          1395,
+          672
+        ],
+        "pilot_2": [
+          1171,
+          488
+        ]
+      },
+      "cutaway": true,
+      "cable_illustrative": true,
+      "cable_diameter_not_product_measurement": true,
+      "sleeve_geometry": "6.0 mm label; 5.8 mm free bore; actual product cable OD remains unknown"
+    },
+    "assembled": {
+      "file": "assembled.png",
+      "description": "All nine delivered assembly solids in their original seated CAD positions. USB and switch covers fitted; solid cable blank installed. Fasteners and electronics omitted. Seated gaskets are concealed by the rigid parts.",
+      "pixel_coordinates": "origin top-left; image 2000 by 1400 pixels",
+      "annotations": {
+        "lid": [
+          990,
+          604
+        ],
+        "usb_cover": [
+          844,
+          1084
+        ],
+        "service_switch_cover": [
+          1272,
+          959
+        ],
+        "mount_ear_positive_y": [
+          1438,
+          760
+        ],
+        "mount_ear_negative_y": [
+          671,
+          497
+        ]
+      },
+      "assembly_solid_count": 9,
+      "parts": [
+        "base",
+        "lid",
+        "lid_gasket",
+        "usb_cover",
+        "usb_gasket",
+        "service_switch_cover",
+        "service_switch_gasket",
+        "cable_pressure_cap",
+        "cable_blank"
+      ],
+      "hardware_omitted": true
+    }
+  }
+}

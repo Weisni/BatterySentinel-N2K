@@ -7,12 +7,20 @@
 namespace bs {
 
 bool OrionBleReceiver::begin(const String& mac, const uint8_t key[16]) {
-    if (mac.length() != 17 || !key) return false;
+    if (mac.length() != 17 || !key) {
+        lastProblem_ = "Invalid BLE settings";
+        ++startupFailures_;
+        return false;
+    }
     mac_ = mac;
     mac_.toLowerCase();
     std::memcpy(key_, key, sizeof(key_));
     queue_ = xQueueCreate(8, sizeof(Frame));
-    if (!queue_) return false;
+    if (!queue_) {
+        lastProblem_ = "BLE queue allocation failed";
+        ++startupFailures_;
+        return false;
+    }
     BLEDevice::init("");
     scan_ = BLEDevice::getScan();
     scan_->setAdvertisedDeviceCallbacks(this, true);
@@ -20,7 +28,10 @@ bool OrionBleReceiver::begin(const String& mac, const uint8_t key[16]) {
     scan_->setInterval(160);
     scan_->setWindow(120);
     ready_ = scan_->start(0, nullptr, false);
-    if (!ready_) lastProblem_ = "BLE scan failed";
+    if (!ready_) {
+        lastProblem_ = "BLE scan failed";
+        ++startupFailures_;
+    }
     return ready_;
 }
 
@@ -44,30 +55,41 @@ bool OrionBleReceiver::poll(orion::Telemetry& telemetry) {
     Frame frame;
     bool accepted = false;
     while (xQueueReceive(queue_, &frame, 0) == pdTRUE) {
-        if (decode(frame, telemetry)) accepted = true;
-        else ++rejectedFrames_;
+        switch (decode(frame, telemetry)) {
+        case DecodeResult::Accepted: accepted = true; break;
+        case DecodeResult::Duplicate: ++duplicateFrames_; break;
+        case DecodeResult::Rejected: ++rejectedFrames_; break;
+        }
     }
     return accepted;
 }
 
-bool OrionBleReceiver::decode(const Frame& frame, orion::Telemetry& telemetry) {
+orion::Telemetry OrionBleReceiver::snapshot(const orion::Telemetry& telemetry) const {
+    portENTER_CRITICAL(&telemetryMux_);
+    const orion::Telemetry result = telemetry;
+    portEXIT_CRITICAL(&telemetryMux_);
+    return result;
+}
+
+OrionBleReceiver::DecodeResult OrionBleReceiver::decode(const Frame& frame,
+                                                        orion::Telemetry& telemetry) {
     const uint8_t* b = frame.bytes;
     // Arduino BLE includes the two-byte Bluetooth company identifier.
     if (b[0] != 0xe1 || b[1] != 0x02 || b[2] != 0x10 ||
         orion::little16(b + 4) != 0xa3f1 || b[6] != 0x0f) {
         lastProblem_ = "Unsupported advertisement";
-        return false;
+        return DecodeResult::Rejected;
     }
     if (b[9] != key_[0]) {
         lastProblem_ = "Encryption key mismatch";
-        return false;
+        return DecodeResult::Rejected;
     }
     const uint16_t counter = orion::little16(b + 7);
-    if (haveCounter_ && counter == lastCounter_) return false;
+    if (haveCounter_ && counter == lastCounter_) return DecodeResult::Duplicate;
     const size_t encryptedLength = frame.length - 10;
     if (encryptedLength < 14 || encryptedLength > 22) {
         lastProblem_ = "Truncated or oversized record";
-        return false;
+        return DecodeResult::Rejected;
     }
 
     uint8_t plaintext[22]{};
@@ -85,13 +107,13 @@ bool OrionBleReceiver::decode(const Frame& frame, orion::Telemetry& telemetry) {
     mbedtls_aes_free(&aes);
     if (cryptResult != 0) {
         lastProblem_ = "AES decode failed";
-        return false;
+        return DecodeResult::Rejected;
     }
 
     orion::Telemetry candidate;
     if (!orion::decodeXsRecord(plaintext, encryptedLength, candidate)) {
         lastProblem_ = "Record decode failed";
-        return false;
+        return DecodeResult::Rejected;
     }
     // CTR does not authenticate the packet. Basic bounds prevent a wrong key
     // from becoming a plausible measurement, but a real device comparison is
@@ -107,18 +129,20 @@ bool OrionBleReceiver::decode(const Frame& frame, orion::Telemetry& telemetry) {
         !plausibleCurrent(candidate.inputCurrent) ||
         !plausibleCurrent(candidate.outputCurrent)) {
         lastProblem_ = "Implausible decoded values";
-        return false;
+        return DecodeResult::Rejected;
     }
     candidate.counter = counter;
     candidate.receivedAtMs = frame.atMs;
     candidate.rssi = frame.rssi;
     candidate.received = true;
+    portENTER_CRITICAL(&telemetryMux_);
     telemetry = candidate;
+    portEXIT_CRITICAL(&telemetryMux_);
     lastCounter_ = counter;
     haveCounter_ = true;
     lastProblem_ = "Receiving";
     ++receivedFrames_;
-    return true;
+    return DecodeResult::Accepted;
 }
 
 } // namespace bs

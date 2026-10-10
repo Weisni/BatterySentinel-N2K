@@ -1,3 +1,5 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](internal/README.md).
+
 # Simulation strategy
 
 ## V1 requirement
@@ -47,7 +49,7 @@ Target UI:
 
 ### Online hosting
 
-`.github/workflows/simulator-pages.yml` deploys `sim/web/` through GitHub Pages. GitHub Pages must be enabled for the repository with **GitHub Actions** as the publishing source. Because the main repository is private, the account/plan must support Pages from private repositories. Otherwise the same static simulator can be published from a separate public simulator repository without exposing the main firmware repository.
+`.github/workflows/simulator-pages.yml` runs JavaScript syntax checks only. The simulator remains project-internal and is opened locally. It is not published by the project workflow.
 
 ## B. Wokwi — planned firmware/peripheral simulator
 

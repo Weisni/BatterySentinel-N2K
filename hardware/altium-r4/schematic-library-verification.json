@@ -1,0 +1,40 @@
+{
+  "components": 52,
+  "nets": 35,
+  "internal_component_connections": {
+    "D6": {
+      "mpn": "USBLC6-2SC6",
+      "pin_pairs": [
+        [
+          "1",
+          "6"
+        ],
+        [
+          "3",
+          "4"
+        ]
+      ],
+      "source": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "evidence": "Manufacturer functional diagram, p1; copper nets stay separate on either side of the internally connected protection package."
+    }
+  },
+  "schematic_records": {
+    "Orion-Bridge-R4-Logic": 742,
+    "Orion-Bridge-R4-Power": 754
+  },
+  "library_components": 52,
+  "library_footprints": 21,
+  "passed": true,
+  "release_checks_complete": false,
+  "checks": 8527,
+  "errors": [],
+  "scope": "schematics_and_libraries",
+  "qualification": "Checks the generated package/source files only. Native Altium ERC/DRC, fabrication DFM, assembly orientation approval and hardware qualification are separate.",
+  "input_sha256": {
+    "orion-r4-design.json": "1c57cca7a476cb6991a6718c25f21eef19f0b6858618dbc5364307599cedaea0",
+    "Orion-Bridge-R4-Logic.SchDoc": "7a8ef36b4d589e2f132c790886aa7842bf479fe6c7058e3e488c3757191958fb",
+    "Orion-Bridge-R4-Power.SchDoc": "e9d0f136ea4d6e0c1f9bf1421e356e720aec3dc0223bd9cbbdbd6f2cb95e32f6",
+    "Orion-Bridge.SchLib": "d77b209896f57a6b6c006ad581fb51aa3c54481c0328a12308f971fa74954085",
+    "Orion-Bridge.PcbLib": "074a7a4889ed79b03b3fec930b9fede1291d85a0bf06c910513483951b012f68"
+  }
+}

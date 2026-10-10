@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "source_snapshot_stable": true,
+  "packages": [
+    {
+      "name": "Orion-Bridge-R4-Altium.zip",
+      "sha256": "02d110d6f2d0d2860030fb3637babf8faf011cf2f50417c08f659c931c2afe6b",
+      "bytes": 8934009,
+      "files": 203,
+      "zip_crc_passed": true,
+      "all_payload_bytes_read_back": true,
+      "internal_sha256_manifest": true,
+      "prefix": "Orion-Bridge-R4"
+    },
+    {
+      "name": "Orion-Bridge-R4-JLCPCB-PCBA.zip",
+      "sha256": "5e8d8105bc685aafce04db4f198008d8c85a7992512b5794d8798de6b4ea5072",
+      "bytes": 1062369,
+      "files": 18,
+      "zip_crc_passed": true,
+      "all_payload_bytes_read_back": true,
+      "internal_sha256_manifest": true,
+      "prefix": "Orion-Bridge-R4-PCBA"
+    }
+  ],
+  "excluded": [
+    "History",
+    "autosaves",
+    "PrjPcbStructure cache",
+    "fixed routing intermediates",
+    "temporary or failed proof artifacts"
+  ]
+}

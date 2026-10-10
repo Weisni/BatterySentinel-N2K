@@ -1,0 +1,432 @@
+{
+  "passed": true,
+  "plates": [
+    {
+      "plate": 1,
+      "name": "01 PETG enclosure - two colours",
+      "filament_slot": 1,
+      "parts": [
+        "usb_cover",
+        "service_switch_cover",
+        "cable_pressure_cap",
+        "strain_relief_upper",
+        "base",
+        "lid_body"
+      ],
+      "toolpath_bytes": 12477183,
+      "filaments": [
+        {
+          "id": "1",
+          "tray_info_idx": "GFG99",
+          "type": "PETG",
+          "color": "#395F75",
+          "used_m": "32.15",
+          "used_g": "98.22",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        },
+        {
+          "id": "2",
+          "tray_info_idx": "GFG99",
+          "type": "PETG",
+          "color": "#F5F5ED",
+          "used_m": "0.10",
+          "used_g": "0.30",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M104 T0 S255 N0",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 255,
+      "verified_bed_C": 70,
+      "all_parts_sliced": true
+    },
+    {
+      "plate": 2,
+      "name": "02 TPU lid - 245C trial",
+      "filament_slot": 4,
+      "parts": [
+        "lid_gasket"
+      ],
+      "toolpath_bytes": 142219,
+      "filaments": [
+        {
+          "id": "4",
+          "tray_info_idx": "GFU99",
+          "type": "TPU",
+          "color": "#EEB03F",
+          "used_m": "0.28",
+          "used_g": "0.85",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 245,
+      "verified_bed_C": 50,
+      "all_parts_sliced": true
+    },
+    {
+      "plate": 3,
+      "name": "03 TPU cable and service seals - 235C trial",
+      "filament_slot": 3,
+      "parts": [
+        "usb_gasket",
+        "service_switch_gasket",
+        "cable_seal_b6p8_L6p8"
+      ],
+      "toolpath_bytes": 449572,
+      "filaments": [
+        {
+          "id": "3",
+          "tray_info_idx": "GFU99",
+          "type": "TPU",
+          "color": "#EEB03F",
+          "used_m": "0.27",
+          "used_g": "0.80",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 235,
+      "verified_bed_C": 50,
+      "all_parts_sliced": true
+    },
+    {
+      "plate": 4,
+      "name": "04 OPTIONAL PETG fit coupons",
+      "filament_slot": 1,
+      "parts": [
+        "clamp_shims_0p2",
+        "clamp_shims_0p4",
+        "entry_fit_coupon",
+        "face_stop_coupon_1p4",
+        "face_stop_coupon_1p6",
+        "cable_pressure_cap",
+        "strain_relief_upper"
+      ],
+      "toolpath_bytes": 3454407,
+      "filaments": [
+        {
+          "id": "1",
+          "tray_info_idx": "GFG99",
+          "type": "PETG",
+          "color": "#395F75",
+          "used_m": "7.58",
+          "used_g": "23.15",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 255,
+      "verified_bed_C": 70,
+      "all_parts_sliced": true
+    },
+    {
+      "plate": 5,
+      "name": "05 OPTIONAL TPU variants and calibration - 235C",
+      "filament_slot": 3,
+      "parts": [
+        "cable_seal_b6p7_L6p6",
+        "cable_seal_b6p7_L6p8",
+        "cable_seal_b6p7_L7p0",
+        "cable_seal_b6p8_L6p6",
+        "cable_seal_b6p8_L7p0",
+        "cable_seal_b6p9_L6p6",
+        "cable_seal_b6p9_L6p8",
+        "cable_seal_b6p9_L7p0",
+        "face_test_gasket",
+        "shore_comparison_pad",
+        "flow_wall_coupon"
+      ],
+      "toolpath_bytes": 2892342,
+      "filaments": [
+        {
+          "id": "3",
+          "tray_info_idx": "GFU99",
+          "type": "TPU",
+          "color": "#EEB03F",
+          "used_m": "7.61",
+          "used_g": "22.71",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 235,
+      "verified_bed_C": 50,
+      "all_parts_sliced": true
+    },
+    {
+      "plate": 6,
+      "name": "06 OPTIONAL TPU calibration - 245C",
+      "filament_slot": 4,
+      "parts": [
+        "shore_comparison_pad",
+        "flow_wall_coupon",
+        "face_test_gasket"
+      ],
+      "toolpath_bytes": 677718,
+      "filaments": [
+        {
+          "id": "4",
+          "tray_info_idx": "GFU99",
+          "type": "TPU",
+          "color": "#EEB03F",
+          "used_m": "6.54",
+          "used_g": "19.51",
+          "group_id": "0",
+          "nozzle_diameter": "0.40",
+          "volume_type": "Standard",
+          "used_for_object": "true",
+          "used_for_support": "false"
+        }
+      ],
+      "temperature_commands": [
+        "M104 S0 ; turn off hotend",
+        "M140 S0 ; turn off bed"
+      ],
+      "verified_nozzle_C": 245,
+      "verified_bed_C": 50,
+      "all_parts_sliced": true
+    }
+  ],
+  "filament_profiles": [
+    "Orion V2 PETG - calibrate actual spool",
+    "Orion V2 contrasting PETG",
+    "SainSmart TPU Air 235C - UNCALIBRATED FLOW",
+    "SainSmart TPU Air 245C - UNCALIBRATED FLOW"
+  ],
+  "native_slicer": "C:\\Program Files\\QuackSlicer\\quack-slicer.exe",
+  "sha256": "b98eb220fd99e4c57ae836cb81e18e4e600ec46ede8e216d9c40127d7e842c30",
+  "physical_calibration_pending": true,
+  "geometry": {
+    "passed": true,
+    "parts": [
+      {
+        "name": "base",
+        "triangles": 63660,
+        "max_vertex_error_mm": 2.895788576040559e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "lid_body",
+        "triangles": 102082,
+        "max_vertex_error_mm": 4.1371909560439235e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "strain_relief_upper",
+        "triangles": 19348,
+        "max_vertex_error_mm": 9.585351570251532e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "usb_cover",
+        "triangles": 2612,
+        "max_vertex_error_mm": 9.909790037454513e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_pressure_cap",
+        "triangles": 4418,
+        "max_vertex_error_mm": 1.1214603432563308e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "service_switch_cover",
+        "triangles": 2188,
+        "max_vertex_error_mm": 9.54863281776852e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "lid_gasket",
+        "triangles": 27848,
+        "max_vertex_error_mm": 1.956957987658825e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "usb_gasket",
+        "triangles": 14704,
+        "max_vertex_error_mm": 9.586474618572538e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "service_switch_gasket",
+        "triangles": 11512,
+        "max_vertex_error_mm": 9.586474618572538e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p8_L6p8",
+        "triangles": 35468,
+        "max_vertex_error_mm": 7.201873799544956e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "entry_fit_coupon",
+        "triangles": 26110,
+        "max_vertex_error_mm": 1.0035261546192942e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "strain_relief_upper",
+        "triangles": 19348,
+        "max_vertex_error_mm": 9.585351534724396e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "clamp_shims_0p2",
+        "triangles": 1824,
+        "max_vertex_error_mm": 9.582714568523443e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "clamp_shims_0p4",
+        "triangles": 1824,
+        "max_vertex_error_mm": 9.582714568523443e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_pressure_cap",
+        "triangles": 4418,
+        "max_vertex_error_mm": 1.1214603432563308e-06,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "face_stop_coupon_1p4",
+        "triangles": 508,
+        "max_vertex_error_mm": 9.120239212734305e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "face_stop_coupon_1p6",
+        "triangles": 508,
+        "max_vertex_error_mm": 9.120239248261441e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "shore_comparison_pad",
+        "triangles": 492,
+        "max_vertex_error_mm": 9.120239496951399e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "flow_wall_coupon",
+        "triangles": 992,
+        "max_vertex_error_mm": 4.661437742470298e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "face_test_gasket",
+        "triangles": 14032,
+        "max_vertex_error_mm": 9.586474334355444e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p7_L6p6",
+        "triangles": 38504,
+        "max_vertex_error_mm": 7.201654170785332e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p7_L6p8",
+        "triangles": 37388,
+        "max_vertex_error_mm": 7.201873586382135e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p7_L7p0",
+        "triangles": 39808,
+        "max_vertex_error_mm": 7.202093570413126e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p8_L6p6",
+        "triangles": 36584,
+        "max_vertex_error_mm": 7.201654170785332e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p8_L7p0",
+        "triangles": 37888,
+        "max_vertex_error_mm": 7.202093570413126e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p9_L6p6",
+        "triangles": 34664,
+        "max_vertex_error_mm": 7.201654170785332e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p9_L6p8",
+        "triangles": 33548,
+        "max_vertex_error_mm": 7.201873870599229e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "cable_seal_b6p9_L7p0",
+        "triangles": 35968,
+        "max_vertex_error_mm": 7.202093570413126e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "shore_comparison_pad",
+        "triangles": 492,
+        "max_vertex_error_mm": 9.120239496951399e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "flow_wall_coupon",
+        "triangles": 992,
+        "max_vertex_error_mm": 4.661437742470298e-07,
+        "oriented_triangles_identical": true
+      },
+      {
+        "name": "face_test_gasket",
+        "triangles": 14032,
+        "max_vertex_error_mm": 9.586474334355444e-07,
+        "oriented_triangles_identical": true
+      }
+    ],
+    "duplicate_vertices_at_colour_boundaries_allowed": true
+  },
+  "reopened_without_external_profile_overrides": true
+}

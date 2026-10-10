@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-25",
+  "source_project_preserved_sha256": "c94d319f5acee1d190de32762ca961979ed20dfc42a9913403a2c829f027bd8a",
+  "sha256": {
+    "hardware/altium-r5/enclosure/sealed-print/Orion-R5-P2S-flush-colour.3mf": "2ce6d8e43809337c5c3e84b0ea0d91375c9ce5523adcc6649ce19d30b55de7ea",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/Orion-R5-flush-enclosure.FCStd": "bd35e1ac664bea52697bcbb4b1f72ce12754b819448736cdb4ea61c5087b40b5",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/Orion-R5-flush-lid.step": "4b3877cb79d391ec344294c0f547ebc0e318f92babd9b7ce6671d69f43f44f8a",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/lid_body.stl": "c65c93608722013e062ca517f75321fd10ad264781d4ca3e235780632aa3803d",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/lid_markings.stl": "1e6caab1e16361b359390693c9243e1f15d436ae8e7c4f5d0ec7a7fcffbe7dec",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/lid-flush-preview.png": "fa41d449cbe2a34eee246af192d94938e32c02dc61753afc6d8e92473344b645",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/flush-lid-validation.json": "e511a510728b3fd167275cf36a409191165a1bd2592eecf50b61c967afcf254e",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/project-preservation-validation.json": "ab68d1e509b359d47bb1d288dbe4c0e63c7b9d78e0d8aa174d6800cac42b3358",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/independent-review.md": "c962bead2f89c15ec65dd3bc72379aa59bbad954df7cf61b6d5cb37c51547c69",
+    "hardware/altium-r5/enclosure/sealed-print/flush-colour/README.md": "007b490ab06cc2eb5051cafb85b5e7fcfa455ca00e6f5d892861d2af64c2676e",
+    "tools/build_orion_r5_flush_lid.py": "72b46f05bce7615c53f9180e6b4665dc4dea5756822a6c51f53f039b1c7cda23",
+    "tools/update_orion_flush_project.py": "442683d78c4741db43134acc7acc000e0e9111669232ad8739064d115914cf7f"
+  }
+}

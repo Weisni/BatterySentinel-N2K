@@ -1,0 +1,30 @@
+{
+  "components": 52,
+  "nets": 35,
+  "internal_component_connections": {
+    "D6": {
+      "mpn": "USBLC6-2SC6",
+      "pin_pairs": [
+        [
+          "1",
+          "6"
+        ],
+        [
+          "3",
+          "4"
+        ]
+      ],
+      "source": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+      "evidence": "Manufacturer functional diagram, p1; copper nets stay separate on either side of the internally connected protection package."
+    }
+  },
+  "passed": true,
+  "release_checks_complete": false,
+  "checks": 711,
+  "errors": [],
+  "scope": "model_only",
+  "qualification": "Checks the generated package/source files only. Native Altium ERC/DRC, fabrication DFM, assembly orientation approval and hardware qualification are separate.",
+  "input_sha256": {
+    "orion-r4-design.json": "60001797c90b53ab5f23688305fe46940fa7714a2cd6b2a4c567e2945dba31ed"
+  }
+}

@@ -1,0 +1,583 @@
+{
+  "revision": "R5 power source review v1",
+  "date": "2026-09-23",
+  "cad_implementation_selected": true,
+  "physical_sample_tested": false,
+  "electrical_prototype_qualified": false,
+  "scope": "Circuit/part-source and integration-interface review; not nativeDRC or production qualification",
+  "module_identity": "Amazon B0FN4F6244 Meshnology4xC3; unchanged originalSuperMini architecture",
+  "sources": [
+    {
+      "id": "switch",
+      "url": "https://static.chipdip.ru/lib/011/DOC043011829.pdf",
+      "type": "manufacturer drawing hosted by distributor",
+      "revision": "MK-12C02-GXXX X1 2019-05-29",
+      "inspection": "Visually reviewed all dimensions, circuitA/B and ratings"
+    },
+    {
+      "id": "switch_jlc",
+      "url": "https://jlcpcb.com/partdetail/gswitch-MK_12C02G020/C963206",
+      "type": "assembly supplier current observation",
+      "date": "2026-09-23",
+      "mpn": "MK-12C02-G020",
+      "lcsc": "C963206",
+      "in_stock": true,
+      "assembly": "SMT Economic/Standard; no fixture",
+      "reservation": false
+    },
+    {
+      "id": "buck",
+      "url": "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf",
+      "type": "manufacturer datasheet",
+      "revision": "DS41326 Rev3-2 November2024"
+    },
+    {
+      "id": "isolation",
+      "url": "https://resources.ampheo.com/static/datasheets/evisun/20240927/b2405s-3wr2.pdf",
+      "type": "manufacturer datasheet hosted by distributor",
+      "revision": "EVISUN B_S-3WR2 V1.0"
+    },
+    {
+      "id": "mcu_current",
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf",
+      "type": "manufacturer datasheet",
+      "revision": "v2.4",
+      "page": 56
+    },
+    {
+      "id": "mcu_supply_guidance",
+      "url": "https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html",
+      "type": "manufacturer design guidance"
+    },
+    {
+      "id": "module",
+      "url": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+      "type": "user-selected exact assembly, sellerC3 schematic cross-check",
+      "local_images": [
+        "references/amazon-B0FN4F6244-schematic.jpg",
+        "references/amazon-B0FN4F6244-core-schematic.jpg"
+      ]
+    }
+  ],
+  "reviewed_pin_maps": {
+    "U2": {
+      "1": "5V_BUS",
+      "2": "GND_BUS",
+      "4": "GND_LOGIC",
+      "6": "5V_ISO"
+    },
+    "U4": {
+      "1": "5V_REG",
+      "2": "5V_ISO",
+      "3": "5V_ISO",
+      "4": "GND_LOGIC",
+      "5": "SW_LOGIC",
+      "6": "BST_LOGIC"
+    },
+    "L3": {
+      "1": "SW_LOGIC",
+      "2": "5V_REG"
+    },
+    "C29": {
+      "1": "5V_ISO",
+      "2": "GND_LOGIC"
+    },
+    "C30": {
+      "1": "5V_ISO",
+      "2": "GND_LOGIC"
+    },
+    "C31": {
+      "1": "BST_LOGIC",
+      "2": "SW_LOGIC"
+    },
+    "C32": {
+      "1": "5V_REG",
+      "2": "GND_LOGIC"
+    },
+    "C33": {
+      "1": "5V_REG",
+      "2": "GND_LOGIC"
+    },
+    "C34": {
+      "1": "5V_MODULE",
+      "2": "GND_LOGIC"
+    },
+    "R20": {
+      "1": "5V_ISO",
+      "2": "GND_LOGIC"
+    },
+    "R21": {
+      "1": "5V_ISO",
+      "2": "GND_LOGIC"
+    },
+    "SW3": {
+      "1": "5V_REG",
+      "2": "5V_MODULE",
+      "3": null,
+      "4": "GND_LOGIC",
+      "5": "GND_LOGIC",
+      "6": "GND_LOGIC",
+      "7": "GND_LOGIC"
+    }
+  },
+  "part_identities": {
+    "U3": {
+      "mpn": "AP63205WU-7",
+      "lcsc": "C2071056"
+    },
+    "U4": {
+      "mpn": "AP63205WU-7",
+      "lcsc": "C2071056"
+    },
+    "U2": {
+      "mpn": "B0505S-3WR2",
+      "lcsc": "C7500927"
+    },
+    "L2": {
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269"
+    },
+    "L3": {
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269"
+    },
+    "C20": {
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687"
+    },
+    "C21": {
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687"
+    },
+    "C22": {
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891"
+    },
+    "C23": {
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891"
+    },
+    "C24": {
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C25": {
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850"
+    },
+    "C26": {
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C27": {
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891"
+    },
+    "C28": {
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C29": {
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850"
+    },
+    "C30": {
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C31": {
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C32": {
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891"
+    },
+    "C33": {
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891"
+    },
+    "R20": {
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541"
+    },
+    "R21": {
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541"
+    },
+    "D1": {
+      "mpn": "SMBJ18A",
+      "lcsc": "C152104"
+    },
+    "D5": {
+      "mpn": "SS26",
+      "lcsc": "C14238"
+    },
+    "F1": {
+      "mpn": "SF-1206S080-2",
+      "lcsc": "C3032873"
+    },
+    "C34": {
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850"
+    },
+    "SW3": {
+      "mpn": "MK-12C02-G020",
+      "lcsc": "C963206"
+    }
+  },
+  "calculation": {
+    "module_current_A": 0.4,
+    "module_voltage_for_power_budget_V": 5,
+    "u4_efficiency_assumed": 0.85,
+    "raw_voltage_V": 4.625,
+    "preload_parallel_ohm_nom": 75,
+    "preload_ohm_min": 74.25,
+    "preload_current_A": 0.06228956228956229,
+    "isolator_total_output_current_A": 0.5710336004453651,
+    "isolator_output_power_W": 2.6410304020598137,
+    "isolator_current_limit_A": 0.6,
+    "minimum_u4_efficiency_required_for_case": 0.8042105975731525,
+    "u2_efficiency_assumed": 0.82,
+    "u3_efficiency_assumed": 0.8,
+    "can_bus_current_A": 0.0734,
+    "diode_drop_assumed_V": 0.7,
+    "bus_voltage_V": 9,
+    "bus_current_before_small_fuse_copper_losses_A": 0.5403266239457488,
+    "published_esp_rf_example_A": 0.335,
+    "rf_condition": "WiFi802.11b1Mbps21dBm,3.3V25C; not universalmax and not BLElimit",
+    "LEN_reservation": 12,
+    "guaranteed_5V_500mA_continuous": false
+  },
+  "dropout_estimate": {
+    "raw_V": 4.625,
+    "I_A": 0.4,
+    "high_side_ohm_assumed": 0.25,
+    "inductor_DCR_ohm": 0.078,
+    "copper_ohm_assumed": 0.05,
+    "switch_max_ohm": 0.1,
+    "module_input_estimate_V": 4.4338,
+    "guaranteed_bound": false,
+    "reason": "High-side RDS and complete moduleLDO dropout/thermal conditions not bounded at all operating conditions"
+  },
+  "service": {
+    "RUN": [
+      "1",
+      "2"
+    ],
+    "SERVICE": [
+      "2",
+      "3"
+    ],
+    "unused_pin": "3",
+    "ground_switching": false,
+    "USB_in_RUN_permitted": false,
+    "sequence": "SERVICE beforeUSB; disconnectUSB beforeRUN",
+    "mechanical_travel_to_A_B_explicitly_documented": false,
+    "action": "Confirm actualswitch continuity before any directionarrow label"
+  },
+  "layout": {
+    "functional_isolation_copper_mm": 3.2,
+    "power_path_min_width_mm": 0.4,
+    "power_path_preferred_width_mm": 0.5,
+    "quiet_feedback_is_not_main_load_path": true,
+    "preload_before_switch": true
+  },
+  "validation": {
+    "checks": [
+      {
+        "name": "U2 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "U4 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "L3 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C29 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C30 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C31 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C32 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C33 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "C34 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "R20 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "R21 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "SW3 manufacturer-reviewed circuit pin map",
+        "passed": true
+      },
+      {
+        "name": "U3 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "U3 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "U4 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "U4 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "U2 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "U2 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "L2 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "L2 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "L3 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "L3 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C20 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C20 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C21 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C21 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C22 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C22 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C23 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C23 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C24 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C24 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C25 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C25 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C26 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C26 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C27 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C27 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C28 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C28 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C29 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C29 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C30 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C30 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C31 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C31 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C32 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C32 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C33 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C33 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "R20 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "R20 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "R21 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "R21 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "D1 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "D1 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "D5 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "D5 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "F1 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "F1 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "C34 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "C34 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "SW3 symbol/pad identity",
+        "passed": true
+      },
+      {
+        "name": "SW3 exact supplier match",
+        "passed": true
+      },
+      {
+        "name": "no old OR/3V3-regulator source",
+        "passed": true
+      },
+      {
+        "name": "no carrierUSB or5V_SYS net",
+        "passed": true
+      },
+      {
+        "name": "SW3 two1mm NPTH",
+        "passed": true
+      },
+      {
+        "name": "SW3 schematic electrical grid",
+        "passed": true
+      },
+      {
+        "name": "400mA calculation below U2 current with declared assumptions",
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "check_count": 69,
+    "meaning": "Source-level connectivity/identity/calculation checks only"
+  },
+  "qualification_pending": [
+    "9/12/16V coldstart/restart/loadrelease waveforms",
+    "400mA loadstep and500mA transient margin measurements",
+    "BLE+WiFiportal operation at configuredRF settings",
+    "ClosedcaseLDO/DC-DC/preload thermal measurements",
+    "SERVICE USB-only andUSB+bus reverse-feed/inrush checks",
+    "Purchasedswitch A/B travel continuity"
+  ],
+  "sha256": {
+    "power-components.json": "42e2facbc494852f46d3e39598bee99e743984070a0de142ca7bff2df007fbba",
+    "references/GSWITCH-MK-12C02-GXXX-X1.pdf": "290697043cacc90c34ec517f2e71177621096aec26731e948bbe41b5e2885717",
+    "references/Diodes-AP6320x-DS41326-Rev3-2.pdf": "ef99daa3789d835bc025dfcb4c605c5c2e6d3e7223e86d40b33e6b497ea5a722",
+    "references/EVISUN-B-S-3WR2-V1.0.pdf": "38d2aece0881cd41f7c200eaea5d2d0b742ff661aeb760871eaab4473eefab93"
+  }
+}

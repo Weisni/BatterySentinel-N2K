@@ -1,0 +1,1640 @@
+{
+  "passed": true,
+  "slicer": "C:\\Program Files\\QuackSlicer\\quack-slicer.exe",
+  "projects": [
+    {
+      "path": "Orion-V2-PETG.3mf",
+      "plates": 1,
+      "objects": 6,
+      "layout": [
+        [
+          {
+            "name": "base",
+            "id": 10,
+            "width": 96.79881834960543,
+            "height": 88.0,
+            "components": [
+              "base"
+            ],
+            "xy": [
+              15.0,
+              15.0
+            ]
+          },
+          {
+            "name": "lid_body",
+            "id": 13,
+            "width": 96.79881834960543,
+            "height": 66.80000305175781,
+            "components": [
+              "lid_body",
+              "lid_markings"
+            ],
+            "xy": [
+              121.79881834960543,
+              15.0
+            ]
+          },
+          {
+            "name": "strain_relief_upper",
+            "id": 8,
+            "width": 12.0,
+            "height": 28.0,
+            "components": [
+              "strain_relief_upper"
+            ],
+            "xy": [
+              15,
+              113.0
+            ]
+          },
+          {
+            "name": "usb_cover",
+            "id": 2,
+            "width": 43.0,
+            "height": 24.0,
+            "components": [
+              "usb_cover"
+            ],
+            "xy": [
+              37.0,
+              113.0
+            ]
+          },
+          {
+            "name": "cable_pressure_cap",
+            "id": 6,
+            "width": 29.99930856830906,
+            "height": 23.99863052368164,
+            "components": [
+              "cable_pressure_cap"
+            ],
+            "xy": [
+              90.0,
+              113.0
+            ]
+          },
+          {
+            "name": "service_switch_cover",
+            "id": 4,
+            "width": 34.0,
+            "height": 19.600000381469727,
+            "components": [
+              "service_switch_cover"
+            ],
+            "xy": [
+              129.99930856830906,
+              113.0
+            ]
+          }
+        ]
+      ],
+      "native_passed": true,
+      "no_mesh_repair": true,
+      "sliced_plates": [
+        {
+          "plate": 1,
+          "toolpath_bytes": 12027332,
+          "metadata": {
+            "index": "1",
+            "extruder_type": "0",
+            "nozzle_volume_type": "0",
+            "printer_model_id": "",
+            "nozzle_diameters": "0.4",
+            "timelapse_type": "0",
+            "prediction": "24335",
+            "weight": "110.52",
+            "first_layer_time": "0.000000",
+            "outside": "false",
+            "support_used": "false",
+            "label_object_enabled": "true",
+            "enable_filament_dynamic_map": "false",
+            "has_filament_switcher": "false",
+            "filament_maps": "1 1",
+            "limit_filament_maps": "0 0"
+          },
+          "filaments": [
+            {
+              "id": "1",
+              "tray_info_idx": "GFG99",
+              "type": "PETG",
+              "color": "#395F75",
+              "used_m": "36.08",
+              "used_g": "110.22",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            },
+            {
+              "id": "2",
+              "tray_info_idx": "GFG99",
+              "type": "PETG",
+              "color": "#F5F5ED",
+              "used_m": "0.10",
+              "used_g": "0.30",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            }
+          ]
+        }
+      ],
+      "actual_settings": {
+        "printer_settings_id": "Bambu Lab P2S 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PETG",
+          "PETG"
+        ],
+        "nozzle_temperature": [
+          "255",
+          "255",
+          "255",
+          "255",
+          "255",
+          "255"
+        ],
+        "filament_flow_ratio": [
+          "0.95",
+          "0.95",
+          "0.95",
+          "0.95",
+          "0.95",
+          "0.95"
+        ],
+        "filament_max_volumetric_speed": [
+          "12",
+          "12",
+          "12",
+          "12",
+          "12",
+          "12"
+        ],
+        "wall_loops": "6",
+        "layer_height": "0.2",
+        "outer_wall_speed": [
+          "40",
+          "40"
+        ],
+        "sparse_infill_density": "35%"
+      },
+      "native_geometry_vs_STL": {
+        "passed": true,
+        "parts": [
+          {
+            "name": "base",
+            "triangles": 36718,
+            "max_vertex_error_mm": 2.8845581070413573e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "lid_body",
+            "triangles": 99308,
+            "max_vertex_error_mm": 3.588423780342964e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "strain_relief_upper",
+            "triangles": 19348,
+            "max_vertex_error_mm": 9.585351570251532e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "usb_cover",
+            "triangles": 2612,
+            "max_vertex_error_mm": 9.909790037454513e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_pressure_cap",
+            "triangles": 3126,
+            "max_vertex_error_mm": 1.0502212148821854e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "service_switch_cover",
+            "triangles": 2644,
+            "max_vertex_error_mm": 9.54863281776852e-07,
+            "oriented_triangles_identical": true
+          }
+        ],
+        "duplicate_vertices_at_colour_boundaries_allowed": true
+      },
+      "contrasting_lid_deposition_layers_mm": [
+        0.2,
+        0.4
+      ],
+      "all_expected_objects_have_deposition": true
+    },
+    {
+      "path": "Orion-V2-PETG-Coupons.3mf",
+      "plates": 1,
+      "objects": 7,
+      "layout": [
+        [
+          {
+            "name": "entry_fit_coupon",
+            "id": 6,
+            "width": 30.0,
+            "height": 38.0,
+            "components": [
+              "entry_fit_coupon"
+            ],
+            "xy": [
+              15.0,
+              15.0
+            ]
+          },
+          {
+            "name": "strain_relief_upper",
+            "id": 14,
+            "width": 12.0,
+            "height": 28.0,
+            "components": [
+              "strain_relief_upper"
+            ],
+            "xy": [
+              55.0,
+              15.0
+            ]
+          },
+          {
+            "name": "clamp_shims_0p2",
+            "id": 2,
+            "width": 11.999999999999972,
+            "height": 28.0,
+            "components": [
+              "clamp_shims_0p2"
+            ],
+            "xy": [
+              77.0,
+              15.0
+            ]
+          },
+          {
+            "name": "clamp_shims_0p4",
+            "id": 4,
+            "width": 11.999999999999972,
+            "height": 28.0,
+            "components": [
+              "clamp_shims_0p4"
+            ],
+            "xy": [
+              98.99999999999997,
+              15.0
+            ]
+          },
+          {
+            "name": "cable_pressure_cap",
+            "id": 12,
+            "width": 29.99930856830906,
+            "height": 23.99863052368164,
+            "components": [
+              "cable_pressure_cap"
+            ],
+            "xy": [
+              120.99999999999994,
+              15.0
+            ]
+          },
+          {
+            "name": "face_stop_coupon_1p4",
+            "id": 8,
+            "width": 34.0,
+            "height": 18.0,
+            "components": [
+              "face_stop_coupon_1p4"
+            ],
+            "xy": [
+              160.999308568309,
+              15.0
+            ]
+          },
+          {
+            "name": "face_stop_coupon_1p6",
+            "id": 10,
+            "width": 34.0,
+            "height": 18.0,
+            "components": [
+              "face_stop_coupon_1p6"
+            ],
+            "xy": [
+              204.999308568309,
+              15.0
+            ]
+          }
+        ]
+      ],
+      "native_passed": true,
+      "no_mesh_repair": true,
+      "sliced_plates": [
+        {
+          "plate": 1,
+          "toolpath_bytes": 3521860,
+          "metadata": {
+            "index": "1",
+            "extruder_type": "0",
+            "nozzle_volume_type": "0",
+            "printer_model_id": "",
+            "nozzle_diameters": "0.4",
+            "timelapse_type": "0",
+            "prediction": "6637",
+            "weight": "24.39",
+            "first_layer_time": "0.000000",
+            "outside": "false",
+            "support_used": "false",
+            "label_object_enabled": "true",
+            "enable_filament_dynamic_map": "false",
+            "has_filament_switcher": "false",
+            "filament_maps": "1",
+            "limit_filament_maps": "0"
+          },
+          "filaments": [
+            {
+              "id": "1",
+              "tray_info_idx": "GFG99",
+              "type": "PETG",
+              "color": "#395F75",
+              "used_m": "7.98",
+              "used_g": "24.39",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            }
+          ]
+        }
+      ],
+      "actual_settings": {
+        "printer_settings_id": "Bambu Lab P2S 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "PETG"
+        ],
+        "nozzle_temperature": [
+          "255",
+          "255",
+          "255"
+        ],
+        "filament_flow_ratio": [
+          "0.95",
+          "0.95",
+          "0.95"
+        ],
+        "filament_max_volumetric_speed": [
+          "12",
+          "12",
+          "12"
+        ],
+        "wall_loops": "6",
+        "layer_height": "0.2",
+        "outer_wall_speed": [
+          "40",
+          "40"
+        ],
+        "sparse_infill_density": "35%"
+      },
+      "native_geometry_vs_STL": {
+        "passed": true,
+        "parts": [
+          {
+            "name": "entry_fit_coupon",
+            "triangles": 23012,
+            "max_vertex_error_mm": 9.92102052066457e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "strain_relief_upper",
+            "triangles": 19348,
+            "max_vertex_error_mm": 9.585351534724396e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "clamp_shims_0p2",
+            "triangles": 1824,
+            "max_vertex_error_mm": 9.582714568523443e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "clamp_shims_0p4",
+            "triangles": 1824,
+            "max_vertex_error_mm": 9.582714568523443e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_pressure_cap",
+            "triangles": 3126,
+            "max_vertex_error_mm": 1.0502212148821854e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "face_stop_coupon_1p4",
+            "triangles": 508,
+            "max_vertex_error_mm": 9.120239212734305e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "face_stop_coupon_1p6",
+            "triangles": 508,
+            "max_vertex_error_mm": 9.120239212734305e-07,
+            "oriented_triangles_identical": true
+          }
+        ],
+        "duplicate_vertices_at_colour_boundaries_allowed": true
+      },
+      "all_expected_objects_have_deposition": true
+    },
+    {
+      "path": "Orion-V2-TPU-Air-235C.3mf",
+      "plates": 1,
+      "objects": 15,
+      "layout": [
+        [
+          {
+            "name": "lid_gasket",
+            "id": 2,
+            "width": 84.0,
+            "height": 52.0,
+            "components": [
+              "lid_gasket"
+            ],
+            "xy": [
+              15.0,
+              15.0
+            ]
+          },
+          {
+            "name": "shore_comparison_pad",
+            "id": 28,
+            "width": 50.0,
+            "height": 50.0,
+            "components": [
+              "shore_comparison_pad"
+            ],
+            "xy": [
+              109.0,
+              15.0
+            ]
+          },
+          {
+            "name": "flow_wall_coupon",
+            "id": 30,
+            "width": 24.0,
+            "height": 24.0,
+            "components": [
+              "flow_wall_coupon"
+            ],
+            "xy": [
+              169.0,
+              15.0
+            ]
+          },
+          {
+            "name": "usb_gasket",
+            "id": 4,
+            "width": 26.0,
+            "height": 18.0,
+            "components": [
+              "usb_gasket"
+            ],
+            "xy": [
+              203.0,
+              15.0
+            ]
+          },
+          {
+            "name": "face_test_gasket",
+            "id": 26,
+            "width": 24.0,
+            "height": 16.0,
+            "components": [
+              "face_test_gasket"
+            ],
+            "xy": [
+              15,
+              77.0
+            ]
+          },
+          {
+            "name": "service_switch_gasket",
+            "id": 6,
+            "width": 16.0,
+            "height": 13.0,
+            "components": [
+              "service_switch_gasket"
+            ],
+            "xy": [
+              49.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "id": 8,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p6"
+            ],
+            "xy": [
+              75.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "id": 10,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p8"
+            ],
+            "xy": [
+              95.99999952316284,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "id": 12,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L7p0"
+            ],
+            "xy": [
+              116.99999904632568,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "id": 14,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p6"
+            ],
+            "xy": [
+              137.99999856948853,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "id": 16,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p8"
+            ],
+            "xy": [
+              158.99999809265137,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "id": 18,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L7p0"
+            ],
+            "xy": [
+              179.9999976158142,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "id": 20,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p6"
+            ],
+            "xy": [
+              200.99999713897705,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "id": 22,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p8"
+            ],
+            "xy": [
+              221.9999966621399,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "id": 24,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L7p0"
+            ],
+            "xy": [
+              15,
+              103.0
+            ]
+          }
+        ]
+      ],
+      "native_passed": true,
+      "no_mesh_repair": true,
+      "sliced_plates": [
+        {
+          "plate": 1,
+          "toolpath_bytes": 3362720,
+          "metadata": {
+            "index": "1",
+            "extruder_type": "0",
+            "nozzle_volume_type": "0",
+            "printer_model_id": "",
+            "nozzle_diameters": "0.4",
+            "timelapse_type": "0",
+            "prediction": "14170",
+            "weight": "24.35",
+            "first_layer_time": "0.000000",
+            "outside": "false",
+            "support_used": "false",
+            "label_object_enabled": "true",
+            "enable_filament_dynamic_map": "false",
+            "has_filament_switcher": "false",
+            "filament_maps": "1",
+            "limit_filament_maps": "0"
+          },
+          "filaments": [
+            {
+              "id": "1",
+              "tray_info_idx": "GFU99",
+              "type": "TPU",
+              "color": "#EEB03F",
+              "used_m": "8.17",
+              "used_g": "24.35",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            }
+          ]
+        }
+      ],
+      "actual_settings": {
+        "printer_settings_id": "Bambu Lab P2S 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "TPU"
+        ],
+        "nozzle_temperature": [
+          "235",
+          "235",
+          "235"
+        ],
+        "filament_flow_ratio": [
+          "1",
+          "1",
+          "1"
+        ],
+        "filament_max_volumetric_speed": [
+          "2",
+          "2",
+          "2"
+        ],
+        "wall_loops": "3",
+        "layer_height": "0.2",
+        "outer_wall_speed": [
+          "20",
+          "20"
+        ],
+        "sparse_infill_density": "100%"
+      },
+      "native_geometry_vs_STL": {
+        "passed": true,
+        "parts": [
+          {
+            "name": "lid_gasket",
+            "triangles": 27848,
+            "max_vertex_error_mm": 1.956958008975107e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "shore_comparison_pad",
+            "triangles": 492,
+            "max_vertex_error_mm": 9.120239248261441e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "flow_wall_coupon",
+            "triangles": 992,
+            "max_vertex_error_mm": 4.6614380266873923e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "usb_gasket",
+            "triangles": 14704,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "face_test_gasket",
+            "triangles": 14032,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "service_switch_gasket",
+            "triangles": 11512,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "triangles": 38504,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "triangles": 37388,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "triangles": 39808,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "triangles": 36584,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "triangles": 35468,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "triangles": 37888,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "triangles": 34664,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "triangles": 33548,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "triangles": 35968,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          }
+        ],
+        "duplicate_vertices_at_colour_boundaries_allowed": true
+      },
+      "deposited_seal_heights_mm": {
+        "lid_gasket": 1.8,
+        "usb_gasket": 1.8,
+        "face_test_gasket": 1.8,
+        "service_switch_gasket": 1.8,
+        "cable_seal_b6p7_L6p6": 6.6,
+        "cable_seal_b6p7_L6p8": 6.8,
+        "cable_seal_b6p7_L7p0": 7.0,
+        "cable_seal_b6p8_L6p6": 6.6,
+        "cable_seal_b6p8_L6p8": 6.8,
+        "cable_seal_b6p8_L7p0": 7.0,
+        "cable_seal_b6p9_L6p6": 6.6,
+        "cable_seal_b6p9_L6p8": 6.8,
+        "cable_seal_b6p9_L7p0": 7.0
+      },
+      "all_expected_objects_have_deposition": true
+    },
+    {
+      "path": "Orion-V2-TPU-Air-245C.3mf",
+      "plates": 1,
+      "objects": 15,
+      "layout": [
+        [
+          {
+            "name": "lid_gasket",
+            "id": 2,
+            "width": 84.0,
+            "height": 52.0,
+            "components": [
+              "lid_gasket"
+            ],
+            "xy": [
+              15.0,
+              15.0
+            ]
+          },
+          {
+            "name": "shore_comparison_pad",
+            "id": 28,
+            "width": 50.0,
+            "height": 50.0,
+            "components": [
+              "shore_comparison_pad"
+            ],
+            "xy": [
+              109.0,
+              15.0
+            ]
+          },
+          {
+            "name": "flow_wall_coupon",
+            "id": 30,
+            "width": 24.0,
+            "height": 24.0,
+            "components": [
+              "flow_wall_coupon"
+            ],
+            "xy": [
+              169.0,
+              15.0
+            ]
+          },
+          {
+            "name": "usb_gasket",
+            "id": 4,
+            "width": 26.0,
+            "height": 18.0,
+            "components": [
+              "usb_gasket"
+            ],
+            "xy": [
+              203.0,
+              15.0
+            ]
+          },
+          {
+            "name": "face_test_gasket",
+            "id": 26,
+            "width": 24.0,
+            "height": 16.0,
+            "components": [
+              "face_test_gasket"
+            ],
+            "xy": [
+              15,
+              77.0
+            ]
+          },
+          {
+            "name": "service_switch_gasket",
+            "id": 6,
+            "width": 16.0,
+            "height": 13.0,
+            "components": [
+              "service_switch_gasket"
+            ],
+            "xy": [
+              49.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "id": 8,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p6"
+            ],
+            "xy": [
+              75.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "id": 10,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p8"
+            ],
+            "xy": [
+              95.99999952316284,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "id": 12,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L7p0"
+            ],
+            "xy": [
+              116.99999904632568,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "id": 14,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p6"
+            ],
+            "xy": [
+              137.99999856948853,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "id": 16,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p8"
+            ],
+            "xy": [
+              158.99999809265137,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "id": 18,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L7p0"
+            ],
+            "xy": [
+              179.9999976158142,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "id": 20,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p6"
+            ],
+            "xy": [
+              200.99999713897705,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "id": 22,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p8"
+            ],
+            "xy": [
+              221.9999966621399,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "id": 24,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L7p0"
+            ],
+            "xy": [
+              15,
+              103.0
+            ]
+          }
+        ]
+      ],
+      "native_passed": true,
+      "no_mesh_repair": true,
+      "sliced_plates": [
+        {
+          "plate": 1,
+          "toolpath_bytes": 3362720,
+          "metadata": {
+            "index": "1",
+            "extruder_type": "0",
+            "nozzle_volume_type": "0",
+            "printer_model_id": "",
+            "nozzle_diameters": "0.4",
+            "timelapse_type": "0",
+            "prediction": "14170",
+            "weight": "24.35",
+            "first_layer_time": "0.000000",
+            "outside": "false",
+            "support_used": "false",
+            "label_object_enabled": "true",
+            "enable_filament_dynamic_map": "false",
+            "has_filament_switcher": "false",
+            "filament_maps": "1",
+            "limit_filament_maps": "0"
+          },
+          "filaments": [
+            {
+              "id": "1",
+              "tray_info_idx": "GFU99",
+              "type": "TPU",
+              "color": "#EEB03F",
+              "used_m": "8.17",
+              "used_g": "24.35",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            }
+          ]
+        }
+      ],
+      "actual_settings": {
+        "printer_settings_id": "Bambu Lab P2S 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "TPU"
+        ],
+        "nozzle_temperature": [
+          "245",
+          "245",
+          "245"
+        ],
+        "filament_flow_ratio": [
+          "1",
+          "1",
+          "1"
+        ],
+        "filament_max_volumetric_speed": [
+          "2",
+          "2",
+          "2"
+        ],
+        "wall_loops": "3",
+        "layer_height": "0.2",
+        "outer_wall_speed": [
+          "20",
+          "20"
+        ],
+        "sparse_infill_density": "100%"
+      },
+      "native_geometry_vs_STL": {
+        "passed": true,
+        "parts": [
+          {
+            "name": "lid_gasket",
+            "triangles": 27848,
+            "max_vertex_error_mm": 1.956958008975107e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "shore_comparison_pad",
+            "triangles": 492,
+            "max_vertex_error_mm": 9.120239248261441e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "flow_wall_coupon",
+            "triangles": 992,
+            "max_vertex_error_mm": 4.6614380266873923e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "usb_gasket",
+            "triangles": 14704,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "face_test_gasket",
+            "triangles": 14032,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "service_switch_gasket",
+            "triangles": 11512,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "triangles": 38504,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "triangles": 37388,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "triangles": 39808,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "triangles": 36584,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "triangles": 35468,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "triangles": 37888,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "triangles": 34664,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "triangles": 33548,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "triangles": 35968,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          }
+        ],
+        "duplicate_vertices_at_colour_boundaries_allowed": true
+      },
+      "deposited_seal_heights_mm": {
+        "lid_gasket": 1.8,
+        "usb_gasket": 1.8,
+        "face_test_gasket": 1.8,
+        "service_switch_gasket": 1.8,
+        "cable_seal_b6p7_L6p6": 6.6,
+        "cable_seal_b6p7_L6p8": 6.8,
+        "cable_seal_b6p7_L7p0": 7.0,
+        "cable_seal_b6p8_L6p6": 6.6,
+        "cable_seal_b6p8_L6p8": 6.8,
+        "cable_seal_b6p8_L7p0": 7.0,
+        "cable_seal_b6p9_L6p6": 6.6,
+        "cable_seal_b6p9_L6p8": 6.8,
+        "cable_seal_b6p9_L7p0": 7.0
+      },
+      "all_expected_objects_have_deposition": true
+    },
+    {
+      "path": "Orion-V2-TPU-Air-255C.3mf",
+      "plates": 1,
+      "objects": 15,
+      "layout": [
+        [
+          {
+            "name": "lid_gasket",
+            "id": 2,
+            "width": 84.0,
+            "height": 52.0,
+            "components": [
+              "lid_gasket"
+            ],
+            "xy": [
+              15.0,
+              15.0
+            ]
+          },
+          {
+            "name": "shore_comparison_pad",
+            "id": 28,
+            "width": 50.0,
+            "height": 50.0,
+            "components": [
+              "shore_comparison_pad"
+            ],
+            "xy": [
+              109.0,
+              15.0
+            ]
+          },
+          {
+            "name": "flow_wall_coupon",
+            "id": 30,
+            "width": 24.0,
+            "height": 24.0,
+            "components": [
+              "flow_wall_coupon"
+            ],
+            "xy": [
+              169.0,
+              15.0
+            ]
+          },
+          {
+            "name": "usb_gasket",
+            "id": 4,
+            "width": 26.0,
+            "height": 18.0,
+            "components": [
+              "usb_gasket"
+            ],
+            "xy": [
+              203.0,
+              15.0
+            ]
+          },
+          {
+            "name": "face_test_gasket",
+            "id": 26,
+            "width": 24.0,
+            "height": 16.0,
+            "components": [
+              "face_test_gasket"
+            ],
+            "xy": [
+              15,
+              77.0
+            ]
+          },
+          {
+            "name": "service_switch_gasket",
+            "id": 6,
+            "width": 16.0,
+            "height": 13.0,
+            "components": [
+              "service_switch_gasket"
+            ],
+            "xy": [
+              49.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "id": 8,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p6"
+            ],
+            "xy": [
+              75.0,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "id": 10,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L6p8"
+            ],
+            "xy": [
+              95.99999952316284,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "id": 12,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p7_L7p0"
+            ],
+            "xy": [
+              116.99999904632568,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "id": 14,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p6"
+            ],
+            "xy": [
+              137.99999856948853,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "id": 16,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L6p8"
+            ],
+            "xy": [
+              158.99999809265137,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "id": 18,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p8_L7p0"
+            ],
+            "xy": [
+              179.9999976158142,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "id": 20,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p6"
+            ],
+            "xy": [
+              200.99999713897705,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "id": 22,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L6p8"
+            ],
+            "xy": [
+              221.9999966621399,
+              77.0
+            ]
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "id": 24,
+            "width": 10.999999523162842,
+            "height": 11.000000238418579,
+            "components": [
+              "cable_seal_b6p9_L7p0"
+            ],
+            "xy": [
+              15,
+              103.0
+            ]
+          }
+        ]
+      ],
+      "native_passed": true,
+      "no_mesh_repair": true,
+      "sliced_plates": [
+        {
+          "plate": 1,
+          "toolpath_bytes": 3362504,
+          "metadata": {
+            "index": "1",
+            "extruder_type": "0",
+            "nozzle_volume_type": "0",
+            "printer_model_id": "",
+            "nozzle_diameters": "0.4",
+            "timelapse_type": "0",
+            "prediction": "14170",
+            "weight": "24.35",
+            "first_layer_time": "0.000000",
+            "outside": "false",
+            "support_used": "false",
+            "label_object_enabled": "true",
+            "enable_filament_dynamic_map": "false",
+            "has_filament_switcher": "false",
+            "filament_maps": "1",
+            "limit_filament_maps": "0"
+          },
+          "filaments": [
+            {
+              "id": "1",
+              "tray_info_idx": "GFU99",
+              "type": "TPU",
+              "color": "#EEB03F",
+              "used_m": "8.17",
+              "used_g": "24.35",
+              "group_id": "0",
+              "nozzle_diameter": "0.40",
+              "volume_type": "Standard",
+              "used_for_object": "true",
+              "used_for_support": "false"
+            }
+          ]
+        }
+      ],
+      "actual_settings": {
+        "printer_settings_id": "Bambu Lab P2S 0.4 nozzle",
+        "nozzle_diameter": [
+          "0.4"
+        ],
+        "filament_type": [
+          "TPU"
+        ],
+        "nozzle_temperature": [
+          "255",
+          "255",
+          "255"
+        ],
+        "filament_flow_ratio": [
+          "1",
+          "1",
+          "1"
+        ],
+        "filament_max_volumetric_speed": [
+          "2",
+          "2",
+          "2"
+        ],
+        "wall_loops": "3",
+        "layer_height": "0.2",
+        "outer_wall_speed": [
+          "20",
+          "20"
+        ],
+        "sparse_infill_density": "100%"
+      },
+      "native_geometry_vs_STL": {
+        "passed": true,
+        "parts": [
+          {
+            "name": "lid_gasket",
+            "triangles": 27848,
+            "max_vertex_error_mm": 1.956958008975107e-06,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "shore_comparison_pad",
+            "triangles": 492,
+            "max_vertex_error_mm": 9.120239248261441e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "flow_wall_coupon",
+            "triangles": 992,
+            "max_vertex_error_mm": 4.6614380266873923e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "usb_gasket",
+            "triangles": 14704,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "face_test_gasket",
+            "triangles": 14032,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "service_switch_gasket",
+            "triangles": 11512,
+            "max_vertex_error_mm": 9.586474618572538e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p6",
+            "triangles": 38504,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L6p8",
+            "triangles": 37388,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p7_L7p0",
+            "triangles": 39808,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p6",
+            "triangles": 36584,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L6p8",
+            "triangles": 35468,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p8_L7p0",
+            "triangles": 37888,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p6",
+            "triangles": 34664,
+            "max_vertex_error_mm": 7.201654028676785e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L6p8",
+            "triangles": 33548,
+            "max_vertex_error_mm": 7.201873728490682e-07,
+            "oriented_triangles_identical": true
+          },
+          {
+            "name": "cable_seal_b6p9_L7p0",
+            "triangles": 35968,
+            "max_vertex_error_mm": 7.202093570413126e-07,
+            "oriented_triangles_identical": true
+          }
+        ],
+        "duplicate_vertices_at_colour_boundaries_allowed": true
+      },
+      "deposited_seal_heights_mm": {
+        "lid_gasket": 1.8,
+        "usb_gasket": 1.8,
+        "face_test_gasket": 1.8,
+        "service_switch_gasket": 1.8,
+        "cable_seal_b6p7_L6p6": 6.6,
+        "cable_seal_b6p7_L6p8": 6.8,
+        "cable_seal_b6p7_L7p0": 7.0,
+        "cable_seal_b6p8_L6p6": 6.6,
+        "cable_seal_b6p8_L6p8": 6.8,
+        "cable_seal_b6p8_L7p0": 7.0,
+        "cable_seal_b6p9_L6p6": 6.6,
+        "cable_seal_b6p9_L6p8": 6.8,
+        "cable_seal_b6p9_L7p0": 7.0
+      },
+      "all_expected_objects_have_deposition": true
+    }
+  ],
+  "previous_project_unchanged": true,
+  "flow_status": "Seed 1.00; physical calibration required",
+  "cached_gcode_in_deliverables": false,
+  "pdf_checks": [
+    {
+      "file": "Orion-Enclosure-V2-Assembly-EN.pdf",
+      "pages": 8,
+      "words": 1745,
+      "text_inside_page": true,
+      "replacement_glyphs": 0
+    },
+    {
+      "file": "Orion-Enclosure-V2-Manufacturing-EN.pdf",
+      "pages": 8,
+      "words": 2009,
+      "text_inside_page": true,
+      "replacement_glyphs": 0
+    }
+  ]
+}

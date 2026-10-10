@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:/Program Files/Bambu Studio/bambu-studio.exe",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\fit_coupon.stl",
+    "--datadir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\awesome-ai-profiles\\validation\\bambu-020\\data",
+    "--debug",
+    "2",
+    "--curr-bed-type",
+    "Textured PEI Plate",
+    "--slice",
+    "0",
+    "--outputdir",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\awesome-ai-profiles\\validation\\bambu-020",
+    "--export-3mf",
+    "validation.3mf",
+    "--load-settings",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\p2s-machine.json;C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\awesome-ai-profiles\\validation-input\\0.2mm Optimized @BBL P2S - Awesome AI.json",
+    "--load-filaments",
+    "C:\\Users\\marce\\Documents\\GitHub\\BatterySentinel-N2K\\hardware\\altium-r5\\enclosure\\sealed-print\\profiles\\petg-filament.json"
+  ],
+  "returncode": 4294967294,
+  "seconds": 0.23893022537231445,
+  "stdout": "",
+  "stderr": ""
+}

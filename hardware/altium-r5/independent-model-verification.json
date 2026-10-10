@@ -1,0 +1,26 @@
+{
+  "components": 37,
+  "nets": 23,
+  "manual_module": "Original user-selected Amazon B0FN4F6244,16 castellation lands; excluded only from machine BOM/CPL, included in assembled geometry",
+  "service_switch": {
+    "RUN": [
+      "1",
+      "2"
+    ],
+    "SERVICE": [
+      "2",
+      "3"
+    ],
+    "service_contact_3": "unconnected",
+    "intent": "Disconnect external 5V_MODULE supply before inserting USB; no simultaneous source promise."
+  },
+  "passed": true,
+  "release_checks_complete": false,
+  "checks": 536,
+  "errors": [],
+  "scope": "model_only",
+  "qualification": "Checks the generated package/source files only. Native Altium ERC/DRC, fabrication DFM, assembly orientation approval and hardware qualification are separate.",
+  "input_sha256": {
+    "orion-r5-design.json": "91a6da5a2111adffc04f112f33d3a1edd207cbbad2b7f02f900d935156f686c0"
+  }
+}

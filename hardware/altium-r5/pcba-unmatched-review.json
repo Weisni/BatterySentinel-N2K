@@ -1,0 +1,27 @@
+{
+  "reviewed_utc": "2026-09-23T19:02:52.958431+00:00",
+  "scope": "read-only sourcing; no CAD mutation",
+  "preferred_action": "map existing manufacturer parts by C-code",
+  "parts": {
+    "F1": {
+      "mpn": "SF-1206S080-2",
+      "lcsc": "C3032873",
+      "source_url": "https://jlcpcb.com/partdetail/C3032873",
+      "assembly": "SMT; Economic and Standard",
+      "electrical_and_footprint_change": false,
+      "internal_pcba_stock_confirmed": false,
+      "overseasStockCount": 73,
+      "preMinPurchaseNum": 52
+    },
+    "R20,R21": {
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541",
+      "source_url": "https://jlcpcb.com/partdetail/C4258541",
+      "assembly": "SMT; Economic and Standard",
+      "electrical_and_footprint_change": false,
+      "internal_pcba_stock_confirmed": false
+    }
+  },
+  "report_sha256": "10bd55f66423223889806958b84d112c38d7bc7b177d222e7ac7f41bcd2d23be",
+  "no_stock_reservation": true
+}

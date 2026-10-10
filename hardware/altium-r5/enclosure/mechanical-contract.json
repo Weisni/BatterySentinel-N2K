@@ -1,0 +1,199 @@
+{
+  "revision": "R5 mechanical proposal v1",
+  "frozen": false,
+  "pending": [
+    "Final carrier placement and component volumes frozen",
+    "USB dimensional assumptions checked against supplied module and selected cable plug",
+    "Protected dry installation assumed; no environmental protection claim",
+    "Actual cable outer diameter measured; clamp coupon pull test",
+    "Insert-fit coupon on selected printer/material"
+  ],
+  "units": "mm",
+  "coordinate_system": "PCB lower-left XY; carrier underside becomes Z=6.5 in assembled enclosure",
+  "board": {
+    "width": 50.0,
+    "height": 36.0,
+    "radius": 2.0,
+    "thickness": 1.6,
+    "holes": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        33
+      ],
+      [
+        47,
+        3
+      ],
+      [
+        47,
+        33
+      ]
+    ],
+    "hole_diameter": 2.2,
+    "screw_courtyard_diameter": 5.6,
+    "source_design": null,
+    "source_sha256": null
+  },
+  "case": {
+    "pcb_side_clearance": 0.6,
+    "wall": 2.0,
+    "floor": 2.0,
+    "lid": 2.0,
+    "standoff_height": 4.5,
+    "above_pcb_clearance": 12.0,
+    "lid_fit_clearance": 0.25,
+    "lid_lip_depth": 0.6,
+    "lid_lip_wall": 1.2,
+    "seam_gap": 0.15,
+    "corner_radius": 4.6,
+    "material": "PETG or ASA, selected for the actual service temperature",
+    "base_rgb": [
+      42,
+      65,
+      74
+    ],
+    "lid_rgb": [
+      57,
+      91,
+      103
+    ]
+  },
+  "fasteners": {
+    "method": "Four shared M2 lid screws pass through clearance spacers and PCB holes into base heat-set inserts",
+    "thread": "M2",
+    "screw_length": 18.0,
+    "screw_clearance": 2.4,
+    "head_diameter": 4.2,
+    "head_recess": 1.0,
+    "insert": "ruthex RX-M2x4",
+    "insert_length_nominal": 4.0,
+    "insert_pilot_diameter": 3.2,
+    "insert_depth": 4.25,
+    "insert_boss_diameter": 6.4,
+    "lid_spacer_diameter": 5.2,
+    "pcb_axial_clearance": 0.15,
+    "insert_fit_provisional": true,
+    "insert_source": "https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m2-70-stuck-rx-m2x4-messing-gewindebuchsen",
+    "insert_step_source": "https://cdn.shopify.com/s/files/1/0567/7019/9760/files/ruthex_RX-M2x4.step?v=1621264078",
+    "pilot_note": "3.2 mm pilot is a provisional printing starting point; validate a coupon against actual insert and material."
+  },
+  "mounting": {
+    "enabled": true,
+    "side": "Y",
+    "hole_diameter": 3.4,
+    "slot_extra_length": 2.0,
+    "ear_width": 12.0,
+    "ear_projection": 7.0,
+    "ear_thickness": 3.0,
+    "root_overlap": 2.0,
+    "description": "Two integral exterior mounting ears, M3 clearance slots; fixing screws selected for substrate"
+  },
+  "usb": {
+    "confirmed": false,
+    "side": "Y+",
+    "center_along_edge": 37.0,
+    "center_above_pcb": 5.5,
+    "opening_width": 12.0,
+    "opening_height": 7.0,
+    "corner_radius": 1.5,
+    "note": "Provisional plug-overmould clearance, not a verified SuperMini connector position"
+  },
+  "cable": {
+    "mode": "captured_clamp",
+    "side": "X-",
+    "center_along_edge": 18.0,
+    "center_above_pcb": 5.0,
+    "diameter": 6.0,
+    "supported_diameter_range": [
+      5.0,
+      7.0
+    ],
+    "entry_clearance": 0.4,
+    "jacket_compression_diameter": 0.2,
+    "clamp_length": 7.0,
+    "clamp_wall": 2.0,
+    "gland_panel_hole_diameter": 12.2,
+    "gland_confirmed": false,
+    "note": "Default dry-case jacket clamp captured by the removable lid. No sealing or pull-force claim; choose cable OD and validate. Optional gland mode requires an exact selected gland."
+  },
+  "branding": {
+    "geometry_json": "assets/branding/battery-sentinel.paths.json",
+    "center": [
+      25.0,
+      24.0
+    ],
+    "width": 12.215,
+    "height": 15.802368,
+    "depth": 0.5,
+    "operation": "deboss",
+    "rotation": 0,
+    "texts": [
+      {
+        "text": "BatterySentinel-N2K",
+        "height": 4.6,
+        "center": [
+          25.0,
+          11.0
+        ],
+        "letter_spacing_mm": 0.38,
+        "print_outline_offset_mm": 0.04,
+        "dot_lift_mm": 0.23
+      },
+      {
+        "text": "Orion-R5",
+        "height": 4.6,
+        "center": [
+          25.0,
+          4.9
+        ],
+        "letter_spacing_mm": 0.38,
+        "print_outline_offset_mm": 0.04,
+        "dot_lift_mm": 0.23
+      }
+    ],
+    "note": "Same outline polygons as smooth PCB logo/TTF; no substitute artwork generated"
+  },
+  "electronics": {
+    "maximum_height_above_pcb": 10.4,
+    "minimum_lid_clearance": 1.0,
+    "maximum_tail_below_pcb": 2.5,
+    "minimum_floor_clearance": 1.0,
+    "reserved_mount_cylinders": "Four diameter5.6 cylinders at PCB holes, full component height",
+    "antenna_clearance": "Use exact module antenna keepout; no metal inserts or screws inside that region",
+    "minimum_component_to_case_mm": 0.5
+  },
+  "printing": {
+    "nozzle": 0.4,
+    "layer_height": 0.2,
+    "perimeters": 5,
+    "infill_percent": 30,
+    "base_orientation": "outside bottom on bed",
+    "lid_orientation": "outside face on bed; spacers point upward",
+    "fit_note": "Dimensions are starting tolerances, not printer calibration. Check sleeve, insert and cable coupons before full print.",
+    "reference": "https://help.prusa3d.com/article/modeling-with-3d-printing-in-mind_164135"
+  },
+  "environmental_claim": "No tested IP rating; USB opening, split jacket clamp, lid seam and FDM porosity remain unsealed.",
+  "service_switch": {
+    "enabled": true,
+    "confirmed": false,
+    "side": "Y+",
+    "center_along_edge": 16.0,
+    "center_above_pcb": 2.0,
+    "opening_width": 6.5,
+    "opening_height": 3.5,
+    "corner_radius": 0.75,
+    "note": "RUN/SERVICE power-disconnect actuator aperture; exact switch/placement pending"
+  },
+  "module_identity": {
+    "asin": "B0FN4F6244",
+    "selected_variant": "4 x C3",
+    "seller_brand": "Meshnology",
+    "product_url": "https://www.amazon.de/4PCS-Supermini-ESP32-C3-Entwicklungsboard/dp/B0FN4F6244",
+    "replacement_module": false,
+    "user_selection_confirmed": true
+  }
+}

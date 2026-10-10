@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "checks": 824,
+  "errors": [],
+  "binary_sha256": "6112f1e66c4e64d906b2ba94e355bc1087698057cb9bd19310ba6cd306d237fd",
+  "source_sha256": "eead3d6fb923caea03e2120b054496f17bf802498a56bb5418db1db1401814e7",
+  "components": 28,
+  "nets": 21,
+  "pads": 91,
+  "tracks": 148,
+  "vias": 27,
+  "copper_regions": 105,
+  "component_bodies": 153,
+  "component_parameters": 226,
+  "region_comparison": [
+    {
+      "net": "GND_BUS",
+      "layer": "TOP",
+      "hausdorff_mm": 7.32410687763558e-15,
+      "symmetric_difference_mm2": 2.943934202374585e-13,
+      "native_area_mm2": 659.285243423786,
+      "regions": 46
+    },
+    {
+      "net": "GND_BUS",
+      "layer": "BOTTOM",
+      "hausdorff_mm": 7.32410687763558e-15,
+      "symmetric_difference_mm2": 8.47067213755354e-14,
+      "native_area_mm2": 856.2116487689389,
+      "regions": 25
+    },
+    {
+      "net": "GND_LOGIC",
+      "layer": "TOP",
+      "hausdorff_mm": 7.944109290391274e-15,
+      "symmetric_difference_mm2": 4.133659010201453e-13,
+      "native_area_mm2": 567.8546879443397,
+      "regions": 21
+    },
+    {
+      "net": "GND_LOGIC",
+      "layer": "BOTTOM",
+      "hausdorff_mm": 7.944109290391274e-15,
+      "symmetric_difference_mm2": 3.500649019546308e-13,
+      "native_area_mm2": 652.3730352998577,
+      "regions": 13
+    }
+  ],
+  "copper_verification": {
+    "passed": true,
+    "errors": [],
+    "connected_nets": 21,
+    "total_nets": 21,
+    "connectivity": {
+      "SHIELD": [
+        [
+          "J1.1",
+          "TP1.1"
+        ]
+      ],
+      "NET_S": [
+        [
+          "J1.2",
+          "F1.1"
+        ]
+      ],
+      "GND_BUS": [
+        [
+          "J1.3",
+          "R1.2",
+          "D1.2",
+          "C1.2",
+          "U3.2",
+          "U3.4",
+          "C2.2",
+          "C3.2",
+          "C8.2",
+          "C9.2",
+          "U2.2",
+          "D3.3",
+          "U1.5",
+          "C4.2"
+        ]
+      ],
+      "CANH_EXT": [
+        [
+          "J1.4",
+          "D3.1",
+          "L1.1"
+        ]
+      ],
+      "CANL_EXT": [
+        [
+          "J1.5",
+          "D3.2",
+          "L1.2"
+        ]
+      ],
+      "FUSED_IN": [
+        [
+          "F1.2",
+          "Q1.2",
+          "Q1.4"
+        ]
+      ],
+      "GATE": [
+        [
+          "Q1.1",
+          "Z1.2",
+          "R1.1"
+        ]
+      ],
+      "BUS_PROT": [
+        [
+          "Q1.3",
+          "Z1.1",
+          "D1.1",
+          "C1.1",
+          "U3.1",
+          "C2.1",
+          "C8.1",
+          "L2.1"
+        ]
+      ],
+      "5V_BUS": [
+        [
+          "U3.3",
+          "C3.1",
+          "U1.8",
+          "C4.1"
+        ]
+      ],
+      "DCDC_IN": [
+        [
+          "L2.2",
+          "C9.1",
+          "U2.1"
+        ]
+      ],
+      "GND_LOGIC": [
+        [
+          "U2.6",
+          "C6.2",
+          "C7.2",
+          "U1.4",
+          "C5.2",
+          "MCU1.GND"
+        ]
+      ],
+      "5V_ISO": [
+        [
+          "U2.7",
+          "C6.1",
+          "C7.1",
+          "D2.2"
+        ]
+      ],
+      "5V_AFTER_DIODE": [
+        [
+          "D2.1",
+          "JP1.1"
+        ]
+      ],
+      "5V_MODULE": [
+        [
+          "JP1.2",
+          "MCU1.5V"
+        ]
+      ],
+      "CANL": [
+        [
+          "L1.3",
+          "U1.6"
+        ]
+      ],
+      "CANH": [
+        [
+          "L1.4",
+          "U1.7"
+        ]
+      ],
+      "3V3_LOGIC": [
+        [
+          "U1.1",
+          "C5.1",
+          "R2.1",
+          "MCU1.3V3"
+        ]
+      ],
+      "TXD": [
+        [
+          "U1.2",
+          "R2.2",
+          "R3.2"
+        ]
+      ],
+      "RXD": [
+        [
+          "U1.3",
+          "R4.1"
+        ]
+      ],
+      "GPIO6": [
+        [
+          "R3.1",
+          "MCU1.6"
+        ]
+      ],
+      "GPIO7": [
+        [
+          "R4.2",
+          "MCU1.7"
+        ]
+      ]
+    },
+    "minimum_clearance_mm": 0.269842,
+    "method": "Shapely exact pad/track/via geometry, copper islands joined through plated holes; both layers checked"
+  },
+  "scope": "PCB6 native binary readback: component source UIDs/library links/placements and imported parameters; simple pad stacks including hole/plating/net assignments; copper track/via geometry; solid copper region unions; 3D body count/projection/heights. Compared with corrected ASCII source, then independent copper clearance/connectivity/keepout checks. Native DRC and full rule/3D-render semantics are separate checks."
+}

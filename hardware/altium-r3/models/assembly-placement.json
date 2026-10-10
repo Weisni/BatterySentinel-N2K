@@ -1,0 +1,1131 @@
+{
+  "board": {
+    "width_mm": 54,
+    "height_mm": 36,
+    "holes_mm": [
+      [
+        3,
+        3
+      ],
+      [
+        51,
+        3
+      ]
+    ],
+    "origin": "bottom-left; +Y up",
+    "hole_diameter_mm": 2.2,
+    "thickness_mm": 1.6,
+    "copper_um": 35
+  },
+  "parts": [
+    {
+      "ref": "J1",
+      "placement": {
+        "x": 2.5,
+        "y": 24,
+        "rotation": 0,
+        "status": "Designed wire interface; cable conductor and strain relief selection pending"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": 0,
+          "y": 6,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0,
+          "y": 3,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND"
+        },
+        {
+          "number": "3",
+          "x": 0,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND"
+        },
+        {
+          "number": "4",
+          "x": 0,
+          "y": -3,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND"
+        },
+        {
+          "number": "5",
+          "x": 0,
+          "y": -6,
+          "sx": 2.3,
+          "sy": 2.3,
+          "drill": 1.3,
+          "shape": "ROUND"
+        }
+      ]
+    },
+    {
+      "ref": "TP1",
+      "placement": {
+        "x": 2.5,
+        "y": 33.2,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": 0,
+          "y": 0,
+          "sx": 2,
+          "sy": 2,
+          "drill": 0,
+          "shape": "ROUND"
+        }
+      ]
+    },
+    {
+      "ref": "F1",
+      "placement": {
+        "x": 6.7,
+        "y": 25.5,
+        "rotation": 0,
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.725,
+          "y": 0,
+          "sx": 1.25,
+          "sy": 1.65,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.725,
+          "y": 0,
+          "sx": 1.25,
+          "sy": 1.65,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "Q1",
+      "placement": {
+        "x": 10,
+        "y": 19,
+        "rotation": 0,
+        "status": "Diodes manufacturer suggested land pattern, DS37199 Rev.3-2 p6"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.3,
+          "y": -3.2,
+          "sx": 1.2,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.0,
+          "y": -3.2,
+          "sx": 1.2,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "3",
+          "x": 2.3,
+          "y": -3.2,
+          "sx": 1.2,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "4",
+          "x": 0,
+          "y": 3.2,
+          "sx": 3.3,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "Z1",
+      "placement": {
+        "x": 5.8,
+        "y": 12,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.55,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.55,
+          "y": 0,
+          "sx": 1.2,
+          "sy": 1.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "placement": {
+        "x": 3.4,
+        "y": 12.5,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "D1",
+      "placement": {
+        "x": 11.5,
+        "y": 3.6,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.1,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 2.1,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C1",
+      "placement": {
+        "x": 17.7,
+        "y": 19.5,
+        "rotation": 0,
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.5,
+          "y": 0,
+          "sx": 3.2,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 2.5,
+          "y": 0,
+          "sx": 3.2,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "U3",
+      "placement": {
+        "x": 10.5,
+        "y": 31,
+        "rotation": 180,
+        "status": "TI DCY mechanical envelope verified; R2 engineering lands retained, not manufacturer-recommended lands. Thermal/assembly qualification required."
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.3,
+          "y": -3.15,
+          "sx": 1.2,
+          "sy": 2.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.0,
+          "y": -3.15,
+          "sx": 1.2,
+          "sy": 2.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "3",
+          "x": 2.3,
+          "y": -3.15,
+          "sx": 1.2,
+          "sy": 2.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "4",
+          "x": 0,
+          "y": 3.15,
+          "sx": 3.8,
+          "sy": 2.2,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C2",
+      "placement": {
+        "x": 16.6,
+        "y": 34.4,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C3",
+      "placement": {
+        "x": 20.8,
+        "y": 32.8,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 1.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C8",
+      "placement": {
+        "x": 8.4,
+        "y": 8.25,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "L2",
+      "placement": {
+        "x": 12.8,
+        "y": 8.25,
+        "rotation": 0,
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.525,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 3.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.525,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 3.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C9",
+      "placement": {
+        "x": 17.6,
+        "y": 9.75,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.5,
+          "y": 0,
+          "sx": 1.5,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "U2",
+      "placement": {
+        "x": 28,
+        "y": 11.05,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -4.75,
+          "y": -3,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": -4.75,
+          "y": -1,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "4",
+          "x": -4.75,
+          "y": 3,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "5",
+          "x": 4.75,
+          "y": -3,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "6",
+          "x": 4.75,
+          "y": -1,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "7",
+          "x": 4.75,
+          "y": 1,
+          "sx": 5.7,
+          "sy": 1.4,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C6",
+      "placement": {
+        "x": 33.5,
+        "y": 3.3,
+        "rotation": 0,
+        "status": "Manufacturer recommended lands verified from primary datasheet; assembly/electrical qualification remains"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.75,
+          "y": 0,
+          "sx": 2.5,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.75,
+          "y": 0,
+          "sx": 2.5,
+          "sy": 1.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C7",
+      "placement": {
+        "x": 43.1,
+        "y": 11.2,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "D2",
+      "placement": {
+        "x": 40.8,
+        "y": 4.5,
+        "rotation": 180,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.1,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 2.1,
+          "y": 0,
+          "sx": 2.3,
+          "sy": 2.8,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "JP1",
+      "placement": {
+        "x": 52.1,
+        "y": 9.2,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -1.27,
+          "y": 0,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 1.27,
+          "y": 0,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "D3",
+      "placement": {
+        "x": 6,
+        "y": 22.5,
+        "rotation": 0,
+        "status": "Nexperia PESD2CAN24T-Q datasheet Fig10 reflow lands, 9-Feb-2024 p8"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.95,
+          "y": -1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.95,
+          "y": -1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "3",
+          "x": 0,
+          "y": 1,
+          "sx": 0.6,
+          "sy": 0.7,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "L1",
+      "placement": {
+        "x": 17.2,
+        "y": 27,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -2.275,
+          "y": 1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": -2.275,
+          "y": -1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "3",
+          "x": 2.275,
+          "y": -1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "4",
+          "x": 2.275,
+          "y": 1.25,
+          "sx": 1.35,
+          "sy": 0.9,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "U1",
+      "placement": {
+        "x": 28,
+        "y": 27,
+        "rotation": 180,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -5.45,
+          "y": 1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": -5.45,
+          "y": 0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "3",
+          "x": -5.45,
+          "y": -0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "4",
+          "x": -5.45,
+          "y": -1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "5",
+          "x": 5.45,
+          "y": -1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "6",
+          "x": 5.45,
+          "y": -0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "7",
+          "x": 5.45,
+          "y": 0.635,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "8",
+          "x": 5.45,
+          "y": 1.905,
+          "sx": 1.8,
+          "sy": 0.6,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C4",
+      "placement": {
+        "x": 24.5,
+        "y": 31.05,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "C5",
+      "placement": {
+        "x": 39.1,
+        "y": 25.1,
+        "rotation": 90,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "placement": {
+        "x": 39.55,
+        "y": 22.3,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "R3",
+      "placement": {
+        "x": 47.8,
+        "y": 16.8394,
+        "rotation": 180,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "R4",
+      "placement": {
+        "x": 47.8,
+        "y": 19.3794,
+        "rotation": 0,
+        "status": "PROVISIONAL - verify landpattern before fabrication"
+      },
+      "pads": [
+        {
+          "number": "1",
+          "x": -0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "2",
+          "x": 0.9,
+          "y": 0,
+          "sx": 1,
+          "sy": 1.3,
+          "drill": 0,
+          "shape": "RECTANGLE"
+        }
+      ]
+    },
+    {
+      "ref": "MCU1",
+      "placement": {
+        "x": 44.2,
+        "y": 24,
+        "rotation": 180,
+        "status": "Nologo source-based header pin geometry. Local model assumes 3.1 mm underside clearance and 7.2 mm total height; no separate socket part is specified."
+      },
+      "pads": [
+        {
+          "number": "5",
+          "x": -7.62,
+          "y": 9.7006,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "RECTANGLE"
+        },
+        {
+          "number": "6",
+          "x": -7.62,
+          "y": 7.1606,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "7",
+          "x": -7.62,
+          "y": 4.6206,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "8",
+          "x": -7.62,
+          "y": 2.0806,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "9",
+          "x": -7.62,
+          "y": -0.4594,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "10",
+          "x": -7.62,
+          "y": -2.9994,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "20",
+          "x": -7.62,
+          "y": -5.5394,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "21",
+          "x": -7.62,
+          "y": -8.0794,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "5V",
+          "x": 7.62,
+          "y": 9.7006,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "GND",
+          "x": 7.62,
+          "y": 7.1606,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "3V3",
+          "x": 7.62,
+          "y": 4.6206,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "4",
+          "x": 7.62,
+          "y": 2.0806,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "3",
+          "x": 7.62,
+          "y": -0.4594,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "2",
+          "x": 7.62,
+          "y": -2.9994,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "1",
+          "x": 7.62,
+          "y": -5.5394,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        },
+        {
+          "number": "0",
+          "x": 7.62,
+          "y": -8.0794,
+          "sx": 1.8,
+          "sy": 1.8,
+          "drill": 1.0,
+          "shape": "ROUND"
+        }
+      ]
+    }
+  ]
+}

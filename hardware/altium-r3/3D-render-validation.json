@@ -1,0 +1,22 @@
+{
+  "images": [
+    "hardware\\altium-r3\\PCB-R3-3D-Oberseite.png",
+    "hardware\\altium-r3\\PCB-R3-3D-Unterseite.png",
+    "hardware\\altium-r3\\PCB-R3-3D-Draufsicht.png"
+  ],
+  "size_pixels": [
+    2200,
+    1550
+  ],
+  "actors": 573,
+  "renderer": "FreeCAD 1.1 / OCCT exact solids tessellated into VTK 9.3 with an offscreen depth buffer",
+  "interpretation": "Approximate locally generated package models, not certified supplier STEP geometry; final placement and pads are used.",
+  "board_mm": [
+    54,
+    36,
+    1.6
+  ],
+  "model_components": 28,
+  "design_sha256": "06ff5a7edb7c591e1ffd126b62bf6848b320732e276035811645038ffc1da47a",
+  "routing_sha256": "54bbbfb5689220301ab6219b8bc809c8da674b32ed3d594250b04bf3a207b3ff"
+}

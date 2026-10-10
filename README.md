@@ -1,223 +1,123 @@
-# BatterySentinel N2K
+# BatterySentinel N2K — Orion Bridge
 
-Battery monitor for a 12 V boat electrical system with NMEA 2000 output to a Garmin chartplotter.
-
-## V1 focus
-
-V1 is deliberately brought up and tested first as a **single system-battery monitor**. The hardware keeps the second isolated measurement channel as an option, but it is disabled by default in firmware until its battery type/capacity are configured.
-
-- ESP32-C3-WROOM-02-N8 (8 MB), native USB-C plus browser OTA.
-- System battery default profile: **Duracell Advanced DA80, 80 Ah, 700 A EN, flooded lead-acid** (`GTIN 9005753086036`).
-- System negative = ignition negative = `GND_SYS`.
-- 500 A / 50 mV high-side system shunt; expected Mercury SeaPro 150 start current ~150–225 A.
-- Optional second channel: `Unknown`, 0 Ah and disabled by default. It can later be enabled/configured without recompiling.
-- Runtime battery types: Unknown, Flooded Lead Acid, AGM, GEL, EFB, LiFePO4 and Custom.
-- Unknown battery type disables SOC but never fabricates a chemistry assumption.
-- LiFePO4 does not use the generic lead-acid OCV correction path.
-- Hybrid SOC: coulomb counting, chemistry-dependent charge efficiency, lead-acid OCV plausibility, full-charge synchronization and later off-time correction.
-- NMEA 2000 live battery data using PGN 127508 and 127506.
-- Native ESP32-C3 TWAI backend at 250 kbit/s; no legacy `NMEA2000_esp32` driver.
-- ISO1042 galvanic isolation between ESP32/system domain and NMEA 2000.
-- Automatic diagnostics Wi-Fi AP on every boot: 5-minute connection window, then radio off if unused.
-- Browser configuration, live diagnostics and OTA firmware upload.
-- External 32 MB SPI NOR design target for 1 Hz history plus 50 Hz event capture.
-- Dual-slot I2C FRAM state store with CRC/sequence protection for power-loss-safe checkpoints.
-- Host simulator and native TDD use the same core algorithms as firmware.
-
-## System architecture
-
-```text
-SYSTEM BATTERY +
-      |
-   main fuse
-      |
-500 A / 50 mV high-side shunt
-      |
-      +---- Mercury starter / system loads / chargers
-      |
-   INA238
-      |
-     I2C
-      |
-ESP32-C3-WROOM-02-N8
-  |       |        |
-  |       |        +---- Wi-Fi AP -> browser config / diagnostics / OTA
-  |       +------------- FRAM + external SPI NOR logger
-  |
-  +---- native TWAI ---- ISO1042 ---- NMEA 2000 ---- Garmin
-
-GND_SYS = system battery negative = ignition negative
-
-Optional future second bank:
-second shunt -> INA238 -> ISO1640 -> ESP32
-second battery ground remains isolated from GND_SYS
-```
-
-## High-side sign convention
-
-NMEA 2000 PGN 127508 uses positive battery current for charging and negative for discharging. BatterySentinel therefore intentionally senses the high-side shunt as:
-
-- INA238 `IN+` = load/charger side
-- INA238 `IN-` = battery side
-- positive current = charging
-- negative current = discharging
-
-The INA238 supports bipolar differential measurement, so this reversed sense polarity is intentional. The common-mode battery voltage remains within the device's high-side range.
-
-At 225 A, a 500 A / 50 mV shunt (100 micro-ohm) drops ~22.5 mV and dissipates ~5.1 W.
-
-## Runtime configuration
-
-The boot web portal stores settings in ESP32 NVS. Changing chemistry or capacity invalidates a previously stored SOC unless the stored profile identity still matches.
-
-The optional second channel remains silent on NMEA and does not generate sensor alarms while disabled.
-
-## Diagnostics
-
-On each boot:
-
-```text
-Power on
-   |
-   +--> WPA2 AP BatterySentinel-XXXX
-           |
-           +-- no client for 5 min --> Wi-Fi OFF
-           |
-           +-- client connected --> portal stays active
-                                  --> 60 s after disconnect --> Wi-Fi OFF
-```
-
-Portal functions currently include live system data, battery type/capacity, alarm thresholds, optional second-channel enable and browser OTA.
-
-## Logging / power-loss foundation
-
-- Main sample rate: 50 Hz.
-- Long-term target: 1 record/s.
-- Log record: fixed 32-byte binary record with CRC8.
-- 1 Hz storage requirement: 2,764,800 bytes/day, so 32 MB comfortably covers 5 days plus event reserve.
-- Event target: 10 s pre-trigger + 30 s post-trigger at 50 Hz.
-- Persistent state: two alternating 64-byte FRAM records with CRC32 and wrap-safe sequence numbers; a partially written record is ignored after reboot.
-
-## Repository layout
-
-- `docs/` architecture, SOC model, diagnostics/logging, hardware and test strategy
-- `hardware/` BOM and schematic design notes
-- `include/` firmware configuration
-- `lib/BatteryCore/` platform-independent SOC/alarm logic
-- `lib/BatteryProfiles/` chemistry/runtime profile model
-- `lib/LogCore/` deterministic binary log record format
-- `lib/StateCore/` power-loss-safe persistent state format
-- `src/` ESP32-C3 firmware, diagnostics portal, INA238, TWAI and FRAM drivers
-- `sim/` deterministic desktop simulator
-- `sim/web/` public browser simulator deployed with GitHub Pages
-- `sim/wokwi/` Wokwi custom-chip source and documentation
-- `test/` native TDD/unit tests
-- `.github/workflows/` CI and simulator deployment
-
-## Build
-
-```bash
-pio test -e native
-pio run -e esp32c3
-```
-
-Desktop simulator:
-
-```bash
-cmake -S sim -B build/sim
-cmake --build build/sim
-./build/sim/batterysentinel_sim
-./build/sim/batterysentinel_sim faults
-```
-
-## Simulation
-
-There are two complementary interactive simulation paths.
-
-### GitHub Pages browser simulator
-
-Public simulator:
-
-**https://weisni.github.io/BatterySentinel-N2K/**
-
-No installation is required. Open the page in a current browser and use the controls to change battery voltage, current and simulated fault states. The page is intended for fast functional testing and demonstrations of the BatterySentinel state/alarm behavior without local development tools.
-
-The simulator source is in `sim/web/`. Changes to that directory on `main` are deployed automatically by `.github/workflows/simulator-pages.yml`.
-
-### Wokwi ESP32-C3 simulation
-
-Wokwi runs the **real ESP32-C3 firmware** against a simulated INA238 instead of reimplementing the firmware logic in JavaScript.
-
-Prerequisites:
-
-1. VS Code
-2. PlatformIO extension
-3. Wokwi extension for VS Code
-
-Start the simulation from the repository root:
-
-```bash
-pio run -e esp32c3
-```
-
-Then:
-
-1. Open `diagram.json` in VS Code.
-2. Run **Wokwi: Start Simulator** from the command palette.
-3. Watch the USB Serial/JTAG terminal for firmware output.
-4. Select the simulated INA238 in the diagram to modify its attributes.
-
-Simulated hardware:
-
-- ESP32-C3 DevKitM-1 with 8 MB flash
-- INA238 at I2C address `0x40`
-- SDA GPIO4 / SCL GPIO5
-- status/alarm LED GPIO10
-- ignition switch on GPIO21 (`TX` pin alias in the Wokwi DevKitM-1 model)
-- logic analyzer for SCL, SDA and IGN
-
-INA238 attributes:
-
-- `busVoltage`: simulated battery voltage
-- `currentA`: simulated battery current; positive = charging, negative = discharge
-- `sensorPresent`: `1` = sensor present, `0` = simulated sensor fault
-
-Useful test cases:
-
-| Scenario | Voltage | Current / setting |
-| --- | ---: | ---: |
-| Resting battery | 12.7 V | 0 A |
-| Mercury engine crank | 9.5–11 V | -150…-225 A |
-| Alternator charging | 14.2–14.7 V | positive current |
-| Low-voltage under load | e.g. 10.5 V | negative current |
-| INA238 failure | any | `sensorPresent=0` |
-
-The precompiled INA238 custom-chip WASM is stored at `sim/wokwi/chips/ina238.chip.wasm`. Its source is rebuilt and the Wokwi circuit is lint-validated automatically by `.github/workflows/wokwi-chip.yml`.
-
-Wokwi only partially simulates ESP32-C3 TWAI. Therefore the Wokwi setup validates firmware execution, INA238/I2C behavior, state handling, diagnostics/Wi-Fi startup and GPIO behavior. Final NMEA 2000 electrical and bus acceptance still requires a real CAN transceiver and NMEA 2000 network/test fixture.
-
-More Wokwi-specific details are available in `sim/wokwi/README.md`.
-
-## Status
-
-**V1 engineering prototype.** The ESP32-C3 firmware now builds with a native TWAI backend and the native TDD/simulator pipeline is active. Logging storage, FRAM power-loss integration, NMEA alarms/time sync and final PCB/BOM are the next integration steps.
-
-### Orion XS bridge investigation
+The Orion Bridge receives the charger's Bluetooth Instant Readout and forwards its input and output values to NMEA 2000. Its local HTTPS portal provides setup, live values, channel observations, configurable notifications, diagnostics, administrator password management and firmware updates. The current hardware uses an ESP32-C3 SuperMini with 4 MB flash on the Orion-R5 board.
 
 ![Battery Sentinel Orion Bridge logo](assets/battery-sentinel-orion-logo.svg)
 
-The separate `orion_dongle` build receives Victron Orion XS 1400 Bluetooth Instant Readout and translates it to NMEA 2000 for the Garmin GPSMAP 723xsv, with phone-based HTTPS commissioning, a local administrator account, a guided first-installation flow and live diagnostics. It has no BatterySentinel alarms or SOC estimation. Build with `pio run -e orion_dongle`. The firmware fits a 4 MB ESP32-C3 SuperMini partition layout, but actual Orion/Garmin interoperability and the isolated NMEA 2000 hardware still require physical testing.
+## Start here
 
-The default PlatformIO environment is now `orion_dongle` for the SuperMini. Select `esp32c3` explicitly to build the original 8 MB battery-monitor firmware; `native` runs host tests.
+- [First connection — German, available before joining the bridge Wi-Fi](docs/erstverbindung.md).
+- [German operating and installation manual](output/pdf/BatterySentinel-N2K-Orion-R5-Betriebs-und-Installationsanleitung-DE.pdf).
+- [Orion Bridge firmware 1.2.0](output/firmware/1.2.0/orion-dongle-1.2.0.bin), [download details](output/firmware/1.2.0/README.md) and [update instructions](docs/firmware-update.md).
+- [Current hardware and assembly](hardware/altium-r5/README.md).
+- [PCB hand-assembly data: BOM, placement, orientation and checklists](hardware/altium-r5/Project%20Outputs/Hand%20Assembly/README.md).
+- [Illustrated enclosure assembly manual — English](output/pdf/Orion-R5-Enclosure-Assembly-Manual-EN.pdf).
 
-The dongle portal defaults to German. Use the language selector on any page to switch to English; the browser remembers your choice. Run `node tools/verify_portal_ui.mjs` to check translation coverage and portal behavior without device hardware.
+Save the first-connection instructions and firmware file before connecting to the bridge. The device Wi-Fi provides local access without an internet connection.
 
-The living [Orion XS bridge investigation](docs/orion-xs-bridge.md) records verified interfaces, Garmin display limits, credential provisioning, VE.Direct/GX alternatives, the proposed architecture, and open implementation gates.
+## Local access and setup
 
-The isolated ESP32-C3 SuperMini to NMEA 2000 reference hardware is documented as:
+For console-free owner setup, create a private device manual with the actual stored Wi-Fi credentials using [the local QR generator](docs/service-wifi-qr.md). Double-click `tools/create_service_wifi_manual.cmd` for local entry, or inject a private JSON file. The resulting manual includes a Wi-Fi connection QR and a separate portal QR. Private credentials and PDFs remain outside public releases.
 
-- [design notes, wiring, power/LEN calculation and order links](hardware/orion-dongle-nmea2000.md)
-- [printable schematic (SVG)](hardware/orion-dongle-nmea2000-schematic.svg) and [rendered preview (PNG)](hardware/orion-dongle-nmea2000-schematic.png)
-- [machine-readable prototype BOM (CSV)](hardware/orion-dongle-bom.csv)
+Connect to `OrionBridge-XXXXXX` using the device's individual Wi-Fi password, then open **https://batterysentinel.local/**. Use **https://192.168.4.1/** if the name does not resolve. Stay connected when the phone reports that this network has no internet access.
 
-This is a prototype carrier design, not a certified NMEA 2000 product.
+The blue SuperMini LED lights only when the access point has started, its IP address is available and the HTTPS service is ready. It does not require a connected phone. Service Wi-Fi closes after five minutes without a connected client; hold BOOT for more than two seconds after normal startup to reopen it.
+
+On first use, hold BOOT while creating the local administrator account. Enter the Orion Bluetooth MAC address and 32-character hexadecimal Instant Readout key from VictronConnect, then choose distinct NMEA instances for input and output. The Bluetooth PIN is used in VictronConnect. The portal defaults to German and also supports English.
+
+To change the administrator password, open **Settings → Change password** and verify the current password. **Forgot password?** requires confirmation and physical BOOT access, then restores the fixed recovery password published in the manual. It preserves the username, Wi-Fi password, Orion connection, battery names and NMEA assignments. Existing sessions end; choose a personal password after recovery. Full instructions are in the [first-connection guide](docs/erstverbindung.md).
+
+## Values and diagnostics
+
+The portal shows input/output voltage and current, calculated power, charger state, errors, off reasons, packet age and signal strength. Its Monitor includes separate reception and NMEA-send counters, per-message fields and an event timeline. Channel names can be changed without restarting the bridge.
+
+Bluetooth source resolution is 0.01 V and 0.1 A. Three-decimal formatting does not add measurement precision; power is calculated as voltage × current. After ten seconds without an accepted Orion record, electrical values become unavailable for NMEA publication. Orion currents describe the charger's channels; they do not provide a complete battery balance or state of charge. The bridge does not control the charger.
+
+NMEA output uses PGN 127508 for electrical values, 127506 for source metadata and 127507 for eligible charger states. An accepted send request does not confirm that a Garmin received or displayed it. See the [parameter and diagnostics reference](docs/orion-xs-bridge.md#monitor-parameters-precision-and-counters).
+
+**Insights** shows channel voltage extrema, a recent trend/history of up to 60 samples within five minutes, observed Orion Ah/Wh and their covered duration, plus observed time below the saved low-voltage threshold. Gaps over five seconds are excluded. Observations reset on reboot; these are charger-channel totals, not a complete battery balance.
+
+**Alerts** provides separate input/output low/high limits, confirmation/clear periods, data-loss and charger-error rules, reminders and local acknowledgment. The master switch and experimental Garmin delivery are off by default. Active warnings remain visible across portal tabs; missing browser contact is shown as unknown status. UTC from validated NMEA time can backdate events from the same boot. No clock or observation history survives a reboot. See [observations, notifications and time](docs/diagnostics-logging.md) for defaults, limits and Garmin acceptance.
+
+## Enclosure and printing
+
+**Current enclosure revision - V2.3 thin walls:** [V2 for the confirmed 7 mm cable](hardware/altium-r5/enclosure/sealed-v2/README.md) implements the approved [seal revision concept](hardware/altium-r5/enclosure/seal-redesign/README.md): separate internal strain relief, a stiff three-screw pressure plate, raised bead seals and a 16 mm longer cable bay. Free wall fields are reduced to 3 mm with six projecting symmetric screw bosses; only seal rims and connector/insert pads retain local reinforcement. The bevels, shallow ribs and centred flush branding remain. It includes CAD/STL, a complete six-plate 3MF, coupons, an [assembly manual](output/pdf/Orion-Enclosure-V2-Assembly-EN.pdf) and a [manufacturing / TPU Air manual](output/pdf/Orion-Enclosure-V2-Manufacturing-EN.pdf). See the digital validation reports; physical calibration, retention and sealing remain open. The earlier 95A trial bent the cap and did not retain the cable; SainSmart TPU Air is ordered but not physically qualified.
+
+The previous [Bambu P2S four-plate project](hardware/altium-r5/enclosure/sealed-print/Orion-R5-P2S-flush-colour.3mf), [printing and assembly guide](hardware/altium-r5/enclosure/sealed-print/README.md) and [plate/colour instructions](hardware/altium-r5/enclosure/sealed-print/flush-colour/README.md) are preserved as the earlier prototype, including the user's test plates and settings. Do not mix its seals with V2 parts. Both revisions retain contrasting PETG lettering and a logo flush with the lid surface.
+
+The 52 × 36 mm board has independent retention. Screw-fastened service covers, continuous TPU face seals and an unsplit cable cartridge provide the service and sealing arrangement. Thread the cartridge onto the cable before soldering. Measure the delivered cable and verify the actual inserts, screws, USB plug and module fit before assembly. Complete cable-retention and wet tests with electronics removed. No verified IP rating is claimed.
+
+[Optional P2S process presets](hardware/altium-r5/enclosure/sealed-print/awesome-ai-profiles/README.md) and the [filament colour shortlist](docs/enclosure-filament-colours.md) support print preparation. Physical colour, adhesion, fit and sealing remain acceptance checks.
+
+## Progress and open tasks
+
+Status updated on 2026-10-10:
+
+- [x] First Orion-R5 assembled; USB, Wi-Fi and portal setup work, reported by the user on 2026-10-10. Boat-side power/CAN/thermal acceptance is still open.
+- [x] German manual edition 1.5 adds QR handover, bench checks and fault consequences. A device-specific generator creates private access pages without firmware changes.
+- [ ] Complete [the release-bound Orion-R5 bench and boat commissioning checklist](docs/orion-r5-commissioning.md). Several kiloohms measured on the unpowered standalone board do not establish safe network operation.
+- [x] Close the [Wi-Fi heating investigation](docs/orion-r5-thermal-investigation.md) following the user's final assessment: Wi-Fi causes the observed heating and the chip takes considerable time to cool after shutdown. The reduced-power trial made no noticeable difference and was discarded. The user accepts the standard firmware's behavior; no BLE/CPU changes or further diagnostic firmware are planned for this concern. Measured closed-case temperatures and final boat acceptance remain separate open checks.
+- [ ] Generate and scan the first device's private Wi-Fi code, verify receiver data and reconcile the current firmware LEN declaration with measured power demand.
+
+- [x] All parts ordered and PCB manufacture commissioned, confirmed by the user on 2026-09-25.
+- [x] Native Altium design completed by the user; the supplied DRC report records zero violations. This is the supplied result, not a newly executed DRC.
+- [x] Successful Orion reception after entering MAC/key and a phone OTA update reported by the user.
+- [x] Password change, BOOT-confirmed password recovery and status-based blue Wi-Fi LED implemented.
+- [x] Implemented channel observations, validated network UTC and configurable local notifications for firmware 1.2.0; experimental Garmin alert delivery stays opt-in and requires plotter testing.
+- [x] Portal/browser checks cover both languages, mobile/desktop layouts, observation gaps/coverage, settings persistence, incident acknowledgment, boot-aware event time and request coordination.
+- [x] Public operating guides updated for firmware 1.2.0; German operating PDF includes the new functions. The enclosure manual is unchanged.
+- [x] Firmware 1.2.0 built; 147 native cases, 175 extracted HTTP-handler checks with regression mutations, portal/preview/OTA and Edge browser checks passed. Independent Python and production C++ OTA validators accepted the final image.
+- [x] Added the separate requested OLED debug build `orion_debug_oled` / `1.2.0-debug.1`, with a persistent connectivity bar and seven diagnostic pages advancing every 2 seconds. Full native suite now passes 165 cases; driver fault checks, exact-target OTA checks and firmware builds pass. See the [debug guide](docs/internal/oled-debug.md).
+- [ ] Validate the delivered OLED's 72 x 40 profile, border/orientation, separately wired CAN TX4/RX7, live connectivity and simultaneous BLE/HTTPS/CAN operation on the debug board.
+- [ ] Record first-board inspection, complete the enclosure and document its fit/retention checks; first PCB assembly is already reported complete.
+- [x] Recorded failed 95A TPU seal/cable-cap trial and prepared a revision sketch for the confirmed 7 mm cable.
+- [x] Implemented V2 enclosure geometry, nine cable sleeves, independent clamp, fit/hardness coupons and separate assembly/manufacturing instructions with engineering Shore A targets.
+- [ ] Calibrate the actual TPU Air spool/nozzle; validate measured hardness, sealing, creep and independent strain relief on the printed V2 enclosure.
+- [ ] Verify actual module/cable/fastener fit, power switching, temperature and empty-case sealing.
+- [ ] Confirm repeated login with 1.2.0 on the reporting phone, including reload and return to the login address.
+- [ ] Test password changes and recovery across power cycles, preservation of assignments, LED timing and supported phone/browser combinations on hardware.
+- [ ] Complete BLE/Wi-Fi coexistence, raw NMEA traffic and Garmin acceptance on the assembled installation.
+- [ ] Reconcile the configured NMEA load declaration with measured hardware consumption before release.
+- [ ] Verify suitable voltage thresholds, actual power availability, covered Ah/Wh against recorded Orion samples, time-source changes, warning clearing/acknowledgment and experimental Garmin presentation on the installed hardware.
+
+Firmware 1.2.0 is available for installation. The SuperMini application occupies 1,902,064 bytes of its 1,966,080-byte slot (64,016 bytes remain). This work does not install firmware on the device. Ordering and successful software checks do not complete physical acceptance.
+
+## Recorded procurement costs
+
+Amounts reported by the user on 2026-09-25, with import duty added on 2026-09-30; payment is confirmed only where stated.
+
+| Supplier / item | Recorded cost | Status |
+| --- | ---: | --- |
+| JLC | EUR 40.20 | Paid |
+| LCSC | EUR 58.22 | Paid |
+| Amazon: NMEA 2000 T-piece, 1 unit | EUR 18.14 | Ordered; payment not separately confirmed |
+| Amazon: ESP32-C3 SuperMini, pack of 4 without OLED | EUR 18.99 | Ordered; payment not separately confirmed |
+| Amazon: male-to-bare-wire NMEA 2000 drop cable, 1 m | EUR 16.26 | Ordered; payment not separately confirmed |
+| Amazon: Habwea insert assortment and WZHUIDA M2 fastener assortment, combined order | EUR 20.98 | Ordered; payment not separately confirmed |
+| PCB customs and DHL processing | EUR 23.85 | Paid, confirmed by the user on 2026-09-30; [invoice](hardware/altium-r5/procurement/2026-09-30-DHL-PCB-customs-invoice.pdf) archived |
+| **Confirmed paid** | **EUR 122.27** | |
+| **Amazon subtotal** | **EUR 74.37** | Payment not separately confirmed |
+| **Total recorded costs** | **EUR 196.64** | |
+
+The T-piece and combined assortment order are each counted once. The displayed module coupon is not deducted without a confirmed checkout amount. Verify delivered insert dimensions and screw lengths against the assembly guide. The M2 assortment does not establish availability of the required M3 × 8 screws.
+
+## Development
+
+The requested integrated-OLED ESP32-C3 debug board has its own [USB firmware package](output/firmware/debug-oled/1.2.0-debug.1/README.md) and [wiring/status guide](docs/internal/oled-debug.md). Build it with `pio run -e orion_debug_oled`. Its OLED occupies GPIO5/6, so CAN TX is GPIO4 and RX is GPIO7. It needs a separate wired test interface and is not a plug-in carrier replacement. The distinct firmware target prevents cross-board OTA updates. Display geometry and real hardware operation still need physical acceptance.
+
+Build the current bridge and run its checks:
+
+```bash
+pio run -e orion_dongle
+pio test -e native
+node tools/verify_portal_ui.mjs
+python tools/verify_portal_http.py
+```
+
+The [local portal preview](docs/web-preview.md) serves the firmware interface with synthetic Orion data:
+
+```bash
+node tools/preview_portal.mjs
+```
+
+Engineering history, source-production notes and internal investigations are indexed in the [project-internal documentation](docs/internal/README.md). Use the user guides above for installation and operation.

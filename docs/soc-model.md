@@ -1,3 +1,5 @@
+> **Project-internal engineering record.** Historical designs, unbuilt concepts and test targets in this file are development material, not existing or released product variants. Use the current operating and assembly guides for the Orion Bridge. [Internal index](internal/README.md).
+
 # AGM SOC Model
 
 BatterySentinel is intentionally switched with ignition, so it cannot count every coulomb while the boat is off. V1 therefore uses a **hybrid SOC estimator** rather than pretending that a pure coulomb counter is exact.

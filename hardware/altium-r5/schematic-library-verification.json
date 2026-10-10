@@ -1,0 +1,37 @@
+{
+  "components": 37,
+  "nets": 23,
+  "manual_module": "Original user-selected Amazon B0FN4F6244,16 castellation lands; excluded only from machine BOM/CPL, included in assembled geometry",
+  "service_switch": {
+    "RUN": [
+      "1",
+      "2"
+    ],
+    "SERVICE": [
+      "2",
+      "3"
+    ],
+    "service_contact_3": "unconnected",
+    "intent": "Disconnect external 5V_MODULE supply before inserting USB; no simultaneous source promise."
+  },
+  "schematic_records": {
+    "BatterySentinel-N2K-Orion-R5-Logic": 309,
+    "BatterySentinel-N2K-Orion-R5-Power": 773
+  },
+  "library_components": 37,
+  "library_footprints": 19,
+  "passed": true,
+  "release_checks_complete": false,
+  "checks": 6195,
+  "errors": [],
+  "scope": "schematics_and_libraries",
+  "qualification": "Checks the generated package/source files only. Native Altium ERC/DRC, fabrication DFM, assembly orientation approval and hardware qualification are separate.",
+  "input_sha256": {
+    "orion-r5-design.json": "c2bf4b8ffe4e4592865f9705d4225aa2acfeaae2b860f8d6b53a96eb7e0427ea",
+    "BatterySentinel-N2K-Orion-R5-Logic.SchDoc": "3855323ffbf1eedb65161bea24e8074e77d3e66c3fe42d46e87b1835fac89947",
+    "BatterySentinel-N2K-Orion-R5-Power.SchDoc": "95dd4acf04a2bba605f4536d0915184cb6cd01a12d7d875e03ff0a1435cedbec",
+    "BatterySentinel-N2K-Orion-R5.PrjPcb": "1ef0209798c6c188023a9bdb6a858736958360667361b1beba0d82eadb7546f7",
+    "Orion-Bridge.SchLib": "4ba680cf5f9f6387e27509a84342b539ede0667a5fc60f8ecad8183a97efc169",
+    "Orion-Bridge.PcbLib": "87560cc6adec5d6e5b58b650b2455c7c0803df931dc2f881413f9d744b1b110a"
+  }
+}

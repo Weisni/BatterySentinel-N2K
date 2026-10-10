@@ -4,3 +4,26 @@ build/
 .DS_Store
 *.user
 *.swp
+# Private per-device service Wi-Fi credentials and PDFs.
+output/private/
+*.service-wifi.json
+__pycache__/
+# Local research, installed QA dependencies, renders and scratch scripts.
+/tmp/
+/00000.log
+# Altium editor history and preview caches; preserve native designs and outputs.
+hardware/altium*/History/
+hardware/altium*/__Previews/
+hardware/altium*/*.PrjPcbStructure
+hardware/altium*/*.SchDocPreview
+hardware/altium*/*.PcbDocPreview
+hardware/altium-r2/History/
+hardware/altium-r2/__Previews/
+hardware/altium-r2/*.PrjPcbStructure
+hardware/altium-r2/*.SchDocPreview
+hardware/altium-r2/*.PcbDocPreview
+hardware/altium-r3/History/
+hardware/altium-r3/__Previews/
+hardware/altium-r3/*.PrjPcbStructure
+hardware/altium-r3/*.SchDocPreview
+hardware/altium-r3/*.PcbDocPreview

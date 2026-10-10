@@ -1,0 +1,3 @@
+﻿Designator,Comment,Reason
+J1,NMEA Micro-C pigtail,Explicitly excluded from assembly
+TP1,Shield / chassis pad,Explicitly excluded from assembly

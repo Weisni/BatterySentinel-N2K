@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-07",
+  "pdf_sha256": "e54766cdf657ca27f3238a601b26eff70cf612ca8e0ebc92744475d798d42f5a",
+  "rendering": "Poppler pdftoppm 110 dpi",
+  "pages_visually_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "status": "passed",
+  "findings": "All pages readable; module map stays below header; no visible clipping or overlap; critical pin/stripe locations compared to release pad netlist. Unused fallback font warnings did not affect visible rendering.",
+  "release_archive_preserved": true,
+  "release_reference_copies_verified": true,
+  "csv_reference_count": 37,
+  "carrier_smd_count": 33,
+  "carrier_tht_count": 1,
+  "pdf_copies_identical": true,
+  "hardware_test_performed": false
+}

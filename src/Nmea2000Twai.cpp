@@ -10,6 +10,26 @@ namespace bs {
 Nmea2000Twai::Nmea2000Twai(gpio_num_t txPin, gpio_num_t rxPin)
     : txPin_(txPin), rxPin_(rxPin) {}
 
+BusStatus Nmea2000Twai::busStatus() const {
+    BusStatus status;
+    status.received = received_;
+    status.lastRxMs = lastRxMs_;
+    status.rxFrames = rxFrames_;
+    if (!driverReady_) return status;
+
+    twai_status_info_t info{};
+    if (twai_get_status_info(&info) != ESP_OK) return status;
+    status.running = info.state == TWAI_STATE_RUNNING;
+    status.busOff = info.state == TWAI_STATE_BUS_OFF;
+    status.recovering = info.state == TWAI_STATE_RECOVERING;
+    status.txErrors = info.tx_error_counter;
+    status.rxErrors = info.rx_error_counter;
+    // Unlike txFailures_, this is the driver's failed-transmission counter,
+    // not the number of calls that could not enqueue a frame.
+    status.txFailed = info.tx_failed_count;
+    return status;
+}
+
 bool Nmea2000Twai::CANOpen() {
     if (driverReady_) return true;
 
@@ -83,6 +103,9 @@ bool Nmea2000Twai::CANGetFrame(unsigned long& id,
         id = static_cast<unsigned long>(msg.identifier & 0x1FFFFFFFu);
         len = msg.data_length_code;
         std::memcpy(buf, msg.data, len);
+        received_ = true;
+        lastRxMs_ = millis();
+        ++rxFrames_;
         return true;
     }
     return false;

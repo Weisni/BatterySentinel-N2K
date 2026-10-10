@@ -1,0 +1,1627 @@
+{
+  "revision": "R4 electrical candidate for integration",
+  "components": [
+    {
+      "ref": "U3",
+      "value": "AP63205WU-7",
+      "footprint": "TSOT26_DIODES",
+      "pins": [
+        {
+          "number": "1",
+          "name": "FB",
+          "net": "5V_BUS",
+          "type": 0
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "net": "BUS_PROT",
+          "type": 0
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "net": "BUS_PROT",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "5",
+          "name": "SW",
+          "net": "SW_BUS",
+          "type": 2
+        },
+        {
+          "number": "6",
+          "name": "BST",
+          "net": "BST_BUS",
+          "type": 0
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "AP63205WU-7",
+      "lcsc": "C2071056",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2210280930_Diodes-Incorporated-AP63205WU-7_C2071056.pdf",
+      "pcb_footprint": {
+        "body": [
+          3.0,
+          1.7
+        ],
+        "height": 1.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "note": "Diodes DS41326 Rev3-2 p17 suggested TSOT26 copper: X=.70,Y=1.00,Y1=3.20 total span,C=.95. Top view: pin1 lower-left; pin4 upper-right.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        2,
+        13,
+        17
+      ],
+      "constraints": [
+        "FB directly senses the respective output rail; do NOT insert a divider for fixed-voltage AP63203/AP63205.",
+        "Place input MLCC directly across pins3/4; keep the switched-current loop compact.",
+        "Place bootstrap100nF directly between pins6/5. Keep SW copper small and feedback away from SW/inductor.",
+        "EN tied to VIN is permitted by the manufacturer."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2071056",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2071056",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock."
+    },
+    {
+      "ref": "U4",
+      "value": "AP63203WU-7",
+      "footprint": "TSOT26_DIODES",
+      "pins": [
+        {
+          "number": "1",
+          "name": "FB",
+          "net": "3V3_LOGIC",
+          "type": 0
+        },
+        {
+          "number": "2",
+          "name": "EN",
+          "net": "5V_SYS",
+          "type": 0
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "net": "5V_SYS",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "5",
+          "name": "SW",
+          "net": "SW_LOGIC",
+          "type": 2
+        },
+        {
+          "number": "6",
+          "name": "BST",
+          "net": "BST_LOGIC",
+          "type": 0
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "AP63203WU-7",
+      "lcsc": "C780769",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2201131130_Diodes-Incorporated-AP63203WU-7_C780769.pdf",
+      "pcb_footprint": {
+        "body": [
+          3.0,
+          1.7
+        ],
+        "height": 1.0,
+        "pads": [
+          {
+            "number": "1",
+            "x": -0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 0,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "3",
+            "x": 0.95,
+            "y": -1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "4",
+            "x": 0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "5",
+            "x": 0,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "6",
+            "x": -0.95,
+            "y": 1.1,
+            "sx": 0.7,
+            "sy": 1,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "note": "Diodes DS41326 Rev3-2 p17 suggested TSOT26 copper: X=.70,Y=1.00,Y1=3.20 total span,C=.95. Top view: pin1 lower-left; pin4 upper-right.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        2,
+        13,
+        17
+      ],
+      "constraints": [
+        "FB directly senses the respective output rail; do NOT insert a divider for fixed-voltage AP63203/AP63205.",
+        "Place input MLCC directly across pins3/4; keep the switched-current loop compact.",
+        "Place bootstrap100nF directly between pins6/5. Keep SW copper small and feedback away from SW/inductor.",
+        "EN tied to VIN is permitted by the manufacturer."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C780769",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C780769",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock."
+    },
+    {
+      "ref": "U2",
+      "value": "B0505S-3WR2",
+      "footprint": "EVISUN_B0505S_3WR2",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VIN",
+          "net": "5V_BUS",
+          "type": 7
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND_BUS",
+          "type": 7
+        },
+        {
+          "number": "4",
+          "name": "0V",
+          "net": "GND_LOGIC",
+          "type": 7
+        },
+        {
+          "number": "6",
+          "name": "+VO",
+          "net": "5V_ISO",
+          "type": 7
+        }
+      ],
+      "group": "power",
+      "manufacturer": "EVISUN",
+      "mpn": "B0505S-3WR2",
+      "lcsc": "C7500927",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2308311627_EVISUN-B0505S-3WR2_C7500927.pdf",
+      "pcb_footprint": {
+        "body": [
+          19.9,
+          7.25
+        ],
+        "height": 10.41,
+        "pads": [
+          {
+            "number": "1",
+            "x": -7.615,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": -5.075,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "4",
+            "x": 0.005,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          },
+          {
+            "number": "6",
+            "x": 5.085,
+            "y": 2.6,
+            "sx": 1.6,
+            "sy": 1.6,
+            "drill": 1.0,
+            "shape": "ROUND"
+          }
+        ],
+        "note": "EVISUN p4: nominal19.65x7x10.16mm, unspecified body tolerance+/-0.25mm, lead1 x=2.21 from body left, pitch1-2=2.54/2-4=5.08/4-6=5.08mm. Pin row .90mm from long body edge. Bottom view mirrored vertically to PCB TOP: row Y=+2.60mm. Finished holes1.00mm, annulus.30mm. Primary/secondary pad copper gap3.48mm.",
+        "provisional": false
+      },
+      "source_pages": [
+        1,
+        4,
+        5
+      ],
+      "assembly_type": "Through-hole, factory manual soldering, Standard PCBA",
+      "constraints": [
+        "This exact EVISUN pin mapping differs from some generic DC/DC assumptions: pin1 is +VIN, pin2 is input GND.",
+        "Permanent minimum-load resistors across5V_ISO keep the output loaded even when USB supplies5V_SYS.",
+        "Manufacturer output600mA maximum /60mA minimum; regulated5V_BUS remains inside4.5\u20135.5V module input range.",
+        "Do not replace with another manufacturer solely because the abbreviated part number matches."
+      ],
+      "assembly": {
+        "populate": true,
+        "lcsc": "C7500927",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C7500927",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock."
+    },
+    {
+      "ref": "L2",
+      "value": "4.7uH",
+      "footprint": "SUNLORD_SWPA4030",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SW_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "5V_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Sunlord",
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+      "selection_notes": "L3 uses4.7uH rather than3.9uH reference value: reduced ripple at the4.5\u20135.5V secondary input;44uF nominal output retained. Power current target0.5A at3.3V, not2A board output.",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C57269",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C57269",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4,
+          4
+        ],
+        "height": 3,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7."
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock."
+    },
+    {
+      "ref": "L3",
+      "value": "4.7uH",
+      "footprint": "SUNLORD_SWPA4030",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "SW_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "3V3_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "manufacturer": "Sunlord",
+      "mpn": "SWPA4030S4R7MT",
+      "lcsc": "C57269",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2310251551_Sunlord-SWPA4030S4R7MT_C57269.pdf",
+      "selection_notes": "L3 uses4.7uH rather than3.9uH reference value: reduced ripple at the4.5\u20135.5V secondary input;44uF nominal output retained. Power current target0.5A at3.3V, not2A board output.",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C57269",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C57269",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4,
+          4
+        ],
+        "height": 3,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.5,
+            "y": 0,
+            "sx": 1.1,
+            "sy": 3.7,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7.",
+        "note": "Sunlord SWPA datasheet2025-05-08 p2 recommended SWPA4030S pattern: gap1.9, padwidth1.1, padheight3.7."
+      },
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock."
+    },
+    {
+      "ref": "C20",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 50V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C138687",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C138687",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          2.5
+        ],
+        "height": 2.7,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected."
+      }
+    },
+    {
+      "ref": "C21",
+      "value": "10uF 50V X7R",
+      "footprint": "C1210",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 50V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL32B106KBJNNNE",
+      "lcsc": "C138687",
+      "datasheet": "https://datasheet.lcsc.com/lcsc/1912112237_Samsung-Electro-Mechanics-CL32B106KBJNNNE_C138687.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C138687",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C138687",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          3.2,
+          2.5
+        ],
+        "height": 2.7,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.6,
+            "y": 0,
+            "sx": 1.2,
+            "sy": 2.8,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "source_note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected.",
+        "note": "Samsung CL32B106KBJNNNE body3.2x2.5mm, nominal1210 land pattern selected."
+      }
+    },
+    {
+      "ref": "C22",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C23",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C24",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BST_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SW_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C25",
+      "value": "10uF 25V X5R",
+      "footprint": "C0805",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C26",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_BUS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C27",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C28",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C29",
+      "value": "10uF 25V X5R",
+      "footprint": "C0805",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_SYS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "10uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL21A106KAYNNNE",
+      "lcsc": "C15850",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C15850",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C15850",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C30",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_SYS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C31",
+      "value": "100nF 50V X7R",
+      "footprint": "C0603",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "BST_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "SW_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "100nF 25V X7R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "YAGEO",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2211101700_YAGEO-CC0603KRX7R9BB104_C14663.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14663",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14663",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C32",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "3V3_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "C33",
+      "value": "22uF 25V X5R",
+      "footprint": "C1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "3V3_LOGIC",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "22uF 16V X5R",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "mpn": "CL31A226KAHNNNE",
+      "lcsc": "C12891",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C12891",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C12891",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "R20",
+      "value": "150R 1% 0.5W",
+      "footprint": "R1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "150ohm,1%,>=0.5W,1206",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "SEI(Stackpole Elec)",
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C4258541",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C4258541",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "R21",
+      "value": "150R 1% 0.5W",
+      "footprint": "R1206",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "5V_ISO",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND_LOGIC",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "150ohm,1%,>=0.5W,1206",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "SEI(Stackpole Elec)",
+      "mpn": "RNCP1206FTD150R",
+      "lcsc": "C4258541",
+      "datasheet": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404111532_SEI-Stackpole-Elec-RNCP1206FTD150R_C4258541.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C4258541",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C4258541",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      }
+    },
+    {
+      "ref": "D1",
+      "value": "SMBJ18A 600W",
+      "footprint": "SMB",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "GND_BUS",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "component_specification": "SMBJ18A",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "BORN",
+      "mpn": "SMBJ18A",
+      "lcsc": "C152104",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_BORN-SMBJ18A_C152104.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C152104",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C152104",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.7,
+          3.9
+        ],
+        "height": 2.5,
+        "pads": [
+          {
+            "number": "1",
+            "x": -2,
+            "y": 0,
+            "sx": 2,
+            "sy": 2.5,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 2,
+            "y": 0,
+            "sx": 2,
+            "sy": 2.5,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "provisional": false,
+        "source_note": "BORN SMBJ Series Rev2022-Jan-1-A p7 manufacturer pattern: pad2.0x2.5mm, innergap2.0mm, centres+/-2.0mm; maxbody4.7x3.9x2.5; pin1Kleft,2Aright. Visually checked selected C152104 PDF.",
+        "note": "BORN SMBJ Series Rev2022-Jan-1-A p7 manufacturer pattern: pad2.0x2.5mm, innergap2.0mm, centres+/-2.0mm; maxbody4.7x3.9x2.5; pin1Kleft,2Aright. Visually checked selected C152104 PDF."
+      }
+    },
+    {
+      "ref": "D2",
+      "value": "SS14 1A 40V",
+      "footprint": "SMA",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "5V_SYS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "5V_ISO",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "SS14",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "mpn": "SS14",
+      "lcsc": "C2480",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2480",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2480",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.5,
+          2.8
+        ],
+        "height": 2.45,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "provisional": false,
+        "source_note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs.",
+        "note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs."
+      }
+    },
+    {
+      "ref": "D4",
+      "value": "SS14 1A 40V",
+      "footprint": "SMA",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "5V_SYS",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "USB_VBUS",
+          "type": 4
+        }
+      ],
+      "group": "power",
+      "component_specification": "SS14",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "mpn": "SS14",
+      "lcsc": "C2480",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101109_MDD-Microdiode-Semiconductor-SS14_C2480.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C2480",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C2480",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.5,
+          2.8
+        ],
+        "height": 2.45,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "provisional": false,
+        "source_note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs.",
+        "note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs."
+      }
+    },
+    {
+      "ref": "D5",
+      "value": "SS26 2A 60V",
+      "footprint": "SMA",
+      "pins": [
+        {
+          "number": "1",
+          "name": "K",
+          "net": "BUS_PROT",
+          "type": 4
+        },
+        {
+          "number": "2",
+          "name": "A",
+          "net": "FUSED_IN",
+          "type": 4
+        }
+      ],
+      "group": "protection",
+      "component_specification": "SS26",
+      "procurement_status": "Exact manufacturer/MPN/JLC code confirmed; current public InStock metadata, not reserved stock.",
+      "manufacturer": "MDD(Microdiode Semiconductor)",
+      "mpn": "SS26",
+      "lcsc": "C14238",
+      "datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS26_C14238.pdf",
+      "assembly": {
+        "populate": true,
+        "lcsc": "C14238",
+        "lcsc_confirmed": true,
+        "source_url": "https://jlcpcb.com/partdetail/C14238",
+        "rotation_offset_deg": 0,
+        "centroid_offset_mm": [
+          0,
+          0
+        ],
+        "note": "Manufacturer/MPN and InStock metadata verified at JLCPCB 2026-09-23. Stock is not reserved. Check orientation in final assembly preview."
+      },
+      "stock_observation": {
+        "in_stock": true,
+        "date": "2026-09-23",
+        "method": "Current public JLCPCB page structured metadata; no checkout reservation"
+      },
+      "pcb_footprint": {
+        "body": [
+          4.5,
+          2.8
+        ],
+        "height": 2.45,
+        "pads": [
+          {
+            "number": "1",
+            "x": -1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          },
+          {
+            "number": "2",
+            "x": 1.965,
+            "y": 0,
+            "sx": 1.52,
+            "sy": 1.68,
+            "drill": 0,
+            "shape": "RECTANGLE"
+          }
+        ],
+        "provisional": false,
+        "source_note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs.",
+        "note": "MDD SS12-SS1200 Rev2025A3 p3 / SS22-SS2200 Rev2024A4 p3 suggested SMA pattern: pad1.52x1.68, centrepitch3.93, innergap2.41, totalX5.45mm. Maxbody4.5x2.8x2.45; pin1Kleft,2Aright. Visually checked selected C2480/C14238 PDFs."
+      }
+    }
+  ],
+  "remove_r3_refs": [
+    "Q1",
+    "Z1",
+    "R1",
+    "C1",
+    "C2",
+    "C3",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "JP1"
+  ],
+  "retain_r3_refs": [
+    "F1",
+    "U1",
+    "D3",
+    "L1",
+    "C4",
+    "C5",
+    "R2",
+    "R3",
+    "R4",
+    "J1",
+    "TP1"
+  ],
+  "domain_gap_mm": 3.2,
+  "interfaces": {
+    "input": "NET_S->F1->FUSED_IN->D5->BUS_PROT",
+    "usb": "USB_VBUS is the USB connector side before D4; GND_LOGIC common with USB ground",
+    "logic": "3V3_LOGIC powers official ESP32-C3 module and U1 VCC1",
+    "can": "5V_BUS powers U1 VCC2 and U2 input; GND_BUS is NET-C"
+  },
+  "integration_notes": [
+    "U2 and U3/U4 pad geometry verified against primary manufacturer drawings. Other exact MPN/landpatterns come from separate sourcing pass.",
+    "F1 retained until sourcing picks exact replacement, but its value must cover worst-case bus input around0.5A.",
+    "Do not connect GND_LOGIC to GND_BUS, including USB shield.",
+    "SS14 diode cathodes join at5V_SYS. These prevent bulk backfeed, but semiconductor leakage is finite; not a safety disconnect.",
+    "Keep primary and secondary domains separated by3.2mm functional isolation barrier; no safety certification implied.",
+    "An assembled prototype must still be electrically tested; component/module certifications do not certify the completed network node."
+  ]
+}

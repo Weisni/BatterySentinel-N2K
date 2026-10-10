@@ -1,0 +1,30 @@
+{
+  "assembly": {
+    "populated_components": 50,
+    "bom_file": "BOM-JLCPCB.csv",
+    "cpl_file": "CPL-JLCPCB.csv",
+    "bom_rows": 25,
+    "cpl_rows": 50,
+    "scope": "CSV data consistency only; sourcing stock and JLCPCB rotation preview are not checkout approvals."
+  },
+  "panel_size_mm": [
+    70,
+    70
+  ],
+  "unit_translation_mm": [
+    11.0,
+    16.0
+  ],
+  "tabs": 4,
+  "profile_contours": 5,
+  "minimum_cavity_copper_clearance_mm": 0.3049872009328839,
+  "minimum_added_hole_copper_clearance_mm": 0.30499999999999966,
+  "plated_drills": 54,
+  "nonplated_drills": 32,
+  "contour_comparison_tolerance_mm": 5e-05,
+  "passed": true,
+  "release_checks_complete": true,
+  "checks": 12621,
+  "errors": [],
+  "scope": "Independent actual single-board and panel Gerber/Excellon profile, copper/mask/paste translation, support tabs, holes, antenna/body voids, BOM/CPL translation and ZIP/hash audit. Unit electrical/native DRC and JLC manufacturing review are separate prerequisites."
+}

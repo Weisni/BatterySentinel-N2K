@@ -1,0 +1,212 @@
+{
+  "passed": true,
+  "checks": 4776,
+  "errors": [],
+  "components": 28,
+  "nets": 21,
+  "library_components": 24,
+  "library_footprints": 20,
+  "tracks": 148,
+  "vias": 27,
+  "copper_regions": 105,
+  "component_bodies": 153,
+  "copper_verification": {
+    "passed": true,
+    "errors": [],
+    "connected_nets": 21,
+    "total_nets": 21,
+    "connectivity": {
+      "SHIELD": [
+        [
+          "J1.1",
+          "TP1.1"
+        ]
+      ],
+      "NET_S": [
+        [
+          "J1.2",
+          "F1.1"
+        ]
+      ],
+      "GND_BUS": [
+        [
+          "J1.3",
+          "R1.2",
+          "D1.2",
+          "C1.2",
+          "U3.2",
+          "U3.4",
+          "C2.2",
+          "C3.2",
+          "C8.2",
+          "C9.2",
+          "U2.2",
+          "D3.3",
+          "U1.5",
+          "C4.2"
+        ]
+      ],
+      "CANH_EXT": [
+        [
+          "J1.4",
+          "D3.1",
+          "L1.1"
+        ]
+      ],
+      "CANL_EXT": [
+        [
+          "J1.5",
+          "D3.2",
+          "L1.2"
+        ]
+      ],
+      "FUSED_IN": [
+        [
+          "F1.2",
+          "Q1.2",
+          "Q1.4"
+        ]
+      ],
+      "GATE": [
+        [
+          "Q1.1",
+          "Z1.2",
+          "R1.1"
+        ]
+      ],
+      "BUS_PROT": [
+        [
+          "Q1.3",
+          "Z1.1",
+          "D1.1",
+          "C1.1",
+          "U3.1",
+          "C2.1",
+          "C8.1",
+          "L2.1"
+        ]
+      ],
+      "5V_BUS": [
+        [
+          "U3.3",
+          "C3.1",
+          "U1.8",
+          "C4.1"
+        ]
+      ],
+      "DCDC_IN": [
+        [
+          "L2.2",
+          "C9.1",
+          "U2.1"
+        ]
+      ],
+      "GND_LOGIC": [
+        [
+          "U2.6",
+          "C6.2",
+          "C7.2",
+          "U1.4",
+          "C5.2",
+          "MCU1.GND"
+        ]
+      ],
+      "5V_ISO": [
+        [
+          "U2.7",
+          "C6.1",
+          "C7.1",
+          "D2.2"
+        ]
+      ],
+      "5V_AFTER_DIODE": [
+        [
+          "D2.1",
+          "JP1.1"
+        ]
+      ],
+      "5V_MODULE": [
+        [
+          "JP1.2",
+          "MCU1.5V"
+        ]
+      ],
+      "CANL": [
+        [
+          "L1.3",
+          "U1.6"
+        ]
+      ],
+      "CANH": [
+        [
+          "L1.4",
+          "U1.7"
+        ]
+      ],
+      "3V3_LOGIC": [
+        [
+          "U1.1",
+          "C5.1",
+          "R2.1",
+          "MCU1.3V3"
+        ]
+      ],
+      "TXD": [
+        [
+          "U1.2",
+          "R2.2",
+          "R3.2"
+        ]
+      ],
+      "RXD": [
+        [
+          "U1.3",
+          "R4.1"
+        ]
+      ],
+      "GPIO6": [
+        [
+          "R3.1",
+          "MCU1.6"
+        ]
+      ],
+      "GPIO7": [
+        [
+          "R4.2",
+          "MCU1.7"
+        ]
+      ]
+    },
+    "minimum_clearance_mm": 0.269842,
+    "method": "Shapely exact pad/track/via geometry, copper islands joined through plated holes; both layers checked"
+  },
+  "mechanical_review": {
+    "passed": true,
+    "errors": [],
+    "under_module": [
+      "C5",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "minimum_body_gap_mm": 0.5,
+    "minimum_pad_body_gap_mm": 0.325,
+    "assumptions": {
+      "body_gap_mm": 0.5,
+      "pad_to_foreign_body_gap_mm": 0.25,
+      "module_underside_mm": 3.1,
+      "under_module_max_component_height_mm": 1.5,
+      "header_housing_width_mm": 2.54,
+      "screw_head_diameter_mm": 4.8,
+      "usb_service_width_mm": 12,
+      "usb_service_projection_mm": 14,
+      "usb_service_minimum_bottom_z_mm": 2.5
+    },
+    "limitations": [
+      "Maximum body dimensions where available; remaining R2 generic packages retain their status.",
+      "USB service envelope is reserved; actual cable overmold, header seating tolerance, strain relief and enclosure fit still need physical verification."
+    ]
+  },
+  "pcb_readback_file": "source\\Orion-Bridge-R3.PcbDoc",
+  "scope": "Generated native ASCII source readback, library/pin/net/UID links, exact copper and assembly geometry. Final Altium binary readback and DRC are reported separately. Not hardware qualification."
+}

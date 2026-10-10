@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<rect x="0" y="0" width="420" height="29" fill="#182f41" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="14" y="12" font-family="Arial, sans-serif" font-size="6.2" font-weight="700" fill="white" text-anchor="start">Schaltplan 02 - CAN und Controller</text>
+<text x="14" y="22" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#d8e5ec" text-anchor="start">Pin-genaue Verbindung des ISO1042DWV | GPIO6 = TX, GPIO7 = RX | keine zusätzliche Drop-Terminierung</text>
+<polyline points="14,279 406,279" fill="none" stroke="#92a2ad" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="14" y="285" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="start">BATTERY SENTINEL  |  ORION BRIDGE  |  R1  |  20.09.2026</text>
+<text x="14" y="291" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#526575" text-anchor="start">ENTWURF - keine Fertigungsfreigabe / keine Gerberdaten. Maße vor Layoutfreigabe prüfen.</text>
+<text x="405" y="286" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="end">2 / 4</text>
+<rect x="14" y="38" width="207" height="153" fill="#fff9f2" stroke="#e6cdb3" stroke-width="0.3" rx="2"/>
+<rect x="230" y="38" width="176" height="153" fill="#f2f9fd" stroke="#c8dfeb" stroke-width="0.3" rx="2"/>
+<text x="19" y="46" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">BUS / GND_BUS = NET-C</text>
+<text x="237" y="46" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#166a92" text-anchor="start">LOGIC / GND_LOGIC = SuperMini-GND</text>
+<rect x="221" y="38" width="9" height="153" fill="#f0f2f4" stroke="none" stroke-width="0.3" rx="0"/>
+<polyline points="225.5,38 225.5,191" fill="none" stroke="#92a2ad" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 2"/>
+<rect x="23" y="62" width="52" height="84" fill="white" stroke="#182f41" stroke-width="0.5" rx="0"/>
+<text x="49" y="58" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">J1 Micro-C-Pigtail</text>
+<text x="26" y="73" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">1 SHIELD</text>
+<polyline points="75,72 83,72" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="26" y="87" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">2 NET-S</text>
+<polyline points="75,86 83,86" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="26" y="101" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">3 NET-C</text>
+<polyline points="75,100 83,100" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="26" y="115" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">4 CAN-H</text>
+<polyline points="75,114 83,114" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="26" y="129" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">5 CAN-L</text>
+<polyline points="75,128 83,128" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="86" y="70" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#9a4e12" text-anchor="start">SHIELD</text>
+<polyline points="83,72 102,72" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="104" cy="72" r="2" fill="none" stroke="#9a4e12" stroke-width="0.35"/>
+<text x="82" y="65" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="start">TP_SH / Schirm-Pad</text>
+<text x="85" y="84" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#9a4e12" text-anchor="start">NET-S -&gt; Blatt 1</text>
+<polyline points="83,100 83,102" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="80.5,102.0 85.5,102.0" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="81.3,103.1 84.7,103.1" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="82.1,104.2 83.9,104.2" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="83" y="108" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#9a4e12" text-anchor="middle">GND_BUS</text>
+<text x="25" y="157" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="start">Farben: blank / rot / schwarz / weiß / blau.</text>
+<text x="25" y="163" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="start">Pin-Nummern, keine Steckergesicht-Ansicht.</text>
+<text x="25" y="169" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="start">Schirm nicht mit Logikmasse verbinden.</text>
+<text x="25" y="175" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="start">Kabel: verdrilltes CAN-Paar; Drop &lt;=6 m.</text>
+<polyline points="83,114 153,114" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="83,128 145,128 145,130 153,130" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="101" cy="114" r="0.85" fill="#246f64" stroke="none" stroke-width="0.35"/>
+<circle cx="120" cy="128" r="0.85" fill="#246f64" stroke="none" stroke-width="0.35"/>
+<polyline points="101,114 101,139 104,139 104,145" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="120,128 120,145" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="96" y="145" width="32" height="24" fill="white" stroke="#9a4e12" stroke-width="0.3" rx="0"/>
+<text x="104" y="150" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#182f41" text-anchor="middle">1 K1</text>
+<text x="119" y="150" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#182f41" text-anchor="middle">2 K2</text>
+<text x="112" y="156" font-family="Arial, sans-serif" font-size="2.7" font-weight="700" fill="#182f41" text-anchor="middle">D3</text>
+<text x="112" y="161" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#182f41" text-anchor="middle">PESD2CAN24T-Q</text>
+<text x="112" y="166" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#182f41" text-anchor="middle">3 CC</text>
+<polyline points="112,169 112,176" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112,176 112,178" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="109.5,178.0 114.5,178.0" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="110.3,179.1 113.7,179.1" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="111.1,180.2 112.9,180.2" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="112" y="184" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#9a4e12" text-anchor="middle">GND_BUS</text>
+<rect x="153" y="104" width="26" height="36" fill="white" stroke="#182f41" stroke-width="0.45" rx="0"/>
+<text x="166" y="100" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="middle">L1 ACT45B-510</text>
+<text x="155" y="111" font-family="Arial, sans-serif" font-size="2.4" font-weight="400" fill="#182f41" text-anchor="start">1</text>
+<text x="175" y="111" font-family="Arial, sans-serif" font-size="2.4" font-weight="400" fill="#182f41" text-anchor="start">4</text>
+<text x="155" y="137" font-family="Arial, sans-serif" font-size="2.4" font-weight="400" fill="#182f41" text-anchor="start">2</text>
+<text x="175" y="137" font-family="Arial, sans-serif" font-size="2.4" font-weight="400" fill="#182f41" text-anchor="start">3</text>
+<polyline points="153,114 159,114 161,112 163,116 165,112 167,116 169,112 171,114 179,114" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="153,130 159,130 161,128 163,132 165,128 167,132 169,128 171,130 179,130" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158,121 174,121" fill="none" stroke="#92a2ad" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="158,123 174,123" fill="none" stroke="#92a2ad" stroke-width="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="179,114 207,114" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="179,130 207,130" fill="none" stroke="#246f64" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="207" y="72" width="37" height="88" fill="white" stroke="#182f41" stroke-width="0.55" rx="0"/>
+<polyline points="225.5,72 225.5,160" fill="none" stroke="#92a2ad" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 2"/>
+<text x="225.5" y="65" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#182f41" text-anchor="middle">U1 ISO1042DWV</text>
+<text x="209" y="81" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="start">8 VCC2</text>
+<text x="209" y="112" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="start">7 CANH</text>
+<text x="209" y="128" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="start">6 CANL</text>
+<text x="209" y="148" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="start">5 GND2</text>
+<text x="242" y="81" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="end">1 VCC1</text>
+<text x="242" y="112" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="end">2 TXD</text>
+<text x="242" y="128" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="end">3 RXD</text>
+<text x="242" y="148" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="end">4 GND1</text>
+<polyline points="193,83 207,83" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="193" y="78" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#9a4e12" text-anchor="end">5V_BUS</text>
+<polyline points="207,150 193,150 193,176" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="193,176 193,178" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="190.5,178.0 195.5,178.0" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="191.3,179.1 194.7,179.1" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="192.1,180.2 193.9,180.2" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="193" y="184" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#9a4e12" text-anchor="middle">GND_BUS</text>
+<polyline points="244,83 270,83" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="259" y="77" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#166a92" text-anchor="start">3V3_LOGIC</text>
+<polyline points="244,150 258,150 258,175" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="258,175 258,177" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="255.5,177.0 260.5,177.0" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="256.3,178.1 259.7,178.1" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="257.1,179.2 258.9,179.2" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="258" y="183" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#166a92" text-anchor="middle">GND_LOGIC</text>
+<polyline points="244,114 264,114" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="264,114 275.0,114" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="285.0,114 296,114" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="275.0" y="112" width="10" height="4" fill="white" stroke="#166a92" stroke-width="0.5" rx="0"/>
+<text x="280.0" y="107" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="middle">R_TX</text>
+<text x="280.0" y="110.5" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="middle">33 Ω</text>
+<polyline points="296,114 326,114" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="244,130 289,130" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="289,130 299.0,130" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="309.0,130 319,130" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="299.0" y="128" width="10" height="4" fill="white" stroke="#166a92" stroke-width="0.5" rx="0"/>
+<text x="304.0" y="123" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="middle">R_RX</text>
+<text x="304.0" y="126.5" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="middle">33 Ω</text>
+<polyline points="319,130 326,130" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="253" cy="114" r="0.85" fill="#166a92" stroke="none" stroke-width="0.35"/>
+<polyline points="253,114 253,98 280,98" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="280" y="96" width="9" height="4" fill="white" stroke="#166a92" stroke-width="0.3" rx="0"/>
+<polyline points="289,98 305,98" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="306" y="96" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#166a92" text-anchor="start">3V3_LOGIC</text>
+<text x="284.5" y="94" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#182f41" text-anchor="middle">R2 10 kΩ</text>
+<rect x="326" y="72" width="70" height="93" fill="white" stroke="#182f41" stroke-width="0.5" rx="0"/>
+<text x="361" y="82" font-family="Arial, sans-serif" font-size="4" font-weight="700" fill="#182f41" text-anchor="middle">MCU1</text>
+<text x="361" y="88" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="middle">ESP32-C3 SuperMini</text>
+<text x="328" y="112" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">GPIO6 / CAN TX</text>
+<text x="328" y="128" font-family="Arial, sans-serif" font-size="3" font-weight="400" fill="#182f41" text-anchor="start">GPIO7 / CAN RX</text>
+<text x="361" y="143" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="middle">5V &lt;- 5V_MODULE (Blatt 1)</text>
+<text x="361" y="149" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="middle">3V3 -&gt; 3V3_LOGIC</text>
+<text x="361" y="155" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#182f41" text-anchor="middle">GND -&gt; GND_LOGIC</text>
+<text x="361" y="161" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">USB / BOOT am Modul frei halten</text>
+<text x="331" y="176" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#b43737" text-anchor="start">Betriebsversorgung und USB nur alternativ!</text>
+<rect x="14" y="199" width="128" height="72" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="18" y="206" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#166a92" text-anchor="start">D  Abblockung direkt am ISO1042</text>
+<text x="40" y="223" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#9a4e12" text-anchor="middle">5V_BUS</text>
+<polyline points="40,225 40,233" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="37,233 43,233" fill="none" stroke="#9a4e12" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="37,235 43,235" fill="none" stroke="#9a4e12" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="40,235 40,253" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="44" y="232" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="start">C4</text>
+<text x="44" y="237" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" fill="#182f41" text-anchor="start">100 nF</text>
+<polyline points="40,253 40,255" fill="none" stroke="#9a4e12" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="37.5,255.0 42.5,255.0" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="38.3,256.1 41.7,256.1" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="39.1,257.2 40.9,257.2" fill="none" stroke="#9a4e12" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="261" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#9a4e12" text-anchor="middle">GND_BUS</text>
+<text x="93" y="223" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#166a92" text-anchor="middle">3V3_LOGIC</text>
+<polyline points="93,225 93,233" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90,233 96,233" fill="none" stroke="#166a92" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90,235 96,235" fill="none" stroke="#166a92" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="93,235 93,253" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="97" y="232" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="start">C5</text>
+<text x="97" y="237" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" fill="#182f41" text-anchor="start">100 nF</text>
+<polyline points="93,253 93,255" fill="none" stroke="#166a92" stroke-width="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90.5,255.0 95.5,255.0" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="91.3,256.1 94.7,256.1" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="92.1,257.2 93.9,257.2" fill="none" stroke="#166a92" stroke-width="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="93" y="261" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#166a92" text-anchor="middle">GND_LOGIC</text>
+<rect x="150" y="199" width="122" height="72" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="154" y="206" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">E  Terminierung</text>
+<text x="157" y="216" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start">Kein 120-Ω-Widerstand auf diesem Drop.</text>
+<text x="157" y="224" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start">Zwei 120-Ω-Abschlüsse gehören an die</text>
+<text x="157" y="232" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start">beiden Enden des NMEA-Backbones.</text>
+<text x="157" y="240" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start"></text>
+<text x="157" y="248" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start">RTERM-Footprint entfällt in R1.</text>
+<text x="157" y="256" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#182f41" text-anchor="start">CAN-H und CAN-L bleiben ein kurzes Paar.</text>
+<rect x="280" y="199" width="126" height="72" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="284" y="206" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">F  Anschlussprüfung</text>
+<text x="287" y="216" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start">Schaltplan verwendet Signalnamen am Modul.</text>
+<text x="287" y="224" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start">Die SuperMini-Headerfolge ist vor Fertigung</text>
+<text x="287" y="232" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start">am konkreten Exemplar abzugleichen.</text>
+<text x="287" y="240" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start"></text>
+<text x="287" y="248" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start">Keine Shunts und keine Ladeleitungen:</text>
+<text x="287" y="256" font-family="Arial, sans-serif" font-size="3.0" font-weight="400" fill="#182f41" text-anchor="start">Orion-Messwerte gelangen per BLE zum ESP32.</text>
+</svg>

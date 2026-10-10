@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<rect width="420" height="297" fill="white"/>
+<rect x="0" y="0" width="420" height="29" fill="#182f41" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="14" y="12" font-family="Arial, sans-serif" font-size="6.2" font-weight="700" fill="white" text-anchor="start">PCB-Layoutzeichnung - 80 x 60 mm</text>
+<text x="14" y="22" font-family="Arial, sans-serif" font-size="3.1" font-weight="400" fill="#d8e5ec" text-anchor="start">Zweilagiger Platzierungs- und Routingentwurf | Draufsicht + Massekonzept | Bauteilkonturen sind Reservierungsflächen</text>
+<polyline points="14,279 406,279" fill="none" stroke="#92a2ad" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="14" y="285" font-family="Arial, sans-serif" font-size="2.8" font-weight="700" fill="#182f41" text-anchor="start">BATTERY SENTINEL  |  ORION BRIDGE  |  R1  |  20.09.2026</text>
+<text x="14" y="291" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#526575" text-anchor="start">ENTWURF - keine Fertigungsfreigabe / keine Gerberdaten. Maße vor Layoutfreigabe prüfen.</text>
+<text x="405" y="286" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="end">3 / 4</text>
+<text x="27" y="43" font-family="Arial, sans-serif" font-size="3.3" font-weight="700" fill="#182f41" text-anchor="start">TOP - PLATZIERUNG UND VERBINDUNGSKORRIDORE</text>
+<rect x="27.0" y="60.0" width="188.0" height="141.0" fill="#f6faf8" stroke="#182f41" stroke-width="0.7" rx="0"/>
+<rect x="28.41" y="61.41" width="85.54" height="138.18" fill="#fff5e9" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="128.05" y="61.41" width="85.54" height="138.18" fill="#eef8fe" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="113.95" y="60.0" width="14.100000000000001" height="141.0" fill="#e9edf0" stroke="#92a2ad" stroke-width="0.25" rx="0" stroke-dasharray="1.5 1.5"/>
+<rect x="113.95" y="158.7" width="2.5850000000000004" height="25.85" fill="#fff5e9" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="125.465" y="158.7" width="2.5850000000000004" height="25.85" fill="#eef8fe" stroke="none" stroke-width="0.3" rx="0"/>
+<text x="121.0" y="196.3" font-family="Arial, sans-serif" font-size="2.5" font-weight="700" fill="#526575" text-anchor="middle">ISO</text>
+<circle cx="36.4" cy="69.4" r="7.5200000000000005" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="36.4" cy="69.4" r="3.7600000000000002" fill="white" stroke="#182f41" stroke-width="0.5"/>
+<circle cx="36.4" cy="191.6" r="7.5200000000000005" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="36.4" cy="191.6" r="3.7600000000000002" fill="white" stroke="#182f41" stroke-width="0.5"/>
+<circle cx="205.6" cy="191.6" r="7.5200000000000005" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="205.6" cy="191.6" r="3.7600000000000002" fill="white" stroke="#182f41" stroke-width="0.5"/>
+<polyline points="27.0,48.25 215.0,48.25" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="27.0,46.25 27.0,50.25" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="215.0,46.25 215.0,50.25" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="121.0" y="46.25" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" fill="#526575" text-anchor="middle">80,0 mm</text>
+<polyline points="15.25,60.0 15.25,201.0" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="13.25,60.0 17.25,60.0" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="13.25,201.0 17.25,201.0" fill="none" stroke="#526575" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="12.25" y="130.5" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" fill="#526575" text-anchor="end">60,0</text>
+<rect x="158.6" y="60.0" width="56.400000000000006" height="39.95" fill="#fff4cf" stroke="#b88619" stroke-width="0.35" rx="0" stroke-dasharray="2 1"/>
+<text x="186.8" y="69.4" font-family="Arial, sans-serif" font-size="2.6" font-weight="700" fill="#886015" text-anchor="middle">ANTENNENFREIRAUM</text>
+<text x="186.8" y="78.8" font-family="Arial, sans-serif" font-size="2.6" font-weight="400" fill="#886015" text-anchor="middle">auf allen Lagen</text>
+<text x="186.8" y="90.55" font-family="Arial, sans-serif" font-size="2.3" font-weight="400" fill="#886015" text-anchor="middle">keine Leiterbahnen / Masse</text>
+<polyline points="50.5,107.0 62.25,107.0 62.25,118.75 92.8,118.75 92.8,116.4 107.37,116.4" fill="none" stroke="#246f64" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="50.5,114.05000000000001 57.55,114.05000000000001 57.55,128.15 97.5,128.15 97.5,123.45 107.37,123.45" fill="none" stroke="#246f64" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="50.5,135.2 57.55,135.2 57.55,161.05 85.75,161.05 85.75,170.45 102.2,170.45" fill="none" stroke="#b43737" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="85.75,161.05 95.15,161.05 95.15,149.3" fill="none" stroke="#b43737" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="95.15,142.25 102.2,142.25 102.2,109.35 107.37,109.35" fill="none" stroke="#b43737" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="137.45,118.75 153.9,118.75 153.9,135.2 184.45000000000002,135.2" fill="none" stroke="#166a92" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="137.45,123.45 149.2,123.45 149.2,139.9 184.45000000000002,139.9" fill="none" stroke="#166a92" stroke-width="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="139.8,170.45 151.55,170.45 151.55,158.7 168.0,158.7 168.0,146.95 184.45000000000002,146.95" fill="none" stroke="#b43737" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="29.35" y="95.25" width="21.150000000000002" height="58.75" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="39.925" y="125.325" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">J1</text>
+<text x="39.925" y="157.5" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">5-pol. Kabelklemme</text>
+<rect x="59.9" y="116.4" width="9.4" height="9.4" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="64.6" y="121.8" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">D3</text>
+<rect x="81.05000000000001" y="116.4" width="11.75" height="11.75" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="86.92500000000001" y="122.97500000000001" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">L1</text>
+<rect x="107.37" y="104.65" width="27.26" height="21.150000000000002" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="121.0" y="115.925" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">U1</text>
+<text x="121.0" y="129.3" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">ISO1042DWV</text>
+<rect x="97.5" y="102.30000000000001" width="7.050000000000001" height="4.7" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="101.025" y="105.35000000000001" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C4</text>
+<rect x="137.45" y="102.30000000000001" width="7.050000000000001" height="4.7" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="140.97500000000002" y="105.35000000000001" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C5</text>
+<rect x="144.5" y="128.15" width="21.150000000000002" height="7.050000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="155.07500000000002" y="132.375" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">R_TX/R_RX</text>
+<rect x="144.5" y="142.25" width="11.75" height="4.7" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="150.375" y="145.3" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">R2</text>
+<rect x="52.85" y="156.35000000000002" width="21.150000000000002" height="14.100000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="63.425000000000004" y="164.1" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">F1</text>
+<rect x="78.7" y="156.35000000000002" width="16.45" height="16.45" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="86.92500000000001" y="165.27499999999998" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">Q1</text>
+<rect x="59.9" y="175.15" width="14.100000000000001" height="9.4" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="66.95" y="180.55" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">D1</text>
+<rect x="83.4" y="182.2" width="14.100000000000001" height="11.75" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="90.45" y="188.775" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C1</text>
+<rect x="81.05000000000001" y="137.55" width="16.45" height="14.100000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="89.275" y="145.3" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">U3</text>
+<text x="89.275" y="155.15" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">5V_BUS</text>
+<rect x="71.65" y="137.55" width="7.050000000000001" height="4.7" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="75.17500000000001" y="140.6" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C2</text>
+<rect x="99.85000000000001" y="137.55" width="9.4" height="7.050000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="104.55" y="141.77499999999998" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C3</text>
+<rect x="78.7" y="172.8" width="16.45" height="7.050000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="86.92500000000001" y="177.02499999999998" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">R1/Z1</text>
+<rect x="83.4" y="191.6" width="25.85" height="7.050000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="96.325" y="195.825" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C8/L2/C9</text>
+<rect x="102.2" y="158.7" width="37.6" height="25.85" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="121.0" y="172.325" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">U2</text>
+<text x="121.0" y="188.05" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">R3M-2405S/SMD</text>
+<rect x="146.85000000000002" y="172.8" width="18.8" height="9.4" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="156.25" y="178.2" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">C6/C7</text>
+<rect x="146.85000000000002" y="156.35000000000002" width="11.75" height="7.050000000000001" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="152.72500000000002" y="160.575" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">D2</text>
+<rect x="165.65" y="154.0" width="16.45" height="9.4" fill="white" stroke="#182f41" stroke-width="0.4" rx="0"/>
+<text x="173.875" y="159.39999999999998" font-family="Arial, sans-serif" font-size="3.2" font-weight="700" fill="#182f41" text-anchor="middle">JP1</text>
+<text x="173.875" y="166.9" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#182f41" text-anchor="middle">USB: öffnen</text>
+<rect x="170.35" y="92.9" width="42.300000000000004" height="56.400000000000006" fill="#dcebf3" stroke="#166a92" stroke-width="0.4" rx="0" stroke-dasharray="1.2 1.2"/>
+<text x="192.675" y="109.35" font-family="Arial, sans-serif" font-size="3.1" font-weight="700" fill="#166a92" text-anchor="middle">MCU1</text>
+<text x="192.675" y="118.75" font-family="Arial, sans-serif" font-size="2.7" font-weight="400" fill="#166a92" text-anchor="middle">SuperMini</text>
+<text x="192.675" y="128.15" font-family="Arial, sans-serif" font-size="2.2" font-weight="400" fill="#166a92" text-anchor="middle">Headerposition</text>
+<text x="192.675" y="135.2" font-family="Arial, sans-serif" font-size="2.2" font-weight="400" fill="#166a92" text-anchor="middle">noch zu messen</text>
+<rect x="184.45000000000002" y="142.25" width="18.8" height="9.4" fill="#c4ced5" stroke="#182f41" stroke-width="0.3" rx="0"/>
+<text x="193.85" y="149.3" font-family="Arial, sans-serif" font-size="2.4" font-weight="700" fill="#182f41" text-anchor="middle">USB</text>
+<rect x="182.1" y="154.0" width="28.200000000000003" height="30.55" fill="none" stroke="#166a92" stroke-width="0.25" rx="0" stroke-dasharray="1.5 1.5"/>
+<text x="196.20000000000002" y="172.8" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#166a92" text-anchor="middle">Service-</text>
+<text x="196.20000000000002" y="179.85000000000002" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#166a92" text-anchor="middle">zugang</text>
+<text x="27" y="211" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#526575" text-anchor="start">Maßstab der Platinenkontur 2,35:1 bei A3 / 100 % Druck. Keine Kupfer-Fertigungszeichnung.</text>
+<text x="245" y="43" font-family="Arial, sans-serif" font-size="3.3" font-weight="700" fill="#182f41" text-anchor="start">BOTTOM - MASSEFLÄCHEN</text>
+<text x="245" y="49" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#526575" text-anchor="start">Von oben betrachtet / durchscheinend, nicht gespiegelt</text>
+<rect x="251" y="69" width="132.0" height="99.0" fill="white" stroke="#182f41" stroke-width="0.6" rx="0"/>
+<rect x="252" y="70" width="59.4" height="95.69999999999999" fill="#f7e1c9" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="321.95" y="70" width="59.4" height="95.69999999999999" fill="#cbe3f1" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="312.05" y="69" width="9.899999999999999" height="99.0" fill="#e9edf0" stroke="#92a2ad" stroke-width="0.3" rx="0" stroke-dasharray="1.5 1.5"/>
+<rect x="312.05" y="138.3" width="1.815" height="18.15" fill="#f7e1c9" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="320.135" y="138.3" width="1.815" height="18.15" fill="#cbe3f1" stroke="none" stroke-width="0.3" rx="0"/>
+<rect x="343.4" y="69" width="39.599999999999994" height="28.049999999999997" fill="#fff4cf" stroke="#b88619" stroke-width="0.3" rx="0" stroke-dasharray="1.5 1.5"/>
+<text x="280.7" y="110.25" font-family="Arial, sans-serif" font-size="3.3" font-weight="700" fill="#9a4e12" text-anchor="middle">GND_BUS</text>
+<text x="351.65" y="121.8" font-family="Arial, sans-serif" font-size="3.3" font-weight="700" fill="#166a92" text-anchor="middle">GND_LOGIC</text>
+<rect x="275.75" y="116.85" width="33.0" height="33.0" fill="#efc18f" stroke="#9a4e12" stroke-width="0.3" rx="0" stroke-dasharray="1 1"/>
+<text x="292.25" y="128.4" font-family="Arial, sans-serif" font-size="2.7" font-weight="700" fill="#9a4e12" text-anchor="middle">U3 Wärmefläche</text>
+<text x="292.25" y="136.64999999999998" font-family="Arial, sans-serif" font-size="2.5" font-weight="400" fill="#9a4e12" text-anchor="middle">20 x 20 mm Ziel</text>
+<circle cx="257.6" cy="75.6" r="5.28" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="257.6" cy="75.6" r="2.64" fill="white" stroke="#182f41" stroke-width="0.4"/>
+<circle cx="257.6" cy="161.39999999999998" r="5.28" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="257.6" cy="161.39999999999998" r="2.64" fill="white" stroke="#182f41" stroke-width="0.4"/>
+<circle cx="376.4" cy="161.39999999999998" r="5.28" fill="white" stroke="#92a2ad" stroke-width="0.3"/>
+<circle cx="376.4" cy="161.39999999999998" r="2.64" fill="white" stroke="#182f41" stroke-width="0.4"/>
+<text x="245" y="183" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">6-mm-Kupfersperre; lokal am U2-Landpattern nur 3,8 mm.</text>
+<text x="245" y="188" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">Nur U1 und U2 dürfen die Domain-Grenze überbrücken.</text>
+<text x="245" y="193" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">Keine Masse-Vias, Schirmleitungen oder Schrauben darin.</text>
+<text x="245" y="198" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">U2-Padabstände und tatsächliche Luft-/Kriechstrecken</text>
+<text x="245" y="203" font-family="Arial, sans-serif" font-size="2.8" font-weight="400" fill="#182f41" text-anchor="start">im ECAD-Footprint prüfen; keine Isolationsfreigabe.</text>
+<rect x="14" y="224" width="192" height="47" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="18" y="231" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#166a92" text-anchor="start">Mechanik und Funk</text>
+<text x="20" y="238" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">3 x Ø3,2 mm NPTH bei (4/4), (4/56), (76/56) mm.</text>
+<text x="20" y="244" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">Ursprung links oben; Lochpositionen sind Gehäuse-Vorschlag.</text>
+<text x="20" y="250" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">Antenne möglichst über den Rand; &gt;=15 mm Freiraum im</text>
+<text x="20" y="256" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">Gehäuse als Planungsziel. Tatsächlichen Modulaufbau prüfen.</text>
+<rect x="214" y="224" width="192" height="47" fill="#fcfcfd" stroke="#d6dfe4" stroke-width="0.3" rx="2"/>
+<text x="218" y="231" font-family="Arial, sans-serif" font-size="3.5" font-weight="700" fill="#9a4e12" text-anchor="start">Leiterführung - Startwerte, nicht Impedanzberechnung</text>
+<text x="220" y="238" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">Versorgung &gt;=0,8 mm; Logik 0,25 mm; CAN-Paar 0,30 mm.</text>
+<text x="220" y="244" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">CAN-H/L eng gemeinsam führen; Abstand im Stackup festlegen.</text>
+<text x="220" y="250" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">TVS nahe J1, C4/C5 direkt an U1; U3 thermisch vermessen.</text>
+<text x="220" y="256" font-family="Arial, sans-serif" font-size="2.9" font-weight="400" fill="#182f41" text-anchor="start">Unverbundene Flächen entfernen. ERC/DRC vor Gerberfreigabe.</text>
+</svg>

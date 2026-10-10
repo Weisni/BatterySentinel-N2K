@@ -1,0 +1,22 @@
+{
+  "hardware\\altium-r5\\enclosure\\sealed-print\\sealed-contract.json": "35a7106c7f260a2ae32658e12e3f09f9df5598acf8a9d71d3405e828bf4978fd",
+  "hardware\\altium-r5\\enclosure\\sealed-print\\README.md": "2839682b6bfe6d2267a8bd349667e25519ed3fa71889da35bbef92f0f08cef1a",
+  "hardware\\altium-r5\\enclosure\\sealed-print\\validation.json": "c3e6de78e4877b1a3d34f6a5d789e9a8ce2f75034b3124981831538f82740510",
+  "hardware\\altium-r5\\enclosure\\sealed-print\\flush-colour\\flush-lid-validation.json": "e511a510728b3fd167275cf36a409191165a1bd2592eecf50b61c967afcf254e",
+  "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-sealed-enclosure.FCStd": "6f18bbd682f3e62d6688e2df827d9393a85365e173060cd4f98223b7e4d69dd2",
+  "hardware\\altium-r5\\enclosure\\sealed-print\\Orion-R5-P2S-flush-colour.3mf": "42b3f908d36bcf05f9e6db00a5fa211718de9470043e692a058046715ff46b13",
+  "docs\\enclosure-manual-assets\\image-generation.md": "7652e9b24c6d8b6811ef96411203cb33ed4d752611d138d58fd93539b492df64",
+  "docs\\enclosure-manual-assets\\cover-generated.png": "2016d31290abd83ea7ddef4b60cf962c96d1a5fbf62ac6a9f075403782c3a3e1",
+  "docs\\enclosure-manual-assets\\cad\\image-notes.json": "c3dc86c3bedc99758674bfd37143dc4f3034ef18873b71099578d31cb9fcffc5",
+  "tools\\render_enclosure_manual.py": "a5de1b528033dcc6d66d3e4240649cf7441b4a954786c745a5f33f2ddba98842",
+  "tools\\build_enclosure_assembly_manual.py": "508c2b61c08f0bb5e0ec755102758b8424bed090c637aac56c788a9e1399f73b",
+  "docs\\enclosure-manual-assets\\cad\\assembled.png": "8ae9eed52186e7ba21fc40200cb85762bb756acd01eb087d3aa12b7a17442cff",
+  "docs\\enclosure-manual-assets\\cad\\base-inserts.png": "76dd1efd58f5a3d9df0c63ea20ab22eb5f4c3db15269fc85278fd4c72e5f87b4",
+  "docs\\enclosure-manual-assets\\cad\\cable-exploded.png": "87155fc5d23cd207eb8698bb8498a84db0205756e6499461975c5b52f8aa548a",
+  "docs\\enclosure-manual-assets\\cad\\flexible-kit.png": "3a93ed70baf703f44e659ead4220ab201a7b14e3eda4e0fe059e72fc96b2bb17",
+  "docs\\enclosure-manual-assets\\cad\\lid-exploded.png": "0ad532fc41a1294e19eb18e7a5f992ee68dcf253f503b72117e76d09a87e5a2d",
+  "docs\\enclosure-manual-assets\\cad\\pcb-installation.png": "28b69abfe0d3a98124fb56159d03792bb259a22b26193b3e221e12c5af1b09fa",
+  "docs\\enclosure-manual-assets\\cad\\rigid-kit.png": "df4717b25282c47b43f39211790c2fb9eb7f6d342e5c3dca4e4885b9d25b0a58",
+  "docs\\enclosure-manual-assets\\cad\\service_switch-gasket.png": "c372fd8fd5b946db179795228d68b4ca3c9f067f136da83a78aafa1d9cfaf0ec",
+  "docs\\enclosure-manual-assets\\cad\\usb-gasket.png": "08f64506feaba43e621ce0b1d69f3ec1aa9c6d6af8809394d7d4246abc13041e"
+}

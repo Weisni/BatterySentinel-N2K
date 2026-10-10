@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "readback_GTL",
+      "detail": {
+        "symmetric_difference_mm2": 9.111742930766245e-05
+      }
+    },
+    {
+      "check": "readback_GBL",
+      "detail": {
+        "symmetric_difference_mm2": 6.47058115650577e-05
+      }
+    },
+    {
+      "check": "readback_GTS",
+      "detail": {
+        "symmetric_difference_mm2": 3.26978900400845e-13
+      }
+    },
+    {
+      "check": "readback_GBS",
+      "detail": {
+        "symmetric_difference_mm2": 6.554175236108365e-14
+      }
+    },
+    {
+      "check": "readback_GTP",
+      "detail": {
+        "symmetric_difference_mm2": 2.4236612716777047e-13
+      }
+    },
+    {
+      "check": "readback_GBP",
+      "detail": {
+        "symmetric_difference_mm2": 0.0
+      }
+    },
+    {
+      "check": "readback_PTH",
+      "detail": 54
+    },
+    {
+      "check": "readback_NPTH",
+      "detail": 32
+    },
+    {
+      "check": "profile_all_contours_closed",
+      "detail": 0
+    },
+    {
+      "check": "profile_has_outer_and_four_routed_cutouts",
+      "detail": 5
+    },
+    {
+      "check": "profile_substrate_matches_design",
+      "detail": 4515.953886616751
+    },
+    {
+      "check": "readback_no_copper_in_routed_voids",
+      "detail": 0.0
+    },
+    {
+      "check": "readback_cutout_copper_clearance",
+      "detail": 0.3049872009328839
+    },
+    {
+      "check": "original_unit_bom_fully_sourced",
+      "detail": []
+    },
+    {
+      "check": "panel_bom_identical_to_single_unit",
+      "detail": 25
+    },
+    {
+      "check": "panel_cpl_exactly_one_copy_of_each_component",
+      "detail": 50
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "F1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D3"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "L1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "U1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C4"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C5"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R2"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R3"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R4"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "U3"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "U4"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "U2"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "L2"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "L3"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C20"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C21"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C22"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C23"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C24"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C25"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C26"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C27"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C28"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C29"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C30"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C31"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C32"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C33"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R20"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R21"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D2"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D4"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D5"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "MCU1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R5"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R6"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R7"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R8"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R9"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R10"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R11"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "R12"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C10"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C11"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "C12"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "J2"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "D6"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "SW1"
+    },
+    {
+      "check": "panel_cpl_translation_only",
+      "detail": "SW2"
+    }
+  ],
+  "errors": []
+}

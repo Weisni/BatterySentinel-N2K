@@ -1,0 +1,21 @@
+[Design]
+Version=1.0
+HierarchyMode=0
+DefaultConfiguration=Sources
+OutputPath=Project Outputs
+
+[Document1]
+DocumentPath=Orion-Bridge.SchLib
+AnnotationEnabled=1
+AnnotateScope=All
+DoLibraryUpdate=1
+DoDatabaseUpdate=0
+DocumentUniqueId=
+
+[Document2]
+DocumentPath=Orion-Bridge.PcbLib
+AnnotationEnabled=1
+AnnotateScope=All
+DoLibraryUpdate=1
+DoDatabaseUpdate=0
+DocumentUniqueId=

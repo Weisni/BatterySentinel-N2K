@@ -1,0 +1,15 @@
+Change Footprint: Footprint Not Found SOIC8_DWV
+Change Footprint: Footprint Not Found ACT45B
+Change Component Comment : Designator=L1 Old Comment=Comment New Comment=ACT45B-510-2P-TL003
+Change component parameters: Designator = "L1" ("L1"); Footprint = "TDK-ACT45B-510-2P-TL003-4_V"; UniqueID = "\PUDUOXPO" ("\PUDUOXPO")
+Change component parameters (AddParameter): Name = "ReviewStatus"; Value = "PROVISIONAL - verify landpattern before fabrication"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CANH_EXT Pin=L1-1
+Added Pin To Net: NetName=CANL_EXT Pin=L1-2
+Added Pin To Net: NetName=CANL Pin=L1-3
+Added Pin To Net: NetName=CANH Pin=L1-4
+Add Pin To Net: Unknown Pin: Pin MCU1-3V3
+Add Pin To Net: Unknown Pin: Pin MCU1-5V
+Add Pin To Net: Unknown Pin: Pin MCU1-6
+Add Pin To Net: Unknown Pin: Pin MCU1-7
+Add Pin To Net: Unknown Pin: Pin MCU1-GND
+Added Member To Class: ClassName=Orion-Bridge-R1 Member=Component L1 ACT45B-510-2P-TL003
