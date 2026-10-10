@@ -1,0 +1,14 @@
+# Preserve source-manifest inputs and validated engineering/download artifacts
+# byte-for-byte. Automatic CRLF/LF conversion invalidates their SHA-256 records.
+/src/** -text
+/include/** -text
+/lib/** -text
+/tools/** -text
+/docs/** -text
+/hardware/** -text
+/output/** -text
+/assets/** -text
+/README.md -text
+/WORKING_GUIDELINES.md -text
+/platformio.ini -text
+/partitions*.csv -text
