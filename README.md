@@ -53,6 +53,8 @@ The 52 × 36 mm board has independent retention. Screw-fastened service covers, 
 
 Status updated on 2026-10-10:
 
+- [x] Reconciled the August issue backlog with the released Orion Bridge. Superseded hardware concepts and duplicate simulation requests are distinguished from implemented functions and remaining work in the [issue status record](docs/internal/backlog-status-2026-10-10.md).
+- [ ] Add and validate an application-specific health check after OTA before confirming the new boot ([#1](https://github.com/Weisni/BatterySentinel-N2K/issues/1)). Image integrity checks already exist; the Arduino default confirms the image before application setup. This is tracked work, not a change in 1.2.0.
 - [x] Add [official and release-candidate channels](docs/release-channels.md), gated by the complete CI and verified draft assets. Pinned release dependencies match the validated local platform. Fixed Linux OLED format warnings without changing the display cadence or standard Wi-Fi settings.
 - [x] Published the first official [v1.2.0 release](https://github.com/Weisni/BatterySentinel-N2K/releases/tag/v1.2.0) after exact-commit CI passed. All six public downloads, their SHA-256 digests, firmware identity and Latest status were independently verified; see [the publication record](docs/releases/1.2.0-verification.md).
 
@@ -80,7 +82,7 @@ Status updated on 2026-10-10:
 - [ ] Confirm repeated login with 1.2.0 on the reporting phone, including reload and return to the login address.
 - [ ] Test password changes and recovery across power cycles, preservation of assignments, LED timing and supported phone/browser combinations on hardware.
 - [ ] Complete BLE/Wi-Fi coexistence, raw NMEA traffic and Garmin acceptance on the assembled installation.
-- [ ] Reconcile the configured NMEA load declaration with measured hardware consumption before release.
+- [ ] Reconcile the configured NMEA load declaration with measured hardware consumption before boat commissioning.
 - [ ] Verify suitable voltage thresholds, actual power availability, covered Ah/Wh against recorded Orion samples, time-source changes, warning clearing/acknowledgment and experimental Garmin presentation on the installed hardware.
 
 Official downloads include the application image, segmented USB package, manual, release notes, checksums and a manifest identifying the exact validated source commit. Application images must fit the 1,966,080-byte OTA slot. Publication does not install firmware on the device; ordering and successful software checks do not complete physical acceptance.

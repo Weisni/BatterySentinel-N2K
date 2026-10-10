@@ -6,17 +6,21 @@ manufacturing instructions for the actual device, or evidence of an existing or
 previously released hardware product. Do not order or assemble these archives.
 The ZIP files, checksum list and verification record remain unchanged.
 
-## Actual Orion Bridge procurement status — 2026-09-25
+## Current Orion Bridge status — 2026-10-10
 
-The user confirmed that all parts for the ESP32-C3 SuperMini Orion-R5 hardware
-have been ordered and PCB manufacture has been commissioned. Delivery,
-inspection, assembly and first commissioning remain pending. Procurement does
-not establish module fit, supply, thermal, enclosure or NMEA/Garmin acceptance.
+Parts were ordered and PCB manufacture commissioned on 2026-09-25. The user
+reported the first Orion-R5 assembled on 2026-10-10, with USB, service Wi-Fi and
+portal setup working. Initial 12 V operation without CAN is reported; complete
+power/isolation, enclosure and NMEA/Garmin acceptance remain open.
 See the [current hardware record](../../hardware/altium-r5/README.md) and
 [procurement report](../../hardware/altium-r5/lcsc-order-2026-09-24.md).
 
-This current status supersedes the former statement that no order data had
-been released for fabrication. It does not alter or approve the archived ZIPs.
+[Firmware 1.2.0 is officially published](https://github.com/Weisni/BatterySentinel-N2K/releases/tag/v1.2.0)
+as Latest; [its publication record](../../docs/releases/1.2.0-verification.md)
+records exact-commit CI and six verified public downloads. Software publication
+does not complete hardware commissioning. The [current issue status](../../docs/internal/backlog-status-2026-10-10.md)
+distinguishes remaining work from superseded concepts. None of this alters or
+approves the archived hardware ZIPs.
 
 ## Preserved historical status
 

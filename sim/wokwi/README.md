@@ -2,7 +2,10 @@
 
 # BatterySentinel N2K – Wokwi
 
-This Wokwi project runs the real ESP32-C3 firmware against a simulated INA238 system-battery sensor.
+This Wokwi setup selects the internal `esp32c3` measurement firmware and a
+simulated INA238 system-battery sensor. It does not select the released Orion
+Bridge firmware. The circuit/custom chip are implemented; complete automated
+firmware scenario execution is not established.
 
 ## Start in VS Code
 
@@ -12,7 +15,7 @@ This Wokwi project runs the real ESP32-C3 firmware against a simulated INA238 sy
 3. Open `diagram.json`.
 4. Start **Wokwi: Start Simulator**.
 
-The precompiled INA238 custom-chip WASM is tracked in `sim/wokwi/chips/ina238.chip.wasm`. It is rebuilt automatically by `.github/workflows/wokwi-chip.yml` whenever its source changes. The same workflow runs `wokwi-cli lint` against `diagram.json`.
+The precompiled INA238 custom-chip WASM is tracked in `sim/wokwi/chips/ina238.chip.wasm`. `.github/workflows/wokwi-chip.yml` compiles changed chip sources and runs circuit lint. Its [last recorded successful run](https://github.com/Weisni/BatterySentinel-N2K/actions/runs/33204456947) is from 2026-08-28; this is chip/circuit evidence, not an automated full-firmware scenario run.
 
 ## Simulated hardware
 
@@ -45,4 +48,13 @@ Useful scenarios:
 
 ## Scope / limitation
 
-Wokwi currently only partially simulates ESP32-C3 TWAI. This project therefore validates firmware execution, INA238/I2C behavior, state handling, diagnostics/Wi-Fi startup and GPIO behavior. Final NMEA2000 electrical/bus acceptance still requires a real CAN transceiver and NMEA2000 network/test fixture.
+The setup can support exploration of INA238 transactions, scheduling and GPIO,
+but currently has no scripted firmware acceptance scenarios, FRAM/NOR models
+or SPI/TWAI analyzer wiring. [Issue #8](https://github.com/Weisni/BatterySentinel-N2K/issues/8)
+tracks that optional internal backlog; #6 is consolidated into it.
+
+[Wokwi's support matrix](https://docs.wokwi.com/guides/esp32#simulation-features)
+lists ESP32-C3 TWAI as partial and Bluetooth as unsupported. An Orion harness
+would need synthetic inputs; it cannot establish actual BLE reception or
+coexistence. Final NMEA2000 electrical/bus acceptance still requires the real
+transceiver and network/test fixture. See [the current issue status](../../docs/internal/backlog-status-2026-10-10.md).

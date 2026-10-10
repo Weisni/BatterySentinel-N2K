@@ -30,11 +30,18 @@ Current controls/scenarios include:
 
 The current browser MVP mirrors the BatteryCore behavior in JavaScript so it is immediately usable. It is a UI/system harness, not yet the authoritative algorithm implementation.
 
-The next simulator milestone compiles the production `BatteryCore` and `BatteryProfiles` C++ sources to WebAssembly. At that point the browser UI and firmware/native TDD will all execute the same battery-domain implementation. Until then, native TDD remains authoritative for algorithm acceptance and the browser Lab is used for interactive system/scenario exploration.
+No production-core WebAssembly binding is implemented. `BatteryCore` and
+`BatteryProfiles` belong to the internal measurement concept, not the released
+Orion Bridge. Issue [#7](https://github.com/Weisni/BatterySentinel-N2K/issues/7)
+now tracks an optional browser harness for the actual Orion observation/time/alert
+cores. Native TDD remains authoritative for the tested C++ logic; the existing
+Lab remains an internal JavaScript scenario model.
 
 ## 2. Wokwi (`sim/wokwi`)
 
-Hardware-oriented simulator target for the real ESP32-C3 firmware.
+Hardware-oriented setup for the internal `esp32c3` measurement firmware. Root
+`wokwi.toml` and `diagram.json` already select that 8 MB target; they do not run
+the released `orion_dongle` application.
 
 A custom INA238 model is included under `sim/wokwi/chips/`. It exposes live controls for:
 - bus voltage;
@@ -43,7 +50,16 @@ A custom INA238 model is included under `sim/wokwi/chips/`. It exposes live cont
 
 The model implements the INA238 registers used by firmware (`CONFIG`, `VSHUNT`, `VBUS`) and responds at I2C address `0x40`.
 
-Wokwi supports ESP32-C3, I2C/SPI/Wi-Fi and custom WebAssembly chips. TWAI/CAN is only partially simulated, so Wokwi is used for firmware/peripheral validation rather than final NMEA electrical acceptance.
+The chip WASM and compile/lint workflow exist, as do the LED, ignition switch and
+SDA/SCL/IGN analyzer. Automated firmware scenarios, FRAM/NOR models and ignition
+shutdown integration remain absent; [#8](https://github.com/Weisni/BatterySentinel-N2K/issues/8)
+consolidates this internal work from #6. Simulated FRAM/logger/shutdown indicators
+in the browser Lab are not a demonstration of working device drivers.
+
+[Wokwi](https://docs.wokwi.com/guides/esp32#simulation-features) supports ESP32-C3
+but does not simulate Bluetooth; TWAI/CAN is partial. Current Orion BLE reception,
+coexistence and electrical NMEA acceptance require hardware. See the
+[dated issue status](../docs/internal/backlog-status-2026-10-10.md).
 
 ## Online hosting
 

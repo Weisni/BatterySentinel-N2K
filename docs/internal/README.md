@@ -23,6 +23,7 @@ The following snapshots preserve the previous wording and its evidence. Current 
 
 ## Firmware implementation and verification
 
+- [Issue status reconciliation](backlog-status-2026-10-10.md) — current 1.2.0 behavior, remaining OTA/receiver checks, superseded hardware requests and consolidated internal simulation work.
 - [OLED debug board, wiring and status guide](oled-debug.md) and [implementation plan](oled-debug-plan.md) — the explicitly requested integrated-display debug jig, its separate build and outstanding hardware checks.
 - [Observations, notifications and network-time implementation](insights-implementation-2026-09-26.md) — firmware 1.2.0 behavior, configuration/API, verification and remaining physical checks.
 - [Battery insights, timekeeping and notifications concept](battery-insights-concept.md) — feasibility and staged proposal; channel observations, local notifications and network time are implemented in 1.2.0. Full battery estimators remain outside the available measurements.

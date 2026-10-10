@@ -26,7 +26,7 @@ For USB service, select **SERVICE before connecting USB** and **disconnect USB b
 
 ## Open work
 
-- Completed on 2026-10-07: hand-assembly data derived from the supplied release ZIP, with the documented purchased L1/L2/L3 replacements; digital source reconciliation is recorded in the package. Physical assembly and commissioning remain open.
+- Completed on 2026-10-07: hand-assembly data derived from the supplied release ZIP, with the documented purchased L1/L2/L3 replacements; digital source reconciliation is recorded in the package. First assembly is now user-reported complete; inspection and final commissioning remain open.
 - First board assembly is user-reported complete; record inspection findings and the actual module/cable mapping.
 - Verify enclosure fit, retention and seals separately; completed PCB assembly does not establish enclosure acceptance.
 - Record supply switching, closed-case temperature, radio reception and enclosure test results.
